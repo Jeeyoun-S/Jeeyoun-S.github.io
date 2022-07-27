@@ -1,13 +1,12 @@
 ---
+layout: post
 title: 2022.07 Monthly Diary
-categories:
-- Monthly Diary
-excerpt: |
-  SSAFY 8기 Start Camp, Python 변수부터 객체 지향까지 공부
-feature_text: |
-  On July, What did I do?
-feature_image: "https://cdn.pixabay.com/photo/2016/03/27/07/32/clouds-1282314_960_720.jpg"
+description: >
+  Howdy! SSAFY 8기 Start Camp, Python 변수부터 객체 지향까지 공부
+sitemap: false
+hide_last_modified: true
 ---
+
 ### I. Week
 #### :pushpin: Day 01 ~ 05
 **SSAFY 합격 후 사전학습 시작!**  
