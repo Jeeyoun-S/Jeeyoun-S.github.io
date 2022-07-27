@@ -6,6 +6,15 @@ description: >
 sitemap: false
 hide_last_modified: true
 ---
+
+SSAFY 8기 Start Camp, Python 변수부터 객체 지향까지 공부
+{:.lead}
+
+[Modernized](#linking-in-style) [design](#whats-in-the-cards), [big headlines](#ready-for-the-big-screen), big new features: [Built-In Search](#built-in-search), [Sticky Table of Contents](#sticky-table-of-contents), and [Auto-Hiding Navbar](#auto-hiding-navbar). That [and more](#and-much-more) is Hydejack 9.
+
+- Table of Contents
+{:toc .large-only}
+
 # 2022.07 Monthly Diary
 ### I. Week
 #### :pushpin: Day 01 ~ 05
