@@ -359,11 +359,12 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
-#     - https://github.com/<username>
+social:
+   name:                Jeeyoun
+   links:
+     - https://p-lay-ground.tistory.com/
+     - https://github.com/Jeeyoun-S
+     - https://www.instagram.com/assimpleas_possible/
 
 
 # Plugin Configs
