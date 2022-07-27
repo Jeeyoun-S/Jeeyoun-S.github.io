@@ -1,164 +1,423 @@
-# Site configuration
-# 1. Files excluded from Jekyll builds
-# 2. Installed Gems
-# 3. Gem settings
-# 4. Jekyll settings
-# 5. Collections
-# 6. Jekyll collections settings
-# 7. Site settings
-# 8. Site favicons & manifest icons
-# 9. Site navigation
+# Config
+# ========================================================================================
 
-# 1. Files excluded from Jekyll builds
-exclude:
-- README.md
-- CODE_OF_CONDUCT.md
-- CONTRIBUTING.md
-- screenshot.png
-- LICENSE
-- CNAME
-- Gemfile
-- Gemfile.lock
-- alembic-jekyll-theme.gemspec
-- .jekyll-cache
+# Uncomment and set the URL of your site (with protocol, e.g. `https://`)
+# NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
+# url:                   https://username.github.io
 
-# 2. Installed Gems
-plugins:
-- jekyll-sitemap
-- jekyll-mentions
-- jekyll-paginate
-- jekyll-seo-tag
-- jekyll-redirect-from
-- jekyll-feed
-- jekyll-commonmark
-- jekyll-include-cache
-- jemoji
+# Uncomment and set the "base URL" of your site.
+# When your site is in a subdirectory, set to `/<name of directory>`,
+# with a leading `/` but no trailing `/`. Use the empty string '' otherwise.
+# NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
+# baseurl:               '/hydejack-starter-kit'
 
-# 3. Gem settings
-paginate: 2 # jekyll-paginate > items per page
-paginate_path: blog/page:num # jekyll-paginate > blog page
-jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
-twitter:
-  username: DavidDarnes # jekyll-seo-tag > Owners twitter username
-author: DavidDarnes # jekyll-seo-tag > default author
-social: # jekyll-seo-tag > social overrides
-  name: David Darnes # jekyll-seo-tag > real name
-  links:  # jekyll-seo-tag > social aliases (sameAs)
-    - https://twitter.com/DavidDarnes
-    - https://www.facebook.com/daviddarnes
-    - https://www.linkedin.com/in/daviddarnes
-    - https://github.com/Jeeyoun-S
-# markdown: CommonMark # Markdown parse settings, CommonMark performs slightly better an others in build time
-# commonmark:
-  # options: ["SMART", "FOOTNOTES"]
-  # extensions: ["strikethrough", "autolink", "table"]
 
-# 4. Jekyll settings
-sass:
-  style: compressed # Style compression
-permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
-excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: Asia/Seoul # Timezone for blog posts and alike
+# General settings
+# ---------------------------------------------------------------------------------------
 
-# 5. Collections
-collections:
-  posts:
-    title: Posts # Needed for Siteleaf
-    output: true
-    description: "My thoughts and ideas" # The post list page content
-    feature_text: |
-      Welcome to the blog
-    feature_image: "https://picsum.photos/2560/600?image=866"
-    future: true
-    published: true
+# Language of your content in 2-letter code, e.g.: en, de.
+# You may also provide a location, e.g.: en-us, de_AT.
+lang:                  en
 
-# 6. Jekyll collections settings
+# The title of your blog. Used in the sidebar and the browser tab.
+title:                 Starter Kit
+
+# A short description (~150 chars) of the page used for the meta description tag.
+# Can use markdown, but no more than one paragraph (enforced by `>`)
+description:           >
+  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
+  with a focus on personal sites that are meant to impress.
+
+# A shorter description for the sidebar.
+tagline:               Change `tagline` in `_config.yml`
+
+# A list of keywords for your blog
+keywords:              []
+
+# A (square) logo for your site.
+# If provided, it will be shown at the top of the sidebar.
+# It also used by the `jekyll-seo-tag` plugin.
+logo:                  /assets/img/logo.png
+
+# This should be the same author as first entry in `_data/authors.yml`.
+author:
+  # Used by `jekyll-feed`:
+  name:                <firstname> <lastname>
+  email:               <mail@domain.tld>
+  # # Used by `jekyll-seo-tag`:
+  # twitter:             <username>
+
+# Add links to the sidebar.
+menu:
+  - title:             Example
+    url:               /example/
+  - title:             Documentation
+    url:               /docs/
+  - title:             About
+    url:               /about/
+
+# Add links to the footer.
+# Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
+legal:
+  - title:             LICENSE
+    url:               /LICENSE/
+  - title:             NOTICE
+    url:               /NOTICE/
+  - title:             CHANGELOG
+    url:               /CHANGELOG/
+
+# This text will appear in a `<small>` tag in the footer of every page.
+copyright:             © 2021. All rights reserved.
+
+# Format of the permalinks
+permalink:             /:categories/:year-:month-:day-:title/
+
+# Pagination configuration (used by the `blog` layout)
+paginate:              10
+paginate_path:         /:num/
+
+
+# Theme
+# ---------------------------------------------------------------------------------------
+
+theme: jekyll-theme-hydejack
+# remote_theme: hydecorp/hydejack@v9
+
+
+# Customizaton
+# ----------------------------------------------------------------------------------------
+ 
+# Sidebar image and theme color of the site.
+accent_image:          /assets/img/sidebar-bg.jpg
+accent_color:          rgb(79,177,186)
+
+# This is used for the `theme-color` meta tag,
+# which changes the background color of the browser UI in certain browsers.
+# Defaults to `accent_color`.
+theme_color:           rgb(25,55,71)
+
+# The string encoding which fonts to fetch from Google Fonts.
+# See: <https://hydejack.com/docs/configuration/>
+google_fonts:          Roboto+Slab:700|Noto+Sans:400,400i,700,700i
+
+# The text font. Expects a string that is a valid CSS font-family value.
+# To change font-weight, see _sass/variables.scss
+font:                  Noto Sans, Helvetica, Arial, sans-serif
+
+# The font used for headings. Expects a string that is a valid CSS font-family value.
+# To change font-weight, see _sass/variables.scss
+font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
+
+# The font used for code blocks. Expects a string that is a valid CSS font-family value.
+font_code:             Fira Code, Menlo, Monaco, Consolas, monospace;
+
 defaults:
-  -
-    scope:
-      path: ""
+  # You can use this to provide a default accent color and background for
+  # all pages under a given path:
+  - scope:
+      path:            hyde/
     values:
-      image: "/assets/default-social-image.png" # Default image for sharing
-  -
-    scope:
-      path: ""
-      type: "posts"
+      accent_color:    rgb(38,139,210)
+      theme_color:     rgb(32,32,32)
+      accent_image:
+        background:    rgb(32,32,32)
+        overlay:       false
+
+  # Don't include documents in assets in the sitemap
+  - scope:
+      path:            assets/
     values:
-      layout: post # Set the default layout for posts
-  -
-    scope:
-      path: ""
-      type: "pages"
+      sitemap:         false
+
+  - scope:
+      path:            licenses/
     values:
-      layout: page # Set the default layout for pages
+      layout:          plain
+      sitemap:         false
 
-# 7. Site settings
-encoding: utf-8 # Make sure the encoding is right
-lang: en-GB # Set the site language
-title: "Jeeyoun-S" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
-description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
-url: "https://jeeyoun-s.github.io/" # Site url, also used in jekyll-seo-tag
-baseurl: ""
-repo: "https://github.com/Jeeyoun-S/Jeeyoun-S.github.io"
-email: "dreaming990124@gmail.com"
-# disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
-# date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
-# google_analytics: ""
-# google_analytics_anonymize_ip: ""
-# service_worker: false # Will turn off the service worker if set to false
-# short_name: "Al" # The web application short name, defaults to the site title
-css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
+  # # You can use the following to enable comments on all posts.
+  # - scope:
+  #     type:            posts
+  #   values:
+  #     comments:        true
 
-# 8. Site favicons & manifest icons
-favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
-  16: '/assets/logos/logo@16px.png'
-  32: '/assets/logos/logo@32px.png'
-  96: '/assets/logos/logo@96px.png'
-  120: '/assets/logos/logo@120px.png'
-  144: '/assets/logos/logo@144px.png'
-  180: '/assets/logos/logo@180px.png'
-  512: '/assets/logos/logo@512px.png'
-  1024: '/assets/logos/logo@1024px.png'
+  # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
+  # but we want them to be `WebPage`s:
+  - scope:
+      type:            projects
+    values:
+      seo:
+        type:          WebPage
+  - scope:
+      type:            featured_categories
+    values:
+      seo:
+        type:          WebPage
+  - scope:
+      type:            featured_tags
+    values:
+      seo:
+        type:          WebPage
 
-# 9. Site navigation
-navigation_header:
-- title: Home
-  url: /
-- title: About Me
-  url: /elements/
-- title: Blog
-  url: /blog/
-- title: Categories
-  url: /categories/
-#- title: TIL
-#  url: /TIL/
-- title: Search
-  url: /search/
+kramdown:
+  math_engine:         mathjax
+  math_engine_opts:    {}
+  footnote_backlink:   '&#x21a9;&#xfe0e;'
 
-navigation_footer:
-- title: Created by David Darnes
-  url: https://darn.es
 
-social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
-  Twitter: https://twitter.com/DavidDarnes
-  LinkedIn: https://www.linkedin.com/in/daviddarnes
-  GitHub: https://github.com/Jeeyoun-S
-  link: https://darn.es
-  RSS: /feed.xml
+# 3rd Party Integrations
+# ----------------------------------------------------------------------------------------
 
-sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
-  Twitter: "#0d94e7"
-  facebook: "#3B5998"
-  Email: true
+# Set your Google Analytics id to receive `pageview` events.
+# To remove Google Anaylics from your page, remove the line below.
+# google_analytics:      UA-XXXXXXXX-X
 
-# Load custom fonts from fonts.google.com etc
-#
-# TIP: Try to keep the number of urls as low to reduce the performance cost
-#      If multiple fonts can be requested in a single url opt for this
-fonts:
-  preconnect_urls:
-    - https://fonts.gstatic.com
-  font_urls:
-    - https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap
-    - https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap
+# Setting a disqus shortname will enable the comment section on
+# pages with `comments: true` in the front matter.
+# disqus:                <username>
+
+# Setting a tinyletter username will enable the newsletter subscription box.
+# PRO version only!
+# tinyletter:            <username>
+
+
+# Hydejack Settings
+# ----------------------------------------------------------------------------------------
+# These settings are specific to Hydejack.
+
+hydejack:
+  # Configure the order of complementary content on blog posts
+  post_addons:         [about, newsletter, related, random, comments]
+
+  # Configure the order of complementary content on project pages
+  project_addons:      [about, newsletter, other, comments]
+
+  # Set to `true` if you don't want to show an icon indicating external links
+  no_mark_external:    false
+
+  # Set to `true` if third party plugins fail to work with dynamically loaded pages
+  no_push_state:       false
+
+  # Set to `true` if you want to disable the drawer
+  no_drawer:           false
+
+  # Set to `true` if you don't to use the auto-hiding (JavaScript based) navbar.
+  # Note that this will not hide the navbar completely, only replace it with a static one.
+  # Use custom css to hide completely, e.g. `#_navbar { display: none }`.
+  no_navbar:           false
+
+  # Set to true to disable the built-in search functionality.
+  # Note that search is disabled during local use to save on build time.
+  # Run Jekyll with the `JEKYLL_ENV` environment variable set to `production` to enable.
+  no_search:           false
+
+  # Set to `true` if you do not want parts of the css inlined in <head/>
+  # This will increase site build speed dramatically!
+  no_inline_css:       false
+
+  # Set to `true` if you don't intend on changing the accent color on a per-page basis. 
+  # This will increase site build speed!
+  no_page_style:       false
+
+  # Code blocks and tables "break" the layout by spanning the full available width.
+  # Set this to true if you want them to be the same width as other content.
+  no_break_layout:     true
+
+  # Set to `true` to disable the dynamic Table of Contents on large screens.
+  no_toc:              false
+
+  # When set to `true`, will not extend the content in the "third column" on large screens.
+  # Instead, all content will remains within the center column.
+  # Note that this will not affect the Table of Contents, use `no_toc` instead.
+  no_third_column:     false
+
+  # Set to `true` if you don't like oversized headlines on large screens.
+  no_large_headings:   false
+
+  # Set to `true` if you do not want to expose your resume and projects
+  # in machine-readable formats.
+  no_structured_data:  false
+
+  # You can set this to `true` if you don't want to set the `theme-color` meta tag,
+  # This only affects the meta tag, not the color specified in the app manifest.
+  no_theme_color:      false
+
+  # Disable the breadcrumbs above the title
+  no_breadcrumbs:      false
+
+  # Set to `true` when building with the `--lsi` option
+  use_lsi:             true
+
+  # When using Google Analytics, set to `true` to display a cookie notice banner.
+  # When enabled, no user-related data will be stored until the user gives consent.
+  cookies_banner:      false
+
+  # Set to `true` if you would like to add a "Powered by Hydejack" link in the footer.
+  # Note that this setting has no effect when using the free version.
+  advertise:           false
+
+  # Buyers of the PRO version can opt to hide all dates from the theme.
+  # Frequent consumers of online content will know that nothing devalues a post like
+  # seeing an old date. 
+  hide_dates:          false
+
+  # TODO
+  hide_last_modified:  false
+
+  # Note that dark mode only works in the PRO version of Hydejack.
+  dark_mode:
+    # Set to `true` to always use the dark theme.
+    always:            false
+
+    # Set to `true` to use the dark theme based on visitors' preference (OS setting).
+    dynamic:           true
+
+    # Set to `true` to allow visitors to switch between light and dark mode.
+    icon:              true
+
+  # ⚡️ DANGER ZONE ⚡️
+  # ----------------
+  # This is an _experimental_ feature.
+  # Only use if you know what Service Workers are and how they can impact your site!
+  offline:
+    enabled:           false
+    cache_version:     13
+    precache_assets:
+      - /assets/img/swipe.svg
+
+
+# Collections
+# ----------------------------------------------------------------------------------------
+
+collections:
+  featured_categories:
+    permalink:         /:name/
+    output:            true
+
+  featured_tags:
+    permalink:         /tag-:name/
+    output:            true
+
+  projects:
+    permalink:         /projects/:path/
+    output:            true
+
+
+# File inclusion/exclusion
+# ----------------------------------------------------------------------------------------
+
+exclude:
+  - .jekyll-cache
+  - .sass-cache
+  - '*.toml'
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+include:
+  - .well-known
+  - LICENSE.md
+
+
+# Plugins
+# ----------------------------------------------------------------------------------------
+
+plugins:
+  - jekyll-default-layout
+  - jekyll-feed
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-redirect-from
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-titles-from-headings
+  - jekyll-include-cache
+  - jekyll-last-modified-at
+
+
+# SEO Tag
+# ---------------------------------------------------------------------------------------
+
+# Where you proof that you own this site (used by jekyll-seo-tag)
+# google_site_verification: <verification-id>
+# -- or --
+# webmaster_verifications:
+#   google:              <verification-id>
+#   bing:                <verification-id>
+#   alexa:               <verification-id>
+#   yandex:              <verification-id>
+
+# Used for twitter cards
+# twitter:
+#   username:            <username>
+
+# Used for facebook open graph
+# facebook:
+#   app_id:              <id>
+#   publisher:           <id>
+#   admins:              <id>
+
+# Used on index and about sites
+# social:
+#   name:                <firstname> <lastname>
+#   links:
+#     - https://twitter.com/<username>
+#     - https://github.com/<username>
+
+
+# Plugin Configs
+# ---------------------------------------------------------------------------------------
+optional_front_matter:
+  remove_originals:    true
+
+readme_index:
+  remove_originals:    true
+  with_frontmatter:    true
+
+relative_links:
+  collections:         true
+
+titles_from_headings:
+  strip_title:         true
+  collections:         true
+
+compress_html:
+  comments:            ["<!--", "-->"]
+  clippings:           all
+  endings:             all
+  ignore:
+    envs:              [development]
+
+sass:
+  style:               compressed
+
+# Jekyll Compose Defaults
+# ---------------------------------------------------------------------------------------
+
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      layout: post
+      description: > 
+        A short ~160 character description of your post for search engines,
+        social media previews, etc.
+      image:
+        path: /assets/img/sidebar-bg.jpg
+    posts:
+      layout: post
+      description: > 
+        A short ~160 character description of your post for search engines,
+        social media previews, etc.
+      image:
+        path: /assets/img/sidebar-bg.jpg
+    projects:
+      layout: project
+      description: > 
+        A short ~160 character description of your post for search engines,
+        social media previews, etc.
+      image:
+        path: /assets/img/sidebar-bg.jpg
+      links:
+        - title: Project Link
+          url: https://example.com
