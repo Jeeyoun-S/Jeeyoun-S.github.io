@@ -98,7 +98,7 @@ lang: en-GB # Set the site language
 title: "Jeeyoun-S" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
-#url: "https://jeeyoun-s.github.io/" # Site url, also used in jekyll-seo-tag
+url: "https://jeeyoun-s.github.io/" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/Jeeyoun-S/Jeeyoun-S.github.io"
 email: "dreaming990124@gmail.com"
@@ -131,8 +131,8 @@ navigation_header:
   url: /blog/
 - title: Categories
   url: /categories/
-- title: TIL
-  url: /TIL/
+#- title: TIL
+#  url: /TIL/
 - title: Search
   url: /search/
 
