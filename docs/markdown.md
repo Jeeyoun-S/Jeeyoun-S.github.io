@@ -7,17 +7,15 @@ hide_description: true
 sitemap: false
 ---
 
-This chapter covers advanced topics, such as offline support and custom JS builds. Codings skills are recommended.
-
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-### **Markdown**
+### Markdown
 
 - 텍스트 기반의 가벼운 마크업 언어, 문서의 구조와 내용을 쉽고 빠르게
 - Jupyter notebook, notion, Typora
 
-### **Markdown 문법**
+### Markdown 문법
 
 - 헤딩
     - *`**#**`* 개수에 따라 사용, h1~h6
@@ -33,14 +31,10 @@ This chapter covers advanced topics, such as offline support and custom JS build
     - `[string](url)` **string은 보여지는 부분, url은 연결할 부분
 - 이미지
     - `![string](img_url)`
-    - .assets 폴더를 만들어서 자동으로 이미지 저장
-    
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/95b75d64-7298-450a-872a-b76582085193/Untitled.png)
-    
+    - .assets 폴더를 만들어서 자동으로 이미지 저장 
 - 텍스트 강조
     - `**` **Bold
     - `*` 기울임
     - `~~` 취소선
 - 수평선
-    
-    *`-`* 또는 `*` 또는 `_`  3번 입력
+    - *`-`* 또는 `*` 또는 `_`  3번 입력
