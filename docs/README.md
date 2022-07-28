@@ -4,7 +4,7 @@ title: Today I Learned
 description: >
   공부한 것을 정리하고 기록하는 문서
 sitemap: false
-permalink: /TIL/
+permalink: /docs/
 ---
 
 2022년 7월 17일~
