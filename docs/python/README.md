@@ -17,15 +17,5 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 
 * [Starter]{:.heading.flip-title} --- Let's start studying Python!
 
-[install]: install.md
-[upgrade]: upgrade.md
-[config]: config.md
-[basics]: basics.md
-[writing]: writing.md
-[scripts]: scripts.md
-[build]: build.md
-[advanced]: advanced.md
-[LICENSE]: ../LICENSE.md
-[NOTICE]: ../NOTICE.md
-[CHANGELOG]: ../CHANGELOG.md
 [Starter]: starter.md
+[Datatype]: datatype.md
