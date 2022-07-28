@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Python
+title: Starter
 description: >
   Let's start studying Python
 hide_description: true
