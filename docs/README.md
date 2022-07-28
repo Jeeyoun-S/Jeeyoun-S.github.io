@@ -49,4 +49,4 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 [CHANGELOG]: ../CHANGELOG.md
 
 ## Python
-* [About Python]{:.heading.flip-title} --- Let's start studying Python!
+* [Starter]{:.heading.flip-title} --- Let's start studying Python!
