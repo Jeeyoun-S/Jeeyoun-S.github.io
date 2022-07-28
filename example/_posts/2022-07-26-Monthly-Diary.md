@@ -15,7 +15,6 @@ SSAFY 8기 Start Camp, Python 변수부터 객체 지향까지 공부
 - Table of Contents
 {:toc .large-only}
 
-# 2022.07 Monthly Diary
 ### I. Week
 #### :pushpin: Day 01 ~ 05
 **SSAFY 합격 후 사전학습 시작!**  
