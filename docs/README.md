@@ -35,6 +35,6 @@ permalink: /docs/
 [CHANGELOG]: ../CHANGELOG.md
 [Python]: /python/
 [Java]: /Java/
-[Markdown]: Markdown.md
-[CLI]: CLI.md
-[Git]: Git.md
+[Markdown]: markdown.md
+[CLI]: cli.md
+[Git]: git.md
