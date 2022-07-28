@@ -11,10 +11,9 @@ permalink: /docs/
 
 원본 파일은 GitHub에서 보실 수 있습니다. [GitHub TIL](https://github.com/Jeeyoun-S/Jeeyoun-S.github.io/tree/master/docs) {:.note} 
 
-## [Python]{:.heading.flip-title}
-{:.related-posts.faded}
-
-## [Java]{:.heading.flip-title}
+## Programming Language
+* [Python]{:.heading.flip-title}
+* [Java]{:.heading.flip-title}
 {:.related-posts.faded}
 
 ## Other
