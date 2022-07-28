@@ -38,6 +38,7 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 
 ## Python
 * [Starter]{:.heading.flip-title} --- Let's start studying Python!
+* [Ppytt]{:.heading.flip-title} --- Let's start studying Python!
 {:.related-posts.faded}
 
 [install]: install.md
@@ -52,3 +53,4 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 [NOTICE]: ../NOTICE.md
 [CHANGELOG]: ../CHANGELOG.md
 [Starter]: Starter.md
+[Ppytt]: /Python/readme.md
