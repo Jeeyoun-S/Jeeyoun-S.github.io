@@ -51,7 +51,7 @@ author:
 menu:
   - title:             About
     url:               /about/
-  - title:             Blogs
+  - title:             Blog
     url:               /example/
   - title:             Today I Learned
     url:               /docs/
