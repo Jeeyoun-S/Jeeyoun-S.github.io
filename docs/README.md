@@ -18,7 +18,7 @@ permalink: /docs/
 
 ## Other
 * [Git]{:.heading.flip-title}
-* [CLI]{:.heading.flip-title}
+* [CLI]{:.heading.flip-title} --- Command Line Interface
 * [Markdown]{:.heading.flip-title}
 {:.related-posts.faded}
 
