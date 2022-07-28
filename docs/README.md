@@ -36,9 +36,7 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 * [CHANGELOG]{:.heading.flip-title} --- Version history of Hydejack.
 {:.related-posts.faded}
 
-## Python
-* [Starter]{:.heading.flip-title} --- Let's start studying Python!
-* [Ppytt]{:.heading.flip-title} --- Let's start studying Python!
+## [Python]{:.heading.flip-title}
 {:.related-posts.faded}
 
 [install]: install.md
@@ -52,5 +50,4 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 [LICENSE]: ../LICENSE.md
 [NOTICE]: ../NOTICE.md
 [CHANGELOG]: ../CHANGELOG.md
-[Starter]: Starter.md
-[Ppytt]: /python/
+[Python]: /python/
