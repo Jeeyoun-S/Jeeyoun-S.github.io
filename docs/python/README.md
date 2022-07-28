@@ -18,5 +18,5 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 * [Start Python]{:.heading.flip-title} --- Let's start studying Python!
 * [Datatype]{:.heading.flip-title}
 
-[Starter]: starter.md
+[Start Python]: starter.md
 [Datatype]: datatype.md
