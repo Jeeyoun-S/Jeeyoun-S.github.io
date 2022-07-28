@@ -20,9 +20,17 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 * [Operator]{:.heading.flip-title}
 * [Control Statement]{:.heading.flip-title}
 * [Function]{:.heading.flip-title}
+* [Method of Datatype]{:.heading.flip-title}
+* [Object-Oriented]{:.heading.flip-title}
+* [Error & Exception]{:.heading.flip-title}
+* [File]{:.heading.flip-title}
 
 [Start Python]: starter.md
 [Datatype]: datatype.md
 [Operator]: operator.md
 [Control Statement]: control_statement.md
 [Function]: function.md
+[Method of Datatype]: method_of_datatype.md
+[Object-Oriented]: object_oriented.md
+[Error & Exception]: error_and_exception.md
+[File]: file.md
