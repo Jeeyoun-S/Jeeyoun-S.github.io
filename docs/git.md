@@ -9,7 +9,6 @@ sitemap: false
 
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
 ### GIT
 
 - **Git이란?** 분산 버전 관리 프로그램 / 협업툴
@@ -20,7 +19,7 @@ sitemap: false
 - Git 기반의 저장소를 제공하는 서비스 (GitLab, GitHub - Microsoft, Bitbucket)
     - *GitLab* - 저장할 수 있는 서버를 내가 설정 가능 (GitLab ≠ Git)
     - *GitHub* - 공개적 / 전세계에 있는 사람들에게 나를 표현 가능, 포트폴리오
-
+    
 ### Commit
 
 특정 버전으로 남긴다 = “커밋(Commit)한다”  
