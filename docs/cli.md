@@ -7,8 +7,6 @@ hide_description: true
 sitemap: false
 ---
 
-This chapter covers advanced topics, such as offline support and custom JS builds. Codings skills are recommended.
-
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
@@ -41,13 +39,10 @@ This chapter covers advanced topics, such as offline support and custom JS build
 ### **절대경로 vs 상대경로**
 
 - 절대경로
-    
     루트 디렉토리부터 목적 지점까지 거치는 모든 경로 작성 (ex. `C:/Users/user/Desktop`)
     
 - 상대경로
-    
     현재 디렉토리를 기준으로 계산된 상대적 위치
-    
     (ex. 현재 `C:/Users` → 바탕화면 상대경로 `user/Desktop`)
     
 - 절대경로 사용 시 컴을 바꾸면 에러가 날 수도 있다.
