@@ -34,7 +34,7 @@ permalink: /docs/
 [NOTICE]: ../NOTICE.md
 [CHANGELOG]: ../CHANGELOG.md
 [Python]: /python/
-[Java]: /Java/
+[Java]: /java/
 [Markdown]: markdown.md
 [CLI]: cli.md
 [Git]: git.md
