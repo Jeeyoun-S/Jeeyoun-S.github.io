@@ -53,6 +53,4 @@ This chapter covers advanced topics, such as offline support and custom JS build
 
 ### 연산자 우선 순위
 
-`()` > `[::]` > `[index]` > `**` > 단항 연산자 `+` `-` > 산술 연산자 `*` `/` `%` 
-
-> 산술 연산자 `+` `-` > 비교 연산자 `in` `is` > `not` > `and` > `or`
+`()` > `[::]` > `[index]` > `**` > 단항 연산자 `+` `-` > 산술 연산자 `*` `/` `%` > 산술 연산자 `+` `-` > 비교 연산자 `in` `is` > `not` > `and` > `or`
