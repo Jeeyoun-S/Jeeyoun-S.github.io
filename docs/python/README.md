@@ -25,7 +25,7 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 * [Error & Exception]{:.heading.flip-title}
 * [File]{:.heading.flip-title}
 
-[Start Python]: starter.md
+[Start Python]: start_python.md
 [Datatype]: datatype.md
 [Operator]: operator.md
 [Control Statement]: control_statement.md
