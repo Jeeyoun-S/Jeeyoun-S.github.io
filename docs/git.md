@@ -41,7 +41,6 @@ sitemap: false
     - `git init` 명령어로 로컬 저장소 생성
     - .git 디렉토리에 버전 관리에 필요한 모든 것이 들어있다.
     
-
 ### GIT 기초
 
 - **자신의 GitHub 계정과 연결**
@@ -86,6 +85,7 @@ sitemap: false
     - `/directory` or `/directory/*` ignore 폴더 제외
     - `*.txt` txt 파일 전체 제외
     - 기본 생성 파일 목록 [gitignore.io](https://www.toptal.com/developers/gitignore/)
+    
 - **.gitkeep**
     - 빈 폴더 또는 폴더 속 파일 전체가 gitignore일 때 폴더 보이게 하는 방법
     - 보이게 하고 싶은 폴더 속에 `.gitkeep` 파일 생성
