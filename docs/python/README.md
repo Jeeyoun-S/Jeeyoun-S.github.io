@@ -19,8 +19,10 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 * [Datatype]{:.heading.flip-title}
 * [Operator]{:.heading.flip-title}
 * [Control Statement]{:.heading.flip-title}
+* [Function]{:.heading.flip-title}
 
 [Start Python]: starter.md
 [Datatype]: datatype.md
 [Operator]: operator.md
 [Control Statement]: control_statement.md
+[Function]: function.md
