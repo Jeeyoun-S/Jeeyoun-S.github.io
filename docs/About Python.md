@@ -7,6 +7,9 @@ hide_description: true
 sitemap: false
 ---
 
+0. this unordered seed list will be replaced by toc as unordered list
+{:toc}
+
 ### I. **Python을 배워야 하는 이유**
 
 1. 알고리즘 코딩 테스트에 유리
