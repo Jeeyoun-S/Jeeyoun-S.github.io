@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Advanced
+title: CLI
 description: >
   This chapter covers advanced topics, such as offline support and custom JS builds. Codings skills are recommended.
 hide_description: true
