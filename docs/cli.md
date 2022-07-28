@@ -12,20 +12,16 @@ This chapter covers advanced topics, such as offline support and custom JS build
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-### **CLI (Command Line Interface)**
+### CLI (Command Line Interface)
 
 - **CLI**(GUI를 명령어로, 개발자) ↔ **GUI**(그래픽으로 사용자와 컴퓨터가 상호작용, 개인)
 - CLI로만 할 수 있는 것도 있고, GUI보다 컴퓨터의 resource가 절약된다.
 - GUI 화면에 그래픽으로 전부 보여주기 힘들어서 CLI는 개발할 때 많이 쓴다.
 - 수많은 개발 시스템이 CLI를 제공 → CLI 배워야 한다.
-- **개발자가 MAC을 많이 쓰는 이유?**
-    
+- 개발자가 MAC을 많이 쓰는 이유?
     CLI 명령어는 리눅스, 유닉스가 근본 > MacOS는 리눅스 유닉스에서 파생
-    
     윈도우는 명령어가 달랐다(DIR) → 윈도우보다 맥이 편하다.
-    
     그래서 윈도우가 패치(Powershell), 원래 있던 게(cmd)
-    
 
 ### **CLI 기본 명령어**
 
