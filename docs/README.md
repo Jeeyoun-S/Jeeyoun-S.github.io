@@ -53,4 +53,4 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 [NOTICE]: ../NOTICE.md
 [CHANGELOG]: ../CHANGELOG.md
 [Starter]: Starter.md
-[Ppytt]: /Python/readme.md
+[Ppytt]: /python/readme.md
