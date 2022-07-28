@@ -17,18 +17,11 @@ This chapter covers advanced topics, such as offline support and custom JS build
 - **Git이란?** 분산 버전 관리 프로그램 / 협업툴
 - **버전 관리?** 수정되는 버전을 전부 저장하는 것이 아니라 이전 변경사항만 저장
 - **분산 VS 중앙집중식**
-    - **분산**(ex. 블록체인) ↔ **중앙집중식**(ex. 은행), 하나의 데이터베이스
+    - **분산**(ex. 블록체인) ↔ **중앙집중식**(ex. 은행) 하나의 데이터베이스
     - **분산** → 하나 터져도 복구 가능 ↔ **중앙집중** → 터지면 끝
 - Git 기반의 저장소를 제공하는 서비스 (GitLab, GitHub - Microsoft, Bitbucket)
-    - ***GitLab*** - 저장할 수 있는 서버를 내가 설정 가능 → 그래서 우리가 사용! (GitLab ≠ Git)
-    - ***GitHub*** - 공개적 / 전세계에 있는 사람들에게 나를 표현 가능, 포트폴리오
-
-### Repository
-
-특정 디렉토리를 버전 관리하는 저장소 (폴더를 기준으로 버전 관리)
-
-- `git init` 명령어로 로컬 저장소 생성
-- .git 디렉토리에 버전 관리에 필요한 모든 것이 들어있다.
+    - *GitLab* - 저장할 수 있는 서버를 내가 설정 가능 (GitLab ≠ Git)
+    - *GitHub* - 공개적 / 전세계에 있는 사람들에게 나를 표현 가능, 포트폴리오
 
 ### Commit
 
@@ -36,60 +29,54 @@ This chapter covers advanced topics, such as offline support and custom JS build
 커밋(Commit)은 3가지 영역을 바탕으로 동작!
 
 - **Working Directory** *untracked(아직 버전 관리X, 최소의 상태)*
-    
     내가 작업하고 있는 실제 디렉토리
-    
     수정할 때 *modified, tracked* 상태로 Repository → Working로
-    
+
 - **Staging Area** *staged, tracked*
-    
     커밋으로 남기고 싶은, 특정 버전으로 관리하고 싶은 파일이 있는 곳
-    
-    - **중간에 Staging Area를 거쳐야 하는 이유?**
-        
+    - 중간에 Staging Area를 거쳐야 하는 이유?
         특정 변경사항만 저장하고 싶어서, 모든 변경사항 저장X
         
 - **Repository** *tracked, committed*
-    
     커밋들이 저장되는 곳 (.git 디렉토리를 가리킨다)
+    특정 디렉토리를 버전 관리하는 저장소 (폴더를 기준으로 버전 관리)
+    - `git init` 명령어로 로컬 저장소 생성
+    - .git 디렉토리에 버전 관리에 필요한 모든 것이 들어있다.
     
 
-### **Git 기초 사용법**
+### GIT 기초
 
 - **자신의 GitHub 계정과 연결**
     - `git config --global user.email "you@example.com"`
-        
         `git config --global user.name "Your Name"`
-        
     - `git config --local user.email "you@example.com"`
-        
         `git config --local user.name "Your Name"`
         
 - **Add**
-    
-    `git add` `git add .`로 변경 사항을 Working → Staging으로
-    
-    `git reset` add 취소하기
+    - `git add` `git add .`로 변경 사항을 Working → Staging으로
+    - `git reset` add 취소하기
     
 - **Commit**
-    
-    `git commit`으로 커밋을 만든다. Staging → Repository
-    
-    `git commit -m “(message)”`
+    - `git commit`으로 커밋을 만든다. Staging → Repository
+    - `git commit -m “(message)”`
     
 - **Commit 상태 확인**
     - `git status` 현재 git으로 관리되고 있는 파일들의 상태, Local만 보고 있는 상태.
     - `git log` **git의 commit 히스토리
     - `git diff **ID_A ID_B` commit 비교→ 순서에 따라 기준이 달라진다. A가 기준.
+    
 - **Remote**
     - `git remote add origin remote_repo_https` Local → Remote Repository 연결
     - `git remote remove origin remote_repo_https` 연결 해제
+    
 - **Push**
     - `git push A(어디로) B(branch)` Local repo의 최신 commit을 Remote repo로
     - `git push -u origin master`
         - 실행 후 `git push`만 해도 `git push origin master`로
+        
 - **Clone**
     - `git clone remote_repo_https` Remote repo를 Local로 복사
+    
 - **Pull**
     - `git pull` GitHub에서의 변경사항을 Local로 가져오는 것
 
