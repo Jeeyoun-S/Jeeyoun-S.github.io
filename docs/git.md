@@ -25,20 +25,20 @@ sitemap: false
 특정 버전으로 남긴다 = “커밋(Commit)한다”  
 커밋(Commit)은 3가지 영역을 바탕으로 동작!
 
-- **Working Directory** *untracked(아직 버전 관리X, 최소의 상태)*
-    내가 작업하고 있는 실제 디렉토리
-    수정할 때 *modified, tracked* 상태로 Repository → Working로
+- **Working Directory** *untracked(아직 버전 관리X, 최소의 상태)*  
+    내가 작업하고 있는 실제 디렉토리  
+    수정할 때 *modified, tracked* 상태로 Repository → Working로  
 
-- **Staging Area** *staged, tracked*
-    커밋으로 남기고 싶은, 특정 버전으로 관리하고 싶은 파일이 있는 곳
-    - 중간에 Staging Area를 거쳐야 하는 이유?
-        특정 변경사항만 저장하고 싶어서, 모든 변경사항 저장X
+- **Staging Area** *staged, tracked*  
+    커밋으로 남기고 싶은, 특정 버전으로 관리하고 싶은 파일이 있는 곳  
+    - 중간에 Staging Area를 거쳐야 하는 이유?   
+        특정 변경사항만 저장하고 싶어서, 모든 변경사항 저장X  
         
-- **Repository** *tracked, committed*
-    커밋들이 저장되는 곳 (.git 디렉토리를 가리킨다)
-    특정 디렉토리를 버전 관리하는 저장소 (폴더를 기준으로 버전 관리)
-    - `git init` 명령어로 로컬 저장소 생성
-    - .git 디렉토리에 버전 관리에 필요한 모든 것이 들어있다.
+- **Repository** *tracked, committed*  
+    커밋들이 저장되는 곳 (.git 디렉토리를 가리킨다)  
+    특정 디렉토리를 버전 관리하는 저장소 (폴더를 기준으로 버전 관리)  
+    - `git init` 명령어로 로컬 저장소 생성  
+    - .git 디렉토리에 버전 관리에 필요한 모든 것이 들어있다.  
     
 ### GIT 기초
 
