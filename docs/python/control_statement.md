@@ -68,5 +68,5 @@ for 변수 in iterable:
 - `for-else` 반복문 실행한 후에 else문 실행
 - `pass` 아무것도 안 한다.
 
-## 기타
+## 
 - [Python Tutor](https://pythontutor.com/) 조건문과 반복문을 시각화해서 보여주는 사이트
