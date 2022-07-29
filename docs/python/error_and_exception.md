@@ -42,7 +42,7 @@ except (ValueError, KeyError):
 
 except IndexError as what:
 		코드A에서 IndexError가 발생하면, 실행할 코드
-		print(what) #list index out of range 원본 에러 메세지 출력
+		print(what) #list index out of range 같이 원본 에러 메세지 출력
 
 except:
 		코드A에서 ValueError, IndexError, KeyError를 제외한 에러 발생하면, 실행할 코드
