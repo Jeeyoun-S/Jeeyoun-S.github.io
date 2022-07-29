@@ -54,4 +54,5 @@ finally:
 		코드A에서 예외 발생 여부와 관계없이 실행할 코드
 ```
 
-## [예외 계층구조](https://docs.python.org/ko/3/library/exceptions.html#exception-hierarchy](https://docs.python.org/ko/3/library/exceptions.html#exception-hierarchy)
+## 참고
+- [예외 계층구조](https://docs.python.org/ko/3/library/exceptions.html#exception-hierarchy)
