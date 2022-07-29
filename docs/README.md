@@ -32,7 +32,7 @@ permalink: /docs/
 [LICENSE]: ../LICENSE.md
 [NOTICE]: ../NOTICE.md
 [CHANGELOG]: ../CHANGELOG.md
-[Python]: /python/
+[Python]: /docs/python/
 [Java]: /java/
 [Markdown]: markdown.md
 [CLI]: cli.md
