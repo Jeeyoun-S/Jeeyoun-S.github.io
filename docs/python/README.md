@@ -33,4 +33,4 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 [Method of Datatype]: method_of_datatype.md
 [Object-Oriented]: object_oriented.md
 [Error & Exception]: error_and_exception.md
-[File]: file.md
+[Get data]: file.md
