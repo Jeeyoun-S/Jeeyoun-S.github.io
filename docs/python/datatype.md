@@ -26,6 +26,7 @@ sitemap: false
         - **임의 정밀도 산술**: 남아있는 가용 메모리를 더 끌어다 쓸 수 있는 방식
 
 - N진수
+    |:---:|:---:|
     | 2진수(binary) | 0b |
     | 8진수(octal) | 0o |
     | 16진수(hexadecimal) | 0x |
@@ -52,6 +53,7 @@ sitemap: false
 
 ### String Type
 - Escape sequence
+
     | \n | \t | \r | \\ | \" | \' | \0 |
     | Enter | Tab | 캐리지 리턴 | \ | " | \' | Null |
     
