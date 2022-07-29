@@ -10,19 +10,16 @@ sitemap: false
 {:toc}
 
 ### Python을 배워야 하는 이유
-
 1. 알고리즘 코딩 테스트에 유리
 2. 구현 코딩 테스트에 유리
 3. 가장 인기 많은 언어 (AI개발, 데이터 분석, 웹 프로그래밍, 업무 자동화 등)
 
 ### Python의 특징
-
 1. Easy to Learn
 2. 인터프리터 언어(Interpreter)
 3. 객체 지향 프로그래밍(Object Oriented Programming)
 
 ### Python 개발 환경
-
 - IDE: Visual Studio Code, PyCharm
 - Jupyter Notebook
     - **설치**: `pip install notebook`
@@ -38,21 +35,20 @@ sitemap: false
 - IDLE
 
 ### 코드작성법
-
 - 코드 스타일 가이드 (ex. PEP8, Google Style guide, etc.)
 - 들여쓰기: Tab 1번 또는 Space 4번
 
 ### 주석
-
-- `"""` `'''` `#` 코드에 대한 설명 작성
+- 코드에 대한 설명 작성
+- 사용 방법
+  - `#주석 내용 입력` 한 줄 주석 처리
+  - `"""주석 내용 입력"""` 여러 줄 주석 처리, `'`도 가능
 
 ### 변수
-
-- **식별자**
+- 식별자
     - 숫자로 시작 불가, 길이 제한 없음, 대소문자 구별
     - 예약어 사용 불가
-        
         ```python
         import keyword
-        print(keyword.kwlist)
+        print(keyword.kwlist) #예약어 출력하기
         ```
