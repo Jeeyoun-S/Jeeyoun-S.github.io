@@ -7,7 +7,7 @@ hide_description: true
 sitemap: false
 permalink: /python/
 ---
-Python3
+Python3  
 [Python 공식 문서](https://docs.python.org/3/)
 
 * [Start Python]{:.heading.flip-title}
