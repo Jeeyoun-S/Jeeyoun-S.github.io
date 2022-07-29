@@ -15,7 +15,7 @@ Should you discover a mistake in the docs (or a bug in general) feel free to [op
 While this manual tries to be beginner-friendly, as a user of Jekyll it is assumed that you are comfortable running shell commands and editing text files.
 {:.note}
 
-* [Start Python]{:.heading.flip-title} --- Let's start studying Python!
+* [Start Python]{:.heading.flip-title}
 * [Datatype]{:.heading.flip-title}
 * [Operator]{:.heading.flip-title}
 * [Control Statement]{:.heading.flip-title}
