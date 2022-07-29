@@ -52,8 +52,8 @@ sitemap: false
 
 ### String Type
 - Escape sequence
-
     | \n | \t | \r | \\ | \" | \' | \0 |
+    |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
     | Enter | Tab | 캐리지 리턴 | \ | " | \' | Null |
     
 - String Interpolation
@@ -67,6 +67,7 @@ sitemap: false
 - String Interpolation 형식
     - **표현식**
         | 정수 | 문자 | 실수 | 8진수 | 16진수 | 년 | 월 | 일 | 요일 |
+        |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
         | d | c | f | o | x | %y | %m | %d | %A |
         1. 예시 코드
         ```python
