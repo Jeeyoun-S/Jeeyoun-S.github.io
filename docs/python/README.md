@@ -23,7 +23,7 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 * [Method of Datatype]{:.heading.flip-title}
 * [Object-Oriented]{:.heading.flip-title}
 * [Error & Exception]{:.heading.flip-title}
-* [File]{:.heading.flip-title}
+* [Get data: File, API]{:.heading.flip-title}
 
 [Start Python]: start_python.md
 [Datatype]: datatype.md
@@ -33,4 +33,4 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 [Method of Datatype]: method_of_datatype.md
 [Object-Oriented]: object_oriented.md
 [Error & Exception]: error_and_exception.md
-[Get data]: file.md
+[Get data: File, API]: get_data.md
