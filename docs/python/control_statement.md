@@ -62,7 +62,7 @@ for 변수 in iterable:
     1. List `[Code for 변수 in iterable if 조건]`
     2. Dictionary `{Code:Code for 변수 in iterable}`
 
-### 3. 반복문 제어
+### 반복문 제어
 - `break` 반복문 종료
 - `continue` 이후 코드 실행 안 하고, 다음 반복 수행
 - `for-else` 반복문 실행한 후에 else문 실행
