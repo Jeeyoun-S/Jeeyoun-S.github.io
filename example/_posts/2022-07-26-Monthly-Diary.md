@@ -35,11 +35,10 @@ SSAFY Python 2주차
 ---
 
 ## II. Good
-1. GitHub를 시작한 15일부터 하루를 제외하고 매일 잔디를 심었다.
-2. 18일부터 매일 Baekjoon OJ를 1문제 이상 풀었다.
-3. 모닝스터디를 시작했다. 매주 화~목 오전 8시 15분부터 45분까지 Baekjoon 문제를 한 문제씩 푸는 스터디! 다 같은 문제를 푸는 데, 정말 풀이가 다양해서 도움을 많이 받고 있다.
-4. SSAFYcial에 합격했다!
-5. 한 주 동안 공부한 것을 [TIL](https://keen-tarsal-f3c.notion.site/TIL-Today-I-Learned-d9c70648bdaa44698286fd9380a14aa2)에 정리해 뒀다. 수업을 들으면서 Notion에 메모하고, 복습할 때 정리해서 GitHub에 올렸다.
+1. 15일부터 매일 잔디를 심고, 18일부터 매일 Baekjoon OJ를 1문제 이상 풀었다.
+2. 모닝스터디를 시작했다. 매주 화~목 오전 8시 15분부터 45분까지 Baekjoon 문제를 한 문제씩 푸는 스터디! 다 같은 문제를 푸는 데, 정말 풀이가 다양해서 도움을 많이 받고 있다.
+3. SSAFYcial에 합격했고, Java 비전공반으로 옮기게 됐다.
+4. 한 주 동안 공부한 것을 [TIL](https://keen-tarsal-f3c.notion.site/TIL-Today-I-Learned-d9c70648bdaa44698286fd9380a14aa2)에 정리해 뒀다. 수업을 들으면서 Notion에 메모하고, 복습할 때 정리해서 GitHub에 올렸다.
 
 ---
 
