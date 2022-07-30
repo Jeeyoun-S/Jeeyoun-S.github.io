@@ -6,7 +6,7 @@ description: >
 sitemap: false
 permalink: /docs/
 ---
-원본 파일은 GitHub에서 보실 수 있습니다. [GitHub TIL](https://github.com/Jeeyoun-S/Jeeyoun-S.github.io/tree/master/docs)
+원본 파일은 [GitHub](https://github.com/Jeeyoun-S/Jeeyoun-S.github.io/tree/master/docs)에서 보실 수 있습니다.
 {:.note} 
 
 ## Programming Language
