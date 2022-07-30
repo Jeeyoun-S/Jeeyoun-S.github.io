@@ -8,6 +8,7 @@ sitemap: false
 permalink: /docs/python/
 ---
 Python3 사용, [Python 공식 문서](https://docs.python.org/3/)
+{:.note}
 
 * [Start Python]{:.heading.flip-title}
 * [Datatype]{:.heading.flip-title}
