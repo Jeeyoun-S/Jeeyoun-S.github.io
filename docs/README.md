@@ -6,9 +6,6 @@ description: >
 sitemap: false
 permalink: /docs/
 ---
-원본 파일은 [GitHub](https://github.com/Jeeyoun-S/Jeeyoun-S.github.io/tree/master/docs)에서 보실 수 있습니다.
-{:.note} 
-
 ## Programming Language
 * [Python]{:.heading.flip-title} --- Life is short, You need Python.
 * [Java]{:.heading.flip-title} --- Write once, run anywhere.
@@ -19,6 +16,9 @@ permalink: /docs/
 * [CLI]{:.heading.flip-title} --- Command Line Interface
 * [Markdown]{:.heading.flip-title}
 {:.related-posts.faded}
+
+원본 파일은 [GitHub](https://github.com/Jeeyoun-S/Jeeyoun-S.github.io/tree/master/docs)에서 보실 수 있습니다.
+{:.note} 
 
 [Python]: /docs/python/
 [Java]: /docs/java/
