@@ -6,11 +6,6 @@ description: >
 sitemap: false
 hide_last_modified: true
 ---
-
-SSAFY 8기 Start Camp, Python 변수부터 객체 지향까지 공부
-
-{:.lead}
-
 ## I. Week
 #### Day 01 ~ 05
 SSAFY 합격 후 사전학습 시작!  
