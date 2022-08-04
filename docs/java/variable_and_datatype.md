@@ -82,9 +82,9 @@ sitemap: false
         - `int[][] array_name` `int array_name[][]` `int[] array_name[]`
     - 생성
         ```java
-          array_name = new int[1차원 배열 수][1차원 배열 크기];
-          array_name = new int[1차원 배열 수][];
-          int[][] array_name = {{1,2,3,4,5}, {6,7,8,9,10}};
+        array_name = new int[1차원 배열 수][1차원 배열 크기];
+        array_name = new int[1차원 배열 수][];
+        int[][] array_name = {{1,2,3,4,5}, {6,7,8,9,10}};
         ```
 
 - String
