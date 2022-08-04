@@ -13,5 +13,5 @@ permalink: /docs/java/
 * [Operator]{:.heading.flip-title}
 
 [Start Java]: start_java.md
-[Variable & Datatype]: variable_datatype.md
+[Variable & Datatype]: variable_and_datatype.md
 [Operator]: operator.md
