@@ -130,7 +130,7 @@ GalaxyS21 code = (GalaxyS21) model; //무늬만
     - `SmartPhone model = new GalaxyS21();` 라면 SmartPhone의 변수
 - 상속 관계에서 메서드 중복 → 자식 클래스 메서드 호출
 
-## Generics
+# Generics
 - 미리 사용할 타입을 명시해 형 변환 불필요
 - 객체 타입에 대한 안전성 확보
 - `ClassName<T>` `InterfaceName<T>`
