@@ -67,7 +67,7 @@ sitemap: false
         }
         ```
     - 출력
-        - `import java.util.Arrays;` `Arrays.toString(variable)` 배열을 [값, 값, 값, …] 형태로 출력
+        - `import java.util.Arrays;` `Arrays.toString(variable);` 배열을 [값, 값, 값, …] 형태로 출력
     - 복사
         - `System.arraycopy(Object a, int a_start, Object b, int b_start, int length);`
             - `a` 원본배열
@@ -83,7 +83,7 @@ sitemap: false
     - 생성
         - `array_name = new int[1차원 배열 수][1차원 배열 크기];`
         - `array_name = new int[1차원 배열 수][];`
-        - `int[][] array_name = {{1,2,3,4,5}, {6,7,8,9,10}}`
+        - `int[][] array_name = {{1,2,3,4,5}, {6,7,8,9,10}};`
 
 - String
 - Class
