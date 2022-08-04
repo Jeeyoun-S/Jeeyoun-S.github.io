@@ -41,47 +41,49 @@ sitemap: false
 ### 배열 Array
 - 같은 종류의 데이터를 저장하는 자료구조
 - 크기는 고정 → 변경 불가 → 더 큰 배열 생성 후 내용 이동
-- 선언
-    - `int[] array_name` `boolean[] array_name` `Date[] array_name`
-    - `String[] array_name` `char[] array_name` → `char`는 문자, `String`은  문자열
-- 생성
-    - `int[] array_name = {1, 2, 3, 4, 5};`
-    - `array_name = new int[] {1, 2, 3, 4, 5};`
-    - `array_name = new int[10]; #10은 자료형 길이`
-- 배열 길이 조회 `array_name.length`
-- for-each
-    ```java
-    int array_name [] = {0, 1, 2, 3, 4};
-    for (int i : array_name) {
-    		System.out.println(i);
-    }
-    ```
-- 출력
-    - `import java.util.Arrays;` `Arrays.toString(variable)` 배열을 [값, 값, 값, …] 형태로 출력
-- 복사
-    - `System.arraycopy(Object a, int a_start, Object b, int b_start, int length);`
-        - `a` 원본배열
-        - `a_start` 원본배열 복사 시작 위치
-        - `b` 복사할 배열
-        - `b_start` 복사 받을 시작 위치
-        - `length` 복사할 크기
 
-### 다차원 배열
-- 2차원 이상의 배열
-- 선언
-    - `int[][] array_name` `int array_name[][]` `int[] array_name[]`
-- 생성
-    - `array_name = new int[1차원 배열 수][1차원 배열 크기];`
-    - `array_name = new int[1차원 배열 수][];`
-    - `int[][] array_name = {{1,2,3,4,5}, {6,7,8,9,10}}`
+- **배열의 장단점**
+    - 장점
+        - 간단하고 쉽다.
+        - 접근 속도가 빠르다.
+    - 단점
+        - 크기를 변경할 수 없다.
+        - 비순차적 데이터를 추가 및 삭제하는 데 시간이 오래 걸린다.
 
-### 배열의 장단점
-- 장점
-    - 간단하고 쉽다.
-    - 접근 속도가 빠르다.
-- 단점
-    - 크기를 변경할 수 없다.
-    - 비순차적 데이터를 추가 및 삭제하는 데 시간이 오래 걸린다.
+- **일차원 배열**
+    - 선언
+        - `int[] array_name` `boolean[] array_name` `Date[] array_name`
+        - `String[] array_name` `char[] array_name` → `char`는 문자, `String`은  문자열
+    - 생성
+        - `int[] array_name = {1, 2, 3, 4, 5};`
+        - `array_name = new int[] {1, 2, 3, 4, 5};`
+        - `array_name = new int[10]; #10은 자료형 길이`
+    - 배열 길이 조회 `array_name.length`
+    - for-each
+        ```java
+        int array_name [] = {0, 1, 2, 3, 4};
+        for (int i : array_name) {
+            System.out.println(i);
+        }
+        ```
+    - 출력
+        - `import java.util.Arrays;` `Arrays.toString(variable)` 배열을 [값, 값, 값, …] 형태로 출력
+    - 복사
+        - `System.arraycopy(Object a, int a_start, Object b, int b_start, int length);`
+            - `a` 원본배열
+            - `a_start` 원본배열 복사 시작 위치
+            - `b` 복사할 배열
+            - `b_start` 복사 받을 시작 위치
+            - `length` 복사할 크기
+
+- **다차원 배열**
+    - 2차원 이상의 배열
+    - 선언
+        - `int[][] array_name` `int array_name[][]` `int[] array_name[]`
+    - 생성
+        - `array_name = new int[1차원 배열 수][1차원 배열 크기];`
+        - `array_name = new int[1차원 배열 수][];`
+        - `int[][] array_name = {{1,2,3,4,5}, {6,7,8,9,10}}`
 
 - String
 - Class
