@@ -18,7 +18,7 @@ permalink: /docs/
 ## Front-end
 * [HTML]{:.heading.flip-title} --- Hyper Text Markup Language
 * [CSS]{:.heading.flip-title} --- Cascading Style Sheets
-* [JavaScript]{:.heading.flip-title} --- 
+* [JavaScript]{:.heading.flip-title}
 
 ## Other
 * [Git]{:.heading.flip-title}
