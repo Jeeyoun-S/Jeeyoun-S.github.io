@@ -1,3 +1,12 @@
+---
+layout: page
+title: Operator
+hide_description: true
+sitemap: false
+---
+0. this unordered seed list will be replaced by toc as unordered list
+{:toc}
+
 ## 1. 단항 연산자
 
 - 증감 연산자 `++` `--`
