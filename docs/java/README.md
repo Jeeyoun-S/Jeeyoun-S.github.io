@@ -8,7 +8,7 @@ sitemap: false
 permalink: /docs/java/
 ---
 
-* [Start Java]{:.heading.flip-title} --- Let's start studying Python!
+* [Start Java]{:.heading.flip-title}
 * [Datatype & Operator]{:.heading.flip-title}
 
 [Start Java]: start_java.md
