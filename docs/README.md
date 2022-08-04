@@ -15,7 +15,7 @@ permalink: /docs/
 * [Java]{:.heading.flip-title} --- Write once, run anywhere.
 {:.related-posts.faded}
 
-## Front-end
+## Front-End
 * [HTML]{:.heading.flip-title} --- Hyper Text Markup Language
 * [CSS]{:.heading.flip-title} --- Cascading Style Sheets
 * [JavaScript]{:.heading.flip-title}
