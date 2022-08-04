@@ -11,7 +11,9 @@ permalink: /docs/java/
 * [Start Java]{:.heading.flip-title}
 * [Variable & Datatype]{:.heading.flip-title}
 * [Operator]{:.heading.flip-title}
+* [Input & Print]{:.heading.flip-title}
 
 [Start Java]: start_java.md
 [Variable & Datatype]: variable_and_datatype.md
 [Operator]: operator.md
+[Input & Print]: input_and_print.md
