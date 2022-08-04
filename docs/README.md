@@ -15,6 +15,11 @@ permalink: /docs/
 * [Java]{:.heading.flip-title} --- Write once, run anywhere.
 {:.related-posts.faded}
 
+## Front-end
+* [HTML]{:.heading.flip-title} --- Hyper Text Markup Language
+* [CSS]{:.heading.flip-title} --- Cascading Style Sheets
+* [JavaScript]{:.heading.flip-title} --- 
+
 ## Other
 * [Git]{:.heading.flip-title}
 * [CLI]{:.heading.flip-title} --- Command Line Interface
@@ -23,6 +28,11 @@ permalink: /docs/
 
 [Python]: /docs/python/
 [Java]: /docs/java/
+
+[HTML]: html.md
+[CSS]: css.md
+[JavaScript]: /docs/javascript/
+
 [Markdown]: markdown.md
 [CLI]: cli.md
 [Git]: git.md
