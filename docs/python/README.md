@@ -18,7 +18,7 @@ Python3 사용, [Python 공식 문서](https://docs.python.org/3/)
 * [Method of Datatype]{:.heading.flip-title}
 * [Object-Oriented]{:.heading.flip-title}
 * [Error & Exception]{:.heading.flip-title}
-* [Get Data from File, API]{:.heading.flip-title}
+* [Get Data]{:.heading.flip-title}
 
 [Start Python]: start_python.md
 [Datatype]: datatype.md
@@ -28,4 +28,4 @@ Python3 사용, [Python 공식 문서](https://docs.python.org/3/)
 [Method of Datatype]: method_of_datatype.md
 [Object-Oriented]: object_oriented.md
 [Error & Exception]: error_and_exception.md
-[Get Data from File, API]: get_data.md
+[Get Data]: get_data.md
