@@ -9,9 +9,9 @@ permalink: /docs/java/
 ---
 
 * [Start Java]{:.heading.flip-title}
-* [Datatype]{:.heading.flip-title}
+* [Variable & Datatype]{:.heading.flip-title}
 * [Operator]{:.heading.flip-title}
 
 [Start Java]: start_java.md
-[Datatype]: datatype.md
+[Variable & Datatype]: variable_datatype.md
 [Operator]: operator.md
