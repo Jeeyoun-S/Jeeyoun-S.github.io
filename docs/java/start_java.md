@@ -23,7 +23,7 @@ sitemap: false
 - **JRE** (Java runtime environment): JVM이 java 실행 시 필요한 것을 가지고 있다.
 - **JDK** (Java development kit): JRE와 개발에 필요한 도구를 가지고 있다.
 
-### Java 실행 방법
+### Java 실행해보기
 1. java 코드 작성 후 `.java` 파일 생성하기
 2. 명령 프롬프트에 `javac file_name.java` 실행 후 `.class` 파일 생성 확인하기
 3. `java class_name` 으로 java 코드 실행해 보기
