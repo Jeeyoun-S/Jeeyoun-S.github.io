@@ -15,7 +15,7 @@ permalink: /docs/java/
 * [Object Oriented Programming]{:.heading.flip-title}
   * [Class]{:.heading.flip-title}
   * [JVM Memory]{:.heading.flip-title}
-  * [Access Modifier]{:.heading.flip-title}
+  * [Access Modifier]: /oop/access_modifier.md
 
 [Start Java]: start_java.md
 [Variable & Datatype]: variable_and_datatype.md
