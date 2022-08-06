@@ -79,4 +79,5 @@ public class GalaxyS21 extends SmartPhone {
     - 별도로 상속 받지 않더라도 `extends Object` 가 생략돼 있다.
 
 ### 캡슐화 Encapsulation
-- 개체의 속과 행위를 하나로 묶고, 일부를 숨긴다.
+- 개체의 속성과 행위를 하나로 묶고, 일부를 숨긴다.
+- 숨긴 일부는 호출이 불가능
