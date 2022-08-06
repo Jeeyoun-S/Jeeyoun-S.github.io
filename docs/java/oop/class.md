@@ -33,12 +33,12 @@ public class JavaFileName{
 ### 변수
 ```java
 public class Hello {
-		int age;                // 인스턴스 변수
-		static int birthyear;   // 클래스 변수
+	int age;                // 인스턴스 변수
+	static int birthyear;   // 클래스 변수
 
-		void info() {
-				int birthday;       // 지역 변수 
-		}
+	void info() {
+		int birthday;   // 지역 변수 
+	}
 }
 ```
 - class variable
@@ -57,13 +57,13 @@ public class Hello {
 ```java
 public class Hello {
 	public void info(String name) {              // 메서드 선언, name은 매개변수(Parameter)
-			System.out.println("저는"+name+"입니다");
+		System.out.println("저는"+name+"입니다");
 	}
 	public static void hi() {                    // 클래스 메서드 선언
-			System.out.println("반갑습니다");
+		System.out.println("반갑습니다");
 	}
 	public int your_age() {
-			return age;
+		return age;
 	}
 }
 Hello morning = new Hello();
@@ -101,7 +101,6 @@ Hello introduce = new Hello();
 ### 파라미터가 있는 생성자
 ```java
 public class Bye {
-	
 	public Bye(String name) {
 		my_name = name;
 	}
