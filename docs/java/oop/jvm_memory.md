@@ -26,7 +26,7 @@ sitemap: false
 ### static VS non-static
 
 
-    |  | static | non-static |
+    | 분류 | static | non-static |
     | --- | --- | --- |
     | 로딩 | 클래스 로딩 시 | 객체 생성 시 |
     | 메모리 | 클래스당 한 개의 메모리 공간 할당 | 인스턴스당 메모리 별도 할당 |
