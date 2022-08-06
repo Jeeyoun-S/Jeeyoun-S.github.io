@@ -38,7 +38,7 @@ sitemap: false
         - `double` (8byte) → 기본값 `0.0`
 
 ### 참조 자료형 Reference Type
-#### Array 
+#### Array 배열
 - 같은 종류의 데이터를 저장하는 자료구조
 - 크기는 고정 → 변경 불가 → 더 큰 배열 생성 후 내용 이동
 - **배열의 장단점**
