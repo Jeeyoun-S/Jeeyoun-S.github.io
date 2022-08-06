@@ -38,88 +38,86 @@ sitemap: false
         - `double` (8byte) → 기본값 `0.0`
 
 ### 참조 자료형 Reference Type
-#### Array 배열
-- 같은 종류의 데이터를 저장하는 자료구조
-- 크기는 고정 → 변경 불가 → 더 큰 배열 생성 후 내용 이동
-- **배열의 장단점**
-    - 장점
-        - 간단하고 쉽다.
-        - 접근 속도가 빠르다.
-    - 단점
-        - 크기를 변경할 수 없다.
-        - 비순차적 데이터를 추가 및 삭제하는 데 시간이 오래 걸린다.
-- **일차원 배열**
-    - 선언
-        - `int[] array_name` `boolean[] array_name` `Date[] array_name`
-        - `String[] array_name` `char[] array_name` → `char`는 문자, `String`은  문자열
-    - 생성
-        - `int[] array_name = {1, 2, 3, 4, 5};`
-        - `array_name = new int[] {1, 2, 3, 4, 5};`
-        - `array_name = new int[10]; #10은 자료형 길이`
-    - 배열 길이 조회 `array_name.length`
-    - for-each
-        ```java
-        int array_name [] = {0, 1, 2, 3, 4};
-        for (int i : array_name) {
-            System.out.println(i);
-        }
-        ```
-    - 출력
-        - `import java.util.Arrays;` `Arrays.toString(variable);` 배열을 [값, 값, 값, …] 형태로 출력
-    - 복사
-        - `System.arraycopy(Object a, int a_start, Object b, int b_start, int length);`
-            - `a` 원본배열
-            - `a_start` 원본배열 복사 시작 위치
-            - `b` 복사할 배열
-            - `b_start` 복사 받을 시작 위치
-            - `length` 복사할 크기
-- **다차원 배열**
-    - 2차원 이상의 배열
-    - 선언
-        - `int[][] array_name` `int array_name[][]` `int[] array_name[]`
-    - 생성
-        - `array_name = new int[1차원 배열 수][1차원 배열 크기];`
-        - `array_name = new int[1차원 배열 수][];`
-        - `int[][] array_name = { {1,2,3,4,5}, {6,7,8,9,10} };`
+1. Array 배열
+    - 같은 종류의 데이터를 저장하는 자료구조
+    - 크기는 고정 → 변경 불가 → 더 큰 배열 생성 후 내용 이동
+    - **배열의 장단점**
+        - 장점
+            - 간단하고 쉽다.
+            - 접근 속도가 빠르다.
+        - 단점
+            - 크기를 변경할 수 없다.
+            - 비순차적 데이터를 추가 및 삭제하는 데 시간이 오래 걸린다.
+    - **일차원 배열**
+        - 선언
+            - `int[] array_name` `boolean[] array_name` `Date[] array_name`
+            - `String[] array_name` `char[] array_name` → `char`는 문자, `String`은  문자열
+        - 생성
+            - `int[] array_name = {1, 2, 3, 4, 5};`
+            - `array_name = new int[] {1, 2, 3, 4, 5};`
+            - `array_name = new int[10]; #10은 자료형 길이`
+        - 배열 길이 조회 `array_name.length`
+        - for-each
+            ```java
+            int array_name [] = {0, 1, 2, 3, 4};
+            for (int i : array_name) {
+                System.out.println(i);
+            }
+            ```
+        - 출력
+            - `import java.util.Arrays;` `Arrays.toString(variable);` 배열을 [값, 값, 값, …] 형태로 출력
+        - 복사
+            - `System.arraycopy(Object a, int a_start, Object b, int b_start, int length);`
+                - `a` 원본배열
+                - `a_start` 원본배열 복사 시작 위치
+                - `b` 복사할 배열
+                - `b_start` 복사 받을 시작 위치
+                - `length` 복사할 크기
+    - **다차원 배열**
+        - 2차원 이상의 배열
+        - 선언
+            - `int[][] array_name` `int array_name[][]` `int[] array_name[]`
+        - 생성
+            - `array_name = new int[1차원 배열 수][1차원 배열 크기];`
+            - `array_name = new int[1차원 배열 수][];`
+            - `int[][] array_name = { {1,2,3,4,5}, {6,7,8,9,10} };`
+2. String 문자열
+3. Class
+4. Interface
+5. Enumeration
+6. Annotations
 
-#### String 문자열
-#### Class
-#### Interface
-#### Enumeration
-#### Annotations
-
-# Type Casting
-## 자료형 크기 비교
+## Type Casting
+### 자료형 크기 비교
 - `byte` < `short` , `char` < `int`  < `long` < `float` <`double`
 
-## 형 변환
-### 묵시적 Implicit Casting
-- 크기가 작은 자료형에서 큰 자료형으로 → 데이터 손실이 없다.
-```java
-byte a = 0; int b = a;
-SmartPhone model = new SmartPhone(); Object appliance = model;
-```
-
-### 명시적 Explicit Casting
-- 크기가 큰 자료형에서 작은 자료형으로 → 데이터 손실이 있을 수 있다.
-- 형 변환 연산자 `(byte) a;`
-- **숫자 ↔ 문자열 변환**
-    - String → int `Integer.parseInt(variable)` `Integer.valueOf(variable)`
-    - int → String `Integer.toString(variable)` `String.valueOf(variable)` `variable + ""`
+### 형 변환
+1. 묵시적 Implicit Casting
+    - 크기가 작은 자료형에서 큰 자료형으로 → 데이터 손실이 없다.
     ```java
-    int a = 0;
-    byte b = (byte) a;
+    byte a = 0; int b = a;
+    SmartPhone model = new SmartPhone(); Object appliance = model;
     ```
-- **상속 관계**
-    - 상속 관계에서 변수 중복 → 참조 변수 타입에 따라
-        - `SmartPhone model = new GalaxyS21();` 이라면 SmartPhone의 변수
-    - 상속 관계에서 메서드 중복 → 자식 클래스 메서드 호출
-    ```java
-    SmartPhone model = new SmartPhone();
-    GalaxyS21 code = (GalaxyS21) model; //무늬만
-    ```
+2. 명시적 Explicit Casting
+    - 크기가 큰 자료형에서 작은 자료형으로 → 데이터 손실이 있을 수 있다.
+    - 형 변환 연산자 `(byte) a;`
+    - **숫자 ↔ 문자열 변환**
+        - String → int `Integer.parseInt(variable)` `Integer.valueOf(variable)`
+        - int → String `Integer.toString(variable)` `String.valueOf(variable)` `variable + ""`
+        ```java
+        int a = 0;
+        byte b = (byte) a;
+        ```
+    - **상속 관계**
+        - 상속 관계에서 변수 중복 → 참조 변수 타입에 따라
+            - `SmartPhone model = new GalaxyS21();` 이라면 SmartPhone의 변수
+        - 상속 관계에서 메서드 중복 → 자식 클래스 메서드 호출
+        ```java
+        SmartPhone model = new SmartPhone();
+        GalaxyS21 code = (GalaxyS21) model; //무늬만
+        ```
 
-# Generics
+## Generics
 - 미리 사용할 타입을 명시해 형 변환 불필요
 - 객체 타입에 대한 안전성 확보
 - `ClassName<T>` `InterfaceName<T>`
