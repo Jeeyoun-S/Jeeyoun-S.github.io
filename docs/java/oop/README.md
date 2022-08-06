@@ -37,10 +37,13 @@ model[0] = new SmartPhone();
 model[1] = new GalaxyS21();
 
 SmartPhone model2 = new SmartPhone();     //4
-GalaxyS21 newgalaxy = (GalaxyS21) model2;
+
+GalaxyS21 newgalaxy = (GalaxyS21) model2; //4-1
 newgalaxy.buy();                          //Error
-if (newgalaxy instanceof GalaxyS21) {
-	newgalaxy.buy();                  //확인 후 실행
+
+if (model2 instanceof GalaxyS21) {
+	GalaxyS21 newgalaxy = (GalaxyS21) model2;  //4-2
+	newgalaxy.buy();                           //확인 후 실행
 }
 ```
 1. 부모 클래스 타입으로 자식 클래스 객체 참조 가능
@@ -60,19 +63,19 @@ if (newgalaxy instanceof GalaxyS21) {
     - `GalaxyS21`에 해당 변수가 정의돼 있지 않다면 부모 변수 사용
 ```java
 public class SmartPhone {
-		String number;
-		public void buy() {
-				System.out.println("I Buy Smartphone!");
-		}
+	String number;
+	public void buy() {
+		System.out.println("I Buy Smartphone!");
+	}
 }
 
 public class GalaxyS21 extends SmartPhone {
-		String price;
-		public void sell() {
-				super(number);
-				super.buy();
-				System.out.println("I Sell GalaxyS21!");
-		}
+	String price;
+	public void sell() {
+		super(number);
+		super.buy();
+		System.out.println("I Sell GalaxyS21!");
+	}
 }
 ```
 - **Overriding** `@Override`
