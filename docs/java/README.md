@@ -24,4 +24,3 @@ permalink: /docs/java/
 [Object Oriented Programming]: /docs/java/oop/
 [Class]: /oop/class.md
 [JVM Memory]: /oop/jvm_memory.md
-[Access Modifier]: /oop/access_modifier.md
