@@ -52,7 +52,8 @@ sitemap: false
             ```
 
 ### String Type
-- Escape sequence
+- Escape sequence  
+
     | \n | \t | \r | \\ | \" | \' | \0 |
     |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
     | Enter | Tab | 캐리지 리턴 | \ | " | \' | Null |
@@ -66,7 +67,8 @@ sitemap: false
         `print(f'나는 매일 {num}번씩 양치한다')`
         
 - String Interpolation 형식
-    - **표현식**
+    - **표현식**  
+
         | 정수 | 문자 | 실수 | 8진수 | 16진수 | 년 | 월 | 일 | 요일 |
         |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
         | d | c | f | o | x | %y | %m | %d | %A |
@@ -82,7 +84,8 @@ sitemap: false
         today = datetime.datetime.now()
         print(f'{today:%y}년 {today:%m}월 {today:%d}일') #22년 07월 19일
         ```
-    - **정렬**
+    - **정렬**  
+
         |코드||
         |:---:|:---:|
         | {num:>5} | 오른쪽 정렬 |
