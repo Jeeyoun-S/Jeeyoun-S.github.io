@@ -84,10 +84,15 @@ int realage = morning.your_age();
     - 개수, 순서, 타입 다르게 지정
 
 ## 생성자
+- 인스턴스 생성 시 실행되는 함수
+- 클래스명과 생성자 이름은 동일하게 설정
+- 반환타입 부재
+- PascalCase로 작성
+
 ### 기본 생성자 default
 ```java
 public class Hello {
-	public Hello() { }  //매개변수가 없는 형태
+	//public Hello() { }  매개변수가 없는 형태
 }
 Hello introduce = new Hello();
 ```
@@ -96,6 +101,7 @@ Hello introduce = new Hello();
 ### 파라미터가 있는 생성자
 ```java
 public class Bye {
+	
 	public Bye(String name) {
 		my_name = name;
 	}
@@ -106,9 +112,9 @@ Bye goodbye = new Bye("Gildong");
 ### 생성자 Overloading
 ```java
 public class Greeting {
-	public Greeting() {}
-	public Greeting(String name) {}
-  public Greeting(String name, int age) {}
+	Greeting() {}
+	Greeting(String name) {}
+	Greeting(String name, int age) {}
 }
 
 Greeting me = new Greeting();
@@ -118,16 +124,26 @@ Greeting we = new Greeting("Gildong", 20);
 
 ### this
 - `this.variable_name`
-    
     ```java
     public class Greeting {
     	String name;
     	int age;
-      public Greeting(String name, int age) {
-    		this.name = name;
-    		this.age = age;
+        Greeting(String name, int age) {
+    		  this.name = name;
+    		  this.age = age;
     	}
     }
     ```
-- `this([인자값..])` ******************************
+- `this([인자값..])`
+    ```java
+    public class Greeting {
+    	String name;
+    	int age;
+	Greeting() {
+		this("Gildong", 20);
+	}
+        Greeting(String name, int age) {
+	}
+    }
+    ```
 - 생성자 내에서만 호출 가능, 첫 번째에 위치
