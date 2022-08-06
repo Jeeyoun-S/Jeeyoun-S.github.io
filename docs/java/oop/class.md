@@ -7,7 +7,7 @@ sitemap: false
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-### 생성
+## 클래스
 ```java
 class Hello {                                   // 클래스 생성
 	public void study() {
@@ -78,3 +78,53 @@ int realage = morning.your_age();
 - **Overloading**
     - 이름이 같고 매개변수가 다른 메소드 정의
     - 개수, 순서, 타입 다르게 지정
+
+## 생성자
+### 기본 생성자 default
+```java
+public class Hello {
+	public Hello() { }  //매개변수가 없는 형태
+}
+Hello introduce = new Hello();
+```
+
+- 클래스 내 생성자가 없으면 JVM이 자동으로 제공
+
+### 파라미터가 있는 생성자
+```java
+public class Bye {
+	public Bye(String name) {
+		my_name = name;
+	}
+}
+Bye goodbye = new Bye("Gildong");
+```
+
+### 생성자 Overloading
+```java
+public class Greeting {
+	public Greeting() {}
+	public Greeting(String name) {}
+  public Greeting(String name, int age) {}
+}
+
+Greeting me = new Greeting();
+Greeting you = new Greeting("Gildong");
+Greeting we = new Greeting("Gildong", 20);
+```
+
+### this
+- `this.variable_name`
+    
+    ```java
+    public class Greeting {
+    	String name;
+    	int age;
+      public Greeting(String name, int age) {
+    		this.name = name;
+    		this.age = age;
+    	}
+    }
+    ```
+- `this([인자값..])` ******************************
+- 생성자 내에서만 호출 가능, 첫 번째에 위치
