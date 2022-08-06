@@ -7,7 +7,7 @@ sitemap: false
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-## I. Input 입력
+## Input 입력
 ```java
 import java.util.Scanner;
 
@@ -23,7 +23,7 @@ public class Hello {
 - `next()` 공백을 기준으로 한 단어를 받아온다.
 - `hasNext()` 다음에 가져올 값이 있으면 True, 아니면 False
 
-## II. Print 출력
+## Print 출력
 ```java
 public class Hello {
 	public static void main(String[] args){
