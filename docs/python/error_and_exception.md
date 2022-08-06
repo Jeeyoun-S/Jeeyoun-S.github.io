@@ -35,23 +35,23 @@ sitemap: false
 ## 예외 처리
 ```python
 try:
-		실행할 코드A
+	실행할 코드A
 
 except (ValueError, KeyError):
-		코드A에서 ValueError 또는 KeyError가 발생하면, 실행할 코드
+	코드A에서 ValueError 또는 KeyError가 발생하면, 실행할 코드
 
 except IndexError as what:
-		코드A에서 IndexError가 발생하면, 실행할 코드
-		print(what) #list index out of range 같이 원본 에러 메세지 출력
+	코드A에서 IndexError가 발생하면, 실행할 코드
+	print(what) #list index out of range 같이 원본 에러 메세지 출력
 
 except:
-		코드A에서 ValueError, IndexError, KeyError를 제외한 에러 발생하면, 실행할 코드
+	코드A에서 ValueError, IndexError, KeyError를 제외한 에러 발생하면, 실행할 코드
 
 else:
-		코드A에서 예외가 발생하지 않으면, 실행할 코드
+	코드A에서 예외가 발생하지 않으면, 실행할 코드
 
 finally:
-		코드A에서 예외 발생 여부와 관계없이 실행할 코드
+	코드A에서 예외 발생 여부와 관계없이 실행할 코드
 ```
 
 ## 참고
