@@ -73,7 +73,7 @@ public class GalaxyS21 extends SmartPhone {
     - 예시
         - `v1.toString()` 문자열로 변경
         - `v1.equals(v2)` 두 객체의 내용이 같은지 비교
-	- `hashCode`
+        - `hashCode` 객체를 구별하는 
 - **Object Class**
     - 모든 클래스의 조상
     - 별도로 상속 받지 않더라도 `extends Object` 가 생략돼 있다.
