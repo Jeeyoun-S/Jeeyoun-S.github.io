@@ -24,6 +24,8 @@ sitemap: false
 - 참고자료 [https://d2.naver.com/helloworld/1329](https://d2.naver.com/helloworld/1329)
 
 ### static VS non-static
+
+
     |  | static | non-static |
     | --- | --- | --- |
     | 로딩 | 클래스 로딩 시 | 객체 생성 시 |
