@@ -101,10 +101,10 @@ sitemap: false
 2. 명시적 Explicit Casting
     - 크기가 큰 자료형에서 작은 자료형으로 → 데이터 손실이 있을 수 있다.
     - 형 변환 연산자 `(byte) a;`
-    ```java
-        int a = 0; byte b = (byte) a;
-        SmartPhone model = new SmartPhone(); GalaxyS21 code = (GalaxyS21) model;
-    ```
+      ```java
+      int a = 0; byte b = (byte) a;
+      SmartPhone model = new SmartPhone(); GalaxyS21 code = (GalaxyS21) model;
+      ```
     - **숫자 ↔ 문자열 변환**
         - String → int `Integer.parseInt(variable)` `Integer.valueOf(variable)`
         - int → String `Integer.toString(variable)` `String.valueOf(variable)` `variable + ""`
