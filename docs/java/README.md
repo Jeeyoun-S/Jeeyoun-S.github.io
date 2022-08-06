@@ -12,7 +12,7 @@ permalink: /docs/java/
 * [Variable & Datatype]{:.heading.flip-title}
 * [Operator]{:.heading.flip-title}
 * [Input & Print]{:.heading.flip-title}
-* [Object Oriented]{:.heading.flip-title}
+* [Object Oriented Programming]{:.heading.flip-title}
   * [Class]{:.heading.flip-title}
 
 [Start Java]: start_java.md
@@ -20,4 +20,4 @@ permalink: /docs/java/
 [Operator]: operator.md
 [Input & Print]: input_and_print.md
 [Object Oriented]: /docs/java/oop/
-[Class]: ./opp/class.md
+[Class]: /docs/java/opp/class.md
