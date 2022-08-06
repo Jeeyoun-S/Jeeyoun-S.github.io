@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2022.07 Monthly Diary
+title: SSAFY 8th For 1 month
 description: >
   SSAFY 8기 Start Camp, Python 변수부터 객체 지향까지 공부
 sitemap: false
