@@ -20,38 +20,44 @@ permalink: /docs/java/oop/
 ### 다형성 Polymorphism
 ```java
 public class SmartPhone {
-		int releasedate;
-		String codenumber;
+	int releasedate;
+	String codenumber;
 }
 public class GalaxyS21 extends SmartPhone {
-		void buy(SmartPhone sp) {
-				when = sp.releasedate;
-				model = sp.codenumber;
-		}
+	void buy(SmartPhone sp) {
+		when = sp.releasedate;
+		model = sp.codenumber;
+	}
 }
 
-SmartPhone model = new GalaxyS21();       //1. 부모 클래스 타입으로 자식 클래스 객체 참조 가능
+SmartPhone model = new GalaxyS21();       //1
 
-SmartPhone[] model = new SmartPhone[2];   //2. 부모 클래스를 자식 클래스의 파라미터로 전달
+SmartPhone[] model = new SmartPhone[2];   //2
 model[0] = new SmartPhone();
-model[1] = new Galaxy();
+model[1] = new GalaxyS21();
+
+SmartPhone model2 = new SmartPhone();     //4
+GalaxyS21 newgalaxy = (GalaxyS21) model2;
+newgalaxy.buy();                          //Error
+if (newgalaxy instanceof GalaxyS21) {
+	newgalaxy.buy();                  //확인 후 실행
+}
 ```
 1. 부모 클래스 타입으로 자식 클래스 객체 참조 가능
 2. 부모 클래스를 자식 클래스의 파라미터로 전달 가능
 3. 부모 클래스를 파라미터로 전달하면 자식 클래스 파라미터로 전달 가능
     - 객체 타입에 따른 메서드 불필요
     - 파라미터가 Object이면 모든 객체 처리 가능
-4. 참조 객체에 따라 메모리에 있지만, 사용 불가능한 내용 
-
-    - 상속 관계에서 변수 중복 → 참조 변수 타입에 따라
-        - `SmartPhone model = new GalaxyS21();` 라면 SmartPhone의 변수
-        - `GalaxyS21`에 해당 변수가 정의돼 있지 않다면 부모 변수 사용
-    - 상속 관계에서 메서드 중복 → 자식 클래스 메서드 호출
+4. 참조 객체에 따라 메모리에 있지만, 사용 불가능한 내용 존재
 
 ### 상속 Inheritance
 - 확장성, 재사용성, 다중 상속 불가
 - 부모 클래스의 생성자와 초기화 블록은 상속되지 않는다.
 - `super()` 로 부모 클래스 변수 및 메서드 호출
+- 상속 관계에서 메서드 중복 → 자식 클래스 메서드 호출
+- 상속 관계에서 변수 중복 → 참조 변수 타입에 따라
+    - `SmartPhone model = new GalaxyS21();` 라면 SmartPhone의 변수
+    - `GalaxyS21`에 해당 변수가 정의돼 있지 않다면 부모 변수 사용
 ```java
 public class SmartPhone {
 		String number;
