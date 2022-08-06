@@ -66,9 +66,6 @@ if (model2 instanceof GalaxyS21) {
     - `GalaxyS21`에 해당 변수가 정의돼 있지 않다면 부모 변수 사용
 
 ### 상속 Inheritance
-- 확장성, 재사용성, 다중 상속 불가
-- 부모 클래스의 생성자와 초기화 블록은 상속되지 않는다.
-- `super()` 로 부모 클래스 변수 및 메서드 호출  
 ```java
 public class SmartPhone {
 	String number;
@@ -76,7 +73,6 @@ public class SmartPhone {
 		System.out.println("I Buy Smartphone!");
 	}
 }
-
 public class GalaxyS21 extends SmartPhone {
 	String price;
 	public void sell() {
@@ -86,6 +82,9 @@ public class GalaxyS21 extends SmartPhone {
 	}
 }
 ```
+- 확장성, 재사용성, 다중 상속 불가
+- 부모 클래스의 생성자와 초기화 블록은 상속되지 않는다.
+- `super()` 로 부모 클래스 변수 및 메서드 호출  
 - **Overriding** `@Override`
     - 상위 클래스에 선언된 메서드를 자식 클래스에서 재정의
     - 메서드 이름, 반환형, 매개변수, 타입, 개수 , 순서 동일하게 재정의
