@@ -52,15 +52,16 @@ if (model2 instanceof GalaxyS21) {
     - 객체 타입에 따른 메서드 불필요
     - 파라미터가 Object이면 모든 객체 처리 가능
 4. 참조 객체에 따라 메모리에 있지만, 사용 불가능한 내용 존재
+5. 상속 관계에서 메서드 중복 → 자식 클래스 메서드 호출
+    - 동적 바인딩 → 가장 최적화된 메서드 동작
+7. 상속 관계에서 변수 중복 → 참조 변수 타입에 따라
+    - `SmartPhone model = new GalaxyS21();` 라면 SmartPhone의 변수
+    - `GalaxyS21`에 해당 변수가 정의돼 있지 않다면 부모 변수 사용
 
 ### 상속 Inheritance
 - 확장성, 재사용성, 다중 상속 불가
 - 부모 클래스의 생성자와 초기화 블록은 상속되지 않는다.
 - `super()` 로 부모 클래스 변수 및 메서드 호출
-- 상속 관계에서 메서드 중복 → 자식 클래스 메서드 호출
-- 상속 관계에서 변수 중복 → 참조 변수 타입에 따라
-    - `SmartPhone model = new GalaxyS21();` 라면 SmartPhone의 변수
-    - `GalaxyS21`에 해당 변수가 정의돼 있지 않다면 부모 변수 사용
 ```java
 public class SmartPhone {
 	String number;
