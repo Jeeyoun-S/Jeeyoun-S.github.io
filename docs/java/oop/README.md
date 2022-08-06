@@ -81,5 +81,4 @@ public class GalaxyS21 extends SmartPhone {
 ### 캡슐화 Encapsulation
 - 개체의 속성과 행위를 하나로 묶고, 일부를 숨긴다.
 - 숨긴 일부는 호출이 불가능
-- [Access Modifier]
-[Access Modifier]: access_modifier.md
+- [Access Modifier](access_modifier.md)
