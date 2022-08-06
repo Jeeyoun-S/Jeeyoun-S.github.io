@@ -20,4 +20,4 @@ permalink: /docs/java/
 [Operator]: operator.md
 [Input & Print]: input_and_print.md
 [Object Oriented]: /docs/java/oop/
-[Class]: /opp/class.md
+[Class]: /docs/java/opp/class.md
