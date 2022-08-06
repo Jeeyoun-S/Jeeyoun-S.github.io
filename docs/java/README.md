@@ -22,6 +22,6 @@ permalink: /docs/java/
 [Operator]: operator.md
 [Input & Print]: input_and_print.md
 [Object Oriented Programming]: /docs/java/oop/
-[Class]: /docs/java/oop/class.md
-[JVM Memory]: /docs/java/oop/jvm_memory.md
-[Access Modifier]: /docs/java/oop/access_modifier.md
+[Class]: ./oop/class.md
+[JVM Memory]: ./oop/jvm_memory.md
+[Access Modifier]: ./oop/access_modifier.md
