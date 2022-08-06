@@ -16,6 +16,7 @@ permalink: /docs/java/oop/
 
 ## 4가지 특징
 ### 추상화 Abstraction
+- 공통된 특징을 하나로 묶어 정의하는 것
 - [Abstract Class](abstract_class.md)
 
 ### 캡슐화 Encapsulation
