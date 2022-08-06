@@ -19,5 +19,5 @@ permalink: /docs/java/
 [Variable & Datatype]: variable_and_datatype.md
 [Operator]: operator.md
 [Input & Print]: input_and_print.md
-[Object Oriented]: /docs/java/oop/
+[Object Oriented Programming]: /docs/java/oop/
 [Class]: /docs/java/opp/class.md
