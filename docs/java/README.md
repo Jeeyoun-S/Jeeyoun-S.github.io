@@ -13,8 +13,8 @@ permalink: /docs/java/
 * [Operator]{:.heading.flip-title}
 * [Input & Print]{:.heading.flip-title}
 * [Object Oriented Programming]{:.heading.flip-title}
-  * [Class]{:.heading.flip-title}
-  * [JVM Memory]{:.heading.flip-title}
+  * [Class](/oop/class.md)
+  * [JVM Memory](/oop/jvm_memory.md)
   * [Access Modifier](/oop/access_modifier.md)
 
 [Start Java]: start_java.md
@@ -22,5 +22,3 @@ permalink: /docs/java/
 [Operator]: operator.md
 [Input & Print]: input_and_print.md
 [Object Oriented Programming]: /docs/java/oop/
-[Class]: /oop/class.md
-[JVM Memory]: /oop/jvm_memory.md
