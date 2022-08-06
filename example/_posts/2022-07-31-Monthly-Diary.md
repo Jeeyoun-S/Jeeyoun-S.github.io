@@ -7,8 +7,8 @@ sitemap: false
 hide_last_modified: true
 ---
 
-SSAFY에 합격하고, 입과하고, 매일 새로운 일상을 시작해 바빴던 2022년 8월 회고록.
-
+SSAFY에 합격하고, 매일 새로운 일상을 시작해 바빴던 2022년 7월 회고록.
+입과 후에도 SSAFYcial 합격, 분반 변경 등 많은 일이 있었다.
 
 ## I. Week
 #### Day 01 ~ 05
