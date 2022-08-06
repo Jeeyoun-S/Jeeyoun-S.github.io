@@ -16,6 +16,12 @@ permalink: /docs/java/oop/
 
 ## 4가지 특징
 ### 추상화 Abstraction
+- [Abstract Class](abstract_class.md)
+
+### 캡슐화 Encapsulation
+- 개체의 속성과 행위를 하나로 묶고, 일부를 숨긴다.
+- 숨긴 일부는 호출이 불가능
+- [Access Modifier](access_modifier.md)
 
 ### 다형성 Polymorphism
 ```java
@@ -90,8 +96,3 @@ public class GalaxyS21 extends SmartPhone {
 - **Object Class**
     - 모든 클래스의 조상
     - 별도로 상속 받지 않더라도 `extends Object` 가 생략돼 있다.
-
-### 캡슐화 Encapsulation
-- 개체의 속성과 행위를 하나로 묶고, 일부를 숨긴다.
-- 숨긴 일부는 호출이 불가능
-- [Access Modifier](access_modifier.md)
