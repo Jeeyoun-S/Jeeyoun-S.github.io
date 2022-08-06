@@ -12,11 +12,11 @@ permalink: /docs/java/
 * [Variable & Datatype]{:.heading.flip-title}
 * [Operator]{:.heading.flip-title}
 * [Input & Print]{:.heading.flip-title}
-* Object Oriented
-  * [Basic]{:.heading.flip-title}
+* [Object Oriented]{:.heading.flip-title}
+  * 
 
 [Start Java]: start_java.md
 [Variable & Datatype]: variable_and_datatype.md
 [Operator]: operator.md
 [Input & Print]: input_and_print.md
-[Basic]: oop_basic.md
+[Basic]: /oop/
