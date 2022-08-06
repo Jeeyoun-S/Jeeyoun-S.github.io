@@ -4,14 +4,18 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
+# relative_permalinks: true
+# Format of the permalinks
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "page:num"
 
 # Setup
 title:            Hyde
 tagline:          'A Jekyll theme'
 description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:              https://jeeyoun-s.github.io/
-baseurl:          /
+baseurl:          ''='
 
 author:
   name:           'Mark Otto'
