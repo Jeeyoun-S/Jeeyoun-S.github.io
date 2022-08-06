@@ -68,7 +68,7 @@ if (model2 instanceof GalaxyS21) {
 ### 상속 Inheritance
 - 확장성, 재사용성, 다중 상속 불가
 - 부모 클래스의 생성자와 초기화 블록은 상속되지 않는다.
-- `super()` 로 부모 클래스 변수 및 메서드 호출
+- `super()` 로 부모 클래스 변수 및 메서드 호출  
 ```java
 public class SmartPhone {
 	String number;
