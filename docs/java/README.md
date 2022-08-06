@@ -13,10 +13,11 @@ permalink: /docs/java/
 * [Operator]{:.heading.flip-title}
 * [Input & Print]{:.heading.flip-title}
 * [Object Oriented]{:.heading.flip-title}
-  * 
+  * [Class]{:.heading.flip-title}
 
 [Start Java]: start_java.md
 [Variable & Datatype]: variable_and_datatype.md
 [Operator]: operator.md
 [Input & Print]: input_and_print.md
 [Object Oriented]: /docs/java/oop/
+[Class]: /opp/class.md
