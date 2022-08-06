@@ -6,7 +6,11 @@ description: >
 sitemap: false
 hide_last_modified: true
 ---
-# 2022.07 Monthly Diary
+
+Hydejack offers a few additional features to markup your markdown.
+Don't worry, these are merely CSS classes added with kramdown's `{:...}` syntax,
+so that your content remains compatible with other Jekyll themes.
+
 ## I. Week :blush:
 #### Day 01 ~ 05
 SSAFY 합격 후 사전학습 시작!  
