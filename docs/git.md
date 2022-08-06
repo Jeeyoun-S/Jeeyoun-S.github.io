@@ -6,11 +6,10 @@ description: >
 hide_description: true
 sitemap: false
 ---
-
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-### GIT
 
+### Git
 - **Git이란?** 분산 버전 관리 프로그램 / 협업툴
 - **버전 관리?** 수정되는 버전을 전부 저장하는 것이 아니라 이전 변경사항만 저장
 - **분산 VS 중앙집중식**
@@ -21,7 +20,6 @@ sitemap: false
     - *GitHub* - 공개적 / 전세계에 있는 사람들에게 나를 표현 가능, 포트폴리오
     
 ### Commit
-
 특정 버전으로 남긴다 = “커밋(Commit)한다”  
 커밋(Commit)은 3가지 영역을 바탕으로 동작!
 
@@ -40,8 +38,7 @@ sitemap: false
     - `git init` 명령어로 로컬 저장소 생성  
     - .git 디렉토리에 버전 관리에 필요한 모든 것이 들어있다.  
     
-### GIT 기초
-
+### Git 기초
 - **자신의 GitHub 계정과 연결**
     - `git config --global user.email "you@example.com"`
         `git config --global user.name "Your Name"`
@@ -77,7 +74,6 @@ sitemap: false
     - `git pull` GitHub에서의 변경사항을 Local로 가져오는 것
 
 ### .gitignore과 .gitkeep
-
 - **.gitignore**
     - git할 때 제외하고 싶은 폴더 및 파일명을 작성하는 파일
     - `file_name.txt` 해당 file 제외
