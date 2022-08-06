@@ -16,7 +16,8 @@ permalink: /docs/java/
   * [Class](/oop/class.md)
   * [JVM Memory](/oop/jvm_memory.md)
   * [Access Modifier](/oop/access_modifier.md)
-
+  * [Abstract Class](/oop/abstract_class.md)
+  
 [Start Java]: start_java.md
 [Variable & Datatype]: variable_and_datatype.md
 [Operator]: operator.md
