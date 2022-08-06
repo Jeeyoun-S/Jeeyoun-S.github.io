@@ -8,6 +8,10 @@ sitemap: false
 {:toc}
 
 ## 클래스
+- 변수와 메소드로 이뤄진 사용자 정의 자료형
+- 객체(인스턴스)를 생성하는 틀
+
+### 생성
 ```java
 class Hello {                                   // 클래스 생성
 	public void study() {
@@ -75,7 +79,7 @@ int realage = morning.your_age();
     - 활용제한자 static, final, abstract, synchronized
 - Return type
     - 선언 시 하나만 지정 가능, 없다면 void
-- **Overloading**
+- **Method Overloading**
     - 이름이 같고 매개변수가 다른 메소드 정의
     - 개수, 순서, 타입 다르게 지정
 
@@ -87,7 +91,6 @@ public class Hello {
 }
 Hello introduce = new Hello();
 ```
-
 - 클래스 내 생성자가 없으면 JVM이 자동으로 제공
 
 ### 파라미터가 있는 생성자
