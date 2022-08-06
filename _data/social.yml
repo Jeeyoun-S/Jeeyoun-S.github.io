@@ -206,3 +206,6 @@ keybase:
 download:
   name: Download
   icon: icon-box-add
+tistory:
+  name: Tistory
+  icon: icon-box-add
