@@ -20,7 +20,7 @@ sitemap: false
 - `abstract` 추상 메서드, 클래스 작성 *(추상클래스 abstract class)*
     ```java
     public abstract class Smartphone {
-    		public abstract void WatchOut();
+    	public abstract void WatchOut();
     }
     ```
     - 상속 전용
@@ -38,14 +38,14 @@ sitemap: false
 ### 접근자, 설정자
 ```java
 public class Hello {
-		private String name;
+	private String name;
 		
-		public String getter() {
-				return name;
-		}
-		public void setter(String new_name) {
-				this.name = new_name;
-		}
+	public String getter() {
+		return name;
+	}
+	public void setter(String new_name) {
+		this.name = new_name;
+	}
 }
 ```
 - 접근할 수 없는 변수에 접근하기 위한 메서드
@@ -53,11 +53,11 @@ public class Hello {
 ### Singleton Pattern
 ```java
 public class Sneakers {
-		private static Sneakers shoes = new Sneaker();
-		private Sneakers() {}
-		public static Sneakers getSneakers() {
-				return shoes;
-		}
+	private static Sneakers shoes = new Sneaker();
+	private Sneakers() {}
+	public static Sneakers getSneakers() {
+		return shoes;
+	}
 }
 ```
 - 객체의 인스턴스가 1개, 실제로 생성되는 객체가 1개
