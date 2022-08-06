@@ -13,7 +13,7 @@ sitemap: false
 - **프로그램** : 컴퓨터에서 작업을 수행하는 명령어의 모음
 - **운영체제** : 시스템 소프트웨어, 하드웨어 관리, 시스템 서비스 제공
 - **Bit** : 0과 1을 표현하는 2진수 한 자리
-- **Byte** : 8Bit = 1Byte, 1Byte는 2^8^가지의 정보 표현 가능
+- **Byte** : 8Bit = 1Byte, 1Byte는 2<sup>8</sup>가지의 정보 표현 가능
 
 ### JVM (Java virtual machine)
 - Java Byte Code를 실행할 수 있는 주체
