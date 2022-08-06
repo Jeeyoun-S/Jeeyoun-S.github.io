@@ -9,4 +9,8 @@ sitemap: false
 
 ## 정의
 ```java
-``
+public class Book {
+  public abstract void read(); 
+}
+```
+익명 클래스 문법
