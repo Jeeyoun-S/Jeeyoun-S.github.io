@@ -9,7 +9,7 @@ sitemap: false
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-# Variable
+## Variable
 - 대소문자 구분, 공백 불가, 숫자로 시작 불가
 - `$`와 `_`외의 특수문자 사용 불가
 - 합성어는 camelCase 활용
@@ -23,8 +23,8 @@ sitemap: false
     - 초기화 `int name = 'gildong';`
 - `"` 은 문자열, `'` 은 문자를 감쌀 때 사용
 
-# Datatype
-## 기본 자료형 Primitive Type
+## Datatype
+### 기본 자료형 Primitive Type
 - 논리형 `boolean` → 기본값 `false`
 - 문자형 `char` → 기본값 `'\u0000'`
 - 숫자형
@@ -37,8 +37,8 @@ sitemap: false
         - `float` (4byte) → 기본값 `0.0f`
         - `double` (8byte) → 기본값 `0.0`
 
-## 참조 자료형 Reference Type
-### Array 
+### 참조 자료형 Reference Type
+#### Array 
 - 같은 종류의 데이터를 저장하는 자료구조
 - 크기는 고정 → 변경 불가 → 더 큰 배열 생성 후 내용 이동
 - **배열의 장단점**
@@ -82,11 +82,11 @@ sitemap: false
         - `array_name = new int[1차원 배열 수][];`
         - `int[][] array_name = { {1,2,3,4,5}, {6,7,8,9,10} };`
 
-### String 문자열
-### Class
-### Interface
-### Enumeration
-### Annotations
+#### String 문자열
+#### Class
+#### Interface
+#### Enumeration
+#### Annotations
 
 # Type Casting
 ## 자료형 크기 비교
