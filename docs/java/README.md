@@ -19,4 +19,4 @@ permalink: /docs/java/
 [Variable & Datatype]: variable_and_datatype.md
 [Operator]: operator.md
 [Input & Print]: input_and_print.md
-[Basic]: /oop/
+[Basic]: /docs/java/oop/
