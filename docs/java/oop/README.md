@@ -38,7 +38,7 @@ model[1] = new Galaxy();
 ```
 1. 상속 관계에 있을 때 부모 클래스 타입으로 자식 클래스 객체 참조 가능
 2. 부모 클래스를 자식 클래스의 파라미터로 전달
-- 참조 변수에 따른 연결
+    - 참조 변수에 따른 연결
     - 상속 관계에서 변수 중복 → 참조 변수 타입에 따라
         - `SmartPhone model = new GalaxyS21();` 라면 SmartPhone의 변수
         - `GalaxyS21`에 해당 변수가 정의돼 있지 않다면 부모 변수 사용
@@ -73,7 +73,7 @@ public class GalaxyS21 extends SmartPhone {
     - 예시
         - `v1.toString()` 문자열로 변경
         - `v1.equals(v2)` 두 객체의 내용이 같은지 비교
-        - `hashCode`   ******************************
+	- `hashCode`
 - **Object Class**
     - 모든 클래스의 조상
     - 별도로 상속 받지 않더라도 `extends Object` 가 생략돼 있다.
