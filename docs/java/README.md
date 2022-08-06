@@ -14,6 +14,8 @@ permalink: /docs/java/
 * [Input & Print]{:.heading.flip-title}
 * [Object Oriented Programming]{:.heading.flip-title}
   * [Class]{:.heading.flip-title}
+  * [JVM Memory]{:.heading.flip-title}
+  * [Access Modifier]{:.heading.flip-title}
 
 [Start Java]: start_java.md
 [Variable & Datatype]: variable_and_datatype.md
@@ -21,3 +23,5 @@ permalink: /docs/java/
 [Input & Print]: input_and_print.md
 [Object Oriented Programming]: /docs/java/oop/
 [Class]: /docs/java/oop/class.md
+[JVM Memory]: /docs/java/oop/jvm_memory.md
+[Access Modifier]: /docs/java/oop/access_modifier.md
