@@ -7,11 +7,10 @@ sitemap: false
 hide_last_modified: true
 ---
 
-Hydejack offers a few additional features to markup your markdown.
-Don't worry, these are merely CSS classes added with kramdown's `{:...}` syntax,
-so that your content remains compatible with other Jekyll themes.
+SSAFY에 합격하고, 입과하고, 매일 새로운 일상을 시작해 바빴던 2022년 8월 회고록.
 
-## I. Week :blush:
+
+## I. Week
 #### Day 01 ~ 05
 SSAFY 합격 후 사전학습 시작!  
 Java비전공반을 지원한 상태였지만, Java를 하나도 모르기에 떨어질 것을 대비해 Python 공부도 병행했다. Python은 한 번 더 복습한다고 생각하고, 술술 읽으면서 빠르게 공부했다. Java는 개념을 익히는 것은 어렵지 않았으나, Java로 Baekjoon OJ 문제를 푸려니 힘들었다. Python으로 풀면 5분도 안 걸리는 걸, 1시간 동안 풀었다.  
