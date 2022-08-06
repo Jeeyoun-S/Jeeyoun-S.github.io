@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Basic OOP
+title: Object Oriented Programming
 hide_description: true
 sitemap: false
 ---
