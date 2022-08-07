@@ -66,7 +66,7 @@ sitemap: false
     | --- | --- | --- | --- | --- | --- | --- |
     | space | < | > | & | “ | © | ® |
 2. Semantic tag
-    
+        
     | Tag | 기능 |
     | --- | --- |
     | header | 문서 전체나 섹션이 헤더 |
@@ -76,6 +76,7 @@ sitemap: false
     | article | 독립적으로 구분되는 영역 |
     | footer | 문서 전체나 섹션이 푸터 |
     | h1 ~ h6 | 6단계 제목 |
+    
     - 의미론적 요소를 담은 Tag
     - 코드의 가독성 향상, 쉬운 유지보수
 3. Text content
