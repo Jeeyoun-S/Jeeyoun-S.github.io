@@ -142,10 +142,10 @@ sitemap: false
         | form | 문서 구획 (정보 제출을 위한 대화형 컨트롤 포함) |
         | button | 클릭할 수 있는 버튼 |
         | input | 사용자의 데이터를 받을 수 있는 대화형 컨트롤 |
-        | lable | 사용자 인터페이스 항목의 설명 |
+        | label | 사용자 인터페이스 항목의 설명 |
         | select | 옵션 메뉴를 제공하는 컨트롤 |
         | option | 항목 |
-        | textarea | 멀티라인 일반 텍스트 편집 컨트롤 |
+        | textarea | 멀티라인 일반 텍스트 편집 컨트롤 `cols` `rows` |
         | fieldset | 웹 양식의 여러 컨트롤과 레이블을 묶을 때 사용 |
         | legend | fieldset 콘텐츠의 설명을 나타낸다. |
     - `input`
@@ -154,7 +154,7 @@ sitemap: false
         | --- | --- |
         | autofocus | 폼의 요소 중에서 해당 요소에 마우스 커서를 표시 |
         | placeholder | 입력란에 힌트 내용 표시 |
-        | readonly | 읽기 전용으로 지정 |
+        | readonly | 읽기 전용으로 지정, 값 입력 불가 |
         | disabled |  |
         | required | 서버 전송 전 필수 입력 항목 체크 |
         | min, max, step | 최소값, 최댓값, 일정 간격 지정 |
@@ -162,6 +162,20 @@ sitemap: false
         | minlength, maxlength | 텍스트의 최대, 최소 길이 지정 |
         | height, width | image의 너비와 높이 |
         | multiple | email이나 file일 때 두 개 이상의 값 입력 |
+    - `input type`
+        
+        | 속성값 | 기능 |
+        | --- | --- |
+        | text | 텍스트를 입력 받는다 |
+        | password | 비밀번호 입력, 입력된 값 안 보이게 설정 |
+        | number | 숫자 입력 |
+        | email | 이메일 입력 |
+        | hidden | 입력 창 안 보이게 |
+        | file | 파일 가져오기 |
+        | submit | 제출 버튼 |
+        | reset | 초기화 버튼 |
+        | radio | 단일 선택 항목 |
+        | checkbox | 복수 선택 항목 |
 
 ## 참고자료
 - [Mozilla](https://developer.mozilla.org/ko/) 키워드 + mdn으로 검색
