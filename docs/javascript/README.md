@@ -14,6 +14,7 @@ ES6+
 * [Object]{:.heading.flip-title}
 * [JSON]{:.heading.flip-title}
 * [Function]{:.heading.flip-title}
+* [DOM]{:.heading.flip-title}
 * [Event]{:.heading.flip-title}
 * [Web Storage]{:.heading.flip-title}
 * [Ajax]{:.heading.flip-title}
@@ -22,6 +23,7 @@ ES6+
 [Object]: object.md
 [JSON]: json.md
 [Function]: function.md
+[DOM]: dom.md
 [Event]: event.md
 [Web Storage]: web_storage.md
 [Ajax]: ajax.md
