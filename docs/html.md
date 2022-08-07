@@ -115,7 +115,7 @@ sitemap: false
     
     | Tag | 기능 |
     | --- | --- |
-    | table | 표 border |
+    | table | 표 `border` |
     | caption | 표의 설명 또는 제목 |
     | thead | 열의 머리글인 행의 집합 |
     | tbody | 여러 행을 묶어 표 본문 구성 |
