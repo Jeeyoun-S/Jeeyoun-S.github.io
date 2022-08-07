@@ -9,11 +9,9 @@ sitemap: false
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-## X. Web Storage
+### session Storage
 
-### 1. session Storage
-
-### 2. local Storage
+### local Storage
 
 ```html
 <input id="phone-number" placeholder="전화번호를 입력하세요">
