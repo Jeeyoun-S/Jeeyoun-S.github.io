@@ -31,7 +31,6 @@ sitemap: false
         
 - 문서 조작 방식
     
-    
     ```jsx
     //BEFORE
     <main id="modify">
