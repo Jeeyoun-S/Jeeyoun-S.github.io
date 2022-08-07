@@ -144,7 +144,7 @@ sitemap: false
 | font-style | 스타일 `normal` `italic`  |
 | font-variant | 소문자를 작은 대문자로 변형 `small-caps` |
 | font-weight | 굵기 `lighter` `normal` `bold` `bolder` |
-| font | font 속성 한 번에 지정 `font:(font-weight font-style font-variant) (font-size) (font-family)` |
+| font | font 속성 한 번에 지정 `font:(weight style variant) (size) (family)` |
 
 ### text
 
