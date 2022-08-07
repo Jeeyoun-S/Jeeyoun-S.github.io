@@ -16,15 +16,19 @@ sitemap: false
   - Hyper Text : 참조로 한 문서에서 다른 문서로 접근할 수 있는 텍스트
   - Markup Language : 문서, 데이터의 구조를 명시하는 언어
 - 확장자 `.html` `.htm`
-- 태그는 대소문자 구분 없고, `Enter` `Spacebar` `Tab` 적용되지 않는다.
-   - `Spacebar` 는 최대 1개 적용
+- 태그는 대소문자 구분하지 않는다.
+- `Spacebar` 는 최대 1개 적용, `Enter` `Tab` 적용되지 않는다.
 
 ### DOM Tree
 - Document Object Model
     ```html
     <html>
-    	<head><title></title></head>
-    	<body><h1></h1><body>
+    	<head>
+        <title></title>
+      </head>
+    	<body>
+        <h1></h1>
+      <body>
     </html>
     ```
 - 참고자료 [mdn web docs](https://developer.mozilla.org/ko/docs/Web/API/Document_Object_Model/Introduction)
@@ -37,7 +41,7 @@ sitemap: false
     - 속성 `href`, 속성값 `"https://www.naver.com/"`
         - 공통 속성 `id` `class`
         - 사용자 정의 속성도 존재
-    - Kebab case 사용 `background-color`
+    - kebab-case 사용 `background-color`
 2. 주석 `<!--explanation-->`
     - 개발자 창에서는 보인다 → 사적인 대화 남기지 않는다
 3. 기본 구조 
