@@ -88,13 +88,13 @@ sitemap: false
     | p | 문단 |
     | li | list item |
     | ul | unordered list |
-    | ol | ordered list type start |
+    | ol | ordered list `type` `start` |
     | div | 구문 콘텐츠를 위한 block container |
 4. Inline text semantics
     
     | Tag | 기능 |
     | --- | --- |
-    | a | 하이퍼링크 href target  |
+    | a | 하이퍼링크 `href` `target`  |
     | b, strong | 굵은 글씨, strong은 중대 및 긴급한 콘텐츠 |
     | br | 줄바꿈 |
     | i, em | 기울기, em 특정 문자열 강조 |
@@ -108,7 +108,7 @@ sitemap: false
     | Tag | 기능 |
     | --- | --- |
     | audio | 소리 콘텐츠 |
-    | img | 이미지 삽입 src title alt |
+    | img | 이미지 삽입 `src` `title` `alt` |
     | video | 미디어 플레이어 삽입 |
 6. Table content
     
@@ -121,7 +121,7 @@ sitemap: false
     | tfoot | 열을 요약하는 행의 집합 |
     | th | 머리글 |
     | tr | 행 |
-    | td | 데이터(열) rowspan colspan |
+    | td | 데이터(열) `rowspan` `colspan` |
     | col | 열 |
     | colgroup | 열을 묶는 그룹 정의 |
 - Forms
