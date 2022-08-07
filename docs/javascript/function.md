@@ -8,6 +8,7 @@ sitemap: false
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
+
 - 객체로 값처럼 사용 가능
 - 변수에 대입, 매개변수로 전달 가능
 - 배열의 요소, 객체의 프로퍼티로 설정 가능
@@ -23,7 +24,7 @@ sitemap: false
     //호이스팅O, func() 호출 가능
     func();
     function func() {
-    		console.log("Hello")
+    	console.log("Hello")
     }
     ```
     
@@ -36,7 +37,7 @@ sitemap: false
     //호이스팅X, func() 호출 불가능
     func();
     let func = function () {
-    		console.log("Hello")
+    	console.log("Hello")
     }
     ```
     
@@ -50,14 +51,14 @@ sitemap: false
     ```jsx
     //함수 내부 프로퍼티 arguments 이용
     function func() {
-    		console.log(arguments)
+    	console.log(arguments)
     }
     func(1, 10, 100) //1, 10, 100
     ```
     
     ```jsx
     function func(num) {
-    		console.log(num)
+    	console.log(num)
     }
     func()            //undefined
     func(1, 10, 100)  //1
@@ -67,7 +68,7 @@ sitemap: false
 
 ```jsx
 var func_name = () => {
-		console.log("화살표 함수");
+	console.log("화살표 함수");
 }
 func_name();
 ```
