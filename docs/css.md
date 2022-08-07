@@ -112,7 +112,8 @@ sitemap: false
 
 ### 우선 순위
 - 마지막 규칙, 구체적인 규칙
-- `!important` 우선 적용하나 사용 지양
+- important > inline style > id > class > tag
+- `!important` 사용 지양
 
 ### 상속 Inheritance
 - 부모 요소의 스타일이 자식에 적용될지 모른다.
@@ -143,20 +144,19 @@ sitemap: false
 | font-style | 스타일 `normal` `italic`  |
 | font-variant | 소문자를 작은 대문자로 변형 `small-caps` |
 | font-weight | 굵기 `lighter` `normal` `bold` `bolder` |
-| font | font 속성 한 번에 지정
-font:(font-weight font-style font-variant) (font-size) (font-family) |
+| font | font 속성 한 번에 지정 `font:(font-weight font-style font-variant) (font-size) (font-family)` |
 
 ### text
 
 |  | 기능 |
 | --- | --- |
-| text-align | 수평 정렬 center right left justify |
-| text-decoration | 장식 line-through underline none overline |
+| text-align | 수평 정렬 `center` `right` `left` `justify` |
+| text-decoration | 장식 `line-through` `underline` `none` `overline` |
 | text-indent | 들여쓰기 |
-| text-transform | 대소문자 변경 uppercase capitalize lowercase |
-| text-shadow | 그림자 text-shadow: x y blur-radius color |
-| white-space | element 내 공백 지정 pre pre-wrap pre-line nowrap |
-| vertical-align | 수직 정렬 top middle bottom |
+| text-transform | 대소문자 변경 `uppercase` `capitalize` `lowercase` |
+| text-shadow | 그림자 `text-shadow: x y blur-radius color` |
+| white-space | element 내 공백 지정 `pre` `pre-wrap` `pre-line` `nowrap` |
+| vertical-align | 수직 정렬 `top` `middle` `bottom` |
 | letter-spacing | 문자 간 space 간격 |
 | word-spacing | 단어 간 간격 |
 | line-height | 줄 간격 |
@@ -180,7 +180,7 @@ font:(font-weight font-style font-variant) (font-size) (font-family) |
 - `margin` > `border` > `padding` > `content`
     1. margin
         
-        |  | top | right | bottom | left |
+        | 입력 | top | right | bottom | left |
         | --- | --- | --- | --- | --- |
         | 10px | 10px | 10px | 10px | 10px |
         | 5px 10px | 5px | 10px | 5px | 10px |
@@ -270,12 +270,9 @@ font:(font-weight font-style font-variant) (font-size) (font-family) |
     
     | 속성 | 설명 |
     | --- | --- |
-    | flex-direction | item 나열 row row-reverse column column-reverse |
-    | flex-wrap | item 크기 > container 크기 → 줄 넘김 nowrap wrap wrap-reverse |
-    | flex-flow | 방향과 줄 넘김 설정 direction wrap |
-    | justify-content | 메인축 정렬
-    flex-start flex-end center space-around space-evenly space-between |
-    | align-items | 교차축 정렬
-    stretch flex-start flex-end center baseline |
-    | align-content | wrap에 의해 여러 줄이 발생한 경우 교차축 정렬
-    stretch flex-start flex-end center space-around |
+    | flex-direction | item 나열 `row` `row-reverse` `column` `column-reverse` |
+    | flex-wrap | item 크기 > container 크기 → 줄 넘김 `nowrap` `wrap` `wrap-reverse` |
+    | flex-flow | 방향과 줄 넘김 설정 direction `wrap` |
+    | justify-content | 메인축 정렬 `flex-start` `flex-end` `center` `space-around` `space-evenly` `space-between` |
+    | align-items | 교차축 정렬 `stretch` `flex-start` `flex-end` `center` `baseline` |
+    | align-content | wrap에 의해 여러 줄이 발생한 경우 교차축 정렬 `stretch` `flex-start` `flex-end` `center` `space-around` |
