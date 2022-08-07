@@ -9,11 +9,11 @@ sitemap: false
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-## Ajax
+### Ajax
 - 비동기 통신
 - Google Maps, VIBE, 네이버 검색 등
 
-### MLHttpRequest
+### XMLHttpRequest
 
 ```html
 <button id="need-date">데이터 가져오기</button>
