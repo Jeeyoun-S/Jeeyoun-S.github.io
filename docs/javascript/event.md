@@ -9,15 +9,13 @@ sitemap: false
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-
-## IX. Event
-
+### Event 종류
 - 키보드 `keyup` `keydown` `keypress`
 - 마우스 `click` `mousemove` `mouseup` `mousedown` `mouseenter` `mouseleave`
 - 로딩 `load` `unload`
 - 폼 `input` `change` `blur` `focus` `submit`
 
-### 1. 고전 처리 방식
+### 고전 처리 방식
 
 1. 인라인 설정
     
@@ -39,7 +37,7 @@ sitemap: false
     ```
     
 
-### 2. 표준 처리 방식
+## 2. 표준 처리 방식
 
 ```jsx
 <button id="warn">Warning</button>
