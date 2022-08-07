@@ -10,7 +10,6 @@ sitemap: false
 {:toc}
 
 ## CSS 개념
-
 - Cascading Style Sheets
 - HTML를 화면에 표시하는 방식을 정의
 - 내용과 관계없이 디지인만 변경 가능
@@ -101,6 +100,15 @@ sitemap: false
     - `former-element` 바로 뒤에 오면서 같은 부모를 공유하는 `target-element` 선택
 
 ### 의사 클래스 Pseudo Class
+1. 동적 의사 클래스 Dynamic Pseudo Class
+    - `:hover` 
+    - `:active` 
+    - `:focus` 
+3. 상태 의사 클래스 UI Element States Pseudo Class
+4. 구조 의사 클래스 Structural Pseudo Class
+    - `:nth-child(n)` n에 0부터 넣은 값을 선택
+5. 기타 의사 클래스
+    - `:not(x)` 
 
 ### 우선 순위
 - 마지막 규칙, 구체적인 규칙
@@ -116,7 +124,7 @@ sitemap: false
 - **길이**
     - `px` `cm` `mm` `in`
     - `em` 배수의 단위 (내 조상의 N배)
-    - `rem` 배수의 단위 (root 최상
+    - `rem` 배수의 단위
 - **백분율** : 상위 block 크기가 바뀌면 백분율에 따라 크기 변경
 - **auto (width)** : 100%, 상위 block이 허용하는 만큼
 - **auto (height)** : 0%, block box 속 내용물의 크기가 높이 결정
@@ -127,6 +135,7 @@ sitemap: false
 - HSL `hsl(100, 100%, 0)` `hsla(100, 100%, 0)`
 
 ### font
+
 |  | 기능 |
 | --- | --- |
 | font-family | 글꼴 |
@@ -177,6 +186,7 @@ font:(font-weight font-style font-variant) (font-size) (font-family) |
         | 5px 10px | 5px | 10px | 5px | 10px |
         | 5px 10px 15px | 5px | 10px | 15px | 10px |
         | 5px 10px 15px 20px | 5px | 10px | 15px | 20px |
+        
         - `margin-top` `margin-bottom` `margin-right` `margin-left`
         - `margin: 0 auto` 상하는 margin 없고, 가운데 정렬이 되도록 설정
         - **마진상쇄 현상** : 위아래 모두 margin이 있다면 큰 값에 맞춘다.
