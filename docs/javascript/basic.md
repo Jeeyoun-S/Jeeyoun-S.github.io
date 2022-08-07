@@ -255,4 +255,4 @@ sitemap: false
 - `.filter` 조건이 true인 요소만으로 배열 생성
 - `.every`
 - `.reduce`
-- .some
+- `.some`
