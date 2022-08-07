@@ -45,18 +45,10 @@ let you = new Profile("kildong", 25)
 
 ```jsx
 //조회
-console.log(me.name);
+console.log(me.name); console.log(me['name']);
 
 //변경
-me.name = "kildong";
-```
-
-```jsx
-//조회
-console.log(me['name']);
-
-//변경
-me['name'] = "kildong";
+me.name = "kildong"; me['name'] = "kildong";
 ```
 
 ### 추가 및 삭제
@@ -71,28 +63,21 @@ delete me.name;
 ```
 
 ### 주소 복사
-
 - `array1 = {name: 'gildong'}; array2 = array1;`
 - array1의 주소를 array2에도 저장
 
 ### ForEach
-
 .foreach(cb) ⇒ return 되는 값 없음 === 콜백 함수에 return 필요 없음
-
-arry.forEach(function (num)) {
-
-console.log(num);
-
+```jsx
+array.forEach(function (num)) {
+	console.log(num);
 }
+```
 
-arry.map(num ⇒ num *2)
-
-.find
-
-.filter
-
-.every
-
-.reduce
-
-.some
+### Method
+- .map(num ⇒ num *2)
+- .find
+- .filter
+- .every
+- .reduce
+- .some
