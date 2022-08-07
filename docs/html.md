@@ -59,7 +59,7 @@ sitemap: false
         - `id` 중복 불가, 문서 내 tag 식별
         - `class` 중복 가능, tag에 공통적인 특성 부여
 
-### 태그
+### Tag
 1. 특수문자
         
     | `&nbsp;` | `&lt;` | `&gt;` | `&amp;` | `&quot;` | `&copy;` | `&reg;` |
@@ -124,7 +124,7 @@ sitemap: false
     | td | 데이터(열) `rowspan` `colspan` |
     | col | 열 |
     | colgroup | 열을 묶는 그룹 정의 |
-- Forms
+ 7. Forms
     - 사용자에게 입력받은 데이터를 서버에서 처리하는 용도
         
         | Tag | 기능 |
@@ -134,7 +134,7 @@ sitemap: false
         | name | 이름 지정 |
         | action | <form> 태그 안의 내용들을 처리해줄 프로그램 지정 |
         | target | <action> 스크립트 파일을 다른 위치에 열도록 지정 |
-    - 태그
+    - Tag
         
         | Tag | 기능 |
         | --- | --- |
