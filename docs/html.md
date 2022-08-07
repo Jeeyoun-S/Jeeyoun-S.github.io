@@ -62,7 +62,7 @@ sitemap: false
 ### 태그
 1. 특수문자
         
-    | &nbsp; | &lt; | &gt; | &amp; | &quot; | &copy; | &reg; |
+    | `&nbsp;` | `&lt;` | `&gt;` | `&amp;` | `&quot;` | `&copy;` | `&reg;` |
     | --- | --- | --- | --- | --- | --- | --- |
     | space | < | > | & | “ | © | ® |
 2. Semantic tag
