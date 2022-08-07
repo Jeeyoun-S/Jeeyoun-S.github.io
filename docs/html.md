@@ -96,34 +96,34 @@ sitemap: false
     | --- | --- |
     | a | 하이퍼링크 href target  |
     | b, strong | 굵은 글씨, strong은 중대 및 긴급한 콘텐츠 |
-    | <br | 줄바꿈 |
-    | <i> <em> | 기울기, em 특정 문자열 강조 |
-    | <q> | 짧은 인용문 |
-    | <s> | 취소선 |
-    | <u> | 밑줄 |
-    | <sup> <sub> | 위 첨자, 아래 첨자 |
-    | <span> | 구문 콘텐츠를 위한 inline container |
+    | br | 줄바꿈 |
+    | i, em | 기울기, em 특정 문자열 강조 |
+    | q | 짧은 인용문 |
+    | s | 취소선 |
+    | u | 밑줄 |
+    | sup, sub | 위 첨자, 아래 첨자 |
+    | span | 구문 콘텐츠를 위한 inline container |
 5. Image & Multimedia
     
     | Tag | 기능 |
     | --- | --- |
-    | <audio> | 소리 콘텐츠 |
-    | <img> | 이미지 삽입 src title alt |
-    | <video> | 미디어 플레이어 삽입 |
+    | audio | 소리 콘텐츠 |
+    | img | 이미지 삽입 src title alt |
+    | video | 미디어 플레이어 삽입 |
 6. Table content
     
     | Tag | 기능 |
     | --- | --- |
-    | <table> | 표 border |
-    | <caption> | 표의 설명 또는 제목 |
-    | <thead> | 열의 머리글인 행의 집합 |
-    | <tbody> | 여러 행을 묶어 표 본문 구성 |
-    | <tfoot> | 열을 요약하는 행의 집합 |
-    | <th> | 머리글 |
-    | <tr> | 행 |
-    | <td> | 데이터(열) rowspan colspan |
-    | <col> | 열 |
-    | <colgroup> | 열을 묶는 그룹 정의 |
+    | table | 표 border |
+    | caption | 표의 설명 또는 제목 |
+    | thead | 열의 머리글인 행의 집합 |
+    | tbody | 여러 행을 묶어 표 본문 구성 |
+    | tfoot | 열을 요약하는 행의 집합 |
+    | th | 머리글 |
+    | tr | 행 |
+    | td | 데이터(열) rowspan colspan |
+    | col | 열 |
+    | colgroup | 열을 묶는 그룹 정의 |
 - Forms
     - 사용자에게 입력받은 데이터를 서버에서 처리하는 용도
         
@@ -138,15 +138,15 @@ sitemap: false
         
         | Tag | 기능 |
         | --- | --- |
-        | <form> | 문서 구획 (정보 제출을 위한 대화형 컨트롤 포함) |
-        | <button> | 클릭할 수 있는 버튼 |
-        | <input> | 사용자의 데이터를 받을 수 있는 대화형 컨트롤 |
-        | <lable> | 사용자 인터페이스 항목의 설명 |
-        | <select> | 옵션 메뉴를 제공하는 컨트롤 |
-        | <option> | 항목 |
-        | <textarea> | 멀티라인 일반 텍스트 편집 컨트롤 |
-        | <fieldset> | 웹 양식의 여러 컨트롤과 레이블을 묶을 때 사용 |
-        | <legend> | fieldset 콘텐츠의 설명을 나타낸다. |
+        | form | 문서 구획 (정보 제출을 위한 대화형 컨트롤 포함) |
+        | button | 클릭할 수 있는 버튼 |
+        | input | 사용자의 데이터를 받을 수 있는 대화형 컨트롤 |
+        | lable | 사용자 인터페이스 항목의 설명 |
+        | select | 옵션 메뉴를 제공하는 컨트롤 |
+        | option | 항목 |
+        | textarea | 멀티라인 일반 텍스트 편집 컨트롤 |
+        | fieldset | 웹 양식의 여러 컨트롤과 레이블을 묶을 때 사용 |
+        | legend | fieldset 콘텐츠의 설명을 나타낸다. |
     - `input`
         
         | Tag | 기능 |
@@ -163,6 +163,5 @@ sitemap: false
         | multiple | email이나 file일 때 두 개 이상의 값 입력 |
 
 ## V. 참고자료
-
 - [Mozilla](https://developer.mozilla.org/ko/) 키워드 + mdn으로 검색
 - emmet 기능
