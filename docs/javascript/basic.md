@@ -9,7 +9,7 @@ sitemap: false
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-## JavaScript 기초
+## JavaScript
 - 웹 브라우저의 UI를 제어하기 위한 동적 스크립트 언어
 - Node.js를 통해 콘솔에서도 사용이 가능
 - Style Guide : [Airbnb](https://github.com/tipjs/javascript-style-guide), [Google](https://github.com/tipjs/javascript-style-guide)
@@ -53,17 +53,10 @@ sitemap: false
 - **호이스팅 Hoisting**
     ```jsx
     //입력 코드
-    console.log(name);
-    var name = "gildong";
-    console.log(name);
+    console.log(name); var name = "gildong"; console.log(name);
     
-    ```
-    ```jsx
     //실행 코드
-    var name;
-    console.log(name);
-    var name = "gildong";
-    console.log(name);
+    var name; console.log(name); var name = "gildong"; console.log(name);
     ```
     - 실행에 필요한 변수 값을 상단에 선언
 
@@ -93,7 +86,7 @@ sitemap: false
 - 재선언 불가 `name = "IU" #SyntaxError`
 - 재할당 불가 `const name = "IU" #SyntaxError`
 - **블록 Scope**
-- 상수로 사용 → 대문자 Snake case 사용
+- 상수로 사용 → 대문자 SNAKE_CASE 사용
 
 ## Datatype
 ### 기본 데이터 타입 Primitive Type
@@ -144,7 +137,6 @@ sitemap: false
 - `Symbol` 변경 불가능한 기본 타입
 
 ### 객체 타입
-
 - Object - function array
 
 ### 변수의 자료형 검사
@@ -192,7 +184,6 @@ sitemap: false
 ## 제어문
 ### 조건문
 - **if**
-    
     ```jsx
     if () {
     } if else () {
@@ -243,7 +234,7 @@ sitemap: false
     } while ()
     ```
 
-### 배열 Array
+## 배열 Array
 - 생성 `[]` `Array()`
 - 배열의 크기는 동적으로 변경
 - 크기가 지정돼 있지 않아도 데이터 입력 가능
