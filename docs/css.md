@@ -227,6 +227,7 @@ sitemap: false
 - `relative` top, left 거리 지정
 - `absolute` 절대적인 위치 지정
 - `fixed` 스크롤해도 동일한 위치에 고정
+    - `z-index` default가 0
 
 ### float
 - 박스의 위치 결정을 위해 사용
@@ -268,11 +269,11 @@ sitemap: false
     - `display: flex` → block container
     - `display: inline-flex` → inline container
     
-    | 속성 | 설명 |
-    | --- | --- |
-    | flex-direction | item 나열 `row` `row-reverse` `column` `column-reverse` |
-    | flex-wrap | item 크기 > container 크기 → 줄 넘김 `nowrap` `wrap` `wrap-reverse` |
-    | flex-flow | 방향과 줄 넘김 설정 direction `wrap` |
-    | justify-content | 메인축 정렬 `flex-start` `flex-end` `center` `space-around` `space-evenly` `space-between` |
-    | align-items | 교차축 정렬 `stretch` `flex-start` `flex-end` `center` `baseline` |
-    | align-content | wrap에 의해 여러 줄이 발생한 경우 교차축 정렬 `stretch` `flex-start` `flex-end` `center` `space-around` |
+| 속성 | 설명 |
+| --- | --- |
+| flex-direction | item 나열 `row` `row-reverse` `column` `column-reverse` |
+| flex-wrap | item 크기 > container 크기 → 줄 넘김 `nowrap` `wrap` `wrap-reverse` |
+| flex-flow | 방향과 줄 넘김 설정 `direction wrap` |
+| justify-content | 메인축 정렬 `flex-start` `flex-end` `center` `space-around` `space-evenly` `space-between` |
+| align-items | 교차축 정렬 `stretch` `flex-start` `flex-end` `center` `baseline` |
+| align-content | wrap에 의해 여러 줄이 발생한 경우 교차축 정렬 `stretch` `flex-start` `flex-end` `center` `space-around` |
