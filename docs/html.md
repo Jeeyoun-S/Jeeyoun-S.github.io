@@ -19,7 +19,7 @@ sitemap: false
 - 태그는 대소문자 구분 없고, `Enter` `Spacebar` `Tab` 적용되지 않는다.
    - `Spacebar` 는 최대 1개 적용
 
-### DOM 트리
+### DOM Tree
 - Document Object Model
     ```html
     <html>
@@ -32,12 +32,12 @@ sitemap: false
 ### HTML 구성요소
 1. 태그 `<a href="https://www.naver.com/">네이버</a>` 
     - 시작태그 `<a href="https://www.naver.com/">`
-        - 시작태그만 있는 태그도 존재 `img` `br` `hr`
-        - 속성 `href`, 속성값 `"https://www.naver.com/"`
+    - 종료태그 `</a>`
+        - 종료태그가 없는 태그도 존재 `img` `br` `hr`
+    - 속성 `href`, 속성값 `"https://www.naver.com/"`
         - 공통 속성 `id` `class`
         - 사용자 정의 속성도 존재
-        - Kebab case 사용 `background-color`
-    - 종료태그 `</a>`
+    - Kebab case 사용 `background-color`
 2. 주석 `<!--explanation-->`
     - 개발자 창에서는 보인다 → 사적인 대화 남기지 않는다
 3. 기본 구조 
