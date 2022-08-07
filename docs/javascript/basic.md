@@ -161,6 +161,7 @@ sitemap: false
     | 입력 | false | true | undefined | null | 숫자 이외 |
     | --- | --- | --- | --- | --- | --- |
     | 반환 | 0 | 1 | NaN | 0 | NaN |
+    
     - `+"1"` → `1`
     - `-"1"` → `-1`
 - 불린형 `Boolean()` `!!`
