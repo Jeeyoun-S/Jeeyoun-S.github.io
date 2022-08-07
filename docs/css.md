@@ -24,7 +24,6 @@ sitemap: false
     	width: 100px;             /*선언*/
     }
     ```
-    
 
 ## CSS 적용 방법
 1. 외부 참조 external style
@@ -54,7 +53,17 @@ sitemap: false
 4. 아이디 선택자 ID selector
     - 동일한 ID를 가진 태그 선택
     - `#id-name{ style properties }`
-5. 특성 선택자
+5. 속성 선택자 Attribute selector
+    - 특정한 속성이 있는 태그 선택
+    - `tag[attribute]{ style properties }`
+    - `tag[attribute="what"]{ style properties }`
+        - `~=`
+        - `|=`
+        - `^=`
+        - `$=`
+        - `*=`
+6. 의사 선택자 Pseudo selector
+    - 
 
 ### 그룹 선택자
 1. 선택자 목록 Selector list
