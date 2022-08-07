@@ -258,8 +258,9 @@ font:(font-weight font-style font-variant) (font-size) (font-family) |
     - `display: flex` → block container
     - `display: inline-flex` → inline container
     
-    | flex-direction | item 나열 row row-reverse column column-reverse |
+    | 속성 | 설명 |
     | --- | --- |
+    | flex-direction | item 나열 row row-reverse column column-reverse |
     | flex-wrap | item 크기 > container 크기 → 줄 넘김 nowrap wrap wrap-reverse |
     | flex-flow | 방향과 줄 넘김 설정 direction wrap |
     | justify-content | 메인축 정렬
