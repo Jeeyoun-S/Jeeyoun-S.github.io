@@ -84,7 +84,7 @@ sitemap: false
     | Tag | 기능 |
     | --- | --- |
     | blockquote | 긴 인용문 (들여쓰기가 돼 있다) |
-    | hr | 수평선 color |
+    | hr | 수평선 `color` |
     | pre | Enter와 Spacebar 사용 가능 |
     | p | 문단 |
     | li | list item |
