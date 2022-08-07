@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event
+title: DOM
 description: >
   This chapter covers advanced topics, such as offline support and custom JS builds. Codings skills are recommended.
 hide_description: true
@@ -21,7 +21,7 @@ sitemap: false
 - 문서 접근 방식
     - `getElementByld(string_id)` 1개만 (id는 중복 불가능)
     - `querySelector(selector)` 처음 1개만
-    - `querSelectorAll(selector)` 여러 개
+    - `querySelectorAll(selector)` 여러 개
         
         ```jsx
         querySelector("div")
