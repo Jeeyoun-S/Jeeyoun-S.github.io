@@ -37,7 +37,7 @@ sitemap: false
     ```
     
 
-## 2. 표준 처리 방식
+## 표준 처리 방식
 
 ```jsx
 <button id="warn">Warning</button>
