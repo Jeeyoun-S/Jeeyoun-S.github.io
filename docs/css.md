@@ -57,13 +57,11 @@ sitemap: false
     - 특정한 속성이 있는 태그 선택
     - `tag[attribute]{ style properties }`
     - `tag[attribute="what"]{ style properties }`
-        - `~=`
-        - `|=`
-        - `^=`
-        - `$=`
-        - `*=`
-6. 의사 선택자 Pseudo selector
-    - 
+        - `~="what"` 속성 개수와 관계없이 what을 속성으로 가지면 선택
+        - `|="what"` what으로 시작하는 요소 값을 가지면 선택 (`what where` 선택X)
+        - `^="what"` what으로 시작하는 요소 값을 가지면 선택 (`what where` 선택O)
+        - `$="what"` what으로 끝나는 요소 값을 가지면 선택
+        - `*="what"` what이 요소 값에 들어가면 선택 (`wwwwhattttt` 선택O)
 
 ### 그룹 선택자
 1. 선택자 목록 Selector list
@@ -101,6 +99,8 @@ sitemap: false
 4. 인접 형제 결합자 Adjacent sibling combinator
     - `former-element + target-element { style properties }`
     - `former-element` 바로 뒤에 오면서 같은 부모를 공유하는 `target-element` 선택
+
+### 의사 클래스 Pseudo Class
 
 ### 우선 순위
 - 마지막 규칙, 구체적인 규칙
