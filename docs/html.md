@@ -69,34 +69,34 @@ sitemap: false
     
     | Tag | 기능 |
     | --- | --- |
-    | <header> | 문서 전체나 섹션이 헤더 |
-    | <nav> | 네비게이션 |
-    | <aside> | 사이드에 위치한 공간 |
-    | <section> | 문서의 일반적인 구분 |
-    | <article> | 독립적으로 구분되는 영역 |
-    | <footer> | 문서 전체나 섹션이 푸터 |
-    | <h1> ~ <h6> | 6단계 제목 |
+    | header | 문서 전체나 섹션이 헤더 |
+    | nav | 네비게이션 |
+    | aside | 사이드에 위치한 공간 |
+    | section | 문서의 일반적인 구분 |
+    | article | 독립적으로 구분되는 영역 |
+    | footer | 문서 전체나 섹션이 푸터 |
+    | h1 ~ h6 | 6단계 제목 |
     - 의미론적 요소를 담은 Tag
     - 코드의 가독성 향상, 쉬운 유지보수
 3. Text content
     
     | Tag | 기능 |
     | --- | --- |
-    | <blockquote> | 긴 인용문 (들여쓰기가 돼 있다) |
-    | <hr> | 수평선 color |
-    | <pre> | Enter와 Spacebar 사용 가능 |
-    | <p> | 문단 |
-    | <li> | list item |
-    | <ul> | unordered list |
-    | <ol> | ordered list type start |
-    | <div> | 구문 콘텐츠를 위한 block container |
+    | blockquote | 긴 인용문 (들여쓰기가 돼 있다) |
+    | hr | 수평선 color |
+    | pre | Enter와 Spacebar 사용 가능 |
+    | p | 문단 |
+    | li | list item |
+    | ul | unordered list |
+    | ol | ordered list type start |
+    | div | 구문 콘텐츠를 위한 block container |
 4. Inline text semantics
     
     | Tag | 기능 |
     | --- | --- |
-    | <a> | 하이퍼링크 href target  |
-    | <b> <strong> | 굵은 글씨, strong은 중대 및 긴급한 콘텐츠 |
-    | <br> | 줄바꿈 |
+    | a | 하이퍼링크 href target  |
+    | b, strong | 굵은 글씨, strong은 중대 및 긴급한 콘텐츠 |
+    | <br | 줄바꿈 |
     | <i> <em> | 기울기, em 특정 문자열 강조 |
     | <q> | 짧은 인용문 |
     | <s> | 취소선 |
