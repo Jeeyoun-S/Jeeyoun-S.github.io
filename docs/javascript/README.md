@@ -10,6 +10,18 @@ permalink: /docs/javascript/
 ES6+
 {:.note}
 
-* [AJAX]{:.heading.flip-title}
+* [Basic]{:.heading.flip-title}
+* [Object]{:.heading.flip-title}
+* [JSON]{:.heading.flip-title}
+* [Function]{:.heading.flip-title}
+* [Event]{:.heading.flip-title}
+* [Web Storage]{:.heading.flip-title}
+* [Ajax]{:.heading.flip-title}
 
-[AJAX]: ajax.md
+[Basic]: basic.md
+[Object]: object.md
+[JSON]: json.md
+[Function]: function.md
+[Event]: event.md
+[Web Storage]: web_storage.md
+[Ajax]: ajax.md
