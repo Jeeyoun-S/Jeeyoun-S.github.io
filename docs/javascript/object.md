@@ -23,8 +23,8 @@ sitemap: false
 let me = {name: ‘gildong’, age: 20} //key 값은 알아서 문자열로 인식
 
 function Profile(name, age) {
-		this.name = name;
-		this.age = age;
+	this.name = name;
+	this.age = age;
 }
 let you = new Profile("kildong", 25)
 ```
@@ -36,8 +36,8 @@ let you = new Profile("kildong", 25)
     const a = ['what', 'where', 'who']
     const b = ['which', 'how', 'why']
     const object_name= {
-    		a,
-    		b,
+    	a,
+    	b,
     }
     ```
 
@@ -73,11 +73,3 @@ array.forEach(function (num)) {
 	console.log(num);
 }
 ```
-
-### Method
-- .map(num ⇒ num *2)
-- .find
-- .filter
-- .every
-- .reduce
-- .some
