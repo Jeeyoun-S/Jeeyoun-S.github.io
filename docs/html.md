@@ -162,6 +162,6 @@ sitemap: false
         | height, width | image의 너비와 높이 |
         | multiple | email이나 file일 때 두 개 이상의 값 입력 |
 
-## V. 참고자료
+## 참고자료
 - [Mozilla](https://developer.mozilla.org/ko/) 키워드 + mdn으로 검색
-- emmet 기능
+- [emmet 기능](https://docs.emmet.io/abbreviations/syntax/)
