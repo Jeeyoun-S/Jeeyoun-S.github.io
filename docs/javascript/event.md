@@ -45,7 +45,7 @@ sitemap: false
 	var warning_btn = document.querySelector("#warn");
 	warning_btn.addEventListener("click", func);
 	function func() {
-			alert("Warning")
-		}
+		alert("Warning")
+	}
 </script>
 ```
