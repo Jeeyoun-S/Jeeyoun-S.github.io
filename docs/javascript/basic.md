@@ -248,3 +248,11 @@ sitemap: false
     - `array_name.includes()` 특정값이 있는지 판별
     - `array_name.indexOf()` 인덱스 반환 → 없으면 -1 반환
     - `array_name.join()` 구분자로 연결해 반환 → 전달인자 없으면 쉼표
+   
+## Method
+- `.map(num ⇒ num *2)` 새로운 배열 생성
+- `.find` 조건이 true인 첫 번째 요소만 return, 없으면 undefined
+- `.filter` 조건이 true인 요소만으로 배열 생성
+- `.every`
+- `.reduce`
+- .some
