@@ -164,4 +164,4 @@ sitemap: false
 
 ## 참고자료
 - [Mozilla](https://developer.mozilla.org/ko/) 키워드 + mdn으로 검색
-- [emmet 기능](https://docs.emmet.io/abbreviations/syntax/)
+- [Emmet 기능](https://docs.emmet.io/abbreviations/syntax/)
