@@ -14,12 +14,22 @@ sitemap: false
 - 동적 자료구조 Dynamic structure
     - 요소의 개수에 따라 자료구조의 크기가 동적으로 변화 (ex. 리스트, 스택, 큐 등)
 
+## Collection interface
+
+| 분류 | Collections | List |
+| --- | --- | --- |
+| 추가 | `add(E e)` `addAll(Collection<? extends E> c` | `add(int index, E element)` `addAll(int index, Collection<? extends E> c)` 
+| 조회 | `contains(Object o)` `containsAll(Collection<?> c)` `equals()` `isEmpty()` `iterator()` `size()` | `get(int index)` `indexOf(Object o)` `lastIndexOf(Objext o)` `listIterator()` |
+| 삭제 | `clear()` `removeAll(Collection<?> c)` `retainAll(Collection<?> c)` | `remove(int index)` |
+| 수정 |  | `set(int index, E element)` |
+| 기타 | `toArray()` | `subList(int fromIIndex, int tolndex)` |
+
 ## 핵심 interface
-### List : 순서O, 중복O
+### List : 순서O, 중복O, 동적
 - `ArrayList`
     - 선언 `List<String> staff = new ArrayList<>();`
     - Collection Interface
-        - `add(E e)` : 데이터 입력
+        - `add(E element)` : 데이터 입력
         - `get(int index)` : 데이터 추출
         - `size()` : 입력된 데이터의 크기 반환
         - `remove(int i)` : 특정한 데이터를 삭제
@@ -60,16 +70,6 @@ sitemap: false
 - `TreeMap`
 - `HashTable`
 - `Properties`
-
-## Collection interface
-
-| 분류 | Collections | List |
-| --- | --- | --- |
-| 추가 | `add(E e)` `addAll(Collection<? extends E> c` | `add(int index, E element)` `addAll(int index, Collection<? extends E> c)` 
-| 조회 | `contains(Object o)` `containsAll(Collection<?> c)` `equals()` `isEmpty()` `iterator()` `size()` | `get(int index)` `indexOf(Object o)` `lastIndexOf(Objext o)` `listIterator()` |
-| 삭제 | `clear()` `removeAll(Collection<?> c)` `retainAll(Collection<?> c)` | `remove(int index)` |
-| 수정 |  | `set(int index, E element)` |
-| 기타 | `toArray()` | `subList(int fromIIndex, int tolndex)` |
 
 ### 정렬
 
