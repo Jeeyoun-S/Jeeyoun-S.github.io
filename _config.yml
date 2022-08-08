@@ -54,7 +54,7 @@ menu:
   - title:             Blog
     url:               /blog/
   - title:             Today I Learned
-    url:               /docs/
+    url:               /til/
   - title:             Projects
     url:               /pjt/
 
