@@ -18,6 +18,7 @@ permalink: /docs/java/
   * [Access Modifier](/oop/access_modifier.md)
   * [Abstract Class](/oop/abstract_class.md)
   * [Generic](/oop/generic.md)
+  * [Collection Framework](/oop/collection_framework.md)
   
 [Start Java]: start_java.md
 [Variable & Datatype]: variable_and_datatype.md
