@@ -6,8 +6,8 @@ layout: list
 title: Blog
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
-slug: example
-
+slug: blog
+  
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
   공부하면서, 일상을 보내며 느꼈던 점을 작성하는 곳
