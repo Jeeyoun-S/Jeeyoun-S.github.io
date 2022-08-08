@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Abstract Collection Framework
+title: Collection Framework
 hide_description: true
 sitemap: false
 ---
