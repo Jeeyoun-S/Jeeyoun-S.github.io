@@ -7,7 +7,6 @@ sitemap: false
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-### 개념
 ## Collection Framework
 - 객체를 한 곳에 모아서 사용하는 환경 제공
 - 정적 자료구조 Static structure
@@ -66,23 +65,11 @@ sitemap: false
 
 | 분류 | Collections | List |
 | --- | --- | --- |
-| 추가 | add(E e) 
-addAll(Collection<? extends E> c | add(int index, E element)
-addAll(int index, Collection<? extends E> c) |
-| 조회 | contains(Object o)
-containsAll(Collection<?> c)
-equals()
-isEmpty()
-iterator()
-size() | get(int index)
-indexOf(Object o)
-lastIndexOf(Objext o)
-listIterator() |
-| 삭제 | clear()
-removeAll(Collection<?> c)
-retainAll(Collection<?> c) | remove(int index) |
-| 수정 |  | set(int index, E element) |
-| 기타 | toArray() | subList(int fromIIndex, int tolndex) |
+| 추가 | `add(E e)` `addAll(Collection<? extends E> c` | `add(int index, E element)` `addAll(int index, Collection<? extends E> c)` 
+| 조회 | `contains(Object o)` `containsAll(Collection<?> c)` `equals()` `isEmpty()` `iterator()` `size()` | `get(int index)` `indexOf(Object o)` `lastIndexOf(Objext o)` `listIterator()` |
+| 삭제 | `clear()` `removeAll(Collection<?> c)` `retainAll(Collection<?> c)` | `remove(int index)` |
+| 수정 |  | `set(int index, E element)` |
+| 기타 | `toArray()` | `subList(int fromIIndex, int tolndex)` |
 
 ### 정렬
 
