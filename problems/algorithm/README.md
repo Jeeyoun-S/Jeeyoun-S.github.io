@@ -17,5 +17,5 @@ permalink: /problems/algorithm/
    - 연산 수 `1` < `logn` < `n` < `nlogn` < `n^2` < `2^n` < `n!`
 5. 문제 해결 과정 : 지문 읽기 → 문제 이해 → 손으로 풀기 → 컴퓨터로 풀기 → 디버깅 및 검증
 
-## 목록
+## 목차
 1. [List](list.md)
