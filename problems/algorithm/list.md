@@ -69,10 +69,10 @@ sitemap: false
     	for (int j=0; j<i;j++) {
     	    if (numlist[j] < numlist[j+1]) {
 		int tmp = numlist[j];
-		numlist[j] = numlist[j+1];
-		numlist[j+1] = tmp;
-	    }
-	}
+                numlist[j] = numlist[j+1];
+                numlist[j+1] = tmp;
+            }
+        }
     }
     System.out.println(Arrays.toString(numlist));
     ```
@@ -100,15 +100,15 @@ sitemap: false
     ``` java
     import java.util.Arrays;
     for (int i=0; i<numlist.length; i++) {
-    	int maxidx = i;
-	for (int j=i; j<numlist.length; j++) {
-	    if (numlist[maxidx] < numlist[j]) {
-		maxidx = j;
-	    }
-	}
-	int tmp = numlist[maxidx];
-	numlist[maxidx]= numlist[i];
-	numlist[i] = tmp;
+        int maxidx = i;
+        for (int j=i; j<numlist.length; j++) {
+            if (numlist[maxidx] < numlist[j]) {
+                maxidx = j;
+            }
+        }
+        int tmp = numlist[maxidx];
+        numlist[maxidx]= numlist[i];
+        numlist[i] = tmp;
     }
     System.out.println(Arrays.toString(numlist));
     ```
