@@ -16,13 +16,14 @@ sitemap: false
 
 ## Collection interface
 
-| 분류 | Collections | List |
-| --- | --- | --- |
-| 추가 | `add(E e)` `addAll(Collection<? extends E> c` | `add(int index, E element)` `addAll(int index, Collection<? extends E> c)` 
-| 조회 | `contains(Object o)` `containsAll(Collection<?> c)` `equals()` `isEmpty()` `iterator()` `size()` | `get(int index)` `indexOf(Object o)` `lastIndexOf(Objext o)` `listIterator()` |
-| 삭제 | `clear()` `removeAll(Collection<?> c)` `retainAll(Collection<?> c)` | `remove(int index)` |
-| 수정 |  | `set(int index, E element)` |
-| 기타 | `toArray()` | `subList(int fromIIndex, int tolndex)` |
+| 분류 | Collection |
+| --- | --- |
+| 추가 | `add(E e)` 
+`addAll(Collection<? extends E> c` | 
+| 조회 | `contains(Object o)` `containsAll(Collection<?> c)` `equals()` `isEmpty()` `iterator()` `size()` |
+| 삭제 | `clear()` `removeAll(Collection<?> c)` `retainAll(Collection<?> c)` |
+| 수정 |  |
+| 기타 | `toArray()` |
 
 ## 핵심 interface
 ### List : 순서O, 중복O, 동적
