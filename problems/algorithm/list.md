@@ -184,9 +184,14 @@ sitemap: false
         int end = numlist.length-1;
         while (end >= start) {
             int halfN = start + (end-start)/2 + 1;
-            if (key == numlist[start]) {
-                return true;
-            } else if (key < numlist[halfN]) {
+            if (start == end) {
+                if (key == numlist[start]) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            if (key < numlist[halfN]) {
                 end = halfN-1;
             } else if (key > numlist[halfN]) {
                 start = halfN+1;
