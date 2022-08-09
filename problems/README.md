@@ -2,7 +2,7 @@
 layout: page
 title: Solving Problems
 description: >
-  기록이 필요한 알고리즘 문제들
+  풀고 공부한 알고리즘 개념 및 문제 메모
 sitemap: false
 permalink: /problems/
 ---
