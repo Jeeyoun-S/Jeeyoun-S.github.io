@@ -10,6 +10,8 @@ permalink: /problems/
 - 2022.07.18 ~ ing
 - 코드 파일 [GitHub Jeeyoun-S](https://github.com/Jeeyoun-S/Baekjoon_OJ)
 
+## [Algorithm]{:.heading.flip-title}
+
 ## [Baekjoon OJ]{:.heading.flip-title}
 * [Bronze](/problems/baekjoon/bronze.md)
 * [Silver](/problems/baekjoon/silver.md)
@@ -25,5 +27,6 @@ permalink: /problems/
 ## Other
 {:.related-posts.faded}
 
+[Algorithm]: /problems/algorithm/
 [Baekjoon OJ]: /problems/baekjoon/
 [SWEA]: /problems/swea/
