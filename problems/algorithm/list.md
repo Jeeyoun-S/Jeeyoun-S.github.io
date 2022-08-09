@@ -26,7 +26,7 @@ sitemap: false
         - `for (int i = arr.length-1; i>=0; i--) { arr[i] }`
         - `for (int i = 0; i < arr.length; i++) { arr[arr.length-1-i] }`
 
-## 정렬
+## 정렬 Sort
 - 2개 이상의 자료를 오름차순 또는 내림차순으로 배열
 - Key : 정렬 기준
 - Swap
@@ -64,6 +64,7 @@ sitemap: false
     ```
 - 내림차순 정렬 (Java)
     ``` java
+    import java.util.Arrays;
     for (int i=numlist.length-1; i>0; i--) {
 	for (int j=0; j<i;j++) {
 		if (numlist[j] < numlist[j+1]) {
@@ -84,9 +85,41 @@ sitemap: false
 - 최소값을 찾은 뒤 맨 앞의 값과 교환 → 나머지도 이 과정을 반복
 - 시간복잡도 O(n<sup>2</sup>)
 - 오름차순 정렬 (Python)
+    ``` python
+    for i in range(len(numlist)):
+        minidx = i
+        for j in range(i+1, len(numlist)):
+            if numlist[minidx] > numlist[j]:
+                minidx = j
+        tmp = numlist[minidx]
+        numlist[minidx] = numlist[i]
+        numlist[i] = tmp 
+    print(numlist)
+    ```
 - 내림차순 정렬 (Java)
+    ``` java
+    import java.util.Arrays;
+    for (int i=0; i<numlist.length; i++) {
+    	int maxidx = i;
+	for (int j=i; j<numlist.length; j++) {
+		if (numlist[maxidx] < numlist[j]) {
+			maxidx = j;
+		}
+	}
+	int tmp = numlist[maxidx];
+	numlist[maxidx]= numlist[i];
+	numlist[i] = tmp;
+    }
+    System.out.println(Arrays.toString(numlist));
+    ```
 
 ### 카운팅 정렬 Counting Sort
 ### 삽입 정렬 Insertion Sort
 ### 병합 정렬 Merge Sort
 ### 퀵 정렬 Quick Sort
+
+## 검색 Search
+
+### 순차 검색 Sequential Search
+### 이진 검색 Binary Search
+### 인덱싱 Indexing
