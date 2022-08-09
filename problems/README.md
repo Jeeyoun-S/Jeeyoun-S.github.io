@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Solve Problems
+title: Algorithm Problem Solving
 description: >
   풀고 공부한 알고리즘 개념 및 문제 메모
 sitemap: false
