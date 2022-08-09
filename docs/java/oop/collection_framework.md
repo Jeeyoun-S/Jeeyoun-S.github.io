@@ -18,8 +18,7 @@ sitemap: false
 
 | 분류 | Collection |
 | --- | --- |
-| 추가 | `add(E e)` 
-`addAll(Collection<? extends E> c` | 
+| 추가 | `add(E e)` `addAll(Collection<? extends E> c` | 
 | 조회 | `contains(Object o)` `containsAll(Collection<?> c)` `equals()` `isEmpty()` `iterator()` `size()` |
 | 삭제 | `clear()` `removeAll(Collection<?> c)` `retainAll(Collection<?> c)` |
 | 수정 |  |
