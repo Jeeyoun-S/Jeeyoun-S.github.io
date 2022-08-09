@@ -18,6 +18,4 @@ permalink: /problems/algorithm/
 5. 문제 해결 과정 : 지문 읽기 → 문제 이해 → 손으로 풀기 → 컴퓨터로 풀기 → 디버깅 및 검증
 
 ## 목록
-1. [List]
-
-[List]: list.md
+1. [List](list.md)
