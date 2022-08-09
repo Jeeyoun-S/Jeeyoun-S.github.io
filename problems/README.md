@@ -12,13 +12,13 @@ permalink: /problems/
 ## [Algorithm]{:.heading.flip-title}
 
 ## Baekjoon OJ
-* [Bronze](/problems/baekjoon/bronze.md)
-* [Silver](/problems/baekjoon/silver.md)
-* [Gold](/problems/baekjoon/gold.md)
+* [Bronze](/baekjoon/bronze.md)
+* [Silver](/baekjoon/silver.md)
+* [Gold](/baekjoon/gold.md)
 
 ## SWEA
-* [D1](/problems/swea/d1.md)
-* [D2](/problems/swea/d2.md)
-* [D3](/problems/swea/d3.md)
+* [D1](/swea/d1.md)
+* [D2](/swea/d2.md)
+* [D3](/swea/d3.md)
 
 [Algorithm]: /problems/algorithm/
