@@ -25,5 +25,5 @@ permalink: /problems/
 ## Other
 {:.related-posts.faded}
 
-[Baekjoon]: /problems/baekjoon/
+[Baekjoon OJ]: /problems/baekjoon/
 [SWEA]: /problems/swea/
