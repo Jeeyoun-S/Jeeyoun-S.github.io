@@ -15,12 +15,10 @@ permalink: /problems/
 * [Bronze](/problems/baekjoon/bronze.md)
 * [Silver](/problems/baekjoon/silver.md)
 * [Gold](/problems/baekjoon/gold.md)
-{:.related-posts.faded}
 
 ## SWEA
 * [D1](/problems/swea/d1.md)
 * [D2](/problems/swea/d2.md)
 * [D3](/problems/swea/d3.md)
-{:.related-posts.faded}
 
 [Algorithm]: /problems/algorithm/
