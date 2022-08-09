@@ -179,7 +179,22 @@ sitemap: false
 - 시간복잡도 O(logn)
 - 반복문 이용
     ``` java
-    
+    static boolean SearchBinaryWhile(int[] numlist, int key) {
+        int start = 0;
+        int end = numlist.length-1;
+        while (end >= start) {
+            int halfN = start + (end-start)/2 + 1;
+            if (key == numlist[start]) {
+                return true;
+            } else if (key < numlist[halfN]) {
+                end = halfN-1;
+            } else if (key > numlist[halfN]) {
+                start = halfN+1;
+            } else {
+                return true;
+            }
+        } return false;
+    }
     ```
 - 재귀함수 이용
     ``` java
