@@ -220,8 +220,7 @@ sitemap: false
             int[] newlist = new int[end-start+1];
             for (int i=start; i<=end; i++) {
             newlist[i-start] = numlist[i];
-            }
-            SearchBinaryRecur(newlist, key);
+            } SearchBinaryRecur(newlist, key);
         }
     }
     ```
