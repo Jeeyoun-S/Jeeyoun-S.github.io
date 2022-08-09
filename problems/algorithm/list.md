@@ -121,5 +121,16 @@ sitemap: false
 ## 검색 Search
 
 ### 순차 검색 Sequential Search
+- 일렬로 나열돼 있는 자료를 순차적으로 검색
+- 시간복잡도 O(n)
+- Ordered List *(ascending)*
+    - 찾으면 true 반환, 찾는 값보다 비교 값이 커지면 false 반환
+    ``` java
+    ```
+- Unordered List *(ascending)*
+    - 찾으면 true 반환, 찾지 못하면 false 반환
+    ``` java
+    ```
+
 ### 이진 검색 Binary Search
 ### 인덱싱 Indexing
