@@ -57,7 +57,7 @@ menu:
     url:               /blog/
   - title:             Today I Learned
     url:               /docs/
-  - title:             Projects
+  - title:             Solving problems
     url:               /problems/
 
 # Add links to the footer.
