@@ -51,12 +51,14 @@ author:
 menu:
   - title:             About Me
     url:               /about/
+  - title:             Projects
+    url:               /pjt/
   - title:             Blog
     url:               /blog/
   - title:             Today I Learned
     url:               /docs/
   - title:             Projects
-    url:               /pjt/
+    url:               /problems/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
