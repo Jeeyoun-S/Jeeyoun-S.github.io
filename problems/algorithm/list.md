@@ -36,7 +36,7 @@ sitemap: false
     ```
 - Swap Function
     ``` java
-    public class main {
+    public class SwapFunction {
         static int[] numlist = {55, 4, 34, 54, 1, 12, 35};
         public static void main(String[] args) {
             System.out.println(Arrays.toString(numlist));
@@ -153,9 +153,25 @@ sitemap: false
     - 찾으면 true 반환, 찾지 못하면 false 반환
     - For
     ``` java
+    static boolean SearchForUnorder(int[] numlist, int key) {
+        for (int i : numlist) {
+            if (i == key) {
+                return true;
+            }
+        } return false;
+    }
     ```
     - While
     ``` java
+    static boolean SearchWhileUnorder(int[] numlist, int key) {
+        int cnt = 0;
+            while (cnt < numlist.length) {
+                if (numlist[cnt] == key) {
+                    return true;
+                }
+            cnt ++;
+        } return false;
+    }
     ```
 
 ### 이진 검색 Binary Search
