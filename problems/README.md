@@ -1,12 +1,11 @@
 ---
 layout: page
-title: Algorithm Problem Solving
+title: Solving Problems
 description: >
-  풀고 공부한 알고리즘 개념 및 문제 메모
+  Python과 Java로 푸는 문제
 sitemap: false
 permalink: /problems/
 ---
-
 - 2022.07.18 ~ ing
 - 코드 파일 [GitHub Jeeyoun-S](https://github.com/Jeeyoun-S/Baekjoon_OJ)
 
@@ -22,9 +21,6 @@ permalink: /problems/
 * [D1](/problems/swea/d1.md)
 * [D2](/problems/swea/d2.md)
 * [D3](/problems/swea/d3.md)
-{:.related-posts.faded}
-
-## Other
 {:.related-posts.faded}
 
 [Algorithm]: /problems/algorithm/
