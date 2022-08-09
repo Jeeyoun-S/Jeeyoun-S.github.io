@@ -175,4 +175,10 @@ sitemap: false
     ```
 
 ### 이진 검색 Binary Search
+- 정렬된 자료의 중간값과 비교해, 비교할 값의 수를 반으로 줄여가며 검색
+- 시간복잡도 O(logn)
+- For
+- While
+- 재귀함수 이용
+
 ### 인덱싱 Indexing
