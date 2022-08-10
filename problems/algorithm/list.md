@@ -25,9 +25,154 @@ sitemap: false
     - 역방향
         - `for (int i = arr.length-1; i>=0; i--) { arr[i] }`
         - `for (int i = 0; i < arr.length; i++) { arr[arr.length-1-i] }`
-- 이동
-    - 델타 이동
-    - 
+### 2차원 배열
+- 선언
+    - 자료형, 이름, 행의 개수, 열의 개수 → 1차원 배열의 크기가 각각 달라도 가능
+    - `int[][] arr = new int[5][10];`
+    - `int[][] arr = {{0,1,2,3,4},{5,6,7,8,9},{10,11,12,13,14},{15,16,17,18,19}};`
+- 순회
+    - 행 우선 순회
+        - 열 정방향
+            
+            ```java
+            for (int i=0; i<arr.length; i++) {
+            	for (int j=0; j<arr[i].length; j++) {
+            		System.out.println(arr[i][j]);
+            	}
+            }
+            ```
+            
+        - 열 역방향
+            
+            ```java
+            for (int i=0; i<arr.length; i++) {
+            	for (int j=arr[i].length-1; j>=0; j--) {
+            		System.out.println(arr[i][j]);
+            	}
+            }
+            ```
+            
+    - 열 우선 순회
+        - 행 정방향
+            
+            ```java
+            for (int j=0; j<arr[0].length; j++) {
+            	for (int i=0; i<arr.length; i++) {
+            		System.out.println(arr[i][j]);
+            	}
+            }
+            ```
+            
+        - 행 역방향
+            
+            ```java
+            for (int j=0; j<arr[0].length; j++) { //보류
+            	for (int i=arr.length-1; i>=0; i--) {
+            		System.out.println(arr[i][j]);
+            	}
+            }
+            ```
+            
+    - 행 교차 순회 *(1줄마다)*
+        - 방법1
+            
+            ```java
+            for (int i=0; i<arr.length; i++) {
+            	if (i%2==0) {
+            		for (int j=0; j<arr[i].length; j++) {
+            			System.out.println(arr[i][j]);
+            		}
+            	} else {
+            		for (int j=arr[i].length-1; j>=0; j--) {
+            			System.out.println(arr[i][j]);
+            		}
+            	}
+            }
+            ```
+            
+        - 방법2
+            
+            ```java
+            for (int i=0; i<arr.length; i++) {
+            	for (int j=0; j<arr[i].length; j++) {
+            			if (i%2==0) {
+            				System.out.println(arr[i][j]);
+            			} else {
+            				System.out.println(arr[i][arr[i].length-1-j]);
+            			}
+            	}
+            }
+            ```
+            
+        - 방법3
+            
+            ```java
+            for (int i=0; i<arr.length; i++) {
+            	for (int j=0; j<arr[i].length; j++) {
+            		System.out.println(arr[i][j+(arr[i].length-1-(2*j))*(i%2)]);
+            	}
+            }
+            ```
+            
+    - 열 교차 순회 *(1줄마다)*
+        
+        ```java
+        for (int j=0; j<arr[0].length;; j++) {
+        	for (int i=0; i<arr.length; i++) {
+        		int rlt = j%2 == 0 ? i : arr.length-i-1;
+        		System.out.println(arr[rlt][j]);
+        	}
+        }
+        ```
+        
+    - 행 교차 순회 *(2줄마다)*
+        
+        ```java
+        for (int i=0; i<arr.length; i++) {
+        	for (int j=0; j<arr[i].length; j++) {
+        		int rlt = (i/2)%2==0 ? j : arr[i].length-1-j;
+        			System.out.println(arr[i][rlt]);
+        		}
+        }
+        ```
+        
+    - 대각선 순회
+        
+        ```java
+        
+        ```
+        
+    - 달팽이 순회
+        - 방법1
+            
+            ```java
+            int rowN = arr.length;
+            int colN = arr[0].length;
+            int fixc = 0;
+            int fixr = 0;
+            
+            for (int i=0; i<Math.min(rowN, colN); i++) {
+            	for (int c=0; c<colN-i-1; c++) {
+            		System.out.println(arr[fixc][fixr]);
+              	if (i%2 == 0) fixr++;
+              	else fixr--;
+              } 
+            	System.out.println(arr[fixc][fixr]);
+              for (int r=0; r<rowN-i-1; r++) {
+              	if (i%2 == 0) fixc++;
+            		else fixc--;
+              	System.out.println(arr[fixc][fixr]);
+              }
+              if (i%2 == 0) fixr--;
+            	else fixr++;
+            }
+            ```
+            
+        - 방법2
+            
+            ```java
+            
+            ```
 
 ## 정렬 Sort
 - 2개 이상의 자료를 오름차순 또는 내림차순으로 배열
