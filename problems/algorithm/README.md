@@ -19,3 +19,4 @@ permalink: /problems/algorithm/
 
 ## 목차
 1. [List](list.md)
+2. [List](string.md)
