@@ -192,6 +192,11 @@ sitemap: false
 ## 정렬 Sort
 - 2개 이상의 자료를 오름차순 또는 내림차순으로 배열
 - Key : 정렬 기준
+
+- 안정 정렬 : 값이 같을 때 원본 순서를 보장O
+- 불안정 정렬 : 값이 같을 때 원본 순서를 보장X
+{:.note title="안정 정렬 VS 불안정 정렬"}
+
 - Swap
     ``` java
     int a = 2; int b = 1; int c;
