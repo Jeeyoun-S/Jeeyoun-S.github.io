@@ -333,16 +333,15 @@ sitemap: false
     	}
     }
     
-    // 누적합 구하기
+    // 요소별 빈도수를 넣는 배열 만들기
     int[] freq = new int[(maximum-minimum)+1];
     for (int j : numlist) {
     	freq[j] += 1;
     }
-    
-    int total = 0;
-    for (int p=0; p<freq.length; p++) {
-    	total += freq[p];
-    	freq[p] = total;
+
+    // 누적합 구하기
+    for (int p=1; p<freq.length; p++) {
+    	total[p] += freq[p-1];
     }
     
     // 정렬한 배열 만들기
