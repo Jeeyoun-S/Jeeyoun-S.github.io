@@ -143,6 +143,9 @@ Use the the form below to purchase Hydejack PRO:
 
 <div class="gumroad-product-embed" data-gumroad-product-id="nuOluY"><a href="https://gumroad.com/l/nuOluY">Loading…</a></div>
 
+## Education
+- 2018.03 - 2022.02 세종대학교
+
 
 [blog]: /
 [portfolio]: https://hydejack.com/examples/
