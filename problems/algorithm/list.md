@@ -175,7 +175,18 @@ sitemap: false
             ```
 - 이동
     - 델타 이동
+    
     - 전치 행렬
+	```java
+	int N = arr.length;
+	for (int i=0; i<N; i++) {
+		for (int j=0; j<N-i; j++) {
+			int tmp = arr[i][j];
+			arr[i][j] = arr[N-1-j][N-1-i];
+			arr[N-1-j][N-1-i] = tmp;
+		}
+	}
+	```
 
 ## 정렬 Sort
 - 2개 이상의 자료를 오름차순 또는 내림차순으로 배열
@@ -466,7 +477,7 @@ sitemap: false
             }
             int[] newlist = new int[end-start+1];
             for (int i=start; i<=end; i++) {
-            newlist[i-start] = numlist[i];
+            	newlist[i-start] = numlist[i];
             } SearchBinaryRecur(newlist, key);
         }
     }
