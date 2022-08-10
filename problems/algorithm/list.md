@@ -25,6 +25,9 @@ sitemap: false
     - 역방향
         - `for (int i = arr.length-1; i>=0; i--) { arr[i] }`
         - `for (int i = 0; i < arr.length; i++) { arr[arr.length-1-i] }`
+- 이동
+    - 델타 이동
+    - 
 
 ## 정렬 Sort
 - 2개 이상의 자료를 오름차순 또는 내림차순으로 배열
@@ -323,7 +326,3 @@ sitemap: false
     ```
 
 ### 인덱싱 Indexing
-
-## 이동
-### 델타 이동
-### 전치 행렬
