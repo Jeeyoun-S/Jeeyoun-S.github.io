@@ -177,6 +177,7 @@ sitemap: false
     - 델타 이동
     
     - 전치 행렬
+
 	```java
 	int N = arr.length;
 	for (int i=0; i<N; i++) {
