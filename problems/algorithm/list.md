@@ -25,6 +25,7 @@ sitemap: false
     - 역방향
         - `for (int i = arr.length-1; i>=0; i--) { arr[i] }`
         - `for (int i = 0; i < arr.length; i++) { arr[arr.length-1-i] }`
+
 ### 2차원 배열
 - 선언
     - 자료형, 이름, 행의 개수, 열의 개수 → 1차원 배열의 크기가 각각 달라도 가능
