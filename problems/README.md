@@ -11,14 +11,16 @@ permalink: /problems/
 
 ## [Algorithm]{:.heading.flip-title}
 
-## Baekjoon OJ
+## [Baekjoon OJ]{:.heading.flip-title} --- Baekjoon Online Judge
 * [Bronze](/baekjoon/bronze.md)
 * [Silver](/baekjoon/silver.md)
 * [Gold](/baekjoon/gold.md)
 
-## SWEA
+## [SWEA]{:.heading.flip-title} --- SW Expert Academy
 * [D1](/swea/d1.md)
 * [D2](/swea/d2.md)
 * [D3](/swea/d3.md)
 
 [Algorithm]: /problems/algorithm/
+[Baekjoon OJ]: https://www.acmicpc.net/
+[SWEA]: https://swexpertacademy.com/main/main.do
