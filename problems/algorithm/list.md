@@ -144,36 +144,30 @@ sitemap: false
         ```
         
     - 달팽이 순회
-        - 방법1
-            
-            ```java
-            int rowN = arr.length;
-            int colN = arr[0].length;
-            int fixc = 0;
-            int fixr = 0;
-            
-            for (int i=0; i<Math.min(rowN, colN); i++) {
-            	for (int c=0; c<colN-i-1; c++) {
-            		System.out.println(arr[fixc][fixr]);
-              	if (i%2 == 0) fixr++;
-              	else fixr--;
-              } 
-            	System.out.println(arr[fixc][fixr]);
-              for (int r=0; r<rowN-i-1; r++) {
-              	if (i%2 == 0) fixc++;
-            		else fixc--;
-              	System.out.println(arr[fixc][fixr]);
-              }
-              if (i%2 == 0) fixr--;
-            	else fixr++;
-            }
-            ```
-            
-        - 방법2
-            
-            ```java
-            
-            ```
+
+	```java
+	int rowN = arr.length;
+	int colN = arr[0].length;
+	int fixc = 0;
+	int fixr = 0;
+
+	for (int i=0; i<Math.min(rowN, colN); i++) {
+		for (int c=0; c<colN-i-1; c++) {
+			System.out.println(arr[fixc][fixr]);
+			if (i%2 == 0) fixr++;
+			else fixr--;
+		} 
+		System.out.println(arr[fixc][fixr]);
+		for (int r=0; r<rowN-i-1; r++) {
+			if (i%2 == 0) fixc++;
+			else fixc--;
+			System.out.println(arr[fixc][fixr]);
+		}
+		if (i%2 == 0) fixr--;
+		else fixr++;
+	}
+	```
+
 - 이동
     - 델타 이동
     
