@@ -207,21 +207,37 @@ sitemap: false
 - 이동
     - 델타 이동
     	- 한 좌표에서 인접 좌표로 이동하는 2차원 배열 탐색 방법
-	<table><tr>
-		<td>(-1, -1)</td>
-		<td>(-1, 0)</td>
-		<td>(-1, 1)</td>
-	</tr>
-	<tr>
-		<td>(0, -1)</td>
-		<td>POINT</td>
-		<td>(0, 1)</td>
-	</tr>
-	<tr>
-		<td>(1, -1)</td>
-		<td>(1, 0)</td>
-		<td>(1, 1)</td>
-	</tr></table>
+    	<table><tr>
+    	    	<td>(-1, -1)</td>
+    	    	<td>(-1, 0)</td>
+    	    	<td>(-1, 1)</td>
+    	</tr>
+    	<tr>
+    	    	<td>(0, -1)</td>
+    	    	<td>POINT</td>
+    	    	<td>(0, 1)</td>
+    	</tr>
+    	<tr>
+    	    	<td>(1, -1)</td>
+    	    	<td>(1, 0)</td>
+    	    	<td>(1, 1)</td>
+    	</tr></table>
+	
+    	```java
+    	int dr = 0; //찾을 열
+    	int dc = 0; //찾을 행
+    	
+    	//바로 위의 칸부터 시계 방향
+    	int[][] idx = {{-1,0}, {-1,1}, {0,1}, {1,1}, {1,0}, {1,-1}, {0,-1}, {-1,-1}};
+    	
+    	for (int i=0; i<idx.length; i++) {
+    	    	int rm = dr+idx[i][0];
+    	    	int cm = dc+idx[i][1];
+    	    	if (rm >= 0 && rm < arr.length && cm >= 0 && cm < arr[0].length) {
+		    	System.out.println(arr[rm][cm]);
+    	    	}
+    	}
+    	```
     
     - 전치 행렬
 
