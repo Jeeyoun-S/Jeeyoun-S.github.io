@@ -96,11 +96,11 @@ sitemap: false
             ```java
             for (int i=0; i<arr.length; i++) {
             	for (int j=0; j<arr[i].length; j++) {
-            			if (i%2==0) {
-            				System.out.println(arr[i][j]);
-            			} else {
-            				System.out.println(arr[i][arr[i].length-1-j]);
-            			}
+            		if (i%2==0) {
+            			System.out.println(arr[i][j]);
+            		} else {
+            			System.out.println(arr[i][arr[i].length-1-j]);
+            		}
             	}
             }
             ```
