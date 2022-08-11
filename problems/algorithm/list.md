@@ -138,8 +138,8 @@ sitemap: false
         ```
         
     - 대각선 순회
-        
-        ```java
+    
+	```java
 	int N = arr.length;
 	int M = arr[0].length;
 
@@ -155,7 +155,7 @@ sitemap: false
 		}
 	}
 	```
-        
+	
     - 대각선 교차 순회
         
 	```java
@@ -166,21 +166,15 @@ sitemap: false
 		int row;
 		int col;
 
-		if (rep%2==0) {
-			row = 0; col = rep;
-		} else {
-			row = rep; col = 0;
-		}
+		if (rep%2==0) {row = 0; col = rep;}
+		else {row = rep; col = 0;}
 
 		while (col >=0) {
 			if (row >= 0 && row < N && col >= 0 && col < M) {
 				System.out.println(arr[row][col]);
 			}
-			if (rep%2==0) {
-				row ++; col--;
-			} else {
-				row --; col++;
-			}
+			if (rep%2==0) {row ++; col--;}
+			else {row --; col++;}
 		}
 	}
 	```
