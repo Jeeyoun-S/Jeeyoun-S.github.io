@@ -67,7 +67,7 @@ sitemap: false
         - 행 역방향
             
             ```java
-            for (int j=0; j<arr[0].length; j++) { //보류
+            for (int j=0; j<arr[0].length; j++) {
             	for (int i=arr.length-1; i>=0; i--) {
             		System.out.println(arr[i][j]);
             	}
