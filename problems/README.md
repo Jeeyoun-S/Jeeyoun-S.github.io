@@ -11,12 +11,12 @@ permalink: /problems/
 
 ## [Algorithm]{:.heading.flip-title}
 
-## [Baekjoon OJ]{:.heading.flip-title} --- Baekjoon Online Judge
+## [Baekjoon OJ]{:.heading.flip-title}
 * [Bronze](/baekjoon/bronze.md)
 * [Silver](/baekjoon/silver.md)
 * [Gold](/baekjoon/gold.md)
 
-## [SWEA]{:.heading.flip-title} --- SW Expert Academy
+## [SWEA]{:.heading.flip-title}
 * [D1](/swea/d1.md)
 * [D2](/swea/d2.md)
 * [D3](/swea/d3.md)
