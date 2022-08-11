@@ -133,7 +133,7 @@ sitemap: false
         	for (int j=0; j<arr[i].length; j++) {
         		int rlt = (i/2)%2==0 ? j : arr[i].length-1-j;
         			System.out.println(arr[i][rlt]);
-        		}
+        	}
         }
         ```
         
