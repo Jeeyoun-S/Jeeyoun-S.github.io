@@ -138,7 +138,7 @@ sitemap: false
         ```
         
     - 대각선 순회
-    
+        
         ```java
         int N = arr.length;
         int M = arr[0].length;
@@ -154,11 +154,11 @@ sitemap: false
                         row ++; col--;
                 }
         }
-	```
-	
+        ```
+        
     - 대각선 교차 순회
         
-	```java
+        ```java
         int N = arr.length;
         int M = arr[0].length;
 
@@ -177,7 +177,7 @@ sitemap: false
                         else {row --; col++;}
                 }
         }
-	```
+        ```
         
     - 달팽이 순회
 
