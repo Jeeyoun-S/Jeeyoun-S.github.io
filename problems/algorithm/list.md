@@ -139,44 +139,44 @@ sitemap: false
         
     - 대각선 순회
     
-	```java
-	int N = arr.length;
-	int M = arr[0].length;
+        ```java
+        int N = arr.length;
+        int M = arr[0].length;
 
-	for (int rep=0; rep<(N+M-1); rep++) {
-		int row = 0;
-		int col = rep;
+        for (int rep=0; rep<(N+M-1); rep++) {
+                int row = 0;
+                int col = rep;
 
-		while (col >=0) {
-			if (row >= 0 && row < N && col >= 0 && col < M) {
-				System.out.println(arr[row][col]);
-			}
-			row ++; col--;
-		}
-	}
+                while (col >=0) {
+                        if (row >= 0 && row < N && col >= 0 && col < M) {
+                                System.out.println(arr[row][col]);
+                        }
+                        row ++; col--;
+                }
+        }
 	```
 	
     - 대각선 교차 순회
         
 	```java
-	int N = arr.length;
-	int M = arr[0].length;
+        int N = arr.length;
+        int M = arr[0].length;
 
-	for (int rep=0; rep<(N+M-1); rep++) {
-		int row;
-		int col;
+        for (int rep=0; rep<(N+M-1); rep++) {
+                int row;
+                int col;
 
-		if (rep%2==0) {row = 0; col = rep;}
-		else {row = rep; col = 0;}
+                if (rep%2==0) {row = 0; col = rep;}
+                else {row = rep; col = 0;}
 
-		while (col >=0) {
-			if (row >= 0 && row < N && col >= 0 && col < M) {
-				System.out.println(arr[row][col]);
-			}
-			if (rep%2==0) {row ++; col--;}
-			else {row --; col++;}
-		}
-	}
+                while (col >=0) {
+                        if (row >= 0 && row < N && col >= 0 && col < M) {
+                                System.out.println(arr[row][col]);
+                        }
+                        if (rep%2==0) {row ++; col--;}
+                        else {row --; col++;}
+                }
+        }
 	```
         
     - 달팽이 순회
