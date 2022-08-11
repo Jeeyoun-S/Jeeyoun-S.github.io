@@ -234,7 +234,7 @@ sitemap: false
     	    	int rm = dr+idx[i][0];
     	    	int cm = dc+idx[i][1];
     	    	if (rm >= 0 && rm < arr.length && cm >= 0 && cm < arr[0].length) {
-		    	System.out.println(arr[rm][cm]);
+    	    	    	System.out.println(arr[rm][cm]);
     	    	}
     	}
     	```
