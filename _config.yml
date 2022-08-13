@@ -52,7 +52,7 @@ menu:
   - title:             About Me
     url:               /about/
   - title:             Projects
-    url:               ../TIL/
+    url:               git@github.com:Jeeyoun-S/TIL.git
   - title:             Blog
     url:               /blog/
   - title:             Today I Learned
