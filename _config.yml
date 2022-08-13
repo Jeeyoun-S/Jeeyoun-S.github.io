@@ -25,7 +25,7 @@ title:                 Jeeyoun
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
+  Hydejack is a boutique Jekyll theme for hackers, nerds, and academic
   with a focus on personal sites that are meant to impress.
 
 # A shorter description for the sidebar.
@@ -52,7 +52,7 @@ menu:
   - title:             About Me
     url:               /about/
   - title:             Projects
-    url:               /pjt/
+    url:               ../TIL/
   - title:             Blog
     url:               /blog/
   - title:             Today I Learned
