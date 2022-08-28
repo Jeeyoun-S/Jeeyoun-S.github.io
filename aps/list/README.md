@@ -25,7 +25,7 @@ permalink: /aps/list/
         ```
   - Swap Function
         ```java
-        <!-- file: `swap.java` -->
+        /* file: `swap_function.java` --> */
         public class SwapFunction {
             static int[] numlist = {55, 4, 34, 54, 1, 12, 35};
             public static void main(String[] args) {
@@ -38,20 +38,6 @@ permalink: /aps/list/
             }
         }
         ```java
-
-        ``` java
-        public class SwapFunction {
-            static int[] numlist = {55, 4, 34, 54, 1, 12, 35};
-            public static void main(String[] args) {
-                System.out.println(Arrays.toString(numlist));
-            }
-            static void Swap(int idx_a, int idx_b) {
-                int tmp = numlist[idx_a];
-                numlist[idx_a] = numlist[idx_b];
-                numlist[idx_b] = tmp;
-            }
-        }
-        ```
 
 2. [Bubble Sort](/sort/bubble.md)
 3. [Selection Sort](/sort/selection.md)
