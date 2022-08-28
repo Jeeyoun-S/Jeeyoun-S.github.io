@@ -23,7 +23,7 @@ permalink: /aps/
   
 
 [List]: /aps/list/
-[Sting]: /aps/sting/
+[Sting]: /aps/string/
 [Stack]: /aps/stack/
 [Queue]: /aps/queue/
 [LinkedList]: /aps/linkedlist/
