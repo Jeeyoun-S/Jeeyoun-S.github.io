@@ -204,13 +204,13 @@ sitemap: false
 3. 이동
     - 델타 이동  
         - 한 좌표에서 인접 좌표로 이동하는 2차원 배열 탐색 방법
-    	
+
     	<table>
         <tr><td>(-1, -1)</td><td>(-1, 0)</td><td>(-1, 1)</td></tr>
         <tr><td>(0, -1)</td><td>POINT</td><td>(0, 1)</td></tr>
         <tr><td>(1, -1)</td><td>(1, 0)</td><td>(1, 1)</td></tr>
         </table>
-	
+
     	```java
     	int dr = 0; //찾을 열
     	int dc = 0; //찾을 행
@@ -226,7 +226,7 @@ sitemap: false
     	    	}
     	}
     	```
-    
+
     - 전치 행렬
 
         ```java

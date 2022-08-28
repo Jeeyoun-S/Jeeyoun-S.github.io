@@ -23,7 +23,6 @@ sitemap: false
 
 ## 구현
 1. 양수 값만 존재
-    
     ```java
     // 배열에서 최대값 찾기
     int maximum = numlist[0];
@@ -54,8 +53,9 @@ sitemap: false
     	copyNum[freq[number]] = number;
     }
     ```
+
 2. 음수 값도 존재 *(가장 작은 값을 0으로 설정)*
-    
+
     ```java
     // 배열에서 최소값과 최대값 찾기
     int maximum = numlist[0];
