@@ -19,13 +19,25 @@ permalink: /aps/list/
         - 안정 정렬 : 값이 같을 때 원본 순서를 보장 O
         - 불안정 정렬 : 값이 같을 때 원본 순서를 보장 X
   - Swap
-
         ``` java
         int a = 2; int b = 1; int c;
         c = a; a = b; b = c;
         ```
-
   - Swap Function
+        ```java
+        <!-- file: `swap.java` -->
+        public class SwapFunction {
+            static int[] numlist = {55, 4, 34, 54, 1, 12, 35};
+            public static void main(String[] args) {
+                System.out.println(Arrays.toString(numlist));
+            }
+            static void Swap(int idx_a, int idx_b) {
+                int tmp = numlist[idx_a];
+                numlist[idx_a] = numlist[idx_b];
+                numlist[idx_b] = tmp;
+            }
+        }
+        ```java
 
         ``` java
         public class SwapFunction {

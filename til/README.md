@@ -8,7 +8,7 @@ permalink: /til/
 ---
 
 - 2022.07.18 ~ ing
-- 원본 파일 [GitHub Jeeyoun-S](https://github.com/Jeeyoun-S/Jeeyoun-S.github.io/tree/master/docs)
+- [GitHub Jeeyoun-S TIL](https://github.com/Jeeyoun-S/Jeeyoun-S.github.io/tree/master/docs)
 
 ## Programming Language
 * [Python]{:.heading.flip-title} --- Life is short, You need Python.
