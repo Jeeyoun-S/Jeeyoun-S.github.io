@@ -21,4 +21,5 @@ redirect_from:
 - 2018.04 - 2019.06 세종대신문사
 
 ## Contact
-- Email dreaming990124@gmail.com
+- **Email** dreaming990124@gmail.com
+- **Instagram** assimpleas_possible

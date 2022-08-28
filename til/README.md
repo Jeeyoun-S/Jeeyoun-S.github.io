@@ -24,7 +24,7 @@ permalink: /til/
 ## Other
 * [Git]{:.heading.flip-title}
 * [CLI]{:.heading.flip-title} --- Command Line Interface
-* [Markdown]{:.heading.flip-title}
+* [Markdown]{:.heading.flip-title} --- Easy-to-read, Easy-to-write
 {:.related-posts.faded}
 
 [Python]: /til/python/
