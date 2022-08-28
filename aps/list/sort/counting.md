@@ -1,27 +1,28 @@
 ---
 layout: page
-title: Concept of List
-description: >
-  Tell about List.
+title: Counting Sort
 hide_description: true
 sitemap: false
 ---
-0. this unordered seed list will be replaced by toc as unordered list
+1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-### 카운팅 정렬 Counting Sort
+## 개념
 - 배열에 각 요소가 몇 개씩 있는지 세는 방법
     - 정수로 표현 가능한 자료만 사용 가능
     - 배열 내 가장 큰 수를 알아내야 한다.
 - 시간복잡도 O(n+k)
-- 정렬 과정
-    1. 원본 배열의 최댓값을 인덱스로 포함하는 배열을 생성
-    2. 새로 생성한 배열에 요소값을 인덱스로 해 요소별 개수를 저장
-    3. 요소별 개수의 누적합 계산
-    4. 원본 배열과 동일한 크기의 배열을 생성
-    5. 원본 배열을 맨 끝 요소부터 순회
-    6. 해당 요소의 누적합에서 1을 빼고, 새로 생성한 배열의 누적합 인덱스에 저장
-- 양수 값만 존재
+
+## 정렬 과정
+1. 원본 배열의 최댓값을 인덱스로 포함하는 배열을 생성
+2. 새로 생성한 배열에 요소값을 인덱스로 해 요소별 개수를 저장
+3. 요소별 개수의 누적합 계산
+4. 원본 배열과 동일한 크기의 배열을 생성
+5. 원본 배열을 맨 끝 요소부터 순회
+6. 해당 요소의 누적합에서 1을 빼고, 새로 생성한 배열의 누적합 인덱스에 저장
+
+## 구현
+1. 양수 값만 존재
     
     ```java
     // 배열에서 최대값 찾기
@@ -53,7 +54,7 @@ sitemap: false
     	copyNum[freq[number]] = number;
     }
     ```
-- 음수 값도 존재 *(가장 작은 값을 0으로 설정)*
+2. 음수 값도 존재 *(가장 작은 값을 0으로 설정)*
     
     ```java
     // 배열에서 최소값과 최대값 찾기

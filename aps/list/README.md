@@ -8,13 +8,11 @@ permalink: /aps/list/
 {:toc}
 
 ## Datatype
-### Java
-- [Array](/datatype/array_java.md)
-### Python
-- [List](/datatype/list_python.md)
+1. Java - [Array](/datatype/array_java.md)
+2. Python - [List](/datatype/list_python.md)
 
 ## Sort
-- Basics
+1. Basics
   - 2개 이상의 자료를 오름차순 또는 내림차순으로 배열
   - Key : 정렬 기준
   - 안정 VS 불안정 정렬
@@ -39,13 +37,13 @@ permalink: /aps/list/
           }
       }
       ```
-- [Bubble Sort](/sort/bubble.md)
-- [Selection Sort](/sort/selection.md)
-- [Counting Sort](/sort/counting.md)
-- [Insertion Sort](/sort/insertion.md)
-- [Merge Sort](/sort/merge.md)
-- [Quick Sort](/sort/quick.md)
+2. [Bubble Sort](/sort/bubble.md)
+3. [Selection Sort](/sort/selection.md)
+4. [Counting Sort](/sort/counting.md)
+5. [Insertion Sort](/sort/insertion.md)
+6. [Merge Sort](/sort/merge.md)
+7. [Quick Sort](/sort/quick.md)
   
 ## Search
-- [Sequential Search](/search/sequential.md)
-- [Binary Search](/search/binary.md)
+1. [Sequential Search](/search/sequential.md)
+2. [Binary Search](/search/binary.md)

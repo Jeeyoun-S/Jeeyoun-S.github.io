@@ -28,4 +28,4 @@ permalink: /aps/
 [Queue]: /aps/queue/
 [LinkedList]: /aps/linkedlist/
 [Tree]: /aps/tree/
-[Graph]: /aps/graph
+[Graph]: /aps/graph/

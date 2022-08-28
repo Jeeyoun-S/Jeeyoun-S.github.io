@@ -1,23 +1,20 @@
 ---
 layout: page
-title: Concept of List
-description: >
-  Tell about List.
+title: Array
 hide_description: true
 sitemap: false
 ---
-0. this unordered seed list will be replaced by toc as unordered list
+1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-## 배열
-### 1차원 배열
-- 선언
+## 1차원 배열
+1. 선언
     - 자료형, 이름, 길이
     - `int[] numbers = new int[5]`
-- 접근
+2. 접근
     - `numbers[index] = 20`  → `index+1`번째 원소에 `20`을 저장
     - **주의** : Java에서는 음수 인덱스 불가능
-- 순회
+3. 순회
     `int[] arr = {2, 4, 6, 8, 10, 12}`
     - 정방향
         - `for (int i : arr) { i }`
@@ -26,12 +23,12 @@ sitemap: false
         - `for (int i = arr.length-1; i>=0; i--) { arr[i] }`
         - `for (int i = 0; i < arr.length; i++) { arr[arr.length-1-i] }`
 
-### 2차원 배열
-- 선언
+## 2차원 배열
+1. 선언
     - 자료형, 이름, 행의 개수, 열의 개수 → 1차원 배열의 크기가 각각 달라도 가능
     - `int[][] arr = new int[5][10];`
     - `int[][] arr = { {0,1,2,3,4},{5,6,7,8,9},{10,11,12,13,14},{15,16,17,18,19} };`
-- 순회
+2. 순회
     - 행 우선 순회
         - 열 정방향
             
@@ -204,7 +201,7 @@ sitemap: false
         }
         ```
 
-- 이동
+3. 이동
     - 델타 이동  
         - 한 좌표에서 인접 좌표로 이동하는 2차원 배열 탐색 방법
     	

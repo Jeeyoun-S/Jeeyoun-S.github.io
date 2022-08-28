@@ -1,13 +1,11 @@
 ---
 layout: page
-title: Concept of List
-description: >
-  Tell about List.
+title: Type Casting
 hide_description: true
 sitemap: false
 ---
 
-### 문자열 → 숫자
+## 문자열 → 숫자
 1. `System.out.println(Integer.valueOf(txt));`
 2. `System.out.println(Integer.parseInt(txt));`
 3. 함수 구현 *(음수도 처리)*
@@ -36,7 +34,7 @@ sitemap: false
     ```
     
 
-### 숫자 → 문자열
+## 숫자 → 문자열
 1. `System.out.println(String.valueOf(num));`
 2. `System.out.println(Integer.toString(num));`
 3. 함수 구현 *(음수도 처리)*
