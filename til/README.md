@@ -4,7 +4,7 @@ title: Today I Learned
 description: >
   공부한 것을 정리하고 기록하는 문서
 sitemap: false
-permalink: /docs/
+permalink: /til/
 ---
 
 - 2022.07.18 ~ ing
@@ -27,12 +27,12 @@ permalink: /docs/
 * [Markdown]{:.heading.flip-title}
 {:.related-posts.faded}
 
-[Python]: /docs/python/
-[Java]: /docs/java/
+[Python]: /til/python/
+[Java]: /til/java/
 
 [HTML]: html.md
 [CSS]: css.md
-[JavaScript]: /docs/javascript/
+[JavaScript]: /til/javascript/
 
 [Markdown]: markdown.md
 [CLI]: cli.md

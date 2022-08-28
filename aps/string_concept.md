@@ -1,8 +1,8 @@
 ---
 layout: page
-title: String
+title: Concept of String
 description: >
-  This chapter covers advanced topics, such as offline support and custom JS builds. Codings skills are recommended.
+  Tell about String.
 hide_description: true
 sitemap: false
 ---
@@ -117,11 +117,11 @@ sitemap: false
     ```
     
 
-## 패턴 매칭 Pattern Matching
+## Pattern Matching
 - N : 문자열의 길이
 - M : 패턴의 길이
 
-### 고지식한 알고리즘 Brute Force
+### Brute Force
 - 한 칸씩 이동하며 패턴과 비교하고, 패턴이 있는지 전부 확인하는 방법
 - 시간복잡도 최대 O(MN)
 - While문 이용
@@ -166,8 +166,8 @@ sitemap: false
     }
     ```
 
-### 라빈-카프 알고리즘 Rabin-Karp
+### Rabin-Karp
 
-### KMP 알고리즘 Knuth-Morris-Pratt
+### Knuth-Morris-Pratt (KMP)
 
-### 보이어-무어 알고리즘 Boyer-Moore
+### Boyer-Moore

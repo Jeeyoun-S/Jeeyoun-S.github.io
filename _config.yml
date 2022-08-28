@@ -52,13 +52,13 @@ menu:
   - title:             About Me
     url:               /about/
   - title:             Projects
-    url:               git@github.com:Jeeyoun-S/TIL.git
+    url:               /pjt/
   - title:             Blog
     url:               /blog/
   - title:             Today I Learned
-    url:               /docs/
+    url:               /til/
   - title:             Solving Problems
-    url:               /problems/
+    url:               /aps/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
