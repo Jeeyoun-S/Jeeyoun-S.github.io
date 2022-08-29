@@ -1,8 +1,6 @@
 ---
 layout: page
 title: Python
-description: >
-  Here you should be able to find everything you need to know to accomplish the most common tasks when blogging with Hydejack.
 hide_description: true
 sitemap: false
 permalink: /til/python/
@@ -10,15 +8,17 @@ permalink: /til/python/
 Python3 사용, [Python 공식 문서](https://docs.python.org/3/)
 {:.note}
 
-* [Start Python]{:.heading.flip-title}
-* [Datatype]{:.heading.flip-title}
-* [Operator]{:.heading.flip-title}
-* [Control Statement]{:.heading.flip-title}
-* [Function]{:.heading.flip-title}
-* [Method of Datatype]{:.heading.flip-title}
-* [Object-Oriented]{:.heading.flip-title}
-* [Error & Exception]{:.heading.flip-title}
-* [Get Data]{:.heading.flip-title}
+1. [Start Python]
+2. [Datatype]
+3. [Operator]
+4. [Control Statement]
+5. [Function]
+   - [Method of Datatype]
+   - [Built-in Function]
+   - [External Function]
+6. [Object-Oriented]
+7. [Error & Exception]
+8. [File]
 
 [Start Python]: start_python.md
 [Datatype]: datatype.md
@@ -26,6 +26,8 @@ Python3 사용, [Python 공식 문서](https://docs.python.org/3/)
 [Control Statement]: control_statement.md
 [Function]: function.md
 [Method of Datatype]: method_of_datatype.md
+[Built-in Function]: built_in_function.md
+[External Function]: external_function.md
 [Object-Oriented]: object_oriented.md
 [Error & Exception]: error_and_exception.md
-[Get Data]: get_data.md
+[File]: file.md

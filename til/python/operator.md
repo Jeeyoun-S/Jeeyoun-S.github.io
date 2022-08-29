@@ -1,12 +1,10 @@
 ---
 layout: page
 title: Operator
-description: >
-  This chapter covers advanced topics, such as offline support and custom JS builds. Codings skills are recommended.
 hide_description: true
 sitemap: false
 ---
-0. this unordered seed list will be replaced by toc as unordered list
+1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
 ### 산술 연산자
@@ -34,8 +32,8 @@ sitemap: false
 
 ### 식별 연산자
 - `is` `id(A)`
-- -5~256까지는 id가 동일, 257부터 id는 다름
-- id가 다르면 is로 판별 시 `False` 가 나옵니다.
+- -5~256까지는 id가 동일, 257부터 id는 다르다.
+- id가 다르면 is로 판별 시 `False` 가 나온다.
 
 ### 멤버십 연산자
 - `in` `not in`

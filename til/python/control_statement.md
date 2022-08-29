@@ -10,7 +10,6 @@ sitemap: false
 {:toc}
 
 ## 조건문
-
 ### 기본 조건문
 ```python
 if 조건문:
@@ -44,7 +43,6 @@ true인 경우 값 if 조건 else false인 경우 값
 - 가독성이 떨어진다는 단점이 있다.
 
 ## 반복문
-
 ### While문
 ```python
 while 조건:
@@ -69,4 +67,4 @@ for 변수 in iterable:
 - `pass` 아무것도 안 한다.
 
 ## 참고
-- [Python Tutor](https://pythontutor.com/) 조건문과 반복문을 시각화해서 보여주는 사이트
+- [Python Tutor](https://pythontutor.com/) 조건문과 반복문의 구조를 시각화해서 보여주는 사이트

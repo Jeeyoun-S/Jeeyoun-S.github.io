@@ -55,7 +55,7 @@ sitemap: false
     
 - **Commit 상태 확인**
     - `git status` 현재 git으로 관리되고 있는 파일들의 상태, Local만 보고 있는 상태.
-    - `git log` **git의 commit 히스토리
+    - `git log` git의 commit 히스토리
     - `git diff **ID_A ID_B` commit 비교→ 순서에 따라 기준이 달라진다. A가 기준.
     
 - **Remote**

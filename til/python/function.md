@@ -12,10 +12,9 @@ sitemap: false
 ## 함수 기본 구조
 ```python
 def func(x, y):     #선언
-	""" coding """    #문서화
-	n = n * 3         #Function Body
+	""" coding """  #문서화
+	n = n * 3       #Function Body
 	return n
-
 func(0,1)           #호출
 ```
 
@@ -106,10 +105,12 @@ func(0,1)           #호출
     ```
 
 ## 함수의 종류
-
 ### 내장 함수
+[Method of Datatype]: (method_of_datatype.md)
+[Built-in Function]: (built_in_function.md)
 
 ### 외장 함수
+[External Function](external_function.md)
 
 ### 사용자 정의 함수
 

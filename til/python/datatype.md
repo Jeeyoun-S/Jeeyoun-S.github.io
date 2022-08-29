@@ -1,16 +1,13 @@
 ---
 layout: page
 title: Datatype
-description: >
-  This chapter covers advanced topics, such as offline support and custom JS builds. Codings skills are recommended.
 hide_description: true
 sitemap: false
 ---
-0. this unordered seed list will be replaced by toc as unordered list
+1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
 ## 자료형
-
 ### Numeric Type
 - 숫자 표현
     - **정수** `int(10)`
@@ -69,9 +66,10 @@ sitemap: false
 - String Interpolation 형식
     - **표현식**  
 
-        | 정수 | 문자 | 실수 | 8진수 | 16진수 | 년 | 월 | 일 | 요일 |
+        |정수|문자|실수|8진수|16진수|년|월|일|요일|
         |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
         | d | c | f | o | x | %y | %m | %d | %A |
+
         1. 예시 코드
         ```python
         num = 34.54564
@@ -86,12 +84,13 @@ sitemap: false
         ```
     - **정렬**  
 
-        |코드||
+        |Code|정렬 방식|
         |:---:|:---:|
         | {num:>5} | 오른쪽 정렬 |
         | {num:<5} | 왼쪽 정렬 |
         | {num:^5} | 가운데 정렬 |
         | {num:0<5} or {num:<05} | 왼쪽 정렬 & 빈 자리는 0 |
+
     - 중괄호 출력 원하면 `{{}}`
 
 ### Boolean Type
@@ -111,6 +110,7 @@ sitemap: false
 ### Set {not sequence, 가변}
 - `{}` 또는 `set()`로 생성 가능
 - 연산자
+
     | `|` | `&` | `-` | `^` 
     |:---:|:---:|:---:|:---:|
     | 합집합 | 교집합 | 차집합 | 대칭차집합 (합집합 - 교집합) |
@@ -128,7 +128,6 @@ sitemap: false
 - 명시적 explicit
 
 ## 기타
-
 ### Indexing & Slicing sequence
 - List, Tuple, Range, 문자열에서 사용 가능
 - `Indexing[index]` `Slicing[start, end+1, step]`

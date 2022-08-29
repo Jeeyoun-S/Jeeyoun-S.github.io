@@ -16,8 +16,8 @@ sitemap: false
 
 ### Python의 특징
 1. Easy to Learn
-2. 인터프리터 언어(Interpreter)
-3. 객체 지향 프로그래밍(Object Oriented Programming)
+2. Interpreter
+3. Object Oriented Programming
 
 ### Python 개발 환경
 - IDE: Visual Studio Code, PyCharm
@@ -32,7 +32,6 @@ sitemap: false
         1. python 코드와 마크다운을 같이 적을 수 있다.
         2. python 코드의 실행 결과를 함께 파일로 저장
         3. 전체 파일 단위가 아닌, 셀 단위 실행
-- IDLE
 
 ### 코드작성법
 - 코드 스타일 가이드 (ex. PEP8, Google Style guide, etc.)
