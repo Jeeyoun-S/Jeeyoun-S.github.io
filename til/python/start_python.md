@@ -44,6 +44,7 @@ sitemap: false
   - `"""This code is ~~~"""` 여러 줄 주석 처리, `'`도 가능
 
 ### 변수
+- 선언 `a = 1`
 - 식별자
     - 숫자로 시작 불가, 길이 제한 없음, 대소문자 구별
     - 예약어 사용 불가
@@ -51,3 +52,10 @@ sitemap: false
         import keyword
         print(keyword.kwlist) #예약어 출력하기
         ```
+
+### 입력
+- `input()`
+- `import sys; sys.stdin.readline()`
+
+### 출력
+- `print("출력하고 싶은 내용을 입력하시오.")`

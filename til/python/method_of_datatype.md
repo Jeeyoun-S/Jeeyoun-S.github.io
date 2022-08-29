@@ -8,22 +8,22 @@ sitemap: false
 {:toc}
 
 ## 문자열
-
-### 문자열 조회 및 탐색
+### 조회 및 탐색
 - `string.find('A')` A의 첫 번째 위치 반환 → A가 없으면 -1 반환
 - `string.index('A')` A의 첫 번째 위치 반환 → A가 없으면 `ValueError`
 - `string.count('A')` A의 갯수를 반환
 
-### 문자열 검증
+### 검증
 - `string.isspace()` 문자열이 공백으로 이뤄져 있는지
 - `string.isalpha()` 알파벳인지
 - `string.isupper()` 대문자인지 `string.islower()` 소문자인지
 - `string.istitle()` 단어의 처음 대문자, 나머지 소문자
 - `string.isdecimal()` 0~9까지 수인가⊂ `string.isdigit()` 숫자로 이뤄져 있는가
     ⊂ `string.isnumeric()` 문자열을 수로 볼 수 있는가
+- `string.isalnum()` 문자와 숫자로만 이뤄져 있는가 (특수문자 및 공백 불가능)
 - `string.startswith('A')` 문자열이 A로 시작하는가 `string.endswith('A')` A로 끝나는가
 
-### 문자열 변경
+### 수정
 - `string.upper()` `string.lower()` `string.title()` `string.capitalize()` `string.swapcase()`
 - `string.replace(old, new[,count])` 문자열의 old를 new로 바꿔준다.
 - `string.split('A')` 공백 or 인자를 기준으로 분리
@@ -35,7 +35,6 @@ sitemap: false
     ```
 
 ## 리스트
-
 ### 요소 추가 및 삭제
 - `list.append(A)` 끝에 A 삽입
 - `list.insert(idx, A)` 인덱스 idx에 A를 삽입 → `idx > len(list)`이면 맨 끝에 A 삽입
@@ -58,13 +57,11 @@ sitemap: false
 - `list.reverse()` 현재에서 순서를 반대로
 
 ## 튜플
-
 ### 탐색
 - `tuple.index(A[,start[,end]])`
 - `tuple.count(A)`
 
 ## 집합
-
 ### 요소 추가 및 삭제
 - `set.add('A')` `set.update([1, 2, 3])`
 - `set.pop()` 임의의 원소 1개 제거
@@ -82,7 +79,6 @@ sitemap: false
 - `set1.issuperset(set2)` set2 ⊂ set1, set2가 set1의 부분집합
 
 ## 딕셔너리
-
 ### 조회
 - `dict.keys()` `dict.values()` `dict.items()`
 - `dict.get(key[, default])` key의 값을 반환 → key가 없으면 `None` 또는 `default` 반환

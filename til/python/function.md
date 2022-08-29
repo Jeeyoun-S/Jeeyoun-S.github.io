@@ -1,12 +1,10 @@
 ---
 layout: page
 title: Function
-description: >
-  This chapter covers advanced topics, such as offline support and custom JS builds. Codings skills are recommended.
 hide_description: true
 sitemap: false
 ---
-0. this unordered seed list will be replaced by toc as unordered list
+1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
 ## 함수 기본 구조
@@ -106,11 +104,11 @@ func(0,1)           #호출
 
 ## 함수의 종류
 ### 내장 함수
-[Method of Datatype]: (method_of_datatype.md)
-[Built-in Function]: (built_in_function.md)
+- [Method of Datatype](method_of_datatype.md)
+- [Built-in Function](built_in_function.md)
 
 ### 외장 함수
-[External Function](external_function.md)
+- [External Function](external_function.md)
 
 ### 사용자 정의 함수
 
@@ -140,19 +138,22 @@ print(plus(10,10)) #20
 - **특징**
     - Python의 최대 재귀 깊이는 1,000번
     - 입력 값이 커지면, 연산 속도가 길어진다 → 사용 지양
-- **예시** 피보나치 수열 & 팩토리얼
-    ```python
-    def fib(n):
-    	if n < 2:
-    		return n
-    	else:
-    		return fib(n-1) + fib(n-2)
-    ```
-    ```python
-    def factorial(n):
-    	return n * factorial(n-1)
-    
-    ```
+- **예시**
+    1. 피보나치 수열
+        ```python
+        def fib(n):
+            if n < 2:
+                return n
+            else:
+                return fib(n-1) + fib(n-2)
+        ```
+
+    2. 팩토리얼
+        ```python
+        def factorial(n):
+            return n * factorial(n-1)
+        
+        ```
 
 ## Module
 
