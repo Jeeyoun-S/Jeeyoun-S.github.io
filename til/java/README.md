@@ -1,18 +1,16 @@
 ---
 layout: page
 title: Java
-description: >
-  Here you should be able to find everything you need to know to accomplish the most common tasks when blogging with Hydejack.
 hide_description: true
 sitemap: false
 permalink: /til/java/
 ---
 
-* [Start Java]{:.heading.flip-title}
-* [Variable & Datatype]{:.heading.flip-title}
-* [Operator]{:.heading.flip-title}
-* [Input & Print]{:.heading.flip-title}
-* [Object Oriented Programming]{:.heading.flip-title}
+1. [Start Java]
+2. [Variable & Datatype]
+3. [Operator]
+4. [Input & Print]
+5. [Object Oriented Programming]
   * [Class](/oop/class.md)
   * [JVM Memory](/oop/jvm_memory.md)
   * [Access Modifier](/oop/access_modifier.md)

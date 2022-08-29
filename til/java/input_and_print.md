@@ -8,6 +8,7 @@ sitemap: false
 {:toc}
 
 ## Input 입력
+### Scanner
 ```java
 import java.util.Scanner;
 
@@ -22,8 +23,10 @@ public class Hello {
 - `nextLine()` 한 줄을 받아온다. 앞에 남아있는 개행문자도 받아온다.
 - `next()` 공백을 기준으로 한 단어를 받아온다.
 - `hasNext()` 다음에 가져올 값이 있으면 True, 아니면 False
+### Buffered
 
 ## Print 출력
+### System.out
 ```java
 public class Hello {
 	public static void main(String[] args){
