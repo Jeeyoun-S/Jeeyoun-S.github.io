@@ -18,7 +18,7 @@ redirect_from:
 ## Activities in University
 - 2021.06 - 2022.02 세종대학교 인지언어연구실 학생연구원
 - 2019.09 - 2020.06 세종대학교 SW기초코딩수업 보조TA
-- 2018.04 - 2019.06 세종대신문사 학생기사
+- 2018.04 - 2019.06 세종대신문사 학생기자
 
 ## Contact
 - **Email** dreaming990124@gmail.com
