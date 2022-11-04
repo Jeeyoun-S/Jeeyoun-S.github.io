@@ -350,8 +350,81 @@ public static void mergeSort(int left, int mid, int right) {
 - 시간복잡도 **O(nlogn) ~ O(n<sup>2</sup>)**
 - 불안정 정렬
 
+### 정렬 과정
+1. pivot 선정 (Partition 방법)
+2. pivot을 기준으로 왼쪽에는 pivot보다 작은 값, 오른쪽에는 pivot보다 큰 값을 위치시킨다.
+3. 그후 pivote의 왼쪽, 오른쪽으로 나눠 다시 1번부터 반복
+
 ### 구현
+1. Sort  
 ```java
+public static void quickSort(int left, int right) {
+  if (left < right) {
+    // pivot을 구한 뒤, pivot을 기준으로 나눈다.
+    int pivot = hoarePartition(left, right);
+    quickSort(left, pivot-1);
+    quickSort(pivot+1, right);
+  }
+}
 ```
 
-## 힙 정렬 Heap Sort
+2. Partition  
+  a. Hoare Partition
+  ```java
+  public static int hoarePartition(int left, int right) {
+    // 제일 왼쪽 값은 pivot으로 선택
+    int pivot = numArr[left];
+    int L = left + 1;
+    int R = right;
+    
+    while (L <= R) {
+      // L값이 pivot보다 작으면 L을 오른쪽으로 이동
+      while (L <= R && numArr[L] <= pivot) L++;
+
+      // R값이 pivot보다 크면 R을 왼쪽으로 이동
+      while (numArr[R] > pivot) R--;
+
+      // L값은 pivot보다 크고, R값은 pivot보다 작으므로 바꿔준다.
+      if (L < R) {
+        int tmp = numArr[L];
+        numArr[L] = numArr[R];
+        numArr[R] = tmp;
+      }
+    }
+    
+    // pivot과 numArr[R]의 위치 변경
+    // pivot보다 작은 값은 왼쪽으로, 큰 값은 오른쪽으로 가도록 설정
+    int tmp = numArr[left];
+    numArr[left] = numArr[R];
+    numArr[R] = tmp;
+    
+    return R;
+  }
+  ```
+  
+  b. Lomuto Partition  
+  ```java
+  public static int lomutoPartition(int left, int right) {
+    // pivot을 가장 오른쪽 값으로 설정
+    int pivot = numArr[right]; 
+    int i = left - 1;
+    
+    // pivot을 제외하고 left부터 right - 1까지
+    for (int j=left; j<right; j++) {
+      // 만약 pivot 값이 더 크면 제일 왼쪽으로 이동
+      if (numArr[j] <= pivot) {
+        i++;
+        int tmp = numArr[i];
+        numArr[i] = numArr[j];
+        numArr[j] = tmp;
+      }
+    }
+    
+    // pivot보다 작아서 왼쪽으로 이동한 마지막 인덱스 다음 i+1과 privot과 위치 변경
+    int tmp = numArr[i+1];
+    numArr[i+1] = numArr[right];
+    numArr[right] = tmp;
+    
+    return i + 1;
+  }
+  ```

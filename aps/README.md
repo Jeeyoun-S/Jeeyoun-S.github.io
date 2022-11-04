@@ -10,6 +10,6 @@ permalink: /aps/
 2. [Python](/aps/python/)
 
 ## Problems
-1. Baekjoon OJ
-2. SWEA
-3. Programmers
+1. [Baekjoon OJ](/aps/baekjoon_oj/)
+2. [SWEA](/aps/swea/)
+3. [Programmers](/aps/programmers/)
