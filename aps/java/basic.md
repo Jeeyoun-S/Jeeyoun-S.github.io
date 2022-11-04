@@ -2,7 +2,7 @@
 layout: page
 title: Basic
 sitemap: false
-permalink: /aps/java/list/basic/
+permalink: /aps/java/basic/
 ---
 
 *update 2022.11.04 -create*

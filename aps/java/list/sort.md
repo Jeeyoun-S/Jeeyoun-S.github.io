@@ -2,7 +2,7 @@
 layout: page
 title: Sort
 sitemap: false
-permalink: /aps/java/list/sort/
+permalink: /aps/java/sort/
 ---
 
 *update 2022.11.04 -create*

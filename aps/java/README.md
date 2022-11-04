@@ -5,19 +5,23 @@ sitemap: false
 permalink: /aps/java/
 ---
 
-### [Basic](basic.md)
+## [Basic](basic.md)
 
-### List
+## Data Structure
 1. [Array](list/array.md)
-2. [Sort](list/sort.md)
-3. [Search](list/search.md)
+2. [String](string/string.md)
+3. Stack
+4. Queue
+5. LinkedList
+6. Tree
+7. Graph
 
-### String
-1. [String](string/string.md)
-2. [Pattern Matching](string/pattern_matching.md)
-
-### Stack
-### Queue
-### LinkedList
-### Tree
-### Graph
+## Alogrithm
+1. [Sort](list/sort.md)
+2. [Search](list/search.md)
+3. [Pattern Matching](string/pattern_matching.md)
+4. BackTracking
+5. Permutation & Combination
+6. Divide & Conquer
+7. Dynamic Programming
+8. Minimum Spanning Tree

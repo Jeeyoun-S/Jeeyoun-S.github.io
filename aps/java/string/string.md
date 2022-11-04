@@ -2,7 +2,7 @@
 layout: page
 title: String
 sitemap: false
-permalink: /aps/java/string/string/
+permalink: /aps/java/string/
 ---
 
 *update 2022.11.04 -create*
@@ -36,7 +36,6 @@ System.out.println(String.valueOf(txtlist));
 ```java
 StringBuilder sb = new StringBuilder(txt);
 StringBuilder sb_reverse = sb.reverse();
-
 System.out.println(sb_reverse.toString());
 ```
 
@@ -44,7 +43,6 @@ System.out.println(sb_reverse.toString());
 ```java
 StringBuffer sb = new StringBuffer(txt);
 StringBuffer sb_reverse = sb.reverse();
-
 System.out.println(sb_reverse.toString());
 ```
 

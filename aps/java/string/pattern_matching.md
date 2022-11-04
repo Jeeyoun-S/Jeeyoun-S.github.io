@@ -2,7 +2,7 @@
 layout: page
 title: Pattern Matching
 sitemap: false
-permalink: /aps/java/string/pattern_matching/
+permalink: /aps/java/pattern_matching/
 ---
 
 *update 2022.11.04 -create*

@@ -2,7 +2,7 @@
 layout: page
 title: Array
 sitemap: false
-permalink: /aps/java/list/array/
+permalink: /aps/java/array/
 ---
 
 *update 2022.11.04 -create*
@@ -270,5 +270,3 @@ permalink: /aps/java/list/array/
     }
   }
   ```
-
-## 힙 정렬 Heap Sort
