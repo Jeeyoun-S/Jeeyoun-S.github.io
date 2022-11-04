@@ -5,4 +5,4 @@ sitemap: false
 permalink: /aps/java/
 ---
 
-1. [List](/list/)
+1. [List](/aps/java/list/)

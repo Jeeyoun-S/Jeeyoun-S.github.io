@@ -212,12 +212,12 @@ public class main {
       int[] sortArr = new int[numArrLen]; // 정렬된 배열을 저장
       int sortArrLen = 0;                 // 정렬된 배열에 넣은 요소 개수
       
-      while (numArrLen > 0) { // 옮겨야 할 요소가 남아있는 경우
+      while (numArrLen > 0) {
         int i = numArr.length-numArrLen;
         int j = 0;
         for (j=0; j<sortArrLen; j++) {
-          if (sortArr[j] > numArr[i]) {
-            for (int k=sortArrLen-1; k>=j; k--) {
+          if (sortArr[j] > numArr[i]) { // 현재 정렬하고자 하는 값보다 커지면
+            for (int k=sortArrLen-1; k>=j; k--) { // 옆으로 밀기
               sortArr[k+1] = sortArr[k]; 
             } break;
           }
@@ -228,12 +228,130 @@ public class main {
     }
     ```
 2. LinkedList
-    ```java
-    ```
+   1. Node.java
+      ```java
+      public class Node {
+      Node prev = null;
+      Node next = null;
+      int value;
+
+      public Node(int value) {
+        this.value = value;
+      }
+      }
+      ```
+   2. SelectionSort.java
+      ```java
+      public static void insertSort(int[] numArr) {
+        // 입력받은 배열을 LinkedList로 연결하며 정렬한다.
+        
+        // index 0에 있는 값을 Node에 넣어준다.
+        Node head = new Node(numArr[0]);
+        
+        for (int i=1; i<numArr.length; i++) {
+          // numArr[i]를 값으로 갖는 newNode를 생성한다.
+          Node newNode = new Node(numArr[i]);
+          
+          // compareNode와 비교, compareNode는 head부터 다음 Node가 없을 때까지 반복
+          Node compareNode = head;
+          while (compareNode != null) {
+            // 만약 현재 Node인 newNode보다 compareNode의 값이 크면
+            // newNode를 compareNode 앞에 넣는다.
+            if (compareNode.value > newNode.value) {
+              if (compareNode == head) { // compareNode의 이전 Node가 없고, 대신 head로
+                head = newNode;
+              } else { // compareNode의 이전 Node의 다음 Node를 new Node로
+                compareNode.prev.next = newNode;
+              }
+              newNode.prev = compareNode.prev;
+              compareNode.prev = newNode;
+              newNode.next = compareNode;
+              break;
+            }
+            
+            // 다음 Node가 없다면 맨 뒤에 현재 newNode를 붙인다.
+            if (compareNode.next == null ) {
+              compareNode.next = newNode;
+              newNode.prev = compareNode;
+              break;
+            } compareNode = compareNode.next;
+          }
+        }
+        
+        // 결과값을 출력한다.
+        Node startNode = head;
+        while (startNode != null) {
+          System.out.println(startNode.value);
+          startNode = startNode.next;
+        }
+      }
+      ```
 
 ## 병합 정렬 Merge Sort
 - 시간복잡도 **O(nlogn)**
 - 안정 정렬
 
+### 정렬 과정
+1. 주어진 배열을 최소 단위로 분할한다.
+2. 분할한 배열을 정렬하며 병합한다.
+
+### 구현
+```java
+static int[] numArr;       // 정렬을 수행할 배열
+static int[] sortNumArr;   // 정렬 시 임시로 사용할 배열
+public static void divideAndMerge(int left, int right) {
+  if (left < right) {
+    // mid를 기준으로 반으로 나눈다.
+    int mid = left + ((right - left)/2);
+    divideAndMerge(left, mid);
+    divideAndMerge(mid + 1, right);
+
+    // left부터 right까지 정렬
+    mergeSort(left, mid, right);
+  }
+}
+public static void mergeSort(int left, int mid, int right) {
+  // mid를 중심으로 반으로 나눠진 배열을 병합하며 정렬
+  // left ~ mid, mid+1 ~ right는 각각 정렬된 상태
+  int l = left;     // left ~ mid에서 시작점 (최솟값의 위치)
+  int r = mid + 1;  // mid+1 ~ right에서 시작점 (최솟값의 위치)
+  
+  int point = left; // '정렬이 안 된 값 중 최솟값'을 넣어줄 위치
+  while (l <= mid && r <= right) {
+    if (numArr[l] < numArr[r]) {     // numArr[l]이 최솟값
+      sortNumArr[point] = numArr[l]; // l+1 증가
+      l++;
+    } else {
+      sortNumArr[point] = numArr[r]; // numArr[r]이 최솟값
+      r++;                           // r+1 증가
+    } point++;
+  }
+  
+  // left ~ mid에서 남은 값 넣어주기
+  while (l <= mid) {
+    sortNumArr[point] = numArr[l];
+    l++; point++;
+  }
+  
+  // mid+1 ~ right에서 남은 값 넣어주기
+  while (r <= right) {
+    sortNumArr[point] = numArr[r];
+    r++; point++;
+  }
+  
+  // 정렬한 배열 값을 numArr에 넣어주기
+  for (int i=left; i<=right; i++) {
+    numArr[i] = sortNumArr[i];
+  }
+}
+```
+
 ## 퀵 정렬 Quick Sort
+- 시간복잡도 **O(nlogn) ~ O(n<sup>2</sup>)**
 - 불안정 정렬
+
+### 구현
+```java
+```
+
+## 힙 정렬 Heap Sort

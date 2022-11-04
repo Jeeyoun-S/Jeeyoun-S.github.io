@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Algorithm Problem Solving
+title: Algorithm
 sitemap: false
 permalink: /aps/
 ---
 
 ## Basics
-1. [Java](/java/)
-2. [Python](/python/)
+1. [Java](/aps/java/)
+2. [Python](/aps/python/)
 
 ## Problems
 1. Baekjoon OJ

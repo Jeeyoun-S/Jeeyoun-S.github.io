@@ -57,7 +57,7 @@ menu:
     url:               /blog/
   - title:             Today I Learned
     url:               /til/
-  - title:             Problem Solving
+  - title:             Algorithm
     url:               /aps/
 
 # Add links to the footer.
