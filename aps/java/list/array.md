@@ -5,7 +5,7 @@ sitemap: false
 permalink: /aps/java/list/array/
 ---
 
-*update 2022.11.04 - create*
+*update 2022.11.04 -create*
 
 ## 배열
 - 일정한 자료형의 변수들을 하나의 이름으로 열거해 사용하는 자료구조
@@ -193,7 +193,7 @@ permalink: /aps/java/list/array/
     int colN = arr[0].length;
     int fixc = 0;
     int fixr = 0;
-
+    
     for (int i=0; i<Math.min(rowN, colN); i++) {
       for (int c=0; c<colN-i-1; c++) {
         System.out.println(arr[fixc][fixr]);
@@ -238,11 +238,12 @@ permalink: /aps/java/list/array/
 ### 이동
 - 델타 이동
   - 한 좌표에서 인접 좌표로 이동하는 2차원 배열 탐색 방법  
-  | (-1, -1) | (-1, 0) | (-1, 1) |
-  | --- | --- | --- |
-  | (0, -1) | POINT | (0, 1) |
-  | (1, -1) | (1, 0) | (1, 1) |
-  
+
+    | (-1, -1) | (-1, 0) | (-1, 1) |
+    | --- | --- | --- |
+    | (0, -1) | POINT | (0, 1) |
+    | (1, -1) | (1, 0) | (1, 1) |
+
   ```java
   int dr = 0; // 찾을 열
   int dc = 0; // 찾을 행
@@ -269,3 +270,5 @@ permalink: /aps/java/list/array/
     }
   }
   ```
+
+## 힙 정렬 Heap Sort

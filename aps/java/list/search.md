@@ -5,7 +5,7 @@ sitemap: false
 permalink: /aps/java/list/search/
 ---
 
-*update 2022.11.04 - create*
+*update 2022.11.04 -create*
 
 ## 검색 Search
 - 원하는 항목을 찾는 작업
