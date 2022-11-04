@@ -5,6 +5,8 @@ sitemap: false
 permalink: /aps/java/list/search/
 ---
 
+*update 2022.11.04 - create*
+
 ## 검색 Search
 - 원하는 항목을 찾는 작업
 - 탐색 키 Search key
@@ -15,7 +17,7 @@ permalink: /aps/java/list/search/
 - 시간복잡도 **O(n)**
 
 ### 구현
-1. Ordered List *(ASC)*
+1. Ordered List *(ASC)*  
 ```java
 // 순차 검색
 // 찾으면 true 반환, 찾는 값보다 비교값이 커지면 false 반환
@@ -39,7 +41,8 @@ static boolean searchWhileSort(int key) {
   } return false;
 }
 ```
-2. Unordered List
+
+2. Unordered List  
 ```java
 static int[] numlist = {55, 4, 34, 54, 1, 12, 35};
 

@@ -5,7 +5,7 @@ sitemap: false
 permalink: /aps/java/list/sort/
 ---
 
-*update 2022.11.04*
+*update 2022.11.04 - create*
 
 ## 정렬 Sort
 - 2개 이상의 자료를 오름차순 또는 내림차순으로 배열
@@ -218,7 +218,7 @@ public class main {
         for (j=0; j<sortArrLen; j++) {
           if (sortArr[j] > numArr[i]) { // 현재 정렬하고자 하는 값보다 커지면
             for (int k=sortArrLen-1; k>=j; k--) { // 옆으로 밀기
-              sortArr[k+1] = sortArr[k]; 
+              sortArr[k+1] = sortArr[k];
             } break;
           }
         }

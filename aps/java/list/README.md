@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Array
+title: List
 sitemap: false
 permalink: /aps/java/list/
 ---

@@ -5,7 +5,7 @@ sitemap: false
 permalink: /aps/java/list/array/
 ---
 
-*update 2022.11.04*
+*update 2022.11.04 - create*
 
 ## 배열
 - 일정한 자료형의 변수들을 하나의 이름으로 열거해 사용하는 자료구조
@@ -162,7 +162,7 @@ permalink: /aps/java/list/array/
   ```
 - 달팽이 순회
   - for문 사용
-    - (0, 0)부터 시작해 테두리의 각 변을 이동하는 4개의 for문
+    - (0, 0)부터 시작해 테두리의 각 변을 이동하는 4개의 for문  
     ```java
     int top = 0;
 		int bottom = arr.length - 1;
@@ -184,9 +184,10 @@ permalink: /aps/java/list/array/
 			} left++;
 		}
     ```
+
   - 규칙 이용
-    - 수평 → 수직 : 이동 칸 수가 하나씩 감소
-    - 수직 → 수평 : 이동 칸 수는 동일, 방향 전환
+    - 수평 → 수직 : 이동 칸 수가 하나씩 감소  
+    - 수직 → 수평 : 이동 칸 수는 동일, 방향 전환  
     ```java
     int rowN = arr.length;
     int colN = arr[0].length;
@@ -209,8 +210,9 @@ permalink: /aps/java/list/array/
       else fixr++;
     }
     ```
+
   - 델타 이동
-    - 우 → 하 → 좌 → 상
+    - 우 → 하 → 좌 → 상  
     ```java
     int[][] delta = { {0, 1}, {1, 0}, {0, -1}, {-1, 0} };
     boolean[][] check = new boolean[arr.length][arr[0].length];
@@ -232,9 +234,10 @@ permalink: /aps/java/list/array/
       } if (rlt) break;
     }
     ```
+
 ### 이동
 - 델타 이동
-  - 한 좌표에서 인접 좌표로 이동하는 2차원 배열 탐색 방법
+  - 한 좌표에서 인접 좌표로 이동하는 2차원 배열 탐색 방법  
     | (-1, -1) | (-1, 0) | (-1, 1) |
     | --- | --- | --- |
     | (0, -1) | POINT | (0, 1) |
