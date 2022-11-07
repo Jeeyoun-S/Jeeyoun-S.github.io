@@ -98,17 +98,14 @@ System.out.println(Integer.toString(num));
 public static String IntToStr(int num) {
   StringBuilder sb = new StringBuilder();
   boolean minus = false;
-  
   if (num < 0) {
     minus = true;
     num = -num;
   }
-  
   while (num != 0) {
     sb.insert(0, num%10);
     num = num/10;
   }
-  
   if (minus) sb.insert(0, '-');
   return sb.toString();
 }

@@ -22,7 +22,6 @@ permalink: /aps/java/search/
   // 순차 검색
   // 찾으면 true 반환, 찾는 값보다 비교값이 커지면 false 반환
   static int[] numlist = {1, 2, 3, 4, 5, 6, 7};
-  
   // For문 사용
   static boolean searchForSort(int key) {
     for (int i : numlist) {
@@ -30,7 +29,6 @@ permalink: /aps/java/search/
       else if (i > key) break;
     } return false;
   }
-
   // While문 사용
   static boolean searchWhileSort(int key) {
     int cnt = 0;

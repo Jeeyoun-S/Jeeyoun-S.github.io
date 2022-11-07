@@ -193,7 +193,6 @@ permalink: /aps/java/array/
     int colN = arr[0].length;
     int fixc = 0;
     int fixr = 0;
-    
     for (int i=0; i<Math.min(rowN, colN); i++) {
       for (int c=0; c<colN-i-1; c++) {
         System.out.println(arr[fixc][fixr]);
@@ -218,7 +217,6 @@ permalink: /aps/java/array/
     boolean[][] check = new boolean[arr.length][arr[0].length];
     int x = 0; int y = 0;
     int direction = 0;
-
     while (true) {
       System.out.println(arr[x][y]);
       check[x][y] = true;
