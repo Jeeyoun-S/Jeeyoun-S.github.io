@@ -31,7 +31,7 @@ static int size = 0;              // stack에 있는 원소 수
 ```java
 static boolean isEmpty() {
   // 만약 stack에 있는 원소 수가 0이면 비어있는 상태
-	return size == 0;
+  return size == 0;
 }
 ```
 
@@ -49,9 +49,8 @@ static void push(int val) {
   if (isFull()) { // 가득 차 있다면 배열 크기 늘리기
     int[] newStack = new int[stack.length+1];
     // 기존 배열에 있는 값 옮기기
-    for (int i=0; i<stack.length; i++) {
-      newStack[i] = stack[i];
-    } stack = newStack;
+    for (int i=0; i<stack.length; i++) newStack[i] = stack[i];
+    stack = newStack;
   } 
   stack[size] = val; // 배열에 넣고
   size += 1;         // stack에 들어간 원소 수 + 1
@@ -61,13 +60,13 @@ static void push(int val) {
 5. pop 구현
 ```java
 static int pop() {
-		if (isEmpty()) { // stack이 비어있다면 -1 반환
-			return -1;
-		} else {
-      size -= 1;             //크기 하나 줄이고
-			int val = stack[size]; // 마지막 값 반환
-			return val;
-		}
+  if (isEmpty()) { // stack이 비어있다면 -1 반환
+    return -1;
+  } else {
+    size -= 1;             //크기 하나 줄이고
+    int val = stack[size]; // 마지막 값 반환
+    return val;
+  }
 }
 ```
 
