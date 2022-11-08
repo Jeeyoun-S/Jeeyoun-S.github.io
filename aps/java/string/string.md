@@ -48,12 +48,12 @@ System.out.println(sb_reverse.toString());
 
 ## 형 변환 Type Casting
 ### String to Number
-1. `Integer.valueOf(String)`
+1. Integer.valueOf(String)
 ```java
 System.out.println(Integer.valueOf(txt));
 ```
 
-2. `Integer.parseInt(String)`
+2. Integer.parseInt(String)
 ```java
 System.out.println(Integer.parseInt(txt));
 ```
@@ -83,12 +83,12 @@ public static int StringToInteger(String txt) {
 ```
 
 ### Number to String
-1. `String.valueOf(number)`
+1. String.valueOf(number)
 ```java
 System.out.println(String.valueOf(num));
 ```
 
-2. `Integer.toString(number)`
+2. Integer.toString(number)
 ```java
 System.out.println(Integer.toString(num));
 ```
@@ -99,12 +99,12 @@ public static String IntToStr(int num) {
   StringBuilder sb = new StringBuilder();
   boolean minus = false;
   if (num < 0) {
-    minus = true;
-    num = -num;
+		minus = true;
+		num = -num;
   }
   while (num != 0) {
-    sb.insert(0, num%10);
-    num = num/10;
+		sb.insert(0, num%10);
+		num = num/10;
   }
   if (minus) sb.insert(0, '-');
   return sb.toString();
