@@ -55,8 +55,8 @@ menu:
     url:               /pjt/
   - title:             Blog
     url:               /blog/
-  - title:             Today I Learned
-    url:               /til/
+  - title:             Computer Science
+    url:               /cs/
   - title:             Algorithm
     url:               /aps/
 

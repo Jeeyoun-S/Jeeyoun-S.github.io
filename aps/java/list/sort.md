@@ -4,6 +4,8 @@ title: Sort
 sitemap: false
 permalink: /aps/java/sort/
 ---
+0. this unordered seed list will be replaced by toc as unordered list
+{:toc}
 
 *update 2022.11.04 -create*
 
