@@ -2,7 +2,7 @@
 layout: page
 title: Java
 sitemap: false
-permalink: /aps/java/
+permalink: /til/aps/java/
 ---
 
 ## [Basic](basic.md)

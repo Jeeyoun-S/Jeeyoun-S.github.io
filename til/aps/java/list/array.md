@@ -2,7 +2,7 @@
 layout: page
 title: Array
 sitemap: false
-permalink: /aps/java/array/
+permalink: /til/aps/java/array/
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}

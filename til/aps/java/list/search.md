@@ -2,7 +2,7 @@
 layout: page
 title: Search
 sitemap: false
-permalink: /aps/java/search/
+permalink: /til/aps/java/search/
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}

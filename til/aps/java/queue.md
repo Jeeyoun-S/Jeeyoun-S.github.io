@@ -2,7 +2,7 @@
 layout: page
 title: Queue
 sitemap: false
-permalink: /aps/java/queue/
+permalink: /til/aps/java/queue/
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}

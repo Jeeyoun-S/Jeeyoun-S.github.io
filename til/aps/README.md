@@ -6,10 +6,7 @@ permalink: /til/aps/
 ---
 
 ## Basics
-1. [Java](/aps/java/)
-2. [Python](/aps/python/)
+1. [Java](/til/aps/java/)
+2. [Python](/til/aps/python/)
 
 ## Problems
-1. [Baekjoon OJ](/aps/baekjoon_oj/)
-2. [SWEA](/aps/swea/)
-3. [Programmers](/aps/programmers/)
