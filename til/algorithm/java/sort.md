@@ -406,9 +406,8 @@ public static void quickSort(int left, int right) {
     ```
   
   b. Lomuto Partition  
-    ~~~java
+    ```java
     public static int lomutoPartition(int left, int right) {
-      
       // pivot을 가장 오른쪽 값으로 설정
       int pivot = numArr[right]; 
       int i = left - 1;
@@ -430,7 +429,7 @@ public static void quickSort(int left, int right) {
       numArr[right] = tmp;
       return i + 1;
     }
-    ~~~
+    ```
 
 ## 힙 정렬 Heap Sort
 ## 기수 정렬 Radix Sort

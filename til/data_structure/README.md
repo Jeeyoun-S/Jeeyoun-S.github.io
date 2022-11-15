@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Algorithm
+title: Data Structure
 sitemap: false
 permalink: /til/data_structure/
 ---
