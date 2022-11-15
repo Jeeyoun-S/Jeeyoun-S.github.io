@@ -2,7 +2,7 @@
 layout: page
 title: Algorithm
 sitemap: false
-permalink: /aps/
+permalink: /til/aps/
 ---
 
 ## Basics
