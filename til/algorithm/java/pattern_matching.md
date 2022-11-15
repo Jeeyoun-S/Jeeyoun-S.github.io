@@ -2,7 +2,7 @@
 layout: page
 title: Pattern Matching
 sitemap: false
-permalink: /til/aps/java/pattern_matching/
+permalink: /til/algorithm/java/pattern_matching/
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}

@@ -2,7 +2,7 @@
 layout: page
 title: String
 sitemap: false
-permalink: /til/aps/java/string/
+permalink: /til/data_structure/java/string/
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
@@ -98,17 +98,17 @@ System.out.println(Integer.toString(num));
 3. 함수
 ```java
 public static String IntToStr(int num) {
-  StringBuilder sb = new StringBuilder();
-  boolean minus = false;
-  if (num < 0) {
-		minus = true;
-		num = -num;
-  }
-  while (num != 0) {
-		sb.insert(0, num%10);
-		num = num/10;
-  }
-  if (minus) sb.insert(0, '-');
-  return sb.toString();
+	StringBuilder sb = new StringBuilder();
+	boolean minus = false;
+	if (num < 0) {
+			minus = true;
+			num = -num;
+	}
+	while (num != 0) {
+			sb.insert(0, num%10);
+			num = num/10;
+	}
+	if (minus) sb.insert(0, '-');
+	return sb.toString();
 }
 ```

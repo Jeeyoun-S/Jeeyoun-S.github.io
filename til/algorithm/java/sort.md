@@ -2,7 +2,7 @@
 layout: page
 title: Sort
 sitemap: false
-permalink: /til/aps/java/sort/
+permalink: /til/algorithm/java/sort/
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
@@ -16,7 +16,7 @@ permalink: /til/aps/java/sort/
   - 안정 정렬 : 값이 같을 때 원본 순서를 보장
   - 불안정 정렬 : 원본 순서를 보장하지 않는다.
 
-## 버블 정렬 Bubble Sort
+## 거품 정렬 Bubble Sort
 - 인접한 원소를 비교해 원소 교환 Swap
 - 시간복잡도 **O(n<sup>2</sup>)**
 
@@ -49,7 +49,7 @@ public class main {
   public static void main(String[] args) {
     int[] numlist = {55, 4, 34, 54, 1, 12, 35};
     int tmp;
-
+    
     // i는 값이 정렬돼 고정될 위치로 맨 끝부터 맨 앞으로
     for (int i=numlist.length-1; i>0; i--) {
       for (int j=0; j<i; j++) {
@@ -84,7 +84,7 @@ import java.util.Arrays;
 public class main {
   public static void main(String[] args) {
     int[] numlist = {55, 4, 34, 54, 1, 12, 35};
-
+    
     // 마지막에 하나가 남으면 정렬할 필요 없으므로 배열 길이-1만큼 반복
     for (int i=0; i<numlist.length-1; i++) {
       int minidx = i; // 위치 i부터 배열 끝까지 중 최솟값 idx
@@ -103,7 +103,7 @@ public class main {
 }
 ```
 
-## 카운팅 정렬 Counting Sort
+## 계수 정렬 Counting Sort
 - 배열에 각 요소가 몇 개씩 있는지 세는 방법
   - 정수로 표현 가능한 자료만 사용 가능
   - 배열 내 가장 큰 수를 알아내야 한다.
@@ -127,20 +127,20 @@ public class main {
         maximum = i;
       }
     }
-
+    
     // 요소별 빈도수를 넣는 배열 만들기
     int[] freq = new int[maximum+1];
     for (int j : numlist) {
       freq[j] += 1;
     }
-
+    
     // 누적합 구하기
     int total = 0;
     for (int p=0; p<freq.length; p++) {
       total += freq[p]; 
       freq[p] = total;
     }
-
+    
     // 복사해 정렬한 배열 만들기
     int[] copyNum = new int[numlist.length];
     for (int k=numlist.length-1; k>=0; k--) {
@@ -149,6 +149,7 @@ public class main {
       copyNum[freq[number]] = number;
     }
     ```
+
 2. 음수 값도 존재
     ```java
     // 배열에서 최소값과 최대값 찾기
@@ -161,7 +162,7 @@ public class main {
         minimum = i;
       }
     }
-
+    
     // 값 밀기
     if (minimum < 0) {
       int N = -(minimum);
@@ -169,18 +170,18 @@ public class main {
         numlist[j] += N;
       }
     }
-
+    
     // 요소별 빈도수를 넣는 배열 만들기
     int[] freq = new int[(maximum-minimum)+1];
     for (int j : numlist) {
       freq[j] += 1;
     }
-
+    
     // 누적합 구하기
     for (int p=1; p<freq.length; p++) {
       total[p] += freq[p-1];
     }
-
+    
     // 정렬한 배열 만들기
     int[] copyList = new int[numlist.length];
     for (int k=numlist.length-1; k>=0; k--) {
@@ -188,7 +189,7 @@ public class main {
       freq[number] -= 1;
       copyList[freq[number]] = number;
     }
-
+    
     // 밀었던 값 원상복구
     if (minimum < 0) {
       int N = -(minimum);
@@ -382,10 +383,10 @@ public static void quickSort(int left, int right) {
       while (L <= R) {
         // L값이 pivot보다 작으면 L을 오른쪽으로 이동
         while (L <= R && numArr[L] <= pivot) L++;
-
+        
         // R값이 pivot보다 크면 R을 왼쪽으로 이동
         while (numArr[R] > pivot) R--;
-
+        
         // L값은 pivot보다 크고, R값은 pivot보다 작으므로 바꿔준다.
         if (L < R) {
           int tmp = numArr[L];
@@ -405,28 +406,31 @@ public static void quickSort(int left, int right) {
     ```
   
   b. Lomuto Partition  
-  ~~~java
-  public static int lomutoPartition(int left, int right) {
-    
-    // pivot을 가장 오른쪽 값으로 설정
-    int pivot = numArr[right]; 
-    int i = left - 1;
-    
-    // pivot을 제외하고 left부터 right - 1까지
-    for (int j=left; j<right; j++) {
+    ~~~java
+    public static int lomutoPartition(int left, int right) {
       
-      // 만약 pivot 값이 더 크면 제일 왼쪽으로 이동
-      if (numArr[j] <= pivot) {
-        i++;
-        int tmp = numArr[i];
-        numArr[i] = numArr[j];
-        numArr[j] = tmp;
+      // pivot을 가장 오른쪽 값으로 설정
+      int pivot = numArr[right]; 
+      int i = left - 1;
+      
+      // pivot을 제외하고 left부터 right - 1까지
+      for (int j=left; j<right; j++) {
+        
+        // 만약 pivot 값이 더 크면 제일 왼쪽으로 이동
+        if (numArr[j] <= pivot) {
+          i++;
+          int tmp = numArr[i];
+          numArr[i] = numArr[j];
+          numArr[j] = tmp;
+        }
       }
+      // pivot보다 작아서 왼쪽으로 이동한 마지막 인덱스 다음 i+1과 privot과 위치 변경
+      int tmp = numArr[i+1];
+      numArr[i+1] = numArr[right];
+      numArr[right] = tmp;
+      return i + 1;
     }
-    // pivot보다 작아서 왼쪽으로 이동한 마지막 인덱스 다음 i+1과 privot과 위치 변경
-    int tmp = numArr[i+1];
-    numArr[i+1] = numArr[right];
-    numArr[right] = tmp;
-    return i + 1;
-  }
-  ~~~
+    ~~~
+
+## 힙 정렬 Heap Sort
+## 기수 정렬 Radix Sort

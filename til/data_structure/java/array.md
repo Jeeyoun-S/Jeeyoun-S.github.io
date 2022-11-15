@@ -2,7 +2,7 @@
 layout: page
 title: Array
 sitemap: false
-permalink: /til/aps/java/array/
+permalink: /til/data_structure/java/array/
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
@@ -175,12 +175,15 @@ permalink: /til/aps/java/array/
 			for (int i=left; i<=right; i++) {
 				System.out.println(arr[top][i]);
 			} top++;
+      
 			for (int i=top; i<=bottom; i++) {
 				System.out.println(arr[i][right]);
 			} right--;
+      
 			for (int i=right; i>=left; i--) {
 				System.out.println(arr[bottom][i]);
 			} bottom--;
+      
 			for (int i=bottom; i>=top; i--) {
 				System.out.println(arr[i][left]);
 			} left++;
@@ -195,18 +198,22 @@ permalink: /til/aps/java/array/
     int colN = arr[0].length;
     int fixc = 0;
     int fixr = 0;
+    
     for (int i=0; i<Math.min(rowN, colN); i++) {
       for (int c=0; c<colN-i-1; c++) {
         System.out.println(arr[fixc][fixr]);
         if (i%2 == 0) fixr++;
         else fixr--;
       } 
+      
       System.out.println(arr[fixc][fixr]);
+      
       for (int r=0; r<rowN-i-1; r++) {
         if (i%2 == 0) fixc++;
         else fixc--;
         System.out.println(arr[fixc][fixr]);
       }
+      
       if (i%2 == 0) fixr--;
       else fixr++;
     }
@@ -219,12 +226,15 @@ permalink: /til/aps/java/array/
     boolean[][] check = new boolean[arr.length][arr[0].length];
     int x = 0; int y = 0;
     int direction = 0;
+    
     while (true) {
       System.out.println(arr[x][y]);
       check[x][y] = true;
       boolean rlt = true;
+      
       for (int i=direction; i<direction+4; i++) {
         int[] d = delta[i%4];
+        
         if (x+d[0] >= 0 && x+d[0] < arr.length && y+d[1] >= 0 && y+d[1] < arr[0].length && !check[x+d[0]][y+d[1]]) {
           x = x+d[0]; y = y+d[1];
           rlt = false;
