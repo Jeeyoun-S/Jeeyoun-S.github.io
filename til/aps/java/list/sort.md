@@ -407,13 +407,15 @@ public static void quickSort(int left, int right) {
   b. Lomuto Partition  
     ~~~java
     // file: "lomuto_partition.java"
-
     public static int lomutoPartition(int left, int right) {
+
       // pivot을 가장 오른쪽 값으로 설정
       int pivot = numArr[right]; 
       int i = left - 1;
+
       // pivot을 제외하고 left부터 right - 1까지
       for (int j=left; j<right; j++) {
+        
         // 만약 pivot 값이 더 크면 제일 왼쪽으로 이동
         if (numArr[j] <= pivot) {
           i++;
