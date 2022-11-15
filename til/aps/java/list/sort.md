@@ -406,7 +406,6 @@ public static void quickSort(int left, int right) {
   
   b. Lomuto Partition  
   ~~~java
-  // file: "lomuto_partition.java"
   public static int lomutoPartition(int left, int right) {
     
     // pivot을 가장 오른쪽 값으로 설정
