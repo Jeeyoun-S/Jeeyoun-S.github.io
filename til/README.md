@@ -5,4 +5,4 @@ sitemap: false
 permalink: /til/
 ---
 
-### 1. [Algorithm](/til/aps/j)
+### 1. [Algorithm](/til/aps/)
