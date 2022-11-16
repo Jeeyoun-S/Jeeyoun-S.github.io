@@ -23,7 +23,7 @@ permalink: /til/data_structure/java/queue/
 - `isEmpty` 큐가 비어있으면 true, 아니면 false
 - `isFull` 큐가 가득 차 있으면 true, 아니면 false
 
-## 선형 Queue
+## 선형 큐 Linear Queue
 ### Array
 1. Queue 생성
 ```java
@@ -89,16 +89,94 @@ Queue<Integer> queue = new LinkedList<>();
 
 2. Queue 메서드
 ```java
-queue.add(15)    //예외 발생
-queue.offer(15)  //Null 반환
-queue.remove()   //예외 발생
-queue.poll()     //Null 반환
-queue.element()  //예외 발생
-queue.peek()     //Null 반환
+queue.add(15)    // 예외 발생
+queue.offer(15)  // Null 반환
+queue.remove()   // 예외 발생
+queue.poll()     // Null 반환
+queue.element()  // 예외 발생
+queue.peek()     // Null 반환
 ```
 
-## 원형 Queue
+## 원형 큐 Circular Queue
+- 앞부분에 빈 자리를 재활용하지 못하는 선형 큐의 단점 보완
+- 마지막 인덱스까지 자리가 차면, 첫 인덱스부터 다시 삽입
 
-## 우선순위 Queue
+### 구현
+1. Queue 생성
+```java
+static int[] circularQueue = new int[5];
+static int front = 0;
+static int rear = 0;
+static int size = 0;
+```
+2. enQueue
+```java
+public static void enQueue(int value) {
+  if (isFull()) return;
+  
+  circularQueue[rear] = value;
+  rear = (rear+1)%circularQueue.length;
+  size++;
+}
+```
+3. deQueue
+```java
+public static int deQueue() {
+  if (isEmpty()) return -1;
+  
+  int result = circularQueue[front];
+  circularQueue[front] = 0;
+  
+  front = (front+1)%circularQueue.length;
+  size--;
+  return result;
+}
+```
+4. isEmpty
+```java
+public static boolean isEmpty() {
+  if (size == 0) return true;
+  return false;
+}
+```
+5. isFull
+```java
+public static boolean isFull() {
+  if (size == circularQueue.length) return true;
+  return false;
+}
+```
+
+## 우선순위 큐 Priority Queue
 ### Array
+
+### LinkedList
+
+### Heap
+
 ### PriorityQueue API
+1. PriorityQueue 생성
+  ```java
+  import java.util.PriorityQueue;
+  import java.util.Collections;
+  
+  // 낮은 숫자 우선
+  PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
+  
+  // 높은 숫자 우선
+  PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(Collections.reverseOrder());
+  ```
+
+2. PriorityQueue 메서드
+  ```java
+  priorityQueue.add(15)    // 예외 발생
+  priorityQueue.offer(15)  // Null 반환
+  
+  priorityQueue.remove()   // 예외 발생
+  priorityQueue.poll()     // Null 반환
+  
+  priorityQueue.element()  // 예외 발생
+  priorityQueue.peek()     // Null 반환
+  
+  priorityQueue.clear()    // 초기화
+  ```
