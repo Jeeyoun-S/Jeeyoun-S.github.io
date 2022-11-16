@@ -29,7 +29,7 @@ description:           >
   with a focus on personal sites that are meant to impress.
 
 # A shorter description for the sidebar.
-tagline:               I want to be a Web Developer
+tagline:               I
 
 # A list of keywords for your blog
 keywords:              []
@@ -427,3 +427,10 @@ jekyll_compose:
       links:
         - title: Project Link
           url: https://example.com
+
+markdown: kramdown
+kramdown:
+    highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            line_numbers: true
