@@ -2,20 +2,23 @@
 layout: post
 title: 2022.09 Monthly Diary
 description: >
-  알고리즘 문제에 파묻혀서 살아보기
+  알고리즘 실력 키우기
 sitemap: false
 hide_last_modified: true
 ---
+
 시간을 보냈던 2022년 9월의 회고록.
 
 ## I. Week
-#### Day 01 ~ 07
+#### Day 29 ~ 04 Web Backend 1주차
 
-#### Day 08 ~ 14
+#### Day 05 ~ 11 Web Backend + Database
 
-#### Day 15 ~ 21
+#### Day 12 ~ 18 Database 2주차
 
-#### Day 22 ~ 28
+#### Day 19 ~ 25 Algorithm 응용 1주차
+
+#### Day 29 ~ 02 Algorithm 응용 2주차
 
 
 ## II. Good
