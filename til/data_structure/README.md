@@ -16,3 +16,14 @@ permalink: /til/data_structure/
 8. Graph
 
 ## Python
+1. Array
+2. LinkedList
+3. Stack
+4. Queue
+5. PriorityQueue
+6. Deque
+7. Hash Table
+8. Tree
+9. Heap
+10. Graph
+11. Try
