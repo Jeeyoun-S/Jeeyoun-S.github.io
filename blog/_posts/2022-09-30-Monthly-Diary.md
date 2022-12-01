@@ -18,7 +18,7 @@ hide_last_modified: true
 
 #### Day 19 ~ 25 Algorithm 응용 1주차
 
-#### Day 29 ~ 02 Algorithm 응용 2주차
+#### Day 26 ~ 02 Algorithm 응용 2주차
 
 
 ## II. Good
