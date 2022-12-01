@@ -18,13 +18,13 @@ redirect_from:
 - Database <img src="https://img.shields.io/badge/mysql-4479A1?style=flat-square&logo=mysql&logoColor=white">
 
 ## Education
-- 2022.07 - ing&nbsp;&nbsp;&nbsp;&nbsp; 삼성청년SW아카데미 SSAFY 8기
+- 2022.07 - ing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 삼성청년SW아카데미 SSAFY 8기
 - 2018.03 - 2022.02 세종대학교 호텔관광경영학 (복수전공 응용통계학)
 
 ## Certificate
 
 ## Activities
-- 2022.08 - ing&nbsp;&nbsp;&nbsp;&nbsp;  삼성청년SW아카데미 공식 기자단 SSAFYcial
+- 2022.08 - ing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 삼성청년SW아카데미 공식 기자단 SSAFYcial
 - 2021.06 - 2022.03 세종대학교 인지언어연구실 학부연구원
 - 2019.09 - 2020.06 세종대학교 SW기초코딩수업 보조TA
 - 2018.04 - 2019.06 세종대신문사 학생기자

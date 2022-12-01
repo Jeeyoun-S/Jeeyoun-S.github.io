@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 sitemap: false
-permalink: /project/
+permalink: /pjt/
 ---
 
 <div OnClick="location.href = 'MyOnlineGym.md'" style="cursor:pointer;">
