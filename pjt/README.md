@@ -1,8 +1,11 @@
 ---
-layout: blog
+layout: page
 title: Projects
-slug: blog
-description: >
-    프로젝트
 sitemap: false
+permalink: /project/
 ---
+
+<div OnClick="location.href = 'MyOnlineGym.md'" style="cursor:pointer;">
+    <h2>My Online Gym</h2>
+    <span>Web Project</span>
+</div>
