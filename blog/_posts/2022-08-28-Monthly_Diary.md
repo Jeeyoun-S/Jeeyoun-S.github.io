@@ -2,12 +2,12 @@
 layout: post
 title: 2022.08 Monthly Diary
 description: >
-  Java, 그리고 Java, 그리고 Java
+  Java 기초 공부, Python 알고리즘 스터디 시작.
 sitemap: false
 hide_last_modified: true
 ---
 
-자바 공부하기, 자바 공부하기, 자바 공부하기, 파이썬 알고리즘 스터디. 
+자바 첫 기초부터 공부 시작, 파이썬 알고리즘 스터디. 
 자바 학습에 집중하고, 파이썬을 곁들인 시간을 보냈던 2022년 8월의 회고록.
 
 ## I. Week
