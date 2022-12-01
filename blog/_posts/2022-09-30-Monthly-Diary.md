@@ -7,7 +7,7 @@ sitemap: false
 hide_last_modified: true
 ---
 
-시간을 보냈던 2022년 9월의 회고록.
+매일매일 알고리즘 문제 풀이에 시간을 쏟았던 2022년 9월의 회고록.
 
 ## I. Week
 #### Day 29 ~ 04 Web Backend 1주차

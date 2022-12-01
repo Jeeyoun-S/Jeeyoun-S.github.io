@@ -2,11 +2,12 @@
 layout: post
 title: 2022.10 Monthly Diary
 description: >
-  프로젝트 하고 프로젝트 하고 프로젝트 하기
+  모의주식투자 앱 프로젝트 시작
 sitemap: false
 hide_last_modified: true
 ---
 
+모의주식투자 앱 프로젝트 시작과 함께 코딩테스트 기출 문제를 풀며 보냈던 10월의 회고록.
 
 ## I. Week
 #### Day 03 ~ 09
