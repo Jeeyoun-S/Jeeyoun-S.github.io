@@ -17,8 +17,9 @@ permalink: /pjt/my-online-gym/
   - 운동 영상을 찾아보고, 리뷰를 남길 수 있는 서비스
 3. 개발 환경
   - Frontend : <img src="https://img.shields.io/badge/vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white"> 
-  - Backend : <img src="https://img.shields.io/badge/mysql-4479A1?style=flat-square&logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat-square&logo=SpringBoot&logoColor=white">
-  - Tools : Notion, GitLab
+  - Backend : <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat-square&logo=SpringBoot&logoColor=white">
+  - Database : <img src="https://img.shields.io/badge/mysql-4479A1?style=flat-square&logo=mysql&logoColor=white">
+  - Tools : <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white">, <img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=GitLab&logoColor=white">
 
 ## Team
 - 김민규 : 기획, 데이터 수집/제작/검수, 루틴 추천 알고리즘 구현
