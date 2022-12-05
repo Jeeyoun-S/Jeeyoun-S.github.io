@@ -24,7 +24,8 @@ permalink: /pjt/my-online-gym/
 
 ## Team
 - 김민규 : 기획, 데이터 수집/제작/검수, 운동 루틴 추천 알고리즘 구현
-- 서지윤 : DB 구축, Rest API 구현, Front-end 구현
+- [서지윤](https://github.com/Jeeyoun-S) : DB 구축, Rest API 구현, Front-end 구현
+- 이창한 : 기획
 
 ## 진행 일정
 1. 2022년 11월 18일 ~ 19일 기획
