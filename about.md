@@ -8,6 +8,14 @@ redirect_from:
   - /download/
 ---
 
+<head>
+  <style>
+    .tr {
+      font-size: 5px;
+    }
+  </style>
+</head>
+
 # About Me
 
 <!--author-->
@@ -31,8 +39,8 @@ redirect_from:
 <table>
   <th>교육명</th><th>교육 기간</th><th>교육 내용</th><th>교육 기관</th>
   <tr>
-    <td>삼성청년SW아카데미</td>
-    <td>2022.07.06 - 진행 중</td>
+    <td>삼성청년<br>SW아카데미</td>
+    <td>2022.07.06 ~ 진행 중</td>
     <td>
       • Java 기초 및 알고리즘 교육<br>
       • Spring, Vue.js 프레임워크 학습<br>
@@ -41,8 +49,8 @@ redirect_from:
     <td>삼성 멀티캠퍼스</td>
   </tr>
   <tr>
-    <td>데이터 직무부트캠프</td>
-    <td>2022.02.27 - 2022.03.27</td>
+    <td>데이터<br>직무부트캠프</td>
+    <td>2022.02.27 ~ 2022.03.27</td>
     <td>comento</td>
   </tr>
 </table>
@@ -61,22 +69,22 @@ redirect_from:
 <table>
   <th>활동명</th><th>활동 기간</th><th>활동 내용</th>
   <tr>
-    <td>삼성청년SW아카데미 공식 기자단</td>
+    <td>삼성청년SW아카데미<br>공식 기자단</td>
     <td>2022.08. ~</td>
     <td></td>
   </tr>
   <tr>
-    <td>세종대학교 인지언어연구실 학부연구원</td>
+    <td>세종대학교 인지언어연구실<br>학부 연구원</td>
+    <td>2022.06. ~</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>세종대학교 SW기초코딩수업<br>보조 조교</td>
     <td>2022.08. ~</td>
     <td></td>
   </tr>
   <tr>
-    <td>세종대학교 SW기초코딩수업 보조TA</td>
-    <td>2022.08. ~</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>세종대신문사 학생기자</td>
+    <td>세종대신문사<br>학생기자</td>
     <td>2022.08. ~</td>
     <td></td>
   </tr>
