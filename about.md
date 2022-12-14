@@ -13,13 +13,18 @@ redirect_from:
 <!--author-->
 
 ## Tech Skills
-- Backend <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white"> <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=Spring&logoColor=white"> <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat-square&logo=SpringBoot&logoColor=white">
-- Frontend <img src="https://img.shields.io/badge/html5-E34F26?style=flat-square&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css3-1572B6?style=flat-square&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white"> <img src="https://img.shields.io/badge/vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white">
-- Database <img src="https://img.shields.io/badge/mysql-4479A1?style=flat-square&logo=mysql&logoColor=white">
+- Backend <img src="https://img.shields.io/badge/Python-3766AB?style=flat&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white"> <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=Spring&logoColor=white"> <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=SpringBoot&logoColor=white">
+- Frontend <img src="https://img.shields.io/badge/html5-E34F26?style=flat&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css3-1572B6?style=flat&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white"> <img src="https://img.shields.io/badge/vue.js-4FC08D?style=flat&logo=vue.js&logoColor=white">
+- Database <img src="https://img.shields.io/badge/mysql-4479A1?style=flat&logo=mysql&logoColor=white">
 
 ## Education
+<table>
+  <th>기간</th><th>학교명</th><th>학과</th>
+  <tr><td>2018.03 - 2022.02</td><td>세종대학교</td><td>호텔관광경영학 (복수전공 응용통계학)</td></tr>
+</table>
+
+## Training
 - 2022.07 - ing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 삼성청년SW아카데미 SSAFY 8기
-- 2018.03 - 2022.02 세종대학교 호텔관광경영학 (복수전공 응용통계학)
 
 ## Certificate
 
