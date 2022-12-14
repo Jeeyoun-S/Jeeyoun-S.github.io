@@ -10,7 +10,7 @@ redirect_from:
 
 <head>
   <style>
-    .tr {
+    tr {
       font-size: 5px;
     }
   </style>
