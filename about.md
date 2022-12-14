@@ -20,19 +20,67 @@ redirect_from:
 ## Education
 <table>
   <th>기간</th><th>학교명</th><th>학과</th>
-  <tr><td>2018.03 - 2022.02</td><td>세종대학교</td><td>호텔관광경영학 (복수전공 응용통계학)</td></tr>
+  <tr>
+    <td>2018.03.02 ~ 2022.02.18</td>
+    <td>세종대학교</td>
+    <td>호텔관광경영학 (복수전공 응용통계학)</td>
+  </tr>
 </table>
 
 ## Training
-- 2022.07 - ing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 삼성청년SW아카데미 SSAFY 8기
+<table>
+  <th>교육명</th><th>교육 기간</th><th>교육 내용</th><th>교육 기관</th>
+  <tr>
+    <td>삼성청년SW아카데미</td>
+    <td>2022.07.06 - 진행 중</td>
+    <td>
+      • Java 기초 및 알고리즘 교육<br>
+      • Spring, Vue.js 프레임워크 학습<br>
+      • 그 외 MySQL, Servlet, JSP 강의 수강
+    </td>
+    <td>삼성 멀티캠퍼스</td>
+  </tr>
+  <tr>
+    <td>데이터 직무부트캠프</td>
+    <td>2022.02.27 - 2022.03.27</td>
+    <td>comento</td>
+  </tr>
+</table>
 
 ## Certificate
+<table>
+  <th>자격명</th><th>취득 일자</th><th>주관 기관</th>
+  <tr>
+    <td>SQL 개발자</td>
+    <td>2022.12.02</td>
+    <td>한국데이터산업진흥원</td>
+  </tr>
+</table>
 
 ## Activities
-- 2022.08 - ing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 삼성청년SW아카데미 공식 기자단 SSAFYcial
-- 2021.06 - 2022.03 세종대학교 인지언어연구실 학부연구원
-- 2019.09 - 2020.06 세종대학교 SW기초코딩수업 보조TA
-- 2018.04 - 2019.06 세종대신문사 학생기자
+<table>
+  <th>활동명</th><th>활동 기간</th><th>활동 내용</th>
+  <tr>
+    <td>삼성청년SW아카데미 공식 기자단</td>
+    <td>2022.08. ~</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>세종대학교 인지언어연구실 학부연구원</td>
+    <td>2022.08. ~</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>세종대학교 SW기초코딩수업 보조TA</td>
+    <td>2022.08. ~</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>세종대신문사 학생기자</td>
+    <td>2022.08. ~</td>
+    <td></td>
+  </tr>
+</table>
 
 ## Contact
 - **Email** dreaming990124@gmail.com
