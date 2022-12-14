@@ -10,8 +10,15 @@ redirect_from:
 
 <head>
   <style>
+    table {
+      width: 100%;
+      margin-left: 2%;
+    }
     tr {
-      font-size: 5px;
+      font-size: 8px;
+    }
+    tr.title {
+      font-size: 10px;
     }
   </style>
 </head>
@@ -27,7 +34,7 @@ redirect_from:
 
 ## Education
 <table>
-  <th>기간</th><th>학교명</th><th>학과</th>
+  <tr class="title"><th>기간</th><th>학교명</th><th>전공</th></tr>
   <tr>
     <td>2018.03.02 ~ 2022.02.18</td>
     <td>세종대학교</td>
@@ -37,27 +44,32 @@ redirect_from:
 
 ## Training
 <table>
-  <th>교육명</th><th>교육 기간</th><th>교육 내용</th><th>교육 기관</th>
+  <tr class="title"><th>교육명</th><th>교육 기간</th><th>교육 내용</th><th>교육 기관</th><tr>
   <tr>
     <td>삼성청년<br>SW아카데미</td>
-    <td>2022.07.06 ~ 진행 중</td>
+    <td>2022.07.06<br>~<br>진행 중</td>
     <td>
       • Java 기초 및 알고리즘 교육<br>
       • Spring, Vue.js 프레임워크 학습<br>
       • 그 외 MySQL, Servlet, JSP 강의 수강
     </td>
-    <td>삼성 멀티캠퍼스</td>
+    <td>삼성<br>멀티캠퍼스</td>
   </tr>
   <tr>
     <td>데이터<br>직무부트캠프</td>
-    <td>2022.02.27 ~ 2022.03.27</td>
+    <td>2022.02.27<br>~<br>2022.03.27</td>
+    <td>
+      • SQL 기본 문법 익히기<br>
+      • 데이터 분석 보고서 작성<br>
+      • 대시보드 개발
+    </td>
     <td>comento</td>
   </tr>
 </table>
 
 ## Certificate
 <table>
-  <th>자격명</th><th>취득 일자</th><th>주관 기관</th>
+  <tr class="title"><th>자격명</th><th>취득 일자</th><th>주관 기관</th><tr>
   <tr>
     <td>SQL 개발자</td>
     <td>2022.12.02</td>
@@ -67,10 +79,10 @@ redirect_from:
 
 ## Activities
 <table>
-  <th>활동명</th><th>활동 기간</th><th>활동 내용</th>
+  <tr class="title"><th>활동명</th><th>활동 기간</th><th>활동 내용</th><tr>
   <tr>
     <td>삼성청년SW아카데미<br>공식 기자단</td>
-    <td>2022.08. ~</td>
+    <td>2022.08. ~ 진행 중</td>
     <td></td>
   </tr>
   <tr>
@@ -84,7 +96,7 @@ redirect_from:
     <td></td>
   </tr>
   <tr>
-    <td>세종대신문사<br>학생기자</td>
+    <td>세종대신문사<br>학생 기자</td>
     <td>2022.08. ~</td>
     <td></td>
   </tr>
