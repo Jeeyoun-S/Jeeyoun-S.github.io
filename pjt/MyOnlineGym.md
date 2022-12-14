@@ -16,16 +16,16 @@ permalink: /pjt/my-online-gym/
   - 식약처 인증 건강기능 식품을 기능별로 검색해 정보를 조회하고 간편하게 구매할 수 있는 서비스 구현
   - 운동 영상을 찾아보고, 리뷰를 남길 수 있는 서비스 구현
 3. 개발 환경
-  - Frontend <img src="https://img.shields.io/badge/vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white"> 
-  - Backend <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat-square&logo=SpringBoot&logoColor=white">
-  - Database <img src="https://img.shields.io/badge/mysql-4479A1?style=flat-square&logo=mysql&logoColor=white">
-  - Tools <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"> <img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=GitLab&logoColor=white">
-  - Web Server <img src="https://img.shields.io/badge/AmazonEC2-FF9900?style=flat-square&logo=AmazonEC2&logoColor=white"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=Linux&logoColor=white">
+  - Frontend <img src="https://img.shields.io/badge/vue.js-4FC08D?style=flat&logo=vue.js&logoColor=white"> 
+  - Backend <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=SpringBoot&logoColor=white">
+  - Database <img src="https://img.shields.io/badge/mysql-4479A1?style=flat&logo=mysql&logoColor=white">
+  - Tools <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"> <img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat&logo=GitLab&logoColor=white">
+  - Web Server <img src="https://img.shields.io/badge/AmazonEC2-FF9900?style=flat&logo=AmazonEC2&logoColor=white"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white">
 
-## Team
-- <br>김민규</br> 기획, 데이터 수집/제작/검수, 운동 루틴 추천 알고리즘 구현
-- [<br>서지윤</br>](https://github.com/Jeeyoun-S) : DB 구축, Rest API 구현, Front-end 구현
-- <br>이창한</br> 기획
+## Team 'MVC'
+- <b>김민규</b> 기획, 데이터 수집/제작/검수, 운동 루틴 추천 알고리즘 구현
+- [<b>서지윤</b>](https://github.com/Jeeyoun-S) : DB 구축, Rest API 구현, Front-end 구현
+- <b>이창한</b> 기획, Front-end 구현
 
 ## 진행 일정
 1. 2022년 11월 18일 ~ 19일 기획

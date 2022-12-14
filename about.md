@@ -97,7 +97,7 @@ redirect_from:
       <td>2022.07.25<br>~<br>진행 중</td>
       <td class="contents">
         • 매달 기획 및 자율 기사 게시<br>
-        • <a href="https://p-lay-ground.tistory.com/category/SSAFYcial">게시글 보러 가기</a>
+        • <a href="https://p-lay-ground.tistory.com/category/SSAFYcial" target="_blank">게시글 보러 가기</a>
       </td>
     </tr>
     <tr>

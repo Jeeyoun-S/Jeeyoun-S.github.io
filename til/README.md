@@ -7,7 +7,8 @@ permalink: /til/
 
 1. [Data Structure](/til/data_structure/)
 2. [Algorithm](/til/algorithm/)
-3. Network
-4. Operation System
-5. Database
-6. Design Pattern
+3. [Problem Solving](/til/problem_solving/)
+4. Network
+5. Operation System
+6. Database
+7. Design Pattern
