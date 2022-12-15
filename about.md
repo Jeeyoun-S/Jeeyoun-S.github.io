@@ -101,7 +101,7 @@ redirect_from:
       </td>
     </tr>
     <tr>
-      <td>세종대학교 인지언어연구실<br>학부 연구원</td>
+      <td><b>세종대학교 인지언어연구실<br>학부 연구원</b></td>
       <td>2021.06<br>~<br>2022.03</td>
       <td class="contents">
         • 온라인 설문지 제작 (Google Form, FlexiQuiz, File Upload Forms)<br>
@@ -119,7 +119,7 @@ redirect_from:
       </td>
     </tr>
     <tr>
-      <td>세종대신문사<br>학생 기자</td>
+      <td><b>세종대신문사<br>학생 기자</b></td>
       <td>2018.03<br>~<br>2019.06</td>
       <td class="contents">
         • 아이디어 회의, 취재, 기사 작성, 레이아웃 구성 등<br>
