@@ -15,6 +15,7 @@ permalink: /pjt/
             justify-content: center;
         }
         .project img {
+            width: 45%;
             border-radius: 7px;
             cursor:pointer;
         }
