@@ -7,8 +7,6 @@ permalink: /til/data_structure/java/arraylist/
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-*update 2022.11.16 -create*
-
 ## ArrayList
 - Array와 달리 크기가 가변적으로 변화
 - index는 0부터 시작

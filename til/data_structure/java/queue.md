@@ -7,8 +7,6 @@ permalink: /til/data_structure/java/queue/
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-*update 2022.11.07 -create*
-
 ## Queue
 - 빨대에 버블티 펄을 넣는 형태
 - 선형 자료구조 (Linear)

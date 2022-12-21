@@ -7,8 +7,6 @@ permalink: /til/data_structure/java/stack/
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-*update 2022.11.07 -create*
-
 ## Stack
 - 주머니에 물건을 쌓은 형태
 - 선형 자료구조 (Linear)

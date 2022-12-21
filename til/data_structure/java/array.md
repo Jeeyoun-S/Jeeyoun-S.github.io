@@ -7,8 +7,6 @@ permalink: /til/data_structure/java/array/
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-*update 2022.11.04 -create*
-
 ## 배열
 - 일정한 자료형의 변수들을 하나의 이름으로 열거해 사용하는 자료구조
 

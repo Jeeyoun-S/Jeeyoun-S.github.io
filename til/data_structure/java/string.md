@@ -7,8 +7,6 @@ permalink: /til/data_structure/java/string/
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-*update 2022.11.04 -create*
-
 ## 문자열 뒤집기 Reverse
 ```java
 String txt = "Let`s Reverse String";
