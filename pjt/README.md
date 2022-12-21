@@ -7,16 +7,25 @@ permalink: /pjt/
 
 <head>
     <style>
-        .project {
+        .projects {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .project img {
+            border-radius: 7px;
             cursor:pointer;
         }
-        .project:hover {
+        .project img:hover {
             box-shadow: 5px 5px 5px;
         }
     </style>
 </head>
 
-<div class="project" OnClick="location.href = 'my-online-gym'">
-    <h2>My Online Gym</h2>
-    <span>Web Project</span>
+<div class="projects">
+    <div class="project" OnClick="location.href = 'my-online-gym'">
+        <img src="/image/MyOnlineGym.png" alt="My Online Gym">
+    </div>
 </div>

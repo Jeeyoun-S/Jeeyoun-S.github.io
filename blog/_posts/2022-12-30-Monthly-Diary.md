@@ -2,7 +2,7 @@
 layout: post
 title: 2022.12 Monthly Diary
 description: >
-    계절학기
+    SSAFY 1학기 계절학기, 방학, Job-Fair, 2학기 계절학기
 sitemap: false
 hide_last_modified: true
 ---
