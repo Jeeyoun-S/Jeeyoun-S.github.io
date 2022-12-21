@@ -29,7 +29,7 @@ permalink: /pjt/
 
 <div class="projects">
     <img src="image/MyOnlineGym.png" alt="My Online Gym" OnClick="location.href = 'my-online-gym'">
-    <img src="image/MyOnlineGym.png" alt="My Online Gym" OnClick="location.href = 'my-online-gym'">
+    <img src="image/MyOnlineGym2.png" alt="My Online Gym" OnClick="location.href = 'my-online-gym'">
     <img src="image/MyOnlineGym.png" alt="My Online Gym" OnClick="location.href = 'my-online-gym'">
     <!-- <div class="project" OnClick="location.href = 'my-online-gym'">
         <img src="image/MyOnlineGym.png" alt="My Online Gym">
