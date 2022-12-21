@@ -3,6 +3,8 @@ layout: page
 title: Today I Learned
 sitemap: false
 permalink: /til/
+description: >
+  공부한 내용 정리
 ---
 
 1. [Data Structure](/til/data_structure/)

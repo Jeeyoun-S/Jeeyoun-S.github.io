@@ -3,6 +3,8 @@ layout: page
 title: Projects
 sitemap: false
 permalink: /pjt/
+description: >
+  프로젝트 경험
 ---
 
 <head>
@@ -12,10 +14,10 @@ permalink: /pjt/
             align-items: center;
             flex-wrap: wrap;
             flex-direction: row;
-            justify-content: center;
+            justify-content: left;
         }
         .projects img {
-            width: 30%;
+            width: 31%;
             border-radius: 7px;
             cursor:pointer;
             margin: 0 1% 1% 0;
@@ -29,9 +31,5 @@ permalink: /pjt/
 
 <div class="projects">
     <img src="image/MyOnlineGym.png" alt="My Online Gym" OnClick="location.href = 'my-online-gym'">
-    <img src="image/MyOnlineGym2.png" alt="My Online Gym" OnClick="location.href = 'my-online-gym'">
-    <img src="image/MyOnlineGym.png" alt="My Online Gym" OnClick="location.href = 'my-online-gym'">
-    <!-- <div class="project" OnClick="location.href = 'my-online-gym'">
-        <img src="image/MyOnlineGym.png" alt="My Online Gym">
-    </div> -->
+    <img src="image/StockApp.png" alt="Stock App PJT" OnClick="location.href = 'stock-app-pjt'">
 </div>
