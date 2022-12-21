@@ -12,10 +12,10 @@ permalink: /til/data_structure/
 4. [String](java/string.md)
 5. [Stack](java/stack.md)
 6. [Queue](java/queue.md)
-7. Tree
-8. Graph
+7. [Tree](java/tree.md)
+8. [Graph](java/graph.md)
 
-## Python
+<!-- ## Python
 1. Array
 2. LinkedList
 3. Stack
@@ -26,4 +26,4 @@ permalink: /til/data_structure/
 8. Tree
 9. Heap
 10. Graph
-11. Try
+11. Try -->
