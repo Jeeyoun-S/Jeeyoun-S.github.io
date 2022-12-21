@@ -19,7 +19,8 @@ permalink: /pjt/
             cursor:pointer;
         }
         .project img:hover {
-            box-shadow: 5px 5px 5px;
+            /* box-shadow: 5px 5px 5px; */
+            filter: drop-shadow(10px 6px 6px #c3c3c3);
         }
     </style>
 </head>
