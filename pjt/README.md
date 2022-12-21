@@ -14,13 +14,13 @@ permalink: /pjt/
             flex-direction: row;
             justify-content: center;
         }
-        .project img {
+        .projects img {
             width: 30%;
             border-radius: 7px;
             cursor:pointer;
             margin: 0 1% 1% 0;
         }
-        .project img:hover {
+        .projects img:hover {
             /* box-shadow: 5px 5px 5px; */
             filter: drop-shadow(8px 5px 5px #c3c3c3);
         }
@@ -28,13 +28,10 @@ permalink: /pjt/
 </head>
 
 <div class="projects">
-    <div class="project" OnClick="location.href = 'my-online-gym'">
+    <img src="image/MyOnlineGym.png" alt="My Online Gym" OnClick="location.href = 'my-online-gym'">
+    <img src="image/MyOnlineGym.png" alt="My Online Gym" OnClick="location.href = 'my-online-gym'">
+    <img src="image/MyOnlineGym.png" alt="My Online Gym" OnClick="location.href = 'my-online-gym'">
+    <!-- <div class="project" OnClick="location.href = 'my-online-gym'">
         <img src="image/MyOnlineGym.png" alt="My Online Gym">
-    </div>
-    <div class="project" OnClick="location.href = 'my-online-gym'">
-        <img src="image/MyOnlineGym.png" alt="My Online Gym">
-    </div>
-    <div class="project" OnClick="location.href = 'my-online-gym'">
-        <img src="image/MyOnlineGym.png" alt="My Online Gym">
-    </div>
+    </div> -->
 </div>
