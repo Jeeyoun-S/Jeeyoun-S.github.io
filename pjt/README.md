@@ -31,5 +31,5 @@ description: >
 
 <div class="projects">
     <img src="image/MyOnlineGym.png" alt="My Online Gym" OnClick="location.href = 'my-online-gym'">
-    <img src="image/StockApp.png" alt="Stock App PJT" OnClick="location.href = 'stock-app-pjt'">
+    <img src="image/StockAppPjt.png" alt="Stock App PJT" OnClick="location.href = 'stock-app-pjt'">
 </div>

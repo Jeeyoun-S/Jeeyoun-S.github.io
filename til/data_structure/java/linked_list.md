@@ -9,9 +9,9 @@ permalink: /til/data_structure/java/linkedlist/
 
 ## 연결 리스트 LinkedList
 
-## Singly Linked List
+### Singly Linked List
 
-## Doubly Linked List
+### Doubly Linked List
 
 ## Linked Stack
 
