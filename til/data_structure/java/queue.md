@@ -122,10 +122,8 @@ public static void enQueue(int value) {
 ```java
 public static int deQueue() {
   if (isEmpty()) return -1;
-  
   int result = circularQueue[front];
   circularQueue[front] = 0;
-  
   front = (front+1)%circularQueue.length;
   size--;
   return result;
@@ -160,10 +158,8 @@ public static boolean isFull() {
 ```java
 import java.util.PriorityQueue;
 import java.util.Collections;
-
 // 낮은 숫자 우선
 PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
-
 // 높은 숫자 우선
 PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(Collections.reverseOrder());
 ```
