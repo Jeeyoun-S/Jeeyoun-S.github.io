@@ -4,7 +4,7 @@ title: Projects
 sitemap: false
 permalink: /pjt/
 description: >
-    프로젝트 경험
+    프로젝트 경험에 대해 작성하는 곳
 ---
 
 <head>

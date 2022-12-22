@@ -108,18 +108,17 @@ static int rear = 0;
 static int size = 0;
 ```
 
-2. enQueue  
+2. enQueue 구현  
 ```java
 public static void enQueue(int value) {
   if (isFull()) return;
-  
   circularQueue[rear] = value;
   rear = (rear+1)%circularQueue.length;
   size++;
 }
 ```
 
-3. deQueue  
+3. deQueue 구현  
 ```java
 public static int deQueue() {
   if (isEmpty()) return -1;
@@ -133,7 +132,7 @@ public static int deQueue() {
 }
 ```
 
-4. isEmpty  
+4. isEmpty 구현  
 ```java
 public static boolean isEmpty() {
   if (size == 0) return true;
@@ -141,7 +140,7 @@ public static boolean isEmpty() {
 }
 ```
 
-5. isFull  
+5. isFull 구현  
 ```java
 public static boolean isFull() {
   if (size == circularQueue.length) return true;
@@ -157,7 +156,7 @@ public static boolean isFull() {
 ### Heap
 
 ### PriorityQueue API
-1. PriorityQueue 생성
+1. PriorityQueue 생성  
 ```java
 import java.util.PriorityQueue;
 import java.util.Collections;
@@ -169,7 +168,7 @@ PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
 PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(Collections.reverseOrder());
 ```
 
-2. PriorityQueue 메서드
+2. PriorityQueue 메서드  
 ```java
 priorityQueue.add(15)    // 예외 발생
 priorityQueue.offer(15)  // Null 반환
