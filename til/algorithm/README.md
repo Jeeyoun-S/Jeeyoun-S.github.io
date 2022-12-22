@@ -17,5 +17,5 @@ permalink: /til/algorithm/
 9. Dynamic Programming
 10. Minimum Spanning Tree
 
-## Python
-1. [Basic](python/basic.md)
+<!-- ## Python
+1. [Basic](python/basic.md) -->
