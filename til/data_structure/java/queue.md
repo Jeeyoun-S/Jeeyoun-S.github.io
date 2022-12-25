@@ -166,14 +166,15 @@ PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(Collections.reverseOr
 
 2. PriorityQueue 메서드  
 ```java
+// 삽입
 priorityQueue.add(15)    // 예외 발생
 priorityQueue.offer(15)  // Null 반환
-
+// 삭제
 priorityQueue.remove()   // 예외 발생
 priorityQueue.poll()     // Null 반환
-
+// 조회
 priorityQueue.element()  // 예외 발생
 priorityQueue.peek()     // Null 반환
-
+// 초기화
 priorityQueue.clear()    // 초기화
 ```

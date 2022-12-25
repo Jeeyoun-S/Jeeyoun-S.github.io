@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2022.11 Monthly Diary
+title: 2022년 11월 회고록
 description: >
   인생 첫 앱 프로젝트와 첫 웹 프로젝트
 sitemap: false

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2022.10 Monthly Diary
+title: 2022년 10월 회고록
 description: >
   모의주식투자 앱 프로젝트 시작
 sitemap: false

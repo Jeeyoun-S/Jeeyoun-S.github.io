@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2022.09 Monthly Diary
+title: 2022년 9월 회고록
 description: >
   알고리즘 실력 키우기
 sitemap: false

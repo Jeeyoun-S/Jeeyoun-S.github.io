@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2022.08 Monthly Diary
+title: 2022년 8월 회고록
 description: >
   Java 기초 공부, Python 알고리즘 스터디 시작.
 sitemap: false
