@@ -6,94 +6,164 @@ permalink: /pjt/my-online-gym/schedule/
 ---
 <head>
     <style>
-    // ----------------  THE BASICS
-    @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
-    body {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-    // ----------------  THE FONTS
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Oswald', sans-serif;
-    }
-    h1 {
-        font-size: 2rem;
-        margin-bottom: .5em;
-    }
-    p {
-        font-family: 'Roboto', sans-serif;
-        font-size: .8rem;
-    }
-    // ----------------  LAYOUT
-    .container {
-        max-width: 1024px;
-        width: 90%;
-        margin: 0 auto;
-    }
-    // ----------------  THE FONTS
-    $border-color: rgba(black, .3);
-    .timeline-item {
-        padding: 3em 2em 2em;
+        $container-shadow: 0.5rem 0.5rem 2rem 0 rgba(black, 0.2);
+        $gutter: 30px;
+        $border-width: 4px;
+        $dot-diameter: 8px;
+        body {
+        background: linear-gradient(55deg,#4E75B9 30%,#5CBF98 90%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 12vh 100px;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+        font-weight: 300;
+        color: #333;
+        box-sizing: border-box;
+        * {
+            box-sizing: border-box;
+        }
+        }
+        .timeline {
+        width:100%;
+        max-width:800px;
+        background:#fff;
+        padding: 100px 50px;
         position: relative;
-        color: rgba(black, .7);
-        border-left: 2px solid $border-color;
-        
-        p {
-            font-size: 1rem;
-        }
-        
-        &::before {
-            content: attr(date-is);
-            position: absolute;
-            left: 2em;
-            font-weight: bold;
-            top: 1em;
-            display: block;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 700;
-            font-size: .785rem;
-        }
-        &::after {
-            width: 10px;
-            height: 10px;
-            display: block;
-            top: 1em;
-            position: absolute;
-            left: -7px;
-            border-radius: 10px;
+        box-shadow: $container-shadow;
+        &:before {
             content: '';
-            border: 2px solid $border-color;
-            background: white;
+            position: absolute;
+            top: 0px;
+            left:calc(33% + 15px); //$gutter/2
+            bottom: 0px;
+            width: $border-width;
+            background: #ddd;
         }
-        &:last-child {
-            border-image: linear-gradient(
-                to bottom,
-                $border-color 60%,
-                rgba($border-color, 0)) 1 100%
-            ;
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        } 
         }
-    }
+        .entry {
+        clear: both;
+        text-align: left;
+        position: relative;
+        .title {
+            margin-bottom: .5em;
+            float: left;
+            width: 33%;
+            padding-right: $gutter;
+            text-align: right;
+            position: relative;
+            &:before {
+            content: '';
+            position: absolute;
+            width: $dot-diameter;
+            height: $dot-diameter;
+            border: $border-width solid salmon;
+            background-color:#fff;
+            border-radius:100%;
+            top: 15%;
+            right: -$dot-diameter;
+            z-index: 99;
+            }
+            h3 {
+            margin: 0;
+            font-size: 120%;
+            }
+            p {
+            margin: 0;
+            font-size: 100%;
+            }
+        }
+        .body {
+            margin: 0 0 3em;
+            float: right;
+            width: 66%;
+            padding-left: $gutter;
+            p {
+            line-height: 1.4em;
+            &:first-child {
+                margin-top: 0;
+                font-weight: 400;
+            }
+            }
+            ul {
+            color:#aaa;
+            padding-left: 0;
+            list-style-type: none;
+            li:before {
+                content: "–";
+                margin-right: .5em;
+            }
+            }
+        }
+        }
     </style>
     <script></script>
 </head>
 
-<div class="container">
-	<div class="timeline-item" date-is='20-07-1990'>
-		<h1>Hello, 'Im a single div responsive timeline without mediaQueries!</h1>
-		<p>
-			I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? I think the only card she has is the Lorem card.
-		</p>
-	</div>
-	<div class="timeline-item" date-is='20-07-1990'>
-		<h1>Oeehhh, that's awesome.. Me too!</h1>
-		<p>
-			I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? I think the only card she has is the Lorem card.
-		</p>
-	</div>
-	<div class="timeline-item" date-is='20-07-1990'>
-		<h1>I'm ::last-child so my border fades ^__^</h1>
-		<p>
-			I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? I think the only card she has is the Lorem card.
-		</p>
-	</div>
+<div class="timeline">
+  <div class="entry">
+    <div class="title">
+      <h3>2014 - Present</h3>
+      <p>Title, Company</p>
+    </div>
+    <div class="body">
+      <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+      <ul>
+        <li>Rerum sit libero possimus amet excepturi</li>
+        <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+        <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+      </ul>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="title">
+      <h3>2010 - Present</h3>
+      <p>Title, Company</p>
+    </div>
+    <div class="body">
+      <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+      <ul>
+        <li>Rerum sit libero possimus amet excepturi</li>
+        <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+        <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+      </ul>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="title">
+      <h3>2009 - 2010</h3>
+      <p>Title, Company</p>
+    </div>
+    <div class="body">
+      <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+      <ul>
+        <li>Rerum sit libero possimus amet excepturi</li>
+        <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+        <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+      </ul>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="title">
+      <h3>2006 - 2008</h3>
+      <p>Title, Company</p>
+    </div>
+    <div class="body">
+      <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+      <ul>
+        <li>Rerum sit libero possimus amet excepturi</li>
+        <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+        <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+      </ul>
+    </div>
+  </div>
+
 </div>

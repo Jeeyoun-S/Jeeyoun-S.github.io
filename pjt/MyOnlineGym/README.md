@@ -40,8 +40,9 @@ permalink: /pjt/my-online-gym/
     4. 배포
 
 ## 상세 내용
-1. [기획](pjt/MyOnlineGym/PlanAndDesign.md)
-2. [진행 일정](pjt/MyOnlineGym/Schedule.md)
+1. [기획](plan-and-design)
+2. [진행 일정](schedule)
+3. [설계서](architecture)
 
 
 <table>
