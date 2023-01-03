@@ -43,7 +43,7 @@ permalink: /pjt/my-online-gym/schedule/
             color: black;
             border-radius: 10px;
             line-height: 20px;
-            width: 35%
+            width: 70%
         }
         .box ul li > span {
             content: "";
@@ -140,12 +140,11 @@ permalink: /pjt/my-online-gym/schedule/
     <ul id="first-list">
         <li>
             <span></span>
-            <div class="title">comment #01</div>
-            <div class="info">the best animation , the best toturials you would ever see .</div>
-            <div class="name">- dr. mohamed -</div>
+            <div class="title">기획</div>
+            <div class="info">아이디어 구상 및 기능 설계</div>
+            <div class="name">- 김민규 -</div>
             <div class="time">
-                <span>JUN, 17<sup>th</sup></span>
-                <span>12:00 AM</span>
+                <span>2022.11.17</span>
             </div>
         </li>
         <li>
@@ -202,3 +201,31 @@ permalink: /pjt/my-online-gym/schedule/
         </li>
     </ul>
 </div>
+
+<table>
+  <thead>
+    <th>날짜</th>
+    <th>분류</th>
+    <th>일정</th>
+  </thead>
+  <tbody>
+    <tr><td>11월 17일</td><td>기획</td><td>아이디어 및 기능 회의</td></tr>
+    <tr><td rowspan="3">11월 18일</td><td>기획</td><td>목업 제작</td></tr>
+                                         <tr><td>DB</td><td>DB 설계 및 쿼리문 작성</td></tr>
+                                         <tr><td>프론트엔드</td><td>홈 화면 구현</td></tr>
+    <tr><td>11월 19일</td><td>백엔드</td><td>프로젝트 생성 및 회원 관련 API 구현</td></tr>
+    <tr><td>11월 20일</td><td>백엔드</td><td>영상 관련 API 구현</td></tr>
+    <tr><td rowspan="2">11월 21일</td><td>백엔드</td><td>건강기능식품, 일정 관련 API 구현</td></tr>
+                                         <tr><td>프론트엔드</td><td>일정 달력 페이지 구현</td></tr>
+    <tr><td>11월 22일</td><td>프론트엔드</td><td>회원 관련 페이지, 영상 관련 페이지 구현</td></tr>
+    <tr><td rowspan="2">11월 23일</td><td>백엔드</td><td>루틴 추천 관련 API 구현</td></tr>
+                                         <tr><td>프론트엔드</td><td>건강기능식품 관련 페이지, 찜 목록 페이지 구현</td></tr>
+    <tr><td rowspan="2">11월 24일</td><td>프론트엔드</td><td>루틴 추천 결과창 오류, 루틴 추가 오류, 리뷰 등록 즉각 반영 수정</td></tr>
+                                         <tr><td>발표</td><td>PPT 제작 및 발표 준비</td></tr>
+    <tr><td>11월 25일</td><td>발표</td><td>발표 진행</td></tr>
+    <tr><td>12월 05일</td><td>백엔드</td><td>Rest API 응답 형식 변경, Swagger 버전 변경, Swagger 응답 예시 추가</td></tr>
+    <tr><td>12월 06일</td><td>프론트엔드</td><td>건강기능식품·영상 상세 페이지 URL 수정, Rest API 응답 형식 맞춰 axios 수정</td></tr>
+    <tr><td>12월 07일</td><td>프론트엔드</td><td>일정 추가·수정, 영상·건강기능식품·쇼핑몰 목록 UI 수정</td></tr>
+    <tr><td>01월 02일</td><td>배포</td><td>Azure 가상 머신 생성, 배포 환경 세팅, DB 구축</td></tr>
+  </tbody>
+</table>
