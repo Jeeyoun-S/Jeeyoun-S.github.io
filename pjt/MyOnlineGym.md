@@ -37,8 +37,8 @@ permalink: /pjt/my-online-gym/
     4. 발표
 - [<b>서지윤 (팀원)</b>](https://github.com/Jeeyoun-S)
     1. DB 구축
-    2. Rest API 구현
-    3. Front-end 구현
+    2. Backend - Rest API 구현
+    3. Frontend - 웹페이지 구현
     4. 배포
 
 ## 진행 일정
