@@ -42,7 +42,7 @@ permalink: /pjt/my-online-gym/
     4. 배포
 
 ## 진행 일정
-<table border=1>
+<table>
   <thead>
     <th>날짜</th>
     <th>분류</th>
