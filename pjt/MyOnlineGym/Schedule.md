@@ -10,7 +10,6 @@ permalink: /pjt/my-online-gym/schedule/
             margin: 0;
             padding: 0;
             background-color: white;
-            font-family: arial
         }
         .box {
             margin:0 10%;
@@ -31,7 +30,7 @@ permalink: /pjt/my-online-gym/schedule/
             display: block;
             width: 0;
             height: 100%;
-            border:1px dashed #fff;
+            border:1px dashed black;
             position: absolute;
             top:0;
             left:30px
@@ -51,7 +50,7 @@ permalink: /pjt/my-online-gym/schedule/
             display: block;
             width: 0;
             height: 100%;
-            border:1px solid #fff;
+            border:1px solid black;
             position: absolute;
             top:0;
             left:-30px
@@ -63,7 +62,7 @@ permalink: /pjt/my-online-gym/schedule/
             height: 10px;
             border-radius: 50%;
             background:#ff6d6d;
-            border:2px solid #fff;
+            border:2px solid black;
             position: absolute;
             left:-7.5px
         }
@@ -96,8 +95,8 @@ permalink: /pjt/my-online-gym/schedule/
             top: 105%;
             left: 22%;
             cursor: pointer;
-        height:20px;
-        width:20px
+            height:20px;
+            width:20px
         }
         .arrow:hover {
             -webkit-animation: arrow 1s linear infinite;
@@ -117,36 +116,20 @@ permalink: /pjt/my-online-gym/schedule/
             height: 20px
         }
         @keyframes arrow{
-            0%,100%{
-                top:105%
-            }
-            50%{
-                top:106%
-            }
+            0%,100% {top:105%}
+            50% {top:106%}
         }
         @-webkit-keyframes arrow{
-            0%,100%{
-                top:105%
-            }
-            50%{
-                top:106%
-            }
+            0%,100% {top:105%}
+            50% {top:106%}
         }
         @-moz-keyframes arrow{
-            0%,100%{
-                top:105%
-            }
-            50%{
-                top:106%
-            }
+            0%,100% {top:105%}
+            50% {top:106%}
         }
         @-o-keyframes arrow{
-            0%,100%{
-                top:105%
-            }
-            50%{
-                top:106%
-            }
+            0%,100% {top:105%}
+            50% {top:106%}
         }
     </style>
     <script>
