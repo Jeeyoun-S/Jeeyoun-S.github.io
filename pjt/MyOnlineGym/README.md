@@ -7,7 +7,7 @@ permalink: /pjt/my-online-gym/
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-## Project 소개
+## 소개
 - **프로젝트 주제** 운동 관련 웹사이트 제작
 - **진행 날짜** 2022.11.17 ~ 25
 - **팀명** MVC
@@ -40,7 +40,7 @@ permalink: /pjt/my-online-gym/
   <img src="https://img.shields.io/badge/Microsoft Azure-0078D4?style=flat&logo=MicrosoftAzure&logoColor=white"> <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=Ubuntu&logoColor=white"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white"> <img src="https://img.shields.io/badge/Powershell-5391FE?style=flat&logo=Powershell&logoColor=white">
 
 ## 프로젝트 진행
-- [진행 일정](schedule)
+- [일정](schedule)
 - [기획](plan-and-design)
 - [시스템 구조도]()
 - [학습 노트]()
