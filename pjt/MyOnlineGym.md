@@ -57,7 +57,7 @@ permalink: /pjt/my-online-gym/
     <tr><td>11월 20일</td><td>백엔드</td><td>영상 관련 API 구현</td></tr>
     <tr><td rowspan="2">11월 21일</td><td>백엔드</td><td>건강기능식품, 일정 관련 API 구현</td></tr>
                                          <tr><td>프론트엔드</td><td>일정 달력 페이지 구현</td></tr>
-    <tr><td>2022년 11월 22일</td><td>프론트엔드</td><td>회원 관련 페이지, 영상 관련 페이지 구현</td></tr>
+    <tr><td>11월 22일</td><td>프론트엔드</td><td>회원 관련 페이지, 영상 관련 페이지 구현</td></tr>
     <tr><td rowspan="2">11월 23일</td><td>백엔드</td><td>루틴 추천 관련 API 구현</td></tr>
                                          <tr><td>프론트엔드</td><td>건강기능식품 관련 페이지, 찜 목록 페이지 구현</td></tr>
     <tr><td rowspan="2">11월 24일</td><td>프론트엔드</td><td>루틴 추천 결과창 오류, 루틴 추가 오류, 리뷰 등록 즉각 반영 수정</td></tr>
