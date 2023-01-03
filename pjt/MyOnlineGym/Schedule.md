@@ -6,21 +6,18 @@ permalink: /pjt/my-online-gym/schedule/
 ---
 <head>
     <style>
-        body{
+        body {
             margin: 0;
             padding: 0;
-            background-color:#ff6d6d;
+            background-color: white;
             font-family: arial
         }
-
-        .box{
+        .box {
             margin:0 10%;
-            height: 630px;
             overflow: hidden;
             padding: 10px 0 40px 60px
         }
-
-        .box ul{
+        .box ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -28,10 +25,8 @@ permalink: /pjt/my-online-gym/schedule/
             transition: all 0.5s linear;
             top:0
         }
-
-        .box ul:last-of-type{top:80px}
-
-        .box ul:before{
+        .box ul:last-of-type {top:80px}
+        .box ul:before {
             content: "";
             display: block;
             width: 0;
@@ -41,8 +36,7 @@ permalink: /pjt/my-online-gym/schedule/
             top:0;
             left:30px
         }
-
-        .box ul li{
+        .box ul li {
             margin: 20px 60px 60px;
             position: relative;
             padding: 10px 20px;
@@ -52,9 +46,7 @@ permalink: /pjt/my-online-gym/schedule/
             line-height: 20px;
             width: 35%
         }
-
-
-        .box ul li > span{
+        .box ul li > span {
             content: "";
             display: block;
             width: 0;
@@ -64,8 +56,7 @@ permalink: /pjt/my-online-gym/schedule/
             top:0;
             left:-30px
         }
-
-        .box ul li > span:before,.box ul li > span:after{
+        .box ul li > span:before,.box ul li > span:after {
             content: "";
             display: block;
             width: 10px;
@@ -76,18 +67,14 @@ permalink: /pjt/my-online-gym/schedule/
             position: absolute;
             left:-7.5px
         }
-
-        .box ul li > span:before{top:-10px}
-        .box ul li > span:after{top:95%}
-
-        .box .title{
+        .box ul li > span:before {top:-10px}
+        .box ul li > span:after {top:95%}
+        .box .title {
             text-transform: uppercase;
             font-weight: 700;
             margin-bottom: 5px
         }
-
-        .box .info:first-letter{text-transform: capitalize;line-height: 1.7}
-
+        .box .info:first-letter {text-transform: capitalize;line-height: 1.7}
         .box .name{
             margin-top: 10px;
             text-transform: capitalize;
@@ -95,9 +82,7 @@ permalink: /pjt/my-online-gym/schedule/
             text-align: right;
             margin-right: 20px
         }
-
-
-        .box .time span{
+        .box .time span {
             position: absolute;
             left: -100px;
             color:#fff;
@@ -106,9 +91,7 @@ permalink: /pjt/my-online-gym/schedule/
         }
         .box .time span:first-child{top:-16px}
         .box .time span:last-child{top:94%}
-
-
-        .arrow{
+        .arrow {
             position: absolute;
             top: 105%;
             left: 22%;
@@ -116,27 +99,23 @@ permalink: /pjt/my-online-gym/schedule/
         height:20px;
         width:20px
         }
-
-        .arrow:hover{
+        .arrow:hover {
             -webkit-animation: arrow 1s linear infinite;
             -moz-animation: arrow 1s linear infinite;
                 -o-animation: arrow 1s linear infinite;
                     animation: arrow 1s linear infinite;
         }
-
-        .box ul:last-of-type .arrow{
+        .box ul:last-of-type .arrow {
             position: absolute;
             top: 105%;
             left: 22%;
             transform: rotateX(180deg);
             cursor: pointer;
         }
-
         svg{
             width: 20px;
             height: 20px
         }
-
         @keyframes arrow{
             0%,100%{
                 top:105%
@@ -145,7 +124,6 @@ permalink: /pjt/my-online-gym/schedule/
                 top:106%
             }
         }
-
         @-webkit-keyframes arrow{
             0%,100%{
                 top:105%
@@ -154,7 +132,6 @@ permalink: /pjt/my-online-gym/schedule/
                 top:106%
             }
         }
-
         @-moz-keyframes arrow{
             0%,100%{
                 top:105%
@@ -163,7 +140,6 @@ permalink: /pjt/my-online-gym/schedule/
                 top:106%
             }
         }
-
         @-o-keyframes arrow{
             0%,100%{
                 top:105%
@@ -176,7 +152,6 @@ permalink: /pjt/my-online-gym/schedule/
     <script>
         var downArrow = document.getElementById("btn1");
         var upArrow = document.getElementById("btn2");
-
         downArrow.onclick = function () {
             'use strict';
             document.getElementById("first-list").style = "top:-620px";
@@ -184,7 +159,6 @@ permalink: /pjt/my-online-gym/schedule/
             downArrow.style = "display:none";
             upArrow.style = "display:block";
         };
-
         upArrow.onclick = function () {
             'use strict';
             document.getElementById("first-list").style = "top:0";
@@ -192,31 +166,22 @@ permalink: /pjt/my-online-gym/schedule/
             upArrow.style = "display:none";
             downArrow.style = "display:block";
         };
-
-
         // creating my image link
-
         var link = document.createElement("a");
         document.body.appendChild(link);
-
         link.href = "https://codepen.io/mo7hamed/pens/public";
         link.target = "_blank";
-
         var photo = document.createElement("img");
         link.appendChild(photo);
-
         photo.src =
         "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1292524/profile/profile-80.jpg";
         photo.alt = "mo7amed";
-
         photo.style =
         "border-radius:50%;position:fixed;bottom:20px;right:20px;transition:all 0.5s ease";
-
         photo.onmouseover = function() {
         this.style.transform = "scale(1.1,1.1)";
         this.style.boxShadow = "5px 5px 15px #000";
         };
-
         photo.onmouseout = function() {
         this.style.transform = "scale(1,1)";
         this.style.boxShadow = "none";
@@ -256,9 +221,7 @@ permalink: /pjt/my-online-gym/schedule/
                 <span>02:00 PM</span>
             </div>
         </li>
-        
         <div class="arrow" id="btn1">
-    
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve">
             <g>
                 <g>
