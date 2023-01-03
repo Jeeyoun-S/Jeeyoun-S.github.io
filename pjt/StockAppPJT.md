@@ -32,6 +32,8 @@ permalink: /pjt/stock-app-pjt/
 ## 진행 일정
 
 ## 시스템 구조도
+1. Database ERD
+2. Spring Boot Class Diagram
 
 ## 주요 기능
 
