@@ -17,8 +17,8 @@ permalink: /pjt/my-online-gym/
   - 운동 영상을 찾아보고, 리뷰를 남길 수 있는 서비스 구현
 3. 개발 환경
   - Frontend <img src="https://img.shields.io/badge/vue.js-4FC08D?style=flat&logo=vue.js&logoColor=white"> 
-  - Backend <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=SpringBoot&logoColor=white">
-  - Database <img src="https://img.shields.io/badge/mysql-4479A1?style=flat&logo=mysql&logoColor=white">
+  - Backend <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat&logo=SpringBoot&logoColor=white">
+  - Database <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white">
   - Tools <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"> <img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat&logo=GitLab&logoColor=white">
   - Web Server <img src="https://img.shields.io/badge/Microsoft Azure-0078D4?style=flat&logo=MicrosoftAzure&logoColor=white"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white">
 
