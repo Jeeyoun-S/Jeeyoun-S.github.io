@@ -6,233 +6,128 @@ permalink: /pjt/my-online-gym/schedule/
 ---
 <head>
     <style>
-        @import 'compass/css3'
-        @import '//fonts.googleapis.com/css?family=Muli:300'
-        $text: #1D1D26
-        $text-light: #77777D
-        $colors:  red #FF3467, blue #18D0BF, salmon #F48A6D, purple #C178FA
-
-        $timeline-padding-left-right: 62px
-        $timeline-tracker-padding-right: 11px
-
-        $timeline__item-padding-top-bottom: 62px
-
-        $timeline__step-padding-right: 62px
-
-        $timeline__step__marker-height: 24px
-        $timeline__step__marker-width: 24px
-        $timeline__step__marker-border-width: 4px
-
-        $timeline__time-padding-right: 126px
-        $timeline__time-font-size: 26px
-
-        $timeline__title-padding-bottom: 26px
-        $timeline__title-font-size: 32px
-
-        $timeline__points-padding-bottom: 12px
-        $timeline__points-font-size: 24px
-        
-        
-        /*
-        * Timeline
-        *
-
-        .timeline
-        +display-flex()
-        +flex-direction(column)
-        padding: 0 $timeline-padding-left-right
-        margin: 0
-        list-style: none
-        
-        &::before
-            position: fixed
-            top: 0
-            height: 100%
-            padding-right: $timeline-tracker-padding-right
-            border-right: 2px solid #F2F2F2
-            content: ""
-
-        &__item
-            +display-flex()
-            +align-items(stretch)
-            padding: $timeline__item-padding-top-bottom 0
-        
-        &__step
-            padding-right: $timeline__step-padding-right
-            
-            &__marker
-            position: relative
-            display: table-cell
-            height: $timeline__step__marker-height
-            min-height: $timeline__step__marker-height
-            width: $timeline__step__marker-width
-            min-width: $timeline__step__marker-width
-            border: $timeline__step__marker-border-width solid #F2F2F2
-            +border-radius(50%)
-            background-color: white
-            z-index: 0
-            
-            @each $color in $colors
-                &--#{nth($color, 1)}
-                border-color: nth($color, 2)
-            
-            
-        &__time
-            padding-right: $timeline__time-padding-right
-            font-size: $timeline__time-font-size
-            
-        &__title
-            padding-bottom: $timeline__title-padding-bottom
-            font-size: $timeline__title-font-size
-            
-        &__points
-            padding: 0
-            list-style: none
-            font-size: $timeline__points-font-size
-            color: $text-light
-            > *
-            padding: 0 0 $timeline__points-padding-bottom 0
-            
-        /*
-        * For mobile!
-        *
-
-        $ratio: 1.75
-            
-        @media (max-width: 768px)
-        .card
-            max-width: 375
-            
-        .timeline
-            padding: 0 ($timeline-padding-left-right / $ratio)
-
-            &::before
-            padding-right: $timeline-tracker-padding-right / $ratio
-
-            &__item
-            padding: ($timeline__item-padding-top-bottom / $ratio) 0
-
-            &__step
-            padding-right: $timeline__step-padding-right / $ratio
-
-            &__marker
-                height: $timeline__step__marker-height / $ratio
-                min-hieght: $timeline__step__marker-height / $ratio
-                width: $timeline__step__marker-width / $ratio
-                min-width: $timeline__step__marker-width / $ratio
-                border-width: $timeline__step__marker-border-width / $ratio
-
-            &__time
-            padding-right: $timeline__time-padding-right / $ratio
-            font-size: $timeline__time-font-size / $ratio
-
-            &__title
-            padding-bottom: $timeline__title-padding-bottom / $ratio
-            font-size: $timeline__title-font-size / $ratio
-
-            &__points
-            font-size: $timeline__points-font-size / $ratio
-            > *
-                padding-bottom: $timeline__points-padding-bottom / $ratio
-            
-            
-        /*
-        * Display stuff
-        *
-
-        html
-        background: url(//s3-us-west-2.amazonaws.com/s.cdpn.io/153256/trees.jpg) no-repeat center center fixed
-        +background-size(cover)
-        
-        html, body
-        line-height: 1.5rem
-        font-family: 'Muli', sans-serif
-        font-weight: 300
-        margin: 0
-        box-sizing: border-box
-        height: 100%
-
-        *, *:before, *:after
-        box-sizing: inherit
-        
-        .card
-        background-color: white
-        max-width: 750px
-        margin: 0 auto
-        height: 100%
-        +box-shadow(0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12))
-        display: table
+        @import "compass/css3";
+        /* Variables */
+        $color-1: black;
+        $color-2: white;
+        $color-3: rgb(168, 50, 121);
+        /* Fonts */
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
+        #schedule {
+            font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 1em;
+            font-weight: 300;
+            line-height: 1.5;
+            letter-spacing: 0.05em;
+        }
+        /* Layout */
+        #schedule {
+            @include box-sizing(border-box);
+        }
+        /* Styling */
+        #schedule .timeline {
+            margin: 4em auto;
+            position: relative;
+            max-width: 46em;
+            &:before {
+                background-color: $color-1;
+                content: '';
+                margin-left: -1px;
+                position: absolute;
+                top: 0;
+                left: 2em;
+                width: 2px;
+                height: 100%;
+            }
+        }
+        #schedule .timeline-event {
+            position: relative;
+            &:hover {
+                .timeline-event-icon {
+                @include rotate (-45deg);
+                background-color: $color-3;
+                }
+                .timeline-event-thumbnail {
+                @include box-shadow(inset 40em 0 0 0 $color-3);
+                }
+            }
+        }
+        #schedule .timeline-event-copy {
+            padding: 2em;
+            position: relative;
+            top: -1.875em;
+            left: 4em;
+            width: 80%;
+            #schedule h3 {
+                font-size: 1.75em;
+            }
+            #schedule h4 {
+                font-size: 1.2em;
+                margin-bottom: 1.2em;
+            }
+            #schedule strong {
+                font-weight: 700;
+            }
+            p:not(.timeline-event-thumbnail) {
+                padding-bottom: 1.2em;
+            }
+        }
+        #schedule .timeline-event-icon {
+            @include transition(transform 0.2s ease-in);
+            @include rotate (45deg);
+            background-color: $color-1;
+            outline: 10px solid $color-2;
+            display: block;
+            margin: 0.5em 0.5em 0.5em -0.5em;
+            position: absolute;
+            top: 0;
+            left: 2em;
+            width: 1em;
+            height: 1em;
+        }
+        #schedule .timeline-event-thumbnail {
+            @include transition(box-shadow 0.5s ease-in 0.1s);
+            color: $color-2;
+            font-size: 0.75em;
+            background-color: $color-1;
+            @include box-shadow(inset 0 0 0 0em #ef795a);
+            display: inline-block;
+            margin-bottom: 1.2em;
+            padding: 0.25em 1em 0.2em 1em;
+        }
     </style>
     <script></script>
 </head>
 
-<div class="card">
-  <ul class="timeline">
-
-    <li class="timeline__item">
-      <div class="timeline__step">
-        <div class="timeline__step__marker timeline__step__marker--red"></div>
-      </div>
-      <div class="timeline__time">
-        5pm
-      </div>
-      <div class="timeline__content">
-        <div class="timeline__title">
-          New Icons
+<div id="schedule">
+    <ul class="timeline">
+    <li class="timeline-event">
+        <label class="timeline-event-icon"></label>
+        <div class="timeline-event-copy">
+        <p class="timeline-event-thumbnail">April 2011 - heute</p>
+        <h3>Geil,Danke! GmbH</h3>
+        <h4>Geschäftsführerin eines Web-Studios</h4>
+        <p><strong>Schwerpunkt: Frontend-Entwicklung</strong><br>Entwickeln von anspruchsvollen, animierten, responsive und adaptive Webseiten mit HTML5, SCSS, jQuery; für alle Browser, optimiert für Desktop, Notebook, Smartphones und Tablets (iOS, Android, Windows).</p>
+        <p><strong>Projektmanagement mit Scrum</strong><br>Ständiges Verbessern des agilen Entwicklungsprozesses beispielsweise durch Grunt, Yeoman, GIT, JIRA und BrowserStack.</p>
         </div>
-        <ul class="timeline__points">
-          <li>Mobile App</li>
-        </ul>
-      </div>
     </li>
-
-    <li class="timeline__item">
-      <div class="timeline__step">
-        <div class="timeline__step__marker timeline__step__marker--blue"></div>
-      </div>
-      <div class="timeline__time">
-        4pm
-      </div>
-      <div class="timeline__content">
-        <div class="timeline__title">
-          Design Stand Up
+    <li class="timeline-event">
+        <label class="timeline-event-icon"></label>
+        <div class="timeline-event-copy">
+        <p class="timeline-event-thumbnail">November 2009 - März 2011</p>
+        <h3>Freelancer</h3>
+        <h4>Designer und Autor</h4>
+        <p>Konzeption, Design und Produktion von Digitalen Magazinen mit InDesign, der Adobe Digital Publishing Suite und HTML5. Co-Autorin der Fachbücher "Digitales Publizieren für Tablets" und "Adobe Digital Publishing Suite" erschienen im dpunkt.verlag.</p>
         </div>
-        <ul class="timeline__points">
-          <li>Hangouts</li>
-        </ul>
-      </div>
     </li>
-
-    <li class="timeline__item">
-      <div class="timeline__step">
-        <div class="timeline__step__marker timeline__step__marker--salmon"></div>
-      </div>
-      <div class="timeline__time">
-        9am
-      </div>
-      <div class="timeline__content">
-        <div class="timeline__title">
-          Break
+    <li class="timeline-event">
+        <label class="timeline-event-icon"></label>
+        <div class="timeline-event-copy">
+        <p class="timeline-event-thumbnail">April 2011 - heute</p>
+        <h3>konplan gmbh</h3>
+        <h4>IT-Consultant</h4>
+        <p><strong>Systemarchitektur, Consulting</strong><br>Konzeption und Modellierung von Systemen und APIs für Digital Publishing und Entitlement nach SOA</p>
         </div>
-      </div>
     </li>
-
-    <li class="timeline__item">
-      <div class="timeline__step">
-        <div class="timeline__step__marker timeline__step__marker--blue"></div>
-      </div>
-      <div class="timeline__time">
-        2pm
-      </div>
-      <div class="timeline__content">
-        <div class="timeline__title">
-          Home Screen
-        </div>
-        <ul class="timeline__points">
-          <li>Web App</li>
-        </ul>
-      </div>
-    </li>
-
-  </ul>
+    </ul>  
 </div>

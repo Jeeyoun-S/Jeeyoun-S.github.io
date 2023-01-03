@@ -42,7 +42,7 @@ permalink: /pjt/my-online-gym/
 ## 상세 내용
 1. [기획](plan-and-design)
 2. [진행 일정](schedule)
-3. [설계서](architecture)
+   
 
 
 <table>
