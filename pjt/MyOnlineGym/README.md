@@ -43,6 +43,7 @@ permalink: /pjt/my-online-gym/
 - [진행 일정](schedule)
 - [기획](plan-and-design)
 - [시스템 구조도]()
+- [학습 노트]()
 
 ## 주요 기능
 1. 운동 일정 관리 기능
