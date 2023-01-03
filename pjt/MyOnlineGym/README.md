@@ -4,10 +4,16 @@ title: My Online Gym
 sitemap: false
 permalink: /pjt/my-online-gym/
 ---
-
-1. [기획](/pjt/my-online-gym/PlanAndDesign.md)
+0. this unordered seed list will be replaced by toc as unordered list
+{:toc}
 
 ## Project 소개
+- **프로젝트 주제** 운동 관련 웹사이트 제작
+- **진행 날짜** 2022.11.17 ~ 25
+- **팀명** MVC
+- **팀원** 김민규 서지윤
+- **서비스 기본 아이디어** 초보자를 위한 당장 시작하고, 오래 지속할 수 있는 운동 습관 만들기
+- **핵심 기능** Gamification을 통한 흥미유발, 이용자의 운동환경에 맞는 루틴 제공
 
 ## 개발 환경
   - Frontend  
@@ -21,7 +27,7 @@ permalink: /pjt/my-online-gym/
   - Server  
     <img src="https://img.shields.io/badge/Microsoft Azure-0078D4?style=flat&logo=MicrosoftAzure&logoColor=white"> <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=Ubuntu&logoColor=white"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white"> <img src="https://img.shields.io/badge/Powershell-5391FE?style=flat&logo=Powershell&logoColor=white">
 
-## Team 'MVC'
+## 역할 분담
 - <b>김민규 (팀장)</b>
     1. 기획
     2. 데이터 수집/제작/검수
@@ -33,7 +39,11 @@ permalink: /pjt/my-online-gym/
     3. Frontend - 웹페이지 구현
     4. 배포
 
-## 진행 일정
+## 상세 내용
+1. [기획](pjt/MyOnlineGym/PlanAndDesign.md)
+2. [진행 일정](pjt/MyOnlineGym/Schedule.md)
+
+
 <table>
   <thead>
     <th>날짜</th>
