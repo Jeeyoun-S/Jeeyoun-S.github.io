@@ -141,19 +141,23 @@ permalink: /pjt/my-online-gym/schedule/
         <li>
             <span></span>
             <div class="title">기획</div>
-            <div class="info">아이디어 구상 및 기능 설계</div>
+            <div class="info">아이디어 구상, 기능 설계</div>
+            <div class="name">- 김민규 -</div>
+            <div class="title">기획</div>
+            <div class="info">아이디어 구상, 기능 설계</div>
             <div class="name">- 김민규 -</div>
             <div class="time">
-                <span>2022.11.17</span>
+                <span>2022.11.17 09:00</span>
+                <span>2022.11.17 18:00</span>
             </div>
         </li>
         <li>
             <span></span>
-            <div class="title">summery #01</div>
-            <div class="info">the best animation , the best toturials you would ever see here only . you can learn how to animate and how to use SVG . even else you can add your own animations .</div>
-            <div class="name">- eng. amr -</div>
+            <div class="title">기획</div>
+            <div class="info">요구사항 명세서 작성, 목업 제작</div>
+            <div class="name">- 김민규 -</div>
             <div class="time">
-                <span>JUN, 29<sup>th</sup></span>
+                <span>2022.11.18</span>
                 <span>11:36 AM</span>
             </div>
         </li>
