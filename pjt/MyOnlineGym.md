@@ -28,9 +28,8 @@ permalink: /pjt/my-online-gym/
     <img src="https://img.shields.io/badge/Microsoft Azure-0078D4?style=flat&logo=MicrosoftAzure&logoColor=white"> <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=Ubuntu&logoColor=white"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white">
 
 ## Team 'MVC'
-- <b>김민규</b> 기획, 데이터 수집/제작/검수, 운동 루틴 추천 알고리즘 구현
+- <b>김민규</b> 기획, 데이터 수집/제작/검수, 추천 알고리즘 설계
 - [<b>서지윤</b>](https://github.com/Jeeyoun-S) DB 구축, Rest API 구현, Front-end 구현
-- <b>이창한</b> 기획
 
 ## 진행 일정
 1. 2022년 11월 18일 ~ 19일 기획
