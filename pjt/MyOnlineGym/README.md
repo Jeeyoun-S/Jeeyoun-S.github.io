@@ -39,14 +39,10 @@ permalink: /pjt/my-online-gym/
 - Server  
   <img src="https://img.shields.io/badge/Microsoft Azure-0078D4?style=flat&logo=MicrosoftAzure&logoColor=white"> <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=Ubuntu&logoColor=white"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white"> <img src="https://img.shields.io/badge/Powershell-5391FE?style=flat&logo=Powershell&logoColor=white">
 
-## 상세 내용
+## 프로젝트 진행
 - [진행 일정](schedule)
 - [기획](plan-and-design)
-
-## 시스템 구조도
-1. Database ERD
-2. SpringBoot Class Diagram
-3. Vue.js Structure
+- [시스템 구조도]()
 
 ## 주요 기능
 1. 운동 일정 관리 기능
