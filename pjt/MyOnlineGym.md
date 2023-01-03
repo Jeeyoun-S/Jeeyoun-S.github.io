@@ -23,7 +23,7 @@ permalink: /pjt/my-online-gym/
   - Backend  
     <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat&logo=SpringBoot&logoColor=white"> <img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=flat&logo=EclipseIDE&logoColor=white"> <img src="https://img.shields.io/badge/Java8-007396?style=flat&logo=Java&logoColor=white"> <img src="https://img.shields.io/badge/Apache Maven-C71A36?style=flat&logo=ApacheMaven&logoColor=white">
   - Database  
-    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white">
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/JSON-000000?style=flat&logo=JSON&logoColor=white">
   - Tools  
     <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"> <img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat&logo=GitLab&logoColor=white">
   - Server  
