@@ -178,7 +178,7 @@ permalink: /pjt/my-online-gym/schedule/
             </div>
         </li>
         <li>
-            <span></span>
+            <span></span>ㅎ
             <div class="title">백엔드</div>
             <div class="info">영상 관련 API 구현</div>
             <div class="name">- 서지윤 -</div>
