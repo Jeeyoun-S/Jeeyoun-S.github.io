@@ -30,8 +30,16 @@ permalink: /pjt/my-online-gym/
     <img src="https://img.shields.io/badge/Microsoft Azure-0078D4?style=flat&logo=MicrosoftAzure&logoColor=white"> <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=Ubuntu&logoColor=white"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white">
 
 ## Team 'MVC'
-- <b>김민규 (팀장)</b> 기획, 데이터 수집/제작/검수, 추천 알고리즘 설계, 발표
-- [<b>서지윤 (팀원)</b>](https://github.com/Jeeyoun-S) DB 구축, Rest API 구현, Front-end 구현, 배포
+- <b>김민규 (팀장)</b>
+    1. 기획
+    2. 데이터 수집/제작/검수
+    3. 추천 알고리즘 설계
+    4. 발표
+- [<b>서지윤 (팀원)</b>](https://github.com/Jeeyoun-S)
+    1. DB 구축
+    2. Rest API 구현
+    3. Front-end 구현
+    4. 배포
 
 ## 진행 일정
 1. 기획
