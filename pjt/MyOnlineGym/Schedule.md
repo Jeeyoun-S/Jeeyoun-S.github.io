@@ -278,8 +278,6 @@ permalink: /pjt/my-online-gym/schedule/
                 <span>06:00 PM</span>
             </div>
         </li>
-    </ul>
-    <ul id="third-list">
         <li>
             <span></span>
             <div class="title">배포</div>
