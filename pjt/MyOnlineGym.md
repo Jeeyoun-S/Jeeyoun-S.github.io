@@ -7,6 +7,104 @@ permalink: /pjt/my-online-gym/
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
+<head>
+  <style>
+    /* Import */
+    @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Oswald:400,300,700);
+    /* Variables */
+    @background: #252827;
+    @color-primary: #4298C3;
+    @color-light: white;
+    @spacing: 50px;
+    @radius: 4px;
+    @date: 120px;
+    @dotborder: 4px;
+    @dot: 11px;
+    @line: 4px;
+    @font-title: 'Oswald', sans-serif;
+    @font-text: 'Source Sans Pro', sans-serif;
+    /* Base */
+    body {
+      background: @background;
+      font-size: 16px;  
+    }
+    strong {
+      font-weight: 600;
+    }
+    h1 {
+    font-family: @font-title;
+    letter-spacing: 1.5px;
+    color: @color-light;  
+    font-weight: 100;
+    font-size: 2.4em;
+    }
+    #content {
+      margin-top: @spacing;
+      text-align: center;  
+    }
+    /* Timeline */
+    .timeline {
+      border-left: @line solid @color-primary;
+      border-bottom-right-radius: @radius;
+      border-top-right-radius: @radius;    
+      background: fade(@color-light, 3%);
+      color: fade(white, 80%);
+      font-family: @font-text;  
+      margin: @spacing auto;  
+      letter-spacing: 0.5px;   
+      position: relative;
+      line-height: 1.4em;
+      font-size: 1.03em;   
+      padding: @spacing;   
+      list-style: none;
+      text-align: left;  
+      font-weight: 100;  
+      max-width: 30%; 
+      h1, h2, h3 {
+      font-family: @font-title;
+      letter-spacing: 1.5px;
+      font-weight: 100;
+      font-size: 1.4em;    
+      }
+      .event {
+        border-bottom: 1px dashed fade(@color-light, 10%);
+        padding-bottom: (@spacing * 0.5);
+        margin-bottom: @spacing;  
+        position: relative;
+        &:last-of-type { 
+          padding-bottom: 0;
+          margin-bottom: 0; 
+          border: none;      
+        }
+        &:before, &:after {
+          position: absolute;
+          display: block;
+          top: 0;
+        }
+        &:before {
+          left: (((@date * 0.6) + @spacing + @line + @dot + (@dotborder * 2)) * 1.5) * -1;    
+          color: fade(@color-light, 40%);    
+          content: attr(data-date);
+          text-align: right;
+          font-weight: 100;    
+          font-size: 0.9em;
+          min-width: @date;
+        }
+        &:after {
+          box-shadow: 0 0 0 @dotborder fade(@color-primary,100%);    
+          left: (@spacing + @line + (@dot * 0.35)) * -1;        
+          background: lighten(@background,5%);    
+          border-radius: 50%;  
+          height: @dot;
+          width: @dot;
+          content: "";
+          top: 5px;
+        }
+      }
+    }
+  </style>
+</head>
+
 ## Project 소개
 1. 기획 배경
     - 상황에 맞는 운동 루틴 추천
@@ -53,6 +151,31 @@ permalink: /pjt/my-online-gym/
     4. 배포
 
 ## 진행 일정
+<div id="content">
+  <h1>Timeline Concept</h1>
+
+  <ul class="timeline">
+    <li class="event" data-date="2012-01-05">
+      <h3>Registration</h3>
+      <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
+      <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
+      <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
+    </li>
+    <li class="event" data-date="2:30 - 4:00pm">
+      <h3>Opening Ceremony</h3>
+      <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP & Busta Rhymes as an opening show.</p>    
+    </li>
+    <li class="event" data-date="5:00 - 8:00pm">
+      <h3>Main Event</h3>
+      <p>This is where it all goes down. You will compete head to head with your friends and rivals. Get ready!</p>    
+    </li>
+    <li class="event" data-date="8:30 - 9:30pm">
+      <h3>Closing Ceremony</h3>
+      <p>See how is the victor and who are the losers. The big stage is where the winners bask in their own glory.</p>    
+    </li>
+  </ul>
+</div>
+
 <table>
   <thead>
     <th>날짜</th>
