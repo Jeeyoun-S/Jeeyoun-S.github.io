@@ -9,7 +9,9 @@ permalink: /pjt/stock-app-pjt/
 
 ## Project 소개
 1. 기획 배경
+
 2. 목표
+
 3. 개발 환경
   - Frontend  
     <img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white">
