@@ -29,7 +29,7 @@ permalink: /pjt/my-online-gym/
 
 ## Team 'MVC'
 - <b>김민규</b> 기획, 데이터 수집/제작/검수, 추천 알고리즘 설계, 발표
-- [<b>서지윤</b>](https://github.com/Jeeyoun-S) DB 구축, Rest API 구현, Front-end 구현
+- [<b>서지윤</b>](https://github.com/Jeeyoun-S) DB 구축, Rest API 구현, Front-end 구현, 배포
 
 ## 진행 일정
 1. 기획
@@ -49,9 +49,9 @@ permalink: /pjt/my-online-gym/
     - 2022년 11월 24일 PPT 제작 및 발표 준비
     - 2022년 11월 25일 발표 진행
 6. 피드백 반영
+    - 
 7. 배포
-    - 2023년 01월 23일 Azure 가상 머신 생성 및 Spring Boot 배포 시도
-9. 2022년 12월 19일 ~ ing 피드백 반영 및 배포
+    - 2023년 01월 23일 Azure 가상 머신 생성 및 배포 환경 세팅
 
 ## 시스템 구조도
 1. Database ERD
