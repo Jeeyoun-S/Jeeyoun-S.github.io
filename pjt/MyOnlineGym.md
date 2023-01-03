@@ -50,6 +50,9 @@ permalink: /pjt/my-online-gym/
   </thead>
   <tbody>
     <tr><td>2022년 11월 17일</td><td>기획</td><td>아이디어 및 기능 회의</td></tr>
+    <tr><td colspan="3">2022년 11월 18일</td><td>기획</td><td>목업 제작</td></tr>
+                                             <td>백엔드</td><td>DB 설계 및 구축하기</td></tr>
+                                             <td>프론트엔드</td><td>홈 화면 구현</td></tr>
   </tbody>
 </table>
 
