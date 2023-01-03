@@ -49,7 +49,7 @@ permalink: /pjt/my-online-gym/
     <th>일정</th>
   </thead>
   <tbody>
-    <td><tr>2022년 11월 17일</tr><tr>기획</tr><tr>아이디어 및 기능 회의</tr></td>
+    <tr><td>2022년 11월 17일</td><td>기획</td><td>아이디어 및 기능 회의</td></tr>
   </tbody>
 </table>
 
