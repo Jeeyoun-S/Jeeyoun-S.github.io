@@ -279,7 +279,7 @@ permalink: /pjt/my-online-gym/schedule/
             </div>
         </li>
     </ul>
-    <ul id="second-list">
+    <ul id="third-list">
         <li>
             <span></span>
             <div class="title">배포</div>
