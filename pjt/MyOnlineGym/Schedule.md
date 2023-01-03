@@ -141,34 +141,50 @@ permalink: /pjt/my-online-gym/schedule/
         <li>
             <span></span>
             <div class="title">기획</div>
-            <div class="info">아이디어 구상, 기능 설계</div>
-            <div class="name">- 김민규 -</div>
-            <div class="title">기획</div>
-            <div class="info">아이디어 구상, 기능 설계</div>
+            <div class="info">아이디어 구상 및 기능 설계</div>
             <div class="name">- 김민규 -</div>
             <div class="time">
-                <span>2022.11.17 09:00</span>
-                <span>2022.11.17 18:00</span>
+                <span>22.11.17</span>
+                <span>06:00 PM</span>
             </div>
         </li>
         <li>
             <span></span>
             <div class="title">기획</div>
-            <div class="info">요구사항 명세서 작성, 목업 제작</div>
+            <div class="info">요구사항 명세서 작성</div>
             <div class="name">- 김민규 -</div>
+            <div class="title">DB</div>
+            <div class="info">DB 설계 및 쿼리문 작성</div>
+            <div class="name">- 서지윤 -</div>
+            <div class="title">프론트엔드</div>
+            <div class="info">홈 화면 구현 및 전체 디자인 구상</div>
+            <div class="name">- 서지윤 -</div>
             <div class="time">
-                <span>2022.11.18</span>
-                <span>11:36 AM</span>
+                <span>22.11.18</span>
+                <span>06:00 PM</span>
             </div>
         </li>
         <li>
             <span></span>
-            <div class="title">comment #02</div>
-            <div class="info">the best animation , the best toturials you would ever see . what about canvas ?? do you like it ..</div>
-            <div class="name">- dr. ahmed -</div>
+            <div class="title">기획</div>
+            <div class="info">목업 제작</div>
+            <div class="name">- 김민규 -</div>
+            <div class="title">백엔드</div>
+            <div class="info">프로젝트 생성 및 회원 관련 API 구현</div>
+            <div class="name">- 서지윤 -</div>
             <div class="time">
-                <span>FEB, 2<sup>nd</sup></span>
-                <span>02:00 PM</span>
+                <span>22.11.19</span>
+                <span>06:00 PM</span>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="title">백엔드</div>
+            <div class="info">영상 관련 API 구현</div>
+            <div class="name">- 서지윤 -</div>
+            <div class="time">
+                <span>22.11.20</span>
+                <span>06:00 PM</span>
             </div>
         </li>
     </ul>
