@@ -41,7 +41,7 @@ permalink: /pjt/my-online-gym/schedule/
             position: relative;
             padding: 10px 20px;
             background:rgba(255, 255, 255, 0.3);
-            color:#fff;
+            color: black;
             border-radius: 10px;
             line-height: 20px;
             width: 35%
@@ -85,7 +85,7 @@ permalink: /pjt/my-online-gym/schedule/
         .box .time span {
             position: absolute;
             left: -100px;
-            color:#fff;
+            color: black;
             font-size:80%;
             font-weight: bold;
         }
