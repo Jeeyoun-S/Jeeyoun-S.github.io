@@ -178,7 +178,7 @@ permalink: /pjt/my-online-gym/schedule/
             </div>
         </li>
         <li>
-            <span></span>ㅎ
+            <span></span>
             <div class="title">백엔드</div>
             <div class="info">영상 관련 API 구현</div>
             <div class="name">- 서지윤 -</div>
@@ -187,42 +187,113 @@ permalink: /pjt/my-online-gym/schedule/
                 <span>06:00 PM</span>
             </div>
         </li>
+        <li>
+            <span></span>
+            <div class="title">백엔드</div>
+            <div class="info">건강기능식품, 일정 관련 API 구현</div>
+            <div class="name">- 서지윤 -</div>
+            <div class="title">프론트엔드</div>
+            <div class="info">일정 달력 페이지 구현</div>
+            <div class="name">- 서지윤 -</div>
+            <div class="time">
+                <span>22.11.21</span>
+                <span>06:00 PM</span>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="title">프론트엔드</div>
+            <div class="info">회원 관련 페이지, 영상 관련 페이지 구현</div>
+            <div class="name">- 서지윤 -</div>
+            <div class="time">
+                <span>22.11.22</span>
+                <span>06:00 PM</span>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="title">백엔드</div>
+            <div class="info">루틴 추천 관련 API 구현</div>
+            <div class="name">- 서지윤 -</div>
+            <div class="title">프론트엔드</div>
+            <div class="info">건강기능식품 관련 페이지, 찜 목록 페이지 구현</div>
+            <div class="name">- 서지윤 -</div>
+            <div class="time">
+                <span>22.11.23</span>
+                <span>06:00 PM</span>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="title">프론트엔드</div>
+            <div class="info">루틴 추천 결과창 오류, 루틴 추가 오류, 리뷰 등록 즉각 반영 수정</div>
+            <div class="name">- 서지윤 -</div>
+            <div class="title">발표</div>
+            <div class="info">PPT 제작 및 발표 준비</div>
+            <div class="name">- 김민규 -</div>
+            <div class="time">
+                <span>22.11.24</span>
+                <span>06:00 PM</span>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="title">발표</div>
+            <div class="info">발표 진행</div>
+            <div class="name">- 김민규 -</div>
+            <div class="time">
+                <span>22.11.25</span>
+                <span>12:00 PM</span>
+            </div>
+        </li>
     </ul>
     <ul id="second-list">
         <li>
             <span></span>
-            <div class="title">comment #03</div>
-            <div class="info">the best animation , the best toturials you would ever see .</div>
-            <div class="name">- mohamed -</div>
+            <div class="title">백엔드</div>
+            <div class="info">Rest API 응답 형식 변경, Swagger 버전 변경, Swagger 응답 예시 추가
+            <div class="name">- 서지윤 -</div>
             <div class="time">
-                <span>MAR, 21<sup>st</sup></span>
-                <span>03:49 PM</span>
+                <span>22.12.05</span>
+                <span>06:00 PM</span>
             </div>
         </li>
         <li>
             <span></span>
-            <div class="title">summery #02</div>
-            <div class="info">the best animation , the best toturials you would ever see here only . you can learn how to animate and how to use SVG . even else you can add your own animations .</div>
-            <div class="name">- mohamed -</div>
+            <div class="title">프론트엔드</div>
+            <div class="info">건강기능식품·영상 상세 페이지 URL 수정, Rest API 응답 형식 맞춰 axios 수정
+            <div class="name">- 서지윤 -</div>
             <div class="time">
-                <span>MAY, 13<sup>rd</sup></span>
-                <span>09:23 AM</span>
+                <span>22.12.06</span>
+                <span>06:00 PM</span>
             </div>
         </li>
         <li>
             <span></span>
-            <div class="title">comment #04</div>
-            <div class="info">the best animation , the best toturials you would ever see . what about canvas ?? do you like it ..</div>
-            <div class="name">- mohamed -</div>
+            <div class="title">프론트엔드</div>
+            <div class="info">일정 추가·수정, 영상·건강기능식품·쇼핑몰 목록 UI 수정
+            <div class="name">- 서지윤 -</div>
             <div class="time">
-                <span>OCT, 15<sup>th</sup></span>
-                <span>08:30 PM</span>
+                <span>22.12.07</span>
+                <span>06:00 PM</span>
+            </div>
+        </li>
+    </ul>
+    <ul id="second-list">
+        <li>
+            <span></span>
+            <div class="title">배포</div>
+            <div class="info">Azure 가상 머신 생성, 배포 환경 세팅, DB 구축
+            <div class="name">- 서지윤 -</div>
+            <div class="time">
+                <span>23.01.03</span>
+                <span>06:00 PM</span>
             </div>
         </li>
     </ul>
 </div>
 
-<table>
+<!-- <table>
   <thead>
     <th>날짜</th>
     <th>분류</th>
@@ -248,4 +319,4 @@ permalink: /pjt/my-online-gym/schedule/
     <tr><td>12월 07일</td><td>프론트엔드</td><td>일정 추가·수정, 영상·건강기능식품·쇼핑몰 목록 UI 수정</td></tr>
     <tr><td>01월 02일</td><td>배포</td><td>Azure 가상 머신 생성, 배포 환경 세팅, DB 구축</td></tr>
   </tbody>
-</table>
+</table> -->
