@@ -62,7 +62,11 @@ permalink: /pjt/my-online-gym/
                                          <tr><td>프론트엔드</td><td>건강기능식품 관련 페이지, 찜 목록 페이지 구현</td></tr>
     <tr><td rowspan="2">2022년 11월 24일</td><td>프론트엔드</td><td>루틴 추천 결과창 오류, 루틴 추가 오류, 리뷰 등록 즉각 반영 수정</td></tr>
                                          <tr><td>발표</td><td>PPT 제작 및 발표 준비</td></tr>
-    
+    <tr><td>2022년 11월 25일</td><td>발표</td><td>발표 진행</td></tr>
+    <tr><td>2022년 12월 05일</td><td>백엔드</td><td>Rest API 응답 형식 변경, Swagger 버전 변경, Swagger 응답 예시 추가</td></tr>
+    <tr><td>2022년 12월 06일</td><td>프론트엔드</td><td>건강기능식품·영상 상세 페이지 URL 수정, Rest API 응답 형식 맞춰 axios 수정</td></tr>
+    <tr><td>2022년 12월 07일</td><td>프론트엔드</td><td>일정 추가·수정, 영상·건강기능식품·쇼핑몰 목록 UI 수정</td></tr>
+    <tr><td>2023년 01월 02일</td><td>배포</td><td>Azure 가상 머신 생성 및 배포 환경 세팅</td></tr>
   </tbody>
 </table>
 
