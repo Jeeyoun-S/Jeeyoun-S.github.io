@@ -38,7 +38,7 @@ permalink: /pjt/my-online-gym/
   - Tools  
     <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"> <img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat&logo=GitLab&logoColor=white">
   - Server  
-    <img src="https://img.shields.io/badge/Microsoft Azure-0078D4?style=flat&logo=MicrosoftAzure&logoColor=white"> <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=Ubuntu&logoColor=white"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white">
+    <img src="https://img.shields.io/badge/Microsoft Azure-0078D4?style=flat&logo=MicrosoftAzure&logoColor=white"> <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=Ubuntu&logoColor=white"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white"> <img src="https://img.shields.io/badge/Powershell-5391FE?style=flat&logo=Powershell&logoColor=white">
 
 ## Team 'MVC'
 - <b>김민규 (팀장)</b>
