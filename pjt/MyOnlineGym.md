@@ -28,15 +28,30 @@ permalink: /pjt/my-online-gym/
     <img src="https://img.shields.io/badge/Microsoft Azure-0078D4?style=flat&logo=MicrosoftAzure&logoColor=white"> <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=Ubuntu&logoColor=white"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white">
 
 ## Team 'MVC'
-- <b>김민규</b> 기획, 데이터 수집/제작/검수, 추천 알고리즘 설계
+- <b>김민규</b> 기획, 데이터 수집/제작/검수, 추천 알고리즘 설계, 발표
 - [<b>서지윤</b>](https://github.com/Jeeyoun-S) DB 구축, Rest API 구현, Front-end 구현
 
 ## 진행 일정
-1. 2022년 11월 18일 ~ 19일 기획
-2. 2022년 11월 19일 ~ 21일 백엔드 구현
-3. 2022년 11월 22일 ~ 23일 프론트엔드 구현
-4. 2022년 11월 24일 오류 해결 및 발표 준비
-5. 2022년 12월 19일 ~ ing 피드백 반영 및 배포
+1. 기획
+  - 2022년 11월 17일 아이디어 및 기능 회의
+  - 2022년 11월 18일 목업 제작 
+2. 백엔드 구현
+  - 2022년 11월 18일 MySQL로 DB 설계 및 구축하기
+  - 2022년 11월 19일 Spring Boot 프로젝트 생성 및 
+  - 2022년 11월 20일
+  - 2022년 11월 21일
+3. 프론트엔드 구현
+  - 2022년 11월 22일
+  - 2022년 11월 23일
+4. 오류 해결
+   - 2022년 11월 24일
+5. 발표
+  - 2022년 11월 24일 PPT 제작 및 발표 준비
+  - 2022년 11월 25일 발표 진행
+6. 피드백 반영
+7. 배포
+  - 2023년 01월 23일 Azure 가상 머신 생성 및 Spring Boot 배포 시도
+9. 2022년 12월 19일 ~ ing 피드백 반영 및 배포
 
 ## 시스템 구조도
 1. Database ERD
