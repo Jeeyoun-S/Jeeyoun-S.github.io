@@ -42,3 +42,29 @@
     - Dependency Inversion Principle, 의존 역전 원칙
     - 고수준 모듈은 저수준 모듈의 구현에 의존해서는 안 된다.
 
+## RESTful API
+
+### RESTful 개념
+1. REpresentational State Transfer + ~ful : ~한 API
+2. REST의 기본 원칙을 성실히 지킨 서비스 디자인
+
+### REST
+1. 하나의 아키텍처, Resource Oriented Architecture
+2. API 설계의 중심에 자원(Resource)이 있고, HTTP Method를 통해 자원을 처리하도록 설계
+
+### REST 6가지 원칙
+1. Uniform Interface
+2. Stateless
+3. Caching
+4. Client-Server
+5. Hierarchical System
+6. Code on Demand
+
+### RESTful API 디자인 방법
+1. 자원(Resource)과 행위(Method)를 명시적이고, 직관적으로 분리
+    - 자원 : URI로 표현 & 지시 대상은 *명사*로 표현
+    - 행위 : HTTP Method로 표현 & GET, POST, PUT, PATCH, DELETE를 분명한 목적으로 사용
+2. Message는 Header와 Body를 명확하게 분리해 사용
+    - Body : Entity에 대한 내용
+    - Header : 애플리케이션 서버가 행동할 판단의 근거가 되는 컨트롤 정보인 API 버전 정보, 응답받고자 하는 MIME 타입 등
+3.  
