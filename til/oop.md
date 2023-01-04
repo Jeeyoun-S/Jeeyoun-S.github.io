@@ -89,4 +89,34 @@
 ## TDD
 
 ### 개념
-Test-Driven Development
+- Test-Driven Development
+- 매우 짧은 개발 사이클의 반복에 의존하는 소프트웨어 개발 프로세스
+- 테스트를 통과하는 코드를 작성하고, 상황에 맞게 리팩토링하는 과정 거치는 방법
+- 테스트가 코드 작성을 주도하는 개발 방식
+
+### 특징
+1. Add a test
+    - 새로은 기능을 추가하기 전 테스트를 먼저 작성
+    - 테스트를 작성하기 위해서는 기능의 요구사항과 명세에 대한 분명한 이해 필요
+    - 코드 작성 전, 요구사항에 집중할 수 있도록 돕는 장점
+2. Run all tests and see if new one fails
+    - 새로운 기능이 제대로 작동함과 동시에 기존의 기능들이 잘 작동하는지 테스트를 통해 확인
+
+## 함수형 프로그래밍
+
+### immutable vs mutable
+1. immutable :  객체가 가지고 있는 값을 변경 불가능
+    - 값이 변경될 경우, 새로운 객체를 생성하고, 변경된 값을 주입해 반환
+2. mutable : 객체의 값이 변경된 경우, 값을 변경
+
+### first-class citizen
+*함수(function) = 일급 객체(first-class citizen)로 간주*
+1. 변수나 데이터 구조 안에 함수를 담을 수 있어서 함수의 파라미터로 전달할 수 있고, 함수의 반환값으로 사용 가능
+2. 할당에 사용된 이름과 관계없이 고유한 구별이 가능
+3. 함수를 리터럴로 바로 정의 가능
+
+### Reactive Programming
+
+## MVC Pattern
+
+## Git과 GitHub
