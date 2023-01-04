@@ -67,4 +67,18 @@
 2. Message는 Header와 Body를 명확하게 분리해 사용
     - Body : Entity에 대한 내용
     - Header : 애플리케이션 서버가 행동할 판단의 근거가 되는 컨트롤 정보인 API 버전 정보, 응답받고자 하는 MIME 타입 등
-3.  
+    - Header와 Body는 Http Header와 Http Body로 나눌 수 있고, Http Body에 들어가는 json 구조로 분리도 가능
+3.  API 버전 관리
+    - 
+4.  서버와 클라이언트가 같은 방식을 사용해 요청
+
+### 장점
+1.
+2.
+3.
+4.
+
+### 단점
+1.
+2.
+3.
