@@ -73,7 +73,7 @@
     - 특정 API를 변경할 때는 반드시 하위호환성 보장
 4.  서버와 클라이언트가 같은 방식을 사용해 요청
     - 브라우저는 form-data 형식으로, 서버는 json 형식으로 보내는 식 지양
-    - 둘 다, json으로 또는 form-data로 보내는 걸로 통일하는 것을 지향
+    - 둘 다, json으로 또는 form-data로 보내는 e걸로 통일하는 것을 지향
 
 ### 장점
 1. Open API를 제공하기 쉽다.
@@ -116,6 +116,10 @@
 3. 함수를 리터럴로 바로 정의 가능
 
 ### Reactive Programming
+- = 선언형 프로그래밍(Declarative Programming) <-> 명령형 프로그래밍(Imperative Programming)
+- 함수형 프로그래밍 패러다임을 활용하는 것
+- 모든 것을 stream으로 본다.
+*(stream : 값들의 집합으로 볼 수 있으며, 제공되는 함수형 메소드를 통해 데이터를 immutable하게 관리 가능)*
 
 ## MVC Pattern
 
