@@ -1,10 +1,9 @@
 ---
-layout: page
 title: Today I Learned
-sitemap: false
-permalink: /til/
-description: >
-  공부한 내용을 정리하는 곳
+permalink: /study/
+layout: page
+excerpt: 공부한 내용을 정리하는 곳
+comments: false
 ---
 
 1. [Data Structure](/til/data_structure/)
