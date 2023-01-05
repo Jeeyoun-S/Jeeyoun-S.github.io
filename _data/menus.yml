@@ -10,10 +10,13 @@
   url: /project/
   external: false
 
-- title: blog
-  url: /archive/
+- title: study
+  url: /study/
   external: false
 
+- title: diary
+  url: /archive/
+  external: false
 
 # Example:
 # - title: github
