@@ -43,3 +43,22 @@
 5. DIP
     - Dependency Inversion Principle, 의존 역전 원칙
     - 고수준 모듈은 저수준 모듈의 구현에 의존해서는 안 된다.
+
+## 함수형 프로그래밍
+
+### immutable vs mutable
+1. immutable :  객체가 가지고 있는 값을 변경 불가능
+    - 값이 변경될 경우, 새로운 객체를 생성하고, 변경된 값을 주입해 반환
+2. mutable : 객체의 값이 변경된 경우, 값을 변경
+
+### first-class citizen
+*함수(function) = 일급 객체(first-class citizen)로 간주*
+1. 변수나 데이터 구조 안에 함수를 담을 수 있어서 함수의 파라미터로 전달할 수 있고, 함수의 반환값으로 사용 가능
+2. 할당에 사용된 이름과 관계없이 고유한 구별이 가능
+3. 함수를 리터럴로 바로 정의 가능
+
+### Reactive Programming
+- = 선언형 프로그래밍(Declarative Programming) <-> 명령형 프로그래밍(Imperative Programming)
+- 함수형 프로그래밍 패러다임을 활용하는 것
+- 모든 것을 stream으로 본다.
+*(stream : 값들의 집합으로 볼 수 있으며, 제공되는 함수형 메소드를 통해 데이터를 immutable하게 관리 가능)*
