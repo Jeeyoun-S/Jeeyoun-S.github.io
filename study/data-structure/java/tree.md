@@ -2,7 +2,7 @@
 layout: page
 title: Tree
 sitemap: false
-permalink: /til/data_structure/java/tree/
+permalink: /study/data-structure/java/tree/
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}

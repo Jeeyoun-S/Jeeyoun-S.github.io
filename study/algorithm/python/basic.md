@@ -2,7 +2,7 @@
 layout: page
 title: Basic
 sitemap: false
-permalink: /til/algorithm/python/basic/
+permalink: /study/algorithm/python/basic/
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}

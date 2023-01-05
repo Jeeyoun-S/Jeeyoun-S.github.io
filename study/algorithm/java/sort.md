@@ -2,7 +2,7 @@
 layout: page
 title: Sort
 sitemap: false
-permalink: /til/algorithm/java/sort/
+permalink: /study/algorithm/java/sort/
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}

@@ -2,7 +2,7 @@
 layout: page
 title: 진행 일정
 sitemap: false
-permalink: /pjt/my-online-gym/schedule/
+permalink: /project/my-online-gym/schedule/
 ---
 <head>
     <style>
@@ -169,6 +169,9 @@ permalink: /pjt/my-online-gym/schedule/
             <div class="title">기획</div>
             <div class="info">목업 제작</div>
             <div class="name">- 김민규 -</div>
+            <div class="title">데이터</div>
+            <div class="info">운동 상식 데이터 수집, JSON 제작</div>
+            <div class="name">- 김민규 -</div>
             <div class="title">백엔드</div>
             <div class="info">프로젝트 생성 및 회원 관련 API 구현</div>
             <div class="name">- 서지윤 -</div>
@@ -179,6 +182,9 @@ permalink: /pjt/my-online-gym/schedule/
         </li>
         <li>
             <span></span>
+            <div class="title">데이터</div>
+            <div class="info">운동 동작 데이터 수집, JSON 제작</div>
+            <div class="name">- 김민규 -</div>
             <div class="title">백엔드</div>
             <div class="info">영상 관련 API 구현</div>
             <div class="name">- 서지윤 -</div>
@@ -189,6 +195,9 @@ permalink: /pjt/my-online-gym/schedule/
         </li>
         <li>
             <span></span>
+            <div class="title">데이터</div>
+            <div class="info">운동 루틴 데이터 수집</div>
+            <div class="name">- 김민규 -</div>
             <div class="title">백엔드</div>
             <div class="info">건강기능식품, 일정 관련 API 구현</div>
             <div class="name">- 서지윤 -</div>
@@ -202,6 +211,9 @@ permalink: /pjt/my-online-gym/schedule/
         </li>
         <li>
             <span></span>
+            <div class="title">데이터</div>
+            <div class="info">운동 루틴 JSON 제작</div>
+            <div class="name">- 김민규 -</div>
             <div class="title">프론트엔드</div>
             <div class="info">회원 관련 페이지, 영상 관련 페이지 구현</div>
             <div class="name">- 서지윤 -</div>
@@ -212,6 +224,9 @@ permalink: /pjt/my-online-gym/schedule/
         </li>
         <li>
             <span></span>
+            <div class="title">데이터</div>
+            <div class="info">전체 JSON 데이터 정제</div>
+            <div class="name">- 김민규 -</div>
             <div class="title">백엔드</div>
             <div class="info">루틴 추천 관련 API 구현</div>
             <div class="name">- 서지윤 -</div>

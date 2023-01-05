@@ -1,8 +1,7 @@
 ---
 title: Programming Paradigm
-permalink: /programming-paradigm/
+permalink: /study/programming/programming-paradigm/
 layout: page
-excerpt: 공부한 내용을 정리하는 곳
 comments: false
 ---
 

@@ -29,6 +29,6 @@ comments: false
 </head>
 
 <div class="projects">
-    <img src="image/MyOnlineGym.png" alt="My Online Gym" OnClick="location.href = 'my-online-gym'">
-    <img src="image/StockAppPjt.png" alt="Stock App PJT" OnClick="location.href = 'stock-app-pjt'">
+    <img src="MyOnlineGym/MyOnlineGym.png" alt="My Online Gym" OnClick="location.href = 'my-online-gym'">
+    <img src="SimulatedStockApp/StockAppPjt.png" alt="Simulated Stock App" OnClick="location.href = 'simulated-stock-app'">
 </div>

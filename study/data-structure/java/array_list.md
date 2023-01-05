@@ -2,7 +2,7 @@
 layout: page
 title: ArrayList
 sitemap: false
-permalink: /til/data_structure/java/arraylist/
+permalink: /study/data-structure/java/arraylist/
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
