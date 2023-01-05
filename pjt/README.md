@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Projects
+title: Project
 sitemap: false
-permalink: /pjt/
+permalink: /project/
 description: >
     프로젝트 경험에 대해 작성하는 곳
 ---
