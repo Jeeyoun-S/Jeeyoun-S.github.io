@@ -2,10 +2,6 @@
   url: /
   external: false
 
-- title: archive
-  url: /archive/
-  external: false
-
 - title: about
   url: /about/
   external: false # set true if you using external link, see below
@@ -13,6 +9,11 @@
 - title: project
   url: /project/
   external: false
+
+- title: blog
+  url: /archive/
+  external: false
+
 
 # Example:
 # - title: github
