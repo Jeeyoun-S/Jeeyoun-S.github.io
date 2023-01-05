@@ -1,10 +1,9 @@
 ---
-layout: page
 title: Project
-sitemap: false
 permalink: /project/
-description: >
-    프로젝트 경험에 대해 작성하는 곳
+layout: page
+excerpt: 프로젝트 경험에 대해 작성하는 곳
+comments: false
 ---
 
 <head>
