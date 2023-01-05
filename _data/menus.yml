@@ -18,6 +18,10 @@
   url: /blog/
   external: false
 
+- title: tags
+  url: /tags/
+  external: false
+
 # Example:
 # - title: github
 #   url: https://github.com/piharpi/jekyll-klise
