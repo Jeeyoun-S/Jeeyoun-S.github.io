@@ -1,12 +1,10 @@
 ---
-title: study
-permalink: /study/
+title: Programming Paradigm
+permalink: /programming-paradigm/
 layout: page
 excerpt: 공부한 내용을 정리하는 곳
 comments: false
 ---
-
-# Programming Paradigm
 
 ## 절차적 프로그래밍 Procedural Programming
 
@@ -59,6 +57,8 @@ comments: false
 ### 특징
 1. 추상화, Abstraction
 2. 
+3. 상속
+4. 캡슐화
 
 ## 함수형 프로그래밍
 
