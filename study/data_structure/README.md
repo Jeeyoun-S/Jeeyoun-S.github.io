@@ -2,7 +2,7 @@
 layout: page
 title: Data Structure
 sitemap: false
-permalink: /til/data_structure/
+permalink: /study/data-structure/
 ---
 
 ## Java

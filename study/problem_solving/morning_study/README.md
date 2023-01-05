@@ -2,7 +2,7 @@
 layout: page
 title: Morning Study
 sitemap: false
-permalink: /til/problem_solving/morning_study/
+permalink: /study/problem-solving/morning-study/
 ---
 
 **기간** 2022.07.19 ~ 11.11  

@@ -2,7 +2,7 @@
 layout: page
 title: My Online Gym
 sitemap: false
-permalink: /pjt/my-online-gym/
+permalink: /project/my-online-gym/
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}

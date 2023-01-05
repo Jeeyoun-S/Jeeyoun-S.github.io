@@ -2,7 +2,7 @@
 layout: page
 title: Python Algorithm Study
 sitemap: false
-permalink: /til/problem-solving/python-algorithm-study/
+permalink: /study/problem-solving/python-algorithm-study/
 ---
  
 **기간** 2022.08.01 ~ ing  

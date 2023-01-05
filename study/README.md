@@ -8,9 +8,9 @@ comments: false
 
 # Today I Learned
 
-1. [Data Structure](/til/data_structure/)
-2. [Algorithm](/til/algorithm/)
-3. [Problem Solving](/til/problem_solving/)
+1. [Data Structure](/study/data-structure/)
+2. [Algorithm](/study/algorithm/)
+3. [Problem Solving](/study/problem-solving/)
 4. Network
 5. Operation System
 6. Database

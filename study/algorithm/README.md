@@ -2,7 +2,7 @@
 layout: page
 title: Algorithm
 sitemap: false
-permalink: /til/algorithm/
+permalink: /study/algorithm/
 ---
 
 ## Java
