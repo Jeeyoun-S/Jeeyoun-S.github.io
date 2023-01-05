@@ -1,3 +1,11 @@
+---
+title: study
+permalink: /study/
+layout: page
+excerpt: 공부한 내용을 정리하는 곳
+comments: false
+---
+
 # Programming Paradigm
 
 ## 객체 지향 프로그래밍, Object Oriented Programming
@@ -43,6 +51,10 @@
 5. DIP
     - Dependency Inversion Principle, 의존 역전 원칙
     - 고수준 모듈은 저수준 모듈의 구현에 의존해서는 안 된다.
+
+### 특징
+1. 추상화, Abstraction
+2. 
 
 ## 함수형 프로그래밍
 
