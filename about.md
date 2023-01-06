@@ -8,9 +8,6 @@ comments: false
 
 <head>
   <style> 
-    ul {
-        list-style: circle;
-    }
   </style>
 </head>
 
