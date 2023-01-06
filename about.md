@@ -36,6 +36,9 @@ comments: false
       left: -10px;
       top: 0px;
     }
+    .p {
+      font-size: 8px;
+    }
   </style>
 </head>
 
@@ -43,12 +46,12 @@ comments: false
 <div class="container">
   <ul>
     <li>
-      <div class="time">2022.07 - ing</div>
-      <p>삼성청년SW아카데미 SSAFY 8기, 비전공 JAVA Track</p>
+      <div class="time">2022.07 - ing 삼성청년SW아카데미 8기</div>
+      <p>SSAFY 비전공 JAVA Track</p>
     </li>
     <li>
-      <div class="time">2018.03 - 2022.02</div>
-      <p>세종대학교 호텔관광경영학, 응용통계학</p>
+      <div class="time">2018.03 - 2022.02 세종대학교 호텔관광경영학</div>
+      <p>복수전공 응용통계학</p>
     </li>
   </ul>
 </div>
@@ -57,12 +60,12 @@ comments: false
 <div class="container">
   <ul>
     <li>
-      <div class="time">2022.11.17 ~ 25</div>
-      <p><a href="/project/simulated-stock-app/">Simulated Stock App</a></p>
+      <div class="time">2022.11.17 ~ 25 <a href="/project/simulated-stock-app/">Simulated Stock App</a></div>
+      <p>Android App, Spring Boot, Android Studio</p>
     </li>
     <li>
-      <div class="time">2022.11.17 ~ 25</div>
-      <p><a href="/project/my-online-gym/">My Online Gym</a></p>
+      <div class="time">2022.11.17 ~ 25 <a href="/project/my-online-gym/">My Online Gym</a></div>
+      <p>PC Web, Spring Boot, Vue.js</p>
     </li>
   </ul>
 </div>
@@ -70,6 +73,14 @@ comments: false
 ## Tech Skills
 
 ## Certificate
+<div class="container">
+  <ul>
+    <li>
+      <div class="time">2022.11.17 ~ 25</div>
+      <p><a href="/project/simulated-stock-app/">Simulated Stock App</a></p>
+    </li>
+  </ul>
+</div>
 
 ## Awards
 
