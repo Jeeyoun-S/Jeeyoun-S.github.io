@@ -62,11 +62,11 @@ comments: false
   <ul>
     <li>
       <div class="time">2022.11.17 ~ 25 <a href="/project/simulated-stock-app/">Simulated Stock App</a></div>
-      <p>Android App, Spring Boot, Android Studio</p>
+      <p>6인 Team Project | Android App</p>
     </li>
     <li>
       <div class="time">2022.11.17 ~ 25 <a href="/project/my-online-gym/">My Online Gym</a></div>
-      <p>PC Web, Spring Boot, Vue.js</p>
+      <p>2인 Team Proejct | PC Web</p>
     </li>
   </ul>
 </div>
