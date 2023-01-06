@@ -40,16 +40,18 @@ comments: false
 </head>
 
 ## Education
-<ul class="sessions">
-  <li>
-    <div class="time">2018.03 - 2022.02</div>
-    <p>세종대학교 호텔관광경영학, 응용통계학</p>
-  </li>
-  <li>
-    <div class="time">2022.07 - ing</div>
-    <p>삼성청년SW아카데미 SSAFY 8기, 비전공 JAVA Track</p>
-  </li>
-</ul>
+<div class="container">
+  <ul>
+    <li>
+      <div class="time">2018.03 - 2022.02</div>
+      <p>세종대학교 호텔관광경영학, 응용통계학</p>
+    </li>
+    <li>
+      <div class="time">2022.07 - ing</div>
+      <p>삼성청년SW아카데미 SSAFY 8기, 비전공 JAVA Track</p>
+    </li>
+  </ul>
+</div>
 
 ## Project
 <a href="/project/my-online-gym/">My Online Gym</a>
