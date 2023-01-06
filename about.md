@@ -54,7 +54,18 @@ comments: false
 </div>
 
 ## Project
-<a href="/project/my-online-gym/">My Online Gym</a>
+<div class="container">
+  <ul>
+    <li>
+      <div class="time">2022.11.17 ~ 25</div>
+      <p><a href="/project/my-online-gym/">My Online Gym</a></p>
+    </li>
+    <li>
+      <div class="time">2022.11.17 ~ 25</div>
+      <p><a href="/project/simulated-stock-app/">Simulated Stock App</a></p>
+    </li>
+  </ul>
+</div>
 
 ## Tech Skills
 
