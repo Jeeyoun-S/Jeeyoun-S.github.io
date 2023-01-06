@@ -20,6 +20,12 @@ comments: false
         <p>복수전공 응용통계학</p>
       </div>
     </li>
+    <li>
+      <div class="content">
+        <h6>삼성청년SW아카데미</h6><span>2022.07 - ing</span>
+        <p>SSAFY 8기, 비전공 JAVA Track</p>
+      </div>
+    </li>
   </ul>
 </div>
 
