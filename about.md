@@ -14,13 +14,14 @@ comments: false
 
 ## Education
 <div class="timeline">
-<ul class="timeline-list">
-  <li>
-    <div class="content">
-      <h3>A timeline?</h3>
-      <p>내용</p>
-    </div>
-  </li>
+  <ul class="timeline-list">
+    <li>
+      <div class="content">
+        <h3>A timeline?</h3>
+        <p>내용</p>
+      </div>
+    </li>
+  </ul>
 </div>
 
 ## Project
