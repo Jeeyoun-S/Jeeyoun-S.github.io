@@ -1,5 +1,5 @@
 ---
-title: Study
+title: Today I Learned
 permalink: /study/
 layout: page
 excerpt: 공부한 내용을 정리하는 곳
