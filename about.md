@@ -115,7 +115,7 @@ comments: false
 </div>
 
 ## Project
-<a href="/project/my-online-gym/"></a>
+<a href="/project/my-online-gym/">My Online Gym</a>
 
 ## Tech Skills
 
