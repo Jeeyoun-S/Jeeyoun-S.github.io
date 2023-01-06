@@ -34,7 +34,9 @@ hr,
 dl,
 dd,
 ol,
-ul,
+
+
+,
 figure {
   margin: 0;
   padding: 0;
@@ -136,7 +138,7 @@ figcaption {
 
 // List
 ul {
-  list-style: none;
+  // list-style: none;
   li {
     display: list-item;
     text-align: -webkit-match-parent;
@@ -153,7 +155,7 @@ ul {
 }
 
 ol {
-  list-style: none;
+  // list-style: none;
   counter-reset: li;
   li {
     position: relative;
