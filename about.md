@@ -22,7 +22,7 @@ comments: false
     }
 
 
-    ul, li{
+    .container ul, li{
       list-style: none;
       padding: 0;
     }
@@ -40,7 +40,7 @@ comments: false
       padding: 2rem;
       border-radius: 15px;
     }
-    h1{
+    .container h1{
       font-size: 1.1rem;
       font-family: sans-serif;
     }
@@ -49,7 +49,7 @@ comments: false
       border-radius: 12px;
       position: relative;
     }
-    li{
+    .container li{
       padding-bottom: 1.5rem;
       border-left: 1px solid #abaaed;
       position: relative;
@@ -86,7 +86,7 @@ comments: false
       }
 
     }
-    p{
+    .container p{
       color: #4f4f4f;
           font-family: sans-serif;
       line-height: 1.5;
