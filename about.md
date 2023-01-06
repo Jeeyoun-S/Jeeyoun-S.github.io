@@ -79,7 +79,7 @@ comments: false
       font-size: 100%;
       font-family: "Droid Serif", serif;
       color: #7f8c97;
-      background-color: #e9f0f5;
+      /* background-color: #e9f0f5; */
     }
 
     #timeline a {
