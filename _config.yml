@@ -13,8 +13,8 @@ mode: dark # default theme "dark" | "light"
 author:
   name: Jeeyoun Seo # author name
   bio: >- # tell to the world
-    The minimalist Jekyll theme, light and dark mode support, for running a personal site and blog, 
-    meet Klisé theme at <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">@github</a>.
+    안녕하세요. 웹 개발자로 성장하고 싶은 서지윤입니다. 기록하고 정리하는 것을 좋아하고, 항상 메모하는 습관을 만들고 있습니다.
+    꾸준히 공부하며 발전하려고 노력 중이고, 공부한 내용을 많은 사람과 공유하며 배우고 싶습니다.
   username: username # general username
   github: Jeeyoun-S # github username
   twitter: twitter_username # twitter username
