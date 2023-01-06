@@ -36,7 +36,7 @@ comments: false
       left: -10px;
       top: 0px;
     }
-    .p {
+    .container  p {
       font-size: 8px;
     }
   </style>
@@ -76,8 +76,7 @@ comments: false
 <div class="container">
   <ul>
     <li>
-      <div class="time">2022.11.17 ~ 25</div>
-      <p><a href="/project/simulated-stock-app/">Simulated Stock App</a></p>
+      <div class="time">2022.11.17 ~ 25 SQL 개발자</div>
     </li>
   </ul>
 </div>
