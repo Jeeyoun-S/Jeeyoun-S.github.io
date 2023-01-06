@@ -6,11 +6,11 @@ excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in
 comments: false
 ---
 
+## Education
+
 ## Project
 
 ## Tech Skills
-
-## Education
 
 ## Certificate
 
