@@ -8,46 +8,9 @@ comments: false
 
 <head>
   <style> 
-    @mixin tablet-and-up {
-        @media screen and (min-width: 769px) { @content; }
-    }
-    @mixin mobile-and-up {
-        @media screen and (min-width: 601px) { @content; }
-    }
-    @mixin tablet-and-down  {
-        @media screen and (max-width: 768px) { @content; }
-    }
-    @mixin mobile-only {
-        @media screen and (max-width: 600px) { @content; }
-    }
-
-
     .container ul, li{
       list-style: none;
       padding: 0;
-    }
-
-    .container{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0 1rem;
-      background: linear-gradient(45deg, #209cff, #68e0cf);
-      padding: 3rem 0;
-    }
-    .wrapper{
-      background: #eaf6ff;
-      padding: 2rem;
-      border-radius: 15px;
-    }
-    .container h1{
-      font-size: 1.1rem;
-      font-family: sans-serif;
-    }
-    .sessions{
-      margin-top: 2rem;
-      border-radius: 12px;
-      position: relative;
     }
     .container li{
       padding-bottom: 1.5rem;
@@ -73,46 +36,20 @@ comments: false
         top: 0px;
       }
     }
-    .time{
-      color: #2a2839;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 500;
-      @include mobile-and-up{
-        font-size: .9rem;
-      }
-      @include mobile-only{
-        margin-bottom: .3rem;
-        font-size: 0.85rem;
-      }
-
-    }
-    .container p{
-      color: #4f4f4f;
-          font-family: sans-serif;
-      line-height: 1.5;
-      margin-top:0.4rem;
-      @include mobile-only{
-        font-size: .9rem;
-      }
-    }
   </style>
 </head>
 
 ## Education
-<div class="container">
-  <div class="wrapper">
-    <ul class="sessions">
-      <li>
-        <div class="time">2018.03 - 2022.02</div>
-        <p>세종대학교 호텔관광경영학, 응용통계학</p>
-      </li>
-      <li>
-        <div class="time">2022.07 - ing</div>
-        <p>삼성청년SW아카데미 SSAFY 8기, 비전공 JAVA Track</p>
-      </li>
-    </ul>
-  </div>
-</div>
+<ul class="sessions">
+  <li>
+    <div class="time">2018.03 - 2022.02</div>
+    <p>세종대학교 호텔관광경영학, 응용통계학</p>
+  </li>
+  <li>
+    <div class="time">2022.07 - ing</div>
+    <p>삼성청년SW아카데미 SSAFY 8기, 비전공 JAVA Track</p>
+  </li>
+</ul>
 
 ## Project
 <a href="/project/my-online-gym/">My Online Gym</a>
