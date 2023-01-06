@@ -14,7 +14,7 @@ comments: false
        License: none (public domain)
     */
 
-    html, body, div, span, applet, object, iframe,
+    #timeline html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
     del, dfn, em, img, ins, kbd, q, s, samp,
@@ -35,25 +35,25 @@ comments: false
       vertical-align: baseline;
     }
     /* HTML5 display-role reset for older browsers */
-    article, aside, details, figcaption, figure, 
+    #timeline article, aside, details, figcaption, figure, 
     footer, header, hgroup, menu, nav, section, main {
       display: block;
     }
-    body {
+    #timeline {
       line-height: 1;
     }
-    ol, ul {
+    #timeline ol, ul {
     /* 	list-style: none; */
     }
-    blockquote, q {
+    #timeline blockquote, q {
       quotes: none;
     }
-    blockquote:before, blockquote:after,
+    #timeline blockquote:before, blockquote:after,
     q:before, q:after {
       content: '';
       content: none;
     }
-    table {
+    #timeline table {
       border-collapse: collapse;
       border-spacing: 0;
     }
@@ -64,35 +64,35 @@ comments: false
     Primary style
 
     -------------------------------- */
-    html * {
+    #timeline html * {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
 
-    *, *:after, *:before {
+    #timeline *, *:after, *:before {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
     }
 
-    body {
+    #timeline {
       font-size: 100%;
       font-family: "Droid Serif", serif;
       color: #7f8c97;
       background-color: #e9f0f5;
     }
 
-    a {
+    #timeline a {
       color: #acb7c0;
       text-decoration: none;
       font-family: "Open Sans", sans-serif;
     }
 
-    img {
+    #timeline img {
       max-width: 100%;
     }
 
-    h1, h2 {
+    #timeline h1, h2 {
       font-family: "Open Sans", sans-serif;
       font-weight: bold;
     }
@@ -102,13 +102,13 @@ comments: false
     Modules - reusable parts of our design
 
     -------------------------------- */
-    .status-container {
+    #timeline .status-container {
       /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
       width: 90%;
       max-width: 1170px;
       margin: 0 auto;
     }
-    .status-container::after {
+    #timeline .status-container::after {
       /* clearfix */
       content: '';
       display: table;
@@ -120,13 +120,13 @@ comments: false
     Main components
 
     -------------------------------- */
-    header {
+    #timeline header {
       height: 200px;
       line-height: 200px;
       text-align: center;
       background: #303e49;
     }
-    header h1 {
+    #timeline header h1 {
       color: white;
       font-size: 18px;
       font-size: 1.125rem;
@@ -561,93 +561,91 @@ comments: false
 
 ## Activities
 
-<header>
-	<h1>Vertical Timeline</h1>
-</header>
+<div id="timeline">
+	<section id="status-timeline" class="status-container">
+		<div class="status-timeline-block">
+			<div class="status-timeline-img status-picture">
+	<!-- 			<img src="img/status-icon-picture.svg" alt="Picture"> -->
+			</div> <!-- status-timeline-img -->
 
-<section id="status-timeline" class="status-container">
-	<div class="status-timeline-block">
-		<div class="status-timeline-img status-picture">
-<!-- 			<img src="img/status-icon-picture.svg" alt="Picture"> -->
-		</div> <!-- status-timeline-img -->
+			<div class="status-timeline-content">
+				<h2>February 8th, 2016</h2>
+	<!-- 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p> -->
+				<ul>
+					<li><strike>Drink water</strike></li>
+					<li><strike>Go for a walk</strike></li>
+					<li><strike>Apply to an open position</strike></li>
+				</ul>
+				<a href="#0" class="status-read-more">Read more</a>
+				<span class="status-date">Jan 14</span>
+			</div> <!-- status-timeline-content -->
+		</div> <!-- status-timeline-block -->
 
-		<div class="status-timeline-content">
-			<h2>February 8th, 2016</h2>
-<!-- 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p> -->
-			<ul>
-				<li><strike>Drink water</strike></li>
-				<li><strike>Go for a walk</strike></li>
-				<li><strike>Apply to an open position</strike></li>
-			</ul>
-			<a href="#0" class="status-read-more">Read more</a>
-			<span class="status-date">Jan 14</span>
-		</div> <!-- status-timeline-content -->
-	</div> <!-- status-timeline-block -->
+		<div class="status-timeline-block">
+			<div class="status-timeline-img status-movie">
+	<!-- 			<img src="img/status-icon-movie.svg" alt="Movie"> -->
+			</div> <!-- status-timeline-img -->
 
-	<div class="status-timeline-block">
-		<div class="status-timeline-img status-movie">
-<!-- 			<img src="img/status-icon-movie.svg" alt="Movie"> -->
-		</div> <!-- status-timeline-img -->
+			<div class="status-timeline-content">
+				<h2>Title of section 2</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+				<a href="#0" class="status-read-more">Read more</a>
+				<span class="status-date">Jan 18</span>
+			</div> <!-- status-timeline-content -->
+		</div> <!-- status-timeline-block -->
 
-		<div class="status-timeline-content">
-			<h2>Title of section 2</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-			<a href="#0" class="status-read-more">Read more</a>
-			<span class="status-date">Jan 18</span>
-		</div> <!-- status-timeline-content -->
-	</div> <!-- status-timeline-block -->
+		<div class="status-timeline-block">
+			<div class="status-timeline-img status-picture">
+	<!-- 			<img src="img/status-icon-picture.svg" alt="Picture"> -->
+			</div> <!-- status-timeline-img -->
 
-	<div class="status-timeline-block">
-		<div class="status-timeline-img status-picture">
-<!-- 			<img src="img/status-icon-picture.svg" alt="Picture"> -->
-		</div> <!-- status-timeline-img -->
+			<div class="status-timeline-content">
+				<h2>Title of section 3</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+				<a href="#0" class="status-read-more">Read more</a>
+				<span class="status-date">Jan 24</span>
+			</div> <!-- status-timeline-content -->
+		</div> <!-- status-timeline-block -->
 
-		<div class="status-timeline-content">
-			<h2>Title of section 3</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-			<a href="#0" class="status-read-more">Read more</a>
-			<span class="status-date">Jan 24</span>
-		</div> <!-- status-timeline-content -->
-	</div> <!-- status-timeline-block -->
+		<div class="status-timeline-block">
+			<div class="status-timeline-img status-location">
+	<!-- 			<img src="img/status-icon-location.svg" alt="Location"> -->
+			</div> <!-- status-timeline-img -->
 
-	<div class="status-timeline-block">
-		<div class="status-timeline-img status-location">
-<!-- 			<img src="img/status-icon-location.svg" alt="Location"> -->
-		</div> <!-- status-timeline-img -->
+			<div class="status-timeline-content">
+				<h2>Title of section 4</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				<a href="#0" class="status-read-more">Read more</a>
+				<span class="status-date">Feb 14</span>
+			</div> <!-- status-timeline-content -->
+		</div> <!-- status-timeline-block -->
 
-		<div class="status-timeline-content">
-			<h2>Title of section 4</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-			<a href="#0" class="status-read-more">Read more</a>
-			<span class="status-date">Feb 14</span>
-		</div> <!-- status-timeline-content -->
-	</div> <!-- status-timeline-block -->
+		<div class="status-timeline-block">
+			<div class="status-timeline-img status-location">
+	<!-- 			<img src="img/status-icon-location.svg" alt="Location"> -->
+			</div> <!-- status-timeline-img -->
 
-	<div class="status-timeline-block">
-		<div class="status-timeline-img status-location">
-<!-- 			<img src="img/status-icon-location.svg" alt="Location"> -->
-		</div> <!-- status-timeline-img -->
+			<div class="status-timeline-content">
+				<h2>Title of section 5</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+				<a href="#0" class="status-read-more">Read more</a>
+				<span class="status-date">Feb 18</span>
+			</div> <!-- status-timeline-content -->
+		</div> <!-- status-timeline-block -->
 
-		<div class="status-timeline-content">
-			<h2>Title of section 5</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-			<a href="#0" class="status-read-more">Read more</a>
-			<span class="status-date">Feb 18</span>
-		</div> <!-- status-timeline-content -->
-	</div> <!-- status-timeline-block -->
+		<div class="status-timeline-block">
+			<div class="status-timeline-img status-movie">
+	<!-- 			<img src="img/status-icon-movie.svg" alt="Movie"> -->
+			</div> <!-- status-timeline-img -->
 
-	<div class="status-timeline-block">
-		<div class="status-timeline-img status-movie">
-<!-- 			<img src="img/status-icon-movie.svg" alt="Movie"> -->
-		</div> <!-- status-timeline-img -->
-
-		<div class="status-timeline-content">
-			<h2>Final Section</h2>
-			<p>This is the content of the last section</p>
-			<span class="status-date">Feb 26</span>
-		</div> <!-- status-timeline-content -->
-	</div> <!-- status-timeline-block -->
-</section> <!-- status-timeline -->
+			<div class="status-timeline-content">
+				<h2>Final Section</h2>
+				<p>This is the content of the last section</p>
+				<span class="status-date">Feb 26</span>
+			</div> <!-- status-timeline-content -->
+		</div> <!-- status-timeline-block -->
+	</section> <!-- status-timeline -->
+</div>
 
 He's a student from Banyuwangi, living in Jogjakarta. the blog for documentation about his programming 🎒 journey, running on jekyll, hosting on [now.sh](http://now.sh) and using his own theme, he name it <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">klisé</a>, he also loves to learning web technology; but he often forgot, that a reason why him doing the writing.
 
