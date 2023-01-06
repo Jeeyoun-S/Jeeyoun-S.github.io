@@ -70,7 +70,8 @@ h6,
 p,
 blockquote,
 pre,
-ul,
+
+,
 ol,
 dl,
 figure,
@@ -136,64 +137,64 @@ figcaption {
   text-align: center;
 }
 
-// List
-ul {
-  // list-style: none;
-  li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-  }
-  li::before {
-    content: "\FE63";
-    display: inline-block;
-    top: -1px;
-    width: 1.2em;
-    position: relative;
-    margin-left: -1.3em;
-    font-weight: 700;
-  }
-}
+// // List
+// ul {
+//   // list-style: none;
+//   li {
+//     display: list-item;
+//     text-align: -webkit-match-parent;
+//   }
+//   li::before {
+//     content: "\FE63";
+//     display: inline-block;
+//     top: -1px;
+//     width: 1.2em;
+//     position: relative;
+//     margin-left: -1.3em;
+//     font-weight: 700;
+//   }
+// }
 
-ol {
-  // list-style: none;
-  counter-reset: li;
-  li {
-    position: relative;
-    counter-increment: li;
-    &::before {
-      content: counter(li);
-      display: inline-block;
-      width: 1em;
-      margin-right: 0.5em;
-      margin-left: -1.6em;
-      text-align: right;
-      direction: rtl;
-      font-weight: $bold-weight;
-      font-size: $small-font-size;
-    }
-  }
-}
+// ol {
+//   // list-style: none;
+//   counter-reset: li;
+//   li {
+//     position: relative;
+//     counter-increment: li;
+//     &::before {
+//       content: counter(li);
+//       display: inline-block;
+//       width: 1em;
+//       margin-right: 0.5em;
+//       margin-left: -1.6em;
+//       text-align: right;
+//       direction: rtl;
+//       font-weight: $bold-weight;
+//       font-size: $small-font-size;
+//     }
+//   }
+// }
 
-ul,
-ol {
-  margin-top: 0;
-  margin-left: $spacing-full;
-}
+// ul,
+// ol {
+//   margin-top: 0;
+//   margin-left: $spacing-full;
+// }
 
-li {
-  padding-bottom: 1px;
-  padding-top: 1px;
+// li {
+//   padding-bottom: 1px;
+//   padding-top: 1px;
 
-  &:before {
-    color: $black;
-  }
+//   &:before {
+//     color: $black;
+//   }
 
-  > ul,
-  > ol {
-    margin-bottom: 2px;
-    margin-top: 0;
-  }
-}
+//   > ul,
+//   > ol {
+//     margin-bottom: 2px;
+//     margin-top: 0;
+//   }
+// }
 
 // Headings
 h1,
