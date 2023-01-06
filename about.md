@@ -16,8 +16,8 @@ comments: false
   <ul class="timeline-list">
     <li>
       <div class="content">
-        <h3>A timeline?</h3>
-        <p>내용</p>
+        <h6>세종대학교 호텔관광경영학</h6><span>2018.03 - 2022.02</span>
+        <p>복수전공 응용통계학</p>
       </div>
     </li>
   </ul>
