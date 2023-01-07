@@ -20,7 +20,7 @@ comments: false
     }
     .container ul.list li.list-item {
       padding-bottom: 1.5rem;
-      border-left: 1px solid #abaaed;
+      border-left: 1px solid #A6A6A6;
       position: relative;
       padding-left: 20px;
       margin-left: 10px;
@@ -34,9 +34,8 @@ comments: false
       width: 15px;
       height: 15px;
       background: white;
-      border: 1px solid #4e5ed3;
-      box-shadow: 3px 3px 0px #bab5f8;
-      box-shadow: 3px 3px 0px #bab5f8;
+      border: 1px solid #000000;
+      box-shadow: 3px 3px 0px #A6A6A6;
       border-radius: 50%;
       position: absolute;
       left: -10px;
