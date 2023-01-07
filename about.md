@@ -8,22 +8,22 @@ comments: false
 
 <head>
   <style> 
-    .container ul, li {
+    .container ul.list, li.list-item {
       list-style: none;
       padding: 0;
     }
-    .container ul li {
+    .container ul.list li.list-item {
       padding-bottom: 1.5rem;
       border-left: 1px solid #abaaed;
       position: relative;
       padding-left: 20px;
       margin-left: 10px;
     }
-    .container ul li:last-child {
+    .container ul.list li.list-item:last-child {
       border: 0px;
       padding-bottom: 0;
     }
-    .container ul li:before {
+    .container ul.list li.list-item:before {
       content: '';
       width: 15px;
       height: 15px;
@@ -52,18 +52,18 @@ comments: false
 
 ## Education
 <div class="container">
-  <ul>
-    <li>
+  <ul class="list">
+    <li class="list-item">
       <div class="time">
         <span>삼성청년SW아카데미</span>&nbsp;
-        2022.07 - ing
+        2022.07 ~ ing
       </div>
       <p>SSAFY 8기&emsp;|&emsp;비전공 Java Web Track</p>
     </li>
-    <li>
+    <li class="list-item">
       <div class="time">
         <span>세종대학교 호텔관광경영학</span>&nbsp;
-        2018.03 - 2022.02
+        2018.03 ~ 2022.02
       </div>
       <p>복수전공 응용통계학</p>
     </li>
@@ -72,15 +72,15 @@ comments: false
 
 ## Project
 <div class="container">
-  <ul>
-    <li>
+  <ul class="list">
+    <li class="list-item">
       <div class="time">
         <span><a href="/project/simulated-stock-app/">Simulated Stock App</a></span>&nbsp;
         2022.10.01 ~ ing
       </div>
       <p>Team Project 5인&emsp;|&emsp;Android App</p>
     </li>
-    <li>
+    <li class="list-item">
       <div class="time">
         <span><a href="/project/my-online-gym/">My Online Gym</a></span>&nbsp;
         2022.11.17 ~ 2023.01.07
@@ -92,8 +92,8 @@ comments: false
 
 ## Tech Skills
 <div class="container">
-  <ul>
-    <li>
+  <ul class="list">
+    <li class="list-item">
       <div class="time">
         <span>Backend</span>
       </div>
@@ -104,7 +104,7 @@ comments: false
         <img src="https://img.shields.io/badge/Python-3766AB?style=flat&logo=Python&logoColor=white">
       </p>
     </li>
-    <li>
+    <li class="list-item">
       <div class="time">
         <span>Frontend</span>
       </div>
@@ -115,7 +115,7 @@ comments: false
         <img src="https://img.shields.io/badge/vue.js-4FC08D?style=flat&logo=vue.js&logoColor=white">
       </p>
     </li>
-    <li>
+    <li class="list-item">
       <div class="time">
         <span>Database</span>
       </div>
@@ -128,8 +128,8 @@ comments: false
 
 ## Certificate
 <div class="container">
-  <ul>
-    <li>
+  <ul class="list">
+    <li class="list-item">
       <div class="time">
         <span>SQL 개발자</span>&nbsp;
         2022.12.02
@@ -141,8 +141,8 @@ comments: false
 
 ## Awards
 <div class="container">
-  <ul>
-    <li>
+  <ul class="list">
+    <li class="list-item">
       <div class="time">
         <span>제5회 세종대학교 SW경시대회 3등</span>&nbsp;
         2018.12.14
@@ -154,18 +154,20 @@ comments: false
 
 ## Activities
 <div class="container">
-  <ul>
-  <li>
+  <ul class="list">
+    <li class="list-item">
       <div class="time">
         <span>삼성청년SW아카데미 공식 기자단, SSAFYcial</span>&nbsp;
         2022.07.25 ~ ing
       </div>
       <p>
-        • 매달 기획 및 자율 기사 게시<br>
-        • <a href="https://p-lay-ground.tistory.com/category/SSAFYcial" target="_blank">게시글 보러 가기</a>
+        <ul>
+          <li>매달 기획 및 자율 기사 게시</li>
+          <li><a href="https://p-lay-ground.tistory.com/category/SSAFYcial" target="_blank">게시글 보러 가기</a></li>
+        </ul>
       </p>
     </li>
-    <li>
+    <li class="list-item">
       <div class="time">
         <span>comento 데이터 직무부트캠프</span>&nbsp;
         2022.02.27 ~ 2022.03.27
@@ -176,7 +178,7 @@ comments: false
         • 대시보드 개발
       </p>
     </li>
-    <li>
+    <li class="list-item">
       <div class="time">
         <span>세종대학교 인지언어연구실 학부연구원</span>&nbsp;
         2021.05.01 ~ 2022.03.06
@@ -188,7 +190,7 @@ comments: false
         • 전화, 문자, 메일로 외국인 화자 응대
       </p>
     </li>
-    <li>
+    <li class="list-item">
       <div class="time">
         <span>세종대학교 SW기초코딩수업 보조TA</span>&nbsp;
         2019.09.02 ~ 2020.06.26
@@ -198,7 +200,7 @@ comments: false
         • 질의응답, 수업 지도, 시험 감독
       </p>
     </li>
-    <li>
+    <li class="list-item">
       <div class="time">
         <span>세종대신문사 학생 기자</span>&nbsp;
         2018.03.24 ~ 2019.06.03
@@ -209,7 +211,7 @@ comments: false
         • 총무부장 담당, 지출 영수증 수집 및 관리
       </p>
     </li>
-    <li>
+    <li class="list-item">
       <div class="time">
         <span>아름다운가게 인천논현점 자원봉사</span>&nbsp;
         2018.11.23 ~ 2019.02.08
