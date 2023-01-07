@@ -161,10 +161,8 @@ comments: false
         2022.07.25 ~ ing
       </div>
       <p>
-        <ul>
-          • 매달 기획 및 자율 기사 게시<br>
-          • <a href="https://p-lay-ground.tistory.com/category/SSAFYcial" target="_blank">게시글 보러 가기</a>
-        </ul>
+        • 매달 기획 및 자율 기사 게시<br>
+        • <a href="https://p-lay-ground.tistory.com/category/SSAFYcial" target="_blank">게시글 보러 가기</a>
       </p>
     </li>
     <li>
