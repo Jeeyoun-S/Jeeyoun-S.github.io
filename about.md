@@ -37,7 +37,7 @@ comments: false
       top: 0px;
     }
     .container p {
-      font-size: 12px;
+      font-size: 13px;
       margin: 0px;
     }
     .container .time {
