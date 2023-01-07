@@ -40,7 +40,7 @@ comments: false
       font-size: 12px;
       margin: 0px;
     }
-    .container span, a {
+    .container span {
       font-family: 'SUIT-Regular';
       font-weight: 800;
     }
@@ -51,11 +51,13 @@ comments: false
 <div class="container">
   <ul>
     <li>
-      <div class="time">2022.07 - ing <span>삼성청년SW아카데미</span></div>
+      <div class="time">2022.07 - ing&nbsp;
+        <span>삼성청년SW아카데미</span>
+      </div>
       <p>SSAFY 8기 | 비전공 Java Track</p>
     </li>
     <li>
-      <div class="time">2018.03 - 2022.02
+      <div class="time">2018.03 - 2022.02&nbsp;
         <span>세종대학교 호텔관광경영학</span>
       </div>
       <p>복수전공 응용통계학</p>
@@ -68,13 +70,13 @@ comments: false
   <ul>
     <li>
       <div class="time">2022.10.01 ~ ing&nbsp;
-        <a href="/project/simulated-stock-app/">Simulated Stock App</a>
+        <span><a href="/project/simulated-stock-app/">Simulated Stock App</a></span>
       </div>
       <p>Team Project 6인 | Android App</p>
     </li>
     <li>
       <div class="time">2022.11.17 ~ 2023.01.07&nbsp;
-        <a href="/project/my-online-gym/">My Online Gym</a>
+        <span><a href="/project/my-online-gym/">My Online Gym</a></span>
       </div>
       <p>Team Project 2인 | PC Web | SSAFY 관통 프로젝트</p>
     </li>
