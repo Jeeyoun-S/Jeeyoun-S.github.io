@@ -1,3 +1,11 @@
+---
+title: Linux Server 배포하기
+date: 2023-01-03 00:00:00 +07:00
+modified: 2023-01-03 00:00:00 +07:00
+tags: [my-online-gym, linux]
+description: Linux Server 배포하기
+---
+
 # Linux
 `sudo apt update`
 
