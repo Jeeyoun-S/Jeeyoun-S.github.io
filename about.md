@@ -2,7 +2,7 @@
 title: About me
 permalink: /about/
 layout: page
-excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in Jogjakarta. This blog for documentation about my programming journey, running on jekyll, hosting on netlify and using my own simple theme.
+excerpt: 
 comments: false
 ---
 
@@ -64,7 +64,7 @@ comments: false
         <span>삼성청년SW아카데미</span>&nbsp;
         2022.07 ~ ing
       </div>
-      <p>SSAFY 8기&emsp;|&emsp;비전공 Java Web Track</p>
+      <p>SSAFY 8기&emsp;|&emsp;비전공 Java Coding Track</p>
     </li>
     <li class="list-item">
       <div class="time">
