@@ -40,8 +40,12 @@ comments: false
       font-size: 12px;
       margin: 0px;
     }
+    .container .time {
+      font-style: italic;
+    }
     .container .time span {
       font-weight: bolder;
+      font-style: normal;
     }
   </style>
 </head>
@@ -50,14 +54,16 @@ comments: false
 <div class="container">
   <ul>
     <li>
-      <div class="time">2022.07 - ing&nbsp;
-        <span>삼성청년SW아카데미</span>
+      <div class="time">
+        <span>삼성청년SW아카데미</span>&nbsp;
+        2022.07 - ing
       </div>
       <p>SSAFY 8기&emsp;|&emsp;비전공 Java Track</p>
     </li>
     <li>
-      <div class="time">2018.03 - 2022.02&nbsp;
-        <span>세종대학교 호텔관광경영학</span>
+      <div class="time">
+        <span>세종대학교 호텔관광경영학</span>&nbsp;
+        2018.03 - 2022.02
       </div>
       <p>복수전공 응용통계학</p>
     </li>
@@ -69,9 +75,9 @@ comments: false
   <ul>
     <li>
       <div class="time">2022.10.01 ~ ing&nbsp;
-        <span><a href="/project/simulated-stock-app/">Simulated Stock App</a></span>
+        <span><a href="/project/simulated-stock-app/">Simulated Stock App</a></span>(가제)
       </div>
-      <p>Team Project 6인&emsp;|&emsp;Android App</p>
+      <p>Team Project 5인&emsp;|&emsp;Android App</p>
     </li>
     <li>
       <div class="time">2022.11.17 ~ 2023.01.07&nbsp;

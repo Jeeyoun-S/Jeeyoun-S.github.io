@@ -16,16 +16,8 @@ sitemap: false
 - **핵심 기능** Gamification을 통한 흥미유발, 이용자의 운동환경에 맞는 루틴 제공
 
 ## 역할 분담
-- <b>김민규 (팀장)</b>
-    1. 기획
-    2. 데이터 수집/제작/검수
-    3. 추천 알고리즘 설계
-    4. 발표
-- [<b>서지윤 (팀원)</b>](https://github.com/Jeeyoun-S)
-    1. DB 구축
-    2. Backend - Rest API 구현
-    3. Frontend - 웹페이지 구현
-    4. 배포
+- <b>김민규(팀장)</b> 기획, 데이터 수집/제작/검수, 추천 알고리즘 설계, 발표
+- [<b>서지윤(팀원)</b>](https://github.com/Jeeyoun-S) DB 구축, Rest API 구현, Frontend 구현, 배포
 
 ## 개발 환경
 - Frontend  
