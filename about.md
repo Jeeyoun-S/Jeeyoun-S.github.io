@@ -12,6 +12,7 @@ comments: false
       list-style: disc;
       font-size: 13px;
       margin: 0px;
+      padding-left: 13px;
     }
     .container ul.list, li.list-item {
       list-style: none;
