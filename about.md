@@ -41,7 +41,7 @@ comments: false
       margin: 0px;
     }
     .container span, a {
-      font-weight: bolder;
+      font-weight: 800;
     }
   </style>
 </head>
@@ -51,7 +51,7 @@ comments: false
   <ul>
     <li>
       <div class="time">2022.07 - ing <span>삼성청년SW아카데미</span></div>
-      <p>SSAFY 8기 | 비전공 JAVA Track</p>
+      <p>SSAFY 8기 | 비전공 Java Track</p>
     </li>
     <li>
       <div class="time">2018.03 - 2022.02
@@ -129,12 +129,12 @@ comments: false
       </div>
     </li>
     <li>
-      <div class="time">2019.09 ~ 2020.06&nbsp;
+      <div class="time">2019.09.02 ~ 2020.06.26&nbsp;
         <span>세종대학교 SW기초코딩수업 보조TA</span>
       </div>
     </li>
     <li>
-      <div class="time">2018.03 ~ 2019.06&nbsp;
+      <div class="time">2018.03.24 ~ 2019.06.03&nbsp;
         <span>세종대신문사 학생 기자</span>
       </div>
     </li>
