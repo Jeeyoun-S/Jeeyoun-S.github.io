@@ -4,6 +4,14 @@ permalink: /project/my-online-gym/
 layout: page
 sitemap: false
 ---
+<head>
+  <style>
+    details {
+      padding-left: 13px;
+    }
+  </style>
+</head>
+
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
@@ -13,7 +21,7 @@ sitemap: false
 - **팀명** MVC
 - **팀원** 김민규 서지윤
 - **서비스 기본 아이디어** 초보자를 위한 당장 시작하고, 오래 지속할 수 있는 운동 습관 만들기
-- **핵심 기능** Gamification을 통한 흥미유발, 이용자의 운동환경에 맞는 루틴 제공
+- **핵심 기능** 이용자의 운동환경에 맞는 루틴 제공, 꾸준한 운동 습관을 위한 운동 일정 관리
 
 ## 역할 분담
 - <b>김민규(팀장)</b> 기획, 데이터 수집/제작/검수, 추천 알고리즘 설계, 발표
