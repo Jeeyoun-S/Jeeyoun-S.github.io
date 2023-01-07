@@ -42,7 +42,6 @@ comments: false
     }
     .container span {
       font-family: 'SUIT-Regular';
-      font-weight: 800;
     }
   </style>
 </head>
@@ -125,21 +124,41 @@ comments: false
       <div class="time">2022.02.27 ~ 2022.03.27&nbsp;
         <span>comento 데이터 직무부트캠프</span>
       </div>
+      <p>
+        • SQL 기본 문법 익히기
+        • 데이터 분석 보고서 작성
+        • 대시보드 개발
+      </p>
     </li>
     <li>
       <div class="time">2021.05.01 ~ 2022.03.06&nbsp;
         <span>세종대학교 인지언어연구실 학부연구원</span>
       </div>
+      <p>
+        • 온라인 설문지 제작 (Google Form, FlexiQuiz, File Upload Forms)
+        • Excel로 약 1,500명의 데이터 검수 및 관리
+        • Colab으로 Python을 활용해 전사 파일 제작 및 단순 통계 작업
+        • 전화, 문자, 메일로 외국인 화자 응대
+      </p>
     </li>
     <li>
       <div class="time">2019.09.02 ~ 2020.06.26&nbsp;
         <span>세종대학교 SW기초코딩수업 보조TA</span>
       </div>
+      <p>
+        • 매주 2~3개의 수업을 담당
+        • 질의응답, 수업 지도, 시험 감독
+      </p>
     </li>
     <li>
       <div class="time">2018.03.24 ~ 2019.06.03&nbsp;
         <span>세종대신문사 학생 기자</span>
       </div>
+      <p>
+        • 기획 회의, 취재, 기사 작성, 레이아웃 구성 등
+        • 약 200명 설문조사 진행 및 결과 분석
+        • 총무부장 담당, 지출 영수증 수집 및 관리
+      </p>
     </li>
   </ul>
 </div>
