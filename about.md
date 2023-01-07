@@ -8,22 +8,22 @@ comments: false
 
 <head>
   <style> 
-    .container > ul, > li {
+    .container ul, li {
       list-style: none;
       padding: 0;
     }
-    .container > ul > li {
+    .container ul li {
       padding-bottom: 1.5rem;
       border-left: 1px solid #abaaed;
       position: relative;
       padding-left: 20px;
       margin-left: 10px;
     }
-    .container > ul > li:last-child {
+    .container ul li:last-child {
       border: 0px;
       padding-bottom: 0;
     }
-    .container > ul > li:before {
+    .container ul li:before {
       content: '';
       width: 15px;
       height: 15px;
@@ -162,8 +162,8 @@ comments: false
       </div>
       <p>
         <ul>
-          <li>매달 기획 및 자율 기사 게시</li>
-          <li><a href="https://p-lay-ground.tistory.com/category/SSAFYcial" target="_blank">게시글 보러 가기</a></li>
+          • 매달 기획 및 자율 기사 게시<br>
+          • <a href="https://p-lay-ground.tistory.com/category/SSAFYcial" target="_blank">게시글 보러 가기</a>
         </ul>
       </p>
     </li>
