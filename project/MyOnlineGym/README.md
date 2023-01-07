@@ -7,7 +7,7 @@ sitemap: false
 <head>
   <style>
     details {
-      padding-left: 13px;
+      padding-left: 20px;
     }
   </style>
 </head>
@@ -23,7 +23,7 @@ sitemap: false
 - **서비스 기본 아이디어** 초보자를 위한 당장 시작하고, 오래 지속할 수 있는 운동 습관 만들기
 - **핵심 기능** 이용자의 운동환경에 맞는 루틴 제공, 꾸준한 운동 습관을 위한 운동 일정 관리
 
-## 역할 분담
+## 역할
 - <b>김민규(팀장)</b> 기획, 데이터 수집/제작/검수, 추천 알고리즘 설계, 발표
 - [<b>서지윤(팀원)</b>](https://github.com/Jeeyoun-S) DB 구축, Rest API 구현, Frontend 구현, 배포
 
@@ -31,35 +31,95 @@ sitemap: false
 <details>
   <summary>Frontend</summary>
   <div>
-    <img src="https://img.shields.io/badge/vue2-4FC08D?style=flat&logo=vue.js&logoColor=white"> <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat&logo=VisualStudioCode&logoColor=white"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat&logo=Javascript&logoColor=white"> <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=Bootstrap&logoColor=white">
+    <ul>
+      <li>
+        <img src="https://img.shields.io/badge/vue2-4FC08D?style=flat&logo=vue.js&logoColor=white">
+      </li>
+      <li>
+        <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat&logo=VisualStudioCode&logoColor=white"> 
+      </li>
+      <li>
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"> 
+      </li>
+      <li>
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"> 
+      </li>
+      <li>
+        <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat&logo=Javascript&logoColor=white"> 
+      </li>
+      <li>
+        <img src="https://img.shields.io/badge/Vue Bootstrap-7952B3?style=flat&logo=Bootstrap&logoColor=white">
+      </li>
+    </ul>
   </div>
 </details>
 
 <details>
   <summary>Backend</summary>
   <div>
-    <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat&logo=SpringBoot&logoColor=white"> <img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=flat&logo=EclipseIDE&logoColor=white"> <img src="https://img.shields.io/badge/Java8-007396?style=flat&logo=Java&logoColor=white"> <img src="https://img.shields.io/badge/Apache Maven-C71A36?style=flat&logo=ApacheMaven&logoColor=white"> <img src="https://img.shields.io/badge/Swagger3-85EA2D?style=flat&logo=Swagger&logoColor=white"> <img src="https://img.shields.io/badge/mybatis-000000?style=flat&logo=MyBatis&logoColor=white">
+    <ul>
+      <li>
+        <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat&logo=SpringBoot&logoColor=white"> 
+      </li>
+      <li>
+        <img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=flat&logo=EclipseIDE&logoColor=white"> 
+      </li>
+      <li>
+        <img src="https://img.shields.io/badge/Java8-007396?style=flat&logo=Java&logoColor=white"> 
+      </li>
+      <li>
+        <img src="https://img.shields.io/badge/Apache Maven-C71A36?style=flat&logo=ApacheMaven&logoColor=white"> 
+      </li>
+      <li>
+        <img src="https://img.shields.io/badge/Swagger3-85EA2D?style=flat&logo=Swagger&logoColor=white"> 
+      </li>
+      <li>
+        <img src="https://img.shields.io/badge/mybatis-000000?style=flat&logo=MyBatis&logoColor=white">
+      </li>
+    </ul>
   </div>
 </details>
 
 <details>
   <summary>Database</summary>
   <div>
-    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/JSON-000000?style=flat&logo=JSON&logoColor=white">
+    <ul>
+      <li>
+        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white"> 
+      </li>
+      <li>
+        <img src="https://img.shields.io/badge/JSON-000000?style=flat&logo=JSON&logoColor=white">
+      </li>
+    </ul>
   </div>
 </details>
 
 <details>
   <summary>Tools</summary>
   <div>
-    <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"> <img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat&logo=GitLab&logoColor=white">
+  <ul>
+      <li>
+        <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"> 
+      </li>
+      <li>
+        <img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat&logo=GitLab&logoColor=white">
+      </li>
+    </ul>
   </div>
 </details>
 
 <details>
   <summary>Server</summary>
   <div>
-    <img src="https://img.shields.io/badge/Microsoft Azure-0078D4?style=flat&logo=MicrosoftAzure&logoColor=white"> <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=Ubuntu&logoColor=white"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white"> <img src="https://img.shields.io/badge/Powershell-5391FE?style=flat&logo=Powershell&logoColor=white">
+    <li>
+      <img src="https://img.shields.io/badge/Microsoft Azure-0078D4?style=flat&logo=MicrosoftAzure&logoColor=white"> 
+    </li>
+    <li>
+      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white"> 
+    </li>
+    <li>
+      <img src="https://img.shields.io/badge/Powershell-5391FE?style=flat&logo=Powershell&logoColor=white">
+    </li>
   </div>
 </details>
 
