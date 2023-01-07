@@ -8,7 +8,7 @@ comments: false
 
 <head>
   <style> 
-    .container > ul, li {
+    .container > ul, > li {
       list-style: none;
       padding: 0;
     }
