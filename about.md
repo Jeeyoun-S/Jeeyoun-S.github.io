@@ -8,22 +8,22 @@ comments: false
 
 <head>
   <style> 
-    .container ul, li {
+    .container > ul, li {
       list-style: none;
       padding: 0;
     }
-    .container li {
+    .container > ul > li {
       padding-bottom: 1.5rem;
       border-left: 1px solid #abaaed;
       position: relative;
       padding-left: 20px;
       margin-left: 10px;
     }
-    .container li:last-child {
+    .container > ul > li:last-child {
       border: 0px;
       padding-bottom: 0;
     }
-    .container li:before {
+    .container > ul > li:before {
       content: '';
       width: 15px;
       height: 15px;
@@ -58,7 +58,7 @@ comments: false
         <span>삼성청년SW아카데미</span>&nbsp;
         2022.07 - ing
       </div>
-      <p>SSAFY 8기&emsp;|&emsp;비전공 Java Track</p>
+      <p>SSAFY 8기&emsp;|&emsp;비전공 Java Web Track</p>
     </li>
     <li>
       <div class="time">
