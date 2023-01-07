@@ -36,9 +36,12 @@ comments: false
       left: -10px;
       top: 0px;
     }
-    .container  p {
-      font-size: 8px;
+    .container p {
+      font-size: 9.5px;
       margin: 0px;
+    }
+    .container span, a {
+      font-weight: bolder;
     }
   </style>
 </head>
@@ -47,11 +50,13 @@ comments: false
 <div class="container">
   <ul>
     <li>
-      <div class="time">2022.07 - ing 삼성청년SW아카데미 8기</div>
-      <p>SSAFY 비전공 JAVA Track</p>
+      <div class="time">2022.07 - ing <span>삼성청년SW아카데미</span></div>
+      <p>SSAFY 8기 | 비전공 JAVA Track</p>
     </li>
     <li>
-      <div class="time">2018.03 - 2022.02 세종대학교 호텔관광경영학</div>
+      <div class="time">2018.03 - 2022.02
+        <span>세종대학교 호텔관광경영학</span>
+      </div>
       <p>복수전공 응용통계학</p>
     </li>
   </ul>
@@ -61,12 +66,16 @@ comments: false
 <div class="container">
   <ul>
     <li>
-      <div class="time">2022.11.17 ~ 25 <a href="/project/simulated-stock-app/">Simulated Stock App</a></div>
+      <div class="time">2022.10.01 ~ ing&nbsp;
+        <a href="/project/simulated-stock-app/">Simulated Stock App</a>
+      </div>
       <p>Team Project 6인 | Android App</p>
     </li>
     <li>
-      <div class="time">2022.11.17 ~ 25 <a href="/project/my-online-gym/">My Online Gym</a></div>
-      <p>Team Project 2인 | PC Web</p>
+      <div class="time">2022.11.17 ~ 2023.01.07&nbsp;
+        <a href="/project/my-online-gym/">My Online Gym</a>
+      </div>
+      <p>Team Project 2인 | PC Web | SSAFY 관통 프로젝트</p>
     </li>
   </ul>
 </div>
@@ -77,11 +86,57 @@ comments: false
 <div class="container">
   <ul>
     <li>
-      <div class="time">2022.11.17 ~ 25 SQL 개발자</div>
+      <div class="time">2022.12.02&nbsp;
+        <span>SQL 개발자</span>
+      </div>
+      <p>한국데이터산업진흥원</p>
     </li>
   </ul>
 </div>
 
 ## Awards
+<div class="container">
+  <ul>
+    <li>
+      <div class="time">2018.12.14&nbsp;
+        <span>제5회 세종대학교 SW경시대회 3등</span>
+      </div>
+      <p>SW비전공자 부문</p>
+    </li>
+  </ul>
+</div>
 
 ## Activities
+<div class="container">
+  <ul>
+  <li>
+      <div class="time">2022.07.25 ~ ing&nbsp;
+        <span>삼성청년SW아카데미 공식 기자단, SSAFYcial</span>
+      </div>
+      <p>
+        • 매달 기획 및 자율 기사 게시<br>
+        • <a href="https://p-lay-ground.tistory.com/category/SSAFYcial" target="_blank">게시글 보러 가기</a>
+      </p>
+    </li>
+    <li>
+      <div class="time">2022.02.27 ~ 2022.03.27&nbsp;
+        <span>comento 데이터 직무부트캠프</span>
+      </div>
+    </li>
+    <li>
+      <div class="time">2021.05.01 ~ 2022.03.06&nbsp;
+        <span>세종대학교 인지언어연구실 학부연구원</span>
+      </div>
+    </li>
+    <li>
+      <div class="time">2019.09 ~ 2020.06&nbsp;
+        <span>세종대학교 SW기초코딩수업 보조TA</span>
+      </div>
+    </li>
+    <li>
+      <div class="time">2018.03 ~ 2019.06&nbsp;
+        <span>세종대신문사 학생 기자</span>
+      </div>
+    </li>
+  </ul>
+</div>
