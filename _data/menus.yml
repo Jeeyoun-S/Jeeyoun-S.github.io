@@ -14,8 +14,8 @@
   url: /blog/
   external: false
 
-- title: tags
-  url: /tags/
+- title: archive
+  url: /archive/
   external: false
 
 # Example:
