@@ -37,11 +37,11 @@ comments: false
       top: 0px;
     }
     .container p {
-      font-size: 9.5px;
+      font-size: 11px;
       margin: 0px;
     }
     .container span, a {
-      font-weight: 800;
+      font-family: 'SUIT-Regular';
     }
   </style>
 </head>
