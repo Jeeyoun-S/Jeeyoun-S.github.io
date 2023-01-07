@@ -8,6 +8,7 @@ sitemap: false
   <style>
     details {
       padding-left: 20px;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -16,8 +17,8 @@ sitemap: false
 {:toc}
 
 ## 소개
-- **프로젝트 주제** 운동 관련 웹사이트 제작
-- **진행 날짜** 2022.11.17 ~ 25
+- **주제** 운동 관련 웹사이트 제작
+- **기간** 2022.11.17 ~ 2023.01.07
 - **팀명** MVC
 - **팀원** 김민규 서지윤
 - **서비스 기본 아이디어** 초보자를 위한 당장 시작하고, 오래 지속할 수 있는 운동 습관 만들기
@@ -111,15 +112,17 @@ sitemap: false
 <details>
   <summary>Server</summary>
   <div>
-    <li>
-      <img src="https://img.shields.io/badge/Microsoft Azure-0078D4?style=flat&logo=MicrosoftAzure&logoColor=white"> 
-    </li>
-    <li>
-      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white"> 
-    </li>
-    <li>
-      <img src="https://img.shields.io/badge/Powershell-5391FE?style=flat&logo=Powershell&logoColor=white">
-    </li>
+    <ul>
+      <li>
+        <img src="https://img.shields.io/badge/Microsoft Azure-0078D4?style=flat&logo=MicrosoftAzure&logoColor=white"> 
+      </li>
+      <li>
+        <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white"> 
+      </li>
+      <li>
+        <img src="https://img.shields.io/badge/Powershell-5391FE?style=flat&logo=Powershell&logoColor=white">
+      </li>
+    </ul>
   </div>
 </details>
 
