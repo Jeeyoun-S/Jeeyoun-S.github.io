@@ -8,12 +8,15 @@ sitemap: false
   <style>
     details {
       padding-left: 20px;
+    }
+    details summary {
       cursor: pointer;
+      font-family: bolder;
     }
   </style>
 </head>
 
-0. this unordered seed list will be replaced by toc as unordered list
+1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
 ## 소개
@@ -126,7 +129,7 @@ sitemap: false
   </div>
 </details>
 
-## 프로젝트 진행
+## 진행
 - [일정](schedule)
 - [기획](plan-and-design)
 - [시스템 구조도]()
