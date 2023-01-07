@@ -74,14 +74,16 @@ comments: false
 <div class="container">
   <ul>
     <li>
-      <div class="time">2022.10.01 ~ ing&nbsp;
-        <span><a href="/project/simulated-stock-app/">Simulated Stock App</a></span>(가제)
+      <div class="time">
+        <span><a href="/project/simulated-stock-app/">Simulated Stock App</a></span>&nbsp;
+        2022.10.01 ~ ing
       </div>
       <p>Team Project 5인&emsp;|&emsp;Android App</p>
     </li>
     <li>
-      <div class="time">2022.11.17 ~ 2023.01.07&nbsp;
-        <span><a href="/project/my-online-gym/">My Online Gym</a></span>
+      <div class="time">
+        <span><a href="/project/my-online-gym/">My Online Gym</a></span>&nbsp;
+        2022.11.17 ~ 2023.01.07
       </div>
       <p>Team Project 2인&emsp;|&emsp;PC Web&emsp;|&emsp;SSAFY 관통 프로젝트</p>
     </li>
@@ -128,8 +130,9 @@ comments: false
 <div class="container">
   <ul>
     <li>
-      <div class="time">2022.12.02&nbsp;
-        <span>SQL 개발자</span>
+      <div class="time">
+        <span>SQL 개발자</span>&nbsp;
+        2022.12.02
       </div>
       <p>한국데이터산업진흥원</p>
     </li>
@@ -140,8 +143,9 @@ comments: false
 <div class="container">
   <ul>
     <li>
-      <div class="time">2018.12.14&nbsp;
-        <span>제5회 세종대학교 SW경시대회 3등</span>
+      <div class="time">
+        <span>제5회 세종대학교 SW경시대회 3등</span>&nbsp;
+        2018.12.14
       </div>
       <p>SW비전공자 부문</p>
     </li>
@@ -152,8 +156,9 @@ comments: false
 <div class="container">
   <ul>
   <li>
-      <div class="time">2022.07.25 ~ ing&nbsp;
-        <span>삼성청년SW아카데미 공식 기자단, SSAFYcial</span>
+      <div class="time">
+        <span>삼성청년SW아카데미 공식 기자단, SSAFYcial</span>&nbsp;
+        2022.07.25 ~ ing
       </div>
       <p>
         • 매달 기획 및 자율 기사 게시<br>
@@ -161,8 +166,9 @@ comments: false
       </p>
     </li>
     <li>
-      <div class="time">2022.02.27 ~ 2022.03.27&nbsp;
-        <span>comento 데이터 직무부트캠프</span>
+      <div class="time">
+        <span>comento 데이터 직무부트캠프</span>&nbsp;
+        2022.02.27 ~ 2022.03.27
       </div>
       <p>
         • SQL 기본 문법 익히기<br>
@@ -171,8 +177,9 @@ comments: false
       </p>
     </li>
     <li>
-      <div class="time">2021.05.01 ~ 2022.03.06&nbsp;
-        <span>세종대학교 인지언어연구실 학부연구원</span>
+      <div class="time">
+        <span>세종대학교 인지언어연구실 학부연구원</span>&nbsp;
+        2021.05.01 ~ 2022.03.06
       </div>
       <p>
         • 온라인 설문지 제작 (Google Form, FlexiQuiz, File Upload Forms)<br>
@@ -182,8 +189,9 @@ comments: false
       </p>
     </li>
     <li>
-      <div class="time">2019.09.02 ~ 2020.06.26&nbsp;
-        <span>세종대학교 SW기초코딩수업 보조TA</span>
+      <div class="time">
+        <span>세종대학교 SW기초코딩수업 보조TA</span>&nbsp;
+        2019.09.02 ~ 2020.06.26
       </div>
       <p>
         • 매주 2~3개의 Python 기초 수업을 담당<br>
@@ -191,8 +199,9 @@ comments: false
       </p>
     </li>
     <li>
-      <div class="time">2018.03.24 ~ 2019.06.03&nbsp;
-        <span>세종대신문사 학생 기자</span>
+      <div class="time">
+        <span>세종대신문사 학생 기자</span>&nbsp;
+        2018.03.24 ~ 2019.06.03
       </div>
       <p>
         • 기획 회의, 취재, 기사 작성, 레이아웃 구성 등<br>
@@ -201,8 +210,9 @@ comments: false
       </p>
     </li>
     <li>
-      <div class="time">2018.11.23 ~ 2019.02.08&nbsp;
-        <span>아름다운가게 인천논현점 자원봉사</span>
+      <div class="time">
+        <span>아름다운가게 인천논현점 자원봉사</span>&nbsp;
+        2018.11.23 ~ 2019.02.08
       </div>
       <p>
         • 매장 관리 (물품 수령 및 정리)<br>
