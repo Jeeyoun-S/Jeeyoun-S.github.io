@@ -10,10 +10,6 @@
   url: /study/
   external: false
 
-- title: blog
-  url: /blog/
-  external: false
-
 - title: archive
   url: /archive/
   external: false
