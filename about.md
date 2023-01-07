@@ -42,6 +42,7 @@ comments: false
     }
     .container span, a {
       font-family: 'SUIT-Regular';
+      font-weight: 800;
     }
   </style>
 </head>
