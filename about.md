@@ -40,9 +40,8 @@ comments: false
       font-size: 12px;
       margin: 0px;
     }
-    .container span {
-      font-family: 'SUIT-Regular';
-      font-weight: 800;
+    .container .time span {
+      font-weight: bolder;
     }
   </style>
 </head>
