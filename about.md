@@ -53,7 +53,7 @@ comments: false
       <div class="time">2022.07 - ing&nbsp;
         <span>삼성청년SW아카데미</span>
       </div>
-      <p>SSAFY 8기 | 비전공 Java Track</p>
+      <p>SSAFY 8기&emsp;|&emsp;비전공 Java Track</p>
     </li>
     <li>
       <div class="time">2018.03 - 2022.02&nbsp;
@@ -71,18 +71,52 @@ comments: false
       <div class="time">2022.10.01 ~ ing&nbsp;
         <span><a href="/project/simulated-stock-app/">Simulated Stock App</a></span>
       </div>
-      <p>Team Project 6인 | Android App</p>
+      <p>Team Project 6인&emsp;|&emsp;Android App</p>
     </li>
     <li>
       <div class="time">2022.11.17 ~ 2023.01.07&nbsp;
         <span><a href="/project/my-online-gym/">My Online Gym</a></span>
       </div>
-      <p>Team Project 2인 | PC Web | SSAFY 관통 프로젝트</p>
+      <p>Team Project 2인&emsp;|&emsp;PC Web&emsp;|&emsp;SSAFY 관통 프로젝트</p>
     </li>
   </ul>
 </div>
 
 ## Tech Skills
+<div class="container">
+  <ul>
+    <li>
+      <div class="time">
+        <span>Backend</span>
+      </div>
+      <p>
+        <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white">&nbsp;
+        <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=Spring&logoColor=white">&nbsp;
+        <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=SpringBoot&logoColor=white">&nbsp;
+        <img src="https://img.shields.io/badge/Python-3766AB?style=flat&logo=Python&logoColor=white">
+      </p>
+    </li>
+    <li>
+      <div class="time">
+        <span>Frontend</span>
+      </div>
+      <p>
+        <img src="https://img.shields.io/badge/html5-E34F26?style=flat&logo=html5&logoColor=white">&nbsp;
+        <img src="https://img.shields.io/badge/css3-1572B6?style=flat&logo=css3&logoColor=white">&nbsp;
+        <img src="https://img.shields.io/badge/bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white">&nbsp;
+        <img src="https://img.shields.io/badge/vue.js-4FC08D?style=flat&logo=vue.js&logoColor=white">
+      </p>
+    </li>
+    <li>
+      <div class="time">
+        <span>Database</span>
+      </div>
+      <p>
+        <img src="https://img.shields.io/badge/mysql-4479A1?style=flat&logo=mysql&logoColor=white">
+      </p>
+    </li>
+  </ul>
+</div>
 
 ## Certificate
 <div class="container">
