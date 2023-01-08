@@ -6,102 +6,89 @@ permalink: /project/my-online-gym/schedule/
 ---
 <head>
     <style>
-        .uk-container {
-            width: 100px;
+        // ----------------  THE BASICS
+        @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
+        body {
+            font-size: 14px;
+            line-height: 1.5;
         }
-        .uk-timeline .uk-timeline-item .uk-card {
-            max-height: 300px;
+        // ----------------  THE FONTS
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Oswald', sans-serif;
         }
-        .uk-timeline .uk-timeline-item {
-            display: flex;
+        h1 {
+            font-size: 2rem;
+            margin-bottom: .5em;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: .8rem;
+        }
+        // ----------------  LAYOUT
+        .container {
+            max-width: 1024px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        // ----------------  THE FONTS
+        .timeline-item {
+            padding: 3em 2em 2em;
             position: relative;
-        }
-        .uk-timeline .uk-timeline-item::before {
-            background: #dadee4;
-            content: "";
-            height: 100%;
-            left: 19px;
-            position: absolute;
-            top: 20px;
-            width: 2px;
-            z-index: -1;
-        }
-        .uk-timeline .uk-timeline-item .uk-timeline-icon .uk-badge {
-            margin-top: 20px;
-            width: 40px;
-            height: 40px;
-        }
-        .uk-timeline .uk-timeline-item .uk-timeline-content {
-            -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-            padding: 0 0 0 1rem;
+            color: rgba(black, .7);
+            border-left: 2px solid rgba(black, .3);
+            p {
+                font-size: 1rem;
+                &::before {
+                    content: attr(date-is);
+                    position: absolute;
+                    left: 2em;
+                    font-weight: bold;
+                    top: 1em;
+                    display: block;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                    font-size: .785rem;
+                }
+                &::after {
+                    width: 10px;
+                    height: 10px;
+                    display: block;
+                    top: 1em;
+                    position: absolute;
+                    left: -7px;
+                    border-radius: 10px;
+                    content: '';
+                    border: 2px solid rgba(black, .3);
+                }
+                &:last-child {
+                    border-image: linear-gradient(
+                        to bottom,
+                        rgba(black, .3) 60%,
+                        rgba(rgba(black, .3), 0)) 1 100%
+                    ;
+                }
+            }
         }
     </style>
 </head>
 
-<div class="uk-container uk-padding">
-    <div class="uk-timeline">
-        <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge"><span uk-icon="check"></span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2020-07-08">July 8</time></h3>
-                            <span class="uk-label uk-label-success uk-margin-auto-left">Feature</span>
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p class="uk-text-success">Fully responsive timeline you can add to your UIkit 3 project
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge"><span uk-icon="check"></span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2020-07-07">July 7</time></h3>
-                            <span class="uk-label uk-label-warning uk-margin-auto-left">Test</span>
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-            <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge"><span uk-icon="check"></span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2020-07-06">July 6</time></h3>
-                            <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span>
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                        </p>
-                    </div>
-                </div>
-                <a href="#"><span class="uk-margin-small-right" uk-icon="triangle-down"></span>Load more</a>
-            </div>
-        </div>
-    </div>
+<div class="container">
+	<div class="timeline-item" date-is='20-07-1990'>
+		<h1>Hello, 'Im a single div responsive timeline without mediaQueries!</h1>
+		<p>
+			I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? I think the only card she has is the Lorem card.
+		</p>
+	</div>
+	<div class="timeline-item" date-is='20-07-1990'>
+		<h1>Oeehhh, that's awesome.. Me too!</h1>
+		<p>
+			I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? I think the only card she has is the Lorem card.
+		</p>
+	</div>
+	<div class="timeline-item" date-is='20-07-1990'>
+		<h1>I'm ::last-child so my border fades ^__^</h1>
+		<p>
+			I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? I think the only card she has is the Lorem card.
+		</p>
+	</div>
 </div>
