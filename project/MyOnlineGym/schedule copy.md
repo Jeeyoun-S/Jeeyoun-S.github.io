@@ -2,7 +2,7 @@
 layout: page
 title: 진행 일정
 sitemap: false
-permalink: /project/my-online-gym/schedule/
+permalink: /project/my-online-gym/schedule-test/
 ---
 <head>
     <style>
