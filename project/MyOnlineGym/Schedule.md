@@ -6,89 +6,64 @@ permalink: /project/my-online-gym/schedule/
 ---
 <head>
     <style>
-        // ----------------  THE BASICS
-        @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
-        body {
-            font-size: 14px;
-            line-height: 1.5;
+        .container ul.inside {
+            list-style: disc;
+            font-size: 13px;
+            margin: 0px;
+            padding-left: 26px;
         }
-        // ----------------  THE FONTS
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Oswald', sans-serif;
+        .container ul.list, li.list-item {
+            list-style: none;
+            padding: 0;
         }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: .5em;
-        }
-        p {
-            font-family: 'Roboto', sans-serif;
-            font-size: .8rem;
-        }
-        // ----------------  LAYOUT
-        .container {
-            max-width: 1024px;
-            width: 90%;
-            margin: 0 auto;
-        }
-        // ----------------  THE FONTS
-        .timeline-item {
-            padding: 3em 2em 2em;
+        .container ul.list li.list-item {
+            padding-bottom: 1.5rem;
+            border-left: 1px solid #A6A6A6;
             position: relative;
-            color: rgba(black, .7);
-            border-left: 2px solid rgba(black, .3);
-            p {
-                font-size: 1rem;
-                &::before {
-                    content: attr(date-is);
-                    position: absolute;
-                    left: 2em;
-                    font-weight: bold;
-                    top: 1em;
-                    display: block;
-                    font-family: 'Roboto', sans-serif;
-                    font-weight: 700;
-                    font-size: .785rem;
-                }
-                &::after {
-                    width: 10px;
-                    height: 10px;
-                    display: block;
-                    top: 1em;
-                    position: absolute;
-                    left: -7px;
-                    border-radius: 10px;
-                    content: '';
-                    border: 2px solid rgba(black, .3);
-                }
-                &:last-child {
-                    border-image: linear-gradient(
-                        to bottom,
-                        rgba(black, .3) 60%,
-                        rgba(rgba(black, .3), 0)) 1 100%
-                    ;
-                }
-            }
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+        .container ul.list li.list-item:last-child {
+            border: 0px;
+            padding-bottom: 0;
+        }
+        .container ul.list li.list-item:before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background: white;
+            border: 1px solid #000000;
+            box-shadow: 3px 3px 0px #A6A6A6;
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+            top: 0px;
+        }
+        .container .time {
+            font-style: italic;
+        }
+        .container .detail {
+            font-size: 13px;
+            margin: 0px;
+        }
+        .container .detail .a {
+            background-color: yellow;
+        }
+        .container .detail .person {
+            font-style: italic;
         }
     </style>
 </head>
 
 <div class="container">
-	<div class="timeline-item" date-is='20-07-1990'>
-		<h1>Hello, 'Im a single div responsive timeline without mediaQueries!</h1>
-		<p>
-			I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? I think the only card she has is the Lorem card.
-		</p>
-	</div>
-	<div class="timeline-item" date-is='20-07-1990'>
-		<h1>Oeehhh, that's awesome.. Me too!</h1>
-		<p>
-			I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? I think the only card she has is the Lorem card.
-		</p>
-	</div>
-	<div class="timeline-item" date-is='20-07-1990'>
-		<h1>I'm ::last-child so my border fades ^__^</h1>
-		<p>
-			I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? I think the only card she has is the Lorem card.
-		</p>
-	</div>
+    <ul class="list">
+        <li class="list-item">
+            <div class="time">2022.11.17</div>
+            <div class="detail">
+                <span class="a">기획</span>
+                아이디어 구상 및 기능 설계
+                <span class="person">김민규</span>
+            </div>
+        </li>
+    </ul>
 </div>
