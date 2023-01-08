@@ -13,7 +13,7 @@ sitemap: false
       cursor: pointer;
       font-weight: bolder;
     }
-    details div {
+    details div.open {
       padding-left: 25px;
     }
   </style>
@@ -37,7 +37,7 @@ sitemap: false
 ## 개발 환경
 <details>
   <summary>Frontend</summary>
-  <div>
+  <div class="open">
     <div class="icons">
       <img src="https://img.shields.io/badge/vue2-4FC08D?style=flat&logo=vue.js&logoColor=white"> 
       <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat&logo=VisualStudioCode&logoColor=white"> 
@@ -54,7 +54,7 @@ sitemap: false
 
 <details>
   <summary>Backend</summary>
-  <div>
+  <div class="open">
     <div class="icons">
       <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat&logo=SpringBoot&logoColor=white"> 
       <img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=flat&logo=EclipseIDE&logoColor=white"> 
@@ -71,7 +71,7 @@ sitemap: false
 
 <details>
   <summary>Database</summary>
-  <div>
+  <div class="open">
     <div class="icons">
       <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white"> 
       <img src="https://img.shields.io/badge/JSON-000000?style=flat&logo=JSON&logoColor=white">
@@ -84,7 +84,7 @@ sitemap: false
 
 <details>
   <summary>Tools</summary>
-  <div>
+  <div class="open">
     <div class="icons">
       <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"> 
       <img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat&logo=GitLab&logoColor=white"> 
@@ -99,7 +99,7 @@ sitemap: false
 
 <details>
   <summary>Server</summary>
-  <div>
+  <div class="open">
     <div class="icons">
       <img src="https://img.shields.io/badge/Microsoft Azure VM-0078D4?style=flat&logo=MicrosoftAzure&logoColor=white"> 
       <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white"> 
