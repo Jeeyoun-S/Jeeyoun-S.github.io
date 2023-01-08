@@ -10,6 +10,11 @@ permalink: /project/my-online-gym/architecture/
 ## Architecture
 
 ## ERD
+<img src="erd.png" alt="My Online Gym ERD"/>
+
+## SpringBoot Class Diagram
+
+## Vue.js Project Structure
 
 ## API Docs
 - Swagger3 사용

@@ -4,6 +4,9 @@ title: 일정
 sitemap: false
 permalink: /project/my-online-gym/schedule/
 ---
+0. this unordered seed list will be replaced by toc as unordered list
+{:toc}
+
 <head>
     <style>
         .container ul.inside {
