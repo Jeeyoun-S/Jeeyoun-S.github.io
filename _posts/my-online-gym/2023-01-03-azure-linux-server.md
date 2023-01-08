@@ -17,16 +17,16 @@ description: Linux Server 배포하기
 0. MySQL 기본 보안 명령어 `mysql_secure_installation`
 1. root 계정으로 mysql 접속 `mysql -u root -p`
 2. 서버 내의 sql 파일 실행
-    ```powershell
-    source /home/my-online-gym/sql/ssafit_schema.sql;
-    ```
+        ```powershell
+        source /home/my-online-gym/sql/ssafit_schema.sql;
+        ```
 3. 종료 `exit`
 
 ### Linux 서버로 파일 옮기기
 1. Local의 ssafit_schema.sql을 Server의 home/my-online-gym/sql로 복사
-    ```powershell
-    scp ssafit_schema.sql my-online-gym@172.174.120.196:/home/sql
-    ```
+        ```powershell
+        scp ssafit_schema.sql my-online-gym@172.174.120.196:/home/sql
+        ```
 
 ### Java 설치하기
 1. Java 설치 `sudo apt openjdk-8-jdk`
