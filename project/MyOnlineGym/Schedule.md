@@ -40,14 +40,22 @@ permalink: /project/my-online-gym/schedule/
             top: 0px;
         }
         .container .time {
-            font-style: italic;
+            font-weight: bolder;
         }
         .container .detail {
             font-size: 13px;
             margin: 0px;
         }
-        .container .detail .a {
+        .container .detail .type {
+            font-weight: bolder;
+        }
+        .container .detail .plan {
             background-color: yellow;
+            color: black;
+        }
+        .container .detail .db {
+            background-color: pink;
+            color: black;
         }
         .container .detail .person {
             font-style: italic;
@@ -60,9 +68,27 @@ permalink: /project/my-online-gym/schedule/
         <li class="list-item">
             <div class="time">2022.11.17</div>
             <div class="detail">
-                <span class="a">기획</span>
-                아이디어 구상 및 기능 설계
-                <span class="person">김민규</span>
+                <span class="type plan">기획</span>
+                &emsp;아이디어 구상 및 기능 설계&emsp;
+                <span class="person">-김민규</span>
+            </div>
+        </li>
+        <li class="list-item">
+            <div class="time">2022.11.18</div>
+            <div class="detail">
+                <span class="type plan">기획</span>
+                &emsp;아이디어 회의&emsp;
+                <span class="person">-김민규, 서지윤</span>
+            </div>
+            <div class="detail">
+                <span class="type plan">기획</span>
+                &emsp;요구사항 명세서 작성&emsp;
+                <span class="person">-김민규</span>
+            </div>
+            <div class="detail">
+                <span class="type db">DB</span>
+                &emsp;DB 설계 및 쿼리문 작성&emsp;
+                <span class="person">-서지윤</span>
             </div>
         </li>
     </ul>
