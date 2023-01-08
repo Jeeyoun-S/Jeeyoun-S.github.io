@@ -11,7 +11,7 @@ sitemap: false
     }
     details summary {
       cursor: pointer;
-      font-family: bolder;
+      font-weight: bolder;
     }
   </style>
 </head>
@@ -20,7 +20,7 @@ sitemap: false
 {:toc}
 
 ## 소개
-- **주제** 운동 관련 웹사이트 제작
+- **주제** 운동 관련 웹사이트 제작 (삼성청년SW아카데미 관통 프로젝트)
 - **기간** 2022.11.17 ~ 2023.01.07
 - **팀명** MVC
 - **팀원** 김민규 서지윤
@@ -132,8 +132,8 @@ sitemap: false
 ## 진행
 - [일정](schedule)
 - [기획](plan-and-design)
-- [시스템 구조도]()
-- [학습 노트]()
+- [시스템 구조도](architecture)
+- [학습 노트](notes)
 
 ## 주요 기능
 1. 운동 일정 관리 기능

@@ -1,19 +1,11 @@
 ---
-title: Tags
-permalink: /tags/
 layout: page
-excerpt: Sorted article by tags.
+title: 학습 노트
+sitemap: false
+permalink: /project/my-online-gym/notes/
 ---
 
-<div class="archive-tags">
-  <a class="tag-item" href="#">all</a>
-  {%- for tag in site.tags -%} 
-    {% capture name %}{{ tag | first }}{% endcapture %}
-    <a class="tag-item" href="#{{name}}">{{ name }}</a> 
-  {%- endfor -%}
-</div>
-
-{%- for tag in site.tags -%}
+{%- for tag in ['my-online-gym'] -%}
   {%- capture name -%}{{ tag | first }}{%- endcapture -%}
   <h2 id="{{ name }}">{{ name | upcase }}</h2>
   {%- for post in site.tags[name] -%}
