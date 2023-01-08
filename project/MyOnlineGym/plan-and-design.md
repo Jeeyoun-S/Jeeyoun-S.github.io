@@ -106,4 +106,4 @@ permalink: /project/my-online-gym/plan-and-design/
 
 ## 화면 설계서
 1. [로그인 이전 메인 페이지](https://jeeyoun-s.github.io/project/MyOnlineGym/mock-up/slide1.PNG)
-<img src="/project/MyOnlineGym/mock-up/slide1.PNG">
+2. <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/mock-up/slide2.PNG" target="_blank">로그인 이후 메인 페이지</a>
