@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 애플리케이션 아키텍처
+title: 시스템 구조도
 sitemap: false
 permalink: /project/my-online-gym/architecture/
 ---

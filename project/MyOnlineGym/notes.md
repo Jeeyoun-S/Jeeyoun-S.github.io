@@ -4,7 +4,7 @@ title: 학습 노트
 sitemap: false
 permalink: /project/my-online-gym/notes/
 ---
-
+{{ site.tags }}
 {%- for tag in ['my-online-gym'] -%}
   {%- capture name -%}{{ tag | first }}{%- endcapture -%}
   <h2 id="{{ name }}">{{ name | upcase }}</h2>
