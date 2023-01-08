@@ -10,7 +10,7 @@ permalink: /project/my-online-gym/architecture/
 ## Architecture
 
 ## ERD
-- MySQL Database `ssafit_db` 구조
+- MySQL Database 'ssafit_db' 구조
 <img src="/project/MyOnlineGym/erd.png" alt="My Online Gym ERD"/>
 
 ## SpringBoot Class Diagram

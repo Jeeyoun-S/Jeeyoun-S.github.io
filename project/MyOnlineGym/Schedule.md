@@ -238,7 +238,7 @@ permalink: /project/my-online-gym/schedule/
             <div class="time">2023.01.08</div>
             <div class="detail">
                 <span class="type publish">배포</span>
-                &emsp;건강기능식품·영상 상세 페이지 URL 수정, Rest API 응답 형식 맞춰 axios 수정
+                &emsp;Spring Boot 배포
             </div>
         </li>
     </ul>
