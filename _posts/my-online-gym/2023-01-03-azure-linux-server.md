@@ -1,8 +1,8 @@
 ---
-title: Linux Server 배포하기
+title: Azure VM으로 Linux Server 배포하기
 date: 2023-01-03 00:00:00 +07:00
 modified: 2023-01-03 00:00:00 +07:00
-tags: [my-online-gym, linux]
+tags: [my-online-gym, linux, azure]
 description: Linux Server 배포하기
 ---
 
