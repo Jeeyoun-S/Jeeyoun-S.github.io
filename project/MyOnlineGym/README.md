@@ -13,7 +13,7 @@ sitemap: false
       cursor: pointer;
       font-weight: bolder;
     }
-    details summary div {
+    details div {
       padding-left: 25px;
     }
   </style>
