@@ -7,35 +7,88 @@ sitemap: false
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-## Project 소개
-1. 기획 배경
+## 소개
+- **주제** 모의투식투자 안드로이드 앱 개발
+- **기간** 2022.10.01 ~ ing
+- **팀원** 권영우 김수빈 서다경 서지윤 임혜진
+- **서비스 기본 아이디어** 주식 정보를 조회할 수 있고, 주식 투자를 체험할 수 있는 앱
+- **핵심 기능** 모의로 주식과 외환 매매, 주식 정보 조회
 
-2. 목표
+## 역할
+- **권영우** Database
+- **김수빈** Android 구현
+- **서다경** Android 구현
+- **서지윤** Rest API 구현
+- **임혜진** Rest API 구현
 
-3. 개발 환경
-  - Frontend  
-    <img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white">
-  - Backend  
-    <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat&logo=SpringBoot&logoColor=white"> <img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=flat&logo=EclipseIDE&logoColor=white"> <img src="https://img.shields.io/badge/Java8-007396?style=flat&logo=Java&logoColor=white"> <img src="https://img.shields.io/badge/Gradle-02303A?style=flat&logo=Gradle&logoColor=white">
-  - Database  
-    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white">
-  - Tools  
-    <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"> <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white">
-  - Server  
-    <img src="https://img.shields.io/badge/Amazon EC2-FF9900?style=flat&logo=AmazonEC2&logoColor=white"> <img src="https://img.shields.io/badge/Windows-0078D6?style=flat&logo=Windows&logoColor=white">
+## 개발 환경
+<details>
+  <summary>Frontend</summary>
+  <div class="open">
+    <div class="icons">
+      <img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white">
+    </div>
+    <div class="explain">
+      안드로이드 앱 개발을 위해 Android Studio를 사용했습니다.
+    </div>
+</details>
 
-## Team
-- 권영우
-- 임혜진
-- 서지윤
-- 김수빈
-- 서다경
+<details>
+  <summary>Backend</summary>
+  <div class="open">
+    <div class="icons">
+      <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat&logo=SpringBoot&logoColor=white"> 
+      <img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=flat&logo=EclipseIDE&logoColor=white"> 
+      <img src="https://img.shields.io/badge/Java8-007396?style=flat&logo=Java&logoColor=white"> 
+      <img src="https://img.shields.io/badge/Gradle-C71A36?style=flat&logo=Gradle&logoColor=white"> 
+      <img src="https://img.shields.io/badge/Swagger2-85EA2D?style=flat&logo=Swagger&logoColor=white"> 
+      <img src="https://img.shields.io/badge/mybatis-000000?style=flat&logo=MyBatis&logoColor=white">
+    </div>
+    <div class="explain">
+      안드로이드 앱 개발을 위해 Android Studio를 사용했습니다.
+    </div>
+</details>
 
-## 진행 일정
+<details>
+  <summary>Database</summary>
+  <div class="open">
+    <div class="icons">
+      <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white"> 
+      <img src="https://img.shields.io/badge/JSON-000000?style=flat&logo=JSON&logoColor=white">
+    </div>
+    <div class="explain">
+      MySQL을 사용하고, JSON으로 데이터를 생성해 DB로 옮겨주거나 JSON 파일에서 바로 가져다 쓰는 방법을 사용했습니다. 
+    </div>
+  </div>
+</details>
 
-## 시스템 구조도
-1. Database ERD
-2. Spring Boot Class Diagram
+<details>
+  <summary>Tools</summary>
+  <div class="open">
+    <div class="icons">
+      <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"> 
+      <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white">
+      <img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=Discord&logoColor=white">
+    </div>
+    <div class="explain">
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <div class="open">
+    <div class="icons">
+      <img src="https://img.shields.io/badge/Amazon EC2-FF9900?style=flat&logo=AmazonEC2&logoColor=white"> 
+      <img src="https://img.shields.io/badge/Windows-0078D6?style=flat&logo=Windows&logoColor=white">
+    </div>
+    <div class="explain">
+    </div>
+  </div>
+</details>
+
+## 진행
+
 
 ## 주요 기능
 
