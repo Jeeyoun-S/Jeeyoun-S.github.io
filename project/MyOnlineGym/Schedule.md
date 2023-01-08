@@ -48,7 +48,7 @@ permalink: /project/my-online-gym/schedule/
         }
         .container .detail .type {
             font-weight: bolder;
-            width: 30px;
+            width: 100px;
         }
         .container .detail .plan {
             background-color: yellow;
@@ -56,6 +56,10 @@ permalink: /project/my-online-gym/schedule/
         }
         .container .detail .db {
             background-color: pink;
+            color: black;
+        }
+        .container .detail .front {
+            background-color: green;
             color: black;
         }
         .container .detail .person {
@@ -89,6 +93,11 @@ permalink: /project/my-online-gym/schedule/
             <div class="detail">
                 <span class="type db">DB</span>
                 &emsp;DB 설계 및 쿼리문 작성&emsp;
+                <span class="person">-서지윤</span>
+            </div>
+            <div class="detail">
+                <span class="type front">프론트엔드</span>
+                &emsp;홈 화면 구현 및 전체 디자인 구상&emsp;
                 <span class="person">-서지윤</span>
             </div>
         </li>
