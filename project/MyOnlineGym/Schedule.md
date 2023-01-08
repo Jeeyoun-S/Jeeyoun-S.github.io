@@ -43,7 +43,7 @@ permalink: /project/my-online-gym/schedule/
             font-weight: bolder;
         }
         .container .detail {
-            font-size: 13px;
+            font-size: 14px;
             margin: 0px;
         }
         .container .detail .type {

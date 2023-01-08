@@ -8,10 +8,10 @@ description: Azure VM으로 Linux Server 배포하기
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-# Linux
-`sudo apt update`
+### Linux
+1. 패키지 갱신 `sudo apt update`
 
-## Linux Server 접속하기
+### Linux Server 접속하기
 1. 서버 연결 `ssh my-online-gym@172.174.120.196`
 2. root 계정으로 이동 `sudo su -`
 
