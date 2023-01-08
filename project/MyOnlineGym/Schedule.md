@@ -48,6 +48,7 @@ permalink: /project/my-online-gym/schedule/
         }
         .container .detail .type {
             font-weight: bolder;
+            width: 30px;
         }
         .container .detail .plan {
             background-color: yellow;
