@@ -95,11 +95,7 @@ permalink: /project/my-online-gym/schedule/
             <div class="time">2022.11.18</div>
             <div class="detail">
                 <span class="type plan">기획</span>
-                &emsp;아이디어 회의
-            </div>
-            <div class="detail">
-                <span class="type plan">기획</span>
-                &emsp;요구사항 명세서 작성
+                &emsp;아이디어 회의, 요구사항 명세서 작성
             </div>
             <div class="detail">
                 <span class="type db">DB</span>
@@ -114,11 +110,7 @@ permalink: /project/my-online-gym/schedule/
             <div class="time">2022.11.19</div>
             <div class="detail">
                 <span class="type plan">기획</span>
-                &emsp;프로젝트 일정 회의
-            </div>
-            <div class="detail">
-                <span class="type plan">기획</span>
-                &emsp;목업 제작
+                &emsp;프로젝트 일정 회의, 목업 제작
             </div>
             <div class="detail">
                 <span class="type data">데이터</span>
