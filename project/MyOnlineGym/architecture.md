@@ -10,7 +10,7 @@ permalink: /project/my-online-gym/architecture/
 ## Architecture
 
 ## ERD
-<img src="erd.png" alt="My Online Gym ERD"/>
+<img src="project/MyOnlineGym/erd.png" alt="My Online Gym ERD"/>
 
 ## SpringBoot Class Diagram
 
