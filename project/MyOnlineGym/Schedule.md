@@ -183,7 +183,7 @@ permalink: /project/my-online-gym/schedule/
         <li class="list-item">
             <div class="time">2022.11.25</div>
             <div class="detail">
-                <span class="type front">발표</span>
+                <span class="type presentation">발표</span>
                 &emsp;발표 진행
             </div>
         </li>
@@ -191,3 +191,48 @@ permalink: /project/my-online-gym/schedule/
 </div>
 
 ## 피드백 반영
+<div class="container">
+    <ul class="list">
+        <li class="list-item">
+            <div class="time">2022.12.05</div>
+            <div class="detail">
+                <span class="type back">백엔드</span>
+                &emsp;Rest API 응답 형식 변경, Swagger 버전 변경, Swagger 응답 예시 추가
+            </div>
+        </li>
+        <li class="list-item">
+            <div class="time">2022.12.06</div>
+            <div class="detail">
+                <span class="type front">프론트엔드</span>
+                &emsp;건강기능식품·영상 상세 페이지 URL 수정, Rest API 응답 형식 맞춰 axios 수정
+            </div>
+        </li>
+        <li class="list-item">
+            <div class="time">2022.12.07</div>
+            <div class="detail">
+                <span class="type front">프론트엔드</span>
+                &emsp;일정 추가·수정, 영상·건강기능식품·쇼핑몰 목록 UI 수정
+            </div>
+        </li>
+    </ul>
+</div>
+
+## 배포
+<div class="container">
+    <ul class="list">
+        <li class="list-item">
+            <div class="time">2023.01.03</div>
+            <div class="detail">
+                <span class="type publish">배포</span>
+                &emsp;Azure 가상 머신 생성, 배포 환경 세팅, DB 구축
+            </div>
+        </li>
+        <li class="list-item">
+            <div class="time">2023.01.08</div>
+            <div class="detail">
+                <span class="type publish">배포</span>
+                &emsp;건강기능식품·영상 상세 페이지 URL 수정, Rest API 응답 형식 맞춰 axios 수정
+            </div>
+        </li>
+    </ul>
+</div>
