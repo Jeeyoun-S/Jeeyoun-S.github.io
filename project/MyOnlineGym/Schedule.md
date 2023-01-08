@@ -6,6 +6,9 @@ permalink: /project/my-online-gym/schedule/
 ---
 <head>
     <style>
+        .uk-container {
+            width: 100px;
+        }
         .uk-timeline .uk-timeline-item .uk-card {
             max-height: 300px;
         }
@@ -21,10 +24,10 @@ permalink: /project/my-online-gym/schedule/
             position: absolute;
             top: 20px;
             width: 2px;
-                z-index: -1;
+            z-index: -1;
         }
         .uk-timeline .uk-timeline-item .uk-timeline-icon .uk-badge {
-                margin-top: 20px;
+            margin-top: 20px;
             width: 40px;
             height: 40px;
         }
