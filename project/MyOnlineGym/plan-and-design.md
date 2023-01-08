@@ -116,13 +116,13 @@ permalink: /project/my-online-gym/plan-and-design/
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="/project/MyOnlineGym/mock-up/slide1.PNG" class="d-block w-100" alt="로그인 이전 메인 페이지">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="/project/MyOnlineGym/mock-up/slide2.PNG" class="d-block w-100" alt="로그인 이후 메인 페이지">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="/project/MyOnlineGym/mock-up/slide3.PNG" class="d-block w-100" alt="게스트 이용 시 메인 페이지">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
