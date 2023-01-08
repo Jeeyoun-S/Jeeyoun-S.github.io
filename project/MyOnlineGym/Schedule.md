@@ -49,19 +49,36 @@ permalink: /project/my-online-gym/schedule/
         .container .detail .type {
             display:inline-block;
             width: 100px;
+            text-align: center;
             font-weight: bolder;
         }
         .container .detail .plan {
-            background-color: yellow;
-            color: black;
+            background-color: #FF0000;
+            color: white;
         }
         .container .detail .db {
-            background-color: pink;
+            background-color: #FFE400;
             color: black;
         }
         .container .detail .front {
-            background-color: green;
+            background-color: #ABF200;
             color: black;
+        }
+        .container .detail .data {
+            background-color: #00D8FF;
+            color: black;
+        }
+        .container .detail .back {
+            background-color: #FF00DD;
+            color: white;
+        }
+        .container .detail .presentation {
+            background-color: #5F00FF;
+            color: white;
+        }
+        .container .detail .publish {
+            background-color: #0054FF;
+            color: white;
         }
         .container .detail .person {
             font-style: italic;
