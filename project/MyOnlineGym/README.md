@@ -16,6 +16,9 @@ sitemap: false
     details div.open {
       padding-left: 25px;
     }
+    details div.explain {
+      font-size: 14px;
+    }
   </style>
 </head>
 
