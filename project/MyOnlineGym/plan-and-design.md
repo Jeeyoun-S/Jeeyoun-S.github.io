@@ -109,4 +109,4 @@ permalink: /project/my-online-gym/plan-and-design/
         1. 게스트 사용자를 만드는 것이 어렵다면 로그아웃 상태에서 사용할 수 있는 기능에 제한을 둔다.
 
 ## 화면 설계서
-<img src="/mock-up/">
+<img src="/mock-up/slide1.PNG">
