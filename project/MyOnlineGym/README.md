@@ -13,6 +13,9 @@ sitemap: false
       cursor: pointer;
       font-weight: bolder;
     }
+    details summary div {
+      padding-left: 25px;
+    }
   </style>
 </head>
 
@@ -61,26 +64,12 @@ sitemap: false
 <details>
   <summary>Backend</summary>
   <div>
-    <ul>
-      <li>
-        <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat&logo=SpringBoot&logoColor=white"> 
-      </li>
-      <li>
-        <img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=flat&logo=EclipseIDE&logoColor=white"> 
-      </li>
-      <li>
-        <img src="https://img.shields.io/badge/Java8-007396?style=flat&logo=Java&logoColor=white"> 
-      </li>
-      <li>
-        <img src="https://img.shields.io/badge/Apache Maven-C71A36?style=flat&logo=ApacheMaven&logoColor=white"> 
-      </li>
-      <li>
-        <img src="https://img.shields.io/badge/Swagger3-85EA2D?style=flat&logo=Swagger&logoColor=white"> 
-      </li>
-      <li>
-        <img src="https://img.shields.io/badge/mybatis-000000?style=flat&logo=MyBatis&logoColor=white">
-      </li>
-    </ul>
+    <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat&logo=SpringBoot&logoColor=white"> 
+    <img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=flat&logo=EclipseIDE&logoColor=white"> 
+    <img src="https://img.shields.io/badge/Java8-007396?style=flat&logo=Java&logoColor=white"> 
+    <img src="https://img.shields.io/badge/Apache Maven-C71A36?style=flat&logo=ApacheMaven&logoColor=white"> 
+    <img src="https://img.shields.io/badge/Swagger3-85EA2D?style=flat&logo=Swagger&logoColor=white"> 
+    <img src="https://img.shields.io/badge/mybatis-000000?style=flat&logo=MyBatis&logoColor=white">
   </div>
 </details>
 

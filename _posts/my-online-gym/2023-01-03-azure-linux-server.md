@@ -3,8 +3,10 @@ title: Azure VM으로 Linux Server 배포하기
 date: 2023-01-03 00:00:00 +07:00
 modified: 2023-01-03 00:00:00 +07:00
 tags: [my-online-gym, linux, azure]
-description: Linux Server 배포하기
+description: Azure VM으로 Linux Server 배포하기
 ---
+0. this unordered seed list will be replaced by toc as unordered list
+{:toc}
 
 # Linux
 `sudo apt update`
@@ -22,6 +24,9 @@ description: Linux Server 배포하기
         ```
 3. 종료 `exit`
 
+### Linux 폴더
+1. 내부 폴더 목록 확인 `ls`
+
 ### Linux 서버로 파일 옮기기
 1. Local의 ssafit_schema.sql을 Server의 home/my-online-gym/sql로 복사
         ```powershell
@@ -33,8 +38,12 @@ description: Linux Server 배포하기
 2. Java 설치 확인 `java -version`
 
 ### Spring Boot 배포하기
-1. 
+1. 프로젝트 배포 파일 .jar 생성하기
+        `프로젝트 우클릭 > Run > Maven Build...`
+2. `git clone (git repo 주소)`으로 서버에 파일 가져오기
+3. `cd (project)\target`으로 폴더 이동
+4. `java -jar (project)-0.0.1-SNAPSHOT.jar` 실행
+5. 백그라운드 실행 시, `nohup java -jar (project)-0.0.1-SNAPSHOT.jar &`
+6. 백그라운드 실행 확인 `cat nohup.out`
 
-### Linux 폴더
-1. 내부 폴더 목록 확인 `ls`
-2. 
+### Vue 배포하기
