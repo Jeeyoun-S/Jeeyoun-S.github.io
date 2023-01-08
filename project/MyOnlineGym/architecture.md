@@ -10,9 +10,12 @@ permalink: /project/my-online-gym/architecture/
 ## Architecture
 
 ## ERD
+- MySQL Database `ssafit_db` 구조
 <img src="/project/MyOnlineGym/erd.png" alt="My Online Gym ERD"/>
 
 ## SpringBoot Class Diagram
+- 주요 기능 Controller, Service, Dao로 구성
+<img src="/project/MyOnlineGym/class_diagram.png" alt="My Online Gym ERD"/>
 
 ## Vue.js Project Structure
 
