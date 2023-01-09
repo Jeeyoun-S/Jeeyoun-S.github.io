@@ -77,10 +77,10 @@ public interface UserRepository extends Repository<User, String> {
 3. `findAll()` 모두 조회
 
 #### order
-1. `findBy___OrderBy_______`
-    - `List<User> findByNameLikeOrderByNameDesc(String keyword);`
+1. `findBy___OrderBy_______` 
+    - `List<User> findByNameLikeOrderByNameDesc(String keyword);`  
        = `SELECT * FROM db WHERE name LIKE keyword ORDER BY name DESC`
-    - `List<User> findByNameLikeOrderByNameAscEmailAsc(String keyword);`
+    - `List<User> findByNameLikeOrderByNameAscEmailAsc(String keyword);`  
       = `SELECT * FROM db WHERE name LIKE keyword ORDER BY name ASC email ASC`
 
 #### save 동작 과정
