@@ -55,11 +55,13 @@ public interface UserRepository extends Repository<User, String> {
   User findById(String email); // 해당 Entity가 없다면 null 반환
   Optional<User> findById(String email); // 해당 Entity가 없다면 empty Optional 반환
   
-  // delete
+  // delete : Entity 삭제
   void delete(User user);
   void deleteById(String email); // findById() 실행 후, delete()
   
-  
+  // save : Entity 저장
+  void save(User user);
+  User save(User user);
 }
 ```
 
