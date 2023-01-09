@@ -68,6 +68,15 @@ public interface UserRepository extends Repository<User, String> {
 #### save 동작 과정
 1. 새로운 Entity인지 판단
     - Persistable을 구현한 Entity
+        ```java
+        // Persistable 구현 예시
+        @Entity
+        @Table(name = "user")
+        public class User implements Persistable<String> {
+            @Transient
+            private boolean isNew = true;
+        }
+        ```
     - @Version 속성 존재 & 버전 값 null
     - 식별자가 참조 타입 & null
     - 식별자가 숫자 타입 & 0  
