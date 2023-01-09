@@ -67,14 +67,14 @@ public interface UserRepository extends Repository<User, String> {
 
 ### findBy____ 특정 조건으로 찾기
 1. `findBy____`
-    - 1개 특정값 : `List<User> findByName(String name);`
-    - 2개 이상 특정값 : `List<User> findByNameAndAge(String name, int age);`
+    - 1개 특정값 `List<User> findByName(String name);`
+    - 2개 이상 특정값 `List<User> findByNameAndAge(String name, int age);`
 2. 조건 비교
     - `List<User> findByNameLike(String keyword);`
     - `List<User> findByCreatedAtAfter(LocalDateTime time);`
     - `List<User> findByCreatedAtBetween(int from, int to)`
     - `LessThan` `IsNull` `Containing` `In`
-3. `findAll()` : 모두 조회
+3. `findAll()` 모두 조회
 
 #### save 동작 과정
 1. 새로운 Entity인지 판단
