@@ -72,7 +72,7 @@ public interface UserRepository extends Repository<User, String> {
 2. 조건 비교
     - `List<User> findByNameLike(String keyword);`
     - `List<User> findByCreatedAtAfter(LocalDateTime time);`
-    - `List<User> findByCreatedAtBetween(int from, int to)`
+    - `List<User> findByCreatedAtBetween(int from, int to);`
     - `LessThan` `IsNull` `Containing` `In` 등
 3. `findAll()` 모두 조회
 
@@ -86,7 +86,7 @@ public interface UserRepository extends Repository<User, String> {
     - 정렬 조건 1개
       ```java
       Sort sort = Sort.by(Sort.Order.asc("name"));
-      List<User> user = userRepository.findByNameLike("김%", sort)
+      List<User> user = userRepository.findByNameLike("김%", sort);
       ```
     - 정렬 조건 2개 이상
       ```java
@@ -94,23 +94,45 @@ public interface UserRepository extends Repository<User, String> {
       List<User> user = userRepository.findByNameLike("이%", sort);
       ```
 
-#### Paging - Pageable & Request
-- **Pageable** Interface
-- **Request**
-
-1. 조회
-  ```java
-  // 한 페이지에 10개 기준으로 두 번째 페이지 조회 (page는 0부터 시작)
-  Pageable pageable = PageRequest.ofSize(10).withPage(1);
-  List<User> user = userRepository.findByNameLike("김%", pageable);
-  ```
-2. 조회 & 정렬
-  ```java
-  Sort sort = Sort.by(Sort.Order.asc("name"), Sort.Order.desc("email"));
-  Pageable pageable = PageReuqest.ofSize(10).withPage(1).withSort(sort);
-  List<User> user = userRepository.findByNameLike("박%", pageable);
-  ```
-    
+#### Paging
+- **Pageable** & **PageRequest**
+    - 조회
+      ```java
+      // 한 페이지에 10개 기준으로 두 번째 페이지 조회 (page는 0부터 시작)
+      Pageable pageable = PageRequest.ofSize(10).withPage(1);
+      List<User> user = userRepository.findByNameLike("김%", pageable);
+      ```
+    - 조회 & 정렬
+      ```java
+      Sort sort = Sort.by(Sort.Order.asc("name"), Sort.Order.desc("email"));
+      Pageable pageable = PageReuqest.ofSize(10).withPage(1).withSort(sort);
+      List<User> user = userRepository.findByNameLike("박%", pageable);
+      ```
+- Page Type
+    - 전체 페이지 개수, 전체 개수 등 페이징 처리에 필요한 값 제공
+      ```java
+      // Page Type으로 DB 정보 조회하기
+      Pageable pageable = PageRequest.ofSize(10).withPage(0).withSort(sort);
+      Page<User> page = userRepository.findByNameLike("%지%", pageable);
+        
+      // 전체 개수
+      long totalElements = page.getTotalElements();
+        
+      // 전체 페이지 수
+      long totalPages = page.getTotalPages();
+        
+      // 현재 페이지 결과 목록
+      List<User> content = page.getContent();
+        
+      // 페이지 크기
+      int size = page.getSize();
+        
+      // 현재 페이지
+      int pageNumber = page.getNumber();
+        
+      // content의 개수
+      int numberOfElements = page.getNumberOfElements();
+      ```
 
 #### save 동작 과정
 1. **새로운 Entity인지 판단**
