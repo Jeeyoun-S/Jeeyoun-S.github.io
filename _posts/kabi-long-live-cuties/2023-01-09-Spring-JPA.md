@@ -1,9 +1,9 @@
 ---
-title: Spring JPA 기초 다지기
+title: Spring JPA 기초 다지기 (1)
 date: 2023-01-09 00:00:00 +07:00
 modified: 2023-01-09 00:00:00 +07:00
 tags: [kabi-long-live-cuties, spring]
-description: Spring JPA 기초 다지기
+description: Spring JPA 기초 다지기 (1)
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
@@ -82,6 +82,17 @@ public interface UserRepository extends Repository<User, String> {
        = `SELECT * FROM db WHERE name LIKE word ORDER BY name DESC`
     - `List<User> findByNameLikeOrderByNameAscEmailAsc(String word);`  
       = `SELECT * FROM db WHERE name LIKE word ORDER BY name ASC email ASC`
+2. `Sort`
+    - 정렬 조건 1개
+      ```java
+      Sort sort = Sort.by(Sort.Order.asc("name"));
+      List<User> user = userRepository.findByNameLike("김%", sort)
+      ```
+    - 정렬 조건 2개 이상
+      ```java
+      Sort sort = Sort.by(Sort.Order.asc("name"), Sort.Order.desc("age"));
+      List<User> user = userRepository.findByNameLike("이%", sort);
+      ```
 
 #### save 동작 과정
 1. 새로운 Entity인지 판단
@@ -104,8 +115,6 @@ public interface UserRepository extends Repository<User, String> {
 
     2. 새로운 Entity가 아닌 경우  
         - EntityManager#merge() 실행  
-
-#### @Query
 
 ### 참고자료
 - []()
