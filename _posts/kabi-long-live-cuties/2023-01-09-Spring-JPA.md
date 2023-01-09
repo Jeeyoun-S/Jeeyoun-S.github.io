@@ -65,6 +65,15 @@ public interface UserRepository extends Repository<User, String> {
 }
 ```
 
+#### save 동작 과정
+1. 새로운 Entity인지 판단
+    - Persistable을 구현한 Entity
+    - @Version 속성 존재 & 버전 값 null
+    - 식별자가 참조 타입 & null
+    - 식별자가 숫자 타입 & 0
+2-1. 새로운 Entity인 경우
+2-2. 새로운 Entity가 아닌 경우
+
 ### 참고자료
 - []()
 - [inflearn JPA & Spring Data JPA 기초](https://www.inflearn.com/course/jpa-spring-data-%EA%B8%B0%EC%B4%88/dashboard)
