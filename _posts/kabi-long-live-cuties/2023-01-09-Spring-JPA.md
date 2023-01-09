@@ -65,7 +65,7 @@ public interface UserRepository extends Repository<User, String> {
 }
 ```
 
-#### findBy____ 특정 조건으로 찾기
+#### findBy____ 명명 
 1. `findBy____`
     - 1개 특정값 `List<User> findByName(String name);`
     - 2개 이상 특정값 `List<User> findByNameAndAge(String name, int age);`
@@ -155,6 +155,25 @@ public interface UserRepository extends Repository<User, String> {
 
     2. **새로운 Entity가 아닌 경우**  
         - EntityManager#merge() 실행  
+
+### @Query
+1. 쿼리문을 작성해 사용
+2. 예시
+    - 기본
+      ```java
+      @Query("SELECT * FROM user WHERE createDate > :now")
+      List<User> findUsers(@Param("now") LocalDateTime now);
+      ```
+    - Sort도 함께 사용
+      ```java
+      @Query("SELECT * FROM user WHERE createDate > :now")
+      List<User> findUsers(@Param("now") LocalDateTime now, Sort sort);
+      ```
+    - Pageable도 함께 사용
+      ```java
+      @Query("SELECT * FROM user WHERE createDate > :now")
+      List<User> findUsers(@Param("now") LocalDateTime now, Pageable pageable);
+      ```
 
 ### 참고자료
 - []()
