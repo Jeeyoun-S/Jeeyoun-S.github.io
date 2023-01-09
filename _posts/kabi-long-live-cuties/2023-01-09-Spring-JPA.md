@@ -8,6 +8,28 @@ description: Spring JPA 기초 다지기
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
+### JPA란?
+
+### application.properties 설정
+```
+# MySQL
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/(Database name)&serverTimezone=UTC&autoReconnect=true&allowMultiQueries=true&characterEncoding=UTF-8
+spring.datasource.username=(username)
+spring.datasource.password=(password)
+  
+# JPA
+spring.jpa.database=mysql
+spring.jpa.open-in-view=false
+  
+# Hibernate
+logging.level.org.hibernate.SQL=DEBUG
+```
+
+### Repository Interface
+```java
+```
+
 ### Class - Table Mapping
 ```java
 @Entity                // DB 테이블과 매핑할 대상
