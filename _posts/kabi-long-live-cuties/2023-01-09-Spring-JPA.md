@@ -95,7 +95,7 @@ public interface UserRepository extends Repository<User, String> {
       ```
 
 #### Paging
-- **Pageable** & **PageRequest**
+- Pageable & PageRequest
     - 조회
       ```java
       // 한 페이지에 10개 기준으로 두 번째 페이지 조회 (page는 0부터 시작)
