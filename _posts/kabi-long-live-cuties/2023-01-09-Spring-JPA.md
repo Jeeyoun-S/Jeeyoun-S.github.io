@@ -14,7 +14,7 @@ description: Spring JPA 기초 다지기
 ```
 # MySQL
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.url=jdbc:mysql://localhost:3306/(Database name)&characterEncoding=UTF-8
+spring.datasource.url=jdbc:mysql://localhost:3306/(database)
 spring.datasource.username=(username)
 spring.datasource.password=(password)
   
@@ -52,8 +52,8 @@ public class User {
 public interface UserRepository extends Repository<User, String> {
   
   // findBy___ : ___으로 Entity 조회
-  User findById(String email); // 해당 Entity가 없다면 null 반환
-  Optional<User> findById(String email); // 해당 Entity가 없다면 empty Optional 반환
+  User findById(String email); // Entity가 없다면 null 반환
+  Optional<User> findById(String email); // Entity가 없다면 empty Optional 반환
   
   // delete : Entity 삭제
   void delete(User user);
