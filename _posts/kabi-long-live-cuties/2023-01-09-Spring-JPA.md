@@ -94,6 +94,24 @@ public interface UserRepository extends Repository<User, String> {
       List<User> user = userRepository.findByNameLike("이%", sort);
       ```
 
+#### Paging - Pageable & Request
+- **Pageable** Interface
+- **Request**
+
+1. 조회
+  ```java
+  // 한 페이지에 10개 기준으로 두 번째 페이지 조회 (page는 0부터 시작)
+  Pageable pageable = PageRequest.ofSize(10).withPage(1);
+  List<User> user = userRepository.findByNameLike("김%", pageable);
+  ```
+2. 조회 & 정렬
+  ```java
+  Sort sort = Sort.by(Sort.Order.asc("name"), Sort.Order.desc("email"));
+  Pageable pageable = PageReuqest.ofSize(10).withPage(1).withSort(sort);
+  List<User> user = userRepository.findByNameLike("박%", pageable);
+  ```
+    
+
 #### save 동작 과정
 1. **새로운 Entity인지 판단**
     - Persistable을 구현한 Entity
