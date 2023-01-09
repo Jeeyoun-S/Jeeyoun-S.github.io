@@ -76,7 +76,7 @@ public interface UserRepository extends Repository<User, String> {
     - `LessThan` `IsNull` `Containing` `In` 등
 3. `findAll()` 모두 조회
 
-#### order
+#### order 정렬하기
 1. `findBy___OrderBy_______` 
     - `List<User> findByNameLikeOrderByNameDesc(String keyword);`  
        = `SELECT * FROM db WHERE name LIKE keyword ORDER BY name DESC`
