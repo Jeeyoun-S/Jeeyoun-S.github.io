@@ -26,10 +26,6 @@ spring.jpa.open-in-view=false
 logging.level.org.hibernate.SQL=DEBUG
 ```
 
-### Repository Interface
-```java
-```
-
 ### Class - Table Mapping
 ```java
 @Entity                // DB 테이블과 매핑할 대상
@@ -49,3 +45,24 @@ public class User {
 }
 ```
 
+### Repository Interface
+```java
+// User : Entity Type
+// String : Entity의 식별자 Type
+public interface UserRepository extends Repository<User, String> {
+  
+  // findBy___ : ___으로 Entity 조회
+  User findById(String email); // 해당 Entity가 없다면 null 반환
+  Optional<User> findById(String email); // 해당 Entity가 없다면 empty Optional 반환
+  
+  // delete
+  void delete(User user);
+  void deleteById(String email); // findById() 실행 후, delete()
+  
+  
+}
+```
+
+### 참고자료
+- []()
+- [inflearn JPA & Spring Data JPA 기초](https://www.inflearn.com/course/jpa-spring-data-%EA%B8%B0%EC%B4%88/dashboard)
