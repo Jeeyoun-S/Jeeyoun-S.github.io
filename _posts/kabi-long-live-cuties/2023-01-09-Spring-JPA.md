@@ -72,7 +72,9 @@ public interface UserRepository extends Repository<User, String> {
     - 식별자가 참조 타입 & null
     - 식별자가 숫자 타입 & 0
 2-1. 새로운 Entity인 경우
+    - EntityManager#persist() 실행
 2-2. 새로운 Entity가 아닌 경우
+    - EntityManager#merge() 실행
 
 ### 참고자료
 - []()
