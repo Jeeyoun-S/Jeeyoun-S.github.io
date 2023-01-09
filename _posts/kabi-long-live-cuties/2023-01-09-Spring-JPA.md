@@ -78,10 +78,10 @@ public interface UserRepository extends Repository<User, String> {
 
 #### order 정렬하기
 1. `findBy___OrderBy_______` 
-    - `List<User> findByNameLikeOrderByNameDesc(String keyword);`  
-       = `SELECT * FROM db WHERE name LIKE keyword ORDER BY name DESC`
-    - `List<User> findByNameLikeOrderByNameAscEmailAsc(String keyword);`  
-      = `SELECT * FROM db WHERE name LIKE keyword ORDER BY name ASC email ASC`
+    - `List<User> findByNameLikeOrderByNameDesc(String word);`  
+       = `SELECT * FROM db WHERE name LIKE word ORDER BY name DESC`
+    - `List<User> findByNameLikeOrderByNameAscEmailAsc(String word);`  
+      = `SELECT * FROM db WHERE name LIKE word ORDER BY name ASC email ASC`
 
 #### save 동작 과정
 1. 새로운 Entity인지 판단
