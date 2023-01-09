@@ -70,8 +70,8 @@ public interface UserRepository extends Repository<User, String> {
     - 1개 특정값 : `List<User> findByName(String name);`
     - 2개 이상 특정값 : `List<User> findByNameAndAge(String name, int age);`
 2. 조건 비교
-    - `List<User> findByNameLike(String keyword);
-    - `List<User> findByCreatedAtAfter(LocalDateTime time);
+    - `List<User> findByNameLike(String keyword);`
+    - `List<User> findByCreatedAtAfter(LocalDateTime time);`
     - `List<User> findByCreatedAtBetween(int from, int to)`
     - `LessThan` `IsNull` `Containing` `In`
 3. `findAll()` : 모두 조회
