@@ -14,7 +14,7 @@ description: Spring JPA 기초 다지기
 ```
 # MySQL
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.url=jdbc:mysql://localhost:3306/(Database name)&serverTimezone=UTC&autoReconnect=true&allowMultiQueries=true&characterEncoding=UTF-8
+spring.datasource.url=jdbc:mysql://localhost:3306/(Database name)&characterEncoding=UTF-8
 spring.datasource.username=(username)
 spring.datasource.password=(password)
   
