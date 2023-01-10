@@ -6,6 +6,9 @@ sitemap: false
 ---
 <head>
   <style>
+    ul {
+      margin-bottom: 0px;
+    }
     details {
       padding-left: 20px;
     }
@@ -13,10 +16,10 @@ sitemap: false
       cursor: pointer;
       font-weight: bolder;
     }
-    details div.open {
+    div.open {
       padding-left: 25px;
     }
-    details div.explain {
+    div.explain {
       font-size: 14px;
     }
   </style>
