@@ -21,6 +21,7 @@ sitemap: false
     }
     div.explain {
       font-size: 14px;
+      padding-left: 39px;
     }
   </style>
 </head>
@@ -43,16 +44,12 @@ sitemap: false
 - **임혜진** Rest API 구현
 
 ## 개발 환경
-- **Frontend**
-<div class="open">
-  <div class="icons">
-    <img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white">
-  </div>
-  <div class="explain">
-    안드로이드 앱 개발을 위해 Android Studio를 사용했습니다.
-  </div>
+- **Frontend** <img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white">
+<div class="explain">
+  안드로이드 앱 개발을 위해 Android Studio를 사용했습니다.
 </div>
 
+- **Backend**
 <details>
   <summary>Backend</summary>
   <div class="open">
