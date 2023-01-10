@@ -81,7 +81,7 @@ comments: false
     <li class="list-item">
       <div class="time">
         <span><a href="/project/simulated-stock-app/">Simulated Stock App</a></span>&nbsp;
-        2022.10.01 ~ ing
+        2022.09.29 ~ ing
       </div>
       <p>Team Project 5인&emsp;|&emsp;Android App</p>
     </li>
