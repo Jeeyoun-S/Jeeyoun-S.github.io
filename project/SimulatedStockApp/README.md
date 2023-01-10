@@ -4,6 +4,24 @@ permalink: /project/simulated-stock-app/
 layout: page
 sitemap: false
 ---
+<head>
+  <style>
+    details {
+      padding-left: 20px;
+    }
+    details summary {
+      cursor: pointer;
+      font-weight: bolder;
+    }
+    details div.open {
+      padding-left: 25px;
+    }
+    details div.explain {
+      font-size: 14px;
+    }
+  </style>
+</head>
+
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
