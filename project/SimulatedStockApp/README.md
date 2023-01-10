@@ -43,7 +43,7 @@ sitemap: false
 - **임혜진** Rest API 구현
 
 ## 개발 환경
-- Frontend
+- **Frontend**
 <div class="open">
   <div class="icons">
     <img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white">
