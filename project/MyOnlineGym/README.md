@@ -9,15 +9,9 @@ sitemap: false
     ul {
       margin-bottom: 0px;
     }
-    ul.not-start {
-      margin-top: 0px;
-    }
     div.explain {
       font-size: 14px;
       padding-left: 39px;
-    }
-    div.not-start {
-      margin-top: 0px;
     }
   </style>
 </head>
