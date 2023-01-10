@@ -2,7 +2,7 @@
 title: Azure VM으로 Linux Server 배포하기
 date: 2023-01-03 00:00:00 +07:00
 modified: 2023-01-03 00:00:00 +07:00
-tags: [my-online-gym, linux, azure]
+tags: [my-online-gym, linux]
 description: Azure VM으로 Linux Server 배포하기
 ---
 0. this unordered seed list will be replaced by toc as unordered list
