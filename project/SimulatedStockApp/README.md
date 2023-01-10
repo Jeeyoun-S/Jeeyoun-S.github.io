@@ -40,17 +40,15 @@ sitemap: false
 - **임혜진** Rest API 구현
 
 ## 개발 환경
-<details>
-  <summary>Frontend</summary>
-  <div class="open">
-    <div class="icons">
-      <img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white">
-    </div>
-    <div class="explain">
-      안드로이드 앱 개발을 위해 Android Studio를 사용했습니다.
-    </div>
+<ul>Frontend</ul>
+<div class="open">
+  <div class="icons">
+    <img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white">
   </div>
-</details>
+  <div class="explain">
+    안드로이드 앱 개발을 위해 Android Studio를 사용했습니다.
+  </div>
+</div>
 
 <details>
   <summary>Backend</summary>
