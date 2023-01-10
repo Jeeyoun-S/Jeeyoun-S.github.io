@@ -40,7 +40,12 @@ sitemap: false
 - **임혜진** Rest API 구현
 
 ## 개발 환경
-- **Frontend**&nbsp;&nbsp;<img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white">
+<ul>
+  <li>
+    <b>Frontend</b>&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white">
+  </li>
+</ul>
 <div class="explain">
   안드로이드 앱 개발을 위해 Android Studio를 사용했습니다.
 </div>
@@ -57,63 +62,42 @@ sitemap: false
   </li>
 </ul>
 <div class="explain not-start">
-      안드로이드 앱 개발을 위해 Android Studio를 사용했습니다.
+  Rest API 개발을 위해 Spring Boot를 사용했습니다.
 </div>
 
-<details>
-  <summary>Backend</summary>
-  <div class="open">
-    <div class="icons">
-      <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat&logo=SpringBoot&logoColor=white"> 
-      <img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=flat&logo=EclipseIDE&logoColor=white"> 
-      <img src="https://img.shields.io/badge/Java8-007396?style=flat&logo=Java&logoColor=white"> 
-      <img src="https://img.shields.io/badge/Gradle-C71A36?style=flat&logo=Gradle&logoColor=white"> 
-      <img src="https://img.shields.io/badge/Swagger2-85EA2D?style=flat&logo=Swagger&logoColor=white"> 
-      <img src="https://img.shields.io/badge/mybatis-000000?style=flat&logo=MyBatis&logoColor=white">
-    </div>
-    <div class="explain">
-      안드로이드 앱 개발을 위해 Android Studio를 사용했습니다.
-    </div>
-  </div>
-</details>
+<ul class="not-start">
+  <li>
+    <b>Database</b>&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white"> 
+    <img src="https://img.shields.io/badge/JSON-000000?style=flat&logo=JSON&logoColor=white">
+  </li>
+</ul>
+<div class="explain not-start">
+  MySQL을 사용하고, JSON으로 데이터를 생성해 DB로 옮겨주거나 JSON 파일에서 바로 가져다 쓰는 방법을 사용했습니다. 
+</div>
 
-<details>
-  <summary>Database</summary>
-  <div class="open">
-    <div class="icons">
-      <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white"> 
-      <img src="https://img.shields.io/badge/JSON-000000?style=flat&logo=JSON&logoColor=white">
-    </div>
-    <div class="explain">
-      MySQL을 사용하고, JSON으로 데이터를 생성해 DB로 옮겨주거나 JSON 파일에서 바로 가져다 쓰는 방법을 사용했습니다. 
-    </div>
-  </div>
-</details>
+<ul class="not-start">
+  <li>
+    <b>Tools</b>&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"> 
+    <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white">
+    <img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=Discord&logoColor=white">
+  </li>
+</ul>
+<div class="explain not-start">
+  Notion 페이지 사용, GitHub 사용 
+</div>
 
-<details>
-  <summary>Tools</summary>
-  <div class="open">
-    <div class="icons">
-      <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"> 
-      <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white">
-      <img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=Discord&logoColor=white">
-    </div>
-    <div class="explain">
-    </div>
-  </div>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <div class="open">
-    <div class="icons">
-      <img src="https://img.shields.io/badge/Amazon EC2-FF9900?style=flat&logo=AmazonEC2&logoColor=white"> 
-      <img src="https://img.shields.io/badge/Windows-0078D6?style=flat&logo=Windows&logoColor=white">
-    </div>
-    <div class="explain">
-    </div>
-  </div>
-</details>
+<ul class="not-start">
+  <li>
+    <b>Server</b>&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/Amazon EC2-FF9900?style=flat&logo=AmazonEC2&logoColor=white"> 
+    <img src="https://img.shields.io/badge/Windows-0078D6?style=flat&logo=Windows&logoColor=white">
+  </li>
+</ul>
+<div class="explain not-start">
+  Server로 Windows를 사용
+</div>
 
 ## 진행
 
