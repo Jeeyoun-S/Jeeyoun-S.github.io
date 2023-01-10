@@ -6,18 +6,18 @@ sitemap: false
 ---
 <head>
   <style>
-    details {
-      padding-left: 20px;
+    ul {
+      margin-bottom: 0px;
     }
-    details summary {
-      cursor: pointer;
-      font-weight: bolder;
+    ul.not-start {
+      margin-top: 0px;
     }
-    details div.open {
-      padding-left: 25px;
-    }
-    details div.explain {
+    div.explain {
       font-size: 14px;
+      padding-left: 39px;
+    }
+    div.not-start {
+      margin-top: 0px;
     }
   </style>
 </head>
@@ -38,81 +38,72 @@ sitemap: false
 - [<b>서지윤(팀원)</b>](https://github.com/Jeeyoun-S) DB 구축, Rest API 구현, Frontend 구현, 배포
 
 ## 개발 환경
-<details>
-  <summary>Frontend</summary>
-  <div class="open">
-    <div class="icons">
-      <img src="https://img.shields.io/badge/vue2-4FC08D?style=flat&logo=vue.js&logoColor=white"> 
-      <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat&logo=VisualStudioCode&logoColor=white"> 
-      <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"> 
-      <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"> 
-      <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat&logo=Javascript&logoColor=white"> 
-      <img src="https://img.shields.io/badge/Vue Bootstrap-7952B3?style=flat&logo=Bootstrap&logoColor=white">
-    </div>
-    <div class="explain">
-      7일 내에 프로젝트를 완성해야 했기에, 삼성청년SW아카데미에서 그동안 배웠던 Vue.js version 2로 프론트엔드 개발을 진행했습니다.
-    </div>
-  </div>
-</details>
+<ul>
+  <li>
+    <b>Frontend</b>&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/vue2-4FC08D?style=flat&logo=vue.js&logoColor=white"> 
+    <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat&logo=VisualStudioCode&logoColor=white"> 
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"> 
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"> 
+    <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat&logo=Javascript&logoColor=white"> 
+    <img src="https://img.shields.io/badge/Vue Bootstrap-7952B3?style=flat&logo=Bootstrap&logoColor=white">
+  </li>
+</ul>
+<div class="explain">
+  7일 내에 프로젝트를 완성해야 했기에, 삼성청년SW아카데미에서 그동안 배웠던 Vue.js version 2로 프론트엔드 개발을 진행했습니다.
+</div>
 
-<details>
-  <summary>Backend</summary>
-  <div class="open">
-    <div class="icons">
-      <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat&logo=SpringBoot&logoColor=white"> 
-      <img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=flat&logo=EclipseIDE&logoColor=white"> 
-      <img src="https://img.shields.io/badge/Java8-007396?style=flat&logo=Java&logoColor=white"> 
-      <img src="https://img.shields.io/badge/Apache Maven-C71A36?style=flat&logo=ApacheMaven&logoColor=white"> 
-      <img src="https://img.shields.io/badge/Swagger3-85EA2D?style=flat&logo=Swagger&logoColor=white"> 
-      <img src="https://img.shields.io/badge/mybatis-000000?style=flat&logo=MyBatis&logoColor=white">
-    </div>
-    <div class="explain">
-      7일 내에 프로젝트를 완성해야 했기에, 삼성청년SW아카데미에서 그동안 배웠던 Spring Boot로 백엔드 개발을 진행했습니다. Spring Tools 4 for Eclipse에서 개발을 진행했고, MyBatis를 이용해 DB와 연동했습니다.
-    </div>
-  </div>
-</details>
+<ul>
+  <li>
+    <b>Backend</b>&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat&logo=SpringBoot&logoColor=white"> 
+    <img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=flat&logo=EclipseIDE&logoColor=white"> 
+    <img src="https://img.shields.io/badge/Java8-007396?style=flat&logo=Java&logoColor=white"> 
+    <img src="https://img.shields.io/badge/Apache Maven-C71A36?style=flat&logo=ApacheMaven&logoColor=white"> 
+    <img src="https://img.shields.io/badge/Swagger3-85EA2D?style=flat&logo=Swagger&logoColor=white"> 
+    <img src="https://img.shields.io/badge/mybatis-000000?style=flat&logo=MyBatis&logoColor=white">
+  </li>
+</ul>
+<div class="explain">
+  7일 내에 프로젝트를 완성해야 했기에, 삼성청년SW아카데미에서 그동안 배웠던 Spring Boot로 백엔드 개발을 진행했습니다. Spring Tools 4 for Eclipse에서 개발을 진행했고, MyBatis를 이용해 DB와 연동했습니다.
+</div>
 
-<details>
-  <summary>Database</summary>
-  <div class="open">
-    <div class="icons">
-      <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white"> 
-      <img src="https://img.shields.io/badge/JSON-000000?style=flat&logo=JSON&logoColor=white">
-    </div>
-    <div class="explain">
-      MySQL을 사용하고, JSON으로 데이터를 생성해 DB로 옮겨주거나 JSON 파일에서 바로 가져다 쓰는 방법을 사용했습니다. 
-    </div>
-  </div>
-</details>
+<ul>
+  <li>
+    <b>Database</b>&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white"> 
+    <img src="https://img.shields.io/badge/JSON-000000?style=flat&logo=JSON&logoColor=white">
+  </li>
+</ul>
+<div class="explain">
+  MySQL을 사용하고, JSON으로 데이터를 생성해 DB로 옮겨주거나 JSON 파일에서 바로 가져다 쓰는 방법을 사용했습니다. 
+</div>
 
-<details>
-  <summary>Tools</summary>
-  <div class="open">
-    <div class="icons">
-      <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"> 
-      <img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat&logo=GitLab&logoColor=white"> 
-      <img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=Discord&logoColor=white"> 
-      <img src="https://img.shields.io/badge/Webex-353535?style=flat&logo=Webex&logoColor=white">
-    </div>
-    <div class="explain">
-      삼성청년SW아카데미에서 제공하는 GitLab으로 버전 관리를 했으며, Backend와 Frontend 각각 repo를 생성했습니다. 그외에 Notion은 회의, 진행 상황, 문서 작성 시 사용했습니다. 온라인으로 소통할 경우, Discord와 Webex를 사용했습니다. 
-    </div>
-  </div>
-</details>
+<ul>
+  <li>
+    <b>Database</b>&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"> 
+    <img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat&logo=GitLab&logoColor=white"> 
+    <img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=Discord&logoColor=white"> 
+    <img src="https://img.shields.io/badge/Webex-353535?style=flat&logo=Webex&logoColor=white">
+  </li>
+</ul>
+<div class="explain">
+  삼성청년SW아카데미에서 제공하는 GitLab으로 버전 관리를 했으며, Backend와 Frontend 각각 repo를 생성했습니다. 그외에 Notion은 회의, 진행 상황, 문서 작성 시 사용했습니다. 온라인으로 소통할 경우, Discord와 Webex를 사용했습니다. 
+</div>
 
-<details>
-  <summary>Server</summary>
-  <div class="open">
-    <div class="icons">
-      <img src="https://img.shields.io/badge/Microsoft Azure VM-0078D4?style=flat&logo=MicrosoftAzure&logoColor=white"> 
-      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white"> 
-      <img src="https://img.shields.io/badge/Powershell-5391FE?style=flat&logo=Powershell&logoColor=white">
-    </div>
-    <div class="explain">
-      Azure VM으로 Linux 서버를 만들어 배포했습니다. 로컬에서는 Windows를 사용하고 있어, PowerShell로 서버와 연결해 배포 작업을 진행했습니다.
-    </div>
-  </div>
-</details>
+<ul>
+  <li>
+    <b>Server</b>&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/Microsoft Azure VM-0078D4?style=flat&logo=MicrosoftAzure&logoColor=white"> 
+    <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux&logoColor=white"> 
+    <img src="https://img.shields.io/badge/Powershell-5391FE?style=flat&logo=Powershell&logoColor=white">
+  </li>
+</ul>
+<div class="explain">
+  Azure VM으로 Linux 서버를 만들어 배포했습니다. 로컬에서는 Windows를 사용하고 있어, PowerShell로 서버와 연결해 배포 작업을 진행했습니다.
+</div>
+
 
 ## 진행
 - [일정](schedule)
