@@ -9,19 +9,12 @@ sitemap: false
     ul {
       margin-bottom: 0px;
     }
-    details {
-      padding-left: 20px;
-    }
-    details summary {
-      cursor: pointer;
-      font-weight: bolder;
-    }
-    div.open {
-      padding-left: 39px;
-    }
     div.explain {
       font-size: 14px;
       padding-left: 39px;
+    }
+    div.not-start {
+      margin-top: 0px;
     }
   </style>
 </head>
@@ -44,12 +37,16 @@ sitemap: false
 - **임혜진** Rest API 구현
 
 ## 개발 환경
-- **Frontend**&emsp;<img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white">
+- **Frontend**&nbsp;&nbsp;<img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=AndroidStudio&logoColor=white">
 <div class="explain">
   안드로이드 앱 개발을 위해 Android Studio를 사용했습니다.
 </div>
 
-- **Backend**
+- **Backend**&nbsp;&nbsp;<img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat&logo=SpringBoot&logoColor=white"> <img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=flat&logo=EclipseIDE&logoColor=white"> <img src="https://img.shields.io/badge/Java8-007396?style=flat&logo=Java&logoColor=white"> <img src="https://img.shields.io/badge/Gradle-C71A36?style=flat&logo=Gradle&logoColor=white"> <img src="https://img.shields.io/badge/Swagger2-85EA2D?style=flat&logo=Swagger&logoColor=white"> <img src="https://img.shields.io/badge/mybatis-000000?style=flat&logo=MyBatis&logoColor=white">
+<div class="explain not-start">
+      안드로이드 앱 개발을 위해 Android Studio를 사용했습니다.
+</div>
+
 <details>
   <summary>Backend</summary>
   <div class="open">
