@@ -100,7 +100,10 @@ sitemap: false
 </div>
 
 ## 진행
-- [일정]()
+- [일정](schedule)
+- [기획](plan-and-design)
+- [시스템 구조도](architecture)
+- [학습 노트](notes)
 
 ## 주요 기능
 
