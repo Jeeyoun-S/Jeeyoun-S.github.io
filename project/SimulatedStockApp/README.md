@@ -49,6 +49,7 @@ sitemap: false
     <div class="explain">
       안드로이드 앱 개발을 위해 Android Studio를 사용했습니다.
     </div>
+  </div>
 </details>
 
 <details>
