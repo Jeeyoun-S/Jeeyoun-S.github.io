@@ -17,7 +17,7 @@ sitemap: false
       font-weight: bolder;
     }
     div.open {
-      padding-left: 25px;
+      padding-left: 39px;
     }
     div.explain {
       font-size: 14px;
