@@ -192,6 +192,6 @@ public interface UserRepository extends Repository<User, String> {
       List<User> findUsers(@Param("now") LocalDateTime now, Pageable pageable);
       ```
 
-### 참고자료
+## 참고자료
 - [[스프링부트 (7)] Spring Boot JPA(1) - 시작 및 기본 설정](https://goddaehee.tistory.com/209)
 - [inflearn JPA & Spring Data JPA 기초](https://www.inflearn.com/course/jpa-spring-data-%EA%B8%B0%EC%B4%88/dashboard)
