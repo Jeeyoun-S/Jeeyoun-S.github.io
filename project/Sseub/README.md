@@ -1,6 +1,6 @@
 ---
-title: 까비야 건강해
-permalink: /project/kabi-long-live-cuties/
+title: 쓰읍 SSEUB
+permalink: /project/sseub/
 layout: page
 sitemap: false
 ---
