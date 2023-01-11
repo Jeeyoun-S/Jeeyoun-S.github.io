@@ -1,14 +1,24 @@
 ---
-title: Spring JPA 기초 다지기
+title: Spring Boot JPA 기초 다지기
 date: 2023-01-09 00:00:00 +07:00
 modified: 2023-01-10 00:00:00 +07:00
 tags: [kabi-long-live-cuties, spring]
-description: Spring JPA 기초 다지기
+description: Spring Boot JPA 기초 다지기
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-### JPA란?
+### ORM
+- Object-Relational Mapping
+- 객체와 DB의 테이블을 매핑해주는 Framework
+- SQL Query가 아닌 메서드로 데이터 조작
+- 장점
+    - 복잡도 감소
+    - 자바 객체와 쿼리 분리
+    - DB 관련 작업 편리하게 처리
+
+### JPA
+- Java Persistence API
 
 ### application.properties 설정
 ```
@@ -176,5 +186,5 @@ public interface UserRepository extends Repository<User, String> {
       ```
 
 ### 참고자료
-- []()
+- [[스프링부트 (7)] Spring Boot JPA(1) - 시작 및 기본 설정](https://goddaehee.tistory.com/209)
 - [inflearn JPA & Spring Data JPA 기초](https://www.inflearn.com/course/jpa-spring-data-%EA%B8%B0%EC%B4%88/dashboard)
