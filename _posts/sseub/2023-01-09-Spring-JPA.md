@@ -2,23 +2,31 @@
 title: Spring Boot JPA 기초 다지기
 date: 2023-01-09 00:00:00 +07:00
 modified: 2023-01-10 00:00:00 +07:00
-tags: [kabi-long-live-cuties, spring]
+tags: [ssueb, spring]
 description: Spring Boot JPA 기초 다지기
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
+## 개념
+
 ### ORM
 - Object-Relational Mapping
 - 객체와 DB의 테이블을 매핑해주는 Framework
 - SQL Query가 아닌 메서드로 데이터 조작
-- 장점
-    - 복잡도 감소
-    - 자바 객체와 쿼리 분리
-    - DB 관련 작업 편리하게 처리
+
+#### 장점
+- 복잡도 감소
+- 자바 객체와 쿼리 분리
+- DB 관련 작업 편리하게 처리
 
 ### JPA
 - Java Persistence API
+- ORM을 사용하기 위한 Interface의 
+
+### Hibernate
+
+## 구현 방법
 
 ### application.properties 설정
 ```
