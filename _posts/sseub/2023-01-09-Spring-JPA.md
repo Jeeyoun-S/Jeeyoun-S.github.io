@@ -14,15 +14,14 @@ description: Spring Boot JPA 기초 다지기
 - Object-Relational Mapping
 - 객체와 DB의 테이블을 매핑해주는 Framework
 - SQL Query가 아닌 메서드로 데이터 조작
-
-#### 장점
-- 복잡도 감소
-- 자바 객체와 쿼리 분리
-- DB 관련 작업 편리하게 처리
+- 장점
+    - 복잡도 감소
+    - 자바 객체와 쿼리 분리
+    - DB 관련 작업 편리하게 처리
 
 ### JPA
 - Java Persistence API
-- ORM을 사용하기 위한 Interface의 
+- ORM을 사용하기 위한 Interface의 집합체
 
 ### Hibernate
 
