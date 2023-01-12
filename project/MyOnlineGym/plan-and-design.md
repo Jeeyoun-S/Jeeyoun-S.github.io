@@ -240,10 +240,6 @@ permalink: /project/my-online-gym/plan-and-design/
             </ul>
          </td>
       </tr>
-      <tr>
-         <td class="title">대안<br>시나리오</td>
-         <td>OpenAPI 이용이 불가능하다면 다른 기능을 생각해 본다.</td>
-      </tr>
    </table>
    
    <li>회원가입 없이 게스트 이용 기능</li>
