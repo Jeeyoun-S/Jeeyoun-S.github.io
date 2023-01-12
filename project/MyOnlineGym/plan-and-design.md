@@ -7,7 +7,8 @@ permalink: /project/my-online-gym/plan-and-design/
 <head>
    <style>
       .title {
-         width: 100px;
+         width: 70px;
+         text-align: center;
          font-weight: bold;
       }
    </style>
