@@ -35,7 +35,7 @@ permalink: /project/my-online-gym/plan-and-design/
       <td>개요</td><td>사용자의 환경과 요망, 불편요소를 반영한 운동 루틴을 추천한다.</td>
    </tr>
    <tr>
-      <td>선행 조건</td><td>사용자의 환경과 요망, 불편요소를 반영한 운동 루틴을 추천한다.</td>
+      <td>선행 조건</td><td>사용자가 메인 페이지에서 ‘운동 루틴 추천’ 카테고리를 클릭한다.</td>
    </tr>
    <tr>
       <td>기본 시나리오</td>
