@@ -22,7 +22,7 @@ description: Project에 대한 Feedback 반영하기
     - 
 
 ### 운동 일정 관리 기능
-- [fullcalendar.io 디테일 수정하기]()
+[fullcalendar.io 디테일 수정하기]()
 
 1. 달력이 한 페이지 안에 다 들어와서 스크롤 없이 볼 수 있게.
 2. 공휴일은 구분할 수 있게 다른 색으로 표시.
