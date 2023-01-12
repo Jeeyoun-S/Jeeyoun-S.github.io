@@ -78,29 +78,30 @@ permalink: /project/my-online-gym/plan-and-design/
          <td>대안 시나리오</td><td>DB에 저장되어 있는 검색어와 비교해 일치하는 검색결과가 없다면, 자카드 유사도 검사 후 가장 가까운 검색 결과를 제시한다.</td>
       </tr>
    </table>
+   
+   <li>사용자별 운동 캘린더 기능</li>
+   <table>
+      <tr>
+         <td>개요</td><td>사용자가 메인 페이지에서 운동한 날짜와 운동량을 볼 수 있다.</td>
+      </tr>
+      <tr>
+         <td>선행 조건</td><td>사용자가 로그인한 상태라면, 메인 페이지에 표시된다.</td>
+      </tr>
+      <tr>
+         <td>기본 시나리오</td>
+         <td>
+            <ul>
+               <li>사용자의 개별 정보를 DB에서 서버로 가져온다.</li>
+               <li><a href="https://fullcalendar.io/">FullCalendar API</a>를 통해 표시된 캘린더 영역에 각 날짜의 운동여부와 운동량을 보여준다.</li>
+            </ul>
+         </td>
+      </tr>
+      <tr>
+         <td>대안 시나리오</td><td>사용자의 첫 이용이거나 게스트 이용자라면, 일정이 없는 달력을 보여준다.</td>
+      </tr>
+   </table>
 </ol>
 
-3. 사용자별 운동 캘린더 기능
-<table>
-   <tr>
-      <td>개요</td><td>사용자가 메인 페이지에서 운동한 날짜와 운동량을 볼 수 있다.</td>
-   </tr>
-   <tr>
-      <td>선행 조건</td><td>사용자가 로그인한 상태라면, 메인 페이지에 표시된다.</td>
-   </tr>
-   <tr>
-      <td>기본 시나리오</td>
-      <td>
-         <ul>
-            <li>사용자의 개별 정보를 DB에서 서버로 가져온다.</li>
-            <li><a href="https://fullcalendar.io/">FullCalendar API</a>를 통해 표시된 캘린더 영역에 각 날짜의 운동여부와 운동량을 보여준다.</li>
-         </ul>
-      </td>
-   </tr>
-   <tr>
-      <td>대안 시나리오</td><td>사용자의 첫 이용이거나 게스트 이용자라면, 일정이 없는 달력을 보여준다.</td>
-   </tr>
-</table>
 
 4. 사용자별 레벨 부여 기능
 <table>
