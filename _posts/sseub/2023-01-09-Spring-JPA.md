@@ -1,9 +1,9 @@
 ---
-title: Spring Boot JPA 기초 다지기
+title: Spring Data JPA 기초 다지기
 date: 2023-01-09 00:00:00 +07:00
 modified: 2023-01-10 00:00:00 +07:00
 tags: [ssueb, spring]
-description: Spring Boot JPA 기초 다지기
+description: Spring Data JPA 기초 다지기
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
@@ -191,6 +191,10 @@ public interface UserRepository extends Repository<User, String> {
       @Query("SELECT * FROM user WHERE createDate > :now")
       List<User> findUsers(@Param("now") LocalDateTime now, Pageable pageable);
       ```
+
+### Specification
+- 검색 조건을 생성하는 인터페이스
+
 
 ## 참고자료
 - [[스프링부트 (7)] Spring Boot JPA(1) - 시작 및 기본 설정](https://goddaehee.tistory.com/209)
