@@ -71,13 +71,15 @@ permalink: /project/my-online-gym/plan-and-design/
    <li>운동 동작 검색 기능</li>
    <table>
       <tr>
-         <td>개요</td><td>사용자가 원하는 운동을 검색 후 루틴에 추가할 수 있다. </td>
+         <td class="title">개요</td>
+         <td>사용자가 원하는 운동을 검색 후 루틴에 추가할 수 있다. </td>
       </tr>
       <tr>
-         <td>선행 조건</td><td>사용자가 운동 루틴을 추가 받은 후 ‘원하는 운동 추가’를 선택한다.</td>
+         <td class="title">선행 조건</td>
+         <td>사용자가 운동 루틴을 추가 받은 후 ‘원하는 운동 추가’를 선택한다.</td>
       </tr>
       <tr>
-         <td>기본 시나리오</td>
+         <td class="title">기본<br>시나리오</td>
          <td>
             <ul>
                <li>사용자가 원하는 운동을 검색한다.</li>
@@ -87,20 +89,23 @@ permalink: /project/my-online-gym/plan-and-design/
          </td>
       </tr>
       <tr>
-         <td>대안 시나리오</td><td>DB에 저장되어 있는 검색어와 비교해 일치하는 검색결과가 없다면, 자카드 유사도 검사 후 가장 가까운 검색 결과를 제시한다.</td>
+         <td class="title">대안<br>시나리오</td>
+         <td>DB에 저장되어 있는 검색어와 비교해 일치하는 검색결과가 없다면, 자카드 유사도 검사 후 가장 가까운 검색 결과를 제시한다.</td>
       </tr>
    </table>
    
    <li>사용자별 운동 캘린더 기능</li>
    <table>
       <tr>
-         <td>개요</td><td>사용자가 메인 페이지에서 운동한 날짜와 운동량을 볼 수 있다.</td>
+         <td class="title">개요</td>
+         <td>사용자가 메인 페이지에서 운동한 날짜와 운동량을 볼 수 있다.</td>
       </tr>
       <tr>
-         <td>선행 조건</td><td>사용자가 로그인한 상태라면, 메인 페이지에 표시된다.</td>
+         <td class="title">선행 조건</td>
+         <td>사용자가 로그인한 상태라면, 메인 페이지에 표시된다.</td>
       </tr>
       <tr>
-         <td>기본 시나리오</td>
+         <td class="title">기본<br>시나리오</td>
          <td>
             <ul>
                <li>사용자의 개별 정보를 DB에서 서버로 가져온다.</li>
@@ -109,20 +114,23 @@ permalink: /project/my-online-gym/plan-and-design/
          </td>
       </tr>
       <tr>
-         <td>대안 시나리오</td><td>사용자의 첫 이용이거나 게스트 이용자라면, 일정이 없는 달력을 보여준다.</td>
+         <td class="title">대안<br>시나리오</td>
+         <td>사용자의 첫 이용이거나 게스트 이용자라면, 일정이 없는 달력을 보여준다.</td>
       </tr>
    </table>
    
    <li>사용자별 레벨 부여 기능</li>
    <table>
       <tr>
-         <td>개요</td><td>최근 한 달 간 운동 일자에 따라 레벨을 보여준다.</td>
+         <td class="title">개요</td>
+         <td>최근 한 달 간 운동 일자에 따라 레벨을 보여준다.</td>
       </tr>
       <tr>
-         <td>선행 조건</td><td>사용자가 로그인한 상태여야 한다.</td>
+         <td class="title">선행 조건</td>
+         <td>사용자가 로그인한 상태여야 한다.</td>
       </tr>
       <tr>
-         <td>기본 시나리오</td>
+         <td class="title">기본<br>시나리오</td>
          <td>
             <ul>
                <li>로그인한 사용자의 최근 한 달 간 운동 일정을 DB에서 가져온다.</li>
@@ -132,20 +140,23 @@ permalink: /project/my-online-gym/plan-and-design/
          </td>
       </tr>
       <tr>
-         <td>대안 시나리오</td><td>사용자의 첫 이용이거나 게스트 이용자라면, 일정이 없는 달력을 보여준다.</td>
+         <td class="title">대안<br>시나리오</td>
+         <td>사용자의 첫 이용이거나 게스트 이용자라면, 일정이 없는 달력을 보여준다.</td>
       </tr>
    </table>
    
    <li>건강기능식품 품목분류정보 조회 및 검색</li>
    <table>
       <tr>
-         <td>개요</td><td>건강기능식품과 관련된 정보를 얻을 수 있도록 만든다.</td>
+         <td class="title">개요</td>
+         <td>건강기능식품과 관련된 정보를 얻을 수 있도록 만든다.</td>
       </tr>
       <tr>
-         <td>선행 조건</td><td>사용자가 건강기능식품에 대한 정보를 얻고자 ‘건강기능식품’ 카테고리를 클릭한다.</td>
+         <td class="title">선행 조건</td>
+         <td>사용자가 건강기능식품에 대한 정보를 얻고자 ‘건강기능식품’ 카테고리를 클릭한다.</td>
       </tr>
       <tr>
-         <td>기본 시나리오</td>
+         <td class="title">기본<br>시나리오</td>
          <td>
             <ul>
                <li>조회</li>
@@ -162,20 +173,23 @@ permalink: /project/my-online-gym/plan-and-design/
          </td>
       </tr>
       <tr>
-         <td>대안 시나리오</td><td>OpenAPI 이용이 불가능하다면 다른 기능을 생각해 본다.</td>
+         <td class="title">대안<br>시나리오</td>
+         <td>OpenAPI 이용이 불가능하다면 다른 기능을 생각해 본다.</td>
       </tr>
       <tr>
-         <td>기타</td><td>건강기능식품 정보는 <a href="http://www.foodsafetykorea.go.kr/api/openApiInfo.do?menu_grp=MENU_GRP31&menu_no=661&show_cnt=10&start_idx=1&svc_no=I2710">공공데이터활용 건강기능식품 품목분류정보</a> 사용</td>
+         <td class="title">기타</td>
+         <td>건강기능식품 정보는 <a href="http://www.foodsafetykorea.go.kr/api/openApiInfo.do?menu_grp=MENU_GRP31&menu_no=661&show_cnt=10&start_idx=1&svc_no=I2710">공공데이터활용 건강기능식품 품목분류정보</a> 사용</td>
       </tr>
    </table>
    
    <li>회원가입, 로그인, 로그아웃 기능 명세서</li>
    <table>
       <tr>
-         <td>개요</td><td>사용자가 회원가입, 로그인 버튼을 누르면 각 기능에 맞춰 입력창이 뜨고 정보를 입력하면 실행된다. 로그아웃은 로그인한 상태에서 로그아웃 버튼을 누르면 로그인 정보를 없앤다.</td>
+         <td class="title">개요</td>
+         <td>사용자가 회원가입, 로그인 버튼을 누르면 각 기능에 맞춰 입력창이 뜨고 정보를 입력하면 실행된다. 로그아웃은 로그인한 상태에서 로그아웃 버튼을 누르면 로그인 정보를 없앤다.</td>
       </tr>
       <tr>
-         <td>선행 조건</td>
+         <td class="title">선행 조건</td>
          <td>
             <ul>
                <li>로그인, 회원가입 : 사용자가 메인화면에 접속하여 해당 버튼을 클릭하면 기능을 실행할 수 있는 페이지로 이동한다.</li>
@@ -184,7 +198,7 @@ permalink: /project/my-online-gym/plan-and-design/
          </td>
       </tr>
       <tr>
-         <td>후행 조건</td>
+         <td class="title">후행 조건</td>
          <td>
             <ul>
                <li>로그인: 아이디와 비밀번호가 일치하지 않으면 로그인 페이지로 다시 돌아간다.</li>
@@ -193,7 +207,7 @@ permalink: /project/my-online-gym/plan-and-design/
          </td>
       </tr>
       <tr>
-         <td>기본 시나리오</td>
+         <td class="title">기본<br>시나리오</td>
          <td>
             <ul>
                <li>로그인</li>
@@ -219,34 +233,37 @@ permalink: /project/my-online-gym/plan-and-design/
          </td>
       </tr>
       <tr>
-         <td>대안 시나리오</td><td>OpenAPI 이용이 불가능하다면 다른 기능을 생각해 본다.</td>
+         <td class="title">대안<br>시나리오</td>
+         <td>OpenAPI 이용이 불가능하다면 다른 기능을 생각해 본다.</td>
       </tr>
       <tr>
-         <td>기타</td><td>건강기능식품 정보는 <a href="http://www.foodsafetykorea.go.kr/api/openApiInfo.do?menu_grp=MENU_GRP31&menu_no=661&show_cnt=10&start_idx=1&svc_no=I2710">공공데이터활용 건강기능식품 품목분류정보</a> 사용</td>
+         <td class="title">기타</td>
+         <td>건강기능식품 정보는 <a href="http://www.foodsafetykorea.go.kr/api/openApiInfo.do?menu_grp=MENU_GRP31&menu_no=661&show_cnt=10&start_idx=1&svc_no=I2710">공공데이터활용 건강기능식품 품목분류정보</a> 사용</td>
       </tr>
    </table>
    
    <li>회원가입, 로그인, 로그아웃 기능 명세서</li>
    <table>
       <tr>
-         <td>개요</td><td>사용자가 회원가입, 로그인 버튼을 누르면 각 기능에 맞춰 입력창이 뜨고 정보를 입력하면 실행된다. 로그아웃은 로그인한 상태에서 로그아웃 버튼을 누르면 로그인 정보를 없앤다.</td>
+         <td class="title">개요</td>
+         <td>사용자가 회원가입, 로그인 버튼을 누르면 각 기능에 맞춰 입력창이 뜨고 정보를 입력하면 실행된다. 로그아웃은 로그인한 상태에서 로그아웃 버튼을 누르면 로그인 정보를 없앤다.</td>
       </tr>
       <tr>
-         <td>선행 조건</td>
+         <td class="title">선행 조건</td>
          <td>
             <li>로그인, 회원가입 : 사용자가 메인화면에 접속하여 해당 버튼을 클릭하면 기능을 실행할 수 있는 페이지로 이동한다.</li>
             <li>로그아웃 : 사용자가 로그인 한 상태에서 로그아웃 버튼을 클릭하면 실행된다.</li>
          </td>
       </tr>
       <tr>
-         <td>후행 조건</td>
+         <td class="title">후행 조건</td>
          <td>
             <li>로그인: 아이디와 비밀번호가 일치하지 않으면 로그인 페이지로 다시 돌아간다.</li>
             <li>회원가입: 입력한 정보가 조건에 맞지 않으면 회원가입 페이지로 다시 돌아간다.</li>
          </td>
       </tr>
       <tr>
-         <td>기본 시나리오</td>
+         <td class="title">기본<br>시나리오</td>
          <td>
             <ul>
                <li>로그인</li>
@@ -272,24 +289,27 @@ permalink: /project/my-online-gym/plan-and-design/
          </td>
       </tr>
       <tr>
-         <td>대안 시나리오</td><td>OpenAPI 이용이 불가능하다면 다른 기능을 생각해 본다.</td>
+         <td class="title">대안<br>시나리오</td>
+         <td>OpenAPI 이용이 불가능하다면 다른 기능을 생각해 본다.</td>
       </tr>
       <tr>
-         <td>기타</td><td>건강기능식품 정보는 <a href="http://www.foodsafetykorea.go.kr/api/openApiInfo.do?menu_grp=MENU_GRP31&menu_no=661&show_cnt=10&start_idx=1&svc_no=I2710">공공데이터활용 건강기능식품 품목분류정보</a> 사용</td>
+         <td class="title">기타</td>
+         <td>건강기능식품 정보는 <a href="http://www.foodsafetykorea.go.kr/api/openApiInfo.do?menu_grp=MENU_GRP31&menu_no=661&show_cnt=10&start_idx=1&svc_no=I2710">공공데이터활용 건강기능식품 품목분류정보</a> 사용</td>
       </tr>
    </table>
    
    <li>회원가입 없이 게스트 이용 기능</li>
    <table>
       <tr>
-         <td>개요</td><td>회원가입 없이도 누구나 기능들을 이용할 수 있게, 게스트 사용자를 만든다.</td>
+         <td class="title">개요</td>
+         <td>회원가입 없이도 누구나 기능들을 이용할 수 있게, 게스트 사용자를 만든다.</td>
       </tr>
       <tr>
-         <td>선행 조건</td>
+         <td class="title">선행 조건</td>
          <td>사용자가 My Online Gym 사이트에 접속하고, 로그인을 하지 않는다. </td>
       </tr>
       <tr>
-         <td>기본 시나리오</td>
+         <td class="title">기본<br>시나리오</td>
          <td>
             <ul>
                <li>사용자가 로그인하지 않은 상태로 기능을 사용하고자 한다.</li>
@@ -299,7 +319,8 @@ permalink: /project/my-online-gym/plan-and-design/
          </td>
       </tr>
       <tr>
-         <td>대안 시나리오</td><td>게스트 사용자를 만드는 것이 어렵다면 로그아웃 상태에서 사용할 수 있는 기능에 제한을 둔다.</td>
+         <td class="title">대안<br>시나리오</td>
+         <td>게스트 사용자를 만드는 것이 어렵다면 로그아웃 상태에서 사용할 수 있는 기능에 제한을 둔다.</td>
       </tr>
    </table>
 </ol>
