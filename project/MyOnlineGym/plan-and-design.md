@@ -17,7 +17,7 @@ permalink: /project/my-online-gym/plan-and-design/
       }
       
       table {
-         margin-botton: 10px;
+         margin-bottom: 10px;
       }
    </style>
 </head>
