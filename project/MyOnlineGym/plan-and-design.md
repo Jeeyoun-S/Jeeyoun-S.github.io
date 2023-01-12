@@ -15,6 +15,10 @@ permalink: /project/my-online-gym/plan-and-design/
       table ul {
          padding-inline-start: 20px;
       }
+      
+      table {
+         margin-botton: 10px;
+      }
    </style>
 </head>
 
