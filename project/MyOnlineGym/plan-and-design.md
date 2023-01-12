@@ -270,16 +270,4 @@ permalink: /project/my-online-gym/plan-and-design/
 </ol>
 
 ## 화면 설계서
-1. <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/mock-up/slide1.PNG" target="_blank">로그인 이전 메인 페이지</a>
-2. <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/mock-up/slide2.PNG" target="_blank">로그인 이후 메인 페이지</a>
-3. <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/mock-up/slide3.PNG" target="_blank">게스트 이용 시 메인 페이지</a>
-4. <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/mock-up/slide4.PNG" target="_blank">로그인 이후 메인 페이지에서 '운동할래' 선택 - 첫 사용 시</a>
-5. <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/mock-up/slide5.PNG" target="_blank">게스트 이용 시 메인 페이지에서 '운동할래' 선택</a>
-6. <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/mock-up/slide6.PNG" target="_blank">운동 설정 완료 후 페이지</a>
-7. <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/mock-up/slide7.PNG" target="_blank">운동 검색 페이지</a>
-8. <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/mock-up/slide8.PNG" target="_blank">루틴 계산 페이지</a>
-9. <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/mock-up/slide9.PNG" target="_blank">루틴 제시 페이지</a>
-10. <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/mock-up/slide10.PNG" target="_blank">운동 피드백 페이지</a>
-11. <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/mock-up/slide11.PNG" target="_blank">로그인 이후 메인 페이지</a>
-12. <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/mock-up/slide12.PNG" target="_blank">건강기능식품 전체 조회</a>
-13. <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/mock-up/slide13.PNG" target="_blank">건강기능식품 검색 페이지</a>
+- Figma [My Online Gym](https://www.figma.com/file/oEWa8b3riPsyx4YfxOhAXz/My-Online-Gym?node-id=3%3A4&t=gTdPdXtBwo2pYqak-1)
