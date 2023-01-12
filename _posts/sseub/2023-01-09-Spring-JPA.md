@@ -20,7 +20,8 @@ description: Spring Data JPA 기초 다지기
   - DB 관련 작업 편리하게 처리
 
 ### JPA
-- Java Persistence API
+- Java Persistence API : Version 2.2
+- Jakarta Persistence API : Version 3.0
 - ORM을 사용하기 위한 Interface의 집합체
 
 ### Hibernate
