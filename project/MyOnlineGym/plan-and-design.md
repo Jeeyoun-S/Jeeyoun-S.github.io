@@ -4,6 +4,14 @@ title: 기획
 sitemap: false
 permalink: /project/my-online-gym/plan-and-design/
 ---
+<head>
+   <style>
+      .title {
+         width: 100px;
+         font-weight: bold;
+      }
+   </style>
+</head>
 
 1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
@@ -36,13 +44,15 @@ permalink: /project/my-online-gym/plan-and-design/
    <li>운동 루틴 추천 기능</li>
    <table>
       <tr>
-         <td>개요</td><td>사용자의 환경과 요망, 불편요소를 반영한 운동 루틴을 추천한다.</td>
+         <td class="title">개요</td>
+         <td>사용자의 환경과 요망, 불편요소를 반영한 운동 루틴을 추천한다.</td>
       </tr>
       <tr>
-         <td>선행 조건</td><td>사용자가 메인 페이지에서 ‘운동 루틴 추천’ 카테고리를 클릭한다.</td>
+         <td class="title">선행 조건</td>
+         <td>사용자가 메인 페이지에서 ‘운동 루틴 추천’ 카테고리를 클릭한다.</td>
       </tr>
       <tr>
-         <td>기본 시나리오</td>
+         <td class="title">기본<br>시나리오</td>
          <td>
             <ul>
                <li>사용자의 운동 환경을 입력받는다.</li>
@@ -52,7 +62,8 @@ permalink: /project/my-online-gym/plan-and-design/
          </td>
       </tr>
       <tr>
-         <td>대안 시나리오</td><td>운동 환경이 입력되어 있고 사용자가 ‘운동 검색’을 선택할 경우, 운동 검색 화면으로 이동한다.</td>
+         <td class="title">대안<br>시나리오</td>
+         <td>운동 환경이 입력되어 있고 사용자가 ‘운동 검색’을 선택할 경우, 운동 검색 화면으로 이동한다.</td>
       </tr>
    </table>
    
