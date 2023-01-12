@@ -44,7 +44,7 @@ sitemap: false
   </li>
 </ul>
 <div class="explain">
-  7일 내에 프로젝트를 완성해야 했기에, 삼성청년SW아카데미에서 그동안 배웠던 Vue2로 프론트엔드 개발을 진행했습니다. vue에서 vuex와 router를 추가해 사용했고, vue bootstrap 라이브러리호 디자인했습니다.
+  7일 내에 프로젝트를 완성해야 했기에, 삼성청년SW아카데미에서 그동안 배웠던 Vue2로 프론트엔드 개발을 진행했습니다. vue에서 vuex와 router를 추가해 사용했고, vue bootstrap 라이브러리 디자인했습니다.
 </div>
 
 <ul>
