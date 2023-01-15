@@ -88,7 +88,7 @@ comments: false
     <li class="list-item">
       <div class="time">
         <span><a href="/project/my-online-gym/">My Online Gym</a></span>&nbsp;
-        2022.11.17 ~ 2023.01.07
+        2022.11.17 ~ 2022.11.25
       </div>
       <p>Team Project 2인&emsp;|&emsp;PC Web&emsp;|&emsp;SSAFY 관통 프로젝트</p>
     </li>
