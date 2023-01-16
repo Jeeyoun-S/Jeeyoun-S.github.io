@@ -271,4 +271,4 @@ permalink: /project/my-online-gym/plan-and-design/
 
 ## 화면 설계서
 - Figma [My Online Gym](https://www.figma.com/file/oEWa8b3riPsyx4YfxOhAXz/My-Online-Gym?node-id=3%3A4&t=gTdPdXtBwo2pYqak-1)
-<img src="https://jeeyoun-s.github.io/project/MyOnlineGym/mock-up/figma.PNG" />
+<img src="https://jeeyoun-s.github.io/project/MyOnlineGym/image/figma.PNG" />
