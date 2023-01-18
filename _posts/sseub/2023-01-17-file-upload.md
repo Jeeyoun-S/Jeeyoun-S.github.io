@@ -2,7 +2,7 @@
 title: Spring Boot에서 파일 업로드 구현하기
 date: 2023-01-17 00:00:00 +07:00
 modified: 2023-01-17 00:00:00 +07:00
-tags: [ssueb]
+tags: [ssueb, ]
 description: Spring Boot에서 파일 업로드 구현하기
 ---
 
