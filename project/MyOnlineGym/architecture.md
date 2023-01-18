@@ -21,5 +21,4 @@ permalink: /project/my-online-gym/architecture/
 
 ## API Docs
 - Swagger3 사용
-- [API Docs 바로가기](http://172.174.120.196:9999/api/swagger-ui/index.html)
 <img src="/project/MyOnlineGym/image/api_docs.png" alt="API Docs"/>
