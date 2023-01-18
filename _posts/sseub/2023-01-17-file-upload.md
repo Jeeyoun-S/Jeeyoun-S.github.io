@@ -21,25 +21,25 @@ String filename = image.getOriginalFilename();
 // 파일 이름에서 확장자만 가져오기
 String extension = filename.substring(filename.lastIndexOf("."));
 
-// UUID로 파일명 생성하기
-String consultantLicenseCopyImage = UUID.randomUUID().toString() + extension;
+// UUID로 파일명 새로 생성하기
+filename = UUID.randomUUID().toString() + extension;
 
 // 저장 경로 설정하기
 String path = "C:\\Users";
 
+// File 객체 생성하기
+File file = new File(path, filename);
+
 // 1. 파일을 복사해서 넣는 방법
-File target = new File(uploadPath, fileName);
 try {
-  FileCopyUtils.copy(licenseImage.getBytes(), target);
+  FileCopyUtils.copy(image.getBytes(), file);
 } catch (IOException e) {
   e.printStackTrace();
 }
 				
 // 2. 파일을 옮기는 방법
-File target = new File(path, consultantLicenseCopyImage);
-
 try {
-  licenseImage.transferTo(target);
+  licenseImage.transferTo(file);
 } catch (IllegalStateException e) {
   e.printStackTrace();
 } catch (IOException e) {
