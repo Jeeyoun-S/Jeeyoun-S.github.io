@@ -39,7 +39,7 @@ try {
 				
 // 2. 파일을 옮기는 방법
 try {
-  licenseImage.transferTo(file);
+  image.transferTo(file);
 } catch (IllegalStateException e) {
   e.printStackTrace();
 } catch (IOException e) {
