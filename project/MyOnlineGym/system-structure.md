@@ -2,12 +2,13 @@
 layout: page
 title: 시스템 구조도
 sitemap: false
-permalink: /project/my-online-gym/architecture/
+permalink: /project/my-online-gym/system-structure/
 ---
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
 ## Architecture
+<img src="/project/MyOnlineGym/image/architecture.png" alt="Architecture"/>
 
 ## ERD
 - MySQL Database 'ssafit_db' 구조
