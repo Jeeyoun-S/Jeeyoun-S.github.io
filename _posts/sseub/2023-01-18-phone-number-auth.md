@@ -27,7 +27,7 @@ description: 무료로 휴대폰 인증 구현하기
 5. Simple & Easy Notification Service > SMS > SMS Calling Number 발신번호 등록
 6. [SMS API Docs](https://api.ncloud-docs.com/docs/ko/ai-application-service-sens-smsv2) 참고
 
-# Header 생성
+### Header 생성
 네이버 클라우드 플랫폼의 공통 호출 및 인증 방법([Ncloud API](https://api.ncloud-docs.com/docs/common-ncpapi))에 따라 Header를 생성한다.
 Header는 timestamp, access key, signature를 전달해 줘야 한다.
 
@@ -75,6 +75,6 @@ public String makeSignature(String method, String url, String timestamp) throws 
 }
 ```
 
-# 인증번호 생성
+### 인증번호 생성
 6자리 난수를 생성해 보내주고, 이를 Redis를 통해 저장하는 걸 구현하려고 한다.
-인증 번호는 Redis를 이용해 저장해 줬고, 자세한 설은 [관련 글](https://jeeyoun-s.github.io/redis/)을 참고하면 된다.
+인증 번호는 Redis를 이용해 저장해 줬고, 자세한 설명은 [관련 글](https://jeeyoun-s.github.io/redis/)을 참고하면 된다.
