@@ -77,3 +77,4 @@ public String makeSignature(String method, String url, String timestamp) throws 
 
 # 인증번호 생성
 6자리 난수를 생성해 보내주고, 이를 Redis를 통해 저장하는 걸 구현하려고 한다.
+인증 번호는 Redis를 이용해 저장해 줬고, 자세한 설은 [관련 글](https://jeeyoun-s.github.io/redis/)을 참고하면 된다.
