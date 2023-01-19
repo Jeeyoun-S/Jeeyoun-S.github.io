@@ -23,7 +23,7 @@ description: 무료로 휴대폰 인증 구현하기
 1. [Naver Cloud FlatForm](https://www.ncloud.com/) 회원가입
 2. 결제수단 등록
 3. Console 창에서 Services > Simple & Easy Notification Service 검색
-4. Simple & Easy Notification Service > Project 생성 (ServiceId를 얻을 수 있음)
+4. Simple & Easy Notification Service > Project 생성
 5. Simple & Easy Notification Service > SMS > SMS Calling Number 발신번호 등록
 6. [SMS API Docs](https://api.ncloud-docs.com/docs/ko/ai-application-service-sens-smsv2) 참고
 
