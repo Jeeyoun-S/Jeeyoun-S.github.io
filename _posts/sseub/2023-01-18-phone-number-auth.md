@@ -76,4 +76,4 @@ public String makeSignature(String method, String url, String timestamp) throws 
 ```
 
 # 인증번호 생성
-6자리 난수를 생성해 보내주고, 
+6자리 난수를 생성해 보내주고, 이를 Redis를 통해 저장하는 걸 구현하려고 한다.
