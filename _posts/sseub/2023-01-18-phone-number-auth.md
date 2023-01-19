@@ -29,7 +29,7 @@ description: 무료로 휴대폰 인증 구현하기
 
 ## Header 생성
 네이버 클라우드 플랫폼의 공통 호출 및 인증 방법([Ncloud API](https://api.ncloud-docs.com/docs/common-ncpapi))에 따라 Header를 생성한다.
-Header는 x-ncp-apigw-timestamp, x-ncp-iam-access-key, x-ncp-apigw-signature-v2를 전달해 줘야 한다.
+Header는 timestamp, access key, signature를 전달해 줘야 한다.
 
 ```java
 public HttpHeaders makeHeader(String method, String url) throws InvalidKeyException, IllegalStateException, UnsupportedEncodingException, NoSuchAlgorithmException {
@@ -52,7 +52,7 @@ public HttpHeaders makeHeader(String method, String url) throws InvalidKeyExcept
 }
 ```
 
-그중 x-ncp-apigw-signature-v2는 "요청에 맞게 StringToSign을 생성하고 SecretKey로 HmacSHA256 알고리즘으로 암호화한 후 Base64로 인코딩" 해야 한다. 
+그중 signature는 "요청에 맞게 StringToSign을 생성하고 SecretKey로 HmacSHA256 알고리즘으로 암호화한 후 Base64로 인코딩" 해야 한다. 
 ```java
 public String makeSignature(String method, String url, String timestamp) throws IllegalStateException, UnsupportedEncodingException, NoSuchAlgorithmException, InvalidKeyException {
 		
@@ -75,4 +75,5 @@ public String makeSignature(String method, String url, String timestamp) throws 
 }
 ```
 
-##
+## 인증번호 생성
+6자리 난수를 생성해 보내주고, 
