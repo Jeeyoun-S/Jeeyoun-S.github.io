@@ -9,10 +9,10 @@ description: 무료로 휴대폰 인증 구현하기
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-## 시작
+# 시작
 프로젝트를 기획하던 중 카카오톡과 메세지로 알람을 보내기 위해 휴대폰 인증을 진행하기로 했다.
 
-## 구현
+# 구현
 네이버 클라우드 플랫폼 API에서 문자 메세지 서비스를 이용해 6자리 난수를 생성해 인증번호를 보내주고, 이를 확인하는 방법으로 구현하고자 한다.
 
 ### Naver Cloud Flatform
@@ -27,7 +27,7 @@ description: 무료로 휴대폰 인증 구현하기
 5. Simple & Easy Notification Service > SMS > SMS Calling Number 발신번호 등록
 6. [SMS API Docs](https://api.ncloud-docs.com/docs/ko/ai-application-service-sens-smsv2) 참고
 
-## Header 생성
+# Header 생성
 네이버 클라우드 플랫폼의 공통 호출 및 인증 방법([Ncloud API](https://api.ncloud-docs.com/docs/common-ncpapi))에 따라 Header를 생성한다.
 Header는 timestamp, access key, signature를 전달해 줘야 한다.
 
@@ -75,5 +75,5 @@ public String makeSignature(String method, String url, String timestamp) throws 
 }
 ```
 
-## 인증번호 생성
+# 인증번호 생성
 6자리 난수를 생성해 보내주고, 
