@@ -12,13 +12,22 @@ description: 무료로 휴대폰 인증 구현하기
 ## 시작
 프로젝트를 기획하던 중 카카오톡과 메세지로 알람을 보내기 위해 휴대폰 인증을 진행하기로 했다.
 
-## Facebook Account Kit
-가장 첫 번째로 고려했던 방법이나, Facebook이 Data를 수집한다는 이야기가 있어 다른 방식으로 하기로 결정했다.
+## 구현
+네이버 클라우드 플랫폼 API에서 문자 메세지 서비스를 이용해 6자리 난수를 생성해 인증번호를 보내주고, 이를 확인하는 방법으로 구현하고자 한다.
 
-## Naver Cloud Flatform
-네이버 클라우드 플랫폼 API에서 문자 메세지 서비스를 이용해 직접 휴대폰 인증을 구현했다.
+### Naver Cloud Flatform
+네이버 클라우드 플랫폼은 "검증된 네이버의 기술과 노하우를 바탕으로 여러분의 비즈니스와 산업에 꼭 필요한 클라우드를 제공합니다."라고 홈페이지에 쓰여 있다.
+매달 50회까지 무료 SMS 전송을 지원하고, 신규 가입 고객을 대상으로 [100,000원의 할인 크레딧](https://www.ncloud.com/main/creditEvent)을 제공한다.
+약 2개월 간 진행될 프로젝트에 사용하기에는 무료로 제공하는 횟수면 충분하다고 판단했다.
 
-### Header 생성
+1. [Naver Cloud FlatForm](https://www.ncloud.com/) 회원가입
+2. 결제수단 등록
+3. Console 창에서 Services > Simple & Easy Notification Service 검색
+4. Simple & Easy Notification Service > Project 생성 (ServiceId를 얻을 수 있음)
+5. Simple & Easy Notification Service > SMS > SMS Calling Number 발신번호 등록
+6. [SMS API Docs](https://api.ncloud-docs.com/docs/ko/ai-application-service-sens-smsv2)
+
+## Header 생성
 ```java
 public HttpHeaders makeHeader(String method, String url) throws InvalidKeyException, IllegalStateException, UnsupportedEncodingException, NoSuchAlgorithmException {
 		
