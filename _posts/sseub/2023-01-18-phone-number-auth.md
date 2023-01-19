@@ -25,26 +25,54 @@ description: 무료로 휴대폰 인증 구현하기
 3. Console 창에서 Services > Simple & Easy Notification Service 검색
 4. Simple & Easy Notification Service > Project 생성 (ServiceId를 얻을 수 있음)
 5. Simple & Easy Notification Service > SMS > SMS Calling Number 발신번호 등록
-6. [SMS API Docs](https://api.ncloud-docs.com/docs/ko/ai-application-service-sens-smsv2)
+6. [SMS API Docs](https://api.ncloud-docs.com/docs/ko/ai-application-service-sens-smsv2) 참고
 
 ## Header 생성
+네이버 클라우드 플랫폼의 공통 호출 및 인증 방법([Ncloud API](https://api.ncloud-docs.com/docs/common-ncpapi))에 따라 Header를 생성한다.
+Header는 x-ncp-apigw-timestamp, x-ncp-iam-access-key, x-ncp-apigw-signature-v2를 전달해 줘야 한다.
+
 ```java
 public HttpHeaders makeHeader(String method, String url) throws InvalidKeyException, IllegalStateException, UnsupportedEncodingException, NoSuchAlgorithmException {
 		
-  // 새로운 헤더 객체 생성
-  HttpHeaders headers = new HttpHeaders();
+	// 새로운 헤더 객체 생성
+	HttpHeaders headers = new HttpHeaders();
 
-  // 현재 밀리초, API Gateway 서버와 시간 차가 5분 이상 나는 경우 유효하지 않은 요청으로 간주
-  String timestamp = String.valueOf(System.currentTimeMillis());
-      headers.set("x-ncp-apigw-timestamp", timestamp);
+	// 현재 밀리초, API Gateway 서버와 시간 차가 5분 이상 나는 경우 유효하지 않은 요청으로 간주
+	String timestamp = String.valueOf(System.currentTimeMillis());
+	headers.set("x-ncp-apigw-timestamp", timestamp);
 
-      // 네이버 클라우드 플랫폼 포털이나 Sub Account에서 발급받은 Access Key ID
-      headers.set("x-ncp-iam-access-key", accessKeyId);
+	// 네이버 클라우드 플랫폼 포털이나 Sub Account에서 발급받은 Access Key ID
+	headers.set("x-ncp-iam-access-key", accessKeyId);
 
-      // Body를 Access Key ID와 맵핑되는 Secret Key로 암호화한 서명값
-      headers.set("x-ncp-apigw-signature-v2", makeSignature(method, url, timestamp));
+	// Body를 Access Key ID와 맵핑되는 Secret Key로 암호화한 서명값
+	headers.set("x-ncp-apigw-signature-v2", makeSignature(method, url, timestamp));
 
-  return headers;
+	return headers;
 
 }
 ```
+
+그중 x-ncp-apigw-signature-v2는 "요청에 맞게 StringToSign을 생성하고 SecretKey로 HmacSHA256 알고리즘으로 암호화한 후 Base64로 인코딩" 해야 한다. 
+```java
+public String makeSignature(String method, String url, String timestamp) throws IllegalStateException, UnsupportedEncodingException, NoSuchAlgorithmException, InvalidKeyException {
+		
+	// 네이버 클라우드의 signatureKey 암호화 코드
+	String message = new StringBuilder().append(method).append(" ").append(url)
+					    .append("\n").append(timestamp).append("\n")
+					    .append(accessKeyId).toString();
+
+	// StringToSign을 생성하고 SecretKey로 HmacSHA256 알고리즘으로 암호화
+	SecretKeySpec signingKey = new SecretKeySpec(secretKey.getBytes("UTF-8"), "HmacSHA256");
+	Mac mac = Mac.getInstance("HmacSHA256");
+	mac.init(signingKey);
+	byte[] rawHmac = mac.doFinal(message.getBytes("UTF-8"));
+
+	// Base64로 인코딩
+	String encodeBase64String = Base64.encodeBase64String(rawHmac);
+
+	return encodeBase64String;
+
+}
+```
+
+##
