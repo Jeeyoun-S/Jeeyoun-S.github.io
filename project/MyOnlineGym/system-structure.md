@@ -18,8 +18,6 @@ permalink: /project/my-online-gym/system-structure/
 - 주요 기능 Controller, Service, Dao로 구성
 <img src="/project/MyOnlineGym/image/class_diagram.png" alt="SpringBoot Class Diagram"/>
 
-## Vue.js Project Structure
-
 ## API Docs
 - Swagger3 사용
 <img src="/project/MyOnlineGym/image/api_docs.png" alt="API Docs"/>
