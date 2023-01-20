@@ -27,7 +27,7 @@ sitemap: false
 - **핵심 기능** 모의로 주식과 외환 매매, 주식 정보 조회
 
 ## 역할
-- **권영우** Database
+- **권영우** Database 구축 및 데이터 크롤링
 - **김수빈** Android 구현
 - **서다경** Android 구현
 - **서지윤** Rest API 구현
@@ -41,7 +41,7 @@ sitemap: false
   </li>
 </ul>
 <div class="explain">
-  안드로이드 앱 개발을 위해 Android Studio를 사용했습니다.
+  안드로이드 앱 개발을 위해 Android Studio를 사용했으며, 언어는 Java를 이용했습니다.
 </div>
 
 <ul class="not-start">
