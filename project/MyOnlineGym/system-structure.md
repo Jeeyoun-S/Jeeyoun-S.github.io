@@ -19,10 +19,10 @@ permalink: /project/my-online-gym/system-structure/
 <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/image/architecture.png" target="_blank"><img src="/project/MyOnlineGym/image/architecture.png" alt="Architecture"/></a>
 
 ## ERD
-<img src="/project/MyOnlineGym/image/erd.png" alt="ERD"/>
+<a href="https://jeeyoun-s.github.io/project/MyOnlineGym/image/erd.png" target="_blank"><img src="/project/MyOnlineGym/image/erd.png" alt="ERD"/></a>
 
 ## SpringBoot Class Diagram
-<img src="/project/MyOnlineGym/image/class_diagram.png" alt="SpringBoot Class Diagram"/>
+<a href="https://jeeyoun-s.github.io/project/MyOnlineGym/image/class_diagram.png" target="_blank"><img src="/project/MyOnlineGym/image/class_diagram.png" alt="SpringBoot Class Diagram"/></a>
 
 ## API Docs
 <img src="/project/MyOnlineGym/image/api_docs.png" alt="API Docs"/>
