@@ -44,7 +44,7 @@ sitemap: false
   </li>
 </ul>
 <div class="explain">
-  7일 내에 프로젝트를 완성해야 했기에, 삼성청년SW아카데미에서 그동안 배웠던 Vue2로 프론트엔드 개발을 진행했습니다. vue에서 vuex와 router를 추가해 사용했고, vue bootstrap 라이브러리 디자인했습니다.
+  7일 내에 프로젝트를 완성해야 했기에, 삼성청년SW아카데미에서 그동안 배웠던 Vue2로 프론트엔드 개발을 진행했습니다. vue에서 vuex와 router를 추가해 사용했고, vue bootstrap 라이브러리로 디자인했습니다.
 </div>
 
 <ul>
@@ -70,7 +70,7 @@ sitemap: false
   </li>
 </ul>
 <div class="explain">
-  데이터베이스로 MySQL을 사용했습니다. JSON으로 데이터를 만들어 DB로 옮겨주거나 JSON 파일에서 바로 가져다 쓰는 방법도 사용했습니다. 
+  데이터베이스로 MySQL을 사용했습니다. 직접 데이터를 JSON 파일로 만들어 DB로 옮겨주거나 JSON 파일에서 바로 가져다 쓰는 방법도 사용했습니다. 
 </div>
 
 <ul>
