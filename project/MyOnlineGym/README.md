@@ -108,13 +108,7 @@ sitemap: false
 ## 주요 기능
 <video controls width="100%">
     <source src="https://jeeyoun-s.github.io/project/MyOnlineGym/video/my_online_gym.mp4" type="video/mp4">
-</video>
-1. 회원 관리 기능  
-2. 운동 일정 관리 기능  
-3. 운동 루틴 추천 기능  
-4. 운동 영상 검색 기능  
-5. 건강기능식품 검색 기능  
-6. 찜 목록 조회 기능  
+</video> 
 
 ## 개발 후기
 1. Spring Boot에서 다양한 Open API를 사용하는 방법 학습
