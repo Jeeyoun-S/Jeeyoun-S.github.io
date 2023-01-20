@@ -27,11 +27,7 @@ sitemap: false
 - **핵심 기능** 모의로 주식과 외환 매매, 주식 정보 조회
 
 ## 역할
-- **권영우** Database 구축 및 데이터 크롤링
-- **김수빈** Android 구현
-- **서다경** Android 구현
-- **서지윤** Rest API 구현
-- **임혜진** Rest API 구현
+<img src="/project/SimulatedStockApp/image/Team.png" alt="Team"/>
 
 ## 개발 환경
 <ul>
