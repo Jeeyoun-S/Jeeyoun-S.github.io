@@ -25,4 +25,4 @@ permalink: /project/my-online-gym/system-structure/
 <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/image/class_diagram.png" target="_blank"><img src="/project/MyOnlineGym/image/class_diagram.png" alt="SpringBoot Class Diagram"/></a>
 
 ## API Docs
-<img src="/project/MyOnlineGym/image/api_docs.png" alt="API Docs"/>
+<a href="https://jeeyoun-s.github.io/project/MyOnlineGym/image/api_docs_full.jpeg" target="_blank"><img src="/project/MyOnlineGym/image/api_docs.png" alt="API Docs"/></a>
