@@ -55,7 +55,7 @@ sitemap: false
     <img src="https://img.shields.io/badge/Java8-007396?style=flat&logo=Java&logoColor=white"> 
     <img src="https://img.shields.io/badge/Apache Maven-C71A36?style=flat&logo=ApacheMaven&logoColor=white"> 
     <img src="https://img.shields.io/badge/Swagger3-85EA2D?style=flat&logo=Swagger&logoColor=white"> 
-    <img src="https://img.shields.io/badge/mybatis-000000?style=flat&logo=MyBatis&logoColor=white">
+    <img src="https://img.shields.io/badge/MyBatis-000000?style=flat&logo=MyBatis&logoColor=white">
   </li>
 </ul>
 <div class="explain">
