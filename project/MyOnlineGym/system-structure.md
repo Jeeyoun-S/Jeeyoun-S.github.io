@@ -8,7 +8,7 @@ permalink: /project/my-online-gym/system-structure/
 {:toc}
 
 ## Architecture
-<img src="/project/MyOnlineGym/image/architecture.png" alt="Architecture"/>
+<a href="https://jeeyoun-s.github.io/project/MyOnlineGym/image/architecture.png" target="_blank"><img src="/project/MyOnlineGym/image/architecture.png" alt="Architecture"/></a>
 
 ## ERD
 <img src="/project/MyOnlineGym/image/erd.png" alt="ERD"/>
