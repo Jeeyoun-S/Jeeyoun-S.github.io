@@ -37,7 +37,7 @@ sitemap: false
   </li>
 </ul>
 <div class="explain">
-  안드로이드 앱 개발을 위해 Android Studio를 사용했으며, 언어는 Java를 이용했습니다.
+  안드로이드 앱 개발을 위해 Android Studio를 사용했으며, 언어는 Java를 이용했습니다. [GitHub Repo StockApp](https://github.com/subin3277/StockApp)
 </div>
 
 <ul class="not-start">
@@ -52,7 +52,7 @@ sitemap: false
   </li>
 </ul>
 <div class="explain not-start">
-  Rest API 개발을 위해 Spring Boot를 사용했습니다. Swagger2를 이용해
+  Rest API 개발을 위해 Spring Boot를 사용했습니다. Swagger2를 이용해 [GitHub Repo StockAppServer](https://github.com/hjlim7831/StockAppServer)
   
 </div>
 
@@ -93,7 +93,7 @@ sitemap: false
 ## 진행
 - [일정](schedule)
 - [기획](plan-and-design)
-- [시스템 구조도](architecture)
+- [시스템 구조도](system-structure)
 - [학습 노트](notes)
 
 ## 주요 기능

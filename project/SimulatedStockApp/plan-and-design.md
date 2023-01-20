@@ -24,3 +24,11 @@ permalink: /project/simulated-stock-app/plan-and-design/
 
 1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
+
+## 주요 기능
+
+## 요구사항 정의서
+
+## 요구사항 명세서
+
+## 스토리보드
