@@ -1,5 +1,5 @@
 ---
-title: 쓰읍 SSEUB
+title: SSEUB
 permalink: /project/sseub/
 layout: page
 sitemap: false
