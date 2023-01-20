@@ -211,7 +211,6 @@ comments: false
       <ul class="inside">
         <li>기획 회의, 취재, 기사 작성, 레이아웃 구성 등</li>
         <li>약 200명 설문조사 진행 및 결과 분석</li>
-        <li>총무부장 담당, 지출 영수증 수집 및 관리</li>
       </ul>
     </li>
     <li class="list-item">
