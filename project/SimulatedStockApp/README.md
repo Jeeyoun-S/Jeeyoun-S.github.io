@@ -48,11 +48,12 @@ sitemap: false
     <img src="https://img.shields.io/badge/Java8-007396?style=flat&logo=Java&logoColor=white"> 
     <img src="https://img.shields.io/badge/Gradle-C71A36?style=flat&logo=Gradle&logoColor=white"> 
     <img src="https://img.shields.io/badge/Swagger2-85EA2D?style=flat&logo=Swagger&logoColor=white"> 
-    <img src="https://img.shields.io/badge/mybatis-000000?style=flat&logo=MyBatis&logoColor=white">
+    <img src="https://img.shields.io/badge/MyBatis-000000?style=flat&logo=MyBatis&logoColor=white">
   </li>
 </ul>
 <div class="explain not-start">
-  Rest API 개발을 위해 Spring Boot를 사용했습니다.
+  Rest API 개발을 위해 Spring Boot를 사용했습니다. Swagger2를 이용해
+  
 </div>
 
 <ul class="not-start">
