@@ -7,6 +7,14 @@ permalink: /project/my-online-gym/system-structure/
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
+<head>
+  <style>
+    a::after {
+      display: none;  
+    }
+  </style>
+</head>
+
 ## Architecture
 <a href="https://jeeyoun-s.github.io/project/MyOnlineGym/image/architecture.png" target="_blank"><img src="/project/MyOnlineGym/image/architecture.png" alt="Architecture"/></a>
 
