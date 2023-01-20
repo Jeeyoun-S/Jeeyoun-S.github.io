@@ -112,7 +112,7 @@ sitemap: false
 4. 건강기능식품 검색 기능
 5. 회원 관리 기능
 <video controls width="250">
-    <source src="/media/cc0-videos/flower.mp4" type="video/mp4">
+    <source src="https://jeeyoun-s.github.io/project/MyOnlineGym/video/my_online_gym_5_user.mp4" type="video/mp4">
 </video>
 
 ## 개발 후기
