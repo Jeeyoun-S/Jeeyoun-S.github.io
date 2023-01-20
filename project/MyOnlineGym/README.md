@@ -111,7 +111,7 @@ sitemap: false
 3. 운동 루틴 추천 기능
 4. 건강기능식품 검색 기능
 5. 회원 관리 기능
-<video controls width="250">
+<video controls width="100%">
     <source src="https://jeeyoun-s.github.io/project/MyOnlineGym/video/my_online_gym_5_user.mp4" type="video/mp4">
 </video>
 
