@@ -273,7 +273,7 @@ permalink: /project/simulated-stock-app/plan-and-design/
       </tr>
       <tr>
          <td class="title">기본<br>시나리오</td>
-         <ul>
+         <ol>
             <li>로그인</li>
             <ul>
                <li>사용자가 로그인 페이지에서 아이디와 비밀번호를 입력하고 로그인 버튼을 클릭한다.</li>
@@ -293,7 +293,7 @@ permalink: /project/simulated-stock-app/plan-and-design/
                <li>중복이 없다면 DB에 4가지 정보를 넣어주고, 로그인 페이지로 이동한다.</li>
                <li>중복이 있다면 입력한 정보가 기존 회원과 중복해 다시 입력해 달라는 팝업을 띄운다.</li>
             </ul>
-         </ul>
+         </ol>
       </tr>
    </table>
 </ol>
