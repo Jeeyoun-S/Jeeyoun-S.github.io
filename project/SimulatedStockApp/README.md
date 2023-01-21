@@ -101,3 +101,7 @@ sitemap: false
 ## 주요 기능
 
 ## 개발 후기
+- 주식 종목 추천 알고리즘을 개발하며 유사도에 대한 학습  
+- Java로 Json 파일을 생성하고, Open API로 요청을 보내고 Json 형식의 응답을 받는 방법 학습
+- Spring Boot와 MyBatis에 대해 공부하고, Rest API에 대해 알게 됨
+- 
