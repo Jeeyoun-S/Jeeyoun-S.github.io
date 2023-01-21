@@ -20,7 +20,7 @@ permalink: /project/simulated-stock-app/plan-and-design/
          margin-bottom: 10px;
       }
       
-      table .name {
+      table .middle {
          text-align: center;
       }
       
@@ -39,31 +39,31 @@ permalink: /project/simulated-stock-app/plan-and-design/
    <th>상세 내용</th>
    <th>유형</th>
    <tr>
-      <td class="name" rowspan="2">국내외 주식 조회</td>
+      <td class="middle" rowspan="2">국내외 주식 조회</td>
       <td>
          특정 주식 혹은 전체 주식 정보를 어플을 통해 조회
          <ul>
             <li>산업별 수익률(상승 TOP3, 하락 TOP3)</li>
          </ul>
       </td>
-      <td>기능</td>
+      <td class="middle">기능</td>
    </tr>
    <tr>
       <td>주식 종목 조회에서, 일정부분 불일치하는 항목까지 조회 가능</td>
-      <td>편의</td>
+      <td class="middle">편의</td>
    </tr>
    <tr>
-      <td class="name">환율 조회</td>
+      <td class="middle">환율 조회</td>
       <td>
          특정 외환 혹은 전체 외환 정보를 어플을 통해 조회
          <ul>
             <li>주요 지수(달러, 유로, 위안, 엔화)</li>
          </ul>
       </td>
-      <td>기능</td>
+      <td class="middle">기능</td>
    </tr>
    <tr>
-      <td class="name" rowspan="2">주식 매매</td>
+      <td class="middle" rowspan="2">주식 매매</td>
       <td>
          어플을 통해 모의 주식을 매매할 수 있게 한다.
          <ul>
@@ -74,7 +74,7 @@ permalink: /project/simulated-stock-app/plan-and-design/
             <li>보유 외환</li>
          </ul>
       </td>
-      <td>기능</td>
+      <td class="middle">기능</td>
    </tr>
    <tr>
       <td>
@@ -84,17 +84,17 @@ permalink: /project/simulated-stock-app/plan-and-design/
             <li>매매 주식 수익률</li>
          </ul>
       </td>
-      <td>편의</td>
+      <td class="middle">편의</td>
    </tr>
    <tr>
-      <td class="name">상장 예정 주식 조회</td>
+      <td class="middle">상장 예정 주식 조회</td>
       <td>상장 예정 n일 전의 주식 종목을 조회</td>
-      <td>기능</td>
+      <td class="middle">기능</td>
    </tr>
    <tr>
-      <td class="name">주식 종목 추천</td>
+      <td class="middle">주식 종목 추천</td>
       <td>어플 자체적으로 수익률을 계산하여 투자 상품을 추천 받는다</td>
-      <td>기능 & 편의</td>
+      <td class="middle">기능 & 편의</td>
    </tr>
 </table>
 
