@@ -112,7 +112,7 @@ permalink: /project/simulated-stock-app/schedule/
             <div class="time">2022.10.01</div>
             <div class="detail">
                 <span class="type plan">기획</span>
-                &emsp;스토리보드 
+                &emsp;스토리보드 제작
             </div>
         </li>
         <li class="list-item">
@@ -126,6 +126,17 @@ permalink: /project/simulated-stock-app/schedule/
 </div>
 
 ## DB
+<div class="container">
+    <ul class="list">
+        <li class="list-item">
+            <div class="time">2022.09.29</div>
+            <div class="detail">
+                <span class="type plan">ERD</span>
+                &emsp;아이디어 회의, 기획 역할 분담
+            </div>
+        </li>
+    </ul>
+</div>
 
 ## 백엔드
 
