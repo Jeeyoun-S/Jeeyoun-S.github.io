@@ -14,3 +14,11 @@ permalink: /project/simulated-stock-app/system-structure/
     }
   </style>
 </head>
+
+## Architecture
+
+## ERD
+
+## SpringBoot Class Diagram
+
+## API Docs
