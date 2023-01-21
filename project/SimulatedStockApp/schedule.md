@@ -104,3 +104,8 @@ permalink: /project/simulated-stock-app/schedule/
     </ul>
 </div>
 
+## DB
+
+## 백엔드
+
+## 프론트엔드
