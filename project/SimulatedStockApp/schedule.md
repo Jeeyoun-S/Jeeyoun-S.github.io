@@ -65,7 +65,7 @@ permalink: /project/simulated-stock-app/schedule/
         .container .detail .crawl {
             background-color: #FFBB00;
         }
-        .container .detail. db {
+        .container .detail .db {
             background-color: #FFCF01;
         }
         .container .detail .front {
