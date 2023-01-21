@@ -95,6 +95,27 @@ permalink: /project/simulated-stock-app/schedule/
             </div>
         </li>
         <li class="list-item">
+            <div class="time">2022.09.30</div>
+            <div class="detail">
+                <span class="type plan">기획</span>
+                &emsp;요구사항 정의서 작성
+            </div>
+        </li>
+        <li class="list-item">
+            <div class="time">2022.10.01</div>
+            <div class="detail">
+                <span class="type plan">기획</span>
+                &emsp;요구사항 명세서 작성
+            </div>
+        </li>
+        <li class="list-item">
+            <div class="time">2022.10.01</div>
+            <div class="detail">
+                <span class="type plan">기획</span>
+                &emsp;스토리보드 
+            </div>
+        </li>
+        <li class="list-item">
             <div class="time">2022.10.04</div>
             <div class="detail">
                 <span class="type plan">회의</span>
