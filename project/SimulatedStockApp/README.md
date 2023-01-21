@@ -62,8 +62,7 @@ sitemap: false
 <ul class="not-start">
   <li>
     <b>Database</b>&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white"> 
-    <img src="https://img.shields.io/badge/JSON-000000?style=flat&logo=JSON&logoColor=white">
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white">  
   </li>
 </ul>
 <div class="explain not-start">
