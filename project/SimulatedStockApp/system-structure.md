@@ -22,3 +22,5 @@ permalink: /project/simulated-stock-app/system-structure/
 ## SpringBoot Class Diagram
 
 ## API Docs
+- 설계 및 기록용 [Notion](https://keen-tarsal-f3c.notion.site/API-Docs-4dcd35b711d74b60ab57dbf51159a565)
+- 테스트용 Swagger
