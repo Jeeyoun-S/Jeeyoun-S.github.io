@@ -20,7 +20,7 @@ permalink: /project/simulated-stock-app/plan-and-design/
          margin-bottom: 10px;
       }
       
-      table .title {
+      table .name {
          text-align: center;
       }
       
