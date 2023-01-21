@@ -25,9 +25,26 @@ permalink: /project/simulated-stock-app/plan-and-design/
 1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-## 주요 기능
-
 ## 요구사항 정의서
+<table>
+   <th>제목</th>
+   <th>상세 내용</th>
+   <th>유형</th>
+   <tr>
+      <td rowspan="2">모의투자어플을 통한 국내외 주식 조회</td>
+      <td>
+         특정 주식 혹은 전체 주식 정보를 어플을 통해 조회
+         <ul>
+            <li>산업별 수익률(상승 TOP3, 하락 TOP3)</li>
+         </ul>
+      </td>
+      <td>기능</td>
+   </tr>
+   <tr>
+      <td>모의투자어플을 통한 국내외 주식 조회</td>
+      <td>편의</td>
+   </tr>
+</table>
 
 ## 요구사항 명세서
 <ol>
