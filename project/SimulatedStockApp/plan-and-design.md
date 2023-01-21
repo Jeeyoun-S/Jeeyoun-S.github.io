@@ -17,7 +17,15 @@ permalink: /project/simulated-stock-app/plan-and-design/
       }
       
       table {
-        margin-bottom: 10px;
+         margin-bottom: 10px;
+      }
+      
+      table .title {
+         text-align: center;
+      }
+      
+      table.define ul {
+         margin: 0px;
       }
    </style>
 </head>
@@ -26,12 +34,12 @@ permalink: /project/simulated-stock-app/plan-and-design/
 {:toc}
 
 ## 요구사항 정의서
-<table>
+<table class="define">
    <th>제목</th>
    <th>상세 내용</th>
    <th>유형</th>
    <tr>
-      <td rowspan="2">국내외 주식 조회</td>
+      <td class="name" rowspan="2">국내외 주식 조회</td>
       <td>
          특정 주식 혹은 전체 주식 정보를 어플을 통해 조회
          <ul>
@@ -45,7 +53,7 @@ permalink: /project/simulated-stock-app/plan-and-design/
       <td>편의</td>
    </tr>
    <tr>
-      <td>환율 조회</td>
+      <td class="name">환율 조회</td>
       <td>
          특정 외환 혹은 전체 외환 정보를 어플을 통해 조회
          <ul>
@@ -55,7 +63,7 @@ permalink: /project/simulated-stock-app/plan-and-design/
       <td>기능</td>
    </tr>
    <tr>
-      <td rowspan="2">주식 매매</td>
+      <td class="name" rowspan="2">주식 매매</td>
       <td>
          어플을 통해 모의 주식을 매매할 수 있게 한다.
          <ul>
@@ -79,12 +87,12 @@ permalink: /project/simulated-stock-app/plan-and-design/
       <td>편의</td>
    </tr>
    <tr>
-      <td>상장 예정 주식 조회</td>
+      <td class="name">상장 예정 주식 조회</td>
       <td>상장 예정 n일 전의 주식 종목을 조회</td>
       <td>기능</td>
    </tr>
    <tr>
-      <td>주식 종목 추천</td>
+      <td class="name">주식 종목 추천</td>
       <td>어플 자체적으로 수익률을 계산하여 투자 상품을 추천 받는다</td>
       <td>기능 & 편의</td>
    </tr>
