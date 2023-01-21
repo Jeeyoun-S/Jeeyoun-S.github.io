@@ -370,3 +370,4 @@ permalink: /project/simulated-stock-app/plan-and-design/
 </ol>
 
 ## 스토리보드
+- [스토리보드 PPT](https://docs.google.com/presentation/d/1Sdq7Yl8fGet0AXS4sa8Uxh7FAN2mcUpN/edit#)
