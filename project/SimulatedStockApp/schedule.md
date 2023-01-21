@@ -87,7 +87,7 @@ permalink: /project/simulated-stock-app/schedule/
     </style>
 </head>
 
-## 기획
+## 기획 및 DB 구축
 <div class="container">
     <ul class="list">
         <li class="list-item">
@@ -119,23 +119,24 @@ permalink: /project/simulated-stock-app/schedule/
             </div>
         </li>
         <li class="list-item">
+            <div class="time">2022.10.02</div>
+            <div class="detail">
+                <span class="type db">DB</span>
+                &emsp;Python 크롤링 코드 작성
+            </div>
+        </li>
+        <li class="list-item">
             <div class="time">2022.10.04</div>
             <div class="detail">
                 <span class="type meeting">회의</span>
                 &emsp;각 팀 진행상황 및 계획 공유
             </div>
         </li>
-    </ul>
-</div>
-
-## DB
-<div class="container">
-    <ul class="list">
         <li class="list-item">
-            <div class="time">2022.09.29</div>
+            <div class="time">2022.10.06</div>
             <div class="detail">
-                <span class="type plan">ERD</span>
-                &emsp;아이디어 회의, 기획 역할 분담
+                <span class="type db">DB</span>
+                &emsp;Python 크롤링 코드 작성
             </div>
         </li>
     </ul>
