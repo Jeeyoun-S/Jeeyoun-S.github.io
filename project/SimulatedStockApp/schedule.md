@@ -57,6 +57,9 @@ permalink: /project/simulated-stock-app/schedule/
             color: black;
         }
         .container .detail .plan {
+            background-color: #FF7E37;
+        }
+        .container .detail .meeting {
             background-color: #FF5E00;
         }
         .container .detail .db {
@@ -90,7 +93,7 @@ permalink: /project/simulated-stock-app/schedule/
         <li class="list-item">
             <div class="time">2022.09.29</div>
             <div class="detail">
-                <span class="type plan">회의</span>
+                <span class="type meeting">회의</span>
                 &emsp;아이디어 회의, 기획 역할 분담
             </div>
         </li>
@@ -118,7 +121,7 @@ permalink: /project/simulated-stock-app/schedule/
         <li class="list-item">
             <div class="time">2022.10.04</div>
             <div class="detail">
-                <span class="type plan">회의</span>
+                <span class="type meeting">회의</span>
                 &emsp;각 팀 진행상황 및 계획 공유
             </div>
         </li>
