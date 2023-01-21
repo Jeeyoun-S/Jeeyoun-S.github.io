@@ -62,8 +62,11 @@ permalink: /project/simulated-stock-app/schedule/
         .container .detail .meeting {
             background-color: #FF5E00;
         }
-        .container .detail .db {
+        .container .detail .crawl {
             background-color: #FFBB00;
+        }
+        .container .detail. db {
+            background-color: #FFCF01;
         }
         .container .detail .front {
             background-color: #FFE400;
@@ -121,7 +124,7 @@ permalink: /project/simulated-stock-app/schedule/
         <li class="list-item">
             <div class="time">2022.10.02</div>
             <div class="detail">
-                <span class="type db">DB</span>
+                <span class="type crawl">크롤링</span>
                 &emsp;주식 정보, 뉴스 크롤링 코드 작성
             </div>
         </li>
@@ -135,8 +138,12 @@ permalink: /project/simulated-stock-app/schedule/
         <li class="list-item">
             <div class="time">2022.10.06</div>
             <div class="detail">
+                <span class="type crawl">크롤링</span>
+                &emsp;실시간 주가, 상장 예정주식 크롤링 코드 작성
+            </div>
+            <div class="detail">
                 <span class="type db">DB</span>
-                &emsp;실시간 주가, 상장 예정주식 크롤링 코드 작성 및 주가 ERD 설계
+                &emsp;주가 ERD 설계
             </div>
         </li>
         <li class="list-item">
@@ -146,9 +153,14 @@ permalink: /project/simulated-stock-app/schedule/
                 &emsp;ERD 초안 작성
             </div>
         </li>
+        <li class="list-item">
+            <div class="time">2022.10.10</div>
+            <div class="detail">
+                <span class="type db">DB</span>
+                &emsp;ERD 초안 작성
+            </div>
+        </li>
     </ul>
 </div>
 
-## 백엔드
-
-## 프론트엔드
+## APP 개발
