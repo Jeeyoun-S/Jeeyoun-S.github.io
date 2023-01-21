@@ -153,13 +153,6 @@ permalink: /project/simulated-stock-app/schedule/
                 &emsp;ERD 초안 작성
             </div>
         </li>
-        <li class="list-item">
-            <div class="time">2022.10.10</div>
-            <div class="detail">
-                <span class="type db">DB</span>
-                &emsp;ERD 초안 작성
-            </div>
-        </li>
     </ul>
 </div>
 
