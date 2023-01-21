@@ -371,3 +371,4 @@ permalink: /project/simulated-stock-app/plan-and-design/
 
 ## 스토리보드
 - [스토리보드 PPT](https://docs.google.com/presentation/d/1Sdq7Yl8fGet0AXS4sa8Uxh7FAN2mcUpN/edit#)
+- 화면 구성, 설명, 이슈 포함
