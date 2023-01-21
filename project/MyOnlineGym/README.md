@@ -13,6 +13,9 @@ sitemap: false
       font-size: 14px;
       padding-left: 39px;
     }
+    a::after {
+      display: none;  
+    }
   </style>
 </head>
 
