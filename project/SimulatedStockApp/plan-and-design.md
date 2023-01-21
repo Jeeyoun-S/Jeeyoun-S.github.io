@@ -12,7 +12,7 @@ permalink: /project/simulated-stock-app/plan-and-design/
          font-weight: bold;
       }
       
-      table ul {
+      table ul, ol {
          padding-inline-start: 20px;
       }
       
