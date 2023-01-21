@@ -56,7 +56,7 @@ sitemap: false
   </li>
 </ul>
 <div class="explain not-start">
-  Rest API 개발을 위해 Spring Boot를 사용했습니다. Swagger2를 이용해
+  Rest API 개발을 위해 Spring Boot를 사용했습니다. MyBatis로 Query문을 작성해 DB에서 데이터를 가져왔고, Swagger를 이용해 API 테스트를 진행했습니다.
 </div>
 
 <ul class="not-start">
@@ -67,7 +67,7 @@ sitemap: false
   </li>
 </ul>
 <div class="explain not-start">
-  MySQL을 사용하고, JSON으로 데이터를 생성해 DB로 옮겨주거나 JSON 파일에서 바로 가져다 쓰는 방법을 사용했습니다. 
+  MySQL를 사용해 DB를 구축했습니다.
 </div>
 
 <ul class="not-start">
@@ -79,7 +79,7 @@ sitemap: false
   </li>
 </ul>
 <div class="explain not-start">
-  Notion 페이지 사용, GitHub 사용 
+  GitHub에 코드를 올리고, 버전 관리를 했습니다. 또한, Notion 페이지에 진행 상황을 기록하고, 기획안을 작성했습니다. 온라인으로 소통할 때는 Discord를 사용했습니다.
 </div>
 
 <ul class="not-start">
@@ -90,7 +90,7 @@ sitemap: false
   </li>
 </ul>
 <div class="explain not-start">
-  Server로 Windows를 사용
+  DB 서버와 앱 서버를 따로 구축해서 사용했으며, Windows 서버로 배포했습니다.
 </div>
 
 ## 진행
