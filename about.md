@@ -52,6 +52,9 @@ comments: false
       font-weight: bolder;
       font-style: normal;
     }
+    a::after {
+      display: none;  
+    }
   </style>
 </head>
 
