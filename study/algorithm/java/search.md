@@ -7,8 +7,6 @@ permalink: /study/algorithm/java/search/
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-*update 2022.11.04 -create*
-
 ## 검색 Search
 - 원하는 항목을 찾는 작업
 - 탐색 키 Search key

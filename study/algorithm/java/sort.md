@@ -7,8 +7,6 @@ permalink: /study/algorithm/java/sort/
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-*update 2022.11.04 -create*
-
 ## 정렬 Sort
 - 2개 이상의 자료를 오름차순 또는 내림차순으로 배열
 - 키 : 정렬 기준
