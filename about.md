@@ -86,14 +86,20 @@ comments: false
         <span><a href="/project/simulated-stock-app/">Simulated Stock App</a></span>&nbsp;
         2022.09.29 ~ ing
       </div>
-      <p>Team Project 5인&emsp;|&emsp;Android App</p>
+      <ul class="inside">
+        <li>Team Project 5인&emsp;|&emsp;Android App</li>
+        <li>MySQL, Java, Spring Boot, Android Studio</li>
+      </ul>
     </li>
     <li class="list-item">
       <div class="time">
         <span><a href="/project/my-online-gym/">My Online Gym</a></span>&nbsp;
         2022.11.17 ~ 2022.11.25
       </div>
-      <p>Team Project 2인&emsp;|&emsp;PC Web&emsp;|&emsp;SSAFY 관통 프로젝트</p>
+      <ul class="inside">
+        <li>Team Project 2인&emsp;|&emsp;PC Web&emsp;|&emsp;SSAFY 관통 프로젝트</li>
+        <li>MySQL, Java, Spring Boot, HTML, CSS, Javascript, Vue.js</li>
+      </ul>
     </li>
   </ul>
 </div>
