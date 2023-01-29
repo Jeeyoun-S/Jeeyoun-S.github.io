@@ -102,7 +102,7 @@ comments: false
         <li>운동 관련 웹사이트 제작</li>
         <li>Team Project 2인&emsp;|&emsp;PC Web&emsp;|&emsp;SSAFY 관통 프로젝트</li>
         <li>Spring Boot, Vue.js, MySQL</li>
-        <li>Backend & Frontend 담당</li>
+        <li>Backend & Frontend 개발 전반 담당</li>
       </ul>
     </li>
   </ul>
