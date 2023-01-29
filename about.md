@@ -87,7 +87,7 @@ comments: false
         2022.09.29 ~ ing
       </div>
       <ul class="inside">
-        <li>모의로 주식 투자를 경험해 볼 수 있는 어플 </li>
+        <li>모의로 주식 투자를 경험해 볼 수 있는 어플 제작</li>
         <li>Team Project 5인&emsp;|&emsp;Android App</li>
         <li>Spring Boot, Android Studio, MySQL</li>
       </ul>
