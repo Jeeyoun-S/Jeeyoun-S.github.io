@@ -88,7 +88,7 @@ comments: false
       </div>
       <ul class="inside">
         <li><b>주제</b> 모의로 주식 투자를 경험해 볼 수 있는 Android App 제작</li>
-        <li><b></b> Team Project 5인</li>
+        <li><b>진행</b> Team Project 5인</li>
         <li><b>기술</b> Spring Boot, Android Studio, MySQL</li>
         <li><b>역할</b> Backend로 Rest API 설계 및 개발 담당</li>
       </ul>
@@ -100,7 +100,7 @@ comments: false
       </div>
       <ul class="inside">
         <li><b>주제</b> 운동 관련 PC Website 제작</li>
-        <li>Team Project 2인&emsp;|&emsp;SSAFY 관통 프로젝트</li>
+        <li><b>진행</b> Team Project 2인&emsp;|&emsp;SSAFY 관통 프로젝트</li>
         <li><b>기술</b> Spring Boot, Vue.js, MySQL</li>
         <li><b>역할</b> Database, Backend, Frontend 개발 전체 담당</li>
       </ul>
