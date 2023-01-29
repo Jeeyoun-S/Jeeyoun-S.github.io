@@ -83,7 +83,7 @@ comments: false
   <ul class="list">
     <li class="list-item">
       <div class="time">
-        <span><a href="/project/ssueb/">SSUEB</a></span>&nbsp;
+        <span><a href="/project/sseub/">SSUEB</a></span>&nbsp;
         2023.01.04 ~ ing
       </div>
       <ul class="inside">
