@@ -46,7 +46,7 @@ comments: false
       margin: 0px;
     }
     .container .time {
-      font-style: italic;
+      font-size: 15px;
     }
     .container .time span {
       font-weight: bolder;
