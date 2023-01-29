@@ -87,8 +87,9 @@ comments: false
         2022.09.29 ~ ing
       </div>
       <ul class="inside">
+        <li>모의 주식 투자를 체험해 볼 수 있는 어플 </li>
         <li>Team Project 5인&emsp;|&emsp;Android App</li>
-        <li>MySQL, Java, Spring Boot, Android Studio</li>
+        <li>Spring Boot, Android Studio, MySQL</li>
       </ul>
     </li>
     <li class="list-item">
@@ -97,8 +98,9 @@ comments: false
         2022.11.17 ~ 2022.11.25
       </div>
       <ul class="inside">
+        <li>운동 관련 웹사이트 제작</li>
         <li>Team Project 2인&emsp;|&emsp;PC Web&emsp;|&emsp;SSAFY 관통 프로젝트</li>
-        <li>MySQL, Java, Spring Boot, HTML, CSS, Javascript, Vue.js</li>
+        <li>Spring Boot, Vue.js, MySQL</li>
       </ul>
     </li>
   </ul>
