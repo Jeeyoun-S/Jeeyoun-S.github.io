@@ -89,7 +89,7 @@ comments: false
       <ul class="inside">
         <li>모의로 주식 투자를 경험해 볼 수 있는 어플 제작</li>
         <li>Team Project 5인&emsp;|&emsp;Android App</li>
-        <li>Spring Boot&emsp;|&emsp;Android Studio&emsp;|&emsp;MySQL</li>
+        <li>Spring Boot&nbsp;|&nbsp;Android Studio&nbsp;|&nbsp;MySQL</li>
         <li>Backend로 Rest API 설계 및 개발 담당</li>
       </ul>
     </li>
