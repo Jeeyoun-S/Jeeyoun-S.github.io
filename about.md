@@ -143,6 +143,7 @@ comments: false
         <img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white">&nbsp;
         <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=vue.js&logoColor=white">&nbsp;
         <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white">&nbsp;
+        <img src="https://img.shields.io/badge/Vuetify-1867C0?style=flat&logo=Vuetify&logoColor=white">&nbsp;
       </p>
     </li>
     <li class="list-item">
@@ -150,7 +151,7 @@ comments: false
         <span>Database</span>
       </div>
       <p>
-        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white">
+        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white">&nbsp;
         <img src="https://img.shields.io/badge/Redis-DC382D?style=flat&logo=Redis&logoColor=white">
       </p>
     </li>
