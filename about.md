@@ -83,6 +83,18 @@ comments: false
   <ul class="list">
     <li class="list-item">
       <div class="time">
+        <span><a href="/project/ssueb/">SSUEB</a></span>&nbsp;
+        2023.01.04 ~ ing
+      </div>
+      <ul class="inside">
+        <li><b>주제</b>&ensp;반려동물 실시간 영상 상담 서비스 PC Website 제작</li>
+        <li><b>진행</b>&ensp;Team Project 6인, SSAFY 공통 프로젝트</li>
+        <li><b>기술</b>&ensp;Spring Boot, Vue.js, MySQL</li>
+        <li><b>역할</b>&ensp;회원관리 기능 Frontend, Backend 개발 담당</li>
+      </ul>
+    </li>
+    <li class="list-item">
+      <div class="time">
         <span><a href="/project/simulated-stock-app/">Simulated Stock App</a></span>&nbsp;
         2022.09.29 ~ ing
       </div>
