@@ -264,8 +264,7 @@ comments: false
       </div>
       <ul class="inside">
         <li>코딩테스트 대비 Python Algorithm 공부</li>
-        <li>일주일간 5~7문제를 풀고, 매주 월요일 함께 코드 리뷰 진행</li>
-        <li>참여 인원 4명</li>
+        <li>일주일간 5~7문제를 풀고, 매주 월요일 함께 코드 리뷰</li>
       </ul>
     </li>
     <li class="list-item">
@@ -276,7 +275,6 @@ comments: false
       <ul class="inside">
         <li>아침에 알고리즘 문제 1개를 푸는 스터디</li>
         <li>화 ~ 금요일 아침 8시 15분부터 30분 동안 문제 풀고, 코드 공유</li>
-        <li>참여 인원 6명</li>
       </ul>
     </li>
   </ul>
