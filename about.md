@@ -262,6 +262,8 @@ comments: false
         <span>Morning Problem Solving Study</span>&nbsp;
         2022.07.19 ~ 2022.11.11
       </div>
+    </li>
+    <li class="list-item">
       <div class="time">
         <span>Python Algorithm Study</span>&nbsp;
         2022.08.01 ~ ing
