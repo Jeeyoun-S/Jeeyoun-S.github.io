@@ -87,10 +87,10 @@ comments: false
         2022.09.29 ~ ing
       </div>
       <ul class="inside">
-        <li><b>주제</b>&emsp;모의로 주식 투자를 경험해 볼 수 있는 Android App 제작</li>
-        <li><b>진행</b>&emsp;Team Project 5인</li>
-        <li><b>기술</b>&emsp;Spring Boot, Android Studio, MySQL</li>
-        <li><b>역할</b>&emsp;Backend로 Rest API 설계 및 개발 담당</li>
+        <li><b>주제</b>&ensp;모의로 주식 투자를 경험해 볼 수 있는 Android App 제작</li>
+        <li><b>진행</b>&ensp;Team Project 5인</li>
+        <li><b>기술</b>&ensp;Spring Boot, Android Studio, MySQL</li>
+        <li><b>역할</b>&ensp;Backend로 Rest API 설계 및 개발 담당</li>
       </ul>
     </li>
     <li class="list-item">
@@ -99,10 +99,10 @@ comments: false
         2022.11.17 ~ 2022.11.25
       </div>
       <ul class="inside">
-        <li><b>주제</b> 운동 관련 PC Website 제작</li>
-        <li><b>진행</b> Team Project 2인&emsp;|&emsp;SSAFY 관통 프로젝트</li>
-        <li><b>기술</b> Spring Boot, Vue.js, MySQL</li>
-        <li><b>역할</b> Database, Backend, Frontend 개발 전체 담당</li>
+        <li><b>주제</b>&ensp;운동 관련 PC Website 제작</li>
+        <li><b>진행</b>&ensp;Team Project 2인, SSAFY 관통 프로젝트</li>
+        <li><b>기술</b>&ensp;Spring Boot, Vue.js, MySQL</li>
+        <li><b>역할</b>&ensp;Database, Backend, Frontend 개발 전체 담당</li>
       </ul>
     </li>
   </ul>
