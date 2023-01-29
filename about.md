@@ -87,10 +87,10 @@ comments: false
         2022.09.29 ~ ing
       </div>
       <ul class="inside">
-        <li><b>주제</b> 모의로 주식 투자를 경험해 볼 수 있는 Android App 제작</li>
-        <li><b>진행</b> Team Project 5인</li>
-        <li><b>기술</b> Spring Boot, Android Studio, MySQL</li>
-        <li><b>역할</b> Backend로 Rest API 설계 및 개발 담당</li>
+        <li><b>주제</b>&emsp;모의로 주식 투자를 경험해 볼 수 있는 Android App 제작</li>
+        <li><b>진행</b>&emsp;Team Project 5인</li>
+        <li><b>기술</b>&emsp;Spring Boot, Android Studio, MySQL</li>
+        <li><b>역할</b>&emsp;Backend로 Rest API 설계 및 개발 담당</li>
       </ul>
     </li>
     <li class="list-item">
