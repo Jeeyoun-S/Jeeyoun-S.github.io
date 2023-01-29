@@ -259,14 +259,14 @@ comments: false
   <ul class="list">
     <li class="list-item">
       <div class="time">
-        <span>Morning Problem Solving Study</span>&nbsp;
-        2022.07.19 ~ 2022.11.11
+        <span>Python Algorithm Study</span>&nbsp;
+        2022.08.01 ~ ing
       </div>
     </li>
     <li class="list-item">
       <div class="time">
-        <span>Python Algorithm Study</span>&nbsp;
-        2022.08.01 ~ ing
+        <span>Morning Problem Solving Study</span>&nbsp;
+        2022.07.19 ~ 2022.11.11
       </div>
     </li>
   </ul>
