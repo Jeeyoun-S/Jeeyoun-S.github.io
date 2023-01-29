@@ -26,8 +26,8 @@ sitemap: false
 - **주제** 모의투식투자 안드로이드 앱 개발
 - **기간** 2022.09.29 ~ ing
 - **팀원** 권영우 김수빈 서다경 서지윤 임혜진
-- **서비스 기본 아이디어** 주식 정보를 조회할 수 있고, 주식 투자를 체험할 수 있는 앱
-- **핵심 기능** 모의 주식 및 외환 매매, 주식 정보 조회, 주식 종목 추천
+- **개요** 주식 정보를 조회할 수 있고, 주식 투자를 체험할 수 있는 앱
+- **기능** 모의 주식 및 외환 매매, 주식 정보 조회, 주식 종목 추천
 - **코드** <a href="https://github.com/subin3277/StockApp" target="_blank">Frontend</a>, <a href="https://github.com/hjlim7831/StockAppServer" target="_blank">Backend</a>
 
 ## 역할
