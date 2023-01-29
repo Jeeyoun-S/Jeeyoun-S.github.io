@@ -118,7 +118,7 @@ comments: false
       <p>
         <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white">&nbsp;
         <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=Spring&logoColor=white">&nbsp;
-        <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=SpringBoot&logoColor=white">&nbsp;
+        <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat&logo=SpringBoot&logoColor=white">&nbsp;
         <img src="https://img.shields.io/badge/Python-3766AB?style=flat&logo=Python&logoColor=white">
       </p>
     </li>
@@ -127,10 +127,10 @@ comments: false
         <span>Frontend</span>
       </div>
       <p>
-        <img src="https://img.shields.io/badge/html5-E34F26?style=flat&logo=html5&logoColor=white">&nbsp;
-        <img src="https://img.shields.io/badge/css3-1572B6?style=flat&logo=css3&logoColor=white">&nbsp;
-        <img src="https://img.shields.io/badge/bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white">&nbsp;
-        <img src="https://img.shields.io/badge/vue.js-4FC08D?style=flat&logo=vue.js&logoColor=white">
+        <img src="https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white">&nbsp;
+        <img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white">&nbsp;
+        <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white">&nbsp;
+        <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=vue.js&logoColor=white">
       </p>
     </li>
     <li class="list-item">
