@@ -63,10 +63,10 @@ comments: false
   <ul class="list">
     <li class="list-item">
       <div class="time">
-        <span>삼성청년SW아카데미</span>&nbsp;
+        <span>삼성청년SW아카데미, SSAFY</span>&nbsp;
         2022.07 ~ ing
       </div>
-      <p>SSAFY 8기&emsp;|&emsp;비전공 Java Coding Track</p>
+      <p>8기 비전공 Java Coding Track</p>
     </li>
     <li class="list-item">
       <div class="time">
