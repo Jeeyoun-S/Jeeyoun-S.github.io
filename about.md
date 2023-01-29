@@ -10,7 +10,7 @@ comments: false
   <style> 
     .container ul.inside {
       list-style: disc;
-      font-size: 14px;
+      font-size: 13.5px;
       margin: 0px;
       padding-left: 26px;
     }
@@ -42,7 +42,7 @@ comments: false
       top: 0px;
     }
     .container p {
-      font-size: 14px;
+      font-size: 13.5px;
       margin: 0px;
     }
     .container .time {
