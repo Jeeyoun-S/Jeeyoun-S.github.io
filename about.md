@@ -90,6 +90,7 @@ comments: false
         <li>모의로 주식 투자를 경험해 볼 수 있는 어플 제작</li>
         <li>Team Project 5인&emsp;|&emsp;Android App</li>
         <li>Spring Boot, Android Studio, MySQL</li>
+        <li>Backend로 Rest API 설계 및 개발 담당</li>
       </ul>
     </li>
     <li class="list-item">
@@ -101,6 +102,7 @@ comments: false
         <li>운동 관련 웹사이트 제작</li>
         <li>Team Project 2인&emsp;|&emsp;PC Web&emsp;|&emsp;SSAFY 관통 프로젝트</li>
         <li>Spring Boot, Vue.js, MySQL</li>
+        <li>Backend & Frontend 담당</li>
       </ul>
     </li>
   </ul>
