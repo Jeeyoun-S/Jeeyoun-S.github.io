@@ -259,7 +259,7 @@ comments: false
   <ul class="list">
     <li class="list-item">
       <div class="time">
-        <span>Python Algorithm Study</span>&nbsp;
+        <span><a href="/group-study/python-algorithm/">Python Algorithm Study</a></span>&nbsp;
         2022.08.01 ~ ing
       </div>
       <ul class="inside">
@@ -269,7 +269,7 @@ comments: false
     </li>
     <li class="list-item">
       <div class="time">
-        <span>Morning Study</span>&nbsp;
+        <span><a href="/group-study/morning/">Morning Study</a></span>&nbsp;
         2022.07.19 ~ 2022.11.11
       </div>
       <ul class="inside">
