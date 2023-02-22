@@ -8,13 +8,9 @@
 {%- endfor -%}
 {%- assign tags = tags | split:'|' | uniq | sort -%}
 
-
-<div class="archive-tags">
-  {% for tag in tags %}
-    {% capture name %}{{ tag | first }}{% endcapture %}
-    <a class="tag-item" href="#{{name}}">{{ name }}</a> 
-  {%- endfor -%}
-</div>
+{% for tag in tags %}
+  <a href="#{{tag}}">{{ tag }}</a> 
+{%- endfor -%}
 
 <!-- List tags & related posts -->
 {% for tag in tags %}
