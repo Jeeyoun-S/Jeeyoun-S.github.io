@@ -1,11 +1,46 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@Jeeyoun-S 
+YoussefRaafatNasry
+/
+portfolYOU
+Public
+Fork your own copy of YoussefRaafatNasry/portfolYOU
+Code
+Issues
+9
+Pull requests
+5
+Discussions
+Actions
+Projects
+1
+Security
+Insights
+portfolYOU/docs/_config.yml
+@rribeiro1
+rribeiro1 Add "Buy me Coffee" Integration (#92)
+Latest commit b5fc4ae on Mar 25, 2022
+ History
+ 5 contributors
+@YoussefRaafatNasry@rribeiro1@hugolmn@Avery2@matuzalemmuller
+110 lines (90 sloc)  3.44 KB
+
 ### Site Settings ###
-title               : portfolYOU
+title               : Jeeyoun Seo
 description         : >-
-                      I turn coffee :coffee: into code,
-                      use tabs over spaces
-                      and never broke production.
-baseurl             : "/portfolYOU"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository          : YoussefRaafatNasry/portfolYOU     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+                      웹 개발자로 성장하고 싶은 <b>서지윤</b>입니다.<br>
+                      기록하고 정리하는 것을 좋아하고,<br>
+                      항상 메모하는 습관을 만들고 있습니다.<br>
+                      공부한 내용을 많은 사람과 공유하며 배우고 싶습니다.<br>
+baseurl             :                      # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : Jeeyoun-S/Jeeyoun-S.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
 
@@ -25,24 +60,24 @@ nav_exclude:                                            # The following paths ar
 
 ### Author Info ###
 author:
-  name              : John Doe
+  name              : Jeeyoun Seo
   image             : https://i.imgur.com/uyDNQnn.jpg
-  behance           : your_username
+  # behance           : your_username
 # dribbble          : your_username
-  email             : username@domain.com
-  facebook          : your_username
-  github            : your_username
+  email             : dreaming990124@gmail.com
+  # facebook          : your_username
+  github            : Jeeyoun-S
 # gitlab            : your_username
-# instagram         : your_username
+instagram         : assimpleas_possible
 # kaggle            : your_username
-  linkedin          : your_username
-  medium            : your_username
+  # linkedin          : your_username
+  # medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
 # stackoverflow     : your_user_id
 # tumblr            : your_username.tumblr.com
 # twitch            : your_username
-  twitter           : your_username
+  # twitter           : your_username
 # vimeo             : your_username
 # youtube           : your_channel_name
 # keybase           : your_username
@@ -75,12 +110,12 @@ analytics:
 
 ### Buy me a coffee ###
 # See https://www.buymeacoffee.com/
-buymeacoffee:
-  enabled: false
-  username: your_username
-  color: "#007bff"
-  message: "Thank you for visiting."                    # Message to be displayed aside from the button for a few seconds.
-  description: "Support me on Buy me a coffee!"
+# buymeacoffee:
+#   enabled: false
+#   username: your_username
+#   color: "#007bff"
+#   message: "Thank you for visiting."                    # Message to be displayed aside from the button for a few seconds.
+#   description: "Support me on Buy me a coffee!"
 
 
 ### Defaults for collections ###
@@ -108,3 +143,18 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+portfolYOU/_config.yml at master · YoussefRaafatNasry/portfolYOU
