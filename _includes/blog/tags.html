@@ -10,8 +10,9 @@
 
 {% for tag in tags %}
   {%- assign tag_url = tags | slugify -%}
+  {{ tag_url }}
   {% include elements/button.html link=tag_url text=tags style="primary" size="sm" %}
-{% endfor %}
+{%- endfor -%}
 
 <!-- List tags & related posts -->
 {% for tag in tags %}
