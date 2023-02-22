@@ -11,7 +11,7 @@
 {% for tag in tags %}
   {% capture name %}{{ tag | first }}{% endcapture %}
   <a class="tag-item" href="#{{name}}">{{ name }}</a> 
-{%- endfor -%}
+{% endfor %}
 
 <!-- List tags & related posts -->
 {% for tag in tags %}
