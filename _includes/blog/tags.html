@@ -9,8 +9,7 @@
 {%- assign tags = tags | split:'|' | uniq | sort -%}
 
 {% for tag in tags %}
-  {% include elements/button.html link="#{{ tag.toLowerCase().replace(/(\s*)/g, "-") }}" text="tag" style="primary" size="sm" %}
-  <!-- <a href="#{{ tag.toLowerCase().replace(/(\s*)/g, "-") }}">{{ tag }}</a>  -->
+  {% include elements/button.html link="#tag" text="tag" style="primary" size="sm" %}
 {%- endfor -%}
 
 <!-- List tags & related posts -->
