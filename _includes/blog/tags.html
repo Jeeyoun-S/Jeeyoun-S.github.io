@@ -9,8 +9,8 @@
 {%- assign tags = tags | split:'|' | uniq | sort -%}
 
 {% for tag in tags %}
-  {%- assign tag_url = tag | slugify -%}
-  {% include elements/button.html link=tag_url text=tags style="primary" size="sm" %}
+  {%- assign tag_url = tag | slugifyc| append:'tags#' -%}
+  {% include elements/button.html href=tag_url text=tag style="primary" size="sm" %}
 {% endfor %}
 
 <!-- List tags & related posts -->
