@@ -34,7 +34,7 @@ author:
   # facebook          : your_username
   github            : Jeeyoun-S
 # gitlab            : your_username
-instagram         : assimpleas_possible
+  instagram         : assimpleas_possible
 # kaggle            : your_username
   # linkedin          : your_username
   # medium            : your_username
@@ -100,7 +100,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      comments: false                                   # Set to true to enable disqus comments
+      comments: true                                   # Set to true to enable disqus comments
 
 
 ### Exclude from processing ###
@@ -109,18 +109,3 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-portfolYOU/_config.yml at master · YoussefRaafatNasry/portfolYOU
