@@ -9,7 +9,7 @@
 {%- assign tags = tags | split:'|' | uniq | sort -%}
 
 {% for tag in tags %}
-  {%- assign tag_url = tag | slugify | append:'tags#' -%}
+  {%- assign tag_url = 'tags#' | append:tag | slugify  -%}
   {% include elements/button.html href=tag_url text=tag style="primary" size="sm" %}
 {% endfor %}
 
