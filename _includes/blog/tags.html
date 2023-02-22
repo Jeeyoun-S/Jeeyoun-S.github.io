@@ -9,8 +9,8 @@
 {%- assign tags = tags | split:'|' | uniq | sort -%}
 
 {% for tag in tags %}
-  {% capture name %}{{ tag | first }}{% endcapture %}
-  <a class="tag-item" href="#{{name}}">{{ name }}</a> 
+  {%- assign tag_url = tags | slugify -%}
+  {% include elements/button.html link=tag_url text=tags style="primary" size="sm" %}
 {% endfor %}
 
 <!-- List tags & related posts -->
