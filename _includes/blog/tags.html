@@ -9,7 +9,7 @@
 {%- assign tags = tags | split:'|' | uniq | sort -%}
 
 {% for tag in tags %}
-  <a href="#{{ tag.toLowerCase().replace(" ", "-") }}">{{ tag }}</a> 
+  <a href="#{{ tag.toLowerCase().replace(/(\s*)/g, "-") }}">{{ tag }}</a> 
 {%- endfor -%}
 
 <!-- List tags & related posts -->
