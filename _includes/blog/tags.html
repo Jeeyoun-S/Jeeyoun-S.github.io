@@ -10,7 +10,6 @@
 
 {% for tag in tags %}
   {%- assign tag_url = tag | slugify | prepend: 'tags#' -%}
-  {{ tag_url }}
   {% include elements/button.html link=tag_url text=tag style="primary" size="sm" %}
 {% endfor %}
 
