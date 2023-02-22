@@ -8,6 +8,10 @@
 {%- endfor -%}
 {%- assign tags = tags | split:'|' | uniq | sort -%}
 
+{% for tag in tags %}
+  {{ tag }}
+{% endfor %}
+
 <!-- List tags & related posts -->
 {% for tag in tags %}
 <div class="py-3">
