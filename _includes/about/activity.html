@@ -1,11 +1,11 @@
 <div class="col mt-4">
   <div class="timeline-body bg-themed">
     {% for item in site.data.activity %}
-      <div class="pl-4 timeline-item">
-        <div class="content">
+      <div class="timeline-item">
+        <div class="ma-2">
           <h5>{{ item.title }}</h5>
           <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
-          <ul>
+          <ul class="pl-2">
             {%- assign descriptions = item.description | split: "@@" -%}
             {% for descript in descriptions %}
               <li>{{ descript }}</li>
