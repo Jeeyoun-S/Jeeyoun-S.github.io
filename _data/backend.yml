@@ -1,11 +1,11 @@
-- name: HTML5/CSS3
+- name: Spring
   percentage: 90
   color: danger
 
-- name: Go
+- name: Spring Boot
   percentage: 80
   color:
 
-- name: Python
+- name: Java
   percentage: 70
   color: secondary

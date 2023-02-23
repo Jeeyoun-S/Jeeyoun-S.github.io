@@ -1,0 +1,11 @@
+- name: HTML
+  percentage: 95
+  color: info
+
+- name: CSS
+  percentage: 90
+  color: success
+
+- name: Vue.js
+  percentage: 90
+  color: success
