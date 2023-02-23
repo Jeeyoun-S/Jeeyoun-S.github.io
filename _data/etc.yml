@@ -1,0 +1,9 @@
+- name: Python
+  percentage: 50
+  color: success
+  explain: BFS, DFS 등 알고리즘 구현 가능
+
+- name: R
+  percentage: 20
+  color: secondary
+  explain: 간단한 그래프 작업, 회귀분석 가능

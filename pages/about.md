@@ -14,6 +14,7 @@ weight: 0
 <div class="row">
 {% include about/skills.html title="Backend" source=site.data.backend %}
 {% include about/skills.html title="Frontend" source=site.data.frontend %}
+{% include about/skills.html title="Etc" source=site.data.etc %}
 </div>
 
 ## **Education**
