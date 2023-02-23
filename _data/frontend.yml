@@ -1,9 +1,9 @@
 - name: HTML/CSS
-  percentage: 95
+  percentage: 50
   color: info
   explain: 기본적인 틀 잡기 가능
 
 - name: Vue.js
-  percentage: 90
+  percentage: 50
   color: primary
   explain: Vuex, Router 활용 가능

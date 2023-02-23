@@ -16,6 +16,7 @@ weight: 0
 {% include about/skills.html title="Frontend" source=site.data.frontend %}
 </div>
 
+## **Education**
 <div class="row">
 {% include about/timeline.html %}
 </div>
