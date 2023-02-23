@@ -2,8 +2,8 @@
   <div class="timeline-body bg-themed">
     {% for item in site.data.activity %}
       <div class="timeline-item">
-        <div class="m-2">
-          <h5>{{ item.title }}</h5>
+        <div class="m-4">
+          <h5 class="pt-2">{{ item.title }}</h5>
           <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
           <ul class="pl-4">
             {%- assign descriptions = item.description | split: "@@" -%}
