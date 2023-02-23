@@ -2,7 +2,7 @@
 name: My Online Gym
 tools: [Spring Boot, Vue.js, MySQL]
 image: 
-description: 운동 관련 웹사이트 제작<br>[삼성청년SW아카데미 관통PJT]
+description: 운동 관련 정보 제공 PC 웹사이트<br>[삼성청년SW아카데미 관통PJT]
 ---
 
 # My Online Gym

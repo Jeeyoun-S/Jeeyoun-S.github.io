@@ -2,7 +2,7 @@
 name: SSUEB
 tools: [Spring Boot, Vue.js, MySQL]
 image: /assets/project/ssueb_main.png
-description: 반려동물행동지도사와 반려인 간의 실시간 영상 상담 서비스를 제공하는 웹 PC 사이트<br>[삼성청년SW아카데미 공통PJT]
+description: 반려동물행동지도사와 반려인 간의 실시간 영상 상담 서비스를 제공하는 PC 웹사이트<br>[삼성청년SW아카데미 공통PJT]
 ---
 
 # SSUEB
