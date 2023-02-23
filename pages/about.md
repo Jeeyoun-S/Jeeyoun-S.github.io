@@ -22,9 +22,9 @@ weight: 0
 </div>
 
 ## **Projects**
-<div class="row">
+<!-- <div class="row"> -->
 {% include projects/index.html %}
-</div>
+<!-- </div> -->
 
 ## **Certificate & Awards**
 <div class="row">
