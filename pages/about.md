@@ -18,5 +18,14 @@ weight: 0
 
 ## **Education**
 <div class="row">
-{% include about/timeline.html %}
+{% include about/education.html %}
+</div>
+
+## **Certificate**
+
+## **Awards**
+
+## **Activities**
+<div class="row">
+{% include about/activity.html %}
 </div>
