@@ -1,11 +1,9 @@
-- name: Spring
+- name: Spring/Spring Boot
   percentage: 90
-  color: danger
-
-- name: Spring Boot
-  percentage: 80
-  color:
+  color: success
+  explain: MyBatis와 JPA로 DB와 연결 가능
 
 - name: Java
   percentage: 70
   color: secondary
+  explain: DFS, BFS 등 알고리즘 구현 가능
