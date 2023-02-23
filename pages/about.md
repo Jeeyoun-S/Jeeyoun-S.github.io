@@ -22,9 +22,8 @@ weight: 0
 {% include about/education.html %}
 </div>
 
-## **Certificate**
-
-## **Awards**
+## **Certificate & Awards**
+{% include about/certificate-awards.html %}
 
 ## **Activities**
 <div class="row">
