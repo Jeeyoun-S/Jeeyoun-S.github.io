@@ -5,11 +5,11 @@ image: /assets/project/ssueb_main.png
 description: 반려인과 전문가 간의 실시간 영상 상담 서비스를 제공하는 PC 웹사이트<br>[삼성청년SW아카데미 공통PJT]
 ---
 
-# SSUEB
+# **SSUEB**
 
 {% include elements/video.html id="3nSiPJ4YDKI" %}
 
-[GitHub 바로가기](https://github.com/Jeeyoun-S/SSUEB)   
+[Github 바로가기](https://github.com/Jeeyoun-S/SSUEB)   
 <sup>*삼성청년SW아카데미의 보안 정책 상, 특별한 사유가 있을 때만 코드가 공개 상태로 변경됩니다.</sup>
 
 ## 나의 역할
@@ -19,13 +19,14 @@ description: 반려인과 전문가 간의 실시간 영상 상담 서비스를 
 - Team Convention 작성  
 ### 프론트
 - Vuetify 및 CSS 전반 담당  
-- **회원 관리** 반려인 및 전문가 회원가입, 마이페이지  
-- **상담 예약** HTML 및 CSS 수정, 오류 해결 담당  
-- **커뮤니티** HTML 및 CSS 전체, 게시글 수정 Axios 연결 담당  
-- **관리자 페이지**  
+- **회원 관리** 반려인 및 전문가 회원가입, 마이페이지 구현  
+- **상담 예약** HTML 및 CSS 수정, 오류 해결  
+- **커뮤니티** HTML 및 CSS 전체 구현, 게시글 수정 Axios 연결  
+- **관리자 페이지** 전문가 회원가입 수락, 회원 문자 전송 구현  
 ### 백
 - **회원 관리**  
-- **상담 예약**  
+- **커뮤니티** 
+- **관리자 페이지** 전문가 회원가입 수락, 회원 문자 전송 API 구현  
 
 ## 개발 후기
 ### 프론트
