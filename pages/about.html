@@ -5,6 +5,24 @@ permalink: /about/
 weight: 0
 ---
 
+<style>
+#title-list {
+  opacity: 0.5;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #title-list {
+    transform: rotate(180deg);
+    position: fixed;
+    bottom: 120px;
+    right: 22px;
+  }
+}
+</style>
+
 <div class="col-lg-10 mx-auto mt-5">
   <div class="markdown-body">
     <h1><b>About Me</b></h1>
@@ -46,7 +64,7 @@ weight: 0
 </div>
 
 <footer class="mt-auto py-3 text-center">
-  <small id="attribution">
+  <small id="title-list">
     <a href="#programming-skills">Programming Skills</a>
     <a href="#education">Education</a>
     <a href="#projects">Projects</a>
