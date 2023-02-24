@@ -5,7 +5,7 @@ permalink: /about/
 weight: 0
 ---
 
-<div class="col-lg-10 mx-auto mt-5 markdown-body">
+<div class="col-lg-10 mx-auto mt-5">
   <div class="markdown-body">
     <h1>About Me</h1>
     <p>
