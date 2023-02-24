@@ -5,6 +5,26 @@ image: /assets/project/ssueb_main.png
 description: 반려인과 전문가 간의 실시간 영상 상담 서비스를 제공하는 PC 웹사이트<br>[삼성청년SW아카데미 공통PJT]
 ---
 
+<style>
+#title-list {
+  /* opacity: 0.5; */
+  text-align: right;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 1088px) {
+  #title-list {
+    /* writing-mode: vertical-rl; */
+    /* transform: rotate(180deg); */
+    position: fixed;
+    bottom: 420px;
+    right: 22px;
+  }
+}
+</style>  
+
 <h1><b>SSUEB</b></h1>
 
 {% include elements/video.html id="3nSiPJ4YDKI" %}
@@ -106,3 +126,12 @@ description: 반려인과 전문가 간의 실시간 영상 상담 서비스를 
     <li>Jira와 Git을 이용한 협업 경험을 쌓을 수 있어 좋았습니다. </li>
   </ul>
 </ul>
+
+<footer class="mt-auto py-3 text-center">
+  <small id="title-list">
+    <a href="#개요">개요</a><br>
+    <a href="#주요-기능">주요 기능</a><br>
+    <a href="#나의-역할">나의 역할</a><br>
+    <a href="#개발-후기">개발 후기</a><br>
+  </small>
+</footer>
