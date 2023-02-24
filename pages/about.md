@@ -6,36 +6,40 @@ weight: 0
 ---
 
 <div class="col-lg-10 mx-auto mt-5 markdown-body">
-# **About Me**
-안녕하세요. 웹 개발자로 성장하고 싶은 <b>서지윤</b>입니다.<br>
-기록하고 정리하는 것을 좋아하고, 항상 메모하는 습관을 만들고 있습니다. 공부한 내용을 많은 사람과 공유하며 배우고 싶습니다.
+  <div class="markdown-body">
+    <h1>About Me</h1>
+    <p>
+      안녕하세요. 웹 개발자로 성장하고 싶은 <b>서지윤</b>입니다.<br>
+      기록하고 정리하는 것을 좋아하고, 항상 메모하는 습관을 만들고 있습니다. 공부한 내용을 많은 사람과 공유하며 배우고 싶습니다.
+    </p>
+  </div>
 
-## **Programming Skills**
-<div class="row">
-{% include about/skills.html title="Backend" source=site.data.backend %}
-{% include about/skills.html title="Frontend" source=site.data.frontend %}
-{% include about/skills.html title="Etc" source=site.data.etc %}
-</div>
+  <div class="markdown-body">
+    <h2>Programming Skills</h2>
+    <div class="row">
+      {% include about/skills.html title="Backend" source=site.data.backend %}
+      {% include about/skills.html title="Frontend" source=site.data.frontend %}
+      {% include about/skills.html title="Etc" source=site.data.etc %}
+    </div>
+  </div>
 
-## **Education**
-<div class="row">
-{% include about/education.html %}
-</div>
-</div>
+  <h2>Education</h2>
+  <div class="row">
+  {% include about/education.html %}
+  </div>
 
-## **Projects**
-<!-- <div class="row"> -->
-{% include projects/index.html %}
-<!-- </div> -->
+  <h2>Projects</h2>
+  <div class="row">
+  {% include projects/index.html %}
+  </div>
 
-<div class="col-lg-10 mx-auto mt-5 markdown-body">
-## **Certificate & Awards**
-<div class="row">
-{% include about/certificate-awards.html %}
-</div>
+  <h2>Certificate & Awards</h2>
+  <div class="row">
+  {% include about/certificate-awards.html %}
+  </div>
 
-## **Activities**
-<div class="row">
-{% include about/activity.html %}
-</div>
+  <h2>Activities</h2>
+  <div class="row">
+  {% include about/activity.html %}
+  </div>
 </div>
