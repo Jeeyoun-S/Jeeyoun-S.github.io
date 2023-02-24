@@ -87,11 +87,11 @@ buymeacoffee:
 
 ### Defaults for collections ###
 defaults:
-  # - scope:
-  #     path: ""
-  #     type: "projects"
-  #   values:
-  #     layout: "page"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
   - scope:                                              # For Documentation Only
       path: ""                                          # For Documentation Only
       type: "elements"                                  # For Documentation Only
