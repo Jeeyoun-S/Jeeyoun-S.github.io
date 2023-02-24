@@ -1,4 +1,4 @@
-.markdown-body {
+.markdown-body:not(.except) {
   h1,
   h2 {
     margin-top: 32px;
