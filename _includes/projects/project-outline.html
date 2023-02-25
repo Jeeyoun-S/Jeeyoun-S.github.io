@@ -13,25 +13,35 @@ span {
 
 <h2>개요</h2>
 <div>
-  <p>
-    <span class="badge badge-pill text-primary border border-primary mr-2">주제</span>
-    {{ include.theme }}
-  </p>
-  <p>
-    <span class="badge badge-pill text-primary border border-primary mr-2">기간</span>
-    {{ include.time }}
-  </p>
-  <p>
-    <span class="badge badge-pill text-primary border border-primary mr-2">구성</span>
-    {{ include.team }}
-  </p>
-  <p>
-    <span class="badge badge-pill text-primary border border-primary mr-2">진행</span>
-    {{ include.progress }}
-  </p>
-  <p>
-    <span class="badge badge-pill text-primary border border-primary mr-2">코드</span>
-    {{ include.code }}
-  </p>
+  {%- if include.theme -%}
+    <p>
+      <span class="badge badge-pill text-primary border border-primary mr-2">주제</span>
+      {{ include.theme }}
+    </p>
+  {%- endif -%}
+  {%- if include.time -%}
+    <p>
+      <span class="badge badge-pill text-primary border border-primary mr-2">기간</span>
+      {{ include.time }}
+    </p>
+  {%- endif -%}
+  {%- if include.team -%}
+    <p>
+      <span class="badge badge-pill text-primary border border-primary mr-2">구성</span>
+      {{ include.team }}
+    </p>
+  {%- endif -%}
+  {%- if include.progress -%}
+    <p>
+      <span class="badge badge-pill text-primary border border-primary mr-2">진행</span>
+      {{ include.progress }}
+    </p>
+  {%- endif -%}
+  {%- if include.code -%}
+    <p>
+      <span class="badge badge-pill text-primary border border-primary mr-2">코드</span>
+      {{ include.code }}
+    </p>
+  {%- endif -%}
   <sup>{{ include.explain }}</sup>
 </div>
