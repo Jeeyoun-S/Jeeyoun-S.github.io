@@ -1,7 +1,7 @@
 - name: Python
   percentage: 52
   color: warning
-  explain: BFS, DFS 등 알고리즘 구현 가능
+  explain: DFS, BFS 등 여러 알고리즘 구현 가능
 
 - name: R
   percentage: 15

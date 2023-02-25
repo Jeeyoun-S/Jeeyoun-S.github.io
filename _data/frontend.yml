@@ -1,7 +1,7 @@
 - name: HTML/CSS
   percentage: 50
   color: info
-  explain: 기본적인 틀 잡기 가능
+  explain: 
 
 - name: Vue.js
   percentage: 50
