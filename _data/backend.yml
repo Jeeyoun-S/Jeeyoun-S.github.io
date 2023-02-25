@@ -1,7 +1,7 @@
 - name: Spring/Spring Boot
   percentage: 51
   color: success
-  explain: MyBatis, JPA, MVC Pattern 구현 가능
+  explain: MyBatis 및 JPA 사용, MVC Pattern으로 Rest API 구현 가능
 
 - name: Java
   percentage: 51

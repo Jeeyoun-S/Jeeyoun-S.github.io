@@ -1,9 +1,9 @@
 - name: HTML/CSS
   percentage: 50
   color: info
-  explain: 
+  explain: 웹사이트 요소 구성 가능
 
 - name: Vue.js
   percentage: 50
   color: primary
-  explain: Vuex, Router 활용 가능
+  explain: Axios로 API 연결, Vuex 활용, 웹사이트 제작 가능
