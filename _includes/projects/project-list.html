@@ -40,9 +40,6 @@ ul.list-ul li.list-li:before {
 p {
   margin: 7px 0px;
 }
-span {
-  font-size: 100% !important;
-}
 </style>  
 
 <h2 id="{{ include.title | slugify }}">{{ include.title }}</h2>
@@ -53,12 +50,14 @@ span {
       <ul class="pl-4 pb-4 m-0">
         {%- for list_content in list.content -%}
         <li>{{ list_content.title }}</li>
-        <ul class="pl-4 pb-3">
-          {% assign items = list_content.list | split: '@@' %}
-          {%- for item in items -%}
-            <li>item</li>
-          {%- endfor -%}
-        </ul>
+          {%- if list_content.list -%}
+          <ul class="pl-4 pb-3">
+            {% assign items = list_content.list | split: '@@' %}
+            {%- for item in items -%}
+              <li>{{ item }}</li>
+            {%- endfor -%}
+          </ul>
+          {%- endif -%}
         {%- endfor -%}
       </ul>
     </li>
