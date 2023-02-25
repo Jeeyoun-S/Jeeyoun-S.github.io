@@ -1,0 +1,49 @@
+<style>
+h1, h2, h3 {
+  font-weight: bolder;
+  margin-bottom: 14px;
+}
+.skill {
+  padding: 0px 15px 0px 0px;
+}
+.skill span {
+  margin: 5px;
+}
+</style> 
+
+<h2 id="개발-환경">개발 환경</h2>
+<div class="row row-cols-1 row-cols-md-3 m-1">
+  <div class="skill col wow animated fadeIn" data-wow-delay=".15s">
+    <div class="project card text-themed">
+      <div class="card-body">
+        <h5 class="card-title">Backend</h5>
+        {% assign backend_list = include.backend | split: '@@' %}
+        {% for be in backend_list %}
+          <span class="badge badge-pill border">{{ be }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="skill col wow animated fadeIn" data-wow-delay=".15s">
+    <div class="project card text-themed">
+      <div class="card-body">
+        <h5 class="card-title">Frontend</h5>
+        {% assign frontend_list = include.frontend | split: '@@' %}
+        {% for fe in frontend_list %}
+          <span class="badge badge-pill border">{{ fe }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="skill col wow animated fadeIn" data-wow-delay=".15s">
+    <div class="project card text-themed">
+      <div class="card-body">
+        <h5 class="card-title">Database</h5>
+        {% assign database_list = include.database | split: '@@' %}
+        {% for db in database_list %}
+          <span class="badge badge-pill border">{{ db }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
