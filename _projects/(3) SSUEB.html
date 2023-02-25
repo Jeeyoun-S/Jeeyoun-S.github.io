@@ -24,7 +24,7 @@ ul.list-ul li.list-li {
   counter-increment: line-number;
   border-left: 1px solid #A6A6A6;
   position: relative;
-  padding-left: 29px;
+  padding-left: 25px;
   margin-left: 10px;
 }
 ul.list-ul li.list-li:last-child {
@@ -152,7 +152,7 @@ span {
   <div class="skill col wow animated fadeIn" data-wow-delay=".15s">
     <div class="project card text-themed">
       <div class="card-body">
-        <h6 class="card-title">Backend</h6>
+        <h5 class="card-title">Backend</h5>
         <span class="badge badge-pill border">Eclipse 2020-06</span>
         <span class="badge badge-pill border">Spring Tools 3 3.9.14</span>
         <span class="badge badge-pill border">Spring Boot 2.4.5</span>
@@ -166,7 +166,7 @@ span {
   <div class="skill col wow animated fadeIn" data-wow-delay=".15s">
     <div class="project card text-themed">
       <div class="card-body">
-        <h6 class="card-title">Frontend</h6>
+        <h5 class="card-title">Frontend</h5>
         <span class="badge badge-pill border">Vue 3.2.13</span>
         <span class="badge badge-pill border">Vuex 4.0.0</span>
         <span class="badge badge-pill border">Vue Router 4.0.13</span>
@@ -177,7 +177,7 @@ span {
   <div class="skill col wow animated fadeIn" data-wow-delay=".15s">
     <div class="project card text-themed">
       <div class="card-body">
-        <h6 class="card-title">Database</h6>
+        <h5 class="card-title">Database</h5>
         <span class="badge badge-pill border">MySQL 8.0.21</span>
         <span class="badge badge-pill border">Redis 3.0.504</span>
       </div>
@@ -186,52 +186,65 @@ span {
 </div>
 
 <h2 id="나의-역할">나의 역할</h2>
-<h5>1. 설계</h5>
-<ul class="pl-4">
-  <li>회원 관리 및 커뮤니티 API 설계</li>
-  <li>Vuetify 기반 와이어프레임 디자인 설계</li>
-  <li>Team Convention 작성</li>
+<ul class="list-ul">
+  <li class="list-li">
+    <h5>설계</h5>
+    <ul class="pl-4">
+      <li>회원 관리 및 커뮤니티 API 설계</li>
+      <li>Vuetify 기반 와이어프레임 디자인 설계</li>
+      <li>Team Convention 작성</li>
+    </ul>
+  </li>
+  <li class="list-li">
+    <h5>Frontend</h5>
+    <ul class="pl-4">
+      <li>Vuetify 및 CSS 전반 담당</li>
+      <li>반려인 및 전문가 회원가입, 마이페이지 구현</li>
+      <li>상담 예약 관련 페이지 HTML 및 CSS 전체 수정, 오류 해결</li>
+      <li>커뮤니티 관련 페이지 HTML 및 CSS 전체 구현, 게시글 수정 Axios 연결</li>
+      <li>관리자 페이지 HTML 및 CSS 전체 구현, 회원가입 수락 및 알람 Axios 연결</li>
+    </ul>
+  </li>
+  <li class="list-li">
+    <h5>Backend</h5>
+    <ul class="pl-4">
+      <li>JPA를 이용해 회원가입, 마이페이지 CRUD 구현</li>
+      <li>Redis, Naver Cloud Platform Open API를 활용해 휴대폰 인증Rest API 구현</li>
+      <li>전문가 회원가입 수락, 회원 문자 전송 API 구현</li>
+    </ul>  
+  </li>
 </ul>
-
-<h5>2. Frontend</h5>
-<ul class="pl-4">
-  <li>Vuetify 및 CSS 전반 담당</li>
-  <li>반려인 및 전문가 회원가입, 마이페이지 구현</li>
-  <li>상담 예약 관련 페이지 HTML 및 CSS 전체 수정, 오류 해결</li>
-  <li>커뮤니티 관련 페이지 HTML 및 CSS 전체 구현, 게시글 수정 Axios 연결</li>
-  <li>관리자 페이지 HTML 및 CSS 전체 구현, 회원가입 수락 및 알람 Axios 연결</li>
-</ul>
-
-<h5>3. Backend</h5>
-<ul class="pl-4">
-  <li>JPA를 이용해 회원가입, 마이페이지 CRUD 구현</li>
-  <li>Redis, Naver Cloud Platform Open API를 활용해 휴대폰 인증Rest API 구현</li>
-  <li>전문가 회원가입 수락, 회원 문자 전송 API 구현</li>
-</ul>  
 
 <h2 id="개발-후기">개발 후기</h2>
-<h5>1. 설계</h5>
-<ul class="pl-4">
-  <li>꼼꼼함과 개발 경험 부족으로 DB와 API 설계를 수정하는 경우가 많았는데, 이 부분이 아쉬웠습니다.</li>
-</ul>
-
-<h5>2. Frontend</h5>
-<ul class="pl-4">
-  <li>Vue에서 Vuetify, v-charjs, v-calendar를 이용하며 라이브러리 활용 능력을 기를 수 있었습니다.</li>
-  <li>loading page를 구현하며 Vue의 생명주기에 대한 이해도를 높이고, 이를 활용해 개발할 수 있었습니다.</li>
-</ul>
-
-<h5>3. Backend</h5>
-<ul class="pl-4">
-  <li>JPA를 처음으로 학습하고 구현해볼 수 있었습니다.</li>
-  <li>tomcat에서 파일에 접근하는 URL을 설정해 파일 업로드 및 다운로드을 구현해볼 수 있었습니다.</li>
-  <li>JWT를 사용한 첫 프로젝트로, JWT에 대한 이해도를 높일 수 있었습니다.</li>
-</ul>
-
-<h5>4. 협업</h5>
-<ul class="pl-4">
-  <li>Jira와 Git을 이용한 협업 경험을 쌓을 수 있었습니다.</li>
-  <li>각자의 개발 속도와 능력이 달라, 서로 도우며 협업하는 것이 중요하다는 것을 깨달았습니다.</li>
+<ul class="list-ul">
+  <li class="list-li">
+    <h5>설계</h5>
+    <ul class="pl-4">
+      <li>꼼꼼함과 개발 경험 부족으로 DB와 API 설계를 수정하는 경우가 많았는데, 이 부분이 아쉬웠습니다.</li>
+    </ul>
+  </li>
+  <li class="list-li">
+    <h5>Frontend</h5>
+    <ul class="pl-4">
+      <li>Vue에서 Vuetify, v-charjs, v-calendar를 이용하며 라이브러리 활용 능력을 기를 수 있었습니다.</li>
+      <li>loading page를 구현하며 Vue의 생명주기에 대한 이해도를 높이고, 이를 활용해 개발할 수 있었습니다.</li>
+    </ul>
+  </li>
+  <li class="list-li">
+    <h5>Backend</h5>
+    <ul class="pl-4">
+      <li>JPA를 처음으로 학습하고 구현해볼 수 있었습니다.</li>
+      <li>tomcat에서 파일에 접근하는 URL을 설정해 파일 업로드 및 다운로드을 구현해볼 수 있었습니다.</li>
+      <li>JWT를 사용한 첫 프로젝트로, JWT에 대한 이해도를 높일 수 있었습니다.</li>
+    </ul>
+  </li>
+  <li class="list-li">
+    <h5>협업</h5>
+    <ul class="pl-4">
+      <li>Jira와 Git을 이용한 협업 경험을 쌓을 수 있었습니다.</li>
+      <li>각자의 개발 속도와 능력이 달라, 서로 도우며 협업하는 것이 중요하다는 것을 깨달았습니다.</li>
+    </ul>
+  </li>
 </ul>
 
 <footer class="mt-auto py-3 text-center">
