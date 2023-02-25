@@ -2,8 +2,34 @@
 name: My Online Gym
 tools: [Spring Boot, Vue.js, MySQL]
 image: 
-description: 운동 관련 정보 제공 PC 웹사이트<br>[삼성청년SW아카데미 관통PJT]
+description: 운동 일정 관리 및 관련 정보 제공 PC 웹사이트<br>[삼성청년SW아카데미 관통PJT]
 ---
+
+<style>
+h1, h2, h3 {
+  font-weight: bolder;
+}
+h4, h5, h6 {
+  font-weight: 600;
+}
+#title-list {
+  /* opacity: 0.5; */
+  text-align: right;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 1088px) {
+  #title-list {
+    /* writing-mode: vertical-rl; */
+    /* transform: rotate(180deg); */
+    position: fixed;
+    top: 200px;
+    right: 22px;
+  }
+}
+</style>  
 
 <h1>My Online Gym</h1>
 
@@ -13,5 +39,37 @@ description: 운동 관련 정보 제공 PC 웹사이트<br>[삼성청년SW아�
   <li><b>기간</b>&ensp;2022.11.17 ~ 2022.11.25 (1주)</li>
   <li><b>구성</b>&ensp;3인 팀 'MVC'</li>
   <li><b>진행</b>&ensp;삼성청년SW아카데미 SSAFY 8기 1학기 관통 프로젝트</li>
+  <li><b>설명</b>&ensp;<a href="https://github.com/Jeeyoun-S/SSUEB" target="_blank">README 바로가기</a></li>
   <sup>*삼성청년SW아카데미의 보안 정책 상, 코드 공개가 불가능한 프로젝트입니다.</sup>
 </ul>
+
+<h2>주요 기능</h2>
+{% include elements/video.html id="n4Sz-SUYY7s" %}
+
+<h2>개발 환경</h2>
+
+<h2>나의 역할</h2>
+<h5>1. 설계</h5>
+<ul class="pl-4">
+  <li>전체 DB 설계</li>
+</ul>
+
+<h5>2. Frontend</h5>
+<ul class="pl-4">
+  <li>운동 루틴 추천 Form을 제외한 모든 부분 구현</li>
+</ul>
+
+<h5>3. Backend</h5>
+<ul class="pl-4">
+  <li>자카드 유사도 구현을 제외한 모든 부분 구현</li>
+</ul>
+
+<footer class="mt-auto py-3 text-center">
+  <small id="title-list">
+    <a href="#개요">개요</a><br>
+    <a href="#주요-기능">주요 기능</a><br>
+    <a href="#개발-환경">개발 환경</a><br>
+    <a href="#나의-역할">나의 역할</a><br>
+    <a href="#개발-후기">개발 후기</a><br>
+  </small>
+</footer>
