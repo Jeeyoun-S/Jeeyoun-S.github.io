@@ -45,45 +45,22 @@ span {
 }
 </style>  
 
-<h2 id="주요-기능">주요 기능</h2>
+<h2 id="{{ include.title | slugify }}">{{ include.title }}</h2>
 <ul class="list-ul">
-  <li class="list-li">
-    <h5>상담 예약</h5>
-    <ul class="pl-4 pb-4 m-0">
-      <li>반려인</li>
-      <ul class="pl-4 pb-3">
-        <li>반려동물을 등록하고, 등록한 반려동물을 선택해 상담을 신청할 수 있습니다.</li>
-        <li>전문가가 보낸 상담 제안을 확인하고, 맘에 드는 제안을 선택해 상담을 진행이 가능합니다.</li>
+  {% for list in include.source %}
+    <li class="list-li">
+      <h5>{{ list.name }}</h5>
+      <ul class="pl-4 pb-4 m-0">
+        {%- for list_content in list.content -%}
+        <li>{{ list_content.title }}</li>
+        <ul class="pl-4 pb-3">
+          {% assign items = list_content.list | split: '@@' %}
+          {%- for item in items -%}
+            <li>item</li>
+          {%- endfor -%}
+        </ul>
+        {%- endfor -%}
       </ul>
-      <li>전문가</li>
-      <ul class="pl-4">
-        <li>전문가는 반려인이 신청한 상담에 가격과 추가 설명을 작성해 제안을 보낼 수 있습니다.</li>
-        <li>전문가는 보낸 제안을 삭제할 수 있으며, 반려인이 제안을 수락하면 자동으로 상담이 확정됩니다.</li>
-      </ul>
-    </ul>
-  </li>
-  <li class="list-li">
-    <h5>화상 상담</h5>
-    <ul class="pl-4 pb-4 m-0">
-      <li>전문가와 반려인은 예약한 시간에 '화상 미팅룸'에 입장해 실시간 화상 상담을 진행할 수 있습니다.</li>
-      <li>상담 중에 상담 신청 내용을 확인하고, 실시간 채팅을 보낼 수도 있습니다.</li>
-      <li>상담 종료 후, 전문가는 상담 결과를, 반려인은 상담 후기를 작성할 수 있습니다.</li>
-    </ul>
-  </li>
-  <li class="list-li">
-    <h5>회원 관리</h5>
-    <ul class="pl-4 pb-4 m-0">
-      <li>반려인은 자신의 반려동물 정보를 관리할 수 있습니다.</li>
-      <li>전문가는 프로필을 등록하고, 지금까지 예약 활동을 그래프로 확인할 수 있습니다.</li>
-      <li>관리자는 전문가 가입을 수락하고, 회원을 탈퇴시키거나 알림을 보낼 수 있습니다.</li>
-    </ul>
-  </li>
-  <li class="list-li">
-    <h5>커뮤니티</h5>
-    <ul class="pl-4 pb-4 m-0">
-      <li>회원들은 '자유게시판'에 자유롭게 글과 댓글을 쓰고, 좋아요도 누를 수 있습니다.</li>
-      <li>종료된 상담 중 반려인이 공개한 상담은 '공개된 상담'에서 상담 내용을 확인할 수 있습니다.</li>
-      <li>관리자는 자유게시판의 모든 글 및 댓글을 삭제할 수 있고, 공지사항을 작성할 수 있습니다.</li>
-    </ul>
-  </li>
+    </li>
+  {% endfor %}
 </ul>
