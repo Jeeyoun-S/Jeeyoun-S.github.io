@@ -5,32 +5,6 @@ image: /assets/project/my_online_gym.png
 description: 운동 일정 관리 및 관련 정보 제공 PC 웹사이트<br>[삼성청년SW아카데미 관통PJT]
 ---
 
-<style>
-h1, h2, h3 {
-  font-weight: bolder;
-}
-h4, h5, h6 {
-  font-weight: 600;
-}
-#title-list {
-  /* opacity: 0.5; */
-  text-align: right;
-  a {
-    text-decoration: none;
-    font-weight: bold;
-  }
-}
-@media only screen and (min-width: 1088px) {
-  #title-list {
-    /* writing-mode: vertical-rl; */
-    /* transform: rotate(180deg); */
-    position: fixed;
-    top: 200px;
-    right: 22px;
-  }
-}
-</style>  
-
 <h1><b>My Online Gym</b></h1>
 
 {% 
@@ -43,7 +17,9 @@ h4, h5, h6 {
   explain="*삼성청년SW아카데미의 보안 정책 상, 코드 공개가 불가능한 프로젝트입니다."
 %}
 
-{% include elements/video.html id="n4Sz-SUYY7s" %}
+<div class="pt-4">
+  {% include elements/video.html id="n4Sz-SUYY7s" %}
+</div>
 
 {%
   include projects/project-list.html 
@@ -67,7 +43,7 @@ h4, h5, h6 {
 {%
   include projects/project-list.html 
   title="개발 후기" 
-  source=site.data.my_online_gym.role
+  source=site.data.my_online_gym.review
 %}
 
 {%

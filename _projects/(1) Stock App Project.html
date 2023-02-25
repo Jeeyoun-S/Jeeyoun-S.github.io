@@ -5,102 +5,46 @@ image: /assets/project/stock_app_main.jpg
 description: 주식 정보 조회 및 모의주식투자가 가능한 Android 앱
 ---
 
-<style>
-h1, h2, h3 {
-  font-weight: bolder;
-}
-h4, h5, h6 {
-  font-weight: 600;
-}
-#title-list {
-  /* opacity: 0.5; */
-  text-align: right;
-  a {
-    text-decoration: none;
-    font-weight: bold;
-  }
-}
-@media only screen and (min-width: 1088px) {
-  #title-list {
-    /* writing-mode: vertical-rl; */
-    /* transform: rotate(180deg); */
-    position: fixed;
-    top: 200px;
-    right: 22px;
-  }
-}
-</style>  
+<h1><b>Stock App Project</b></h1>
 
-<h1>Stock App Project</h1>
+{% 
+  include projects/project-outline.html 
+  theme="주식 정보 조회 및 모의주식투자가 가능한 서비스" 
+  time="2022.09.29 ~ ing (SSAFY 교육 진행으로 1월부터 일시 중단)" 
+  team="5인 팀 (8기 SSAFY 교육생)" 
+  code="<a href='https://github.com/hjlim7831/StockAppServer' target='_blank'>Backend Repo</a>&ensp;<a href='https://github.com/subin3277/StockApp' target='_blank'>Frontend Repo</a>" 
+%}
 
-<h2>개요</h2>
-<ul class="pl-4">
-  <li><b>주제</b>&ensp;주식 정보 조회 및 모의주식투자가 가능한 서비스</li>
-  <li><b>기간</b>&ensp;2022.09.29 ~ ing (SSAFY 교육 진행으로 1월부터 일시 중단)</li>
-  <li><b>구성</b>&ensp;5인 팀 (8기 SSAFY 교육생)</li>
-  <li><b>코드</b>&ensp;<a href="https://github.com/hjlim7831/StockAppServer" target="_blank">Backend Repo</a>&ensp;<a href="https://github.com/subin3277/StockApp" target="_blank">Frontend Repo</a>
-  </li>
-</ul>
+{%
+  include projects/project-list.html 
+  title="주요 기능" 
+  source=site.data.stock_app_pjt.function
+%}
 
-<h2 id="주요-기능">주요 기능</h2>
-<h5>1. 주식 정보 조회</h5>
-<ul class="pl-4">
-  <li>주요 지수, 환율 정보, 카테고리별 종목 주가, 추천 주식을 조회할 수 있습니다.</li>
-  <li>상세 페이지에서 주가 변동 그래프, 종목 정보, 관련 뉴스, 관련 종목, 실시간 주가를 조회할 수 있습니다.</li>
-  <li>상장 예정인 주식을 볼 수 있습니다.</li>
-</ul>
+{%
+  include projects/project-list.html 
+  title="주요 기능" 
+  source=site.data.stock_app_pjt.function
+%}
 
-<h5>2. 주식 및 외환 거래</h5>
-<ul class="pl-4">
-  <li>실시간 주가로 원하는 주식을 모의로 매수 및 매도할 수 있습니다.</li>
-  <li>실시간 환율로 외환을 원화로, 원화를 외환으로 환전할 수 있습니다.</li>
-</ul>
+{% 
+  include projects/project-skill.html 
+  backend="Spring Tools 3 for Eclipse@@Java 8@@Spring Boot 2.7.4@@Swagger2 2.9.2@@Gradle 7.5@@MyBatis 2.2.2" 
+  frontend="Android Studio 4.2.2@@Java 8@@Gradle 6.7.1" 
+  database="MySQL 8.0.21"
+%}
 
-<h5>3. 주식 검색</h5>
-<ul class="pl-4">
-  <li>자카드 유사도로 검색된 주식을 볼 수 있습니다.</li>
-  <li>검색창에서 최근 검색 기록과 조회수 TOP 5 종목을 볼 수 있습니다.</li>
-</ul>
+{%
+  include projects/project-list.html 
+  title="나의 역할" 
+  source=site.data.stock_app_pjt.role
+%}
 
-<h5>4. 회원 관리</h5>
-<ul class="pl-4">
-  <li>회원가입 및 로그인을 할 수 있습니다. 사용자에게는 가입 시, 500만 원의 자금이 주어집니다.</li>
-  <li>관심 주식, 보유 주식, 통장 잔고 조회가 가능합니다.</li>
-  <li>개인 랭킹, 수익률, 전날 대비 수익률 변화 등을 볼 수 있습니다.</li>
-</ul>
-
-<h2 id="개발-환경">개발 환경</h2>
-<h5>1. Backend</h5>
-<ul class="pl-4">
-  <li>Spring Tools 3 for Eclipse</li>
-  <li>Java 8</li>
-  <li>Spring Boot 2.7.4</li>
-  <li>Swagger2 2.9.2</li>
-  <li>Gradle 7.5</li>
-  <li>MyBatis 2.2.2</li>
-</ul>
-
-<h5>2. Frontend</h5>
-<ul class="pl-4">
-  <li>Android Studio 4.2.2</li>
-  <li>Java 8</li>
-  <li>Gradle 6.7.1</li>
-</ul>
-
-<h5>3. Database</h5>
-<ul class="pl-4">
-  <li>MySQL 8.0.21</li>
-</ul>
-
-<h2 id="나의-역할">나의 역할</h2>
-<ul class="pl-4">
-  <li>Backend 담당</li>
-  <li>요구사항 명세서 작성 및 API 설계</li>
-  <li>MyBatis를 이용해 회원 관리, 사용자 랭킹, 찜 목록 관리 기능 Rest API 구현</li>
-  <li>Session에 정보를 저장해 주식 및 외환 매매 구현</li>
-  <li>Open API에서 RestTemplate을 이용해 실시간 주가, 환율, 주요 지수 정보 조회</li>
-  <li>타니모토 유사도와 JSON을 이용한 추천 알고리즘 구현</li>
-</ul>
+{%
+  include projects/project-list.html 
+  title="개발 후기" 
+  source=site.data.stock_app_pjt.review
+%}
 
 <h2 id="개발-후기">개발 후기</h2>
 <ul class="pl-4">
@@ -112,12 +56,6 @@ h4, h5, h6 {
   </li>
 </ul>
 
-<footer class="mt-auto py-3 text-center">
-  <small id="title-list">
-    <a href="#개요">개요</a><br>
-    <a href="#주요-기능">주요 기능</a><br>
-    <a href="#개발-환경">개발 환경</a><br>
-    <a href="#나의-역할">나의 역할</a><br>
-    <a href="#개발-후기">개발 후기</a><br>
-  </small>
-</footer>
+{%
+  include projects/project-footer.html 
+%}
