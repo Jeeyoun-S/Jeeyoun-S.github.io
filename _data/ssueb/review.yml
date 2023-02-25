@@ -1,0 +1,19 @@
+- name: 설계
+  content:
+    - title: 꼼꼼함과 개발 경험 부족으로 DB와 API 설계를 수정하는 경우가 많았는데, 이 부분이 아쉬웠습니다.
+
+- name: Frontend
+  content:
+    - title: Vue에서 Vuetify, v-charjs, v-calendar를 이용하며 라이브러리 활용 능력을 기를 수 있었습니다.
+    - title: loading page를 구현하며 Vue의 생명주기에 대한 이해도를 높이고, 이를 활용해 개발할 수 있었습니다.
+
+- name: Backend
+  content:
+    - title: JPA를 처음으로 학습하고 구현해볼 수 있었습니다.
+    - title: tomcat에서 파일에 접근하는 URL을 설정해 파일 업로드 및 다운로드을 구현해볼 수 있었습니다.
+    - title: JWT를 사용한 첫 프로젝트로, JWT에 대한 이해도를 높일 수 있었습니다.
+
+- name: 협업
+  content:
+    - title: Jira와 Git을 이용한 협업 경험을 쌓을 수 있었습니다.
+    - title: 각자의 개발 속도와 능력이 달라, 서로 도우며 협업하는 것이 중요하다는 것을 깨달았습니다.
