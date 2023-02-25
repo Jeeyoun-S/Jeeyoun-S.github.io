@@ -5,254 +5,45 @@ image: /assets/project/ssueb_main.png
 description: 반려인과 전문가 간의 실시간 영상 상담 서비스를 제공하는 PC 웹사이트<br>[삼성청년SW아카데미 공통PJT]
 ---
 
-<style>
-h1, h2, h3 {
-  font-weight: bolder;
-  margin-bottom: 14px;
-}
-h4, h5, h6 {
-  font-weight: 600;
-}
-ul.list-ul {
-  counter-reset: line-number;
-}
-ul.list-ul, li.list-li {
-  list-style: none;
-  padding: 0;
-}
-ul.list-ul li.list-li {
-  counter-increment: line-number;
-  border-left: 1px solid #A6A6A6;
-  position: relative;
-  padding-left: 25px;
-  margin-left: 10px;
-}
-ul.list-ul li.list-li:last-child {
-  border: 0px;
-  padding-bottom: 0;
-}
-ul.list-ul li.list-li:before {
-  content: counter(line-number);
-  text-align: center;
-  width: 26px;
-  height: 26px;
-  background: white;
-  border: 1px solid #000000;
-  box-shadow: 3px 3px 0px #A6A6A6;
-  border-radius: 50%;
-  position: absolute;
-  left: -14.5px;
-  top: 0px;
-}
-p {
-  margin: 7px 0px;
-}
-span {
-  font-size: 100% !important;
-}
-.skill {
-  padding: 0px 15px 0px 0px;
-}
-.skill span {
-  margin: 5px;
-}
-#title-list {
-  /* opacity: 0.5; */
-  text-align: right;
-  a {
-    text-decoration: none;
-    font-weight: bold;
-  }
-}
-@media only screen and (min-width: 1088px) {
-  #title-list {
-    /* writing-mode: vertical-rl; */
-    /* transform: rotate(180deg); */
-    position: fixed;
-    top: 200px;
-    right: 22px;
-  }
-}
-</style>  
-
-<h1>SSUEB</h1>
+<h1><b>SSUEB</b></h1>
 
 {% include elements/video.html id="3nSiPJ4YDKI" %}
 
-<h2>개요</h2>
-<div>
-  <p>
-    <span class="badge badge-pill text-primary border border-primary mr-2">주제</span>
-    반려동물행동지도사와 반려인 간의 실시간 영상 상담 서비스
-  </p>
-  <p>
-    <span class="badge badge-pill text-primary border border-primary mr-2">기간</span>
-    2023.01.04 ~ 2023.02.16 (7주)
-  </p>
-  <p>
-    <span class="badge badge-pill text-primary border border-primary mr-2">구성</span>
-    6인 팀 '개발이 힘들면 창밖을 바라보기'
-  </p>
-  <p>
-    <span class="badge badge-pill text-primary border border-primary mr-2">진행</span>
-    삼성청년SW아카데미 SSAFY 8기 2학기 공통 프로젝트
-  </p>
-  <p>
-    <span class="badge badge-pill text-primary border border-primary mr-2">코드</span>
-    <a href="https://github.com/Jeeyoun-S/SSUEB" target="_blank">Github 바로가기</a>
-  </p>
-  <sup>*삼성청년SW아카데미의 보안 정책 상, 특별한 사유가 있을 때만 코드가 공개 상태로 변경됩니다.</sup>
-</div>
+{% 
+  include projects/project-outline.html 
+  theme="반려동물행동지도사와 반려인 간의 실시간 영상 상담 서비스" 
+  time="2023.01.04 ~ 2023.02.16 (7주)" 
+  team="6인 팀 '개발이 힘들면 창밖을 바라보기'" 
+  progress="삼성청년SW아카데미 SSAFY 8기 2학기 공통 프로젝트" 
+  code="<a href='https://github.com/Jeeyoun-S/SSUEB' target='_blank'>Github 바로가기</a>" 
+  explain="*삼성청년SW아카데미의 보안 정책 상, 특별한 사유가 있을 때만 코드가 공개 상태로 변경됩니다."
+%}
 
-<h2 id="주요-기능">주요 기능</h2>
-<ul class="list-ul">
-  <li class="list-li">
-    <h5>상담 예약</h5>
-    <ul class="pl-4 pb-4 m-0">
-      <li>반려인</li>
-      <ul class="pl-4 pb-3">
-        <li>반려동물을 등록하고, 등록한 반려동물을 선택해 상담을 신청할 수 있습니다.</li>
-        <li>전문가가 보낸 상담 제안을 확인하고, 맘에 드는 제안을 선택해 상담을 진행이 가능합니다.</li>
-      </ul>
-      <li>전문가</li>
-      <ul class="pl-4">
-        <li>전문가는 반려인이 신청한 상담에 가격과 추가 설명을 작성해 제안을 보낼 수 있습니다.</li>
-        <li>전문가는 보낸 제안을 삭제할 수 있으며, 반려인이 제안을 수락하면 자동으로 상담이 확정됩니다.</li>
-      </ul>
-    </ul>
-  </li>
-  <li class="list-li">
-    <h5>화상 상담</h5>
-    <ul class="pl-4 pb-4 m-0">
-      <li>전문가와 반려인은 예약한 시간에 '화상 미팅룸'에 입장해 실시간 화상 상담을 진행할 수 있습니다.</li>
-      <li>상담 중에 상담 신청 내용을 확인하고, 실시간 채팅을 보낼 수도 있습니다.</li>
-      <li>상담 종료 후, 전문가는 상담 결과를, 반려인은 상담 후기를 작성할 수 있습니다.</li>
-    </ul>
-  </li>
-  <li class="list-li">
-    <h5>회원 관리</h5>
-    <ul class="pl-4 pb-4 m-0">
-      <li>반려인은 자신의 반려동물 정보를 관리할 수 있습니다.</li>
-      <li>전문가는 프로필을 등록하고, 지금까지 예약 활동을 그래프로 확인할 수 있습니다.</li>
-      <li>관리자는 전문가 가입을 수락하고, 회원을 탈퇴시키거나 알림을 보낼 수 있습니다.</li>
-    </ul>
-  </li>
-  <li class="list-li">
-    <h5>커뮤니티</h5>
-    <ul class="pl-4 pb-4 m-0">
-      <li>회원들은 '자유게시판'에 자유롭게 글과 댓글을 쓰고, 좋아요도 누를 수 있습니다.</li>
-      <li>종료된 상담 중 반려인이 공개한 상담은 '공개된 상담'에서 상담 내용을 확인할 수 있습니다.</li>
-      <li>관리자는 자유게시판의 모든 글 및 댓글을 삭제할 수 있고, 공지사항을 작성할 수 있습니다.</li>
-    </ul>
-  </li>
-</ul>
+{%
+  include projects/project-list.html 
+  title="주요 기능" 
+  source=site.data.ssueb.function
+%}
 
-<h2 id="개발-환경">개발 환경</h2>
-<div class="row row-cols-1 row-cols-md-3 m-1">
-  <div class="skill col wow animated fadeIn" data-wow-delay=".15s">
-    <div class="project card text-themed">
-      <div class="card-body">
-        <h5 class="card-title">Backend</h5>
-        <span class="badge badge-pill border">Eclipse 2020-06</span>
-        <span class="badge badge-pill border">Spring Tools 3 3.9.14</span>
-        <span class="badge badge-pill border">Spring Boot 2.4.5</span>
-        <span class="badge badge-pill border">Spring Data JPA</span>
-        <span class="badge badge-pill border">Java 11</span>
-        <span class="badge badge-pill border">Gradle 6.7</span>
-        <span class="badge badge-pill border">Openvidu 2.25.0</span>
-      </div>
-    </div>
-  </div>
-  <div class="skill col wow animated fadeIn" data-wow-delay=".15s">
-    <div class="project card text-themed">
-      <div class="card-body">
-        <h5 class="card-title">Frontend</h5>
-        <span class="badge badge-pill border">Vue 3.2.13</span>
-        <span class="badge badge-pill border">Vuex 4.0.0</span>
-        <span class="badge badge-pill border">Vue Router 4.0.13</span>
-        <span class="badge badge-pill border">Vuetify 3.0.0 Beta</span>
-      </div>
-    </div>
-  </div>
-  <div class="skill col wow animated fadeIn" data-wow-delay=".15s">
-    <div class="project card text-themed">
-      <div class="card-body">
-        <h5 class="card-title">Database</h5>
-        <span class="badge badge-pill border">MySQL 8.0.21</span>
-        <span class="badge badge-pill border">Redis 3.0.504</span>
-      </div>
-    </div>
-  </div>
-</div>
+{% 
+  include projects/project-skill.html 
+  backend="Eclipse 2020-06@@Spring Tools 3 3.9.14@@Spring Boot 2.4.5@@Spring Data JPA@@Java 11@@Gradle 6.7@@Openvidu 2.25.0" 
+  frontend="Vue 3.2.13@@Vuex 4.0.0@@Vue Router 4.0.13@@Vuetify 3.0.0 Beta" 
+  database="MySQL 8.0.21@@Redis 3.0.504"
+%}
 
-<h2 id="나의-역할">나의 역할</h2>
-<ul class="list-ul">
-  <li class="list-li">
-    <h5>설계</h5>
-    <ul class="pl-4 pb-4 m-0">
-      <li>회원 관리 및 커뮤니티 API 설계</li>
-      <li>Vuetify 기반 와이어프레임 디자인 설계</li>
-      <li>Team Convention 작성</li>
-    </ul>
-  </li>
-  <li class="list-li">
-    <h5>Frontend</h5>
-    <ul class="pl-4 pb-4 m-0">
-      <li>Vuetify 및 CSS 전반 담당</li>
-      <li>반려인 및 전문가 회원가입, 마이페이지 구현</li>
-      <li>상담 예약 관련 페이지 HTML 및 CSS 전체 수정, 오류 해결</li>
-      <li>커뮤니티 관련 페이지 HTML 및 CSS 전체 구현, 게시글 수정 Axios 연결</li>
-      <li>관리자 페이지 HTML 및 CSS 전체 구현, 회원가입 수락 및 알람 Axios 연결</li>
-    </ul>
-  </li>
-  <li class="list-li">
-    <h5>Backend</h5>
-    <ul class="pl-4 pb-4 m-0">
-      <li>JPA를 이용해 회원가입, 마이페이지 CRUD 구현</li>
-      <li>Redis, Naver Cloud Platform Open API를 활용해 휴대폰 인증Rest API 구현</li>
-      <li>전문가 회원가입 수락, 회원 문자 전송 API 구현</li>
-    </ul>  
-  </li>
-</ul>
+{%
+  include projects/project-list.html 
+  title="나의 역할" 
+  source=site.data.ssueb.role
+%}
 
-<h2 id="개발-후기">개발 후기</h2>
-<ul class="list-ul">
-  <li class="list-li">
-    <h5>설계</h5>
-    <ul class="pl-4 pb-4 m-0">
-      <li>꼼꼼함과 개발 경험 부족으로 DB와 API 설계를 수정하는 경우가 많았는데, 이 부분이 아쉬웠습니다.</li>
-    </ul>
-  </li>
-  <li class="list-li">
-    <h5>Frontend</h5>
-    <ul class="pl-4 pb-4 m-0">
-      <li>Vue에서 Vuetify, v-charjs, v-calendar를 이용하며 라이브러리 활용 능력을 기를 수 있었습니다.</li>
-      <li>loading page를 구현하며 Vue의 생명주기에 대한 이해도를 높이고, 이를 활용해 개발할 수 있었습니다.</li>
-    </ul>
-  </li>
-  <li class="list-li">
-    <h5>Backend</h5>
-    <ul class="pl-4 pb-4 m-0">
-      <li>JPA를 처음으로 학습하고 구현해볼 수 있었습니다.</li>
-      <li>tomcat에서 파일에 접근하는 URL을 설정해 파일 업로드 및 다운로드을 구현해볼 수 있었습니다.</li>
-      <li>JWT를 사용한 첫 프로젝트로, JWT에 대한 이해도를 높일 수 있었습니다.</li>
-    </ul>
-  </li>
-  <li class="list-li">
-    <h5>협업</h5>
-    <ul class="pl-4 pb-4 m-0">
-      <li>Jira와 Git을 이용한 협업 경험을 쌓을 수 있었습니다.</li>
-      <li>각자의 개발 속도와 능력이 달라, 서로 도우며 협업하는 것이 중요하다는 것을 깨달았습니다.</li>
-    </ul>
-  </li>
-</ul>
+{%
+  include projects/project-list.html 
+  title="개발 후기" 
+  source=site.data.ssueb.review
+%}
 
-<footer class="mt-auto py-3 text-center">
-  <small id="title-list">
-    <a href="#개요">개요</a><br>
-    <a href="#주요-기능">주요 기능</a><br>
-    <a href="#개발-환경">개발 환경</a><br>
-    <a href="#나의-역할">나의 역할</a><br>
-    <a href="#개발-후기">개발 후기</a><br>
-  </small>
-</footer>
+{%
+  include projects/project-footer.html 
+%}

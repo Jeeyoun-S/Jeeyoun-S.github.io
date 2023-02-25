@@ -31,110 +31,45 @@ h4, h5, h6 {
 }
 </style>  
 
-<h1>My Online Gym</h1>
+<h1><b>My Online Gym</b></h1>
 
-<h2>개요</h2>
-<ul class="pl-4">
-  <li><b>주제</b>&ensp;운동 일정 관리 및 관련 정보 제공 서비스</li>
-  <li><b>기간</b>&ensp;2022.11.17 ~ 2022.11.25 (1주)</li>
-  <li><b>구성</b>&ensp;3인 팀 'MVC'</li>
-  <li><b>진행</b>&ensp;삼성청년SW아카데미 SSAFY 8기 1학기 관통 프로젝트</li>
-  <li><b>설명</b>&ensp;<a href="https://github.com/Jeeyoun-S/My-Online-Gym" target="_blank">ReadMe 바로가기</a></li>
-  <sup>*삼성청년SW아카데미의 보안 정책 상, 코드 공개가 불가능한 프로젝트입니다.</sup>
-</ul>
+{% 
+  include projects/project-outline.html 
+  theme="운동 일정 관리 및 관련 정보 제공 서비스" 
+  time="2022.11.17 ~ 2022.11.25 (1주)" 
+  team="3인 팀 'MVC'" 
+  progress="삼성청년SW아카데미 SSAFY 8기 1학기 관통 프로젝트" 
+  code="<a href='https://github.com/Jeeyoun-S/My-Online-Gym' target='_blank'>ReadMe 바로가기</a>" 
+  explain="*삼성청년SW아카데미의 보안 정책 상, 코드 공개가 불가능한 프로젝트입니다."
+%}
 
-<h2 id="주요-기능">주요 기능</h2>
 {% include elements/video.html id="n4Sz-SUYY7s" %}
-<h5>1. 회원 관련 기능</h5>
-<ul class="pl-4">
-  <li>회원가입 및 로그인을 할 수 있습니다.</li>
-  <li>회원가입 없이 게스트 모드로 입장 가능하며, 일부 기능 사용이 제한됩니다.</li>
-</ul>
 
-<h5>2. 일정 관련 기능</h5>
-<ul class="pl-4">
-  <li>운동 정보를 입력하고 달력에 일정을 추가할 수 있습니다.</li>
-  <li>일정을 달력 또는 리스트 형식으로 조회하고, 수정 및 삭제가 가능합니다.</li>
-</ul>
+{%
+  include projects/project-list.html 
+  title="주요 기능" 
+  source=site.data.my_online_gym.function
+%}
 
-<h5>3. 루틴 추천 관련 기능</h5>
-<ul class="pl-4">
-  <li>현재 상황을 입력하면 운동 루틴을 추천 받을 수 있습니다.</li>
-  <li>추천 받은 루틴에 동작을 추가 및 삭제가 가능하고, 찜 목록에 루틴을 저장할 수 있습니다.</li>
-</ul>
+{% 
+  include projects/project-skill.html 
+  backend="Spring Tools Suite 3 for Eclipse@@Java 8@@Spring Boot 2.7.5@@Swagger 3 3.0.0@@Maven@@MyBatis 2.2.2" 
+  frontend="Vue 2.7.14@@Bootstrap 4.6.2@@Vuex 3.6.2@@Vue Router 3.5.1" 
+  database="MySQL 8.0.21@@JSON"
+%}
 
-<h5>4. 운동 영상 관련 기능</h5>
-<ul class="pl-4">
-  <li>검색 결과 개수를 지정해 운동 영상을 검색할 수 있습니다.</li>
-  <li>조회된 영상의 상세 페이지에 영상 재생, 댓글 등록·수정·삭제, 찜 목록에 추가 기능이 있습니다.</li>
-</ul>
+{%
+  include projects/project-list.html 
+  title="나의 역할" 
+  source=site.data.my_online_gym.role
+%}
 
-<h5>5. 건강기능식품 관련 기능</h5>
-<ul class="pl-4">
-  <li>건강기능식품을 검색하고, 검색 결과를 정렬할 수 있습니다.</li>
-  <li>상세 페이지에 세부 내용 조회, 찜 목록에 추가, 제품 조회 및 쇼핑몰 이동 기능이 있습니다.</li>
-</ul>
+{%
+  include projects/project-list.html 
+  title="개발 후기" 
+  source=site.data.my_online_gym.role
+%}
 
-<h2 id="개발-환경">개발 환경</h2>
-<h5>1. Backend</h5>
-<ul class="pl-4">
-  <li>Spring Tools Suite 3 for Eclipse</li>
-  <li>Java 8</li>
-  <li>Sprint Boot 2.7.5</li>
-  <li>Swagger 3 3.0.0</li>
-  <li>Maven</li>
-  <li>MyBatis 2.2.2</li>
-</ul>
-
-<h5>2. Frontend</h5>
-<ul class="pl-4">
-  <li>Vue 2.7.14</li>
-  <li>Bootstrap 4.6.2</li>
-  <li>Vuex 3.6.2</li>
-  <li>Vue Router 3.5.1</li>
-</ul>
-
-<h5>3. Database</h5>
-<ul class="pl-4">
-  <li>MySQL 8.0.21</li>
-  <li>JSON</li>
-</ul>
-
-<h2 id="나의-역할">나의 역할</h2>
-<h5>1. 설계</h5>
-<ul class="pl-4">
-  <li>전체 DB 설계</li>
-</ul>
-
-<h5>2. Frontend</h5>
-<ul class="pl-4">
-  <li>전체 구현 담당 (운동 루틴 추천 HTML Form 제외)</li>
-  <li>v-calendar를 이용해 일정 관리 UI 구현</li>
-  <li>Axios로 Rest API 연결</li>
-  <li>Bootstrap과 CSS로 디자인</li>
-</ul>
-
-<h5>3. Backend</h5>
-<ul class="pl-4">
-  <li>전체 구현 담당 (자카드 유사도 구현 제외)</li>
-  <li>json.simple로 JSON 데이터를 불러와 MyBatis로 DB에 저장</li>
-  <li>Youtube Open API, Naver Open API, 공공데이터 API를 RestTemplate을 활용해 조회</li>
-  <li>MyBatis를 이용해 모든 기능 CRUD를 MVC Pattern으로 Rest API 구현</li>
-</ul>
-
-<h2 id="개발-후기">개발 후기</h2>
-<ul class="pl-4">
-  <li>Spring Boot에서 JSON 파일과 Open API를 활용하는 법을 익힐 수 있었습니다.</li>
-  <li>처음으로 웹 개발 프로젝트를 완성해 보고, 배포까지 진행해 볼 수 있었습니다.</li>
-  <li>SSAFY에서 1학기에 배웠던 기술을 다시 정리해 보는 시간이었습니다.</li>
-</ul>
-
-<footer class="mt-auto py-3 text-center">
-  <small id="title-list">
-    <a href="#개요">개요</a><br>
-    <a href="#주요-기능">주요 기능</a><br>
-    <a href="#개발-환경">개발 환경</a><br>
-    <a href="#나의-역할">나의 역할</a><br>
-    <a href="#개발-후기">개발 후기</a><br>
-  </small>
-</footer>
+{%
+  include projects/project-footer.html 
+%}
