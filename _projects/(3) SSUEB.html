@@ -13,11 +13,15 @@ h1, h2, h3 {
 h4, h5, h6 {
   font-weight: 600;
 }
+ul.list-ul {
+  counter-reset: line-number;
+}
 ul.list-ul, li.list-li {
   list-style: none;
   padding: 0;
 }
 ul.list-ul li.list-li {
+  counter-increment: line-number;
   border-left: 1px solid #A6A6A6;
   position: relative;
   padding-left: 20px;
@@ -27,8 +31,8 @@ ul.list-ul li.list-li:last-child {
   border: 0px;
   padding-bottom: 0;
 }
-ul.list-ul li.list-li:first-letter {
-  /* content: ''; */
+ul.list-ul li.list-li:before {
+  content: counter(line-number);
   width: 17px;
   height: 17px;
   background: white;
