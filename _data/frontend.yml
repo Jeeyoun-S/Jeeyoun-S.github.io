@@ -6,4 +6,4 @@
 - name: Vue.js
   percentage: 50
   color: primary
-  explain: Axios로 API 연결, Vuex 활용, 웹사이트 제작 가능
+  explain: Axios 및 Vuex 사용, 웹사이트 제작 가능
