@@ -1,5 +1,4 @@
 - name: Spring/Spring Boot
-  percentage: 51
   color: success
   explain: MyBatis 및 JPA 사용, Rest API 구현 가능
 
