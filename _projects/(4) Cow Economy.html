@@ -9,37 +9,35 @@ description: 경제 기사를 읽으며, 경제 공부를 할 수 있는 모바�
 
 {% 
   include projects/project-outline.html 
-  theme="경제 기사를 읽으며 경제 공부를 할 수 있는 서비스" 
-  time="2023.01.04 ~ ing (7주)" 
+  theme="경제 기사를 읽으며 경제 공부를 할 수 있는 서비스 (소 귀에 경제 읽기)" 
+  time="2023.02.23 ~ ing (7주)" 
   team="5인 팀 '난쥉이조'" 
-  progress="삼성청년SW아카데미 SSAFY 8기 2학기 특화 프로젝트" 
-  code="<a href='https://github.com/Jeeyoun-S/SSUEB' target='_blank'>Github 바로가기</a>" 
-  explain="*삼성청년SW아카데미의 보안 정책 상, 특별한 사유가 있을 때만 코드가 공개 상태로 변경됩니다."
+  progress="삼성청년SW아카데미 SSAFY 8기 2학기 특화 프로젝트 [빅데이터 분산]" 
 %}
 
 {%
   include projects/project-list.html 
   title="주요 기능" 
-  source=site.data.ssueb.function
+  source=site.data.cow_economy.function
 %}
 
 {% 
   include projects/project-skill.html 
-  backend="IntelliJ@@Spring Boot 2.4.5@@Spring Data JPA@@Java 11@@Gradle 6.7@@Openvidu 2.25.0" 
+  backend="IntelliJ@@Spring Boot 2.4.5@@Spring Data JPA@@Java 11@@Gradle 6.7" 
   frontend="Vue 3.2.13@@Vuex 4.0.0@@Vue Router 4.0.13@@Vuetify 3.0.0 Beta" 
-  database="MySQL 8.0.21@@Hadoop@Python"
+  database="MySQL 8.0.21@@Hadoop@@PySpark@@Python"
 %}
 
 {%
   include projects/project-list.html 
   title="나의 역할" 
-  source=site.data.ssueb.role
+  source=site.data.cow_economy.role
 %}
 
 {%
   include projects/project-list.html 
   title="개발 후기" 
-  source=site.data.ssueb.review
+  source=site.data.cow_economy.review
 %}
 
 {%
