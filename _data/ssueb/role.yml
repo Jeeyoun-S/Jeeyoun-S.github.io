@@ -15,5 +15,5 @@
 - name: Backend
   content:
     - title: JPA를 이용해 회원가입, 마이페이지 CRUD 구현
-    - title: Redis, Naver Cloud Platform Open API를 활용해 휴대폰 인증Rest API 구현
+    - title: Redis, Naver Cloud Platform Open API를 활용해 휴대폰 인증 Rest API 구현
     - title: 전문가 회원가입 수락, 회원 문자 전송 API 구현
