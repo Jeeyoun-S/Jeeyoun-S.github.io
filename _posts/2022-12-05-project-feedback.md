@@ -1,10 +1,10 @@
 ---
-title: Project에 대한 Feedback 반영하기
+title: My Online Gym에 대한 Feedback
 date: 2022-12-05 00:00:00 +07:00
 tags: [project]
 style: fill
 color: info
-description: Project에 대한 Feedback 반영하기
+description: 1주일 간 My Online Gym Project를 끝낸 뒤, 받았던 Feedback 반영해 코드 수정하기
 ---
 1. this unordered seed list will be replaced by toc as unordered list
 {:toc}

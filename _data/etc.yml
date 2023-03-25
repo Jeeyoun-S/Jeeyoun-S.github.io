@@ -7,3 +7,8 @@
   percentage: 15
   color: danger
   explain: 간단한 그래프 작업, 회귀분석 가능
+
+- name: SQL
+  percentage: 52
+  color: info
+  explain: CRUD 가능
