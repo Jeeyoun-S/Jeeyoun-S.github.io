@@ -8,12 +8,12 @@
     <div class="col-10">
       <p class="mb-1">{{ skill.name }}</p>
     </div>
-    <div class="col-2 text-right">
+    <!-- <div class="col-2 text-right">
       <p class="mb-1 text-muted">{{ skill.percentage }}%</p>
-    </div>
+    </div> -->
   </div>
 
-  <div class="progress bg-themed" style="height: 8px;">
+  <!-- <div class="progress bg-themed" style="height: 8px;">
     <div class="progress-bar bg-{{ skill.color | default: "primary" }} wow animated slideInLeft"
       data-wow-delay="{{ forloop.index | divided_by: 20.0 }}"
       role="progressbar"
@@ -22,7 +22,7 @@
       aria-valuemin="0"
       aria-valuemax="100">
     </div>
-  </div>
+  </div> -->
 
   <div class="mb-4" style="font-size: small;">
     {{ skill.explain }}
