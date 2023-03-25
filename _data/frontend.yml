@@ -2,6 +2,10 @@
   color: info
   explain: 웹사이트 요소 구성
 
+- name: Javascript
+  color: light
+  explain: 
+
 - name: Vue.js
   color: primary
-  explain: Axios, Vuex, Router 사용
+  explain: Axios로 API 활용
