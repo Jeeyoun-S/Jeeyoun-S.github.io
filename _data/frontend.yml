@@ -3,7 +3,7 @@
   explain: 웹사이트 요소 구성
 
 - name: Javascript
-  color: light
+  color: dark
   explain: 
 
 - name: Vue.js
