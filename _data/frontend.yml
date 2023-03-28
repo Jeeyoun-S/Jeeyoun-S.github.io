@@ -1,7 +1,7 @@
 - name: Vue.js
   color: primary
   percentage: 60
-  explain: Vuex, Vue-Router, Axios, Vuetify을 활용해 소규모 프로젝트 진행 가능
+  explain: <li>Vuex, Vue-Router, Axios, Vuetify를 활용해 소규모 프로젝트 진행 가능</li>
 
 - name: HTML/CSS
   color: info
