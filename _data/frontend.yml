@@ -1,12 +1,12 @@
 - name: Vue.js
   color: primary
   percentage: 60
-  explain: Axios로 API 활용
+  explain: Vuex, Vue-Router, Axios, Vuetify을 활용해 소규모 프로젝트 진행 가능
 
 - name: HTML/CSS
   color: info
   percentage: 50
-  explain: 웹사이트 요소 구성
+  explain: 웹사이트 요소 구성 및 디자인 가능
 
 - name: Javascript
   color: dark
