@@ -1,7 +1,9 @@
 - name: Spring/Spring Boot
   color: success
+  percentage: 65
   explain: MVC Pattern을 사용해 Rest API 구현<br />MyBatis, JPA, JDBC 사용
 
 - name: Java
   color: secondary
+  percentage: 60
   explain: DFS, BFS 등 여러 알고리즘 구현 가능

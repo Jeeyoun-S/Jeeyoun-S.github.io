@@ -1,11 +1,14 @@
 - name: Python
   color: warning
+  percentage: 65
   explain: DFS, BFS 등 여러 알고리즘 구현 가능<br />Selenium, BeautifulSoup으로 Crawling<br />Numpy 및 Pandas 라이브러리 사용
-
-- name: R
-  color: danger
-  explain: 간단한 그래프 작업, 회귀분석 가능
 
 - name: SQL
   color: info
+  percentage: 60
   explain: CRUD 가능
+
+- name: R
+  color: danger
+  percentage: 10
+  explain: 간단한 그래프 작업, 회귀분석 가능

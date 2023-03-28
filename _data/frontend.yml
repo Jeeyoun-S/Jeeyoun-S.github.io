@@ -1,11 +1,14 @@
+- name: Vue.js
+  color: primary
+  percentage: 60
+  explain: Axios로 API 활용
+
 - name: HTML/CSS
   color: info
+  percentage: 50
   explain: 웹사이트 요소 구성
 
 - name: Javascript
   color: dark
-  explain: 
-
-- name: Vue.js
-  color: primary
-  explain: Axios로 API 활용
+  percentage: 40
+  explain:
