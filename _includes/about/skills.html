@@ -13,7 +13,7 @@
         <p class="mb-1 text-muted">{{ skill.percentage }}%</p>
       </div>
     </div>
-    <div class="progress bg-themed" style="height: 8px;">
+    <div class="mb-2 mt-2 progress bg-themed" style="height: 8px;">
       <div class="progress-bar bg-{{ skill.color | default: "primary" }} wow animated slideInLeft"
         data-wow-delay="{{ forloop.index | divided_by: 20.0 }}"
         role="progressbar"
@@ -23,7 +23,7 @@
         aria-valuemax="100">
       </div>
     </div>
-    <div class="mb-4" style="font-size: small;">
+    <div style="font-size: small;">
       {{ skill.explain }}
     </div>
   </div>
