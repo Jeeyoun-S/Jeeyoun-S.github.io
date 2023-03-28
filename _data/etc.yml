@@ -6,7 +6,7 @@
 - name: SQL
   color: info
   percentage: 60
-  explain: CRUD 가능
+  explain: DML, DDL, DCL 명령어 사용 가능
 
 - name: R
   color: danger

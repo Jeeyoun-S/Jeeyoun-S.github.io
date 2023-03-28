@@ -2,6 +2,7 @@
   color: success
   percentage: 65
   explain: MVC Pattern으로 Rest API 구현 가능<br />MyBatis, JPA, JDBC를 사용해 DB와 통신 가능<br />Swagger를 사용한 API 문서 작성 가능
+
 - name: Java
   color: secondary
   percentage: 60
