@@ -6,12 +6,12 @@
   
   <div class="alert alert-{{ skill.color | default: "primary" }}" role="alert">
     <div class="justify-content-between align-items-center">
-      <div>
+      <!-- <div> -->
         <p class="mb-1"><b>{{ skill.name }}</b></p>
-      </div>
-      <div class="text-right">
+      <!-- </div> -->
+      <!-- <div class="text-right"> -->
         <p class="mb-1 text-muted">{{ skill.percentage }}%</p>
-      </div>
+      <!-- </div> -->
     </div>
     <div class="mb-2 mt-2 progress bg-themed" style="height: 8px;">
       <div class="progress-bar bg-{{ skill.color | default: "primary" }} wow animated slideInLeft"
