@@ -1,8 +1,11 @@
 - name: Backend
   content:
     - title: Spring Boot에서 JSON 파일과 Open API를 활용하는 법을 익힐 수 있었습니다.
+    - title: 단순한 CRUD 기능 구현에 익숙해 질 수 있었습니다.
 
 - name: 개발 전반
   content:
     - title: 처음으로 웹 개발 프로젝트를 완성해 보고, 배포까지 진행해 볼 수 있었습니다.
     - title: SSAFY에서 1학기에 배웠던 기술을 다시 정리해 보는 시간이었습니다.
+    - title: 웹 개발 프로젝트 진행이 어떻게 되는지 직접 경험하며 배울 수 있었습니다.
+    - title: 운동 루틴을 추천할 때 자료 부족으로 성능이 다소 떨어진다는 점이 아쉬웠습니다.
