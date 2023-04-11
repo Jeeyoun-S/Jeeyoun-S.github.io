@@ -7,39 +7,20 @@ description: 주식 정보 조회 및 모의주식투자가 가능한 Android �
 
 <h1><b>Stock App Project</b></h1>
 
-{% 
-  include projects/project-outline.html 
-  theme="주식 정보 조회 및 모의주식투자가 가능한 서비스" 
-  time="2022.09.29 ~ ing (SSAFY 교육 진행으로 1월부터 일시 중단)" 
-  team="5인 팀 (8기 SSAFY 교육생)" 
-  code="<a href='https://github.com/hjlim7831/StockAppServer' target='_blank'>Backend Repo</a>&ensp;<a href='https://github.com/subin3277/StockApp' target='_blank'>Frontend Repo</a>" 
-%}
-
-{%
-  include projects/project-list.html 
-  title="주요 기능" 
-  source=site.data.stock_app_pjt.function
-%}
-
-{% 
-  include projects/project-skill.html 
-  backend="Spring Tools 3 for Eclipse@@Java 8@@Spring Boot 2.7.4@@Swagger2 2.9.2@@Gradle 7.5@@MyBatis 2.2.2" 
-  frontend="Android Studio 4.2.2@@Java 8@@Gradle 6.7.1" 
-  database="MySQL 8.0.21"
-%}
-
-{%
-  include projects/project-list.html 
-  title="나의 역할" 
-  source=site.data.stock_app_pjt.role
-%}
-
-{%
-  include projects/project-list.html 
-  title="개발 후기" 
-  source=site.data.stock_app_pjt.review
-%}
-
-{%
-  include projects/project-footer.html 
+{% include projects/project-outline.html theme="주식 정보 조회 및 모의주식투자가
+가능한 서비스" time="2022.09.29 ~ ing (SSAFY 교육 진행으로 1월부터 일시 중단)"
+team="5인 팀 (8기 SSAFY 교육생)" code="<a
+  href="https://github.com/hjlim7831/StockAppServer"
+  target="_blank"
+  >Backend Repo</a
+>&ensp;<a href="https://github.com/subin3277/StockApp" target="_blank"
+  >Frontend Repo</a
+>" %} {% include projects/project-list.html title="주요 기능"
+source=site.data.stock_app_pjt.function %} {% include
+projects/project-skill.html backend="Spring Tools 3 for Eclipse@@Java 8@@Spring
+Boot 2.7.4@@Swagger2 2.9.2@@Gradle 7.5@@MyBatis 2.2.2" frontend="Android Studio
+4.2.2@@Java 8@@Gradle 6.7.1" database="MySQL 8.0.21" %} {% include
+projects/project-list.html title="나의 역할" source=site.data.stock_app_pjt.role
+%} {% include projects/project-list.html title="개발 후기"
+source=site.data.stock_app_pjt.review %} {% include projects/project-footer.html
 %}
