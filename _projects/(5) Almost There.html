@@ -1,0 +1,46 @@
+---
+name: Almost There
+tools: [Spring Boot, Vue.js, MySQL]
+image: /assets/project/cow_economy.png
+description: 모임 관리를 편하게 할 수 있는 웹모바일 사이트
+published: false
+---
+
+<h1><b>Almost There</b></h1>
+
+{% include elements/video.html id="dL11J09aq0I" %}
+
+{%
+    include projects/project-outline.html 
+    theme="모임 관리를 편하게 할 수 있도록 다양한 기능을 세공하는 서비스"
+    time="2023.04.11 ~ 2023.05.19 (6주)"
+    team="6인 팀'어디야?'" 
+    progress="삼성청년SW아카데미 SSAFY 8기 2학기 자율 프로젝트 [오픈 소스]" 
+    code="<a href='https://github.com/Jeeyoun-S/Almost-There' target='_blank'>Github 바로가기</a>"
+%}
+  
+{% 
+    include projects/project-list.html title="주요 기능"
+    source=site.data.almost_there.function 
+%}
+
+{% 
+    include projects/project-skill.html
+    backend="IntelliJ@@Java 11@@Spring Boot 2.7.9@@Spring Data JPA@@Gradle 7.6.1@@"
+    frontend="Vue 2.6.14@@Vuex 3.6.2@@Vue Router 3.5.1@@Vuetify 2.6.14"
+    database="MySQL 8.0.21@@Redis "
+%}
+
+{%
+include projects/project-list.html 
+title="나의 역할" 
+source=site.data.almost_there.role
+%}
+
+{% 
+include projects/project-list.html 
+title="개발 후기"
+source=site.data.almost_there.review
+%} 
+
+{% include projects/project-footer.html %}
