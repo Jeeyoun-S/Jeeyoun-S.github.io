@@ -8,8 +8,7 @@ description: 2022년 7월부터 2023년 6월까지 SSAFY 생활에 대한 회고
 published: false
 ---
 
-1. this unordered seed list will be replaced by toc as unordered list
-   {:toc}
+1. this unordered seed list will be replaced by toc as unordered list {:toc}
 
 오늘은 지난 7주 간 진행된 소귀경(소 귀에 경제 읽기) 프로젝트를 되돌아보려고 한다.
 

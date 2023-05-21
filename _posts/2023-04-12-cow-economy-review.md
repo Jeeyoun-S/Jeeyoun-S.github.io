@@ -8,8 +8,7 @@ description: 7주 간 진행됐던 소귀경 프로젝트에 대한 회고록
 published: false
 ---
 
-1. this unordered seed list will be replaced by toc as unordered list
-   {:toc}
+1. this unordered seed list will be replaced by toc as unordered list {:toc}
 
 오늘은 지난 7주 간 진행된 소귀경(소 귀에 경제 읽기) 프로젝트를 되돌아보려고 한다.
 
