@@ -7,7 +7,8 @@ color: info
 description: 1주일 간 My Online Gym Project를 끝낸 뒤, 받았던 Feedback 반영해 코드 수정하기
 ---
 
-1. this unordered seed list will be replaced by toc as unordered list {:toc}
+1. this unordered seed list will be replaced by toc as unordered list
+{:toc}
 
 일주일 동안 빠르게 하나의 프로젝트([My Online Gym](https://jeeyoun-s.github.io/projects/2-my-online-gym))를 마무리하고 나니, 다른 사람들의 평가는 어떨지 궁금해졌다. 그래서 바로 주변 사람들에게 피드백을 받아봤다. 주변 사람들에게 받으면, 다들 잘했다고 한다고 SSAFY에서 그랬는데. 오히려 피드백이 넘쳐나서 반성을 많이 했다. 특히, UI/UX에 대한 생각이 부족했음을 많이 느꼈다.
 

@@ -7,7 +7,8 @@ color: info
 description: 7주 간 진행됐던 SSUEB 프로젝트에 대한 회고록
 ---
 
-1. this unordered seed list will be replaced by toc as unordered list {:toc}
+1. this unordered seed list will be replaced by toc as unordered list
+{:toc}
 
 오늘은 SSUEB 프로젝트에 대한 회고를 해보려고 한다.
 
