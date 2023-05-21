@@ -12,7 +12,7 @@ description: 7주 간 진행됐던 SSUEB 프로젝트에 대한 회고록
 
 오늘은 SSUEB 프로젝트에 대한 회고를 해보려고 한다.
 
-### **프로젝트 설명**
+### 프로젝트 설명
 
 SSUEB은 총 7주 간 진행됐으며, SSAFY 2학기 과정 중 공통 프로젝트에 해당한다.
 
@@ -22,7 +22,7 @@ SSUEB은 반려인과 전문가를 매칭해 실시간 화상 상담을 진행�
 
 [더 자세한 설명 보러가기](https://jeeyoun-s.github.io/projects/3-ssueb)
 
-### **잘했던 점**
+### 잘했던 점
 
 #### 협업
 
@@ -50,7 +50,7 @@ Backend는 다른 팀원이 미리 구현해 둬, 나는 Frontend 구현을 맡�
 
 맡은 부분을 끝까지 완성했고, 추가로 다른 부분까지 맡아 개발 경험을 더 쌓을 수 있어 좋았다.
 
-### **어려웠던 점**
+### 어려웠던 점
 
 #### 협업
 
@@ -130,7 +130,7 @@ public void addResourceHandlers(ResourceHandlerRegistry registry) {
 - `created()` 이후 `mounted()`가 실행되는 것으로 생각했으나 동기로 처리돼 `created()`가 끝나지 않았어도 `mounted()`가 실행되는 경우 존재
 - 따라서 `created()`에 async를 걸어 API 요청을 보내 데이터를 가져오는 동안은 화면에 Loading을 띄우고 API 요청이 끝나면 화면을 띄우도록 설정
 
-### **뿌듯했던 점**
+### 뿌듯했던 점
 
 #### 휴대폰 인증 구현
 
@@ -152,7 +152,7 @@ Redis와 Naver Cloud Platform Open API를 사용해 휴대폰 인증을 구현�
 
 그 결과, Vuetify와 SweetAlert로 사용자 편의를 높이고 빠른 시간 내 Frontend 작업을 해낼 수 있었다. 팀원들이 Frontend 걱정을 많이 했는데 모두 만족스럽다며 칭찬해, 팀에 조금이나마 도움이 됐다는 생각에 뿌듯했다.
 
-### **아쉬웠던 점**
+### 아쉬웠던 점
 
 #### UI/UX
 
