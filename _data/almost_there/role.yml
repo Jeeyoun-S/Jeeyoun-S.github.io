@@ -12,7 +12,7 @@
 
 - name: Backend
   content: 
-    - title: 모임 도착 API 및 지각 Scheduler 구현
+    - title: 모임 도착 API 및 지각 처리 Scheduler 구현
     - title: 실시간 채팅 조회 및 Redis에서 MySQL 채팅 이전 Scheduler 구현
     - title: 실시간 위치 공유 정보 및 멤버별 채팅 조회 API 구현
 
