@@ -1,10 +1,10 @@
 ---
-title: 소귀경 회고록
-date: 2023-04-12 00:00:00 +07:00
+title: 1년 간의 SSAFY 생활 회고록
+date: 2023-06-02 00:00:00 +07:00
 tags: [project]
 style: fill
 color: info
-description: 7주 간 진행됐던 소귀경 프로젝트에 대한 회고록
+description: 2022년 7월부터 2023년 6월까지 SSAFY 생활에 대한 회고록
 published: false
 ---
 

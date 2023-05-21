@@ -1,16 +1,46 @@
 ---
 ---
 
-
 @font-face {
-  font-family: 'NanumSquareNeo-Variable';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-family: "NanumSquareNeo-dEb";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-dEb.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumSquareNeo-eHv";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-eHv.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumSquareNeo-cBd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-cBd.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumSquareNeo-bRg";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-bRg.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @import "portfolYOU";
 
+h1 {
+  font-family: "NanumSquareNeo-eHv";
+}
+h2 {
+  font-family: "NanumSquareNeo-dEb";
+}
+h3 {
+  font-family: "NanumSquareNeo-cBd";
+}
 * {
-  font-family: 'NanumSquareNeo-Variable';
+  font-family: "NanumSquareNeo-bRg";
 }
