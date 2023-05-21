@@ -5,7 +5,7 @@
 
 - name: Frontend
   content:
-    - title: 최신 채팅을 받으면 하단에 Snackbar 활성화, 스크롤 하단 이동 버튼 등으로 채팅 페이지의 UI/UX를 개선하기 위해 노력헀습니다.  
+    - title: 최신 채팅을 받으면 하단에 Snackbar 활성화 등으로 채팅 페이지의 UI/UX를 개선하기 위해 노력헀습니다.  
 
 - name: Websocket
   content:
