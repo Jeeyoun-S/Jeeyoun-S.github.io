@@ -5,7 +5,6 @@ tags: [project]
 style: fill
 color: info
 description: 7주 간 진행됐던 소귀경 프로젝트에 대한 회고록
-published: false
 ---
 
 1. this unordered seed list will be replaced by toc as unordered list
@@ -19,6 +18,10 @@ published: false
 
 소귀경은
 
+핵심 기능을 경제 기사 조회 및 학습 관련 기능이다.
+
 [더 자세한 설명 보러가기](https://jeeyoun-s.github.io/projects/4-cow-economy)
 
 ### 잘했던 점
+
+### 이전 프로젝트 대비 발전한 점
