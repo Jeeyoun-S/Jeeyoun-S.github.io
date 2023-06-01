@@ -21,7 +21,7 @@ description: 1주일 간 My Online Gym Project를 끝낸 뒤, 받았던 Feedback
   - sweetalert2 라이브러리 사용
   - [sweetalert2 Docs](https://sweetalert2.github.io/)
 - 알아보기 힘들 글씨체, 가독성이 더 좋은 글씨체 추천.
-  - 로고, 카테고리 글씨체는 유지, 그외 글씨체는 고딕체 중 하나로 변경
+  - 로고, 카테고리 글씨체는 유지, 그 외 글씨체는 고딕체 중 하나로 변경
 
 ### 운동 일정 관리 기능
 
