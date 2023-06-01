@@ -11,4 +11,4 @@
 - name: Javascript
   color: dark
   percentage: 40
-  explain: 기본 문법 사용 가능<br />Async를 활용한 비동기 처리 가능
+  explain: 기본 문법 사용 가능
