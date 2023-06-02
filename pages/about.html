@@ -56,10 +56,10 @@ span {
     </div>
     
     <div class="row">
-      <h4 class="mt-3 mb-3">Tool</h4>
-      {% for skill in site.data.skills.tool %}
+      {% include about/skills.html title="Etc" source=site.data.skills.tool %}
+      {% comment %} {% for skill in site.data.skills.tool %}
         <p class="mb-1"><b>{{ skill.name }}</b></p>
-      {% endfor %}
+      {% endfor %} {% endcomment %}
     </div>
 
     <h2 id="projects"><b>Projects</b></h2>

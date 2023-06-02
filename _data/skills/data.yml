@@ -8,7 +8,7 @@
   percentage: 60
   explain: DML, DDL, DCL 명령어 사용 가능
 
-- name: R
-  color: danger
-  percentage: 10
-  explain: 간단한 그래프 작업, 회귀분석 가능
+# - name: R
+#   color: danger
+#   percentage: 10
+#   explain: 간단한 그래프 작업, 회귀분석 가능
