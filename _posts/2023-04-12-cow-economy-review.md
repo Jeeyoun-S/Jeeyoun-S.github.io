@@ -24,7 +24,8 @@ published: false
 ### 잘했고 만족스러웠던 점
 
 #### 협업
-크롤링 코드를 작성하고, 
+크롤링을 함께 담당한 팀원과 
+
 [뉴스 크롤링 코드](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/data/crawling/news_crawling.py)
 
 #### JPA
@@ -57,7 +58,7 @@ public class UserArticleMemo {
 }
 ```
 
-메모를 등록할 때 regtime은 default 값이 있으므로 save() 할 때 Entity에 값을 넣지 않았고, 자동으로 default 값이 들어갈 거라 생각했다. 
+메모를 등록할 때 regtime은 default 값이 있으므로 save() 할 때 Entity에 값을 넣지 않았고, 자동으로 default 값이 들어갈 거라 생각했다. 알아보니 `@NotNull`은 DB에 SQL 쿼리를 보내기 전에 예외를 처리한다고 한다. 따라서 DB에 넣기 전 값을 검증해 null인 경우 오류를 발생시키는 것이다.
 
 ```java
 public class UserArticleMemo {
@@ -68,8 +69,30 @@ public class UserArticleMemo {
 }
 ```
 
+그래서 위와 같이 `@NotNull`에서 `nullable = false`로 값을 수정했다. 이 경우 값이 DB에 넘어간 뒤에 예외가 발생한다. 따라서 default가 설정돼 있는 경우에도 오류가 발생하지 않았다. 아래는 참고했던 글이다.
+
+[[JPA] nullable=false와 @NotNull 비교, Hibernate Validation](https://kafcamus.tistory.com/15)
+
 1. 연관 관계 매핑
-2. 
+
+```java
+public class UserArticleMemo {
+  // 생략
+  @ManyToOne(fetch = LAZY)
+  @JoinColumn(name = "user_id")
+  @Comment("회원 ID")
+  private User user;
+
+  @ManyToOne(fetch = LAZY)
+  @JoinColumn(name = "article_id")
+  @Comment("기사 ID")
+  private Article article;
+  // 생략
+}
+```
+
+
+1. 
 
 #### Javascript
 메모 관련 기능을 담당해 
