@@ -4,6 +4,6 @@
   explain: 소규모 프로젝트 Rest API 구현 가능<br />MyBatis, JPA, JDBC 사용 가능<br />Swagger를 사용한 API 문서 작성 가능
 
 - name: Java
-  color: secondary
+  color: warning
   percentage: 60
   explain: DFS, BFS 등 여러 알고리즘 구현 가능
