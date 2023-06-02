@@ -66,6 +66,9 @@ Redis와 Naver Cloud Platform Open API를 사용해 휴대폰 인증을 구현�
 
 나는 서비스에서 사용자에게 더 많은 영향을 미치는 부분은 Frontend라고 생각했고, 백엔드 못지않게 Frontend도 중요하다는 생각이 있었다. 이에 관련 라이브러리를 적극 활용해 적은 시간으로 최대의 효율을 발휘해 Frontend의 완성도를 높여보고자 했다. 그 결과, Vuetify와 SweetAlert로 사용자 편의를 높이고 빠른 시간 내 Frontend 작업을 해낼 수 있었고 라이브러리 활용 능력을 기를 수 있었다.
 
+- [Vuetify3 Docs](https://vuetifyjs.com/en/getting-started/installation/)
+- [SweetAlert2](https://sweetalert2.github.io/)
+
 팀원들이 Frontend 걱정을 많이 했는데 모두 만족스럽다며 칭찬해, 팀에 조금이나마 도움이 됐다는 생각에 뿌듯했다.
 
 #### 유효성 검사
