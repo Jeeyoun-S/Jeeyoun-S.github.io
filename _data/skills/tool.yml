@@ -1,8 +1,11 @@
 - name: Git
   color: warning
+  explain: 코드 버전 관리
 
 - name: Jira
   color: success
+  explain: 이슈 관리
 
 - name: Figma
   color: danger
+  explain: 와이어프레임 제작
