@@ -56,10 +56,14 @@ span {
     </div>
     
     <div class="row">
-      {% include about/skills.html title="Tool" source=site.data.skills.tool %}
-      {% comment %} {% for skill in site.data.skills.tool %}
-        <p class="mb-1"><b>{{ skill.name }}</b></p>
-      {% endfor %} {% endcomment %}
+      {% comment %} {% include about/skills.html title="Tool" source=site.data.skills.tool %} {% endcomment %}
+      {% for skill in site.data.skills.tool %}
+      <div class="alert alert-{{ skill.color | default: "primary" }}" role="alert">
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <p class="mb-1"><b>{{ skill.name }}</b></p>
+        </div>
+      </div>
+      {% endfor %}
     </div>
 
     <h2 id="projects"><b>Projects</b></h2>
