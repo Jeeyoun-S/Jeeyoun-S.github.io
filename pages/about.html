@@ -59,9 +59,11 @@ span {
       <h4 class="mt-2 mb-3">Tool</h4>
       <div class="row">
         {% for skill in site.data.skills.tool %}
-        <div class="col alert alert-{{ skill.color | default: "primary" }}" role="alert">
-          <div class="d-flex flex-row justify-content-between align-items-center">
-            <p class="mb-1"><b>{{ skill.name }}</b></p>
+        <div class="col-lg">
+          <div class="alert alert-{{ skill.color | default: "primary" }}" role="alert">
+            <div class="d-flex flex-row justify-content-between align-items-center">
+              <p class="mb-1"><b>{{ skill.name }}</b></p>
+            </div>
           </div>
         </div>
         {% endfor %}

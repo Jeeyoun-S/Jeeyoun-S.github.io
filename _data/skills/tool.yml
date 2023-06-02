@@ -2,7 +2,7 @@
   color: warning
 
 - name: Jira
-  color: info
+  color: success
 
 - name: Figma
   color: danger
