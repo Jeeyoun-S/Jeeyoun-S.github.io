@@ -1,0 +1,14 @@
+- name: Git
+  color: warning
+  percentage: 65
+  explain: 
+
+- name: Jira
+  color: info
+  percentage: 50
+  explain: 
+
+- name: Figma
+  color: danger
+  percentage: 40
+  explain: 
