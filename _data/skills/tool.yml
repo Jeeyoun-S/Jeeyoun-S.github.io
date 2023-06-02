@@ -3,9 +3,9 @@
   explain: 코드 버전 관리
 
 - name: Jira
-  color: light
+  color: secondary
   explain: 이슈 관리
 
 - name: Figma
-  color: secondary
+  color: dark
   explain: 와이어프레임 제작
