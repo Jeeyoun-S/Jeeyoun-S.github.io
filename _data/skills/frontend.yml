@@ -1,6 +1,6 @@
 - name: Vue.js
   color: primary
-  percentage: 50
+  percentage: 40
   explain: Vuex, Vue-Router, Axios, Vuetify를 활용해 소규모 프로젝트 진행 가능
 
 - name: HTML/CSS/Javascript
