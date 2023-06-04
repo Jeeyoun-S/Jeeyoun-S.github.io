@@ -165,19 +165,14 @@ public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
 ```java
 public class Attach {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@ApiModelProperty(value = "PK, AI", dataType = "int", example="0")
-  int no;
+	// 생략
 	
   // reservation 테이블의 PK인 reservationNo을 가져왔지만 연관 관계 설정 없음
 	@Column(name="reservation_no")
 	@ApiModelProperty(value = "이 파일과 관련된 상담 번호", dataType = "int", example="0")
   int reservationNo;
 	
-	@ApiModelProperty(value = "이 파일의 경로")
-	@Column(name="attach_file")
-  String attachFile;
+	// 생략
 }
 ```
 
