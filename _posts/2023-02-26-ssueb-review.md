@@ -163,7 +163,38 @@ public void addResourceHandlers(ResourceHandlerRegistry registry) {
 #### JPA
 처음으로 JPA를 사용해 볼 수 있었고, 프로젝트 첫 주에는 JPA 학습을 중점적으로 시간을 보냈다. 사용해 보니 JPA는 직접 쿼리문을 작성하지 않아도 되어 편리하다는 가장 큰 장점이 있었다. 이전에 사용했던 MyBatis와 비교해 봤을 때 특히 기본적인 CRUD 구현 시간을 대폭 줄여줬다.
 
-그러나 첫 구현인 만큼 아쉬운 부분도 많았다. 먼저 Entity 간의 연관 관계 설정을 전혀 하지 않았다. 따라서 여러 테이블에서 값을 가져올 때 nativeQuery로 일일이 Join 쿼리문을 작성한 경우가 있었다. 3개 이상의 테이블을 Join 하지도 않았기에 JPA를 사용하는 것이 생산성 측면에서 더 좋지 않았을까 싶다.
+```java
+public class Attach{
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@ApiModelProperty(value = "PK, AI", dataType = "int", example="0")
+    int no;
+	
+  // reservationNo을 가져왔지만 연관 관계 설정 없음
+	@Column(name="reservation_no")
+	@ApiModelProperty(value = "이 파일과 관련된 상담 번호", dataType = "int", example="0")
+    int reservationNo;
+	
+	@ApiModelProperty(value = "이 파일의 경로")
+	@Column(name="attach_file")
+    String attachFile;
+}
+```
+
+그러나 첫 구현인 만큼 아쉬운 부분도 많았다. 먼저 Entity 간의 연관 관계 설정을 전혀 하지 않았다.
+
+```java
+// JPQL로 작성한 Query문
+@Query(value = "select m.*, u.user_name as consultant_name, c.* "
+              + "from matching m, user u, consultant c "
+              + "where m.consultant_id = u.id and u.id = c.id and reservation_no = ?1", nativeQuery = true)
+List<MatchingConsultant> findReceiveMatching(int reservationNo);
+```
+
+따라서 여러 테이블에서 값을 가져올 때 nativeQuery로 일일이 Join 쿼리문을 작성한 경우가 있었다. 최대 3개의 테이블을 Join 했었기에 JPA를 사용하는 것이 생산성 측면에서 더 좋지 않았을까 싶다.
+
+- [QEntity 폴더](https://github.com/Jeeyoun-S/SSUEB/tree/main/backend/src/main/generated/com/ssafy/db/entity)
 
 또한, QueryDSL을 import 해두고 사용하지 못한 점도 아쉬웠다. 처음 프로젝트 시작 전 SSAFY에서 제공하는 Skeleton을 기반으로 프로젝트를 진행했는데 기본적으로 QueryDSL이 붙어있었다. JPA에 대한 학습이 부족해 QueryDSL의 존재를 알지 못했고, JPA에 대한 학습이 부족해 QEntity를 모두 생성해 둔 채 아무도 사용하지 않았다.
 
