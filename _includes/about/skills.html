@@ -10,7 +10,7 @@
         </svg>
       {% endfor %}
 
-      {%- assign rest = collection.stars | size -%}
+      {%- assign rest = stars | size -%}
       {{ rest }}
       {% for r in (1..(5-rest)) %}
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
