@@ -166,12 +166,12 @@ public void addResourceHandlers(ResourceHandlerRegistry registry) {
 ```java
 public class Attach {
 	// 생략
-	
-  // reservation 테이블의 PK인 reservationNo을 가져왔지만 연관 관계 설정 없음
+
+	// reservation 테이블의 PK인 reservationNo을 가져왔지만 연관 관계 설정 없음
 	@Column(name="reservation_no")
 	@ApiModelProperty(value = "이 파일과 관련된 상담 번호", dataType = "int", example="0")
-  int reservationNo;
-	
+	int reservationNo;
+
 	// 생략
 }
 ```
