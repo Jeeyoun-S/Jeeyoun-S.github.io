@@ -20,23 +20,29 @@ description: 7주 간 진행됐던 소귀경 프로젝트에 대한 회고록
 
 [더 자세한 설명 보러가기](https://jeeyoun-s.github.io/projects/4-cow-economy)
 
-### 잘했고 만족스러웠던 점
+### 좋았고 배울 수 있었던 점
 
 #### 협업 + 기사 크롤링
 크롤링을 함께 담당한 팀원과 프로젝트 초반에 크롤링 코드를 완성하기 위해 의견을 수없이 주고받았다.
 이때 팀원으로부터 꼼꼼함과 데이터 처리 방법을 많이 배울 수 있었고, 처리 방법을 다각도로 생각해 볼 수 있었다.
-아래 코드는 처음에 내가 짰던 코드이고, 이 코드를 바탕으로 [완성된 코드](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/data/crawling/news_crawling.py)를 작성했다. 크롤링 작업의 대부분은 Colab을 사용했다.
+처음 기초 코드는 내가 작성했고, 이 코드를 바탕으로 [완성된 코드](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/data/crawling/news_crawling.py)를 작성했다.
 
-먼저 뉴스를 어디서 가져올 것인가부터 고민을 했고, 처음에는 경제 언론사의 공식 홈페이지 고려했지만 언론사마다 카테고리가 달랐다. 
+크롤링 작업의 대부분은 Colab을 사용했다. Colab의 경우 바로 코드 실행이 가능하고, 수정자와 이전 버전도 확인할 수 있어 편리했다. 
+또한, 코드 실행시간도 바로 확인할 수 있고, 함께 공유하며 코드를 짤 수 있다는 게 가장 큰 장점이었다.
+초기 코드를 작성하기 위해 고려한 부분은 아래와 같다.
+
+1. **뉴스를 어디서 가져올 것인가**  
+처음에는 경제 언론사의 공식 홈페이지 고려했지만 언론사마다 카테고리가 달랐다. 
 언론사별로 크롤링하면 카테고리 수가 너무 많아지거나 자체적으로 판단해 카테고리를 묶는 작업이 필요했다. 
 네이버 뉴스의 경우 여러 언론사의 경제 뉴스만 모아 8개의 카테고리로 구분돼 있어 네이버 뉴스 경제를 크롤링하는 것이 더 합리적이라고 느꼈다.  
 
-```python
-from urllib.request import urlopen
-from bs4 import BeautifulSoup
-import datetime as dt
-from pytz import timezone
+2. **어떤 라이브러리를 사용할 것인가**  
+Python의 대표적인 크롤링 라이브러리로는 Selenium과 BeautifulSoup이 있다.
 
+3. **카테고리별, 모든 페이지 기사 수집**  
+
+
+```python
 # sid1 101 (경제)
 sid1 = (101, ) # 대분류
 # sid2 259 (금융), 258 (증권), 261 (산업/재계), 771 (중기/벤처), 260 (부동산), 262 (글로벌 경제), 310 (생활경제), 263 (경제 일반)
@@ -74,68 +80,34 @@ for big in sid1:
           elif last_value.isdigit():
             max_page = int(last_value)
 
-        # 현재 페이지 리스트에 있는 기사의 링크 가져오기
-        value = soup.find_all("div", {"class": "newsflash_body"})
-        for i in value:
-          links = i.find_all("dl", class_=False)
-
-          # 링크를 반복하며 세부 기사 페이지에서 내용 가져오기
-          for link in links:
-
-            li = link.find("dt", class_=False).find("a").attrs["href"]
-            press_name = link.find("span", {"class": "writing"}).get_text()
-            if li is None or (press_name != "한국경제" and press_name != "연합뉴스"):
-              continue
-
-            detail = {"category1": big, "category2": small}
-            detail_response = urlopen(li)
-            detail_soup = BeautifulSoup(detail_response, "html.parser")
-
-            header = detail_soup.find("div", {"class": "media_end_head"})
-            # header가 없으면 continue
-            if header is None:
-              continue
-
-            # 언론사
-            detail["press"] = press_name
-
-            # 발행일시
-            detail["date"] = header.find("span", {"class": "media_end_head_info_datestamp_time"})['data-date-time']
-
-            # 원본 링크
-            detail["link"] = header.find("a", {"class": "media_end_head_origin_link"})['href']
-
-            # 기자
-            reporter = header.find("em", {"class": "media_end_head_journalist_name"})
-            if reporter is not None:
-              detail["reporter"] = reporter.get_text()
-
-            # 기사 제목
-            detail["title"] = header.find("h2").find("span").get_text()
-
-            # 기사 내용
-            detail["contents"] = detail_soup.find("div", {"class": "_article_content"})
-            results.append(detail)
-            
-        page +=1
-      
-      s_date += dt.timedelta(days=1)
-
-# 결과 출력
-print(f'1) 전체 길이 : {len(results)}')
-print('2) 5개 출력')
-print(*results, sep="\n")
+# 이하 생략
 ```
 
-1. 어떤 신문사의 기사만을 가져올 것인가?  
-카테고리별로, 대표적인 정보(기자, 언론사, 제목 등)을 가져오는 틀은 완성된 상태였고, 최초 코드는 한국경제와 연합뉴스 기사만을 가져오도록 설정했다.
+초반 코드가 완성된 후 제대로 된 데이터 처리를 위해 디테일한 부분을 수정하기 시작했다.
+이후에 고려한 내용은 아래와 같다.
+
+1. **어떤 신문사의 기사만을 가져올 것인가?**  
+카테고리별로, 대표적인 정보(기자, 언론사, 제목 등)을 가져오는 틀은 완성된 상태였고, 최초 코드는 한국경제와 연합뉴스 기사만을 가져오도록 설정했다. 
 [네이버의 언론사 목록](https://news.naver.com/main/officeList.naver)을 참고했고, 종합 및 경제 언론사의 기사를 수집하기로 결정했다.
 
-2. 내용을 통으로 처리하지 않고 분류해서 처리
+```python
+press_list = ['매일경제', '머니투데이', '비즈워치', '서울경제', '아시아경제', '이데일리', '조선비즈', '조세일보', '파이낸셜뉴스', '한국경제', '헤럴드경제',
+              '경향신문', '국민일보', '동아일보', '문화일보', '서울신문', '세계일보', '조선일보', '중앙일보', '한계레', '한국일보']
 
-3. HTML 예외 처리
+# 중간 생략
 
-4. 1시간 마다 중복 없이 크롤링
+press_name = link.find("span", {"class": "writing"}).get_text()
+if li is None or (press_name not in press_list):
+  continue
+```
+
+2. **내용을 통으로 처리하지 않고 분류해서 처리**  
+
+3. **실행 시간**  
+
+4. **HTML 예외 처리**  
+
+5. **1시간 마다 중복 없이 크롤링**  
 
 #### JPA
 이전 프로젝트에서 연관 관계를 매핑하지 않아 아쉬운 점이 있었지만, 이번 프로젝트는 이 점을 반영해 연관 관계를 매핑하고 DB 스키마가 자동으로 생성되도록 했다.
