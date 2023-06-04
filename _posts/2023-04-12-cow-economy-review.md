@@ -116,7 +116,7 @@ if li is None or (press_name not in press_list):
 #### JPA
 이전 프로젝트에서 연관 관계를 매핑하지 않아 아쉬운 점이 있었지만, 이번 프로젝트는 이 점을 반영해 연관 관계를 매핑하고 DB 스키마가 자동으로 생성되도록 했다.
 
-1. DB 스키마 자동 생성
+**DB 스키마 자동 생성**
 
 ```java
 // application.yml
@@ -130,7 +130,7 @@ spring:
 
 이전 프로젝트 코드를 찾아보니 해당 프로젝트에서도 이 설정이 있었다. 그럼에도 수정할 때마다 SQL문을 공유하고, 해당 SQL문을 실행시켰던 것은 이에 대해 잘 몰랐기 때문이라고 생각한다. 공부의 중요성을 다시 한번 느끼는 계기였다.
 
-1. `@NotNull`과 `nullable = false`의 차이
+**`@NotNull`과 `nullable = false`의 차이**  
 메모를 등록하는 API를 개발하던 중 Entity에 회원, 기사 등 기본 정보만 DB에 넣으려는 작업 중 에러가 발생했다. 바로 메모 작성 시간이 없어서 오류가 난다는 것이었다. 당시 코드는 아래와 같았다. `@NotNull`로 해당 칼럼에 NULL이 들어가지 못하도록 설정해 두었고, default 값으로 현재 시간을 넣어두었다.
 
 ```java
@@ -158,7 +158,7 @@ public class UserArticleMemo {
 
 - 참고 자료 [[JPA] nullable=false와 @NotNull 비교, Hibernate Validation](https://kafcamus.tistory.com/15)
 
-1. 연관 관계 매핑
+**연관 관계 매핑** 
 
 ```java
 public class UserArticleMemo {
@@ -177,9 +177,6 @@ public class UserArticleMemo {
   // 생략
 }
 ```
-
-
-1. 
 
 #### Javascript
 메모 관련 기능을 담당해 
