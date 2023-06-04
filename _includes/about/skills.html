@@ -2,8 +2,7 @@
 
   <h4 class="mt-3 mb-3">
     {{ include.title }}
-
-    {% with include.star|split:"," as stars %}
+    {%- assign stars = include.star | split:"," -%}
       {% for star in stars %}
         <sup class="{{ star }}">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
