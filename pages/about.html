@@ -57,13 +57,13 @@ span {
 
     <h2 id="programming-skills" class="mt-5 mb-2"><b>Programming Skills</b></h2>
     <div class="row">
-      {% include about/skills.html title="Backend" source=site.data.skills.backend %}
-      {% include about/skills.html title="Frontend" source=site.data.skills.frontend %}
-      {% include about/skills.html title="Data" source=site.data.skills.data %}
+      {% include about/skills.html title="Backend" star=3 source=site.data.skills.backend %}
+      {% include about/skills.html title="Frontend" star=0 source=site.data.skills.frontend %}
+      {% include about/skills.html title="Data" star=1 source=site.data.skills.data %}
     </div>
 
     <div class="col-lg" style="padding: 0px;">
-      <h4 class="mt-1 mb-3">Etc</h4>
+      <h4 class="mt-1 mb-3">Tool</h4>
       <div class="row">
         {% for skill in site.data.skills.tool %}
         <div class="col-lg">
