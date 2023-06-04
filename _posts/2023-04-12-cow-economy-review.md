@@ -5,7 +5,6 @@ tags: [project]
 style: fill
 color: info
 description: 7주 간 진행됐던 소귀경 프로젝트에 대한 회고록
-published: false
 ---
 
 1. this unordered seed list will be replaced by toc as unordered list
@@ -24,7 +23,119 @@ published: false
 ### 잘했고 만족스러웠던 점
 
 #### 협업
-크롤링을 함께 담당한 팀원과 
+크롤링을 함께 담당한 팀원과 프로젝트 초반에 크롤링 코드를 완성하기 위해 의견을 수없이 주고 받았다.
+이때 팀원의 데이터 처리 시 꼼꼼함을 많이 배울 수 있었고, 처리 방법을 다각도로 생각해 볼 수 있었다.
+
+```python
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+import datetime as dt
+from pytz import timezone
+
+debug = True
+# sid1 101 (경제)
+sid1 = (101, ) # 대분류
+# sid2 259 (금융), 258 (증권), 261 (산업/재계), 771 (중기/벤처), 260 (부동산), 262 (글로벌 경제), 310 (생활경제), 263 (경제 일반)
+sid2 = (259, 258, 261, 771, 260, 262, 310, 263, ) # 소분류
+
+end_date = dt.datetime.now(timezone('Asia/Seoul')) # 오늘 날짜
+start_date = end_date - dt.timedelta(days=1)       # 하루 전 날짜
+
+# results 딕셔너리 내부에는 {"category1": 101, "category2": 259, "press": "", "date": "", "reporter": "", "title": "", "contents": ""}
+results = []
+
+# 대분류로 반복
+for big in sid1:
+  if debug: print("big", big)
+
+  # 소분류로 반복
+  for small in sid2:
+    if debug: print("small", small)
+
+    # 날짜로 반복
+    s_date = start_date
+    while s_date <= end_date:
+      if debug: print("date", s_date)
+
+      # 페이지로 반복
+      page = 1
+      max_page = 1
+
+      while page <= max_page:
+        if debug: print("page", page)
+
+        response = urlopen(f'https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid2={small}&sid1={big}&date={s_date.strftime("%Y%m%d")}&page={page}')
+        soup = BeautifulSoup(response, "html.parser")
+
+        # 페이지 수 구하기
+        if page%10 == 1:
+          page_a_list = soup.find("div", {"class": "paging"}).find_all("a")
+          last_value = page_a_list[-1].get_text()
+          if last_value == '다음':
+            max_page += 10
+          elif last_value.isdigit():
+            max_page = int(last_value)
+
+        # 현재 페이지 리스트에 있는 기사의 링크 가져오기
+        value = soup.find_all("div", {"class": "newsflash_body"})
+        for i in value:
+          links = i.find_all("dl", class_=False)
+
+          # 링크를 반복하며 세부 기사 페이지에서 내용 가져오기
+          for link in links:
+        
+            li = link.find("dt", class_=False).find("a").attrs["href"]
+            press_name = link.find("span", {"class": "writing"}).get_text()
+            # print(press_name)
+
+            if li is None or (press_name != "한국경제" and press_name != "연합뉴스"):
+              continue
+
+            detail = {"category1": big, "category2": small}
+            detail_response = urlopen(li)
+            detail_soup = BeautifulSoup(detail_response, "html.parser")
+
+            header = detail_soup.find("div", {"class": "media_end_head"})
+
+            # header가 없으면 continue
+            if header is None:
+              continue
+
+            # 언론사
+            detail["press"] = press_name
+
+            # 발행일시
+            date = header.find("span", {"class": "media_end_head_info_datestamp_time"})['data-date-time']
+            detail["date"] = date
+
+            # 원본 링크
+            original = header.find("a", {"class": "media_end_head_origin_link"})['href']
+            detail["link"] = original
+
+            # 기자
+            reporter = header.find("em", {"class": "media_end_head_journalist_name"})
+            if reporter is not None:
+              detail["reporter"] = reporter.get_text()
+
+            # 기사 제목
+            detail["title"] = header.find("h2").find("span").get_text()
+
+            # 기사 내용
+            contents = detail_soup.find("div", {"class": "_article_content"})
+            detail["contents"] = str(contents)
+            results.append(detail)
+            
+        page +=1
+      
+      s_date += dt.timedelta(days=1)
+
+# 결과 출력
+print(f'1) 전체 길이 : {len(results)}')
+print('2) 5개 출력')
+print(*results, sep="\n")
+```
+
+초기에 내가 짰던 코드이고, 이 코드를 바탕으로 [완성된 코드](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/data/crawling/news_crawling.py)를 완성했다.
 
 [뉴스 크롤링 코드](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/data/crawling/news_crawling.py)
 
