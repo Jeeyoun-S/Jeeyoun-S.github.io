@@ -71,13 +71,14 @@ public class UserArticleMemo {
 
 그래서 위와 같이 `@NotNull`에서 `nullable = false`로 값을 수정했다. 이 경우 값이 DB에 넘어간 뒤에 예외가 발생한다. 따라서 default가 설정돼 있는 경우에도 오류가 발생하지 않았다. 아래는 참고했던 글이다.
 
-[[JPA] nullable=false와 @NotNull 비교, Hibernate Validation](https://kafcamus.tistory.com/15)
+- 참고 자료 [[JPA] nullable=false와 @NotNull 비교, Hibernate Validation](https://kafcamus.tistory.com/15)
 
 1. 연관 관계 매핑
 
 ```java
 public class UserArticleMemo {
   // 생략
+
   @ManyToOne(fetch = LAZY)
   @JoinColumn(name = "user_id")
   @Comment("회원 ID")
@@ -87,6 +88,7 @@ public class UserArticleMemo {
   @JoinColumn(name = "article_id")
   @Comment("기사 ID")
   private Article article;
+
   // 생략
 }
 ```
@@ -99,6 +101,7 @@ public class UserArticleMemo {
 [인용문 관련 Javascript 함수](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/common/function/textSelection.js)
 
 #### 움직이는 화면
+Scene.js 라이브러리를 사용해 움직이는 화면을 구현했다. 
 
 [Info 페이지](https://github.com/Jeeyoun-S/Cow-Economy#%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%94%EB%A9%B4)
 
