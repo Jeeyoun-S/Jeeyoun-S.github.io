@@ -1,4 +1,6 @@
-- name: <a href="https://jeeyoun-s.github.io/blog/ssueb-review">SSUEB 회고록</a>
+- name: 회고록
+  content:
+    - title: <a href="https://jeeyoun-s.github.io/blog/ssueb-review">SSUEB 회고록</a>
 
 - name: 설계
   content:
