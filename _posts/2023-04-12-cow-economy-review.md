@@ -90,16 +90,16 @@ for big in sid1:
 카테고리별로, 대표적인 정보(기자, 언론사, 제목 등)을 가져오는 틀은 완성된 상태였고, 최초 코드는 한국경제와 연합뉴스 기사만을 가져오도록 설정했다. 
 [네이버의 언론사 목록](https://news.naver.com/main/officeList.naver)을 참고했고, 종합 및 경제 언론사의 기사를 수집하기로 결정했다.
 
-```python
-press_list = ['매일경제', '머니투데이', '비즈워치', '서울경제', '아시아경제', '이데일리', '조선비즈', '조세일보', '파이낸셜뉴스', '한국경제', '헤럴드경제',
-              '경향신문', '국민일보', '동아일보', '문화일보', '서울신문', '세계일보', '조선일보', '중앙일보', '한계레', '한국일보']
+  ```python
+  press_list = ['매일경제', '머니투데이', '비즈워치', '서울경제', '아시아경제', '이데일리', '조선비즈', '조세일보', '파이낸셜뉴스', '한국경제', '헤럴드경제',
+                '경향신문', '국민일보', '동아일보', '문화일보', '서울신문', '세계일보', '조선일보', '중앙일보', '한계레', '한국일보']
 
-# 중간 생략
+  # 중간 생략
 
-press_name = link.find("span", {"class": "writing"}).get_text()
-if li is None or (press_name not in press_list):
-  continue
-```
+  press_name = link.find("span", {"class": "writing"}).get_text()
+  if li is None or (press_name not in press_list):
+    continue
+  ```
 
 2. **내용을 통으로 처리하지 않고 분류해서 처리**  
 
@@ -185,6 +185,8 @@ public class UserArticleMemo {
 Scene.js 라이브러리를 사용해 움직이는 화면을 구현했다. 
 
 [Info 페이지](https://github.com/Jeeyoun-S/Cow-Economy#%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%94%EB%A9%B4)
+
+#### 메모 기능 구현
 
 ### 어렵고 아쉬웠던 점
 
