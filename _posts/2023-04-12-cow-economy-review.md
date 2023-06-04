@@ -22,9 +22,14 @@ description: 7주 간 진행됐던 소귀경 프로젝트에 대한 회고록
 
 ### 잘했고 만족스러웠던 점
 
-#### 협업
-크롤링을 함께 담당한 팀원과 프로젝트 초반에 크롤링 코드를 완성하기 위해 의견을 수없이 주고 받았다.
-이때 팀원의 데이터 처리 시 꼼꼼함을 많이 배울 수 있었고, 처리 방법을 다각도로 생각해 볼 수 있었다.
+#### 협업 + 기사 크롤링
+크롤링을 함께 담당한 팀원과 프로젝트 초반에 크롤링 코드를 완성하기 위해 의견을 수없이 주고받았다.
+이때 팀원으로부터 꼼꼼함과 데이터 처리 방법을 많이 배울 수 있었고, 처리 방법을 다각도로 생각해 볼 수 있었다.
+아래 코드는 처음에 내가 짰던 코드이고, 이 코드를 바탕으로 [완성된 코드](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/data/crawling/news_crawling.py)를 작성했다. 크롤링 작업의 대부분은 Colab을 사용했다.
+
+먼저 뉴스를 어디서 가져올 것인가부터 고민을 했고, 처음에는 경제 언론사의 공식 홈페이지 고려했지만 언론사마다 카테고리가 달랐다. 
+언론사별로 크롤링하면 카테고리 수가 너무 많아지거나 자체적으로 판단해 카테고리를 묶는 작업이 필요했다. 
+네이버 뉴스의 경우 여러 언론사의 경제 뉴스만 모아 8개의 카테고리로 구분돼 있어 네이버 뉴스 경제를 크롤링하는 것이 더 합리적이라고 느꼈다.  
 
 ```python
 from urllib.request import urlopen
@@ -32,7 +37,6 @@ from bs4 import BeautifulSoup
 import datetime as dt
 from pytz import timezone
 
-debug = True
 # sid1 101 (경제)
 sid1 = (101, ) # 대분류
 # sid2 259 (금융), 258 (증권), 261 (산업/재계), 771 (중기/벤처), 260 (부동산), 262 (글로벌 경제), 310 (생활경제), 263 (경제 일반)
@@ -46,24 +50,18 @@ results = []
 
 # 대분류로 반복
 for big in sid1:
-  if debug: print("big", big)
 
   # 소분류로 반복
   for small in sid2:
-    if debug: print("small", small)
 
     # 날짜로 반복
     s_date = start_date
     while s_date <= end_date:
-      if debug: print("date", s_date)
 
       # 페이지로 반복
       page = 1
       max_page = 1
-
       while page <= max_page:
-        if debug: print("page", page)
-
         response = urlopen(f'https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid2={small}&sid1={big}&date={s_date.strftime("%Y%m%d")}&page={page}')
         soup = BeautifulSoup(response, "html.parser")
 
@@ -83,11 +81,9 @@ for big in sid1:
 
           # 링크를 반복하며 세부 기사 페이지에서 내용 가져오기
           for link in links:
-        
+
             li = link.find("dt", class_=False).find("a").attrs["href"]
             press_name = link.find("span", {"class": "writing"}).get_text()
-            # print(press_name)
-
             if li is None or (press_name != "한국경제" and press_name != "연합뉴스"):
               continue
 
@@ -96,7 +92,6 @@ for big in sid1:
             detail_soup = BeautifulSoup(detail_response, "html.parser")
 
             header = detail_soup.find("div", {"class": "media_end_head"})
-
             # header가 없으면 continue
             if header is None:
               continue
@@ -105,12 +100,10 @@ for big in sid1:
             detail["press"] = press_name
 
             # 발행일시
-            date = header.find("span", {"class": "media_end_head_info_datestamp_time"})['data-date-time']
-            detail["date"] = date
+            detail["date"] = header.find("span", {"class": "media_end_head_info_datestamp_time"})['data-date-time']
 
             # 원본 링크
-            original = header.find("a", {"class": "media_end_head_origin_link"})['href']
-            detail["link"] = original
+            detail["link"] = header.find("a", {"class": "media_end_head_origin_link"})['href']
 
             # 기자
             reporter = header.find("em", {"class": "media_end_head_journalist_name"})
@@ -121,8 +114,7 @@ for big in sid1:
             detail["title"] = header.find("h2").find("span").get_text()
 
             # 기사 내용
-            contents = detail_soup.find("div", {"class": "_article_content"})
-            detail["contents"] = str(contents)
+            detail["contents"] = detail_soup.find("div", {"class": "_article_content"})
             results.append(detail)
             
         page +=1
@@ -135,9 +127,15 @@ print('2) 5개 출력')
 print(*results, sep="\n")
 ```
 
-초기에 내가 짰던 코드이고, 이 코드를 바탕으로 [완성된 코드](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/data/crawling/news_crawling.py)를 완성했다.
+1. 어떤 신문사의 기사만을 가져올 것인가?
+카테고리별로, 대표적인 정보(기자, 언론사, 제목 등)을 가져오는 틀은 완성된 상태였고, 최초 코드는 한국경제와 연합뉴스 기사만을 가져오도록 설정했다.
+[네이버의 언론사 목록](https://news.naver.com/main/officeList.naver)을 참고했고, 종합 및 경제 언론사의 기사를 수집하기로 결정했다.
 
-[뉴스 크롤링 코드](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/data/crawling/news_crawling.py)
+2. 내용을 통으로 처리하지 않고 분류해서 처리
+
+3. HTML 예외 처리
+
+4. 1시간 마다 중복 없이 크롤링
 
 #### JPA
 이전 프로젝트에서 연관 관계를 매핑하지 않아 아쉬운 점이 있었지만, 이번 프로젝트는 이 점을 반영해 연관 관계를 매핑하고 DB 스키마가 자동으로 생성되도록 했다.
