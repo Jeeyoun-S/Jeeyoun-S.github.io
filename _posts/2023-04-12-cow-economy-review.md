@@ -106,10 +106,13 @@ if li is None or (press_name not in press_list):
 ```
 
 - **내용을 통으로 처리하지 않고 분류해서 처리**  
+초기 코드에는 기사 내용을 HTML 포함 그대로 가져오도록 처리했다. 그러나 기사 내용에는 이미지, 이미지 설명, 인용구 등이 존재했고, 특히 와이어프레임 설계를 고려했을 때 썸네일이 필요했으므로 내용을 처리해야 했다.  
+여기서 발생한 문제는 (1)이미지와 이미지 설명이 `<table>` 내에 존재하는 경우 (2)`<strong>`과 `<b>` 태그 처리였다. 내용을 DB에 저장하고, 나중에 프론트에서 보여줄 때까지 고려해서 코드를 짜야했다.  
+
 
 - **실행 시간**  
-
-- **HTML 예외 처리**  
+Colab으로 작업하니 1일 치 기사를 크롤링하면 약 12분(대략 3000개)이 걸렸다. 1시간마다 크롤링하기에 큰 문제를 없으리라 생각됐지만, 시간이 길게 느껴졌다. Colab이 구글 내부 서버에서 코드를 실행하다 보니 오래 걸리는 것이 아닐까 하는 생각이 들었고, Pycharm으로 실행해 봤다.  
+그 결과, 약 7~8분 정도로 실행 시간이 감소했고 시간이 지연되는 문제를 없을 것이라 예상했다. 
 
 - **1시간 마다 중복 없이 크롤링**  
 
@@ -131,7 +134,7 @@ spring:
 이전 프로젝트 코드를 찾아보니 해당 프로젝트에서도 이 설정이 있었다. 그럼에도 수정할 때마다 SQL문을 공유하고, 해당 SQL문을 실행시켰던 것은 이에 대해 잘 몰랐기 때문이라고 생각한다. 공부의 중요성을 다시 한번 느끼는 계기였다.
 
 **@NotNull과 nullable = false의 차이**  
-메모를 등록하는 APIntity에 회원, 기사 등 기본 정보만 DB에 넣으려는 작업 중 에러가 발생했다. 바로 메모 작성 시간이 없어서 오류가 난다는 것이었다. 당시 코드는 아래와 같았다. `@NotNull`로 해당 칼럼에 NULL이 들어가지 못하도록 설정해 두었고, default 값으로 현재 시간을 넣어두었다.
+메모를 등록하는 API에서 메모 Entity에 회원, 기사 등 기본 정보만 설정한 뒤 DB에 넣으려는 작업 중 에러가 발생했다. 바로 메모 작성 시간이 없어서 오류가 난다는 것이었다. 당시 코드는 아래와 같았다. `@NotNull`로 해당 칼럼에 NULL이 들어가지 못하도록 설정해 두었고, default 값으로 현재 시간을 넣어두었다.
 
 ```java
 public class UserArticleMemo {
@@ -178,9 +181,11 @@ public class UserArticleMemo {
 }
 ```
 
+**DTO와 Entity**
+
 #### Javascript
 메모 관련 기능을 담당해 
-[인용문 관련 Javascript 함수](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/common/function/textSelection.js)
+[인용문 관련 Javascript 함수](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/common/function/textSelection.js)를 구현했다. 
 
 #### 움직이는 화면
 Scene.js 라이브러리를 사용해 움직이는 화면을 구현했다. 

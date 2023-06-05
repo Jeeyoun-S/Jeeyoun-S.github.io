@@ -1,5 +1,5 @@
 ---
-title: SSUEB 회고록
+title: Almost There 회고록
 date: 2023-05-18 00:00:00 +07:00
 tags: [project]
 style: fill
@@ -21,10 +21,11 @@ Almost There은 모임 관리를 간편하게 할 수 있도록 지원하는 서
 
 [더 자세한 설명 보러가기](https://jeeyoun-s.github.io/projects/5-almost-there)
 
-### 잘했고 만족스러웠던 점
+### 좋았고 배울 수 있었던 점
 
-#### 움직이는 화면
 #### 의존성 주입
+
+
 #### 팀원들
 
 ### 어렵고 아쉬웠던 점
