@@ -22,7 +22,7 @@ description: 7주 간 진행됐던 소귀경 프로젝트에 대한 회고록
 
 ### 좋았고 배울 수 있었던 점
 
-#### 협업 + 기사 크롤링
+#### 기사 크롤링
 크롤링을 함께 담당한 팀원과 프로젝트 초반에 크롤링 코드를 완성하기 위해 의견을 수없이 주고받았다. 
 이때 팀원으로부터 꼼꼼함과 데이터 처리 방법을 많이 배울 수 있었고, 처리 방법을 다각도로 생각해 볼 수 있었다. 
 처음 기초 코드는 내가 작성했고, 이 코드를 바탕으로 [완성된 코드](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/data/crawling/news_crawling.py)를 작성했다.
@@ -106,12 +106,79 @@ if li is None or (press_name not in press_list):
 ```
 
 - **내용을 통으로 처리하지 않고 분류해서 처리**  
+초기 코드에는 기사 내용을 HTML 포함 그대로 가져오도록 처리했다. 그러나 기사 내용에는 이미지, 이미지 설명, 인용구 등이 존재했고, 특히 와이어프레임 설계를 고려했을 때 썸네일이 필요했으므로 내용을 처리해야 했다.  
+여기서 집중했던 부분은 (1)이미지와 이미지 설명이 `<table>` 내에 존재하는 경우 (2)`<strong>`과 `<b>` 태그 처리였다. 내용을 DB에 저장하고, 나중에 프론트에서 보여줄 때까지 고려해서 코드를 짜야했다. 따라서 HTML 태그를 separator로 변경했고 코드는 아래와 같다.  
 
-- **실행 시간**  
+```python
+# separator
+separator_image = "@@img"
+separator_image_end = "@@endimg"
+separator_image_desc = "@@imgdesc"
+separator_image_desc_end = "@@endimgdesc"
+separator_strong = "@@strong"
+separator_strong_end = "@@endstrong"
 
-- **HTML 예외 처리**  
+# 중간 생략
+
+br_list = contents.find_all("br") # br 처리
+for br in br_list:
+    br.replace_with("@@br")
+
+td_list = contents.find_all("td") # table 내 이미지 설명
+for td in td_list:
+  if(td.find_all("table")):
+    continue
+  img_desc = td.get_text()
+  if len(img_desc.strip()) > 0:
+    td.replace_with(separator_image_desc + td.get_text() + separator_image_desc_end)
+
+img_list = contents.find_all("img") # 이미지 전체 변경
+if len(img_list) != 0 :
+    detail["article_thumbnail"] = img_list[0].get("data-src")
+for img in img_list:
+    img.replace_with(separator_image + img.get("data-src") + separator_image_end)
+
+em_list = contents.find_all("em") # table 외 이미지 설명
+for em in em_list:
+    em.replace_with(separator_image_desc + em.get_text() + separator_image_desc_end)
+
+strong_list = contents.find_all("strong") # strong 태그
+for strong in strong_list:
+    strong.replace_with(separator_strong + strong.get_text() + separator_strong_end)
+
+b_list = contents.find_all("b") # b 태그 = strong 태그 동일하게 처리
+for b in b_list:
+    b.replace_with(separator_strong + b.get_text() + separator_strong_end)
+
+# 이하 생략
+```
+
+- **코드 실행 시간**  
+Colab으로 작업하니 1일 치 기사를 크롤링하면 약 12분(대략 3000개)이 걸렸다. 1시간마다 크롤링하기에 큰 문제를 없으리라 생각됐지만, 시간이 길게 느껴졌다. Colab이 구글 내부 서버에서 코드를 실행하다 보니 오래 걸리는 것이 아닐까 하는 생각이 들었고, Pycharm으로 실행해 봤다.  
+그 결과, 약 7~8분 정도로 실행 시간이 감소했고 시간이 지연되는 문제를 없을 것이라 예상했다. 프로젝트 관련 조언을 해주시는 현업 전문가님께서도 Interval 내에 처리가 가능하므로 전혀 문제 될 부분이 없을 거라고 말씀해 주셨다.
 
 - **1시간 마다 중복 없이 크롤링**  
+Crontab을 이용해 1시간마다 기사를 크롤링했는데 이전에 크롤링이 끝난 시점 이후만 크롤링 하도록 설정해야 했다. 이 부분은 팀원분께서 구현해 주셨고, DB
+
+```python
+def readArticleTime():
+    f = open("/home/ubuntu/data/crawling/article_time.txt", 'r')
+    last_article_time = f.readlines()
+    f.close()
+    return last_article_time
+
+def writeArticleTime(dates) :
+    f = open("/home/ubuntu/data/crawling/article_time.txt", 'w')
+    print(dates)
+    f.write(dates)
+    f.close()
+
+def writeLastArticleId(article) :
+    f = open("/home/ubuntu/data/crawling/last_article.txt", 'w')
+    print(article)
+    f.write(article)
+    f.close()
+```
 
 #### JPA
 이전 프로젝트에서 연관 관계를 매핑하지 않아 아쉬운 점이 있었지만, 이번 프로젝트는 이 점을 반영해 연관 관계를 매핑하고 DB 스키마가 자동으로 생성되도록 했다.
@@ -131,7 +198,7 @@ spring:
 이전 프로젝트 코드를 찾아보니 해당 프로젝트에서도 이 설정이 있었다. 그럼에도 수정할 때마다 SQL문을 공유하고, 해당 SQL문을 실행시켰던 것은 이에 대해 잘 몰랐기 때문이라고 생각한다. 공부의 중요성을 다시 한번 느끼는 계기였다.
 
 **@NotNull과 nullable = false의 차이**  
-메모를 등록하는 APIntity에 회원, 기사 등 기본 정보만 DB에 넣으려는 작업 중 에러가 발생했다. 바로 메모 작성 시간이 없어서 오류가 난다는 것이었다. 당시 코드는 아래와 같았다. `@NotNull`로 해당 칼럼에 NULL이 들어가지 못하도록 설정해 두었고, default 값으로 현재 시간을 넣어두었다.
+메모를 등록하는 API에서 메모 Entity에 회원, 기사 등 기본 정보만 설정한 뒤 DB에 넣으려는 작업 중 에러가 발생했다. 바로 메모 작성 시간이 없어서 오류가 난다는 것이었다. 당시 코드는 아래와 같았다. `@NotNull`로 해당 칼럼에 NULL이 들어가지 못하도록 설정해 두었고, default 값으로 현재 시간을 넣어두었다.
 
 ```java
 public class UserArticleMemo {
@@ -178,16 +245,20 @@ public class UserArticleMemo {
 }
 ```
 
+**DTO와 Entity**
+
 #### Javascript
 메모 관련 기능을 담당해 
+<<<<<<< HEAD
 [인용문 관련 Javascript 함수](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/common/function/textSelection.js)를 작성했습니다. 
+=======
+[인용문 관련 Javascript 함수](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/common/function/textSelection.js)를 구현했다. 
+>>>>>>> 4b52d67cf090537cec97948df45ec52e7d3568cb
 
 #### 움직이는 화면
 Scene.js 라이브러리를 사용해 움직이는 화면을 구현했다. 
 
 [Info 페이지](https://github.com/Jeeyoun-S/Cow-Economy#%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%94%EB%A9%B4)
-
-#### 메모 기능 구현
 
 ### 어렵고 아쉬웠던 점
 
