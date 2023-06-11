@@ -180,7 +180,7 @@ public class UserArticleMemo {
 
 #### Javascript
 메모 관련 기능을 담당해 
-[인용문 관련 Javascript 함수](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/common/function/textSelection.js)
+[인용문 관련 Javascript 함수](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/common/function/textSelection.js)를 작성했습니다. 
 
 #### 움직이는 화면
 Scene.js 라이브러리를 사용해 움직이는 화면을 구현했다. 
@@ -197,7 +197,7 @@ Scene.js 라이브러리를 사용해 움직이는 화면을 구현했다.
 
 1. N+1 문제
 
-#### iOS 메모 기능
+#### iOS 메모 기능a
 
 #### 프로젝트의 규모
 

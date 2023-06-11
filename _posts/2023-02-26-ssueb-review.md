@@ -49,7 +49,7 @@ Backend는 다른 팀원이 미리 구현해 둬, 나는 Frontend 구현을 맡�
 맡은 부분을 끝까지 완성했고, 추가로 다른 부분까지 맡아 개발 경험을 더 쌓을 수 있어 좋았다.
 
 #### 휴대폰 인증 구현
-Redis와 Naver Cloud Platform Open API를 사용해 휴대폰 인증을 구현한 점이 제일 보람 있었다. 처음으로 Redis라는 새로운 데이터베이스에 대해 학습했고, NoSQL을 사용해 보는 것은 처음이었기에 더 흥미로웠다. 휴대폰 인증 과정은 다음과 같다.
+Redis와 Naver Cloud Platform Open API를 사용해 휴대폰 인증을 구현한 점이 제일 보람 있었다. ([휴대폰 인증 구현 코드](https://github.com/Jeeyoun-S/SSUEB/tree/main/backend/src/main/java/com/ssafy/user/phone)) 처음으로 Redis라는 새로운 데이터베이스에 대해 학습했고, NoSQL을 사용해 보는 것은 처음이었기에 더 흥미로웠다. 휴대폰 인증 과정은 다음과 같다.
 
 1. 사용자가 휴대폰 번호 입력 후 인증하기 클릭
 2. 서버로 휴대폰 번호 전송 후 Key(휴대폰 번호), Value(인증번호, 6자리 난수)로 Redis에 3분 간 저장
@@ -57,19 +57,17 @@ Redis와 Naver Cloud Platform Open API를 사용해 휴대폰 인증을 구현�
 4. 사용자가 화면에 인증번호를 입력하면 서버로 전달해 Redis에서 휴대폰 번호와 인증번호를 비교해 인증 확인
 5. 인증 완료 시, Frontend에 인증 완료 Flag를 true로 변경
 
-어려운 구현 과정은 아닐 수 있지만, 나에게 새로운 부분이 많았다는 점이 인상 깊었다.
-
-[휴대폰 인증 구현 코드](https://github.com/Jeeyoun-S/SSUEB/tree/main/backend/src/main/java/com/ssafy/user/phone)
+어려운 구현 과정은 아닐 수 있지만, 나에게 Redis, Naver Cloud Platform API와 같이 새로운 부분이 많았다는 점이 인상 깊었다.
 
 #### Frontend 구현
 우리 팀 프로젝트 CSS와 Vuetify의 약 90%는 내가 구현하지 않았을까 하는 생각이 있다. 백엔드를 지망하는 6명의 교육생이 모인 상황이라 Frontend에 다소 관심이 떨어지는 분위기가 있었다.
 
-나는 서비스에서 사용자에게 더 많은 영향을 미치는 부분은 Frontend라고 생각했고, 백엔드 못지않게 Frontend도 중요하다는 생각이 있었다. 이에 관련 라이브러리를 적극 활용해 적은 시간으로 최대의 효율을 발휘해 Frontend의 완성도를 높여보고자 했다. 그 결과, Vuetify와 SweetAlert로 사용자 편의를 높이고 빠른 시간 내 Frontend 작업을 해낼 수 있었고 라이브러리 활용 능력을 기를 수 있었다.
+나는 서비스에서 사용자에게 더 많은 영향을 미치는 부분은 Frontend라고 생각했고, 백엔드 못지않게 Frontend도 중요하다는 생각이 있었다. 이에 관련 라이브러리를 적극 활용해 적은 시간으로 최대의 효율을 발휘해 Frontend의 완성도를 높여보고자 했다.
 
 - [Vuetify3 Docs](https://vuetifyjs.com/en/getting-started/installation/)
 - [SweetAlert2](https://sweetalert2.github.io/)
 
-팀원들이 Frontend 걱정을 많이 했는데 모두 만족스럽다며 칭찬해, 팀에 조금이나마 도움이 됐다는 생각에 뿌듯했다.
+그 결과, Vuetify와 SweetAlert로 사용자 편의를 높이고 빠른 시간 내 Frontend 작업을 해낼 수 있었고 라이브러리 활용 능력을 기를 수 있었다. 팀원들이 Frontend 걱정을 많이 했는데 모두 만족스럽다며 칭찬해, 팀에 조금이나마 도움이 됐다는 생각에 뿌듯했다.
 
 #### 유효성 검사
 회원가입 구현을 맡아 정보를 입력받고 모든 정보에 대해 유효성 검사를 수행했다. 어디서 유효성 검사를 할지 고민하던 중, 반 컨설턴트님께서 유효성 검사는 프론트와 백 모두에서 하는 것이 좋다고 조언해 주셨다.
@@ -178,9 +176,7 @@ public class Attach {
 
 그러나 첫 구현인 만큼 아쉬운 부분도 많았다. 먼저 Entity 간의 연관 관계 설정을 전혀 하지 않았다. 따라서 여러 테이블에서 값을 가져올 때 nativeQuery로 일일이 Join 쿼리문을 작성한 경우가 있었다. 최대 3개의 테이블을 Join 했었기에 JPA를 사용하는 것이 생산성 측면에서 더 좋지 않았을까 싶다.
 
-- [QEntity 폴더](https://github.com/Jeeyoun-S/SSUEB/tree/main/backend/src/main/generated/com/ssafy/db/entity)
-
-또한, QueryDSL을 import 해두고 사용하지 못한 점도 아쉬웠다. 처음 프로젝트 시작 전 SSAFY에서 제공하는 Skeleton을 기반으로 프로젝트를 진행했는데 기본적으로 QueryDSL이 붙어있었다. JPA에 대한 학습이 부족해 QueryDSL의 존재를 알지 못했고, JPA에 대한 학습이 부족해 QEntity를 모두 생성해 둔 채 아무도 사용하지 않았다.
+또한, QueryDSL을 import 해두고 사용하지 못한 점도 아쉬웠다. 처음 프로젝트 시작 전 SSAFY에서 제공하는 Skeleton을 기반으로 프로젝트를 진행했는데 기본적으로 QueryDSL이 붙어있었다. JPA에 대한 학습이 부족해 QueryDSL의 존재를 알지 못했고, JPA에 대한 학습이 부족해 [QEntity](https://github.com/Jeeyoun-S/SSUEB/tree/main/backend/src/main/generated/com/ssafy/db/entity)를 모두 생성해 둔 채 아무도 사용하지 않았다.
 
 #### 팀원 간 정보 공유
 매일 오전, 오후 조회 시간에 반 컨설턴트님께서 프로젝트에 도움 되는 조언들을 몇 개 해주셨고, 프로젝트 진행에 정말 많은 도움이 됐다. 대표적으로 앞에서 언급한 파일 처리, 유효성 검사가 있고 그 외에도 API CALL 횟수, API 설계 방법 등 다양한 도움을 받을 수 있었다.
