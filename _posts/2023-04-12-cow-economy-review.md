@@ -170,29 +170,29 @@ Colab으로 작업하니 1일 치 기사를 크롤링하면 약 12분(대략 300
 위 속성을 추가하면 프로젝트 실행 시 DB 테이블을 자동으로 생성하거나 수정한다. `update`인 경우 Entity 정보를 비교해 변경사항만 수정하고, `create`는 기존 테이블을 삭제하고 새로 생성한다. 저희는 기존 테이블에 존재하는 데이터도 그대로 사용하고자 update로 설정했다.  
 이전 프로젝트 코드를 찾아보니 해당 프로젝트에서도 이 설정이 있었다. 그럼에도 수정할 때마다 SQL문을 공유하고, 해당 SQL문을 실행시켰던 것은 이에 대해 잘 몰랐기 때문이라고 생각한다. 공부의 중요성을 다시 한번 느끼는 계기였다.  
 
-**@NotNull과 nullable = false의 차이**  
+- **@NotNull과 nullable = false의 차이**  
 메모를 등록하는 API에서 메모 Entity에 회원, 기사 등 기본 정보만 설정한 뒤 DB에 넣으려는 작업 중 에러가 발생했다. 바로 메모 작성 시간이 없어서 오류가 난다는 것이었다. 당시 코드는 아래와 같았다. `@NotNull`로 해당 칼럼에 NULL이 들어가지 못하도록 설정해 두었고, default 값으로 현재 시간을 넣어두었다.
 
-```java
-public class UserArticleMemo {
-  // 생략
-  @NotNull
-  @Column(columnDefinition = "datetime DEFAULT CURRENT_TIMESTAMP")
-  private LocalDateTime regtime;
-  // 생략
-}
-```
+  ```java
+  public class UserArticleMemo {
+    // 생략
+    @NotNull
+    @Column(columnDefinition = "datetime DEFAULT CURRENT_TIMESTAMP")
+    private LocalDateTime regtime;
+    // 생략
+  }
+  ```
 
 메모를 등록할 때 regtime은 default 값이 있으므로 save() 할 때 Entity에 값을 넣지 않았고, 자동으로 default 값이 들어갈 거라 생각했다. 알아보니 `@NotNull`은 DB에 SQL 쿼리를 보내기 전에 예외를 처리한다고 한다. 따라서 DB에 넣기 전 값을 검증해 null인 경우 오류를 발생시키는 것이다.
 
-```java
-public class UserArticleMemo {
-  // 생략
-  @Column(nullable = false, columnDefinition = "datetime DEFAULT CURRENT_TIMESTAMP")
-  private LocalDateTime regtime;
-  // 생략
-}
-```
+  ```java
+  public class UserArticleMemo {
+    // 생략
+    @Column(nullable = false, columnDefinition = "datetime DEFAULT CURRENT_TIMESTAMP")
+    private LocalDateTime regtime;
+    // 생략
+  }
+  ```
 
 그래서 위와 같이 `@NotNull`에서 `nullable = false`로 값을 수정했다. 이 경우 값이 DB에 넘어간 뒤에 예외가 발생한다. 따라서 default가 설정돼 있는 경우에도 오류가 발생하지 않았다. [[JPA] nullable=false와 @NotNull 비교, Hibernate Validation](https://kafcamus.tistory.com/15)'를 참고했다.
 
