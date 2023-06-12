@@ -198,9 +198,7 @@ public class UserArticleMemo {
 }
 ```
 
-그래서 위와 같이 `@NotNull`에서 `nullable = false`로 값을 수정했다. 이 경우 값이 DB에 넘어간 뒤에 예외가 발생한다. 따라서 default가 설정돼 있는 경우에도 오류가 발생하지 않았다. 아래는 참고했던 글이다.
-
-- 참고 자료 [[JPA] nullable=false와 @NotNull 비교, Hibernate Validation](https://kafcamus.tistory.com/15)
+그래서 위와 같이 `@NotNull`에서 `nullable = false`로 값을 수정했다. 이 경우 값이 DB에 넘어간 뒤에 예외가 발생한다. 따라서 default가 설정돼 있는 경우에도 오류가 발생하지 않았다. 참고했던 글은 '[[JPA] nullable=false와 @NotNull 비교, Hibernate Validation](https://kafcamus.tistory.com/15)'이다.
 
 **연관 관계 매핑**  
 1:1, 1:N, N:N 관계를 Entity에서 설정해 반복적인 Join을 하지 않아 코드가 간결해지고, 생산성이 높아졌다.
@@ -276,7 +274,7 @@ UserArticleMemo userArticleMemo = UserArticleMemo.builder()
 1. 기사를 드래그하면 인용문 추가 버튼을 활성화한다.
 2. 인용문 추가 버튼을 클릭하면 드래그했던 인용문이 메모 등록창에 추가되고, 하단 등록창으로 스크롤을 이동한다.
 3. 메모 내용을 입력하고, 메모를 등록한다. (인용문 없이도 등록 가능)
-4. 메모 조회창 또는 등록창에서 인용문을 클릭하면 인용문의 위치로 스크롤이 이동하며 인용문이 하이라이트 처리돼 보여진다.
+4. 메모 조회창 또는 등록창에서 인용문을 클릭하면 인용문의 위치로 스크롤이 이동하며 인용문이 하이라이트 처리돼 보인다.
 5. 화면을 한 번 터치하면 인용문의 하이라이트 처리가 사라진다.
 
 ```javascript
@@ -289,12 +287,18 @@ document.addEventListener("selectionchange", this.addSelection);
 ### 어렵고 아쉬웠던 점
 
 #### 협업
+각자 맡은 바를 책임감 있게 완성해내는 팀원들을 만났고, 
 
 #### JPA
 
+
 #### iOS 메모 기능
+아이폰에서는 `getSelection()` 함수가 동작하지 않아 드래그된 내용을 가져오지 못하고 NULL 값이 들어와 인용문 추가 기능을 사용하지 못한다. 아이폰에서는 해당 함수를 지원하지 않는다고 한다. 다만, macOS 맥북에서는 `getSelection()` 함수가 동작했다.
+
+`getSelection()` 함수를 사용하지 않고는 어떻게 구현할지 아이디어가 없어 결국 해결하지 못한 부분이다. 
 
 #### 프로젝트의 규모
+
 
 #### 분산 도메인
 
