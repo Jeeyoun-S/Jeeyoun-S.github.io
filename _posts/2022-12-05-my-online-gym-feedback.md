@@ -61,7 +61,7 @@ description: 1주일 간 My Online Gym Project를 끝낸 뒤, 받았던 Feedback
 - 공휴일은 구분할 수 있게 다른 색으로 표시.
   - 일요일은 빨간색, 토요일은 파란색이 되도록 CSS 추가
 
-    ```javascript
+    ```css
     /* 일요일 */
     .fc-theme-bootstrap .fc-daygrid-day.fc-day.fc-day-sun a.fc-daygrid-day-number {
       color: #FF0000;
@@ -152,20 +152,78 @@ description: 1주일 간 My Online Gym Project를 끝낸 뒤, 받았던 Feedback
 
 ### 운동 영상 검색 기능
 - 운동 영상 조회 시 한 페이지에 최대 3개의 영상만 노출, 더 많은 영상을 볼 수 있게 수정.
-  - 썸네일과 영상 정보 나열을 좌우에서 상하로 변경, 한 행에 영상이 5개씩 뜨도록 수정
+  - 영상 ITEM 내의 썸네일과 영상 정보 나열을 좌우에서 상하로 변경, 한 행에 영상이 최대 5개씩 뜨도록 수정
+  - 각 영상 ITEM은 상하에서 좌우로 나열 변경
+
+    ```html
+    <div v-else id="video-list">
+      <div id="video-list-item" v-for="video in video_search_data" :key="video.videoId" @click="detailVideo(video)">
+        <img :src="video.thumbnails" />
+        <div id="contents">
+          <h3 v-html="video.title.substr(0, 25) + '...'"></h3>
+          <p>{{ video.channelTitle }}</p>
+        </div>
+      </div>
+    </div>
+    ```
+
+    ```css
+    #video-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: left;
+    }
+
+    #video-list-item {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: left;
+    }
+    ```
 
 ### 운동 루틴 추천 기능
 - 루틴에서 동작을 삭제하는 기능도 필요.
   - vue에서 삭제 함수 추가 구현 및 삭제 버튼 칸 추가
 
+    ```javascript
+    removeRoutine({commit}, index) {
+      commit('REMOVE_ROUTINE_DATA', index);
+    }
+    ```
+
 ### 건강기능식품 검색 기능
 - 검색 시, 최신순이나 조회수순 등 정렬 방식 선택.
   - 검색 결과 맨 위에 정렬 방식을 선택할 수 있는 select 버튼 추가
 
+    ```html
+    <b-form inline>
+      <b-form-select
+        id="inline-form-custom-select-pref"
+        class="mb-2 mr-sm-2 mb-sm-0"
+        :options="[{ text: '정렬 방식', value: null }, '조회수 순', '가나다 순', '최신 순']"
+        v-model="sorting"
+      ></b-form-select>
+    </b-form>
+    ```
+
 - 검색 후 건강식품 나열할 때 각 건강식품 정보를 한 줄로 정리해 한 페이지에 많이 볼 수 있도록.
   - 식품명, 설명 나열을 상하에서 좌우로 변경해 한 줄로 볼 수 있게
 
-- 건강식품 구매처도 2번과 동일하게 한 페이지에 많이 보이게 정리.
+    ```css
+    #food-list-item #each-item {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: left;
+    }
+    ```
+
+- 건강식품 구매처도 운동 영상과 동일하게 한 페이지에 많이 보이게 정리.
   - 운동 영상 검색과 유사한 방식으로 수정
 
 사실 이외에도 기획 단계부터 아쉽다고 이야기한 부분들이 많았지만, 2학기 과정이 기다리고 있어 시간이 넉넉지 않아 전체적인 기능은 유지하는 방향으로 수정했다.
