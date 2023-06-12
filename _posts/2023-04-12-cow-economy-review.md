@@ -157,29 +157,6 @@ for b in b_list:
 Colab으로 작업하니 1일 치 기사를 크롤링하면 약 12분(대략 3000개)이 걸렸다. 1시간마다 크롤링하기에 큰 문제를 없으리라 생각됐지만, 시간이 길게 느껴졌다. Colab이 구글 내부 서버에서 코드를 실행하다 보니 오래 걸리는 것이 아닐까 하는 생각이 들었고, Pycharm으로 실행해 봤다.  
 그 결과, 약 7~8분 정도로 실행 시간이 감소했고 시간이 지연되는 문제를 없을 것이라 예상했다. 프로젝트 관련 조언을 해주시는 현업 전문가님께서도 Interval 내에 처리가 가능하므로 전혀 문제 될 부분이 없을 거라고 말씀해 주셨다.
 
-- **1시간 마다 중복 없이 크롤링**  
-Crontab을 이용해 1시간마다 기사를 크롤링했는데 이전에 크롤링이 끝난 시점 이후만 크롤링 하도록 설정해야 했다. 이 부분은 팀원분께서 구현해 주셨고, DB
-
-```python
-def readArticleTime():
-    f = open("/home/ubuntu/data/crawling/article_time.txt", 'r')
-    last_article_time = f.readlines()
-    f.close()
-    return last_article_time
-
-def writeArticleTime(dates) :
-    f = open("/home/ubuntu/data/crawling/article_time.txt", 'w')
-    print(dates)
-    f.write(dates)
-    f.close()
-
-def writeLastArticleId(article) :
-    f = open("/home/ubuntu/data/crawling/last_article.txt", 'w')
-    print(article)
-    f.write(article)
-    f.close()
-```
-
 #### JPA
 이전 프로젝트에서 연관 관계를 매핑하지 않아 아쉬운 점이 있었지만, 이번 프로젝트는 이 점을 반영해 연관 관계를 매핑하고 DB 스키마가 자동으로 생성되도록 했다.
 
@@ -249,11 +226,11 @@ public class UserArticleMemo {
 
 #### Javascript
 메모 관련 기능을 담당해 
-<<<<<<< HEAD
-[인용문 관련 Javascript 함수](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/common/function/textSelection.js)를 작성했습니다. 
-=======
 [인용문 관련 Javascript 함수](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/common/function/textSelection.js)를 구현했다. 
->>>>>>> 4b52d67cf090537cec97948df45ec52e7d3568cb
+
+```javascript
+document.addEventListener("selectionchange", this.addSelection);
+```
 
 #### 움직이는 화면
 Scene.js 라이브러리를 사용해 움직이는 화면을 구현했다. 
