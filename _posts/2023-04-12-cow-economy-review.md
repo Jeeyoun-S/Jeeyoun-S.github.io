@@ -203,6 +203,7 @@ public class UserArticleMemo {
 - 참고 자료 [[JPA] nullable=false와 @NotNull 비교, Hibernate Validation](https://kafcamus.tistory.com/15)
 
 **연관 관계 매핑** 
+1:1, 1:N, N:N 관계를 Entity에서 설정해 반복적인 Join을 하지 않아 코드가 간결해지고, 생산성이 높아졌습니다.
 
 ```java
 public class UserArticleMemo {
@@ -222,20 +223,48 @@ public class UserArticleMemo {
 }
 ```
 
-**DTO와 Entity**
+**Entity와 DTO 상호 변환**
+이전 공통 프로젝트를 담당해 주셨던 컨설턴트님께서 Entity를 그대로 반환하지 말고 DTO로 변환해 사용하라는 조언을 해주셨었다. 그 이유를 찾아보니 
+변환 방법도 여러 가지였다.
+
+```java
+User user = optionUser.get();
+Consultant consultant = optionConsultant.get();
+
+UserInfoResponseData userInfoResponseData = new UserInfoResponseData();
+userInfoResponseData.setId(id);
+userInfoResponseData.setConsultantIntro(consultant.getConsultantIntro());
+userInfoResponseData.setConsultantProfile(consultant.getConsultantProfile());
+userInfoResponseData.setConsultantPetType(consultant.getConsultantPetType());
+userInfoResponseData.setConsultantReservationCount(consultant.getConsultantReservationCount());
+userInfoResponseData.setUserName(user.getUserName());
+userInfoResponseData.setUserPhone(user.getUserPhone());
+userInfoResponseData.setUserAlertFlag(user.getUserAlertFlag());
+```
+
+이전 프로젝트에서는 위와 같이 Setter를 활용해 매우 길고 번거로운 코드를 구현했었다. 한 번의 함수 호출로 DTO를 생성하지 못했고, 구현을 Controller에서 해 재사용이 어렵다는 문제도 존재했다. 또한, Entity에서 Setter를 이용하면 객체의 안전성과 일관성이 유지되지 못해 Setter 사용을 지양해야 한다고 한다.
+
+Setter 외에도 생성자를 사용하는 방법과 Builder를 사용하는 방법 2가지가 있었다. 
+
+
+전달되는 인자의 수가 많아지면 생성자의 경우 코드 작성이 어렵고 가독성이 떨어진다는 단점이 있었다.
 
 #### Javascript
 메모 관련 기능을 담당해 
-[인용문 관련 Javascript 함수](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/common/function/textSelection.js)를 구현했다. 
+[인용문 관련 Javascript 함수](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/common/function/textSelection.js)를 구현했다. 메모 기능의 핵심은 아래와 같았다.
+
+1. 기사를 드래그하면 인용문 추가 버튼을 활성화한다.
+2. 인용문 추가 버튼을 클릭하면 드래그했던 인용문이 메모 등록창에 추가되고, 하단 등록창으로 스크롤을 이동한다.
+3. 메모 내용을 입력하고, 메모를 등록한다. (인용문 없이도 등록 가능)
+4. 메모 조회창 또는 등록창에서 인용문을 클릭하면 인용문의 위치로 스크롤이 이동하며 인용문이 하이라이트 처리돼 보여진다.
+5. 화면을 한 번 터치하면 인용문의 하이라이트 처리가 사라진다.
 
 ```javascript
 document.addEventListener("selectionchange", this.addSelection);
 ```
 
 #### 움직이는 화면
-Scene.js 라이브러리를 사용해 움직이는 화면을 구현했다. 
-
-[Info 페이지](https://github.com/Jeeyoun-S/Cow-Economy#%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%94%EB%A9%B4)
+[Info 페이지](https://github.com/Jeeyoun-S/Cow-Economy#%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%94%EB%A9%B4)에서 Scene.js 라이브러리를 사용해 움직이는 화면을 구현했다. 
 
 ### 어렵고 아쉬웠던 점
 
@@ -243,9 +272,7 @@ Scene.js 라이브러리를 사용해 움직이는 화면을 구현했다.
 
 #### JPA
 
-1. N+1 문제
-
-#### iOS 메모 기능a
+#### iOS 메모 기능
 
 #### 프로젝트의 규모
 
