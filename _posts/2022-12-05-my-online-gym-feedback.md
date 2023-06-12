@@ -144,7 +144,8 @@ description: 1주일 간 My Online Gym Project를 끝낸 뒤, 받았던 Feedback
       <h3>나의 운동 일정 분석</h3>
       <div id="contents">
         <span>나의 레벨</span>
-        <b-form-rating v-model="badge" variant="warning" class="mb-2" no-border size="lg" readonly></b-form-rating>
+        <b-form-rating v-model="badge" variant="warning" class="mb-2" no-border size="lg" readonly>
+        </b-form-rating>
       </div>
     </div>
     ```
