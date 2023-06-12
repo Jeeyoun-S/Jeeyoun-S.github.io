@@ -50,11 +50,61 @@ description: 1주일 간 My Online Gym Project를 끝낸 뒤, 받았던 Feedback
 
 ### 운동 일정 관리 기능
 - 달력이 한 페이지 안에 다 들어와서 스크롤 없이 볼 수 있게.
-- 공휴일은 구분할 수 있게 다른 색으로 표시.
-- 달력에서 날짜를 선택하면 해당 날짜에 일정을 추가할 수 있는 창.
-- 달력 언어 한글로 변경 및 각 칸의 '15일'에서 '일' 삭제.
+  - [fullcalendar.io](https://fullcalendar.io/docs)내에 옵션에서 높이를 수정
 
-> 위의 피드백은 모두 fullcalendar의 options을 바꿔줘서 해결했다. 검색으로는 알 수 없는 내용도 있어서 대부분 [fullcalendar.io Docs](https://fullcalendar.io/docs)를 보고 수정했다.
+    ```javascript
+    calendarOptions: {
+      height: 650,
+    }
+    ```
+
+- 공휴일은 구분할 수 있게 다른 색으로 표시.
+
+- 달력에서 날짜를 선택하면 해당 날짜에 일정을 추가할 수 있는 창.
+  - fullcalendar에서 제공하는 날짜 선택 이벤트에 함수를 추가해 창을 활성화 및 비활성화
+
+    ```javascript
+    // 생략
+    calendarOptions: {
+      // 날짜 클릭 이벤트 추가
+      eventClick: this.changeIsShowDetail,
+    }
+
+    // 생략
+    // 클릭한 날짜의 정보를 받아와 창을 열고 닫아주는 함수
+    changeIsShowAdd(info) {
+      if (info) {
+        if (this.dateRegist == info.dateStr) {
+          if (this.isShowDetail) this.isShowDetail = false;
+          this.isShowAdd = !this.isShowAdd;
+        } else {
+          this.dateRegist = info.dateStr;
+          if (this.isShowDetail) this.isShowDetail = false;
+          if (!this.isShowAdd) this.isShowAdd = true;
+        }
+      } else {
+        if (this.isShowDetail) this.isShowDetail = false;
+        this.isShowAdd = !this.isShowAdd;
+      } if (this.isShowDetail) this.isShowDetail = false;
+  },
+    ```
+
+- 달력 언어 한글로 변경 및 각 칸의 '15일'에서 '일' 삭제.
+  - 달력 언어를 변경하니, 날짜가 '15'에서 '15일'로 변경됐고, 다시 이 부분에서 일만 없앴다.
+
+    ```javascript
+    // 생략
+    calendarOptions: {
+      locale: "ko", // 언어 변경
+      dayCellContent: this.dayFormat, // 날짜 형식 변경
+    }
+
+    // 생략
+    dayFormat(info) {
+      // "일"을 공백으로 바꿔주는 형식
+      return info.dayNumberText.replace("일", "");
+    }
+    ```
 
 - 일정 조회 시, 별도의 창을 띄우는 것이 아니라 바로 옆에 뜨게.
 - 조회 창에서 바로 수정할 수 있도록, 수정 창 없이.
