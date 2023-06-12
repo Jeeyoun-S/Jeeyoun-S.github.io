@@ -122,7 +122,7 @@ description: 1주일 간 My Online Gym Project를 끝낸 뒤, 받았던 Feedback
   - 입력창을 모달에서 오른쪽 사이드바가 나타나는 것으로 수정했다.
   - [vue-bootstrap의 sidebar](https://bootstrap-vue.org/docs/components/sidebar)를 이용했다. 
   
-    ```javascript
+    ```html
     <b-sidebar width="25%" :visible="isShowAdd" right shadow>
       <div class="px-3 py-2">
         <CalendarRegist :dateRegist = "dateRegist"></CalendarRegist>
@@ -139,7 +139,7 @@ description: 1주일 간 My Online Gym Project를 끝낸 뒤, 받았던 Feedback
   - 사이드바가 활성화돼 있지 않다면 해당 위치에 사용자 레벨을 보여줬다.
   - 달력 오른쪽에 사용자 레벨을 표시하고, 레벨에 대한 설명을 추가했다.
 
-    ```javascript
+    ```html
     <div id="calendar-badge">
       <h3>나의 운동 일정 분석</h3>
       <div id="contents">
