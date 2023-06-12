@@ -203,7 +203,7 @@ public class UserArticleMemo {
 - 참고 자료 [[JPA] nullable=false와 @NotNull 비교, Hibernate Validation](https://kafcamus.tistory.com/15)
 
 **연관 관계 매핑** 
-1:1, 1:N, N:N 관계를 Entity에서 설정해 반복적인 Join을 하지 않아 코드가 간결해지고, 생산성이 높아졌습니다.
+1:1, 1:N, N:N 관계를 Entity에서 설정해 반복적인 Join을 하지 않아 코드가 간결해지고, 생산성이 높아졌다.
 
 ```java
 public class UserArticleMemo {
