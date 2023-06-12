@@ -255,7 +255,7 @@ public ArticleDto(Article article) {
 }
 ```
 
-보통은 DTO에서 Entity, Entity에서 DTO로 변환할 때 DTO 또는 Entity만 인자로 전달해 주면 되기에 생성자를 주로 사용했다. 1~3개의 인자만 전달하는 경우 가독성과 순서가 개발 시 큰 문제를 아니라고 생각했다.
+보통은 DTO에서 Entity, Entity에서 DTO로 변환할 때 DTO 또는 Entity만 인자로 전달해 주면 되기에 위의 코드처럼 생성자를 주로 사용했다. 1~3개의 인자만 전달하는 경우 가독성과 순서가 개발 시 큰 문제를 아니라고 생각했다.
 
 ```java
 // 저장할 UserArticleMemo Entity 생성
@@ -277,6 +277,8 @@ UserArticleMemo userArticleMemo = UserArticleMemo.builder()
 4. 메모 조회창 또는 등록창에서 인용문을 클릭하면 인용문의 위치로 스크롤이 이동하며 인용문이 하이라이트 처리돼 보인다.
 5. 화면을 한 번 터치하면 인용문의 하이라이트 처리가 사라진다.
 
+먼저 내용을 드래그했는지를 알 수 있는 event가 javascript에 동작했고, selectionchange 이벤트를 걸면 내용을 드래그 했을 때 이벤트가 발생한 것으로 판단된다.
+
 ```javascript
 document.addEventListener("selectionchange", this.addSelection);
 ```
@@ -293,12 +295,9 @@ document.addEventListener("selectionchange", this.addSelection);
 
 
 #### iOS 메모 기능
-아이폰에서는 `getSelection()` 함수가 동작하지 않아 드래그된 내용을 가져오지 못하고 NULL 값이 들어와 인용문 추가 기능을 사용하지 못한다. 아이폰에서는 해당 함수를 지원하지 않는다고 한다. 다만, macOS 맥북에서는 `getSelection()` 함수가 동작했다.
-
-`getSelection()` 함수를 사용하지 않고는 어떻게 구현할지 아이디어가 없어 결국 해결하지 못한 부분이다. 
+아이폰에서는 `getSelection()` 함수가 동작하지 않아 드래그된 내용을 가져오지 못하고 NULL 값이 들어와 인용문 추가 기능을 사용하지 못한다. 아이폰에서는 해당 함수를 지원하지 않는다고 한다. 다만, macOS 맥북에서는 `getSelection()` 함수가 동작했다. 결국 `getSelection()` 함수를 사용하지 않고는 어떻게 구현할지 아이디어가 없어 결국 해결하지 못하고 프로젝트를 마쳤다.
 
 #### 프로젝트의 규모
-
 
 #### 분산 도메인
 
