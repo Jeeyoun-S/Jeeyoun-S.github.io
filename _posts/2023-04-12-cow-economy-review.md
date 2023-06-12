@@ -224,8 +224,7 @@ public class UserArticleMemo {
 ```
 
 **Entity와 DTO 상호 변환**  
-이전 공통 프로젝트를 담당해 주셨던 컨설턴트님께서 Entity를 그대로 반환하지 말고 DTO로 변환해 사용하라는 조언을 해주셨었다. 그 이유를 찾아보니 
-변환 방법도 여러 가지였다.
+이전 공통 프로젝트를 담당해 주셨던 컨설턴트님께서 Entity를 그대로 반환하지 말고 DTO로 변환해 사용하라는 조언을 해주셨었다. 그 이유를 찾아보니 매우 다양했고([Entity와 DTO를 구분해서 사용하는 이유](https://velog.io/@heyday_7/Entity-DTO-VO#:~:text=Entity%EC%99%80%20DTO%EB%A5%BC%20%EA%B5%AC%EB%B6%84%ED%95%B4%EC%84%9C%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0,-Entity%20%EA%B5%AC%ED%98%84%EA%B3%BC&text=%EC%9D%B4%EB%AF%B8%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%8A%94%20%EB%8B%A4%20%EA%B0%80%EC%A7%80%EA%B3%A0,%EC%9C%BC%EB%A1%9C%20%EB%B3%B4%EB%82%B4%EC%A4%84%20%EC%88%98%20%EC%9E%88%EB%8B%A4.)) 변환 방법도 여러 가지였다.
 
 ```java
 User user = optionUser.get();
@@ -242,12 +241,33 @@ userInfoResponseData.setUserPhone(user.getUserPhone());
 userInfoResponseData.setUserAlertFlag(user.getUserAlertFlag());
 ```
 
-이전 프로젝트에서는 위와 같이 Setter를 활용해 매우 길고 번거로운 코드를 구현했었다. 한 번의 함수 호출로 DTO를 생성하지 못했고, 구현을 Controller에서 해 재사용이 어렵다는 문제도 존재했다. 또한, Entity에서 Setter를 이용하면 객체의 안전성과 일관성이 유지되지 못해 Setter 사용을 지양해야 한다고 한다.
+이전 프로젝트에서는 위와 같이 Setter를 활용해 매우 길고 번거로운 코드를 구현했었다. 한 번의 함수 호출로 DTO를 생성하지 못했고, 구현을 Controller에서 해 재사용이 어렵다는 문제도 존재했다. 또한, Entity에서는 Setter를 이용하면 객체의 안전성과 일관성이 유지되지 못해 Setter 사용을 지양해야 한다는 것도 몰라 모든 Entity에 Setter가 있었다.
 
-Setter 외에도 생성자를 사용하는 방법과 Builder를 사용하는 방법 2가지가 있었다. 
+Setter 외에도 생성자를 사용하는 방법과 Builder를 사용하는 방법 2가지가 있었다. 생성자는 코드가 가장 간결하고 재사용 시 편리하다는 장점이 있지만, 전달되는 인자의 수가 많아지면 코드 작성이 어렵고 가독성이 떨어진다는 단점이 있었다. 생성자 단점을 보완한 것이 Builder로, Builder는 순서에 종속되지 않으면서 가독성이 높고 유연하다.
 
+```java
+public ArticleDto(Article article) {
+    this.articleId = article.getArticleId();
+    this.articleCategory = article.getArticleCategory();
+    this.articleRegtime = article.getArticleRegtime().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));;
+    this.articlePress = article.getArticlePress();
+    this.articleTitle = article.getArticleTitle();
+    this.articleThumbnail = article.getArticleThumbnail();
+    this.articleHits = article.getArticleHits();
+}
+```
 
-다만, 전달되는 인자의 수가 많아지면 코드 작성이 어렵고 가독성이 떨어진다는 단점이 있었다.
+보통은 DTO에서 Entity, Entity에서 DTO로 변환할 때 DTO 또는 Entity만 인자로 전달해 주면 되기에 생성자를 주로 사용했다. 1~3개의 인자만 전달하는 경우 가독성과 순서가 개발 시 큰 문제를 아니라고 생각했다.
+
+```java
+// 저장할 UserArticleMemo Entity 생성
+UserArticleMemo userArticleMemo = UserArticleMemo.builder()
+    .user(optionalUser.get())
+    .article(optionalArticle.get())
+    .build();
+```
+
+다만, 인자의 개수를 다르게 해 생성자 오버로딩이 많이 필요한 경우와 인자가 많은 경우는 위 코드처럼 Builder를 사용해 가독성을 높이고 번거로운 작업을 줄였다. Builder는 @Builder를 사용해 구현했다.
 
 #### Javascript
 메모 관련 기능을 담당해 
