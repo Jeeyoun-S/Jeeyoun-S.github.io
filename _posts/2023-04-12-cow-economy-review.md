@@ -278,7 +278,7 @@ Colab으로 작업하니 1일 치 기사를 크롤링하면 약 12분(대략 300
 document.addEventListener("selectionchange", this.addSelection);
 ```
 
-그 후 드래그된 내용을 가져올 때는 `window.getSelection()` 함수를 사용한다. 함수의 리턴값에서 시작 노드와 시작 노드 내 드래그 시작 위치, 마지막 노드와 마지막 노드 내 드래그 종료 위치를 가져와 DB에 저장해 준다.
+그 후 드래그된 내용을 가져올 때는 `window.getSelection()` 함수를 사용한다. 함수의 리턴값에서 시작 노드와 시작 노드 내 드래그 시작 위치, 마지막 노드와 마지막 노드 내 드래그 종료 위치를 가져와 인용문에 필요한 값을 알아낸다.
 ```javascript
 var selection = window.getSelection();
 var result = {
