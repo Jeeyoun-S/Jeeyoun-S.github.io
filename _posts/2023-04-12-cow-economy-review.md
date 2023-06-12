@@ -194,7 +194,7 @@ Colab으로 작업하니 1일 치 기사를 크롤링하면 약 12분(대략 300
   }
   ```
   
-  그래서 위와 같이 `@NotNull`에서 `nullable = false`로 값을 수정했다. 이 경우 값이 DB에 넘어간 뒤에 예외가 발생한다. 따라서 default가 설정돼 있는 경우에도 오류가 발생하지 않았다. [[JPA] nullable=false와 @NotNull 비교, Hibernate Validation](https://kafcamus.tistory.com/15)'를 참고했다.
+  그래서 위와 같이 `@NotNull`에서 `nullable = false`로 값을 수정했다. 이 경우 값이 DB에 넘어간 뒤에 예외가 발생한다. 따라서 default가 설정돼 있는 경우에도 오류가 발생하지 않았다. [[JPA] nullable=false와 @NotNull 비교, Hibernate Validation](https://kafcamus.tistory.com/15)를 참고했다.
 
 - **연관 관계 매핑**  
 1:1, 1:N, N:N 관계를 Entity에서 설정해 반복적인 Join을 하지 않아 코드가 간결해지고, 생산성이 높아졌다.
@@ -273,8 +273,7 @@ Colab으로 작업하니 1일 치 기사를 크롤링하면 약 12분(대략 300
 4. 메모 조회창 또는 등록창에서 인용문을 클릭하면 인용문의 위치로 스크롤이 이동하며 인용문이 하이라이트 처리돼 보인다.
 5. 화면을 한 번 터치하면 인용문의 하이라이트 처리가 사라진다.
 
-먼저 내용을 드래그했는지를 알 수 있는 event가 javascript에 동작했고, selectionchange 이벤트를 걸면 내용을 드래그 했을 때 이벤트가 발생한 것으로 판단된다.
-
+먼저 selectionchange 이벤트를 걸면 내용을 드래그 했을 때 이벤트가 발생한 것으로 판단된다.  
 ```javascript
 document.addEventListener("selectionchange", this.addSelection);
 ```
