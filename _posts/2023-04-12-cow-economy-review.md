@@ -271,7 +271,7 @@ UserArticleMemo userArticleMemo = UserArticleMemo.builder()
 
 #### Javascript
 메모 관련 기능을 담당해 
-[인용문 관련 Javascript 함수](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/common/function/textSelection.js)를 구현했다. 메모 기능의 핵심은 아래와 같았다.
+[인용문 관련 Javascript 함수](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/common/function/textSelection.js)를 구현했다. 이 함수를 구현하면서 몰랐던 Javascript에 대해 알 수 있었고, 메모 기능의 핵심은 아래와 같았다.
 
 1. 기사를 드래그하면 인용문 추가 버튼을 활성화한다.
 2. 인용문 추가 버튼을 클릭하면 드래그했던 인용문이 메모 등록창에 추가되고, 하단 등록창으로 스크롤을 이동한다.

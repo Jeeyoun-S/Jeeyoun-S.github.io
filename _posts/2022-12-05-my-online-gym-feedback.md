@@ -16,8 +16,22 @@ description: 1주일 간 My Online Gym Project를 끝낸 뒤, 받았던 Feedback
 
 ### 전체
 - 팝업창이 전혀 없어 일부 기능에서 불편.
+  - 회원가입 완료, 일정 등록 완료 시 팝업창을 활성화했고, 팝업창은 SweetAlert2 라이브러리를 사용했다. [sweetalert2 Docs](https://sweetalert2.github.io/)
+    ```javascript
+    import Swal from 'sweetalert2'
 
-> 회원가입 완료, 일정 등록 완료 시 팝업창을 활성화했고, 팝업창은 SweetAlert2 라이브러리를 사용했다. [sweetalert2 Docs](https://sweetalert2.github.io/)
+    Swal.fire({
+      title: '회원가입 완료',
+      text: '로그인창으로 이동합니다.',
+      icon: 'success',
+      confirmButtonText: '확인',
+      confirmButtonColor: '#143141'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        router.go();
+      }
+    });
+    ```
 
 - 알아보기 힘들 글씨체, 가독성이 더 좋은 글씨체 추천.
 
