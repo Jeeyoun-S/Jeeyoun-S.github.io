@@ -91,66 +91,64 @@ Selenium보다 BeautifulSoup이 속도가 더 빠르고 메모리가 절약되�
 - **어떤 신문사의 기사만을 가져올 것인가?**  
 카테고리별로, 대표적인 정보(기자, 언론사, 제목 등)을 가져오는 틀은 완성된 상태였고, 최초 코드는 한국경제와 연합뉴스 기사만을 가져오도록 설정했다. 
 [네이버의 언론사 목록](https://news.naver.com/main/officeList.naver)을 참고했고, 종합 및 경제 언론사의 기사를 수집하기로 결정했다.
+  ```python
+  press_list = ['매일경제', '머니투데이', '비즈워치', '서울경제', '아시아경제',
+                '이데일리', '조선비즈', '조세일보', '파이낸셜뉴스', '한국경제', '헤럴드경제',
+                '경향신문', '국민일보', '동아일보', '문화일보', '서울신문', '세계일보', '조선일보', '중앙일보', '한계레', '한국일보']
 
-```python
-press_list = ['매일경제', '머니투데이', '비즈워치', '서울경제', '아시아경제',
-              '이데일리', '조선비즈', '조세일보', '파이낸셜뉴스', '한국경제', '헤럴드경제',
-              '경향신문', '국민일보', '동아일보', '문화일보', '서울신문', '세계일보', '조선일보', '중앙일보', '한계레', '한국일보']
+  # 중간 생략
 
-# 중간 생략
-
-press_name = link.find("span", {"class": "writing"}).get_text()
-if li is None or (press_name not in press_list):
-  continue
-```
+  press_name = link.find("span", {"class": "writing"}).get_text()
+  if li is None or (press_name not in press_list):
+    continue
+  ```
 
 - **내용을 통으로 처리하지 않고 분류해서 처리**  
 초기 코드에는 기사 내용을 HTML 포함 그대로 가져오도록 처리했다. 그러나 기사 내용에는 이미지, 이미지 설명, 인용구 등이 존재했고, 특히 와이어프레임 설계를 고려했을 때 썸네일이 필요했으므로 내용을 처리해야 했다.  
 여기서 집중했던 부분은 (1)이미지와 이미지 설명이 `<table>` 내에 존재하는 경우 (2)`<strong>`과 `<b>` 태그 처리였다. 내용을 DB에 저장하고, 나중에 프론트에서 보여줄 때까지 고려해서 코드를 짜야했다. 따라서 HTML 태그를 separator로 변경했고 코드는 아래와 같다.  
+  ```python
+  # separator
+  separator_image = "@@img"
+  separator_image_end = "@@endimg"
+  separator_image_desc = "@@imgdesc"
+  separator_image_desc_end = "@@endimgdesc"
+  separator_strong = "@@strong"
+  separator_strong_end = "@@endstrong"
 
-```python
-# separator
-separator_image = "@@img"
-separator_image_end = "@@endimg"
-separator_image_desc = "@@imgdesc"
-separator_image_desc_end = "@@endimgdesc"
-separator_strong = "@@strong"
-separator_strong_end = "@@endstrong"
+  # 중간 생략
 
-# 중간 생략
+  br_list = contents.find_all("br") # br 처리
+  for br in br_list:
+      br.replace_with("@@br")
 
-br_list = contents.find_all("br") # br 처리
-for br in br_list:
-    br.replace_with("@@br")
+  td_list = contents.find_all("td") # table 내 이미지 설명
+  for td in td_list:
+    if(td.find_all("table")):
+      continue
+    img_desc = td.get_text()
+    if len(img_desc.strip()) > 0:
+      td.replace_with(separator_image_desc + td.get_text() + separator_image_desc_end)
 
-td_list = contents.find_all("td") # table 내 이미지 설명
-for td in td_list:
-  if(td.find_all("table")):
-    continue
-  img_desc = td.get_text()
-  if len(img_desc.strip()) > 0:
-    td.replace_with(separator_image_desc + td.get_text() + separator_image_desc_end)
+  img_list = contents.find_all("img") # 이미지 전체 변경
+  if len(img_list) != 0 :
+      detail["article_thumbnail"] = img_list[0].get("data-src")
+  for img in img_list:
+      img.replace_with(separator_image + img.get("data-src") + separator_image_end)
 
-img_list = contents.find_all("img") # 이미지 전체 변경
-if len(img_list) != 0 :
-    detail["article_thumbnail"] = img_list[0].get("data-src")
-for img in img_list:
-    img.replace_with(separator_image + img.get("data-src") + separator_image_end)
+  em_list = contents.find_all("em") # table 외 이미지 설명
+  for em in em_list:
+      em.replace_with(separator_image_desc + em.get_text() + separator_image_desc_end)
 
-em_list = contents.find_all("em") # table 외 이미지 설명
-for em in em_list:
-    em.replace_with(separator_image_desc + em.get_text() + separator_image_desc_end)
+  strong_list = contents.find_all("strong") # strong 태그
+  for strong in strong_list:
+      strong.replace_with(separator_strong + strong.get_text() + separator_strong_end)
 
-strong_list = contents.find_all("strong") # strong 태그
-for strong in strong_list:
-    strong.replace_with(separator_strong + strong.get_text() + separator_strong_end)
+  b_list = contents.find_all("b") # b 태그 = strong 태그 동일하게 처리
+  for b in b_list:
+      b.replace_with(separator_strong + b.get_text() + separator_strong_end)
 
-b_list = contents.find_all("b") # b 태그 = strong 태그 동일하게 처리
-for b in b_list:
-    b.replace_with(separator_strong + b.get_text() + separator_strong_end)
-
-# 이하 생략
-```
+  # 이하 생략
+  ```
 
 - **코드 실행 시간**  
 Colab으로 작업하니 1일 치 기사를 크롤링하면 약 12분(대략 3000개)이 걸렸다. 1시간마다 크롤링하기에 큰 문제를 없으리라 생각됐지만, 시간이 길게 느껴졌다. Colab이 구글 내부 서버에서 코드를 실행하다 보니 오래 걸리는 것이 아닐까 하는 생각이 들었고, Pycharm으로 실행해 봤다.  
@@ -159,15 +157,14 @@ Colab으로 작업하니 1일 치 기사를 크롤링하면 약 12분(대략 300
 #### JPA
 이전 프로젝트에서 연관 관계를 매핑하지 않아 아쉬운 점이 있었지만, 이번 프로젝트는 이 점을 반영해 연관 관계를 매핑하고 DB 스키마가 자동으로 생성되도록 했다.
 
-**DB 스키마 자동 생성**
-
-```java
-// application.yml
-spring:
-  jpa:
-    hibernate:
-      ddl-auto: update
-```
+- **DB 스키마 자동 생성**  
+  ```java
+  // application.yml
+  spring:
+    jpa:
+      hibernate:
+        ddl-auto: update
+  ```
 
 위 속성을 추가하면 프로젝트 실행 시 DB 테이블을 자동으로 생성하거나 수정한다. `update`인 경우 Entity 정보를 비교해 변경사항만 수정하고, `create`는 기존 테이블을 삭제하고 새로 생성한다. 저희는 기존 테이블에 존재하는 데이터도 그대로 사용하고자 update로 설정했다.
 
