@@ -198,7 +198,7 @@ public class UserArticleMemo {
 }
 ```
 
-그래서 위와 같이 `@NotNull`에서 `nullable = false`로 값을 수정했다. 이 경우 값이 DB에 넘어간 뒤에 예외가 발생한다. 따라서 default가 설정돼 있는 경우에도 오류가 발생하지 않았다. 참고했던 글은 '[[JPA] nullable=false와 @NotNull 비교, Hibernate Validation](https://kafcamus.tistory.com/15)'이다.
+그래서 위와 같이 `@NotNull`에서 `nullable = false`로 값을 수정했다. 이 경우 값이 DB에 넘어간 뒤에 예외가 발생한다. 따라서 default가 설정돼 있는 경우에도 오류가 발생하지 않았다. [[JPA] nullable=false와 @NotNull 비교, Hibernate Validation](https://kafcamus.tistory.com/15)'를 참고했다.
 
 **연관 관계 매핑**  
 1:1, 1:N, N:N 관계를 Entity에서 설정해 반복적인 Join을 하지 않아 코드가 간결해지고, 생산성이 높아졌다.
@@ -289,16 +289,13 @@ document.addEventListener("selectionchange", this.addSelection);
 ### 어렵고 아쉬웠던 점
 
 #### 협업
-각자 맡은 바를 책임감 있게 완성해내는 팀원들을 만났고, 
+팀원 일부 간의 소통은 매우 활발히 이뤄졌지만, 팀원들 다 같이 이야기를 나누는 시간은 적었다고 생각한다.
 
 #### JPA
-
+연관 관계를 매핑하며 발생할 수 있는 JPA N+1 문제를 고려하지 않았던 점이 아쉬웠다.
 
 #### iOS 메모 기능
 아이폰에서는 `getSelection()` 함수가 동작하지 않아 드래그된 내용을 가져오지 못하고 NULL 값이 들어와 인용문 추가 기능을 사용하지 못한다. 아이폰에서는 해당 함수를 지원하지 않는다고 한다. 다만, macOS 맥북에서는 `getSelection()` 함수가 동작했다. 결국 `getSelection()` 함수를 사용하지 않고는 어떻게 구현할지 아이디어가 없어 결국 해결하지 못하고 프로젝트를 마쳤다.
 
-#### 프로젝트의 규모
-
 #### 분산 도메인
-
-#### 퀴즈 기능
+Hadoop과 Spark를 다뤄볼 수 있는 기회가 흔치 않다고 판단했기에 빅데이터 분산 도메인을 선택했다. 그러나 분산 도메인에서 클러스터 문제가 종종 발생해 프로젝트 진행이 더뎌지는 문제가 있었다.
