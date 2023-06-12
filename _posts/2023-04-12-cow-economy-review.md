@@ -184,7 +184,7 @@ Colab으로 작업하니 1일 치 기사를 크롤링하면 약 12분(대략 300
   }
   ```
   
-메모를 등록할 때 regtime은 default 값이 있으므로 save() 할 때 Entity에 값을 넣지 않았고, 자동으로 default 값이 들어갈 거라 생각했다. 알아보니 `@NotNull`은 DB에 SQL 쿼리를 보내기 전에 예외를 처리한다고 한다. 따라서 DB에 넣기 전 값을 검증해 null인 경우 오류를 발생시키는 것이다.
+  메모를 등록할 때 regtime은 default 값이 있으므로 save() 할 때 Entity에 값을 넣지 않았고, 자동으로 default 값이 들어갈 거라 생각했다. 알아보니 `@NotNull`은 DB에 SQL 쿼리를 보내기 전에 예외를 처리한다고 한다. 따라서 DB에 넣기 전 값을 검증해 null인 경우 오류를 발생시키는 것이다.
   
   ```java
   public class UserArticleMemo {
@@ -195,7 +195,7 @@ Colab으로 작업하니 1일 치 기사를 크롤링하면 약 12분(대략 300
   }
   ```
   
-그래서 위와 같이 `@NotNull`에서 `nullable = false`로 값을 수정했다. 이 경우 값이 DB에 넘어간 뒤에 예외가 발생한다. 따라서 default가 설정돼 있는 경우에도 오류가 발생하지 않았다. [[JPA] nullable=false와 @NotNull 비교, Hibernate Validation](https://kafcamus.tistory.com/15)'를 참고했다.
+  그래서 위와 같이 `@NotNull`에서 `nullable = false`로 값을 수정했다. 이 경우 값이 DB에 넘어간 뒤에 예외가 발생한다. 따라서 default가 설정돼 있는 경우에도 오류가 발생하지 않았다. [[JPA] nullable=false와 @NotNull 비교, Hibernate Validation](https://kafcamus.tistory.com/15)'를 참고했다.
 
 - **연관 관계 매핑**  
 1:1, 1:N, N:N 관계를 Entity에서 설정해 반복적인 Join을 하지 않아 코드가 간결해지고, 생산성이 높아졌다.
