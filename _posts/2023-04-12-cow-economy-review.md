@@ -46,46 +46,46 @@ Selenium보다 BeautifulSoup이 속도가 더 빠르고 메모리가 절약되�
 네이버 뉴스의 경제 페이지 내에 있는 모든 카테고리별 기사를 페이지별로 수집해야 했다. 경제 세부 카테고리의 경우 URL의 sid2로 카테고리 번호를 넣어서 설정할 수 있었다. 그래서 먼저 sid1으로 for문 다음에는 sid2로 이중 for문을 구현했다.  
 다음에는 각 카테고리별 모든 페이지를 돌아야 했다. 페이지 번호를 끝까지 알기 위해 10으로 나눴을 때 1이 되는 페이지마다 최대 페이지 수를 구하는 로직을 수행했다. 도달했을 때 맨 뒤 번호를 최대 페이지 번호로 저장하거나 다음 버튼이 있으면 +10 이상이 있으므로 +10을 최대 페이지 번호로 저장했다. 결과적으로 마지막 페이지까지 도달할 수 있게 구현했다. 
 
-```python
-# sid1 101 (경제)
-sid1 = (101, ) # 대분류
-# sid2 259 (금융), 258 (증권), 261 (산업/재계), 771 (중기/벤처), 260 (부동산), 262 (글로벌 경제), 310 (생활경제), 263 (경제 일반)
-sid2 = (259, 258, 261, 771, 260, 262, 310, 263, ) # 소분류
+    ```python
+    # sid1 101 (경제)
+    sid1 = (101, ) # 대분류
+    # sid2 259 (금융), 258 (증권), 261 (산업/재계), 771 (중기/벤처), 260 (부동산), 262 (글로벌 경제), 310 (생활경제), 263 (경제 일반)
+    sid2 = (259, 258, 261, 771, 260, 262, 310, 263, ) # 소분류
 
-end_date = dt.datetime.now(timezone('Asia/Seoul')) # 오늘 날짜
-start_date = end_date - dt.timedelta(days=1)       # 하루 전 날짜
+    end_date = dt.datetime.now(timezone('Asia/Seoul')) # 오늘 날짜
+    start_date = end_date - dt.timedelta(days=1)       # 하루 전 날짜
 
-# results 딕셔너리 내부에는 {"category1": 101, "category2": 259, "press": "", "date": "", "reporter": "", "title": "", "contents": ""}
-results = []
+    # results 딕셔너리 내부에는 {"category1": 101, "category2": 259, "press": "", "date": "", "reporter": "", "title": "", "contents": ""}
+    results = []
 
-# 대분류로 반복
-for big in sid1:
+    # 대분류로 반복
+    for big in sid1:
 
-  # 소분류로 반복
-  for small in sid2:
+      # 소분류로 반복
+      for small in sid2:
 
-    # 날짜로 반복
-    s_date = start_date
-    while s_date <= end_date:
+        # 날짜로 반복
+        s_date = start_date
+        while s_date <= end_date:
 
-      # 페이지로 반복
-      page = 1
-      max_page = 1
-      while page <= max_page:
-        response = urlopen(f'https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid2={small}&sid1={big}&date={s_date.strftime("%Y%m%d")}&page={page}')
-        soup = BeautifulSoup(response, "html.parser")
+          # 페이지로 반복
+          page = 1
+          max_page = 1
+          while page <= max_page:
+            response = urlopen(f'https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid2={small}&sid1={big}&date={s_date.strftime("%Y%m%d")}&page={page}')
+            soup = BeautifulSoup(response, "html.parser")
 
-        # 페이지 수 구하기
-        if page%10 == 1:
-          page_a_list = soup.find("div", {"class": "paging"}).find_all("a")
-          last_value = page_a_list[-1].get_text()
-          if last_value == '다음':
-            max_page += 10
-          elif last_value.isdigit():
-            max_page = int(last_value)
+            # 페이지 수 구하기
+            if page%10 == 1:
+              page_a_list = soup.find("div", {"class": "paging"}).find_all("a")
+              last_value = page_a_list[-1].get_text()
+              if last_value == '다음':
+                max_page += 10
+              elif last_value.isdigit():
+                max_page = int(last_value)
 
-# 이하 생략
-```
+    # 이하 생략
+    ```
 
 이 외에도 기본적인 기사, 언론사, 날짜, 내용 등 기본적인 정보를 가져오는 코드를 구현했고, 초반 코드가 완성된 후 제대로 된 데이터 처리를 위해 디테일한 부분을 수정하기 시작했다. 이후 작업에서 고려한 내용은 아래와 같다.
 
