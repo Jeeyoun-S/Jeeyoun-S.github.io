@@ -1,6 +1,6 @@
 - name: Feedback
   content:
-    - title: <a href="https://jeeyoun-s.github.io/blog/project-feedback">My Online Gym에 대한 Feedback</a>
+    - title: <a href="https://jeeyoun-s.github.io/blog/my-online-gym-feedback">My Online Gym에 대한 Feedback</a>
 - name: Backend
   content:
     - title: Spring Boot에서 JSON 파일과 Open API를 활용하는 법을 익힐 수 있었습니다.
