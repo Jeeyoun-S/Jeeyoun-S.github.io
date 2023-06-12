@@ -278,6 +278,48 @@ Colab으로 작업하니 1일 치 기사를 크롤링하면 약 12분(대략 300
 document.addEventListener("selectionchange", this.addSelection);
 ```
 
+그 후 드래그된 내용을 가져올 때는 `window.getSelection()` 함수를 사용한다. 함수의 리턴값에서 시작 노드와 시작 노드 내 드래그 시작 위치, 마지막 노드와 마지막 노드 내 드래그 종료 위치를 가져와 DB에 저장해 준다.
+```javascript
+var selection = window.getSelection();
+var result = {
+  "text": null,
+  "startIndex": selection.baseOffset,
+  "endIndex": selection.focusOffset,
+  "startNode": selection.baseNode,
+  "endNode": selection.focusNode,
+  "startRange": null,
+  "endRange": null
+};
+
+// 생략
+```
+
+인용문 클릭 시, 인용문 위치로 이동하고 인용문을 형광펜 표시를 해줬다. 형광펜 표시는 `<b id="highlight-pointer"></b>`가 인용문을 감싸도록 만들어 id가 highlight-pointer인 경우 형광펜 표시를 해주는 CSS를 넣었다. 인용문 하이라이터를 없앨 때는 다시 `<b id="highlight-pointer"></b>`를 제거했다.
+```javascript
+// hightlight가 될 요소 생성
+var highlight = document.createElement("b");
+highlight.id = "highlight-pointer";
+
+// 생략
+```
+
+또한, 인용문을 형광펜 표시한 뒤 스크롤 위치를 해당 인용문으로 이동해야 한다. 시작 노드의 앞에 `<div id="bookmark-pointer"></div>`를 넣어주고 해당 위치로 이동한 뒤 바로 `<div id="bookmark-pointer"></div>`를 제거한다.
+```javascript
+// 이동할 스크롤 위치에 추가할 bookmark 정의
+var bookmark = document.createElement("div");
+bookmark.id = "bookmark-pointer";
+
+// 생략
+
+// 북마크 위치로 스크롤 이동
+scrollTo(0, bookmark.offsetTop);
+
+// 북마크 제거
+bookmark.remove();
+```
+
+실제 코드는 더 복잡하지만, 나중에 보고 감을 잡을 수 있게 간단하게 설명하고 핵심 코드만 뽑아서 넣었다. 전체 코드는 [인용문 관련 Javascript 함수](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/common/function/textSelection.js)에 있고, 주석도 달려있다.
+
 #### 움직이는 화면
 [Info 페이지](https://github.com/Jeeyoun-S/Cow-Economy#%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%94%EB%A9%B4)에서 Scene.js 라이브러리를 사용해 움직이는 화면을 구현했다. 
 
