@@ -91,6 +91,7 @@ Selenium보다 BeautifulSoup이 속도가 더 빠르고 메모리가 절약되�
 - **어떤 신문사의 기사만을 가져올 것인가?**  
 카테고리별로, 대표적인 정보(기자, 언론사, 제목 등)을 가져오는 틀은 완성된 상태였고, 최초 코드는 한국경제와 연합뉴스 기사만을 가져오도록 설정했다. 
 [네이버의 언론사 목록](https://news.naver.com/main/officeList.naver)을 참고했고, 종합 및 경제 언론사의 기사를 수집하기로 결정했다.  
+
   ```python
   press_list = ['매일경제', '머니투데이', '비즈워치', '서울경제', '아시아경제',
                 '이데일리', '조선비즈', '조세일보', '파이낸셜뉴스', '한국경제', '헤럴드경제',
@@ -172,7 +173,7 @@ Colab으로 작업하니 1일 치 기사를 크롤링하면 약 12분(대략 300
 
 - **@NotNull과 nullable = false의 차이**  
 메모를 등록하는 API에서 메모 Entity에 회원, 기사 등 기본 정보만 설정한 뒤 DB에 넣으려는 작업 중 에러가 발생했다. 바로 메모 작성 시간이 없어서 오류가 난다는 것이었다. 당시 코드는 아래와 같았다. `@NotNull`로 해당 칼럼에 NULL이 들어가지 못하도록 설정해 두었고, default 값으로 현재 시간을 넣어두었다.
-
+  
   ```java
   public class UserArticleMemo {
     // 생략
@@ -182,9 +183,9 @@ Colab으로 작업하니 1일 치 기사를 크롤링하면 약 12분(대략 300
     // 생략
   }
   ```
-
+  
 메모를 등록할 때 regtime은 default 값이 있으므로 save() 할 때 Entity에 값을 넣지 않았고, 자동으로 default 값이 들어갈 거라 생각했다. 알아보니 `@NotNull`은 DB에 SQL 쿼리를 보내기 전에 예외를 처리한다고 한다. 따라서 DB에 넣기 전 값을 검증해 null인 경우 오류를 발생시키는 것이다.
-
+  
   ```java
   public class UserArticleMemo {
     // 생략
@@ -193,7 +194,7 @@ Colab으로 작업하니 1일 치 기사를 크롤링하면 약 12분(대략 300
     // 생략
   }
   ```
-
+  
 그래서 위와 같이 `@NotNull`에서 `nullable = false`로 값을 수정했다. 이 경우 값이 DB에 넘어간 뒤에 예외가 발생한다. 따라서 default가 설정돼 있는 경우에도 오류가 발생하지 않았다. [[JPA] nullable=false와 @NotNull 비교, Hibernate Validation](https://kafcamus.tistory.com/15)'를 참고했다.
 
 - **연관 관계 매핑**  
