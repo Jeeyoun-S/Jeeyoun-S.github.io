@@ -36,8 +36,17 @@ description: 1주일 간 My Online Gym Project를 끝낸 뒤, 받았던 Feedback
     ```
 
 - 알아보기 힘들 글씨체, 가독성이 더 좋은 글씨체 추천.
-
-> 로고, 카테고리 글씨체는 유지, 그 외 글씨체는 고딕체 중 하나로 변경했다.
+  - 로고, 카테고리 글씨체는 유지, 그 외 글씨체는 고딕체 중 하나로 변경했다.
+  - [에스코어드림체](https://noonnu.cc/font_page/223)
+    
+    ```javascript
+    @font-face {
+      font-family: 'S-CoreDream-3Light';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    ```
 
 ### 운동 일정 관리 기능
 - 달력이 한 페이지 안에 다 들어와서 스크롤 없이 볼 수 있게.
