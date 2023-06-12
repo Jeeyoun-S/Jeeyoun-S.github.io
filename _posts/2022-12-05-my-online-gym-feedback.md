@@ -119,7 +119,7 @@ description: 1주일 간 My Online Gym Project를 끝낸 뒤, 받았던 Feedback
 
 - 일정 조회 시, 별도의 페이지로 이동하는 것이 아니라 바로 옆에 뜨게.
 - 조회 창에서 바로 수정할 수 있도록, 수정 창 없이.
-  - 입력창을 모달에서 오른쪽 사이드바가 나타나는 것으로 수정했다.
+  - 입력창 모달과 조회 페이지를 오른쪽 사이드바가 나타나는 것으로 수정했다.
   - [vue-bootstrap의 sidebar](https://bootstrap-vue.org/docs/components/sidebar)를 이용했다. 
   
     ```html
@@ -136,7 +136,6 @@ description: 1주일 간 My Online Gym Project를 끝낸 뒤, 받았던 Feedback
     ```
 
 - 운동 일정을 분석해 주 몇 회 운동했는지 등의 분석 자료 조회.
-  - 사이드바가 활성화돼 있지 않다면 해당 위치에 사용자 레벨을 보여줬다.
   - 달력 오른쪽에 사용자 레벨을 표시하고, 레벨에 대한 설명을 추가했다.
 
     ```html
@@ -152,8 +151,8 @@ description: 1주일 간 My Online Gym Project를 끝낸 뒤, 받았던 Feedback
 
 ### 운동 영상 검색 기능
 - 운동 영상 조회 시 한 페이지에 최대 3개의 영상만 노출, 더 많은 영상을 볼 수 있게 수정.
-  - 영상 ITEM 내의 썸네일과 영상 정보 나열을 좌우에서 상하로 변경, 한 행에 영상이 최대 5개씩 뜨도록 수정
-  - 각 영상 ITEM은 상하에서 좌우로 나열 변경
+  - 영상 ITEM 내의 썸네일과 영상 정보 나열을 좌우에서 상하로 변경
+  - 각 영상 ITEM은 상하에서 좌우로 나열 변경, 한 행에 영상이 최대 5개씩 뜨도록 수정
 
     ```html
     <div v-else id="video-list">
