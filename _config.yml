@@ -1,9 +1,10 @@
 ### Site Settings ###
 title               : Jeeyoun Seo
 description         : >-
-                      <b>웹 개발자</b>를 꿈꾸는 <b>서지윤</b>입니다.<br>
-                      #기록  #정리  #메모<br>
-                      #공유  #학습  #성장<br>
+                      <b>웹 개발자</b>를 꿈꾸는 <b>서지윤</b>입니다.<br><br>
+                      #기록   #정리   #메모<br>
+                      #공유   #학습   #성장<br><br>
+                      
 baseurl             :                      # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : Jeeyoun-S/Jeeyoun-S.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
