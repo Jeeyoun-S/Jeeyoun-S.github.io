@@ -4,8 +4,8 @@ description         : >-
                       <p><b>웹 개발자</b>를 꿈꾸는 <b>서지윤</b>입니다.</p>
                       <p>#기록&ensp;#정리&ensp;#메모<br>
                       #공유&ensp;#학습&ensp;#성장</p>
-                      <p>💙<a href="https://jeeyoun-s.github.io/about/">Portfolio</a><br>
-                      📒<a href="https://jeeyoun-s.github.io/blog/">Blog</a></p>
+                      <p>💙<a href="https://jeeyoun-s.github.io/about/">포트폴리오</a>&ensp;
+                      📒<a href="https://jeeyoun-s.github.io/blog/">블로그</a></p>
 
 baseurl             :                      # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : Jeeyoun-S/Jeeyoun-S.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
