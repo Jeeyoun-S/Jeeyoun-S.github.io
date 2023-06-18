@@ -6,7 +6,7 @@ description         : >-
                       <b>개발자</b>를 꿈꾸는 <b>서지윤</b>입니다.</p>
                       <p>#기록&emsp;#공유&emsp;#성장</p>
                       <p>제 이력이 궁금하시다면?&ensp;<a href="https://jeeyoun-s.github.io/about/">포트폴리오 보러 가기</a><br>
-                      제 생각이 궁금하시다면?&ensp;<a href="https://jeeyoun-s.github.io/blog/">블로그 보러 가기</a></p>
+                      제 생각과 학습이 궁금하시다면?&ensp;<a href="https://jeeyoun-s.github.io/blog/">블로그 보러 가기</a></p>
 
 baseurl             :                      # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : Jeeyoun-S/Jeeyoun-S.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
