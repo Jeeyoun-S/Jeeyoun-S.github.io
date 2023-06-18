@@ -2,8 +2,10 @@
 title               : Jeeyoun Seo
 description         : >-
                       <p><b>웹 개발자</b>를 꿈꾸는 <b>서지윤</b>입니다.</p>
-                      #기록   #정리   #메모<br>
-                      #공유   #학습   #성장<br><br>
+                      <p>#기록   #정리   #메모<br>
+                      #공유   #학습   #성장</p>
+                      <p>💙<a href="https://jeeyoun-s.github.io/about/">Portfolio</a><br>
+                      📒<a href="https://jeeyoun-s.github.io/blog/">Blog</a></p>
 
 baseurl             :                      # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : Jeeyoun-S/Jeeyoun-S.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
