@@ -321,7 +321,7 @@ bookmark.remove();
 실제 코드는 더 복잡하지만, 나중에 보고 감을 잡을 수 있게 간단하게 설명하고 핵심 코드만 뽑아서 넣었다. 전체 코드는 [인용문 함수](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/common/function/textSelection.js)에 있고, 주석도 달려있다.
 
 #### 애니메이션 효과
-[Info 페이지](https://github.com/Jeeyoun-S/Cow-Economy#%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%94%EB%A9%B4)에서 [Scene.js 라이브러리](https://daybrush.com/scenejs/)와 [Flicking 라이브러리](https://naver.github.io/egjs-flicking/)를 사용해 움직이는 화면을 구현했다. 
+[Info 페이지](https://github.com/Jeeyoun-S/Cow-Economy#%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%94%EB%A9%B4)에서 [Scene.js 라이브러리](https://daybrush.com/scenejs/)와 [Flicking 라이브러리](https://naver.github.io/egjs-flicking/)를 사용해 움직이는 화면을 구현했다. My Online Gym과 SSUEB에서는 화면에 애니메이션 효과가 없어 페이지 다소 밋밋하다는 느낌도 있었는데, 이번에 첫 진입 페이지에서 사용자의 눈길을 끌 수 있게 만들었다. 
 
 ### 어렵고 아쉬웠던 점
 
