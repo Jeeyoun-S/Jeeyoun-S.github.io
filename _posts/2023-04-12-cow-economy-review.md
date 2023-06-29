@@ -18,7 +18,7 @@ description: 7주 간 진행됐던 소귀경 프로젝트에 대한 회고록
 소귀경은 '소 귀에 경제 읽기'의 약자로 경제 기사를 읽으며 경제 공부를 할 수 있는 서비스다. 
 핵심 기능으로는 경제 기사 트렌드 및 기사를 통한 학습 관련 기능이 있다.
 
-[더 자세한 설명 보러가기](https://jeeyoun-s.github.io/projects/4-cow-economy)
+[더 자세한 설명과 프로젝트 코드 보러가기](https://jeeyoun-s.github.io/projects/4-cow-economy)
 
 ### 좋았고 배울 수 있었던 점
 
@@ -323,25 +323,50 @@ bookmark.remove();
 #### 애니메이션 효과
 [Info 페이지](https://github.com/Jeeyoun-S/Cow-Economy#%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%94%EB%A9%B4)에서 [Scene.js 라이브러리](https://daybrush.com/scenejs/)와 [Flicking 라이브러리](https://naver.github.io/egjs-flicking/)를 사용해 움직이는 화면을 구현했다. My Online Gym과 SSUEB에서는 화면에 애니메이션 효과가 없어 페이지 다소 밋밋하다는 느낌도 있었는데, 이번에 첫 진입 페이지에서 사용자의 눈길을 끌 수 있게 만들었다. 
 
-먼저 Flicking 라이브러리는 스크롤로 화면을 이동하는 효과에 사용했다. [Info 페이지](https://github.com/Jeeyoun-S/Cow-Economy#%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%94%EB%A9%B4)를 보면 스크롤을 아래로 이동해 서비스 설명을 볼 수 있는데, 이렇게 아래로 내리며 이동하는 효과에 사용했다.
+먼저 Flicking 라이브러리는 스크롤로 화면을 이동하는 효과에 사용했다. 스크롤을 아래로 이동해 서비스 설명을 볼 수 있는데, 이렇게 아래로 내리며 이동하는 효과에 사용했다. Scene.js는 처음에 소귀경 로고가 등장하는 효과와 화면을 아래로 이동할 때 주변 동그라미가 제 위치를 찾아 이동하는 효과에 사용했다. 타자를 입력하는 효과도 Scene.js로 손쉽게 구현할 수 있었다.
 
-Scene.js는 처음에 소귀경 로고가 등장하는 효과와 화면을 아래로 이동할 때 주변 동그라미가 제 위치를 찾아 이동하는 효과에 사용했다. 타자를 입력하는 효과도 Scene.js로 손쉽게 구현할 수 있었다.
+[Info 페이지 코드](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/components/InfoPage/InfoDetail.vue)를 보면 Flicking을 이용해 스크롤로 이동할 수 있는 페이지가 5개라고 했을 때 첫 페이지가 0, 마지막 페이지를 4로 설정해 이동할 때 동그라미 위치, 투명도, 크기를 조절했다. 아래 코드에서 `.c6`은 [Info 페이지](https://github.com/Jeeyoun-S/Cow-Economy#%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%94%EB%A9%B4)에 배경에 있는 동그라미 중 하나고 0페이지부터 4페이지까지의 상태 변화를 설정해 줬다.
 
-[Info 페이지 코드](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/components/InfoPage/InfoDetail.vue)를 보면 FLicking을 이용해 스크롤로 이동할 수 있는 페이지가 5개라고 했을 때 첫 페이지가 0, 마지막 페이지를 4로 설정해 이동할 때 동그라미 위치를 조절했다.
+```javascript
+".c6": {
+  0: {
+    transform: "translate(0, 0%) translate2(0vw, 0vh)",
+    "border-color": "var(--quiz-1-col-6)",
+    opacity: 1,
+  },
+  1: {
+    opacity: 0,
+    "border-color": "var(--main-col-5)",
+  },
+  1.5: {
+    transform: "translate(0, 45%) translate2(0vw, 0vh) scale(1)",
+    opacity: 1,
+    "z-index": 1,
+  },
+  3: {
+    transform: "translate(0, 45%) translate2(0vw, 0vh) scale(1)",
+  },
+  4: {
+    transform: "translate(0, 45%) translate2(0vw, 0vh) scale(2)",
+  },
+},
+```
 
 백엔드 개발자를 목표로 하고 있어 프론트엔드에 대한 성과는 중요치 않을 수도 있지만, 다양한 라이브러리를 활용하는 능력을 갖고 빠른 프론트 구현을 할 수 있지 않았나 싶다.
 
 ### 어렵고 아쉬웠던 점
 
 #### 불완전한 기능
-각 
+기사로 경제 지식을 쌓는다는 프로젝트 목표에 맞는 여러 기능을 구현했다. 그러나 일부 기능에 불완전한 부분이 있었고, 이 부분을 완전히 해결하지 못한 채 프로젝트가 종료됐다. 사용자의 대부분은 문제없이 서비스를 사용할 수 있지만, 일부 사용자는 경험할 수 있는 오류들이었다. 실제 서비스를 배포했다면 꼭 수정해야 할 부분들인 것이다.
 
-- **메모: iOS 인용문**
+- **메모**: iOS 인용문  
 아이폰에서는 `getSelection()` 함수가 동작하지 않아 드래그된 내용을 가져오지 못하고 NULL 값이 들어와 인용문 추가 기능을 사용하지 못한다. 아이폰에서는 해당 함수를 지원하지 않는다고 한다. 다만, macOS 맥북에서는 `getSelection()` 함수가 동작했다. 결국 `getSelection()` 함수를 사용하지 않고는 어떻게 구현할지 아이디어가 없어 결국 해결하지 못하고 프로젝트를 마쳤다.
 
-- **퀴즈: 선택지 오류**
+- **퀴즈**: 선택지 오류  
+퀴즈 선택지는 OpenAI API를 사용해 정답이 될 단어와 유사한 단어를 추천받아 해당 단어들로 구성된다. 다만, 일부에서 선택지가 없거나 정답과 너무 동떨어진 단어이거나 정답이랑 동의어가 제시되는 경우가 있었다. 발표 시 컨설턴트님께서도 이 부분을 짚어서 이야기하셨고, 당일 일부 팀원들도 선택지가 없는 경우를 발견했다. 뒤늦게 발견된 오류라 해결할 시간이 없었지만, 만약 일찍 발견했더라면 해결을 할 수 있지 않았을까 싶다.
 
-- **단어: 선택지 오류**
+- **단어**: 매핑 오류  
+
 
 #### JPA
 연관 관계를 매핑하며 발생할 수 있는 JPA N+1 문제를 고려하지 않았던 점이 아쉬웠다. 연관 관계를 매핑해 데이터를 불러올 때 편했다는 장점이 있었지만, N+1 문제는 해결하지 않은 채 사용했다.
