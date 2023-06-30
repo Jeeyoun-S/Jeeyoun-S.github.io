@@ -391,7 +391,7 @@ public ArticleDetailDto(Article article, Long userId) {
 }
 ```
 
-해결방법도 잘 알려져 있는 Fetch Join을 사용하면 된다. 해결책도 어렵지 않아 이 부분을 고려하지 않은 부분은 더욱 아쉽다. ([JPA N+1 문제 참고자료](https://dev-coco.tistory.com/165))
+해결방법도 잘 알려져 있는 Fetch Join을 사용하면 된다. 아래 코드와 같이 Repository에 작성하면 돼 해결책도 어렵지 않아 이 부분을 고려하지 않은 부분은 더욱 아쉽다. ([JPA N+1 문제 참고자료](https://dev-coco.tistory.com/165))
 
 ```java
 @Query("SELECT a FROM Article a JOIN FETCH a.userArticleMemoList")
