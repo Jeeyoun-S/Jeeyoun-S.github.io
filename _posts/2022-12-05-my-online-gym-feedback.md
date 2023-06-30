@@ -1,7 +1,7 @@
 ---
 title: My Online Gym에 대한 피드백 반영
 date: 2022-12-05 00:00:00 +07:00
-tags: [project]
+tags: [Project]
 style: fill
 color: info
 description: 1주일 간 My Online Gym Project를 끝낸 뒤, 받았던 Feedback 반영해 코드 수정하기
