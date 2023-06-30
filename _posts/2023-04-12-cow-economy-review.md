@@ -398,8 +398,6 @@ public ArticleDetailDto(Article article, Long userId) {
 List<UserArticleMemo> findAllJoinFetch();
 ```
 
-
-
 #### 분산 도메인
 Hadoop과 Spark를 다뤄볼 수 있는 기회가 흔치 않다고 판단했기에 빅데이터 분산 도메인을 선택했다. 그러나 분산 도메인에서 클러스터 문제가 종종 발생해 프로젝트 진행이 더뎌지는 문제가 있었다. 2월 23일에 시작해 4월 7일에 발표였는데, 아래와 같은 공지가 내려온 것은 4월 4일 오전이었다. 그전까지는 위와 같은 문제가 없었고 3일에 Hadoop에 저장해 둔 데이터가 삭제된 걸 확인했다.
 
