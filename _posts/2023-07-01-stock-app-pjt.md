@@ -311,7 +311,9 @@ description: 1개의 주식을 추천하는 알고리즘 구현 과정
 
   ```java
   public List<String> calculateTanimoto(List<String> stockList) {
+    
 		System.out.println("타니모토 계수 계산하기");
+    
     // 생략
     List<Boolean[]> matrix = matrixInfo.getMatrix();
     // 생략
