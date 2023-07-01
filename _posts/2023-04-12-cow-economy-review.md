@@ -1,7 +1,7 @@
 ---
 title: 소귀경 회고록
 date: 2023-04-12 00:00:00 +07:00
-tags: [Project]
+tags: [Project, Review]
 style: fill
 color: info
 description: 7주 간 진행됐던 소귀경 프로젝트에 대한 회고록
