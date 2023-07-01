@@ -58,7 +58,7 @@ description: 1개의 주식을 추천하는 알고리즘 구현 과정
 #### 혼자 구현하기 
 [각자 구현한 버전 코드 GitHub 보러가기](https://github.com/Jeeyoun-S/Stock-App-Server/tree/4a6b14d754c9fc60bbc15a3bc0aea9d40ab850ee/src/main/java/com/stock/recommend)
 
-- **계산한 유사도가 담긴 JSON 파일 생성**
+- **계산한 유사도가 담긴 JSON 파일 생성**  
 우선, 유사도를 계산해 넣은 JSON 파일을 생성하는 코드를 작성했다. 자료형은 상황에 따라 Array, Map, Set, List를 사용했다. 우선, 사용자가 행이고 주식 종목이 열인 이중 Map을 만들어 각 칸의 종목에 대한 사용자의 선호도를 0 또는 1로 표기했다. 이후 주식 종목 전체를 열과 행에 두고 주식 간의 타니모토 유사도를 구해 이중 Map에 넣어줬다.
 
   그 후 JSON에 저장할 때는 각 주식별로 유사도가 높은 10개의 주식만을 남겼다. 모든 유사도를 저장한다면 오히려 메모리 낭비라고 생각해 임시로 10개 정도만 저장하는 것으로 구현했다.
@@ -170,7 +170,7 @@ description: 1개의 주식을 추천하는 알고리즘 구현 과정
   }
   ```
 
-- **JSON 파일 읽어 4개의 주식만 선별**
+- **JSON 파일 읽어 4개의 주식만 선별**  
 이후 JSON 파일을 읽어 들여 유사도를 가져온다. 추천 주식을 요청한 사용자에게 선호도가 1인 주식 목록을 DB에서 가져오고, 주식 목록에 있는 주식과 없는 주식 간의 유사도를 탐색해 주식 목록에 없는 주식에 대한 유사도 평균을 구한다. 평균이 가장 높은 4개의 주식을 반환한다.
 
   ```java
@@ -307,19 +307,30 @@ description: 1개의 주식을 추천하는 알고리즘 구현 과정
 - **자료형 활용**  
 앞서 이야기했듯이 나는 Array, List, Set, Map 등의 자료형을 사용했고, 다른 팀원분께서는 더 다양한 자료형을 활용했다. 정렬이 필요한 경우 SortedSet를 사용하거나 DTO 등을 사용했고, 적절한 자료형을 사용했기 때문인지 계산 과정은 비슷함에도 계산 속도는 내 코드보다 빨랐다.
 
+  약간 수정과 실행을 반복해 보면서 Map이 List보다 빠르고, 이중 List나 Map보다 List 내에 Array를 넣는 것이 더 빠르다는 것을 알게 됐다. 아무래도 나중에 접근할 때 Map 방식이 더 빨라서 그런 것이 아닐까 추측했다.
+
   ```java
-  SortedSet<Map.Entry<String, Double>> sortedSet = new TreeSet<>(new Comparator<Map.Entry<String, Double>>() {
-    @Override
-    // 원소들의 정렬 순서 및 일치 여부를 결정
-    public int compare(Map.Entry<String, Double> e1, Map.Entry<String, Double> e2) {
-      int comp = -e1.getValue().compareTo(e2.getValue());
-      if (comp == 0) {
-        return e1.getKey().compareTo(e2.getKey());
-      }
-      
-      return comp;
-    }
-  });
+  public List<String> calculateTanimoto(List<String> stockList) {
+		System.out.println("타니모토 계수 계산하기");
+    // 생략
+    List<Boolean[]> matrix = matrixInfo.getMatrix();
+    // 생략
+    Map<String, Double[]> totTani = new HashMap<>();
+    // 생략
+    SortedSet<Map.Entry<String, Double>> sortedSet = new TreeSet<>(new Comparator<Map.Entry<String, Double>>() {
+			@Override
+			// 원소들의 정렬 순서 및 일치 여부를 결정
+			public int compare(Map.Entry<String, Double> e1, Map.Entry<String, Double> e2) {
+				int comp = -e1.getValue().compareTo(e2.getValue());
+				if (comp == 0) {
+					return e1.getKey().compareTo(e2.getKey());
+				}
+				
+				return comp;
+			}
+		});
+    // 생략
+  }
   ```
 
 ### 아쉬운 점
