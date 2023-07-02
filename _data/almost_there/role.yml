@@ -1,14 +1,8 @@
 - name: Backend
   content: 
     - title: 모임 도착 API 및 지각 처리 Scheduler 구현
-    - title: 실시간 채팅 조회 및 Redis에서 MySQL 채팅 이전 Scheduler 구현
+    - title: 실시간 채팅 Websocket 및 Redis에서 MySQL 채팅 이전 Scheduler 구현
     - title: 실시간 위치 공유 정보 및 멤버별 채팅 조회 API 구현
-
-- name: Websocket
-  content: 
-    - title: Frontend에서 SockJS와 Stomp를 사용해 채팅 구현
-    - title: Backend에서 Spring Boot Websocket으로 채팅 구현
-    - title: Frontend에서 Websocket 연결 1회로 실시간 위치, 채팅에 모두 사용할 수 있도록 로직 구현
 
 - name: Frontend
   content: 

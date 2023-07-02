@@ -12,5 +12,4 @@
   content:
     - title: Figma를 이용한 와이어프레임 설계 및 디자인
     - title: Vue Skeleton 제작
-    - title: 메모 기능 Selection 함수 구현
-    - title: 기사 상세페이지
+    - title: 메모 기능 및 기사 상세페이지 구현
