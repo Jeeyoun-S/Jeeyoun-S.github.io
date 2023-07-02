@@ -1,19 +1,16 @@
-- name: 설계
-  content:
-    - title: Figma를 이용한 와이어프레임 설계 및 디자인
-    - title: 메모 및 기사 상세페이지 기능명세서 및 API 명세서 작성
-
 - name: Data
   content:
     - title: 경제 기사 및 경제 용어 Crawling
 
+- name: Backend
+  content:
+    - title: 메모 및 기사 상세페이지 기능명세서 및 API 명세서 작성
+    - title: 메모 기능 CRUD API 구현
+    - title: 기사 상세페이지 조회 기능 구현
+
 - name: Frontend
   content:
+    - title: Figma를 이용한 와이어프레임 설계 및 디자인
     - title: Vue Skeleton 제작
     - title: 메모 기능 Selection 함수 구현
     - title: 기사 상세페이지
-
-- name: Backend
-  content:
-    - title: 메모 기능 CRUD API 구현
-    - title: 기사 상세페이지 조회 기능 구현

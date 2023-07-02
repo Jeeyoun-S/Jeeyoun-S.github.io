@@ -1,6 +1,10 @@
-- name: 설계
+- name: Backend
   content:
-    - title: 전체 DB 설계
+    - title: DB 설계
+    - title: 전체 구현 담당 (자카드 유사도 구현 제외)
+    - title: json.simple로 JSON 데이터를 불러와 MyBatis로 DB에 저장
+    - title: Youtube Open API, Naver Open API, 공공데이터 API를 RestTemplate을 활용해 조회
+    - title: MyBatis를 이용해 모든 기능 CRUD를 MVC Pattern으로 Rest API 구현
 
 - name: Frontend
   content:
@@ -8,10 +12,3 @@
     - title: v-calendar를 이용해 일정 관리 UI 구현
     - title: Axios로 Rest API 연결
     - title: Bootstrap과 CSS로 디자인
-
-- name: Backend
-  content:
-    - title: 전체 구현 담당 (자카드 유사도 구현 제외)
-    - title: json.simple로 JSON 데이터를 불러와 MyBatis로 DB에 저장
-    - title: Youtube Open API, Naver Open API, 공공데이터 API를 RestTemplate을 활용해 조회
-    - title: MyBatis를 이용해 모든 기능 CRUD를 MVC Pattern으로 Rest API 구현
