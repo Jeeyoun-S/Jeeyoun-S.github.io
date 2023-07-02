@@ -1,7 +1,3 @@
-- name: 회고록
-  content:
-    - title: <a href="https://jeeyoun-s.github.io/blog/ssueb-review">SSUEB 회고록</a>
-
 - name: 설계
   content:
     - title: 꼼꼼함과 개발 경험 부족으로 DB와 API 설계를 수정하는 경우가 많았는데, 이 부분이 아쉬웠습니다.
