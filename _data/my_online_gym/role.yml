@@ -9,5 +9,4 @@
   content:
     - title: 전체 구현 담당 (운동 루틴 추천 HTML Form 제외)
     - title: v-calendar를 이용해 일정 관리 UI 구현
-    - title: Axios로 Rest API 연결
-    - title: Bootstrap과 CSS로 디자인
+    - title: Axios로 Rest API 연결, Bootstrap과 CSS로 디자인
