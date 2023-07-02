@@ -18,7 +18,7 @@ description: 모임 관리를 편하게 할 수 있는 웹모바일 사이트
     code="<a href='https://github.com/Jeeyoun-S/Almost-There' target='_blank'>Github 바로가기</a>"
     explain="*삼성청년SW아카데미의 보안 정책 상, 특별한 사유가 있을 때만 코드가 공개 상태로 변경됩니다."
 %}
-  
+
 {% 
     include projects/project-list.html title="주요 기능"
     source=site.data.almost_there.function 
@@ -29,6 +29,11 @@ description: 모임 관리를 편하게 할 수 있는 웹모바일 사이트
     backend="IntelliJ@@Java 11@@Spring Boot 2.7.10@@Spring Data JPA@@Gradle 7.6.1@@"
     frontend="Vue 2.6.14@@Vuex 3.6.2@@Vue Router 3.6.5@@Vuetify 2.6.0"
     database="MySQL 8.0.21@@Redis 7.0.11"
+%}
+
+{% 
+    include projects/project-architecture.html
+    image="/assets/architecture/almost_there.png"
 %}
 
 {%
