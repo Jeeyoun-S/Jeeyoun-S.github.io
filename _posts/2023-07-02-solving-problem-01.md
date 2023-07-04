@@ -16,7 +16,7 @@ description: 구글링 없이 해결하지 못했던 문제 (1)
 - [백준 2473번. 세 용액](https://www.acmicpc.net/problem/2473)
 - N개의 숫자가 주어졌을때, 3개의 합이 0에 가장 가까운 숫자 3개를 찾는 문제
 
-### 시간초과
+### 시간초과 [조합]
 ```python
 import sys
 from itertools import combinations
@@ -51,7 +51,7 @@ value.sort()
 print(*value)
 ```
 
-### 성공
+### 성공 [투포인터]
 ```python
 import sys
 
