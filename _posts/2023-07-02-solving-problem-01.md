@@ -13,7 +13,42 @@ description: 구글링 없이 해결하지 못했던 문제 (1)
 - [백준 2473번. 세 용액](https://www.acmicpc.net/problem/2473)
 - N개의 숫자가 주어졌을때, 3개의 합이 0에 가장 가까운 숫자 3개를 찾는 문제
 
-### 풀이
+### 시간초과
+```python
+import sys
+from itertools import combinations
+
+# 전체 용액의 수 입력 받기
+N = int(sys.stdin.readline())
+
+# 용액의 특성값 리스트 입력 받기
+water = list(map(int, sys.stdin.readline().split()))
+
+# 3개 용액 합쳤을 때 0에 가장 가까운 합, result를 만드는 3개 용액
+result, value = sys.maxsize, []
+
+# water 리스트에서 3개를 뽑는 모든 경우의 수 반복
+for combi in combinations(water, 3):
+  
+  # 현재 뽑힌 3개(combi)의 합
+  total = abs(sum(combi))
+
+  # 합이 0이라면 value 값 바꿔주고 반복문 종료
+  if total == 0:
+    value = list(combi)
+    break
+
+  # 저장돼 있는 합보다 작으면 업데이트
+  if result > total:
+    result = total
+    value = list(combi)
+
+# 오름차순 정렬 후 출력
+value.sort()
+print(*value)
+```
+
+### 성공
 ```python
 import sys
 
