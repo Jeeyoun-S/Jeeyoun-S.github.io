@@ -1,0 +1,25 @@
+---
+layout: page
+title: Record
+permalink: /record/
+weight: 5
+published: false
+---
+
+<h1>Record</h1>
+
+{% assign list_items = "" %}
+{% for record in site.records %}
+    {% assign title = record.title | slice: 2, record.title.size %}
+    {%- capture list_items -%}
+        {{ list_items }}
+        {{ title }}
+    {%- endcapture -%}
+{% endfor %}
+{% include elements/list.html title="목록" type="toc" %}
+
+{% for record in site.records %}
+    {{ record }}
+{% endfor %}
+
+{% include elements/github-edit-footer.html %}
