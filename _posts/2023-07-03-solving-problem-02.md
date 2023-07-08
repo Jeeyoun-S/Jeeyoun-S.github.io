@@ -4,7 +4,7 @@ date: 2023-07-03 00:00:00 +07:00
 tags: [Algorithm, Group Study, Stack]
 style: fill
 color: warning
-description: 구글링 없이 해결하지 못했던 문제 (2)
+description: 힌트 없이 해결하지 못했던 문제 (2)
 ---
 
 ### 문제
