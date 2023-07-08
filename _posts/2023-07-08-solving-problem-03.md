@@ -159,5 +159,3 @@ def solution(n, paths, gates, summits):
   
   return result
 ```
-
-### 관련 문제
