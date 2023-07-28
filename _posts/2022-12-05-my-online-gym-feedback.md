@@ -1,5 +1,5 @@
 ---
-title: My Online Gym에 대한 피드백 반영
+title: My Online Gym 피드백 반영
 date: 2022-12-05 00:00:00 +07:00
 tags: [Project]
 style: fill
