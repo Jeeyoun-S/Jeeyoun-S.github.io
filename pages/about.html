@@ -33,106 +33,103 @@ span#label {
 }
 </style>
 
-<!-- <div class="mx-auto mt-5 px-5">
-{% comment %} <div class="col-lg-10 mx-auto mt-5"> {% endcomment %} -->
-<div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <h3>안녕하세요👋</h3>
-  <h1 style="margin-top: 0px;"><b>서지윤입니다</b></h1>
-  <p>
-    기록하고 정리하는 것을 좋아하고, 항상 메모하는 습관을 만들고 있습니다. 
-    <br />
-    공부한 내용을 많은 사람과 공유하며 배울 수 있는 활동을 꾸준히 이어가며 성장합니다.
-    <br />
-    <span style="font-weight: bold; font-size: 100% !important;">웹 개발자</span>, 그중에서도 <span style="font-weight: bold; font-size: 100% !important;">백엔드</span> 개발자를 목표로 공부하고 있습니다.
-  </p>
-  <p class="mb-2">
-    <span class="badge badge-pill text-primary border border-primary mr-2" id="label">Email</span>
-    dreaming990124@gmail.com
-  </p>
-  <p class="mb-2">
-    <span class="badge badge-pill text-primary border border-primary mr-2" id="label">Github</span>
-    <a href="https://github.com/Jeeyoun-S" target="_blank">github.com/Jeeyoun-S</a>
-  </p>
-  <p class="mb-2">
-    <span class="badge badge-pill text-primary border border-primary mr-2" id="label">Blog</span>
-    {% comment %} <a href="https://jeeyoun-s.github.io/blog/" target="_blank">jeeyoun-s.github.io/blog/</a> {% endcomment %}
-    {% comment %} ,&nbsp; {% endcomment %}
-    {% comment %} <a href="https://p-lay-ground.tistory.com/" target="_blank">p-lay-ground.tistory.com</a> &  {% endcomment %}
-    <a href="https://jeeyoun-s.github.io/blog/" target="_blank">jeeyoun-s.github.io/blog/</a>
-  </p>
-  <p class="mb-2">
-    <span class="badge badge-pill text-primary border border-primary mr-2" id="label">PDF File</span>
-    <a href="/assets/seojeeyoun_portfolio.pdf" download>인쇄용 포트폴리오 PDF 파일</a>
-  </p>
+<div class="mx-auto mt-5 px-5">
+{% comment %} <div class="col-lg-10 mx-auto mt-5"> {% endcomment %}
+  <div class="markdown-body">
+    <h3>안녕하세요👋</h3>
+    <h1 style="margin-top: 0px;"><b>서지윤입니다</b></h1>
+    <p>
+      기록하고 정리하는 것을 좋아하고, 항상 메모하는 습관을 만들고 있습니다. 
+      <br />
+      공부한 내용을 많은 사람과 공유하며 배울 수 있는 활동을 꾸준히 이어가며 성장합니다.
+      <br />
+      <span style="font-weight: bold; font-size: 100% !important;">웹 개발자</span>, 그중에서도 <span style="font-weight: bold; font-size: 100% !important;">백엔드</span> 개발자를 목표로 공부하고 있습니다.
+    </p>
+    <p class="mb-2">
+      <span class="badge badge-pill text-primary border border-primary mr-2" id="label">Email</span>
+      dreaming990124@gmail.com
+    </p>
+    <p class="mb-2">
+      <span class="badge badge-pill text-primary border border-primary mr-2" id="label">Github</span>
+      <a href="https://github.com/Jeeyoun-S" target="_blank">github.com/Jeeyoun-S</a>
+    </p>
+    <p class="mb-2">
+      <span class="badge badge-pill text-primary border border-primary mr-2" id="label">Blog</span>
+      {% comment %} <a href="https://jeeyoun-s.github.io/blog/" target="_blank">jeeyoun-s.github.io/blog/</a> {% endcomment %}
+      {% comment %} ,&nbsp; {% endcomment %}
+      {% comment %} <a href="https://p-lay-ground.tistory.com/" target="_blank">p-lay-ground.tistory.com</a> &  {% endcomment %}
+      <a href="https://jeeyoun-s.github.io/blog/" target="_blank">jeeyoun-s.github.io/blog/</a>
+    </p>
+    <p class="mb-2">
+      <span class="badge badge-pill text-primary border border-primary mr-2" id="label">PDF File</span>
+      <a href="/assets/seojeeyoun_portfolio.pdf" download>인쇄용 포트폴리오 PDF 파일</a>
+    </p>
 
-  <h2 id="programming-skills" class="mt-5 mb-2"><b>Programming Skills</b></h2>
-  <div class="row">
-    {% include about/skills.html title="Language" star="0,1,2" source=site.data.skills.language %}
-  </div>
-  <div class="row">
-    {% include about/skills.html title="Framework" star="0" source=site.data.skills.framework %}
-  </div>
-  <div class="row">
-    {% include about/skills.html title="Database" star="0,1" source=site.data.skills.database %}
-  </div>
-  <div class="row">
-    <div class="col-lg" style="padding: 0px;">
-    <h4 class="mt-1 mb-3">Tools</h4>
+    <h2 id="programming-skills" class="mt-5 mb-2"><b>Programming Skills</b></h2>
     <div class="row">
-      {% for skill in site.data.skills.tool %}
-      <div class="col-lg">
-        <div class="alert alert-{{ skill.color | default: "primary" }}" role="alert">
-          <div class="d-flex flex-row justify-content-between align-items-center">
-            <p class="mb-1"><b>{{ skill.name }}</b></p>
-            <div style="font-size: small;">
-              {{ skill.explain }}
+      {% include about/skills.html title="Language" star="0,1,2" source=site.data.skills.language %}
+      {% include about/skills.html title="Framework" star="0" source=site.data.skills.framework %}
+    </div>
+    <div class="row">
+      {% include about/skills.html title="Database" star="0,1" source=site.data.skills.database %}
+    </div>
+
+    <div class="col-lg" style="padding: 0px;">
+      <h4 class="mt-1 mb-3">Tools</h4>
+      <div class="row">
+        {% for skill in site.data.skills.tool %}
+        <div class="col-lg">
+          <div class="alert alert-{{ skill.color | default: "primary" }}" role="alert">
+            <div class="d-flex flex-row justify-content-between align-items-center">
+              <p class="mb-1"><b>{{ skill.name }}</b></p>
+              <div style="font-size: small;">
+                {{ skill.explain }}
+              </div>
             </div>
           </div>
         </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
+
+    <h2 id="projects"><b>Projects</b></h2>
   </div>
-  <!-- </div> -->
-  
-  <h2 id="projects"><b>Projects</b></h2>
-<!-- </div> -->
 
   <div class="row">
   {% include projects/index.html %}
   </div>
 
-<!-- <div class="markdown-body"> -->
+  <div class="markdown-body">
 
-  <h2 id="education"><b>Education</b></h2>
-  <div class="row">
-  {% include about/education.html %}
-  </div>
+    <h2 id="education"><b>Education</b></h2>
+    <div class="row">
+    {% include about/education.html %}
+    </div>
 
-  <h2 id="certificate"><b>Certificate</b></h2>
-  <div class="row">
-  {% include about/certificate.html %}
-  </div>
+    <h2 id="certificate"><b>Certificate</b></h2>
+    <div class="row">
+    {% include about/certificate.html %}
+    </div>
 
-  <h2 id="awards"><b>Awards</b></h2>
-  <div class="row">
-  {% include about/awards.html %}
-  </div>
+    <h2 id="awards"><b>Awards</b></h2>
+    <div class="row">
+    {% include about/awards.html %}
+    </div>
 
-  <h2 id="activities"><b>Activities</b></h2>
-  <div class="row">
-  {% include about/activity.html %}
+    <h2 id="activities"><b>Activities</b></h2>
+    <div class="row">
+    {% include about/activity.html %}
+    </div>
+    
+    <footer class="mt-auto py-3 text-center">
+      <small id="title-list">
+        <a href="#programming-skills">Skills</a><br>
+        <a href="#projects">Projects</a><br>
+        <a href="#education">Education</a><br>
+        <a href="#certificate">Certificate</a><br>
+        <a href="#awards">Awards</a><br>
+        <a href="#activities">Activities</a>
+      </small>
+    </footer>
   </div>
-  
-  <footer class="mt-auto py-3 text-center">
-    <small id="title-list">
-      <a href="#programming-skills">Skills</a><br>
-      <a href="#projects">Projects</a><br>
-      <a href="#education">Education</a><br>
-      <a href="#certificate">Certificate</a><br>
-      <a href="#awards">Awards</a><br>
-      <a href="#activities">Activities</a>
-    </small>
-  </footer>
-<!-- </div> -->
 </div>
