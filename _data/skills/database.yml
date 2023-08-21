@@ -1,9 +1,7 @@
 - name: MySQL
   color: primary
   percentage: 50
-  explain: <ul>
-          <li>DML, DDL, DCL 명령어 사용 가능</li>
-          </ul>
+  explain: <li>DML, DDL, DCL 명령어 사용 가능</li>
 
 - name: Redis
   color: info
