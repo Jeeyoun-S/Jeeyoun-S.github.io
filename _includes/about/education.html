@@ -8,7 +8,13 @@
             {{ item.from }} — {{ item.to }}
             <!-- <p class="ml-2" style="color: black">{{ item.description }}</p> -->
           </h6>
-          <p>{{ item.description }}</p>
+          <ul class="pl-4">
+            {%- assign descriptions = item.description | split: "@@" -%}
+            {% for descript in descriptions %}
+              <li>{{ descript }}</li>
+            {% endfor %}
+          </ul>
+          <!-- <p>{{ item.description }}</p> -->
         </div>
       </div>
     {% endfor %}
