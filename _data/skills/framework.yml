@@ -1,9 +1,11 @@
 - name: Spring/Spring Boot
   color: success
   percentage: 60
-  explain: 
+  explain: 소규모 프로젝트 Rest API 구현 가능@@
+            MyBatis, JPA, JDBC로 DB 프로그래밍@@
+            Swagger를 사용한 API 문서 작성 가능
 
 - name: Vue
   color: success
   percentage: 50
-  explain: 
+  explain: Vuex, Router, Axios, Vuetify를 활용해 소규모 프로젝트 진행 가능
