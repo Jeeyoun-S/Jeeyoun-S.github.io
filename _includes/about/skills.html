@@ -23,7 +23,7 @@
         aria-valuemax="100">
       </div>
     </div>
-    <div style="font-size: small;">
+    <div class="ml-1" style="font-size: small;">
       {%- assign explains = skill.explain | split: "@@" -%}
       {% for exp in explains %}
         <li>{{ exp }}</li>
