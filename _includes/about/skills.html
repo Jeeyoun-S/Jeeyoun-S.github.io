@@ -24,7 +24,11 @@
       </div>
     </div>
     <div style="font-size: small;">
-      {{ skill.explain }}
+      {%- assign explains = skill.explain | split: "@@" -%}
+      {% for exp in explains %}
+        <li>{{ exp }}</li>
+      {% endfor %}
+      <!-- {{ skill.explain }} -->
     </div>
   </div>
 
