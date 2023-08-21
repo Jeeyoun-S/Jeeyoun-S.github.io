@@ -1,9 +1,9 @@
 - name: MySQL
   color: primary
-  percentage: 55
+  percentage: 50
   explain: 
 
 - name: Redis
   color: info
-  percentage: 60
+  percentage: 50
   explain: 

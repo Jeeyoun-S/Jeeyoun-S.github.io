@@ -1,9 +1,9 @@
 - name: Spring/Spring Boot
   color: success
-  percentage: 65
+  percentage: 60
   explain: 
 
 - name: Vue
   color: success
-  percentage: 65
+  percentage: 50
   explain: 
