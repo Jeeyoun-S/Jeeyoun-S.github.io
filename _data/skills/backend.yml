@@ -1,9 +1,7 @@
 - name: Spring/Spring Boot
   color: success
   percentage: 65
-  explain: 소규모 프로젝트 Rest API 구현 가능
-  <br />MyBatis, JPA, JDBC로 DB 프로그래밍
-  <br />Swagger를 사용한 API 문서 작성 가능
+  explain: 소규모 프로젝트 Rest API 구현 가능<br />MyBatis, JPA, JDBC로 DB 프로그래밍<br />Swagger를 사용한 API 문서 작성 가능
 
 - name: Java
   color: warning
