@@ -73,22 +73,22 @@ span#label {
     <div class="row">
       {% include about/skills.html title="Database" star="0,1" source=site.data.skills.database %}
       <div class="col-lg" style="padding: 0px;">
-      <h4 class="mt-1 mb-3">Tools</h4>
-      <div class="row">
-        {% for skill in site.data.skills.tool %}
-        <div class="col-lg">
-          <div class="alert alert-{{ skill.color | default: "primary" }}" role="alert">
-            <div class="d-flex flex-row justify-content-between align-items-center">
-              <p class="mb-1"><b>{{ skill.name }}</b></p>
-              <div style="font-size: small;">
-                {{ skill.explain }}
+        <h4 class="mt-1 mb-3">Tools</h4>
+        <div class="row">
+          {% for skill in site.data.skills.tool %}
+          <div class="col-lg">
+            <div class="alert alert-{{ skill.color | default: "primary" }}" role="alert">
+              <div class="d-flex flex-row justify-content-between align-items-center">
+                <p class="mb-1"><b>{{ skill.name }}</b></p>
+                <div style="font-size: small;">
+                  {{ skill.explain }}
+                </div>
               </div>
             </div>
           </div>
+          {% endfor %}
         </div>
-        {% endfor %}
       </div>
-    </div>
     </div>
 
     
