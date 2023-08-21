@@ -1,9 +1,9 @@
-- name: Python
-  color: warning
-  percentage: 60
-  explain: DFS, BFS 등 여러 알고리즘 구현 가능<br />Selenium, BeautifulSoup으로 크롤링<br />Numpy 및 Pandas 라이브러리 사용 가능
-
-- name: SQL
-  color: danger
+- name: MySQL
+  color: primary
   percentage: 55
-  explain: DML, DDL, DCL 명령어 사용 가능
+  explain: 
+
+- name: Redis
+  color: info
+  percentage: 60
+  explain: 
