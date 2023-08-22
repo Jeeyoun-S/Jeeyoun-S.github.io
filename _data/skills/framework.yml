@@ -8,5 +8,5 @@
 - name: Vue
   color: success
   percentage: 50
-  explain: 소규모 프로젝트 페이지 구현@@
+  explain: 소규모 프로젝트 웹페이지 구현@@
             Vuex, Router, Axios, Vuetify 등 라이브러리 활용
