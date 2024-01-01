@@ -8,7 +8,7 @@
 
 - name: Figma
   color: dark
-  explain: 와이어프레임/시스템설계도 제작
+  explain: UI 디자인
 
 - name: Notion
   color: secondary
