@@ -4,12 +4,12 @@
   explain: DFS, BFS 등 여러 알고리즘 구현
 
 - name: Javascript, Typescript
-  color: danger
+  color: warning
   percentage: 45
   explain: 
 
 - name: Python
-  color: warning
+  color: danger
   percentage: 65
   explain: DFS, BFS 등 여러 알고리즘 구현@@
             Selenium, BeautifulSoup으로 크롤링@@
