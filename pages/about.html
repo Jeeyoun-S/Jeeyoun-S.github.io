@@ -59,12 +59,12 @@ span#label {
       {% comment %} <a href="https://jeeyoun-s.github.io/blog/" target="_blank">jeeyoun-s.github.io/blog/</a> {% endcomment %}
       {% comment %} ,&nbsp; {% endcomment %}
       {% comment %} <a href="https://p-lay-ground.tistory.com/" target="_blank">p-lay-ground.tistory.com</a> &  {% endcomment %}
-      <a href="https://jeeyoun-s.github.io/blog/" target="_blank">jeeyoun-s.github.io/blog/</a>
+      <a href="https://jeeyoun-s.github.io/blog" target="_blank">jeeyoun-s.github.io/blog</a>
     </p>
-    <p class="mb-2">
+    <!-- <p class="mb-2">
       <span class="badge badge-pill text-primary border border-primary mr-2" id="label">PDF File</span>
       <a href="/assets/seojeeyoun_portfolio.pdf" download>인쇄용 포트폴리오 PDF 파일</a>
-    </p>
+    </p> -->
 
     <h2 id="programming-skills" class="mt-5 mb-2"><b>Programming Skills</b></h2>
     <div class="row">
@@ -88,6 +88,11 @@ span#label {
       </div>
     </div>
 
+    <h2 id="experience"><b>Experience</b></h2>
+    <div class="row">
+    {% include about/experience.html %}
+    </div>
+
     <h2 id="projects"><b>Projects</b></h2>
   </div>
 
@@ -96,11 +101,6 @@ span#label {
   </div>
 
   <div class="markdown-body">
-
-    <h2 id="education"><b>Experience</b></h2>
-    <div class="row">
-    {% include about/experience.html %}
-    </div>
 
     <h2 id="education"><b>Education</b></h2>
     <div class="row">
