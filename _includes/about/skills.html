@@ -11,9 +11,9 @@
       <p class="mb-1">
         <b>{{ skill.name }}</b>
       </p>
-      <p class="mb-1 text-muted">{{ skill.percentage }}%</p>
+      <!-- <p class="mb-1 text-muted">{{ skill.percentage }}%</p> -->
     </div>
-    <div class="mb-2 mt-2 progress bg-themed" style="height: 8px;">
+    <!-- <div class="mb-2 mt-2 progress bg-themed" style="height: 8px;">
       <div class="progress-bar bg-{{ skill.color | default: "primary" }} wow animated slideInLeft"
         data-wow-delay="{{ forloop.index | divided_by: 20.0 }}"
         role="progressbar"
@@ -29,7 +29,7 @@
         <li>{{ exp }}</li>
       {% endfor %}
       <!-- {{ skill.explain }} -->
-    </div>
+    </div> -->
   </div>
 
   {% endfor %}

@@ -3,14 +3,14 @@
   percentage: 60
   explain: DFS, BFS 등 여러 알고리즘 구현
 
+- name: Javascript, Typescript
+  color: danger
+  percentage: 45
+  explain: 
+
 - name: Python
   color: warning
   percentage: 65
   explain: DFS, BFS 등 여러 알고리즘 구현@@
             Selenium, BeautifulSoup으로 크롤링@@
             Numpy 및 Pandas 라이브러리 사용
-
-- name: Javascript
-  color: danger
-  percentage: 45
-  explain: 

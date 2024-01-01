@@ -4,7 +4,7 @@
   explain: DML, DDL, DCL 명령어 사용 가능@@
             Transaction
 
-- name: Redis
-  color: info
-  percentage: 50
-  explain: 
+# - name: Redis
+#   color: info
+#   percentage: 50
+#   explain: 
