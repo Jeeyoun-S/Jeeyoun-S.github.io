@@ -5,7 +5,12 @@
             MyBatis, JPA, JDBC로 DB 프로그래밍@@
             Swagger를 사용한 API 문서 작성
 
-- name: Node, Express, Vue
+- name: Express
+  color: success
+  percentage: 50
+  explain: 소규모 프로젝트 구현
+
+- name: Vue
   color: success
   percentage: 50
   explain: 소규모 프로젝트 웹페이지 구현@@
