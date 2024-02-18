@@ -31,7 +31,6 @@ description: 타입스크립트 입문 - 기초부터 실전까지
     // @ts-check
     
     /**
-     * 
     * @param {number} a 첫 번째 숫자
     * @param {number} b 두 번째 숫자
     * @returns {number}
@@ -46,24 +45,24 @@ description: 타입스크립트 입문 - 기초부터 실전까지
 2. Type 선언  
     ```javascript
     /**
-     * @typedef {object} Address
+    * @typedef {object} Address
     * @property {string} street
     * @property {string} city
     */
     
     /**
-     * @typedef {object} User
+    * @typedef {object} User
     * @property {string} name
     * @property {string} email
     * @property {Address} address
     */
     
     /**
-     * @returns {Promise<User>} 사용자 정보
+    * @returns {Promise<User>} 사용자 정보
     */
     function fetchUser() {
-      return axios.get(url);
-    };
+      return axios.get(url);  
+    };  
     ```
 
 ### Typescript 설정
