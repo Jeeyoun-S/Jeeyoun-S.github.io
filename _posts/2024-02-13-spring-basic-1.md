@@ -78,9 +78,23 @@ java -jar hello-spring-0.0.1-SNAPSHOT.jar  # 빌드 파일 실행
 
 ### 정적 콘텐츠
 - resources/static/hello-static.html 생성
-- localhost:8080/hello-static.html로 요청
+- localhost:8080/hello-static.html URL로 접속
   - hello-static 관련 Controller 부재
   - resources/static으로 매칭
   - hello-static.html을 브라우저에 노출
 
-###
+### MVC와 템플릿 엔진
+- 앞선 'View 환경설정' 예제 참고
+
+> [단축키] CMD(CTRL) + P : 파라미터 정보
+
+### API (1) 문자열 반환
+```java
+@GetMapping("hello-string")
+@ResponseBody // HTTP BODY에 반환 값을 직접 삽입
+public String helloString(@RequestParam("name") String name) {
+    // RequestParam은 required로 필수 여부 설정 가능
+    return "hello " + name;
+    // 문자열을 그대로 반환, View 없음
+}
+```
