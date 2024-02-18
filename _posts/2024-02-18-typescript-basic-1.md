@@ -265,121 +265,95 @@ description: 타입스크립트 입문 - 기초부터 실전까지
     ```
 
 ### Interface와 Type 비교
+1. 타입 별칭 : 타입에 이름을 붙인 것. 새로운 타입 값을 생성한 것이 아님. 확장 불가.
+2. 인터페이스 : interface 자체를 자료형으로 보여줌. 확장 가능.
+3. 확장 가능한 인터페이스 사용 추천.
+
+### Union
+1. 하나 이상의 타입을 사용 가능
+2. 공통 속성에만 접근 가능
+    ```typescript
+    interface Developer {
+      name: string;
+      skill: string;
+    }
+    interface Person {
+      name: string;
+      age: number;
+    }
+    function askSomeoneUnion(someone: Developer | Person) {
+      // Developer와 Person의 모든 속성이 아닌 공통 속성에만 접근 가능
+      someone.name;
+    };
+    ```
+3. 활용 예시
+    ```typescript
+    function logMessage(value: string | number) {
+      if (typeof value === 'number') {
+        value.toString(); // number 타입을 기준으로 자동 완성 사용 가능
+      }
+      if (typeof value === 'string') {
+        value.charAt(0);
+      }
+      throw new TypeError('value must be string or number');
+    };
+    logMessage('hello');
+    logMessage(100);
+    ```
+
+### Intersection
+1. 여러 Type을 포괄
+2. 예시
+    ```typescript
+    var capt: string & number & boolean; // 불가능. string이면서, number이면서, boolean
+    function askSomeoneIntersection(someone: Developer & Person) {
+      // Developer와 Person의 모든 속성에 접근 가능
+      someone.age;
+    };
+    ```
+
+### Union와 Intersection 비교
 ```typescript
-// 타입 별칭 : 타입에 이름을 붙인 것. 새로운 타입 값을 생성한 것이 아님. 확장 불가.
-type Person = {
-  name: string;
-  age: number;
-};
-
-// 인터페이스 : interface 자체를 자료형으로 보여줌. 확장 가능.
-interface Person {
-  name: string;
-  age: number;
-};
-
-var seho: Person = {
-  name: '세호',
-  age: 30
-};
-
-type MyString = string;
-var str: MyString = 'hello';
-
-type Todo = { id: string; title: string; done: boolean; };
-function getTodo(todo: Todo) {};
-```
-
-### Union & Intersection
-```typescript
-// 유니온 타입 : 하나 이상의 타입을 사용 가능
-function logMessage(value: string | number) {
-  if (typeof value === 'number') {
-    value.toString(); // number 타입을 기준으로 자동 완성 사용 가능
-  }
-  if (typeof value === 'string') {
-    value.charAt(0);
-  }
-  throw new TypeError('value must be string or number');
-};
-logMessage('hello');
-logMessage(100);
-
-// 장점
-var seho: string | number | boolean;
-
-// 특징
-interface Developer {
-  name: string;
-  skill: string;
-}
-interface Person {
-  name: string;
-  age: number;
-}
-function askSomeone(someone: Developer | Person) {
-  // Developer와 Person의 모든 속성이 아닌 공통 속성에만 접근 가능
-  someone.name;
-};
-
-// 인터섹션
-var capt: string & number & boolean; // 불가능. string이면서, number이면서, boolean
-
-function askSomeoneIntersection(someone: Developer & Person) {
-  // Developer와 Person의 모든 속성에 접근 가능
-  someone.age;
-};
-
-// 인터섹션과 유니온 타입의 차이점
-askSomeone({ name: '디벨로퍼', skill: '웹 개발' }); // 유니온
+askSomeoneUnion({ name: '디벨로퍼', skill: '웹 개발' }); // 유니온
 askSomeoneIntersection({ name: "waht", age: 100, skill: "ww" }); // 인터섹션
 ```
 
 ### Enum
-```typescript
-// 정수형 enum
-enum Shoes {
-  Nike,
-  Adidas,
-  Sth
-};
-var myShoes = Shoes.Nike;
-console.log(myShoes); // 0
+1. 정수형 Enum
+    ```typescript
+    enum Shoes {
+      Nike,
+      Adidas,
+      Sth
+    };
+    var myShoes = Shoes.Nike;
+    console.log(myShoes); // 0
+    ```
 
-// 문자열 enum
-enum S {
-  Nike = '나이키',
-  Adidas = '아디다스'
-};
-var yourS = S.Nike;
-console.log(yourS);
+2. 문자열 Enum
+    ```typescript
+    enum S {
+      Nike = '나이키',
+      Adidas = '아디다스'
+    };
+    var yourS = S.Nike;
+    console.log(yourS); // 나이키
+    ```
 
-// enum을 사용하지 않는 경우
-function askQuestion(answer: string) {
-  if (answer === 'yes') {
-    console.log("정답입니다");
-  }
-  if (answer === 'no') {
-    console.log('오답입니다');
-  }
-};
-askQuestion('예스');
-askQuestion('y');
-askQuestion('Yes');
-
-// enum을 사용한 경우
-enum Answer {
-  Yes = "Y",
-  No = "N"
-};
-function ask(answer: Answer) {
-  if (answer === Answer.Yes) {
-    console.log("정답입니다");
-  }
-  if (answer === Answer.No) {
-    console.log('오답입니다');
-  }
-};
-ask(Answer.Yes);
-ask(Answer.No);
-```
+3. Enum 사용 예시
+    ```typescript
+    enum Answer {
+      Yes = "Y",
+      No = "N"
+    };
+    function ask(answer: Answer) {
+      if (answer === Answer.Yes) {
+        console.log("정답입니다");
+      }
+      if (answer === Answer.No) {
+        console.log('오답입니다');
+      }
+    };
+    ask(Answer.Yes);
+    ask(Answer.No);
+    ```
