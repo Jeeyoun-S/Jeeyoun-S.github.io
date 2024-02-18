@@ -44,6 +44,8 @@ description: 타입스크립트 입문 - 기초부터 실전까지
 
 2. Type 선언  
     ```javascript
+    // typedef 사용
+    
     /**
     * @typedef {object} Address
     * @property {string} street
