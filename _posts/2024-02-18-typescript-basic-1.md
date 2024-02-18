@@ -91,152 +91,178 @@ description: 타입스크립트 입문 - 기초부터 실전까지
 
 ## 기본 문법
 ### Type Basic
-```typescript
-// JS 문자열 선언
-var str = "hello";
+1. 기본 타입 선언
+    ```typescript
+    const strr: string = "hello";
+    const num: number = 10;
+    ```
 
-// TS 문자열 선언
-const strr: string = "hello";
-const num: number = 10;
+2. 배열 선언
+    ```typescript
+    const arr: Array<number> = [1, 2, 3];
+    const heroes: Array<string> = ['Capt', 'Thor', 'Hulk'];
+    const items: number[] = [1, 2, 3];
+    ```
 
-// TS 배열 선언
-const arr: Array<number> = [1, 2, 3];
-const heroes: Array<string> = ['Capt', 'Thor', 'Hulk'];
-const items: number[] = [1, 2, 3];
-const address: [string, number] = ['seoul', 0]; // Tuple, 모든 인덱스의 타입 설정
+3. Tuple 선언
+    ```typescript
+    // Tuple, 모든 인덱스의 타입 설정
+    const address: [string, number] = ['seoul', 0];
+    ```
 
-// TS 객체 선언
-const obj: object = {};
-const person: object = {
-  name: 'capt',
-  age: 100
-};
-const student: { name: string, age: number } = {
-  name: 'thor',
-  age: 1000
-};
+4. Object 선언
+    ```typescript
+    const obj: object = {};
+    const person: object = {
+      name: 'capt',
+      age: 100
+    };
+    const student: { name: string, age: number } = {
+      name: 'thor',
+      age: 1000
+    };
+    ```
 
-// TS 불린 선언
-const show: boolean = true;
-```
+5. Boolean 선언
+    ```typescript
+    const show: boolean = true;
+    ```
 
 ### Functions
-```typescript
-// 함수의 파라미터에 타입을 정의하는 방식
-function sum(a: number, b: number) {
-  return a + b;
-};
-sum(10, 20);
+1. 파라미터의 타입 정의
+    ```typescript
+    function sum(a: number, b: number) {
+      return a + b;
+    };
+    sum(10, 20);
+    ```
 
-// 함수의 반환 값에 타입을 정의하는 방식
-function ten(): number {
-  return 10;
-};
+2. 반환 값의 타입 정의
+    ```typescript
+    function ten(): number {
+      return 10;
+    };
+    ```
 
-// 함수의 타입을 정의하는 방식
-function add(a: number, b: number): number {
-  return a + b;
-};
+3. 파라미터 개수 제한
+    ```typescript
+    function summ(a: number, b: number) {
+      return a + b;
+    };
+    summ(10, 20, 30, 40); // 오류 발생, 엄격한 체크
+    ```
 
-// 여러 파라미터 제한하는 속성
-function summ(a: number, b: number) {
-  return a + b;
-};
-summ(10, 20, 30, 40); // 오류 발생, 엄격한 체크
-
-// Optional 파라미터
-function log(a: string, b?: string) {
-  return a + b;
-};
-log('hello world');
-log('hello ts', 'abc');
-```
+4. Optional 파라미터 사용
+    ```typescript
+    function log(a: string, b?: string) {
+      return a + b;
+    };
+    log('hello world');
+    log('hello ts', 'abc');
+    ```
 
 ### Type
-```typescript
-type Todo = {
-  id: number,
-  title: string,
-  done: boolean
-};
+1. 선언
+    ```typescript
+    type Todo = {
+      id: number,
+      title: string,
+      done: boolean
+    };
+    ```
 
-function fetchTodoItems(): Todo[] {
-  const todos = [
-    { id: 1, title: '안녕', done: false },
-    { id: 2, title: '타입', done: false },
-    { id: 3, title: '스크립트', done: false },
-  ];
-  return todos;
-}
-```
+2. 활용 예시
+    ```typescript
+    function fetchTodoItems(): Todo[] {
+      const todos = [
+        { id: 1, title: '안녕', done: false },
+        { id: 2, title: '타입', done: false },
+        { id: 3, title: '스크립트', done: false },
+      ];
+      return todos;
+    }
+    ```
 
 > any : string, number, array 등의 모든 타입 통칭 (실행하는 시점에서 타입 할당)
 
 ### Interface
-```typescript
-interface User {
-  age: number;
-  name: string;
-};
+1. 선언
+    ```typescript
+    interface User {
+      age: number;
+      name: string;
+    };
+    ```
 
-// 변수에 활용한 인터페이스
-var seho: User = {
-  age: 33,
-  name: '세호'
-};
+2. 변수에 활용
+    ```typescript
+    var seho: User = {
+      age: 33,
+      name: '세호'
+    };
+    ```
 
-// 함수에 인터페이스 활용
-function getUser(user: User) {
-  console.log(user);
-};
-const capt = {
-  name: '캡틴',
-  age: 100
-};
-getUser(capt);
+3. 함수 파라미터에 활용
+    ```typescript
+    function getUser(user: User) {
+      console.log(user);
+    };
+    const capt = {
+      name: '캡틴',
+      age: 100
+    };
+    getUser(capt);
+    ```
 
-// 함수의 스펙(구조)에 인터페이스를 활용
-interface SumFunction {
-  (a: number, b: number): number;
-};
-var sum: SumFunction;
-sum = function(a: number, b: number): number {
-  return a + b;
-};
+4. 함수에 활용
+    ```typescript
+    interface SumFunction {
+      (a: number, b: number): number;
+    };
+    var sum: SumFunction;
+    sum = function(a: number, b: number): number {
+      return a + b;
+    };
+    ```
 
-// 인덱싱
-interface StringArray {
-  [index: number]: string
-};
-var arr: StringArray = ['a', 'b', 'c'];
-arr[0] = 10; // 오류 발생
+5. 배열 인덱싱에 활용
+    ```typescript
+    interface StringArray {
+      [index: number]: string
+    };
+    var arr: StringArray = ['a', 'b', 'c'];
+    arr[0] = 10; // 오류 발생
+    ```
 
-// 딕셔너리 패턴
-interface StringRegexDictionary {
-  [key: string]: RegExp
-};
-var obj: StringRegexDictionary = {
-  something: /abc/,
-  cssFile: /\.css$/,
-  jsFile: /\.js$/,
-};
-obj.something;
-Object.keys(obj).forEach(value => console.log(obj[value]));
+6. 딕셔너리 패턴에 활용
+    ```typescript
+    interface StringRegexDictionary {
+      [key: string]: RegExp
+    };
+    var obj: StringRegexDictionary = {
+      something: /abc/,
+      cssFile: /\.css$/,
+      jsFile: /\.js$/,
+    };
+    obj.something;
+    Object.keys(obj).forEach(value => console.log(obj[value]));
+    ```
 
-// 인터페이스 확장
-interface Person {
-  name: string;
-  age: number;
-};
-interface Developer extends Person {
-  language: string;
-};
-var captain: Developer = {
-  language: 'ts',
-  name: 'capt',
-  age: 100
-};
-```
+7. 확장
+    ```typescript
+    interface Person {
+      name: string;
+      age: number;
+    };
+    interface Developer extends Person {
+      language: string;
+    };
+    var captain: Developer = {
+      language: 'ts',
+      name: 'capt',
+      age: 100
+    };
+    ```
 
 ### Interface와 Type 비교
 ```typescript

@@ -1,5 +1,5 @@
 ---
-title: 스프링 입문 (1)
+title: Spring 입문 (1)
 tags: [Spring, Backend]
 style: fill
 color: success
