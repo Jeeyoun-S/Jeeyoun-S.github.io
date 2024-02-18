@@ -16,16 +16,16 @@ description: 타입스크립트 입문 - 기초부터 실전까지
 - [강의 자료 핸드북](https://joshua1988.github.io/ts/)
 - [Typescript 공식 문서](https://www.typescriptlang.org/ko/)
 
-# 초기 설정
-## 필수 VSCode Plugin
+## 초기 설정
+### 필수 VSCode Plugin
 - ESLint (TSLint deprecated)
 - Live Server
 
-## 타입스크립트의 장점
+### 타입스크립트의 장점
 1. 에러 방지
 2. 코드 가이드 및 자동 완성
 
-## Javascript를 Typescript처럼
+### Javascript를 Typescript처럼
 1. @ts-check 사용  
     ```javascript
     // @ts-check
@@ -66,7 +66,7 @@ description: 타입스크립트 입문 - 기초부터 실전까지
     };
     ```
 
-## Typescript 설정
+### Typescript 설정
 1. .ts 파일 컴파일
     ```shell
     npm i typescript -g # TS 설치
@@ -90,8 +90,8 @@ description: 타입스크립트 입문 - 기초부터 실전까지
 > - 많은 브라우저가 지원하는 JS로 변환 : https://babeljs.io/
 > - TS를 JS로 변환 : https://www.typescriptlang.org/ko/play
 
-# 기본 문법
-## Type Basic
+## 기본 문법
+### Type Basic
 ```typescript
 // JS 문자열 선언
 var str = "hello";
@@ -121,7 +121,7 @@ const student: { name: string, age: number } = {
 const show: boolean = true;
 ```
 
-## Functions
+### Functions
 ```typescript
 // 함수의 파라미터에 타입을 정의하는 방식
 function sum(a: number, b: number) {
@@ -153,7 +153,7 @@ log('hello world');
 log('hello ts', 'abc');
 ```
 
-## Type
+### Type
 ```typescript
 type Todo = {
   id: number,
@@ -173,7 +173,7 @@ function fetchTodoItems(): Todo[] {
 
 > any : string, number, array 등의 모든 타입 통칭 (실행하는 시점에서 타입 할당)
 
-## Interface
+### Interface
 ```typescript
 interface User {
   age: number;
@@ -239,7 +239,7 @@ var captain: Developer = {
 };
 ```
 
-## Interface와 Type 비교
+### Interface와 Type 비교
 ```typescript
 // 타입 별칭 : 타입에 이름을 붙인 것. 새로운 타입 값을 생성한 것이 아님. 확장 불가.
 type Person = {
@@ -265,7 +265,7 @@ type Todo = { id: string; title: string; done: boolean; };
 function getTodo(todo: Todo) {};
 ```
 
-## Union & Intersection
+### Union & Intersection
 ```typescript
 // 유니온 타입 : 하나 이상의 타입을 사용 가능
 function logMessage(value: string | number) {
@@ -310,7 +310,7 @@ askSomeone({ name: '디벨로퍼', skill: '웹 개발' }); // 유니온
 askSomeoneIntersection({ name: "waht", age: 100, skill: "ww" }); // 인터섹션
 ```
 
-## Enum
+### Enum
 ```typescript
 // 정수형 enum
 enum Shoes {
