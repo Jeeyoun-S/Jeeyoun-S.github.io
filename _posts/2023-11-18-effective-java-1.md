@@ -6,6 +6,9 @@ color: success
 description: Effective Java 2장 객체 생성과 파괴
 ---
 
+1. this unordered seed list will be replaced by toc as unordered list
+{:toc}
+
 ## Item 01. 생성자 대신 정적 팩터리 메서드를 고려하라
 ### 정적 팩터리 메서드의 장점
 - 이름을 가질 수 있다
@@ -14,7 +17,7 @@ description: Effective Java 2장 객체 생성과 파괴
 - 호출될 때마다 인스턴스를 새로 생성할 필요 없다
   - 불변 클래스의 경우, 인스턴스를 만들어두거나 캐싱해 재활용 가능
 
-> **플라이웨이트 패턴**
+> **플라이웨이트 패턴**  
 > 인스턴스를 가능한 공유해서 메모리를 절약하는 패턴
 
 - 반환 타입의 하위 타입을 반환할 수 있다
@@ -33,15 +36,15 @@ description: Effective Java 2장 객체 생성과 파괴
 
 ### 정적 팩터리 메서드의 명명 방식
 | 메서드 이름         | 설명        |
-| :-------------: | ------------- |
-| from      | 매개변수 1개, 해당 타입의 인스턴스 반환 |
-| of      | 매개변수 여러 개, 적합한 타입의 인스턴스 반환 (집계 메서드) |
-| valueOf      | from, of의 더 자세한 버전 |
-| instance / getInstance      | 매개변수에 명시한 인스턴스 반환 |
-| create / newInstance      | getInstance와 동일하지만, 매번 새로운 인스턴스 반환 |
-| getType      | 다른 클래스의 팩터리 메서드를 정의 (Type : 반환할 객체 타입) |
-| newType      | getType과 동일하지만, 매번 새로운 인스턴스 반환 |
-| type      | getType과 newType의 간결한 버전 |
+|:-------------:| ------------- |
+| from | 매개변수 1개, 해당 타입의 인스턴스 반환 |
+| of | 매개변수 여러 개, 적합한 타입의 인스턴스 반환 (집계 메서드) |
+| valueOf | from, of의 더 자세한 버전 |
+| instance / getInstance | 매개변수에 명시한 인스턴스 반환 |
+| create / newInstance | getInstance와 동일하지만, 매번 새로운 인스턴스 반환 |
+| getType | 다른 클래스의 팩터리 메서드를 정의 (Type : 반환할 객체 타입) |
+| newType | getType과 동일하지만, 매번 새로운 인스턴스 반환 |
+| type | getType과 newType의 간결한 버전 |
 
 ## Item 02. 생성자에 매개변수가 많다면 빌더를 고려하라
 선택적 매개변수가 많은 경우, {% include elements/highlight.html text="점층적 생성자 패턴" %}을 사용하는 경우가 많았다. 이러한 경우 단점은
@@ -159,10 +162,10 @@ static boolean isRomanNumeralFast(String s) {
 ## Item 08. finalizer와 cleaner 사용을 피하라
 Java는 finalizer, cleaner 객체 소멸자를 제공한다.
 
-- finalizer
+- finalizer  
   예측할 수 없고 상황에 따라 위험할 수도 있어 일반적으로 불필요하다. 기본적으로 쓰지 말아야 한다.
 
-- cleaner
+- cleaner  
   finalizer의 대안으로 제시됐다. finalizer보다는 덜 위험하지만, 예측할 수 없고 느리고 일반적으로 불필요하다.
 
 ### finalizer와 cleaner를 사용하는 것을 피해야 하는 경우와 이유

@@ -1,10 +1,13 @@
 ---
-title: Spring 입문 (1)
+title: Effective Java 3장
 tags: [Spring, Backend]
 style: fill
 color: success
-description: 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술
+description: Effective Java 3장 모든 객체의 공통 메서드
 ---
+
+1. this unordered seed list will be replaced by toc as unordered list
+{:toc}
 
 ## Item 10. equals는 일반 규약을 지켜 재정의하라
 
@@ -49,7 +52,8 @@ equals에서 두 객체가 같다고 판단했다면, 두 객체의 hashCode �
 - hashCode를 재귀적으로 호출
   - 각 필드의 hashCode를 호출해서 result = 31 * result + c에 따라 result를 갱신한다.
     ```java
-    @Override public int hashCode() { 
+    @Override 
+    public int hashCode() { 
       int result = Short.hashCode(areaCode); 
       result = 31 * result + Short.hashCode(prefix); 
       result = 31 * result + Short.hashCode(lineNum); 
