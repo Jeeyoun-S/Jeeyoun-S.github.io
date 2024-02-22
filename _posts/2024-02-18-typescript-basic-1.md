@@ -2,7 +2,7 @@
 title: Typescript 입문 (1)
 tags: [Typescript]
 style: fill
-color: success
+color: light
 description: 타입스크립트 입문 - 기초부터 실전까지
 ---
 

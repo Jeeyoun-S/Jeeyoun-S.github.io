@@ -98,3 +98,5 @@ public String helloString(@RequestParam("name") String name) {
     // 문자열을 그대로 반환, View 없음
 }
 ```
+
+### API (2) JSON 반환
