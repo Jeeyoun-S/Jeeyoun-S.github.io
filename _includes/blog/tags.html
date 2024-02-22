@@ -8,14 +8,16 @@
 {%- endfor -%}
 {%- assign tags = tags | split:'|' | uniq | sort -%}
 
+<div class="mb-3">
 {% for tag in tags %}
   {%- assign tag_url = tag | slugify | prepend: 'tags#' -%}
   {% include elements/button.html link=tag_url text=tag style="primary" size="sm" %}
 {% endfor %}
+</div>
 
 <!-- List tags & related posts -->
 {% for tag in tags %}
-<div class="py-3">
+<div>
   <h4 id="{{ tag | slugify }}">{{ tag }}</h4>
   <ol>
   {% for post in site.posts %}
