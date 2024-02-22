@@ -43,7 +43,8 @@
       </p>
     </div>
     <div class="card-footer {{ text_style }}">
-      {{ post.date | date_to_long_string }}
+      {% comment %} {{ post.date | date_to_long_string }} {% endcomment %}
+      {{ post.date | date: "%Y.%m.%d" }}
     </div>
   </a>
 </div>

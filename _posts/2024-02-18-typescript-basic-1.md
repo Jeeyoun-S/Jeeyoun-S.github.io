@@ -87,7 +87,7 @@ description: 타입스크립트 입문 - 기초부터 실전까지
     }
     ```
 
-> JS 변환 방법
+> **JS 변환 방법**
 > - 많은 브라우저가 지원하는 JS로 변환 : https://babeljs.io/
 > - TS를 JS로 변환 : https://www.typescriptlang.org/ko/play
 
@@ -185,7 +185,8 @@ description: 타입스크립트 입문 - 기초부터 실전까지
     }
     ```
 
-> any : string, number, array 등의 모든 타입 통칭 (실행하는 시점에서 타입 할당)
+> **any**  
+> string, number, array 등의 모든 타입 통칭 (실행하는 시점에서 타입 할당)
 
 ### Interface
 1. 선언

@@ -1,16 +1,16 @@
 ---
 ---
 
-
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @font-face {
   font-family: 'NanumSquareNeo-Variable';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
 }
 @import "portfolYOU";
 
-h1,
+h1 {
+  font-weight: 900;
+}
 h2 {
   font-weight: 800;
 }
@@ -22,4 +22,56 @@ h4 {
 }
 * {
   font-family: 'NanumSquareNeo-Variable';
+}
+
+.markdown-body {
+  h2 {
+    font-size: 1.9rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  ul, ol {
+    padding-left: 30px;
+  }
+  li {
+    padding: 1px 0px;
+  }
+}
+
+
+pre.highlight {
+  margin: 5px 0px;
+
+  span {
+    font-family: "JetBrains Mono", 'NanumSquareNeo-Variable';
+    font-weight: 600;
+  }
+}
+
+#markdown-toc {
+  background-color: $primary-bg;
+  margin-bottom: 25px;
+  padding: 20px 10px 15px 45px;
+  border-radius: 15px;
+  color: $primary;
+  list-style-type: decimal;
+
+  li li {
+    list-style-type: disc;
+  }
+  ol {
+    margin: 5px 0px;
+    padding-left: 30px;
+  }
+  li::marker {
+    font-weight: 800;
+  }
+}
+
+[data-theme="dark"] #markdown-toc {
+  background-color: #313131;
 }
