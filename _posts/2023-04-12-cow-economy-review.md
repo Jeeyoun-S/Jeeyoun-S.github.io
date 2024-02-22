@@ -95,7 +95,8 @@ Selenium보다 BeautifulSoup이 속도가 더 빠르고 메모리가 절약되�
   ```python
   press_list = ['매일경제', '머니투데이', '비즈워치', '서울경제', '아시아경제',
                 '이데일리', '조선비즈', '조세일보', '파이낸셜뉴스', '한국경제', '헤럴드경제',
-                '경향신문', '국민일보', '동아일보', '문화일보', '서울신문', '세계일보', '조선일보', '중앙일보', '한계레', '한국일보']
+                '경향신문', '국민일보', '동아일보', '문화일보', '서울신문', '세계일보', '조선일보'
+                '중앙일보', '한계레', '한국일보']
 
   # 중간 생략
 
@@ -243,7 +244,8 @@ Colab으로 작업하니 1일 치 기사를 크롤링하면 약 12분(대략 300
   public ArticleDto(Article article) {
       this.articleId = article.getArticleId();
       this.articleCategory = article.getArticleCategory();
-      this.articleRegtime = article.getArticleRegtime().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));;
+      this.articleRegtime = article.getArticleRegtime()
+                                    .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));;
       this.articlePress = article.getArticlePress();
       this.articleTitle = article.getArticleTitle();
       this.articleThumbnail = article.getArticleThumbnail();

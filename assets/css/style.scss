@@ -6,6 +6,10 @@
   font-family: 'NanumSquareNeo-Variable';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
 }
+@font-face {
+  font-family: 'LINESeedKR-Rg';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Rg.woff2') format('woff2');
+}
 @import "portfolYOU";
 
 h1 {
@@ -20,8 +24,11 @@ h3 {
 h4 {
   font-weight: 600;
 }
-* {
+h1, h2, h3, h4, h5, h6, .badge, .alert *, .btn, .post-metadata * {
   font-family: 'NanumSquareNeo-Variable';
+}
+* {
+  font-family: 'LINESeedKR-Rg';
 }
 
 .markdown-body {
@@ -50,6 +57,10 @@ pre.highlight {
     font-family: "JetBrains Mono", 'NanumSquareNeo-Variable';
     font-weight: 600;
   }
+}
+code {
+  font-family: "JetBrains Mono", 'NanumSquareNeo-Variable';
+  font-weight: 600;
 }
 
 #markdown-toc {

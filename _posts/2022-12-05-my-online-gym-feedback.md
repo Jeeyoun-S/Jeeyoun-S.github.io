@@ -42,7 +42,7 @@ description: 1주일 간 My Online Gym를 끝낸 뒤, 받았던 Feedback 반영�
     ```javascript
     @font-face {
       font-family: 'S-CoreDream-3Light';
-      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff').format('woff');
       font-weight: normal;
       font-style: normal;
     }
@@ -156,7 +156,9 @@ description: 1주일 간 My Online Gym를 끝낸 뒤, 받았던 Feedback 반영�
 
     ```html
     <div v-else id="video-list">
-      <div id="video-list-item" v-for="video in video_search_data" :key="video.videoId" @click="detailVideo(video)">
+      <div id="video-list-item" @click="detailVideo(video)" 
+        v-for="video in video_search_data" :key="video.videoId"
+      >
         <img :src="video.thumbnails" />
         <div id="contents">
           <h3 v-html="video.title.substr(0, 25) + '...'"></h3>
