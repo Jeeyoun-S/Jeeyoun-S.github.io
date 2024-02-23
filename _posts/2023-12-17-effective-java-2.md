@@ -1,6 +1,6 @@
 ---
 title: Effective Java 3장
-tags: [Spring, Backend]
+tags: [Java]
 style: fill
 color: success
 description: Effective Java 3장 모든 객체의 공통 메서드
@@ -11,8 +11,8 @@ description: Effective Java 3장 모든 객체의 공통 메서드
 
 ## Item 10. equals는 일반 규약을 지켜 재정의하라
 
-> 1. 논리적 동치성 : 참조 타입 변수에서 핵심값이 동일하다면 논리적으로 동일하다 판단  
-> 2. 물리적 동치성 : 메모리에 저장된 변수가 가지는 값이 동일한지 판단
+> **논리적 동치성** 참조 타입 변수에서 핵심값이 동일하다면 논리적으로 동일하다 판단  
+> **물리적 동치성** 메모리에 저장된 변수가 가지는 값이 동일한지 판단
 
 ### equals를 재정의하지 않는 것을 권장하는 상황
 - 각 인스턴스가 본질적으로 고유
@@ -205,6 +205,7 @@ public int compareTo(PhoneNumber pn) {
 private static final Comparator<PhoneNumber> COMPARATOR = comparingInt((PhoneNumber pn) -> pn.areaCode) 
   .thenComparingInt(pn -> pn.prefix) 
   .thenComparingInt(pn -> pn.lineNum); 
+
 public int compareTo(PhoneNumber pn) { 
   return COMPARATOR.compare(this, pn); 
 }

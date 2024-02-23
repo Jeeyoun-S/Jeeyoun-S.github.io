@@ -87,9 +87,9 @@ description: 타입스크립트 입문 - 기초부터 실전까지
     }
     ```
 
-> **JS 변환 방법**
-> - 많은 브라우저가 지원하는 JS로 변환 : https://babeljs.io/
-> - TS를 JS로 변환 : https://www.typescriptlang.org/ko/play
+> **JS 변환 방법**  
+> 많은 브라우저가 지원하는 JS로 변환 : https://babeljs.io/  
+> TS를 JS로 변환 : https://www.typescriptlang.org/ko/play  
 
 ## 기본 문법
 ### Type Basic

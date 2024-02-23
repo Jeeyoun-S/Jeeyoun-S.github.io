@@ -74,7 +74,6 @@ Redis와 Naver Cloud Platform Open API를 사용해 휴대폰 인증을 구현�
 
 - **프론트엔드에서만 검사**  
 개발자 도구로 손쉽게 유효성 검사를 뚫을 수 있다.
-
 - **백엔드에서만 검사**  
 에러가 발생할 데이터를 미리 검사하지 않아 요청을 매번 보내는 것은 비효율적이다. 요청을 기다려야 해 사용자도 불편할 수 있다.
 
@@ -82,7 +81,6 @@ Redis와 Naver Cloud Platform Open API를 사용해 휴대폰 인증을 구현�
 
 #### Vue의 생명주기
 Vue의 생명주기에 대해 제대로 다시 공부해 볼 수 있었다. `created()` 이후 `mounted()`가 실행되는 것으로 생각했으나 동기로 처리돼 `created()`가 끝나지 않았어도 `mounted()`가 실행되는 경우가 존재했다. 따라서 `created()`에 async를 걸어 API 요청을 보내 데이터를 가져오는 동안은 화면에 Loading을 띄우고 API 요청이 끝나면 화면을 띄우도록 설정했다.
-
 ```javascript
 async created() {
   this.loaded = false;
@@ -92,7 +90,6 @@ async created() {
 ```
 
 ### 어렵고 아쉬웠던 점
-
 #### 협업
 다른 기능을 담당했던 팀원이 `<br />`로 모든 줄 바꿈을, `&nbsp`로는 빈 공간을 만들고 정렬을 했으며,
 요소를 3열로 보여주기 위해 요소 3개씩 for문을 여러 개 쓴 HTML 코드와
@@ -149,31 +146,29 @@ file을 다루는 방법과 Infra에 대한 지식이 부족해, 시간을 오�
 - 특정 폴더에 파일을 저장한 뒤, `domain/image/`로 접근 시 NginX 설정으로 해당 폴더를 바라보도록 설정하라고 알려주셨다.
 - local에서도 비슷하게 작업할 수 있게 설정할 수 있는 방법을 알아봤고, Spring Boot에서 Config 파일로 하는 방법을 알게 됐다.
 - 아래 코드를 WebConfig 파일에 넣으면, `/api/files/**`로 요청이 들어오면 `filePath`로 접근한다.
-
-```java
-// WebConfig.java
-@Override
-public void addResourceHandlers(ResourceHandlerRegistry registry) {
-  registry.addResourceHandler("/api/files/**")
-    .addResourceLocations("file:///"+filePath);
-}
-```
+	```java
+	// WebConfig.java
+	@Override
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		registry.addResourceHandler("/api/files/**")
+			.addResourceLocations("file:///"+filePath);
+	}
+	```
 
 아쉽게도, NginX 설정은 못하고 Spring 설정을 유지한 채로 프로젝트는 마무리됐지만, 파일 처리에 대해 많이 배울 수 있었다.
 
 #### JPA
 처음으로 JPA를 사용해 볼 수 있었고, 프로젝트 첫 주에는 JPA 학습을 중점적으로 시간을 보냈다. 사용해 보니 JPA는 직접 쿼리문을 작성하지 않아도 되어 편리하다는 가장 큰 장점이 있었다. 이전에 사용했던 MyBatis와 비교해 봤을 때 특히 기본적인 CRUD 구현 시간을 대폭 줄여줬다.
-
 ```java
 public class Attach {
-	// 생략
+  // 생략
 
-	// reservation 테이블의 PK인 reservationNo을 가져왔지만 연관 관계 설정 없음
-	@Column(name="reservation_no")
-	@ApiModelProperty(value = "이 파일과 관련된 상담 번호", dataType = "int", example="0")
-	int reservationNo;
+  // reservation 테이블의 PK인 reservationNo을 가져왔지만 연관 관계 설정 없음
+  @Column(name="reservation_no")
+  @ApiModelProperty(value = "이 파일과 관련된 상담 번호", dataType = "int", example="0")
+  int reservationNo;
 
-	// 생략
+  // 생략
 }
 ```
 

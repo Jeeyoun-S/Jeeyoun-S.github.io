@@ -10,7 +10,7 @@ description: 1주일 간 My Online Gym를 끝낸 뒤, 받았던 Feedback 반영�
 - this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-일주일 동안 빠르게 하나의 프로젝트([My Online Gym](https://jeeyoun-s.github.io/projects/2-my-online-gym))를 마무리하고 나니, 다른 사람들의 평가는 어떨지 궁금해졌다. 그래서 SSAFY 1학기 방학 동안 주변 사람들에게 피드백을 받아봤다. 주변 사람들에게 받으면, 다들 잘했다고 한다고 SSAFY에서 그랬는데. 오히려 피드백이 넘쳐나서 반성을 많이 했다. 특히, UI/UX에 대한 생각이 부족했음을 많이 느꼈다.
+일주일 동안 빠르게 하나의 프로젝트([My Online Gym](../projects/4-my-online-gym))를 마무리하고 나니, 다른 사람들의 평가는 어떨지 궁금해졌다. 그래서 SSAFY 1학기 방학 동안 주변 사람들에게 피드백을 받아봤다. 주변 사람들에게 받으면, 다들 잘했다고 한다고 SSAFY에서 그랬는데. 오히려 피드백이 넘쳐나서 반성을 많이 했다. 특히, UI/UX에 대한 생각이 부족했음을 많이 느꼈다.
 
 받았던 피드백을 정리하고, 해결 과정을 서술해 보려고 한다.
 
@@ -18,7 +18,6 @@ description: 1주일 간 My Online Gym를 끝낸 뒤, 받았던 Feedback 반영�
 - 팝업창이 전혀 없어 일부 기능에서 불편.
   - 회원가입 완료, 일정 등록 완료 시 팝업창을 활성화했고, 팝업창은 SweetAlert2 라이브러리를 사용했다.
   - [sweetalert2 Docs](https://sweetalert2.github.io/)
-    
     ```javascript
     import Swal from 'sweetalert2'
 
@@ -38,7 +37,6 @@ description: 1주일 간 My Online Gym를 끝낸 뒤, 받았던 Feedback 반영�
 - 알아보기 힘들 글씨체, 가독성이 더 좋은 글씨체 추천.
   - 로고, 카테고리 글씨체는 유지, 그 외 글씨체는 고딕체 중 하나로 변경했다.
   - [에스코어드림체](https://noonnu.cc/font_page/223)
-    
     ```javascript
     @font-face {
       font-family: 'S-CoreDream-3Light';
@@ -51,7 +49,6 @@ description: 1주일 간 My Online Gym를 끝낸 뒤, 받았던 Feedback 반영�
 ### 운동 일정 관리 기능
 - 달력이 한 페이지 안에 다 들어와서 스크롤 없이 볼 수 있게.
   - [fullcalendar.io](https://fullcalendar.io/docs) 내에 옵션에서 높이를 수정
-
     ```javascript
     calendarOptions: {
       height: 650,
@@ -60,7 +57,6 @@ description: 1주일 간 My Online Gym를 끝낸 뒤, 받았던 Feedback 반영�
 
 - 공휴일은 구분할 수 있게 다른 색으로 표시.
   - 일요일은 빨간색, 토요일은 파란색이 되도록 CSS 추가
-
     ```css
     /* 일요일 */
     .fc-theme-bootstrap .fc-daygrid-day.fc-day.fc-day-sun a.fc-daygrid-day-number {
@@ -77,7 +73,6 @@ description: 1주일 간 My Online Gym를 끝낸 뒤, 받았던 Feedback 반영�
 
 - 달력에서 날짜를 선택하면 해당 날짜에 일정을 추가할 수 있는 창.
   - fullcalendar에서 제공하는 날짜 선택 이벤트에 함수를 추가해 창을 활성화 및 비활성화
-
     ```javascript
     // 생략
     calendarOptions: {
@@ -102,7 +97,6 @@ description: 1주일 간 My Online Gym를 끝낸 뒤, 받았던 Feedback 반영�
 
 - 달력 언어 한글로 변경 및 각 칸의 '15일'에서 '일' 삭제.
   - 달력 언어를 변경하니, 날짜가 '15'에서 '15일'로 변경됐고, 다시 이 부분에서 일만 없앴다.
-
     ```javascript
     // 생략
     calendarOptions: {
@@ -121,7 +115,6 @@ description: 1주일 간 My Online Gym를 끝낸 뒤, 받았던 Feedback 반영�
 - 조회 창에서 바로 수정할 수 있도록, 수정 창 없이.
   - 입력창 모달과 조회 페이지를 오른쪽 사이드바가 나타나는 것으로 수정했다.
   - [vue-bootstrap의 sidebar](https://bootstrap-vue.org/docs/components/sidebar)를 이용했다. 
-  
     ```html
     <b-sidebar width="25%" :visible="isShowAdd" right shadow>
       <div class="px-3 py-2">
@@ -137,7 +130,6 @@ description: 1주일 간 My Online Gym를 끝낸 뒤, 받았던 Feedback 반영�
 
 - 운동 일정을 분석해 주 몇 회 운동했는지 등의 분석 자료 조회.
   - 달력 오른쪽에 사용자 레벨을 표시하고, 레벨에 대한 설명을 추가했다.
-
     ```html
     <div id="calendar-badge">
       <h3>나의 운동 일정 분석</h3>
@@ -153,7 +145,6 @@ description: 1주일 간 My Online Gym를 끝낸 뒤, 받았던 Feedback 반영�
 - 운동 영상 조회 시 한 페이지에 최대 3개의 영상만 노출, 더 많은 영상을 볼 수 있게 수정.
   - 영상 ITEM 내의 썸네일과 영상 정보 나열을 좌우에서 상하로 변경
   - 각 영상 ITEM은 상하에서 좌우로 나열 변경, 한 행에 영상이 최대 5개씩 뜨도록 수정
-
     ```html
     <div v-else id="video-list">
       <div id="video-list-item" @click="detailVideo(video)" 
@@ -189,7 +180,6 @@ description: 1주일 간 My Online Gym를 끝낸 뒤, 받았던 Feedback 반영�
 ### 운동 루틴 추천 기능
 - 루틴에서 동작을 삭제하는 기능도 필요.
   - vue에서 삭제 함수 추가 구현 및 삭제 버튼 칸 추가
-
     ```javascript
     removeRoutine({commit}, index) {
       commit('REMOVE_ROUTINE_DATA', index);
@@ -199,7 +189,6 @@ description: 1주일 간 My Online Gym를 끝낸 뒤, 받았던 Feedback 반영�
 ### 건강기능식품 검색 기능
 - 검색 시, 최신순이나 조회수순 등 정렬 방식 선택.
   - 검색 결과 맨 위에 정렬 방식을 선택할 수 있는 select 버튼 추가
-
     ```html
     <b-form inline>
       <b-form-select
@@ -213,7 +202,6 @@ description: 1주일 간 My Online Gym를 끝낸 뒤, 받았던 Feedback 반영�
 
 - 검색 후 건강식품 나열할 때 각 건강식품 정보를 한 줄로 정리해 한 페이지에 많이 볼 수 있도록.
   - 식품명, 설명 나열을 상하에서 좌우로 변경해 한 줄로 볼 수 있게
-
     ```css
     #food-list-item #each-item {
       display: flex;

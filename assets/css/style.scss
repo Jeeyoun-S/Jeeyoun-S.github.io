@@ -6,10 +6,7 @@
   font-family: 'NanumSquareNeo-Variable';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
 }
-@font-face {
-  font-family: 'LINESeedKR-Rg';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Rg.woff2') format('woff2');
-}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
 @import "portfolYOU";
 
 h1 {
@@ -28,7 +25,7 @@ h1, h2, h3, h4, h5, h6, .badge, .alert *, .btn, .post-metadata *, .navbar *:not(
   font-family: 'NanumSquareNeo-Variable';
 }
 * {
-  font-family: 'LINESeedKR-Rg';
+  font-family: "Pretendard Variable";
 }
 
 .markdown-body {
@@ -37,15 +34,21 @@ h1, h2, h3, h4, h5, h6, .badge, .alert *, .btn, .post-metadata *, .navbar *:not(
   }
   h3 {
     font-size: 1.6rem;
+    margin-top: 12px;
   }
   h4 {
     font-size: 1.3rem;
+    margin-top: 10px;
   }
   ul, ol {
     padding-left: 30px;
   }
   li {
     padding: 1px 0px;
+  }
+  mark {
+    padding: 0px !important;
+    background-color: #fff7c9;
   }
 }
 
@@ -65,7 +68,7 @@ code {
 
 #markdown-toc {
   background-color: $primary-bg;
-  margin-bottom: 25px;
+  margin: 0px 0px 15px 0px;
   padding: 20px 10px 15px 45px;
   border-radius: 15px;
   color: $primary;
