@@ -570,7 +570,9 @@ interface Person {
   name: string;
   age: number;
 };
-
+```
+```typescript
+// 반환 값에 타입 가드 적용
 function isDeveloper(target: Developer | Person): target is Developer {
   return (target as Developer).skill !== undefined;
 };
