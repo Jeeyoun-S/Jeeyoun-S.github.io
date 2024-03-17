@@ -314,6 +314,7 @@ bookmark.remove();
 실제 코드는 더 복잡하지만, 나중에 보고 감을 잡을 수 있게 간단하게 설명하고 핵심 코드만 뽑아서 넣었다. 전체 코드는 [인용문 함수](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/frontend/src/common/function/textSelection.js)에 있고, 주석도 달려있다.
 
 #### 애니메이션 효과
+![Info 페이지 gif](https://github.com/Jeeyoun-S/Cow-Economy/blob/master/docs/screen/info_page.gif?raw=true)
 [Info 페이지](https://github.com/Jeeyoun-S/Cow-Economy#%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%94%EB%A9%B4)에서 [Scene.js 라이브러리](https://daybrush.com/scenejs/)와 [Flicking 라이브러리](https://naver.github.io/egjs-flicking/)를 사용해 움직이는 화면을 구현했다. My Online Gym과 SSUEB에서는 화면에 애니메이션 효과가 없어 페이지 다소 밋밋하다는 느낌도 있었는데, 이번에 첫 진입 페이지에서 사용자의 눈길을 끌 수 있게 만들었다. 
 
 먼저 Flicking 라이브러리는 스크롤로 화면을 이동하는 효과에 사용했다. 스크롤을 아래로 이동해 서비스 설명을 볼 수 있는데, 이렇게 아래로 내리며 이동하는 효과에 사용했다. Scene.js는 처음에 소귀경 로고가 등장하는 효과와 화면을 아래로 이동할 때 주변 동그라미가 제 위치를 찾아 이동하는 효과에 사용했다. 타자를 입력하는 효과도 Scene.js로 손쉽게 구현할 수 있었다.
