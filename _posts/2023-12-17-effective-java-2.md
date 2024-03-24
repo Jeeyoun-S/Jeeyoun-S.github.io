@@ -9,10 +9,13 @@ description: Effective Java 3장 모든 객체의 공통 메서드
 1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-## Item 10. equals는 일반 규약을 지켜 재정의하라
+## [10] equals는 일반 규약을 지켜 재정의
 
-> **논리적 동치성** 참조 타입 변수에서 핵심값이 동일하다면 논리적으로 동일하다 판단  
-> **물리적 동치성** 메모리에 저장된 변수가 가지는 값이 동일한지 판단
+> **논리적 동치성**  
+> 참조 타입 변수에서 핵심값이 동일하다면 논리적으로 동일하다 판단  
+
+> **물리적 동치성**  
+> 메모리에 저장된 변수가 가지는 값이 동일한지 판단
 
 ### equals를 재정의하지 않는 것을 권장하는 상황
 - 각 인스턴스가 본질적으로 고유
@@ -21,16 +24,16 @@ description: Effective Java 3장 모든 객체의 공통 메서드
 - 클래스가 private, package-private이고, equals 메서드를 호출할 일 없음
 
 ### equals를 재정의해야 하는 상황
-논리적 동치성을 확인해야 하는데, equals가 논리적 동치성을 비교하도록 재정의되지 않은 경우
-(같은 인스턴스가 2개 이상 만들어지지 않는 것을 보장하는 경우는 제외)
+- 논리적 동치성을 확인해야 하는데, equals가 논리적 동치성을 비교하도록 재정의되지 않은 경우
+  - 같은 인스턴스가 2개 이상 만들어지지 않는 것을 보장하는 경우는 제외
 
 ### equals 메서드를 재정의할 때 지켜야 하는 일반 규약
-null이 아닌 모든 참조값 x, y, z에 대해
-- 반사성 : x.equals(x) = true
-- 대칭성 : x.equals(y) = true이면 y.equals(x) = true
-- 추이성 : x.equals(y) = true이고 y.equals(z) = true이면, x.equals(z) = true
-- 일관성 : x.equals(y)의 결과값이 항상 같다
-- null 아님 : x.equals(null) = false
+null이 아닌 모든 참조값 x, y, z에 대해 아래 속성 성립
+- **반사성**: x.equals(x) = true
+- **대칭성**: x.equals(y) = true이면 y.equals(x) = true
+- **추이성**: x.equals(y) = true이고 y.equals(z) = true이면, x.equals(z) = true
+- **일관성**: x.equals(y)의 결과값이 항상 같다
+- **null 아님**: x.equals(null) = false
 
 ### equals 구현 방법
 - == 연산자로 자기 자신의 참조인지 확인
@@ -44,7 +47,7 @@ null이 아닌 모든 참조값 x, y, z에 대해
 - Object 외의 타입을 매개변수로 받지 않는다
 - equals를 자동으로 생성해 주는 오픈소스 : AutoValue 프레임워크
 
-## Item 11. equals를 재정의하려거든 hashCode도 재정의하라
+## [11] equals 재정의 시, hashCode도 재정의
 equals에서 두 객체가 같다고 판단했다면, 두 객체의 hashCode 값도 동일해야 한다.
 그렇지 않다면, HashMap, HashSet 같은 컬렉션에서 논리적으로 동일한 2개의 Key에 대해 다른 Value를 갖게 된다.
 
@@ -63,20 +66,20 @@ equals에서 두 객체가 같다고 판단했다면, 두 객체의 hashCode �
     - 파생 필드(다른 필드로부터 계산되는 필드)는 무시 가능
     - equals 비교에 사용되지 않은 필드는 제외
 
-- 정적 메소드 hash 사용
-  Objects 클래스에서 제공하는, 객체를 받아 해시코드를 계산해주는 정적 메소드를 사용해 반환한다.
-  ```java
-  @Override
-  public int hashCode() { 
-    return Objects.hash(lineNum, prefix, areaCode); 
-  } 
-  ```
+- 정적 메소드 hash 사용  
+  - Objects 클래스에서 제공하는, 객체를 받아 해시코드를 계산해주는 정적 메소드를 사용해 반환한다.
+    ```java
+    @Override
+    public int hashCode() { 
+      return Objects.hash(lineNum, prefix, areaCode); 
+    } 
+    ```
   - 단 한 줄로 작성 가능
   - 더 느린 속도 → 성능이 민감하지 않은 경우에만 사용
 
 - 캐싱
-  객체가 해시 키로 자주 사용된다면, 객체의 인스턴스가 만들어질 때 해시코드를 계산해둔다.
-  객체가 해시 키로 사용되지 않는다면, 지연 초기화 전략을 사용한다.
+  - 객체가 해시 키로 자주 사용된다면, 객체의 인스턴스가 만들어질 때 해시코드를 계산해둔다.
+  - 객체가 해시 키로 사용되지 않는다면, 지연 초기화 전략을 사용한다.
   - 지연 초기화 전략
     ```java
     private int hashCode; // 자동으로 0으로 초기화된다. 
@@ -97,7 +100,7 @@ equals에서 두 객체가 같다고 판단했다면, 두 객체의 hashCode �
 - 성능을 높이기 위해, 핵심 필드를 생략해 hashCode를 계산하면 안 된다
 - hashCode 반환 규칙을 자세히 밝히지 않는다
 
-## Item 12. toString을 항상 재정의하라
+## [12] toString을 항상 재정의
 Object의 기본 toString은 단순히 **클래스_이름@16진수로_표시한_해시코드**를 반환한다.
 
 ### toString을 재정의해야 하는 이유
@@ -116,11 +119,11 @@ Object의 기본 toString은 단순히 **클래스_이름@16진수로_표시한
 - 정적 유틸리티 클래스
 - 열거 타입 (Java가 완벽한 toString 제공)
 
-## Item 13. clone 재정의는 주의해서 진행하라
+## [13] clone 재정의는 주의해서 진행하라
 ### Cloneable Interface의 역할
 Object의 protected 메서드인 clone의 동작 방식을 결정한다.
-- Cloneable을 구현 클래스 : clone 호출 시, 복사한 객체 반환
-- Cloneable 미구현 클래스 : clone 호출 시, CloneNotSupportedException
+- **Cloneable을 구현 클래스** clone 호출 시, 복사한 객체 반환
+- **Cloneable 미구현 클래스** clone 호출 시, CloneNotSupportedException
 
 실무에서 Cloneable을 구현한 클래스는 public clone 메서드로, 클래스 자신이 반환 타입이 되도록 제공.
 
@@ -171,7 +174,7 @@ clone이 원본 객체에 영향이 없고, 복제된 객체의 불변식을 �
   - 불필요한 검사 예외를 던지지 않는다
   - 형변환이 필요 없다
 
-## Item 14. Comparable을 구현할지 고려하라
+## [14] Comparable을 구현할지 고려하라
 Comparable의 구현체 인스턴스에는 순서가 존재한다. Comparable의 compareTo는 단순 동치성 비교 + 순서까지 비교 가능하다.
 
 ### compareTo 규약
