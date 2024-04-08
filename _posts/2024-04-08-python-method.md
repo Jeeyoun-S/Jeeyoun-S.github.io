@@ -215,7 +215,7 @@ sentence = "Thank you for your inviting!"
   ```
 
 ## Library
-### Deque
+### deque
 ```python
 from collections import deque
 queue = deque()
@@ -242,7 +242,7 @@ queue.extend(array)
 queue.remove(item)
 ```
 
-### Heap
+### heap
 ```python
 import heapq
 heap = []
@@ -257,7 +257,7 @@ heapq.heapify(heap)
 heapq.heappop(heap)
 ```
 
-### Itertools
+### itertools
 ```python
 import itertools
 nums = [1, 2, 3]
@@ -284,7 +284,7 @@ for prod in itertools.product(nums, alphas, repeat=3):
   # •••
 ```
 
-### Sys
+### sys
 ```python
 import sys
 
