@@ -4,6 +4,7 @@ tags: [Java]
 style: fill
 color: success
 description: Effective Java 4장 클래스와 인터페이스
+published: falsepublished: false
 ---
 
 1. this unordered seed list will be replaced by toc as unordered list
@@ -36,5 +37,8 @@ description: Effective Java 4장 클래스와 인터페이스
 - 클래스에서 public static final 배열 필드를 두거나 이 필드를 반환하는 접근자 메서드를 제공하지 않을 것
 
 > 1) 클라이언트에서 수정할 수 있다면 보안의 허점이 존재하는 것.  
-> 2) 클래스가 필드 값을 제한할 힘을 갖고 있어야 한다.
+> 2) 클래스가 필드 값을 제한할 힘을 갖고 있어야 한다.  
 > 3) 의도치 않게 API로 공개되는 경우를 막아야 한다.
+
+## [16] public 클래스에서는 접근자 메서드 사용
+### 
