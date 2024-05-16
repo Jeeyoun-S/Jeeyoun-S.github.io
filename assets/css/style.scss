@@ -19,7 +19,7 @@ h4 {
   font-family: 'NanumSquareNeoBold';
 }
 h5 {
-  font-family: 'NanumSquareNeo';
+  font-family: 'NanumSquareNeoBold';
 }
 h6, .badge, .alert *, .btn, .post-metadata *, .navbar *:not(i), .list-li h5, .list-li::before {
   font-family: 'NanumSquareNeo';
@@ -31,14 +31,17 @@ h6, .badge, .alert *, .btn, .post-metadata *, .navbar *:not(i), .list-li h5, .li
 .markdown-body {
   h2 {
     font-size: 1.9rem;
+    font-family: 'NanumSquareNeoHeavy';
   }
   h3 {
     font-size: 1.6rem;
     margin-top: 12px;
+    font-family: 'NanumSquareNeoExtraBold';
   }
   h4 {
     font-size: 1.3rem;
     margin-top: 10px;
+    font-family: 'NanumSquareNeoBold';
   }
   ul, ol {
     padding-left: 30px;
