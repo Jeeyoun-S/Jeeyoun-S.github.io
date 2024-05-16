@@ -4,7 +4,6 @@ tags: [Java]
 style: fill
 color: success
 description: Effective Java 4장 클래스와 인터페이스
-published: falsepublished: false
 ---
 
 1. this unordered seed list will be replaced by toc as unordered list
@@ -41,4 +40,20 @@ published: falsepublished: false
 > 3) 의도치 않게 API로 공개되는 경우를 막아야 한다.
 
 ## [16] public 클래스에서는 접근자 메서드 사용
-### 
+- public 클래스에서는 private 필드와 Getter, Setter를 사용
+  - API 변경 없이, 내부 표현 방식을 유연하게 바꾸기 위함
+  - 불변 필드더라도 노출하지 않는 것을 더 추천
+- package-private, private 중첩 클래스에서는 필드 노출 가능
+
+## [17] 변경 가능성 최소화
+### 불변 클래스 이점
+- 인스턴스 내부 값 수정 불가
+- 쉬운 설계와 구현
+- 낮은 오류 발생 가능성
+- 높은 안전성
+
+### 불변 클래스 규칙
+- 객체 상태 변경 메서드 X
+- 클래스 확장 불가
+- 모든 필드를 final로 선언
+- 모든 필드를 private으로 선언

@@ -1,7 +1,7 @@
 ---
 title: 백준. 세 용액 (2473번)
 date: 2023-07-02 00:00:00 +07:00
-tags: [Algorithm, Group Study, Two Pointer]
+tags: [Algorithm, Problem Solving, Two Pointer]
 style: fill
 color: warning
 description: 힌트 없이 해결하지 못했던 문제 (1)

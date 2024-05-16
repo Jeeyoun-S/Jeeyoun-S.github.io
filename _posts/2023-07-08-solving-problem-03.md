@@ -1,6 +1,6 @@
 ---
 title: 프로그래머스. 등산코스 정하기
-tags: [Algorithm, Group Study, Shortest Path]
+tags: [Algorithm, Problem Solving, Shortest Path]
 style: fill
 color: warning
 description: 힌트 없이 해결하지 못했던 문제 (3)

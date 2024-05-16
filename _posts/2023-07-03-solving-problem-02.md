@@ -1,7 +1,7 @@
 ---
 title: 백준. 오큰수 (17298번)
 date: 2023-07-03 00:00:00 +07:00
-tags: [Algorithm, Group Study, Stack]
+tags: [Algorithm, Problem Solving, Stack]
 style: fill
 color: warning
 description: 힌트 없이 해결하지 못했던 문제 (2)
