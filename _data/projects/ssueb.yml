@@ -1,32 +1,20 @@
 - name: 공통
   content:
-    - title: JPA를 이용해 회원가입, 마이페이지 CRUD 구현
-    - title: Redis, Naver Cloud Platform Open API를 활용해 휴대폰 인증 구현
+    - title: Figma로 와이어프레임 설계 및 UI/UX 디자인
     - title: 전반적인 QA 및 디버깅 진행
 
-- name: Frontend
+- name: 회원 관리
   content:
+    - title: 회원가입, 마이페이지, 관리자페이지 API & 화면 구현
     - title: Redis, Naver Cloud Platform Open API를 활용해 휴대폰 인증 구현
-    - title: 반려인 및 전문가 회원가입, 마이페이지, 관리자 페이지 구현
-    - title: 상담 예약 관련 페이지 HTML 및 CSS 전체 수정, 오류 해결
-    - title: 커뮤니티 관련 페이지 HTML 및 CSS 전체 구현, 게시글 수정 Axios 연결
+    - title: v-chartjs로 사용자의 활동 내역을 보여주는 그래프 구현
 
-- name: 설계
+- name: 상담 예약
   content:
-    - title: 꼼꼼함과 개발 경험 부족으로 DB와 API 설계를 수정하는 경우가 많았는데, 이 부분이 아쉬웠습니다.
+    - title: 반려인과 전문가 간의 상담 제안 & 수락 과정 화면 개발
+    - title: Vuetify, v-calendar를 사용해 빠르게 UI 개발
 
-- name: Frontend
+- name: 커뮤니티
   content:
-    - title: Vue에서 Vuetify, v-charjs, v-calendar를 이용하며 라이브러리 활용 능력을 기를 수 있었습니다.
-    - title: loading page를 구현하며 Vue의 생명주기에 대한 이해도를 높이고, 이를 활용해 개발할 수 있었습니다.
-
-- name: Backend
-  content:
-    - title: JPA를 처음으로 학습하고 구현해볼 수 있었습니다.
-    - title: tomcat에서 파일에 접근하는 URL을 설정해 파일 업로드 및 다운로드을 구현해볼 수 있었습니다.
-    - title: JWT를 사용한 첫 프로젝트로, JWT에 대한 이해도를 높일 수 있었습니다.
-
-- name: 협업
-  content:
-    - title: Jira와 Git을 이용한 협업 경험을 쌓을 수 있었습니다.
-    - title: 각자의 개발 속도와 능력이 달라, 서로 도우며 협업하는 것이 중요하다는 것을 깨달았습니다.
+    - title: 공지사항, 자유 게시판, 공개된 상담 화면 개발
+    - title: 관리자의 모든 글을 통제 기능, 사용자의 글/댓글/좋아요 기능 개발

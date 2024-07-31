@@ -1,11 +1,7 @@
 - name: Backend
   content:
+    - title: 요구사항 명세서 작성 및 API 설계
     - title: MyBatis를 이용해 회원 관리, 사용자 랭킹, 찜 목록 관리 기능 Rest API 구현
     - title: Session에 가격 정보를 저장해 주식 및 외환 매매 구현
     - title: Open API에서 RestTemplate을 이용해 정보를 가져와 실시간 주가, 환율, 주요 지수 정보 조회
     - title: 타니모토 유사도와 JSON을 이용한 추천 알고리즘 구현
-
-- name: 설계
-  content:
-    - title: 요구사항 명세서 작성
-    - title: API 설계
