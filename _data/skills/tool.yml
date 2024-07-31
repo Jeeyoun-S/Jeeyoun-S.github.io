@@ -1,10 +1,6 @@
-- name: Git
+- name: GitHub
   color: dark
   explain: 코드 버전 관리
-
-- name: Jira
-  color: secondary
-  explain: 이슈 관리
 
 - name: Figma
   color: dark

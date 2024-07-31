@@ -1,3 +1,16 @@
+- name: 공통
+  content:
+    - title: JPA를 이용해 회원가입, 마이페이지 CRUD 구현
+    - title: Redis, Naver Cloud Platform Open API를 활용해 휴대폰 인증 구현
+    - title: 전반적인 QA 및 디버깅 진행
+
+- name: Frontend
+  content:
+    - title: Redis, Naver Cloud Platform Open API를 활용해 휴대폰 인증 구현
+    - title: 반려인 및 전문가 회원가입, 마이페이지, 관리자 페이지 구현
+    - title: 상담 예약 관련 페이지 HTML 및 CSS 전체 수정, 오류 해결
+    - title: 커뮤니티 관련 페이지 HTML 및 CSS 전체 구현, 게시글 수정 Axios 연결
+
 - name: 설계
   content:
     - title: 꼼꼼함과 개발 경험 부족으로 DB와 API 설계를 수정하는 경우가 많았는데, 이 부분이 아쉬웠습니다.

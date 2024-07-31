@@ -4,6 +4,7 @@ tags: [Java]
 style: fill
 color: success
 description: Effective Java 2장 객체 생성과 파괴
+published: false
 ---
 
 1. this unordered seed list will be replaced by toc as unordered list
@@ -40,16 +41,16 @@ description: Effective Java 2장 객체 생성과 파괴
 
 ### 정적 팩터리 메서드의 명명 방식
 
-| 메서드 이름 | 설명 | 비고 |
-|:-------------:| ------------- |
-| from | 매개변수 1개, 해당 타입의 인스턴스 반환 |
-| of | 매개변수 여러 개, 적합한 타입의 인스턴스 반환 (집계 메서드) |
-| valueOf | from, of의 더 자세한 버전 |
-| instance / getInstance | 매개변수에 명시한 인스턴스 반환 |
-| create / newInstance | getInstance와 동일하지만, 매번 새로운 인스턴스 반환 |
-| getType | 다른 클래스의 팩터리 메서드를 정의 (Type : 반환할 객체 타입) |
-| newType | getType과 동일하지만, 매번 새로운 인스턴스 반환 |
-| type | getType과 newType의 간결한 버전 |
+|      메서드 이름       | 설명                                                         | 비고 |
+| :--------------------: | ------------------------------------------------------------ |
+|          from          | 매개변수 1개, 해당 타입의 인스턴스 반환                      |
+|           of           | 매개변수 여러 개, 적합한 타입의 인스턴스 반환 (집계 메서드)  |
+|        valueOf         | from, of의 더 자세한 버전                                    |
+| instance / getInstance | 매개변수에 명시한 인스턴스 반환                              |
+|  create / newInstance  | getInstance와 동일하지만, 매번 새로운 인스턴스 반환          |
+|        getType         | 다른 클래스의 팩터리 메서드를 정의 (Type : 반환할 객체 타입) |
+|        newType         | getType과 동일하지만, 매번 새로운 인스턴스 반환              |
+|          type          | getType과 newType의 간결한 버전                              |
 
 ## [02] 생성자에 매개변수가 많다면, 빌더
 선택적 매개변수가 많은 경우, 사용하는 3가지 방법

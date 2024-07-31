@@ -19,9 +19,10 @@ description: 모임 관리를 편하게 할 수 있는 웹모바일 사이트
     explain="*삼성청년SW아카데미의 보안 정책 상, 특별한 사유가 있을 때만 코드가 공개 상태로 변경됩니다."
 %}
 
-{% 
-    include projects/project-list.html title="주요 기능"
-    source=site.data.almost_there.function 
+{%
+include projects/project-list.html 
+title="담당 역할" 
+source=site.data.projects.almost_there
 %}
 
 {% 
@@ -35,17 +36,5 @@ description: 모임 관리를 편하게 할 수 있는 웹모바일 사이트
     include projects/project-architecture.html
     image="/assets/architecture/almost_there.png"
 %}
-
-{%
-include projects/project-list.html 
-title="나의 역할" 
-source=site.data.almost_there.role
-%}
-
-{% 
-include projects/project-list.html 
-title="개발 후기"
-source=site.data.almost_there.review
-%} 
 
 {% include projects/project-footer.html %}

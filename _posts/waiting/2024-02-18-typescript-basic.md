@@ -4,6 +4,7 @@ tags: [Typescript]
 style: fill
 color: light
 description: 타입스크립트 입문 - 기초부터 실전까지
+published: false
 ---
 
 1. this unordered seed list will be replaced by toc as unordered list

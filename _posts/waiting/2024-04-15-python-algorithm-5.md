@@ -4,6 +4,7 @@ tags: [Algorithm, Python]
 style: fill
 color: warning
 description: 파이썬 알고리즘 인터뷰 5장 리스트, 딕셔너리
+published: false
 ---
 
 1. this unordered seed list will be replaced by toc as unordered list

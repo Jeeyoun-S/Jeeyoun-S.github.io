@@ -5,6 +5,7 @@ tags: [Algorithm, Problem Solving, Two Pointer]
 style: fill
 color: warning
 description: 힌트 없이 해결하지 못했던 문제 (1)
+published: false
 ---
 
 6월이 되면서 SSAFY 공식 일정이 종료됐다. 이제 본격적으로 취업 준비를 할 시기가 됐고, 코딩테스트를 위해 알고리즘 스터디를 시작했다. 생각보다 고난도의 문제로 구성돼 있고, 생각을 많이 해야 하는 좋은 문제들이 많았다. 그중에서도 힌트(구글링, 문제 유형 등 정보) 없이 해결하지 못한, 다시 꼭 풀어봐야 할, 시간복잡도를 고려해야 하는 문제 위주로 기록을 남기고자 한다.

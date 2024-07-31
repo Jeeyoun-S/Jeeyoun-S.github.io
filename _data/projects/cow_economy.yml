@@ -1,0 +1,15 @@
+- name: 공통
+  content:
+    - title: Figma로 와이어프레임 설계 및 UI/UX 디자인
+    - title: Scene.js를 이용한 서비스 소개 페이지 개발
+    - title: Python으로 경제 기사 및 경제 용어 Crawling
+
+- name: 메모 기능
+  content:
+    - title: 기사를 스크롤해 해당 부분을 인용문으로 추가하는 기능
+    - title: 메모 및 기사 상세페이지 기능명세서 및 API 명세서 작성
+    - title: 메모 기능 CRUD 및 기사 상세페이지 조회 API 구현
+
+- name: 기사 상세페이지
+  content:
+    - title: 
